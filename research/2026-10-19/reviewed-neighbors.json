@@ -1,0 +1,474 @@
+[
+  {
+    "name": "xuting22/ntp",
+    "version": "0.4.0",
+    "url": "https://mooncakes.io/docs/xuting22/ntp@0.4.0",
+    "risk": "较高：物理时间同步功能部分相似",
+    "features": "ClockFilter、Consensus、measure、Timestamp；提供偏移/延迟估计、过滤和时间源组合。",
+    "local": "Timestamp、ClockQuality/select_grandmaster、Clock::apply_sync、simulate",
+    "boundary": "NTP 与 PTP 的报文、源选择算法不同；当前 simulate 不是 NTP 的四时间戳测量实现。不能据协议不同排除功能相似。",
+    "evidence_file": "research/2026-10-19/pages/xuting22__ntp--aac9b4d190a0.txt",
+    "evidence_available": true,
+    "excerpts": [
+      "itch to light mode. 0.4.0 (latest) 0.4.0 (latest) Expand all Collapse all cmd → README E NtpError T ClockFilter :: begin_poll ClockFilter::begin_poll :: estimate ClockFilter::estimate :: new ClockFilter::new :: observe ClockFilter::observe T Consensus T Datagram :: encode Datagram::encode T",
+      "(latest) 0.4.0 (latest) Expand all Collapse all cmd → README E NtpError T ClockFilter :: begin_poll ClockFilter::begin_poll :: estimate ClockFilter::estimate :: new ClockFilter::new :: observe ClockFilter::observe T Consensus T Datagram :: encode Datagram::encode T ExtensionField T FilterEs",
+      "ollapse all cmd → README E NtpError T ClockFilter :: begin_poll ClockFilter::begin_poll :: estimate ClockFilter::estimate :: new ClockFilter::new :: observe ClockFilter::observe T Consensus T Datagram :: encode Datagram::encode T ExtensionField T FilterEstimate :: root_distance FilterEstima",
+      "pError T ClockFilter :: begin_poll ClockFilter::begin_poll :: estimate ClockFilter::estimate :: new ClockFilter::new :: observe ClockFilter::observe T Consensus T Datagram :: encode Datagram::encode T ExtensionField T FilterEstimate :: root_distance FilterEstimate::root_distance T FilterSam",
+      "n_poll ClockFilter::begin_poll :: estimate ClockFilter::estimate :: new ClockFilter::new :: observe ClockFilter::observe T Consensus T Datagram :: encode Datagram::encode T ExtensionField T FilterEstimate :: root_distance FilterEstimate::root_distance T FilterSample T Packet :: encode Packe",
+      "in_poll :: estimate ClockFilter::estimate :: new ClockFilter::new :: observe ClockFilter::observe T Consensus T Datagram :: encode Datagram::encode T ExtensionField T FilterEstimate :: root_distance FilterEstimate::root_distance T FilterSample T Packet :: encode Packet::encode :: kiss_cod"
+    ]
+  },
+  {
+    "name": "Ljh684/moonnet-lab",
+    "version": "0.1.0",
+    "url": "https://mooncakes.io/docs/Ljh684/moonnet-lab@0.1.0",
+    "risk": "较高：网络仿真能力部分重合",
+    "features": "确定性分组网络仿真、虚拟时间、链路延迟、抖动、丢包及实验输出。",
+    "local": "NetworkModel、SimulationConfig、SimulationReport、simulate",
+    "boundary": "对方主要模拟 TCP 和队列，本地只有简化同步循环；共同的网络仿真功能仍然存在。",
+    "evidence_file": "research/2026-10-19/pages/Ljh684__moonnet-lab--875b7d56a349.txt",
+    "evidence_available": true,
+    "excerpts": [
+      "ight mode. 0.1.0 (latest) 0.1.0 (latest) Expand all Collapse all cmd → examples → src → moonnet-lab Deterministic packet-level network simulator and TCP congestion-control lab for MoonBit simulation network tcp congestion-control deterministic discrete-event moon add Ljh684/moonnet-lab@0.1.0 ",
+      "work simulator and TCP congestion-control lab for MoonBit simulation network tcp congestion-control deterministic discrete-event moon add Ljh684/moonnet-lab@0.1.0 Download zip Author Ljh684 Version 0.1.0 License Apache-2.0 Repository github.com/Ljh684/moonnet-lab Last updated 18 days ago Down",
+      "os/long-fat.json --cc reno,cubic\nmoon run cmd/moonnet -- sweep scenarios/small-buffers.json --field loss --from 0 --to 0.02 --steps 5\nmoon run cmd/moonnet -- sweep scenarios/bufferbloat.json --field queue_packets --from 16 --to 600 --steps 5 --cc reno,cubic --seeds 3\nmoon run cmd/moo",
+      "ew ( \"up\" , 10_000_000L , @sim. Time :: from_ms ( 25L ) , @net. QueueSpec :: packets ( 64 ) ) .with_loss ( 0.01 ) , @net. LinkSpec :: new ( \"down\" , 10_000_000L , @sim. Time :: from_ms ( 25L ) , @net. QueueSpec :: packets ( 64 ) ) .with_loss ( 0.01 ) , seed , @tcp. cubic ( 1000 ) , )",
+      " ( \"down\" , 10_000_000L , @sim. Time :: from_ms ( 25L ) , @net. QueueSpec :: packets ( 64 ) ) .with_loss ( 0.01 ) , seed , @tcp. cubic ( 1000 ) , ) pair .connect ( sim ) pair .client .send ( sim , Bytes :: make ( 1_000_000 , b'x' ) ) sim .step_until ( ( ) => pair .server .delivered_b",
+      "每收到一个就重复发一次 ACK；第三次重复 ACK 一到，发送端立刻重传，不等超时。这就是快速重传。 换句话说，救回一个丢包靠的不是\"更聪明地等待\"，而是\"手上有别的证据\"。 把 scenarios/lossy-transfer.json 里的 loss 从 0.01 改成 0 再跑一次，就能看到同一个传输在两个阶段的区别。超时之后 RTO 会翻倍、窗口会塌回一个报文——慢下来是刻意的，下一节说明它为什么必须这么慢。 # 拥塞控制：为什么必须慢下来 第一个场景把同一条路跑两遍，唯一区别是发送端 是否对丢包做出反应 ： moon run cmd/moonnet -"
+    ]
+  },
+  {
+    "name": "oyjh0381/moonlab",
+    "version": "0.1.0",
+    "url": "https://mooncakes.io/docs/oyjh0381/moonlab@0.1.0",
+    "risk": "中：确定性仿真和故障测试相似",
+    "features": "分布式系统仿真、故障注入、确定性调度、重放和轨迹。",
+    "local": "simulate、SimulationReport",
+    "boundary": "对方是通用框架，本地是固定步进同步实验；不是完整相同实现。",
+    "evidence_file": "research/2026-10-19/pages/oyjh0381__moonlab--9547b8bc137e.txt",
+    "evidence_available": true,
+    "excerpts": [
+      "0.1.0 (latest) Expand all Collapse all artifact → cmd → examples → explore → runner → sim → moonlab Deterministic distributed-system simulation and fault injection for MoonBit distributed-systems simulation deterministic-testing fault-injection moon add oyjh0381/moonlab@0.1.0 Download zip Aut",
+      "→ cmd → examples → explore → runner → sim → moonlab Deterministic distributed-system simulation and fault injection for MoonBit distributed-systems simulation deterministic-testing fault-injection moon add oyjh0381/moonlab@0.1.0 Download zip Author oyjh0381 Version 0.1.0 License Apach",
+      "nistic distributed-system simulation and fault injection for MoonBit distributed-systems simulation deterministic-testing fault-injection moon add oyjh0381/moonlab@0.1.0 Download zip Author oyjh0381 Version 0.1.0 License Apache-2.0 Repository github.com/oyjh0381/MoonLab Last updated 2 months ",
+      "tem simulation and fault injection for MoonBit distributed-systems simulation deterministic-testing fault-injection moon add oyjh0381/moonlab@0.1.0 Download zip Author oyjh0381 Version 0.1.0 License Apache-2.0 Repository github.com/oyjh0381/MoonLab Last updated 2 months ago Downloads ",
+      " 0.20.4 moonbitlang/x 0.4.49 README # MoonLab MoonLab is an original Apache-2.0 MoonBit library for deterministic distributed-system simulation and fault injection. It lets protocol authors express Nodes as typed, pure transitions while MoonLab controls scheduling, Virtual Time, Messages, Tim",
+      "onLab is an original Apache-2.0 MoonBit library for deterministic distributed-system simulation and fault injection. It lets protocol authors express Nodes as typed, pure transitions while MoonLab controls scheduling, Virtual Time, Messages, Timers, Stable Storage, finite Choice Point"
+    ]
+  },
+  {
+    "name": "zlhahaha/moonsim",
+    "version": "0.3.1",
+    "url": "https://mooncakes.io/docs/zlhahaha/moonsim@0.3.1",
+    "risk": "中：仿真和模型测试相似",
+    "features": "确定性模型仿真、Sim/Rng/EventRecord、重放及网络/可靠性模型。",
+    "local": "simulate、NetworkModel",
+    "boundary": "本地没有对方的通用事件引擎和完整重放模型。",
+    "evidence_file": "research/2026-10-19/pages/zlhahaha__moonsim--774a2b32e43c.txt",
+    "evidence_available": true,
+    "excerpts": [
+      "Sample U DemoDescriptor U Duration U EventFailureCase U EventId U EventKind U EventMutationPolicy U EventRecord U EventReplayResult U EventStream U EventStreamSnapshot U EventView U ExperimentCase U ExperimentReport U FeatureCell U FeatureCoverage U FeatureMatrix U ForkComparison U HttpFail",
+      "ptor U Duration U EventFailureCase U EventId U EventKind U EventMutationPolicy U EventRecord U EventReplayResult U EventStream U EventStreamSnapshot U EventView U ExperimentCase U ExperimentReport U FeatureCell U FeatureCoverage U FeatureMatrix U ForkComparison U HttpFailureCase U Http",
+      "rage U FeatureMatrix U ForkComparison U HttpFailureCase U HttpOutcome U HttpReliabilityPolicy U HttpReplayOptions U HttpReplayResult U HttpRequest U HttpResponse U IntRange U InvariantCheck U InvariantReport U LoadBalancerConfig U LoadBalancerResult U Message U MessageBus U MetricDelta",
+      " U ForkComparison U HttpFailureCase U HttpOutcome U HttpReliabilityPolicy U HttpReplayOptions U HttpReplayResult U HttpRequest U HttpResponse U IntRange U InvariantCheck U InvariantReport U LoadBalancerConfig U LoadBalancerResult U Message U MessageBus U MetricDelta U MetricDiff U Metr",
+      "esult U Message U MessageBus U MetricDelta U MetricDiff U MetricSnapshot U Metrics U ModelSummary U NetworkConfig U NetworkResult U QueueConfig U QueueResult U QueueStats U RecordedHttpExchange U RecordedHttpTransport U ReliabilityConfig U ReliabilityResult U ReplayBaseline U ReplayComp",
+      "U MessageBus U MetricDelta U MetricDiff U MetricSnapshot U Metrics U ModelSummary U NetworkConfig U NetworkResult U QueueConfig U QueueResult U QueueStats U RecordedHttpExchange U RecordedHttpTransport U ReliabilityConfig U ReliabilityResult U ReplayBaseline U ReplayComparison U RetryCo"
+    ]
+  },
+  {
+    "name": "wcx789ll/moonsim",
+    "version": "0.1.2",
+    "url": "https://mooncakes.io/docs/wcx789ll/moonsim@0.1.2",
+    "risk": "中：分布式网络仿真相似",
+    "features": "确定性离散事件及分布式网络仿真，虚拟时间、丢包、带宽队列、轨迹。",
+    "local": "simulate、NetworkModel",
+    "boundary": "本地不含通用离散事件引擎；网络条件和可复现实验存在交集。",
+    "evidence_file": "research/2026-10-19/pages/wcx789ll__moonsim--a3219db6124d.txt",
+    "evidence_available": true,
+    "excerpts": [
+      "pand all Collapse all benchmarks → cmd → core → examples → network → resource → scheduler → stats → trace → README T Simulation :: active_event_count Simulation::active_event_count :: clock Simulation::clock :: create_network_topology Simulation::create_network_topology :: create_perc",
+      "e_sla_monitor Simulation::create_sla_monitor :: create_summary Simulation::create_summary :: create_tracer Simulation::create_tracer :: events Simulation::events :: get_resource Simulation::get_resource :: get_summary Simulation::get_summary :: new Simulation::new :: now Simulation::n",
+      "create_sla_monitor :: create_summary Simulation::create_summary :: create_tracer Simulation::create_tracer :: events Simulation::events :: get_resource Simulation::get_resource :: get_summary Simulation::get_summary :: new Simulation::new :: now Simulation::now :: register_process Sim",
+      "e_at :: start_process Simulation::start_process :: step Simulation::step moonsim A high-performance deterministic discrete-event and multi-agent systems simulation framework in MoonBit simulation des deterministic systems queue moon add wcx789ll/moonsim@0.1.2 Download zip Author wcx789ll Vers",
+      "deterministic discrete-event and multi-agent systems simulation framework in MoonBit simulation des deterministic systems queue moon add wcx789ll/moonsim@0.1.2 Download zip Author wcx789ll Version 0.1.2 License Apache-2.0 Repository github.com/wcx789ll/moonsim Last updated 2 months ago Downlo",
+      "ry github.com/wcx789ll/moonsim Last updated 2 months ago Downloads 17 README # MoonSim MoonSim is a deterministic discrete-event and distributed-network simulation framework written in MoonBit. It models virtual time, stable event ordering, resource contention, deadlines, packet loss, bandwid"
+    ]
+  },
+  {
+    "name": "mokomoking2501/lockwire",
+    "version": "0.1.0",
+    "url": "https://mooncakes.io/docs/mokomoking2501/lockwire@0.1.0",
+    "risk": "中：虚拟时钟和仿真基础设施相似",
+    "features": "确定性仿真/重放/故障注入，Instant、Duration、ClockRelation、VirtualClock、时钟域。",
+    "local": "Timestamp、Clock、simulate",
+    "boundary": "工业现场总线运行测试底座，不能据领域不同排除时钟与仿真功能交集。",
+    "evidence_file": "research/2026-10-19/pages/mokomoking2501__lockwire--6ef4c0775564.txt",
+    "evidence_available": true,
+    "excerpts": [
+      "mple U BranchLabelCoverage U BuggifyGate U CancelReason U CapabilityProfile U Channel U ChannelId U ClockRelation U Container U CrossStamp U DcDomain U DiffFingerprint U DomainCrossStamp U DomainId U DomainInstant U Duration U EndpointId U Event U EventState U FabricBackgroundFlow U FabricCap",
+      "eactorBackendDescriptor U ReactorBackendKind U ReactorBackendReport U ReactorBoundary U Recording U Replay U Resource U ResourceLease U ResourceSnapshot U RuntimeBenchmarkReport U RxEvent U SeedFailureHistogramBucket U SegmentHop U SegmentLine U SegmentNode U SegmentRun U SimDigest U S",
+      "ctSidecar U TraceDirection U TraceEvent U TraceLog U TransportError U TxEvent U Uncertain U VTime U VirtualClock U VirtualCrossStamper U WallDomain V all_of V any_of V arbitrated_bus_offline_report V backend_profile_label V backend_profiles V buggify_swarm_coverage_report_fixture V buggify_s",
+      "kspace member in the Isochronon framework. It is a deterministic run-test substrate for simulation, replay, fault injection, and future native/wasm differential runs. # Package Structure Package Layer Current role core Core contracts Frame/Endpoint/Medium/Reactor contracts, event order",
+      "ember in the Isochronon framework. It is a deterministic run-test substrate for simulation, replay, fault injection, and future native/wasm differential runs. # Package Structure Package Layer Current role core Core contracts Frame/Endpoint/Medium/Reactor contracts, event ordering helpers clock",
+      "rent role core Core contracts Frame/Endpoint/Medium/Reactor contracts, event ordering helpers clock Clock layer Typed Instant[D] , ClockRelation , and deterministic VirtualClock driver Driver seam Native link-driver catalog, provider-owned master harness descriptors, and trace evidence driv"
+    ]
+  },
+  {
+    "name": "cauchyQ/moonbit-causalkit",
+    "version": "0.1.0",
+    "url": "https://mooncakes.io/docs/cauchyQ/moonbit-causalkit@0.1.0",
+    "risk": "邻近：时钟和事件仿真概念相似",
+    "features": "HLC、版本向量、因果时间、延迟/离线消息仿真。",
+    "local": "Timestamp、ClockEvent、simulate",
+    "boundary": "逻辑/因果时钟与物理时钟同步解决的问题不同；不能据此认定同一 PTP 实现。",
+    "evidence_file": "research/2026-10-19/pages/cauchyQ__moonbit-causalkit--ebdcc1aca791.txt",
+    "evidence_available": true,
+    "excerpts": [
+      " ReplicationBatch::length :: new ReplicationBatch::new :: operations ReplicationBatch::operations T Simulator :: advance_to Simulator::advance_to :: local_event Simulator::local_event :: new Simulator::new :: pending Simulator::pending :: replicas Simulator::replicas :: send Simulator::se",
+      "h :: new ReplicationBatch::new :: operations ReplicationBatch::operations T Simulator :: advance_to Simulator::advance_to :: local_event Simulator::local_event :: new Simulator::new :: pending Simulator::pending :: replicas Simulator::replicas :: send Simulator::send :: set_online Simulat",
+      "rations ReplicationBatch::operations T Simulator :: advance_to Simulator::advance_to :: local_event Simulator::local_event :: new Simulator::new :: pending Simulator::pending :: replicas Simulator::replicas :: send Simulator::send :: set_online Simulator::set_online :: time Simulator::tim",
+      "ations T Simulator :: advance_to Simulator::advance_to :: local_event Simulator::local_event :: new Simulator::new :: pending Simulator::pending :: replicas Simulator::replicas :: send Simulator::send :: set_online Simulator::set_online :: time Simulator::time :: trace Simulator::trace ::",
+      "nce_to Simulator::advance_to :: local_event Simulator::local_event :: new Simulator::new :: pending Simulator::pending :: replicas Simulator::replicas :: send Simulator::send :: set_online Simulator::set_online :: time Simulator::time :: trace Simulator::trace :: vector_of Simulator::vect",
+      " local_event Simulator::local_event :: new Simulator::new :: pending Simulator::pending :: replicas Simulator::replicas :: send Simulator::send :: set_online Simulator::set_online :: time Simulator::time :: trace Simulator::trace :: vector_of Simulator::vector_of T SimulatorError T Stabil"
+    ]
+  },
+  {
+    "name": "SCL-NN/moontracekit",
+    "version": "0.2.0",
+    "url": "https://mooncakes.io/docs/SCL-NN/moontracekit@0.2.0",
+    "risk": "邻近：逻辑时钟",
+    "features": "Lamport/向量时钟、happens-before 和因果缓冲。",
+    "local": "Timestamp、ClockEvent（仅概念层）",
+    "boundary": "没有证据表明该包提供 IEEE 1588 或本地物理时间伺服。",
+    "evidence_file": "research/2026-10-19/pages/SCL-NN__moontracekit--ddf14c4bdd31.txt",
+    "evidence_available": true,
+    "excerpts": [
+      "t_pairs V sample_concurrent_events V sample_linear_events V sample_out_of_order_events moontracekit Logical clocks, vector clocks, happens-before analysis, and causal buffers for MoonBit. causality vector-clock lamport-clock distributed happens-before moon add SCL-NN/moontracekit@0.2.0 Downloa",
+      "_concurrent_events V sample_linear_events V sample_out_of_order_events moontracekit Logical clocks, vector clocks, happens-before analysis, and causal buffers for MoonBit. causality vector-clock lamport-clock distributed happens-before moon add SCL-NN/moontracekit@0.2.0 Download zip Author SC",
+      "nts V sample_linear_events V sample_out_of_order_events moontracekit Logical clocks, vector clocks, happens-before analysis, and causal buffers for MoonBit. causality vector-clock lamport-clock distributed happens-before moon add SCL-NN/moontracekit@0.2.0 Download zip Author SCL-NN Version 0.2",
+      "s-before analysis, and causal buffers for MoonBit. causality vector-clock lamport-clock distributed happens-before moon add SCL-NN/moontracekit@0.2.0 Download zip Author SCL-NN Version 0.2.0 License Apache-2.0 Repository github.com/SCL-NN/MoonTraceKit Last updated 3 months ago Downloads 11 REA",
+      "MoonBit foundation library for causal reasoning in distributed systems. It provides Lamport clocks, vector clocks, happens-before comparison, concurrent event detection, causal frontier calculation, and a causal delivery buffer for out-of-order messages. # Highlights LamportClock: local tick,",
+      "ion library for causal reasoning in distributed systems. It provides Lamport clocks, vector clocks, happens-before comparison, concurrent event detection, causal frontier calculation, and a causal delivery buffer for out-of-order messages. # Highlights LamportClock: local tick, remote observat"
+    ]
+  },
+  {
+    "name": "Asterless/MoonPtime",
+    "version": "0.1.2",
+    "url": "https://mooncakes.io/docs/Asterless/MoonPtime@0.1.2",
+    "risk": "基础能力重合：时间表示和运算",
+    "features": "POSIX 高精度时间、不可变时间表示、时间运算和格式化。",
+    "local": "Timestamp、timestamp_parts、add/sub/abs",
+    "boundary": "高精度时间基础能力已有包；不是 PTP 协议项目。",
+    "evidence_file": "research/2026-10-19/pages/Asterless__MoonPtime--f41aa9903902.txt",
+    "evidence_available": true,
+    "excerpts": [
+      "est) 0.1.0 Expand all Collapse all src → MoonPtime A POSIX time library for MoonBit with picosecond precision, inspired by OCaml's ptime library. Provides immutable time representation, RFC 3339 formatting, and comprehensive time arithmetic operations. time datetime ptime posix rfc3339 ti",
+      "y for MoonBit with picosecond precision, inspired by OCaml's ptime library. Provides immutable time representation, RFC 3339 formatting, and comprehensive time arithmetic operations. time datetime ptime posix rfc3339 timestamp duration span moon add Asterless/MoonPtime@0.1.2 Download zip Autho",
+      " ptime library. Provides immutable time representation, RFC 3339 formatting, and comprehensive time arithmetic operations. time datetime ptime posix rfc3339 timestamp duration span moon add Asterless/MoonPtime@0.1.2 Download zip Author Asterless Version 0.1.2 License Apache-2.0 Repository ",
+      "onths ago Downloads 31 README # MoonPtime - POSIX Time Library for MoonBit | 中文 A lightweight, high-precision time handling library for MoonBit, focused on POSIX timestamps and time spans with picosecond accuracy. # What is Ptime? Ptime is a time library that deals with time points and ti",
+      "eals with time points and time spans rather than complex calendars and timezones. It provides: High precision - Picosecond-level accuracy (12 decimal places) Simple API - Focus on time points and durations POSIX compliant - Uses standard Unix timestamps RFC 3339 support - Standard time st",
+      "t - Standard time string formatting Pure MoonBit - No external dependencies # Features ✅ POSIX time representation (seconds since 1970-01-01 00:00:00 UTC) ✅ Picosecond precision for sub-second accuracy ✅ Time point arithmetic (add/subtract spans) ✅ Time span operations (add, subtract, multiply"
+    ]
+  },
+  {
+    "name": "SupremeHuaji/ptime",
+    "version": "0.1.0",
+    "url": "https://mooncakes.io/docs/SupremeHuaji/ptime@0.1.0",
+    "risk": "基础能力重合：时间表示和运算",
+    "features": "皮秒精度时间、时间戳转换与时间运算。",
+    "local": "Timestamp、timestamp_parts、add/sub",
+    "boundary": "时间精度与接口不同，基础时间功能仍有交集。",
+    "evidence_file": "research/2026-10-19/pages/SupremeHuaji__ptime--398f4e217e58.txt",
+    "evidence_available": true,
+    "excerpts": [
+      ") Expand all Collapse all src → README ptime A lightweight time library for MoonBit with picosecond precision time posix rfc3339 moonbit moon add SupremeHuaji/ptime@0.1.0 Download zip Author SupremeHuaji Version 0.1.0 License Apache-2.0 Repository github.com/SupremeHuaji/ptime Last update",
+      "English | 简体中文 ptime is a lightweight time library designed for MoonBit, providing picosecond-level precision time processing capabilities. It supports multiple time format conversions, time calculations, and human-readable time displays, making it an ideal choice for handling time-relate",
+      "splays, making it an ideal choice for handling time-related tasks. # ✨ Key Features • ⏱️ Picosecond Precision - Supports precise time calculations for nanoseconds, microseconds, milliseconds, and seconds • 🌍 RFC 3339 Support - Complete ISO 8601 / RFC 3339 time format parsing and generatio",
+      "-related tasks. # ✨ Key Features • ⏱️ Picosecond Precision - Supports precise time calculations for nanoseconds, microseconds, milliseconds, and seconds • 🌍 RFC 3339 Support - Complete ISO 8601 / RFC 3339 time format parsing and generation • 📅 Multiple Time Formats - Supports human-readable",
+      " = to_relative_time ( past , now ) println ( \" Relative time: \\{ relative } \" ) // \"1 hour ago\" # 📊 Timestamp Conversion Supports conversion between various timestamp formats. let time = PTime :: { seconds : 1694764200 , picoseconds : 500000000000 } // Various timestamp formats println ( ",
+      "ime: \\{ relative } \" ) // \"1 hour ago\" # 📊 Timestamp Conversion Supports conversion between various timestamp formats. let time = PTime :: { seconds : 1694764200 , picoseconds : 500000000000 } // Various timestamp formats println ( \" Unix timestamp: \\{ to_unix_timestamp ( time ) } \" ) pri"
+    ]
+  },
+  {
+    "name": "iceBear67/time",
+    "version": "0.1.2",
+    "url": "https://mooncakes.io/docs/iceBear67/time@0.1.2",
+    "risk": "基础能力邻近：日期时间和时钟",
+    "features": "日期时间、Instant、Duration、时钟以及 JS/Native 支持。",
+    "local": "Timestamp",
+    "boundary": "日期时间库与 PTP 同步协议不同。",
+    "evidence_file": "research/2026-10-19/pages/iceBear67__time--129c9d3af01b.txt",
+    "evidence_available": true,
+    "excerpts": [
+      "llapse all README T DateTimeFormatter :: basic_iso_date DateTimeFormatter::basic_iso_date :: format_instant DateTimeFormatter::format_instant :: format_local_date DateTimeFormatter::format_local_date :: format_local_date_time DateTimeFormatter::format_local_date_time :: format_local_tim",
+      "ter :: basic_iso_date DateTimeFormatter::basic_iso_date :: format_instant DateTimeFormatter::format_instant :: format_local_date DateTimeFormatter::format_local_date :: format_local_date_time DateTimeFormatter::format_local_date_time :: format_local_time DateTimeFormatter::format_local_",
+      "atter::format_local_time :: format_zoned_date_time DateTimeFormatter::format_zoned_date_time :: iso_instant DateTimeFormatter::iso_instant :: iso_local_date DateTimeFormatter::iso_local_date :: iso_local_date_time DateTimeFormatter::iso_local_date_time :: iso_local_time DateTimeFormatte",
+      "mat_zoned_date_time DateTimeFormatter::format_zoned_date_time :: iso_instant DateTimeFormatter::iso_instant :: iso_local_date DateTimeFormatter::iso_local_date :: iso_local_date_time DateTimeFormatter::iso_local_date_time :: iso_local_time DateTimeFormatter::iso_local_time :: iso_zoned_",
+      ":: pattern DateTimeFormatter::pattern :: rfc_1123_date_time DateTimeFormatter::rfc_1123_date_time T Duration :: abs Duration::abs :: compare Duration::compare :: divided_by Duration::divided_by :: equals Duration::equals :: is_greater_than Duration::is_greater_than :: is_greater_than_or_",
+      "imeFormatter::pattern :: rfc_1123_date_time DateTimeFormatter::rfc_1123_date_time T Duration :: abs Duration::abs :: compare Duration::compare :: divided_by Duration::divided_by :: equals Duration::equals :: is_greater_than Duration::is_greater_than :: is_greater_than_or_equal_to Duratio"
+    ]
+  },
+  {
+    "name": "walkzzz/moondes",
+    "version": "0.5.0",
+    "url": "https://mooncakes.io/docs/walkzzz/moondes@0.5.0",
+    "risk": "邻近：离散事件仿真框架",
+    "features": "事件队列、仿真时间、进程调度、资源和实验管理。",
+    "local": "simulate（实验与时间推进层）",
+    "boundary": "通用仿真基础设施，未发现 PTP 实现证据。",
+    "evidence_file": "research/2026-10-19/pages/walkzzz__moondes--cbd0c102a7dc.txt",
+    "evidence_available": true,
+    "excerpts": [
+      "V new_config V new_env V new_exclusive V new_plugin_manager V process V version moondes MoonDES - 通用离散事件仿真引擎，基于 MoonBit 构建 simulation discrete-event des moonbit moon add walkzzz/moondes@0.5.0 Download zip Author walkzzz Version 0.5.0 License Apache-2.0 Repository github.com/toadium/M",
+      "w_config V new_env V new_exclusive V new_plugin_manager V process V version moondes MoonDES - 通用离散事件仿真引擎，基于 MoonBit 构建 simulation discrete-event des moonbit moon add walkzzz/moondes@0.5.0 Download zip Author walkzzz Version 0.5.0 License Apache-2.0 Repository github.com/toadium/Moo",
+      "2.0 Repository github.com/toadium/MoonDES Last updated 2 months ago Downloads 10 README # MoonDES 通用离散事件仿真引擎，基于国产 MoonBit 编译型语言构建。 MoonDES 提供五层模块化架构的离散事件仿真能力，对标 Python SimPy 与 Java DESMO-J，面向工业数字化、智慧管网、生产调度等工程仿真场景。 # 特性 最小堆优先级事件队列 ：按 (time, priority) 排序，保证时序正确性 协程进程调度 ：进程可 timeout / ",
+      "Repository github.com/toadium/MoonDES Last updated 2 months ago Downloads 10 README # MoonDES 通用离散事件仿真引擎，基于国产 MoonBit 编译型语言构建。 MoonDES 提供五层模块化架构的离散事件仿真能力，对标 Python SimPy 与 Java DESMO-J，面向工业数字化、智慧管网、生产调度等工程仿真场景。 # 特性 最小堆优先级事件队列 ：按 (time, priority) 排序，保证时序正确性 协程进程调度 ：进程可 timeout / wa",
+      "dated 2 months ago Downloads 10 README # MoonDES 通用离散事件仿真引擎，基于国产 MoonBit 编译型语言构建。 MoonDES 提供五层模块化架构的离散事件仿真能力，对标 Python SimPy 与 Java DESMO-J，面向工业数字化、智慧管网、生产调度等工程仿真场景。 # 特性 最小堆优先级事件队列 ：按 (time, priority) 排序，保证时序正确性 协程进程调度 ：进程可 timeout / wait_event / request_resource ，挂起恢复不占用线程 三类资源模型 ：",
+      "d 2 months ago Downloads 10 README # MoonDES 通用离散事件仿真引擎，基于国产 MoonBit 编译型语言构建。 MoonDES 提供五层模块化架构的离散事件仿真能力，对标 Python SimPy 与 Java DESMO-J，面向工业数字化、智慧管网、生产调度等工程仿真场景。 # 特性 最小堆优先级事件队列 ：按 (time, priority) 排序，保证时序正确性 协程进程调度 ：进程可 timeout / wait_event / request_resource ，挂起恢复不占用线程 三类资源模型 ：独占"
+    ]
+  },
+  {
+    "name": "dxh8888/moonleasekit",
+    "version": "0.1.0",
+    "url": "https://mooncakes.io/docs/dxh8888/moonleasekit@0.1.0",
+    "risk": "邻近：选主与故障模拟概念",
+    "features": "租约、fencing token、leader election、故障切换仿真。",
+    "local": "select_grandmaster（只在选主这一抽象层）",
+    "boundary": "租约/多数派选举与 BMCA 质量元组比较不同；不能认定 BMCA 重复。",
+    "evidence_file": "research/2026-10-19/pages/dxh8888__moonleasekit--8e212a07488b.txt",
+    "evidence_available": true,
+    "excerpts": [
+      " TimedCommand V audit_events V certify_votes V decision_kind_name V json_escape V quorum_size V run_failover_simulation V select_candidate V state_is_valid V validate_state moonleasekit Deterministic leases, fencing tokens and leader election primitives for MoonBit. lease fencing-token l",
+      "events V certify_votes V decision_kind_name V json_escape V quorum_size V run_failover_simulation V select_candidate V state_is_valid V validate_state moonleasekit Deterministic leases, fencing tokens and leader election primitives for MoonBit. lease fencing-token leader-election distributed-sys",
+      "t_candidate V state_is_valid V validate_state moonleasekit Deterministic leases, fencing tokens and leader election primitives for MoonBit. lease fencing-token leader-election distributed-systems deterministic moon add dxh8888/moonleasekit@0.1.0 Download zip Author dxh8888 Version 0.1.0 License",
+      "vocation detection Validation for state restored from external storage Stable JSON and reproducible failover simulation # Install moon add dxh8888/moonleasekit # Example let acquired = @moonleasekit. LeaseState :: new ( \"jobs/leader\" ) .apply ( Acquire ( \"worker-a\" , 10 , None ) , 100 , ",
+      "un cmd/main --target js\nmoon run bench/main --target js The benchmark performs 50,000 deterministic failovers and verifies that every old writer after the first takeover is rejected. # Scope This library provides embeddable coordination primitives. It intentionally does not implement tra",
+      "dit_valid : Bool evidence : Int } derive ( Eq , @moonbitlang/core/debug. Debug Debug ) Reproducible failover simulation evidence. # SimulationReport::to_json source fn SimulationReport :: to_json ( self : SimulationReport ) -> String Encodes reproducible simulation evidence as stable JSO"
+    ]
+  },
+  {
+    "name": "lxyhgvb/moonbit-radioframe",
+    "version": "0.2.0",
+    "url": "https://mooncakes.io/docs/lxyhgvb/moonbit-radioframe@0.2.0",
+    "risk": "邻近：网络链路仿真",
+    "features": "无线帧、链路仿真、安全、路由及 6LoWPAN。",
+    "local": "NetworkModel、simulate",
+    "boundary": "无线协议领域不同；需避免把通用链路模拟宣传为生态空白。",
+    "evidence_file": "research/2026-10-19/pages/lxyhgvb__moonbit-radioframe--89bb62d34556.txt",
+    "evidence_available": true,
+    "excerpts": [
+      ") Expand all Collapse all cmd → src → test → README moonbit-radioframe MoonBit wireless frame, link simulation, security, routing, and 6LoWPAN toolkit wireless ieee802154 frame simulation bitstream mac sixlowpan ipv6 routing moon add lxyhgvb/moonbit-radioframe@0.2.0 Download zip Author lxy",
+      "t wireless frame, link simulation, security, routing, and 6LoWPAN toolkit wireless ieee802154 frame simulation bitstream mac sixlowpan ipv6 routing moon add lxyhgvb/moonbit-radioframe@0.2.0 Download zip Author lxyhgvb Version 0.2.0 License Apache-2.0 Repository github.com/lxyhgvb/moonbit-r",
+      "ioFrame moonbit-radioframe is a pure MoonBit toolkit for low-power wireless protocol encoding, link simulation, security, routing, and packet analysis. It is designed for deterministic tests, embedded-protocol experiments, and tooling that needs to inspect or generate IEEE 802.15.4-family ",
+      "ernet checksum, parity helpers, and corruption diagnostics. In-memory channel impairment models for loss, latency, jitter, duplication, collision windows, fading, noise, and BER experiments. CSMA/CA, ACK/retry accounting, superframe timing, GTS allocation, MAC command payloads, RSSI/",
+      " parity helpers, and corruption diagnostics. In-memory channel impairment models for loss, latency, jitter, duplication, collision windows, fading, noise, and BER experiments. CSMA/CA, ACK/retry accounting, superframe timing, GTS allocation, MAC command payloads, RSSI/LQI, path-loss mo",
+      "A/CA, ACK/retry accounting, superframe timing, GTS allocation, MAC command payloads, RSSI/LQI, path-loss models, AODV-Jr, and RPL building blocks. AES-128 and IEEE 802.15.4 / RFC 3610 AES-CCM* authenticated encryption, MIC generation, CTR mode, and replay-window checks. A stateless 6"
+    ]
+  },
+  {
+    "name": "CYang-dep/moonosc",
+    "version": "0.2.0",
+    "url": "https://mooncakes.io/docs/CYang-dep/moonosc@0.2.0",
+    "risk": "基础能力邻近：二进制时间标签",
+    "features": "OSC 编解码、NTP era-zero timetag 与 Unix 时间转换；时钟同步由调用者提供。",
+    "local": "Timestamp、encode/decode（时间及报文概念）",
+    "boundary": "不是 NTP 时钟同步器，更不是 PTP 实现。",
+    "evidence_file": "research/2026-10-19/pages/CYang-dep__moonosc--1a17274c317a.txt",
+    "evidence_available": true,
+    "excerpts": [
+      "d SlipFramer::feed :: finish SlipFramer::finish :: new SlipFramer::new :: reset SlipFramer::reset T TimeTag :: add_ticks TimeTag::add_ticks :: bits TimeTag::bits :: distance_ticks TimeTag::distance_ticks :: equal TimeTag::equal :: from_bits TimeTag::from_bits :: from_unix TimeTag::from_",
+      " finish SlipFramer::finish :: new SlipFramer::new :: reset SlipFramer::reset T TimeTag :: add_ticks TimeTag::add_ticks :: bits TimeTag::bits :: distance_ticks TimeTag::distance_ticks :: equal TimeTag::equal :: from_bits TimeTag::from_bits :: from_unix TimeTag::from_unix :: immediate Tim",
+      ":: new SlipFramer::new :: reset SlipFramer::reset T TimeTag :: add_ticks TimeTag::add_ticks :: bits TimeTag::bits :: distance_ticks TimeTag::distance_ticks :: equal TimeTag::equal :: from_bits TimeTag::from_bits :: from_unix TimeTag::from_unix :: immediate TimeTag::immediate :: is_immed",
+      "SlipFramer::reset T TimeTag :: add_ticks TimeTag::add_ticks :: bits TimeTag::bits :: distance_ticks TimeTag::distance_ticks :: equal TimeTag::equal :: from_bits TimeTag::from_bits :: from_unix TimeTag::from_unix :: immediate TimeTag::immediate :: is_immediate TimeTag::is_immediate :: no",
+      "d_ticks TimeTag::add_ticks :: bits TimeTag::bits :: distance_ticks TimeTag::distance_ticks :: equal TimeTag::equal :: from_bits TimeTag::from_bits :: from_unix TimeTag::from_unix :: immediate TimeTag::immediate :: is_immediate TimeTag::is_immediate :: not_equal TimeTag::not_equal :: res",
+      ": bits TimeTag::bits :: distance_ticks TimeTag::distance_ticks :: equal TimeTag::equal :: from_bits TimeTag::from_bits :: from_unix TimeTag::from_unix :: immediate TimeTag::immediate :: is_immediate TimeTag::is_immediate :: not_equal TimeTag::not_equal :: resolve TimeTag::resolve :: to_"
+    ]
+  },
+  {
+    "name": "usagi-star/mooncap",
+    "version": "0.1.0",
+    "url": "https://mooncakes.io/docs/usagi-star/mooncap@0.1.0",
+    "risk": "邻近：网络报文处理",
+    "features": "PCAP/PCAPNG 及常见网络协议离线解码。",
+    "local": "encode/decode（仅二进制报文领域）",
+    "boundary": "没有证据表明根文档列出的协议覆盖 PTP。",
+    "evidence_file": "research/2026-10-19/pages/usagi-star__mooncap--5cab69b1bd26.txt",
+    "evidence_available": true,
+    "excerpts": [
+      "1.0 (latest) 0.1.0 (latest) Expand all Collapse all cmd → src → README mooncap Pure MoonBit offline PCAP/PCAPNG parsing and protocol decoding pcap pcapng network packet tcp moon add usagi-star/mooncap@0.1.0 Download zip Author usagi-star Version 0.1.0 License Apache-2.0 Repository gi",
+      "latest) 0.1.0 (latest) Expand all Collapse all cmd → src → README mooncap Pure MoonBit offline PCAP/PCAPNG parsing and protocol decoding pcap pcapng network packet tcp moon add usagi-star/mooncap@0.1.0 Download zip Author usagi-star Version 0.1.0 License Apache-2.0 Repository github.",
+      "lapse all cmd → src → README mooncap Pure MoonBit offline PCAP/PCAPNG parsing and protocol decoding pcap pcapng network packet tcp moon add usagi-star/mooncap@0.1.0 Download zip Author usagi-star Version 0.1.0 License Apache-2.0 Repository github.com/usagi-star/mooncap Last updated 2",
+      " all cmd → src → README mooncap Pure MoonBit offline PCAP/PCAPNG parsing and protocol decoding pcap pcapng network packet tcp moon add usagi-star/mooncap@0.1.0 Download zip Author usagi-star Version 0.1.0 License Apache-2.0 Repository github.com/usagi-star/mooncap Last updated 2 mont",
+      "E mooncap Pure MoonBit offline PCAP/PCAPNG parsing and protocol decoding pcap pcapng network packet tcp moon add usagi-star/mooncap@0.1.0 Download zip Author usagi-star Version 0.1.0 License Apache-2.0 Repository github.com/usagi-star/mooncap Last updated 2 months ago Downloads 9 De",
+      " months ago Downloads 9 Dependencies moonbitlang/async 0.20.3 README # MoonCap Pure MoonBit offline PCAP/PCAPNG parsing, protocol decoding, canonical flow-key primitives, and bounded per-direction TCP range accumulation. MoonCap fills an upstream gap in the MoonBit networking ecosyst"
+    ]
+  },
+  {
+    "name": "sbqrre/moonbit-mcu-hal",
+    "version": "0.2.1",
+    "url": "https://mooncakes.io/docs/sbqrre/moonbit-mcu-hal@0.2.1",
+    "risk": "邻近：硬件时间与确定性模拟",
+    "features": "timer/RTC、外设抽象、虚拟硬件和确定性内存后端。",
+    "local": "Timestamp、simulate（通用基础概念）",
+    "boundary": "不能等同于 IEEE 1588 硬件时间戳或 PTP 协议。",
+    "evidence_file": "research/2026-10-19/pages/sbqrre__moonbit-mcu-hal--e69bcdda19ff.txt",
+    "evidence_available": true,
+    "excerpts": [
+      " Expand all Collapse all src → moonbit-mcu-hal MoonBit Microcontroller Hardware Abstraction Layer & Simulation Suite mcu hal hardware embedded gpio uart spi i2c simulation moon add sbqrre/moonbit-mcu-hal@0.2.1 Download zip Author sbqrre Version 0.2.1 License Apache-2.0 Repository github",
+      "ontroller Hardware Abstraction Layer & Simulation Suite mcu hal hardware embedded gpio uart spi i2c simulation moon add sbqrre/moonbit-mcu-hal@0.2.1 Download zip Author sbqrre Version 0.2.1 License Apache-2.0 Repository github.com/sbqrre/moonbit-mcu-hal Last updated last month Downloads",
+      "th Downloads 15 README # moonbit-mcu-hal moonbit-mcu-hal is a pure-MoonBit hardware-abstraction and simulation toolkit for embedded applications. It provides typed peripheral models, deterministic in-memory backends, protocol codecs, board profiles, and application-level building blocks",
+      "-abstraction and simulation toolkit for embedded applications. It provides typed peripheral models, deterministic in-memory backends, protocol codecs, board profiles, and application-level building blocks that can be tested without physical hardware. # Features GPIO, UART, SPI, I²C, PWM, ADC,",
+      "ing blocks that can be tested without physical hardware. # Features GPIO, UART, SPI, I²C, PWM, ADC, timers, RTC, DMA, locks, RTOS scheduling, and device-tree parsing. STM32F4, RP2040 Pico, and ESP32 peripheral adapters. Virtual MMIO, GPIO, EEPROM, SPI flash, and bus components for zer",
+      "ks that can be tested without physical hardware. # Features GPIO, UART, SPI, I²C, PWM, ADC, timers, RTC, DMA, locks, RTOS scheduling, and device-tree parsing. STM32F4, RP2040 Pico, and ESP32 peripheral adapters. Virtual MMIO, GPIO, EEPROM, SPI flash, and bus components for zero-hard"
+    ]
+  },
+  {
+    "name": "mokomoking2501/MoonECAT",
+    "version": "0.2.0",
+    "url": "https://mooncakes.io/docs/mokomoking2501/MoonECAT@0.2.0",
+    "risk": "较高：工业分布式时钟功能相似",
+    "features": "EtherCAT 主站，文档列出 Distributed Clock、SYNC0 配置、FRMW 漂移补偿、传播延迟和 DC jitter profiling。",
+    "local": "Clock::apply_sync、NetworkModel、simulate（漂移、延迟和同步目标）",
+    "boundary": "EtherCAT DC 与 IEEE 1588 协议不同；实际工业时间同步目标和部分功能相近，不能据协议差异排除。",
+    "evidence_file": "research/2026-10-19/pages/mokomoking2501__MoonECAT--693a240a1797.txt",
+    "evidence_available": true,
+    "excerpts": [
+      "ario\nmoon run cmd/main scenario -- --scenario basic-timeout --cycles 200 --json # Analysis Engine # DC jitter profiling\nmoon run cmd/main jitter-profile -- --trace session.ndjson --period-ns 1000000 --json\n\n# PDO auto-tuning (online parameter identification)\nmoon run cmd/main auto-tune --",
+      " Monitor/Verdict : Pass/Warn/Fail/Block verdicts with composable monitor registry Analysis engine : DC jitter profiling, PDO auto-tuning, topology health, cycle perf, comm quality scoring Distributed Clock : SYNC0 configuration + FRMW drift compensation + propagation delay ENI/ESI tooling",
+      "is engine : DC jitter profiling, PDO auto-tuning, topology health, cycle perf, comm quality scoring Distributed Clock : SYNC0 configuration + FRMW drift compensation + propagation delay ENI/ESI tooling : XML→JSON converter with unified configuration model VirtualBus : Multi-slave protocol-level s",
+      "r profiling, PDO auto-tuning, topology health, cycle perf, comm quality scoring Distributed Clock : SYNC0 configuration + FRMW drift compensation + propagation delay ENI/ESI tooling : XML→JSON converter with unified configuration model VirtualBus : Multi-slave protocol-level simulatio",
+      "g, topology health, cycle perf, comm quality scoring Distributed Clock : SYNC0 configuration + FRMW drift compensation + propagation delay ENI/ESI tooling : XML→JSON converter with unified configuration model VirtualBus : Multi-slave protocol-level simulation with SDO/Emergency emulation VirtualSl",
+      "ycle perf, comm quality scoring Distributed Clock : SYNC0 configuration + FRMW drift compensation + propagation delay ENI/ESI tooling : XML→JSON converter with unified configuration model VirtualBus : Multi-slave protocol-level simulation with SDO/Emergency emulation VirtualSlaveTemplate : ESI JS"
+    ]
+  },
+  {
+    "name": "mokomoking2501/isoproject",
+    "version": "0.1.0",
+    "url": "https://mooncakes.io/docs/mokomoking2501/isoproject@0.1.0",
+    "risk": "邻近：同步保证的声明模型",
+    "features": "ClockSyncGuarantee 枚举 NoSync/Causal/Windowed/Physical 以及链路能力模型。",
+    "local": "Clock/NetworkModel（仅建模概念）",
+    "boundary": "能力声明不是时钟同步算法，没有证据证明它实现 PTP。",
+    "evidence_file": "research/2026-10-19/pages/mokomoking2501__isoproject--11efe51f7ee1.txt",
+    "evidence_available": true,
+    "excerpts": [
+      "bench_server → workbench_shared → workbench_view → README T Application :: make Application::make T ClockSyncGuarantee :: label ClockSyncGuarantee::label T DeviceNode :: make DeviceNode::make T DeviceTree :: contains_device DeviceTree::contains_device :: empty DeviceTree::empty :: make DeviceTree:",
+      "red → workbench_view → README T Application :: make Application::make T ClockSyncGuarantee :: label ClockSyncGuarantee::label T DeviceNode :: make DeviceNode::make T DeviceTree :: contains_device DeviceTree::contains_device :: empty DeviceTree::empty :: make DeviceTree::make T IsoProject :: lint I",
+      "each device path: single initiator, bounded delay, total-order delivery, partition possibility, and clock-sync guarantee. JSON keeps it as a nested capabilities object and the YAML-like device row appends the same five values. Missing vectors, positive task deadlines on unbounded paths, and physical",
+      "e_bindings ? : Array [ ProtocolRoleBinding ], library_assets ? : Array [ String ]) -> Application # ClockSyncGuarantee source pub ( all ) enum ClockSyncGuarantee { NoSync Causal Windowed Physical } derive ( Eq , @moonbitlang/core/debug. Debug Debug ) # ClockSyncGuarantee::label source fn ClockSync",
+      "], library_assets ? : Array [ String ]) -> Application # ClockSyncGuarantee source pub ( all ) enum ClockSyncGuarantee { NoSync Causal Windowed Physical } derive ( Eq , @moonbitlang/core/debug. Debug Debug ) # ClockSyncGuarantee::label source fn ClockSyncGuarantee :: label ( self : ClockSyncGuaran",
+      "uarantee { NoSync Causal Windowed Physical } derive ( Eq , @moonbitlang/core/debug. Debug Debug ) # ClockSyncGuarantee::label source fn ClockSyncGuarantee :: label ( self : ClockSyncGuarantee ) -> String # DeviceNode source pub ( all ) struct DeviceNode { id : String label : String family : String"
+    ]
+  },
+  {
+    "name": "mokomoking2501/profinet_master",
+    "version": "0.1.0",
+    "url": "https://mooncakes.io/docs/mokomoking2501/profinet_master@0.1.0",
+    "risk": "标准名命中：未证实 PTP 实现",
+    "features": "工业 PROFINET 主站；snmp_feature_ieee_8021as_mib_optional API 和本地实时发送周期控制。",
+    "local": "协议/时钟相关领域",
+    "boundary": "802.1AS 可选 MIB 开关不等于 gPTP 协议实现；不能将该命中直接判作 PTP 重复。",
+    "evidence_file": "research/2026-10-19/pages/mokomoking2501__profinet_master--0c58f5834e0c.txt",
+    "evidence_available": true,
+    "excerpts": [
+      "ed_after_ar_abort V snmp_explicit_enable_required V snmp_feature_bridge_mib_optional V snmp_feature_ieee_8021as_mib_optional V snmp_feature_lldp_mib_required V snmp_feature_mib2_required V snmp_feature_pno_mib_optional V snmp_mib_update_probeability V snmp_mib_update_probeability_class V sn",
+      "face \"I226-V #2\" 192.168.3.4 controller 5000\nmoon run cmd/main --target native -- rpc-b4-io-write --clock highres --iface \"I226-V #2\" 192.168.3.4 0,800,0,0,0 controller 5000\nmoon run cmd/main --target native -- rpc-b4-update-io --clock highres --iface \"I226-V #2\" 192.168.3.4 0,0,0,0,0 0,800,0",
+      "#2\" 192.168.3.4 0,800,0,0,0 controller 5000\nmoon run cmd/main --target native -- rpc-b4-update-io --clock highres --iface \"I226-V #2\" 192.168.3.4 0,0,0,0,0 0,800,0,0,0 controller 5000\nmoon run cmd/main --target native -- rpc-b4-read-io --clock highres --iface \"I226-V #2\" 192.168.3.4 controlle",
+      "168.3.4 0,0,0,0,0 0,800,0,0,0 controller 5000\nmoon run cmd/main --target native -- rpc-b4-read-io --clock highres --iface \"I226-V #2\" 192.168.3.4 controller 5000\nmoon run cmd/main --target native -- rpc-b4-alarm --clock highres --iface \"I226-V #2\" 192.168.3.4 controller 5000\nmoon run cmd/main",
+      "--iface \"I226-V #2\" 192.168.3.4 controller 5000\nmoon run cmd/main --target native -- rpc-b4-alarm --clock highres --iface \"I226-V #2\" 192.168.3.4 controller 5000\nmoon run cmd/main --target native -- rpc-read-record --iface \"I226-V #2\" 192.168.3.4 0 0 0xF830 controller 5000\nmoon run cmd/main -",
+      "_20260611.pcap 5000 192.168.3.4 controller 512\nmoon run cmd/main --target native -- pcap-baseline --clock highres --period-us 4000 --iface \"I226-V #2\" io-write-highres docs/pcap/rpc_b4_io_write_highres_4ms_20260612.pcap 5000 192.168.3.4 controller 512\nmoon run --release --target native cmd/ma"
+    ]
+  },
+  {
+    "name": "hhxhhx78/moonbit-iec104",
+    "version": "0.3.1",
+    "url": "https://mooncakes.io/docs/hhxhhx78/moonbit-iec104@0.3.1",
+    "risk": "中：工业时钟同步命令功能相似",
+    "features": "IEC 60870-5-104 带时标报文、ClockSyncTransaction、clock_sync_object 和时钟同步命令策略。",
+    "local": "ClockEvent、时钟同步目标、时间戳和报文编解码",
+    "boundary": "工业遥控的校时事务与 PTP 精密同步协议不同，但不能说工业对时功能在生态中不存在。",
+    "evidence_file": "research/2026-10-19/pages/hhxhhx78__moonbit-iec104--51e83adeca89.txt",
+    "evidence_available": true,
+    "excerpts": [
+      "nsmission::originator :: qualifier CauseOfTransmission::qualifier :: raw CauseOfTransmission::raw T ClockSyncTransaction :: activate ClockSyncTransaction::activate :: apply ClockSyncTransaction::apply :: new ClockSyncTransaction::new :: received ClockSyncTransaction::received :: status ClockSyncTran",
+      "r CauseOfTransmission::qualifier :: raw CauseOfTransmission::raw T ClockSyncTransaction :: activate ClockSyncTransaction::activate :: apply ClockSyncTransaction::apply :: new ClockSyncTransaction::new :: received ClockSyncTransaction::received :: status ClockSyncTransaction::status T CommandAudit ::",
+      "CauseOfTransmission::raw T ClockSyncTransaction :: activate ClockSyncTransaction::activate :: apply ClockSyncTransaction::apply :: new ClockSyncTransaction::new :: received ClockSyncTransaction::received :: status ClockSyncTransaction::status T CommandAudit :: attempt CommandAudit::attempt :: from C",
+      "cTransaction :: activate ClockSyncTransaction::activate :: apply ClockSyncTransaction::apply :: new ClockSyncTransaction::new :: received ClockSyncTransaction::received :: status ClockSyncTransaction::status T CommandAudit :: attempt CommandAudit::attempt :: from CommandAudit::from :: message Comman",
+      "saction::activate :: apply ClockSyncTransaction::apply :: new ClockSyncTransaction::new :: received ClockSyncTransaction::received :: status ClockSyncTransaction::status T CommandAudit :: attempt CommandAudit::attempt :: from CommandAudit::from :: message CommandAudit::message :: new CommandAudit::n",
+      "action::apply :: new ClockSyncTransaction::new :: received ClockSyncTransaction::received :: status ClockSyncTransaction::status T CommandAudit :: attempt CommandAudit::attempt :: from CommandAudit::from :: message CommandAudit::message :: new CommandAudit::new :: ticket CommandAudit::ticket :: time"
+    ]
+  },
+  {
+    "name": "Lyllyl789/moon-kalman",
+    "version": "0.2.1",
+    "url": "https://mooncakes.io/docs/Lyllyl789/moon-kalman@0.2.1",
+    "risk": "邻近：传感器时间对齐与滤波",
+    "features": "Kalman/EKF/UKF、传感器时间同步、异步传感器对时、Synchronizer 时间戳容差接受。",
+    "local": "时间戳、同步/滤波建模概念",
+    "boundary": "样本时间对齐和估计滤波不等于 PTP 物理时钟伺服，也不是本地 PI 算法重复证据。",
+    "evidence_file": "research/2026-10-19/pages/Lyllyl789__moon-kalman--3a96c1db3f1c.txt",
+    "evidence_available": true,
+    "excerpts": [
+      "ec::new :: width StreamWindowSpec::width :: with_out_of_order StreamWindowSpec::with_out_of_order T Synchronizer :: accept Synchronizer::accept :: accepted Synchronizer::accepted :: last_timestamp Synchronizer::last_timestamp :: new Synchronizer::new :: rejected Synchronizer::rejected :: res",
+      "WindowSpec::width :: with_out_of_order StreamWindowSpec::with_out_of_order T Synchronizer :: accept Synchronizer::accept :: accepted Synchronizer::accepted :: last_timestamp Synchronizer::last_timestamp :: new Synchronizer::new :: rejected Synchronizer::rejected :: reset Synchronizer::reset ",
+      "order StreamWindowSpec::with_out_of_order T Synchronizer :: accept Synchronizer::accept :: accepted Synchronizer::accepted :: last_timestamp Synchronizer::last_timestamp :: new Synchronizer::new :: rejected Synchronizer::rejected :: reset Synchronizer::reset :: tolerance Synchronizer::tolera",
+      " T Synchronizer :: accept Synchronizer::accept :: accepted Synchronizer::accepted :: last_timestamp Synchronizer::last_timestamp :: new Synchronizer::new :: rejected Synchronizer::rejected :: reset Synchronizer::reset :: tolerance Synchronizer::tolerance T TelemetrySample :: channel Telemetr",
+      "er::accept :: accepted Synchronizer::accepted :: last_timestamp Synchronizer::last_timestamp :: new Synchronizer::new :: rejected Synchronizer::rejected :: reset Synchronizer::reset :: tolerance Synchronizer::tolerance T TelemetrySample :: channel TelemetrySample::channel :: is_finite Teleme",
+      "nizer::accepted :: last_timestamp Synchronizer::last_timestamp :: new Synchronizer::new :: rejected Synchronizer::rejected :: reset Synchronizer::reset :: tolerance Synchronizer::tolerance T TelemetrySample :: channel TelemetrySample::channel :: is_finite TelemetrySample::is_finite :: new Te"
+    ]
+  },
+  {
+    "name": "mjfmjf879/moonbit_constraint",
+    "version": "0.1.0",
+    "url": "https://mooncakes.io/docs/mjfmjf879/moonbit_constraint@0.1.0",
+    "risk": "邻近：确定性离散事件模型",
+    "features": "整数事件时间、确定性事件排序、队列/服务/维护仿真和 CI 重放。",
+    "local": "simulate（确定性建模基础概念）",
+    "boundary": "约束求解/排队仿真领域不同，没有 PTP 实现证据。",
+    "evidence_file": "research/2026-10-19/pages/mjfmjf879__moonbit_constraint--8029bf92db9b.txt",
+    "evidence_available": true,
+    "excerpts": [
+      "um SimulationEventKind { Arrival ServiceStart ServiceFinish Maintenance CustomEvent } Deterministic discrete-event simulation helpers. The simulation layer is intentionally integer-based: it can replay queue, service, and maintenance scenarios in CI without wall-clock randomness. Events are or",
+      "entKind { Arrival ServiceStart ServiceFinish Maintenance CustomEvent } Deterministic discrete-event simulation helpers. The simulation layer is intentionally integer-based: it can replay queue, service, and maintenance scenarios in CI without wall-clock randomness. Events are ordered by time and t",
+      "ustomEvent } Deterministic discrete-event simulation helpers. The simulation layer is intentionally integer-based: it can replay queue, service, and maintenance scenarios in CI without wall-clock randomness. Events are ordered by time and then sequence number, making traces stable even when s"
+    ]
+  },
+  {
+    "name": "didiLjf/moonorbit",
+    "version": "0.2.1",
+    "url": "https://mooncakes.io/docs/didiLjf/moonorbit@0.2.1",
+    "risk": "邻近：Actor 网络模拟",
+    "features": "Actor 框架包含串行化、远程路由和 network simulator。",
+    "local": "simulate、NetworkModel（网络模拟概念）",
+    "boundary": "Actor 分发与 PTP 时钟协议不同；不据 network simulator 词语认定同一项目。",
+    "evidence_file": "research/2026-10-19/pages/didiLjf__moonorbit--02e77a20ef3d.txt",
+    "evidence_available": true,
+    "excerpts": [
+      "te :: new RaftNodeState::new T RaftRole T RemoteRef :: new RemoteRef::new :: send RemoteRef::send T Router :: new Router::new :: route Router::route T RoutingStrategy T Scheduler :: new Scheduler::new :: run Scheduler::run T Stash :: length Stash::length :: new Stash::new :: stash Stas",
+      "NodeState::new T RaftRole T RemoteRef :: new RemoteRef::new :: send RemoteRef::send T Router :: new Router::new :: route Router::route T RoutingStrategy T Scheduler :: new Scheduler::new :: run Scheduler::run T Stash :: length Stash::length :: new Stash::new :: stash Stash::stash :: un",
+      "Role T RemoteRef :: new RemoteRef::new :: send RemoteRef::send T Router :: new Router::new :: route Router::route T RoutingStrategy T Scheduler :: new Scheduler::new :: run Scheduler::run T Stash :: length Stash::length :: new Stash::new :: stash Stash::stash :: unstash_all Stash::unst",
+      "ancel V gossip_behavior V journal_behavior V ping_pong_behavior V pubsub_behavior V raft_behavior V router_behavior moonorbit A lightweight, high-performance Actor concurrency framework for MoonBit actor concurrency async moon add didiLjf/moonorbit@0.2.1 Download zip Author didiLjf Ver",
+      "空闲空间，防止因瞬时流量洪峰造成内存溢出。 同时也支持 Unbounded (无界信箱) 以及丢弃策略信箱 ( DiscardOldest / DiscardLatest )。 高级路由与负载均衡 (Routers & Load Balancing) 内置多种消息路由分发策略：轮询分发 ( RoundRobin )、广播分发 ( Broadcast )、随机分发 ( Random )，方便构建高性能的 Actor 工作线程池。 定时器与周期调度 (Timer & Scheduler) [v0.2.0 新增] 提供了在一定延迟后向 Actor 发送消息 ( send_",
+      "── context.mbt           # 运行上下文及子 Actor 级联生成\n├── system.mbt            # Actor 监管树核心控制流、核心执行循环\n├── router.mbt            # RoundRobin/Broadcast/Random 路由分发机制\n├── supervisor.mbt        # 监督策略与基础断言\n├── timer.mbt             # [v0.2.0] 定时器与周期调度器\n├── stash.mbt             # [v0.2.0] 状态自愈的"
+    ]
+  },
+  {
+    "name": "dgmlbtttt/iec104",
+    "version": "0.2.1",
+    "url": "https://mooncakes.io/docs/dgmlbtttt/iec104@0.2.1",
+    "risk": "邻近：工业协议和确定性仿真",
+    "features": "索引和根文档描述 IEC104 协议栈与确定性变电站仿真，但根 README 仅指向项目说明。",
+    "local": "协议编解码和 simulate（领域及基础概念）",
+    "boundary": "根文档信息较少，不能推定完整内部功能已排除，也不能认定它实现 PTP。",
+    "evidence_file": "research/2026-10-19/pages/dgmlbtttt__iec104--be435e084b76.txt",
+    "evidence_available": true,
+    "excerpts": [
+      " 0.2.1 (latest) 0.2.1 (latest) 0.2.0 Expand all Collapse all cmd → src → README iec104 Pure MoonBit IEC 60870-5-104 protocol stack and deterministic substation simulation toolkit. iec104 scada telecontrol substation protocol industrial-automation moon add dgmlbtttt/iec104@0.2.1 Download z",
+      "0 Expand all Collapse all cmd → src → README iec104 Pure MoonBit IEC 60870-5-104 protocol stack and deterministic substation simulation toolkit. iec104 scada telecontrol substation protocol industrial-automation moon add dgmlbtttt/iec104@0.2.1 Download zip Author dgmlbtttt Version 0.2.1 License Apache-2",
+      "epository github.com/dgmlbtttt/moonbit-iec104 Last updated last month Downloads 10 README # MoonBit IEC 60870-5-104 See README.md for the project overview, package map, usage, testing, benchmark, publishing, and license information. Install moon add dgmlbtttt/iec104@0.2.1 Download zip Pur",
+      "/dgmlbtttt/moonbit-iec104 Last updated last month Downloads 10 README # MoonBit IEC 60870-5-104 See README.md for the project overview, package map, usage, testing, benchmark, publishing, and license information. Install moon add dgmlbtttt/iec104@0.2.1 Download zip Pure MoonBit IEC 60870-",
+      "lishing, and license information. Install moon add dgmlbtttt/iec104@0.2.1 Download zip Pure MoonBit IEC 60870-5-104 protocol stack and deterministic substation simulation toolkit. iec104 scada telecontrol substation protocol industrial-automation dgmlbtttt Apache-2.0 github.com/dgmlbtttt/",
+      "nstall moon add dgmlbtttt/iec104@0.2.1 Download zip Pure MoonBit IEC 60870-5-104 protocol stack and deterministic substation simulation toolkit. iec104 scada telecontrol substation protocol industrial-automation dgmlbtttt Apache-2.0 github.com/dgmlbtttt/moonbit-iec104 Updated last month 10 downloads Pow"
+    ]
+  }
+]

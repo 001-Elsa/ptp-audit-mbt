@@ -1,0 +1,862 @@
+[
+  {
+    "name": "Across2005/yimai_prophecy_moonbit",
+    "version": "0.1.1",
+    "url": "https://mooncakes.io/docs/Across2005/yimai_prophecy_moonbit@0.1.1",
+    "disposition": "排除直接 PTP 命中",
+    "note": "用逻辑计数替换墙上时间保证应用可复现，不是物理时钟同步协议。",
+    "hits": [
+      {
+        "kind": "neighbor",
+        "count": 2,
+        "excerpts": [
+          "n (D8) induces domain-independent process skeletons, so an unseen project still gets a sensible next step. Deterministic & reproducible — a logical clock replaces wall-clock time; identical call sequences yield byte-identical to_json output (no RNG). Zero third-party dependencies — pure MoonBit core ( json + math only); nothing to install beyond the m",
+          "tmx ) ) println ( @json. stringify ( v ) ) } observe(text, mtype) builds edges/transitions from the current context window and advances the logical clock. To control co-occurrence manually, call remember(text, mtype, ctx) with an explicit ctx array. Build & run the bundled demo: moon build\nmoon run cmd/main     # training → Hit@3 → replay prediction →"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Ag108/MoonCache",
+    "version": "0.2.0",
+    "url": "https://mooncakes.io/docs/Ag108/MoonCache@0.2.0",
+    "disposition": "排除直接 PTP 命中",
+    "note": "HTTP 缓存的注入 clock 与 Async 类型相邻触发宽泛正则。",
+    "hits": [
+      {
+        "kind": "neighbor",
+        "count": 2,
+        "excerpts": [
+          "dRuntime . The real transport currently supports GET, POST, and PUT through moonbitlang/async/http@0.20.2 and receives an injected response clock: ///| let origin = @mooncache_async. MoonbitAsyncHttpTransport :: new ( clock ) ///| let client = @mooncache_async. AsyncCachedRuntime :: new ( @mooncache. MemoryStore :: default ( ) , origin , @mooncache. CacheOptions :: private_cache",
+          "onbitlang/async/http@0.20.2 and receives an injected response clock: ///| let origin = @mooncache_async. MoonbitAsyncHttpTransport :: new ( clock ) ///| let client = @mooncache_async. AsyncCachedRuntime :: new ( @mooncache. MemoryStore :: default ( ) , origin , @mooncache. CacheOptions :: private_cache ( ) , ) ///| let response = client .execute ( request , now ) The adapter is n"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "cauchyQ/moonbit-causalkit",
+    "version": "0.1.0",
+    "url": "https://mooncakes.io/docs/cauchyQ/moonbit-causalkit@0.1.0",
+    "disposition": "邻近：时钟和事件仿真概念相似",
+    "note": "逻辑/因果时钟与物理时钟同步解决的问题不同；不能据此认定同一 PTP 实现。",
+    "hits": [
+      {
+        "kind": "neighbor",
+        "count": 6,
+        "excerpts": [
+          "d_lines V trace_rows V validate_checkpoint_against V validate_replay V vector_differences V vector_distance moonbit-causalkit Deterministic causal clocks and event simulation for MoonBit distributed-systems causality clock simulation moon add cauchyQ/moonbit-causalkit@0.1.0 Download zip Author cauchyQ Version 0.1.0 License Apache-2.0 Repository githu",
+          "nst V validate_replay V vector_differences V vector_distance moonbit-causalkit Deterministic causal clocks and event simulation for MoonBit distributed-systems causality clock simulation moon add cauchyQ/moonbit-causalkit@0.1.0 Download zip Author cauchyQ Version 0.1.0 License Apache-2.0 Repository github.com/cauchyQ/moonbit-causalkit Last updated last month Downloads 9 README # M",
+          "t CausalKit MoonBit CausalKit is a deterministic, pure-MoonBit toolkit for modelling causal time in distributed systems. It provides Hybrid Logical Clocks (HLC), version-vector comparison, and a caller-controlled simulator for delayed or partitioned message delivery. # Why it exists Physical timestamps cannot explain whether two writes are causally re",
+          "ock source pub ( all ) struct HlcClock { node : String last : HlcTimestamp } derive ( @moonbitlang/core/debug. Debug Debug ) Mutable Hybrid Logical Clock state for one replica. # HlcClock::last source fn HlcClock :: last ( self : HlcClock ) -> HlcTimestamp Return the last generated timestamp without advancing the clock. # HlcClock::new source fn HlcCl",
+          "_export.mbt trace_query.mbt vector_clock.mbt vector_metrics.mbt Install moon add cauchyQ/moonbit-causalkit@0.1.0 Download zip Deterministic causal clocks and event simulation for MoonBit distributed-systems causality clock simulation cauchyQ Apache-2.0 github.com/cauchyQ/moonbit-causalkit Updated last month 9 downloads Powered by MoonBit Site source ",
+          "ctor_metrics.mbt Install moon add cauchyQ/moonbit-causalkit@0.1.0 Download zip Deterministic causal clocks and event simulation for MoonBit distributed-systems causality clock simulation cauchyQ Apache-2.0 github.com/cauchyQ/moonbit-causalkit Updated last month 9 downloads Powered by MoonBit Site source Report issue Packages Build queue Skills Statistics © 2026 mooncakes.io"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "CYang-dep/moonosc",
+    "version": "0.2.0",
+    "url": "https://mooncakes.io/docs/CYang-dep/moonosc@0.2.0",
+    "disposition": "基础能力邻近：二进制时间标签",
+    "note": "不是 NTP 时钟同步器，更不是 PTP 实现。",
+    "hits": [
+      {
+        "kind": "neighbor",
+        "count": 4,
+        "excerpts": [
+          "k budget. Default contract failure is all-or-nothing; partial plans are explicit. This is not an indexed router or executing RPC framework. NTP-era-zero timetags, explicit Unix conversion (1900 through the 2036 rollover), checked tick arithmetic; generic flatten lets nested immediate inherit parent time, whereas strict APIs compare raw child",
+          " batches against an independent sorted model. # Boundaries This is a reusable library, not a complete OSC server. Users provide transports, clock synchronization, NTP-era choice, authentication, thread synchronization, application contracts, and callback execution. No hard-realtime guarantees, audio synthesis, DSP, discovery, delivery acknowledgeme",
+          "ependent sorted model. # Boundaries This is a reusable library, not a complete OSC server. Users provide transports, clock synchronization, NTP-era choice, authentication, thread synchronization, application contracts, and callback execution. No hard-realtime guarantees, audio synthesis, DSP, discovery, delivery acknowledgement, clock drift ",
+          "# to_json source fn to_json ( packet : Packet , limits ? : Limits ) -> Json raise OscError Versioned tagged-array schema. Integers and IEEE/NTP bits are fixed-width hex, never JSON numbers: NaN payloads, signed zero and all 64-bit values survive. # validate_address source fn validate_address ( address : String ) -> Unit raise OscError # vali"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "daqing/moonkafka",
+    "version": "0.3.4",
+    "url": "https://mooncakes.io/docs/daqing/moonkafka@0.3.4",
+    "disposition": "排除直接 PTP 命中",
+    "note": "重试退避的 clock jitter / clients do not synchronize，不是时钟同步器或链路损伤模型。",
+    "hits": [
+      {
+        "kind": "neighbor",
+        "count": 1,
+        "excerpts": [
+          "t } derive ( @moonbitlang/core/debug. Debug Debug ) Stateful backoff schedule: next_ms() grows exponentially per call and applies ±20% wall-clock jitter so retried clients do not synchronize. # Backoff::new source fn Backoff :: new ( base_ms ? : Int , max_ms ? : Int ) -> Backoff raise # Backoff::next_ms source fn Backoff :: next_ms ( self : Backoff ) -> Int Next delay in milliseco"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "didiLjf/moonorbit",
+    "version": "0.2.1",
+    "url": "https://mooncakes.io/docs/didiLjf/moonorbit@0.2.1",
+    "disposition": "邻近：Actor 网络模拟",
+    "note": "Actor 分发与 PTP 时钟协议不同；不据 network simulator 词语认定同一项目。",
+    "hits": [
+      {
+        "kind": "neighbor",
+        "count": 1,
+        "excerpts": [
+          "ef :: send ( self : RemoteRef [ Msg ], msg : Msg ) -> Unit Sends a message to the remote actor by serializing it and routing it through the network simulator. # Router source pub struct Router [ Msg ] { workers : Array [ ActorRef [ Msg ]] strategy : RoutingStrategy next_index : @moonbitlang/core/ref. Ref Ref [ Int ] } A Router contains a group of worker a"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "dowdiness/incr",
+    "version": "0.15.1",
+    "url": "https://mooncakes.io/docs/dowdiness/incr@0.15.1",
+    "disposition": "排除直接 PTP 命中",
+    "note": "增量计算的 revision 逻辑计数，不是 PTP 或物理时间同步。",
+    "hits": [
+      {
+        "kind": "neighbor",
+        "count": 1,
+        "excerpts": [
+          "odies # Revision source using @dowdiness/incr/types { type Revision } A monotonically increasing revision counter representing the system's logical clock. Revisions are bumped each time an input signal changes. Every cell tracks two revision timestamps: changed_at : When this cell's value last actually changed verified_at : When this cell was last con"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "gaato/anthropic",
+    "version": "0.11.0",
+    "url": "https://mooncakes.io/docs/gaato/anthropic@0.11.0",
+    "disposition": "排除直接 PTP 命中",
+    "note": "HTTP/SDK 的注入时钟和 async/同步类型邻接导致宽泛正则命中；不提供物理时钟同步。",
+    "hits": [
+      {
+        "kind": "neighbor",
+        "count": 3,
+        "excerpts": [
+          ", on gaato/http and gaato/sdk-runtime . Works against Anthropic-compatible servers through base_url . The caller supplies a Transport and a Clock , for example gaato/http-async : let transport = @http_async. AsyncTransport :: new ( timeout_ms = 600_000 , connect_timeout_ms = 5_000 , max_body_bytes = 64 * 1024 * 1024 , ) let client = @anthropic. Anthropic :: new ( api_key~ ,",
+          "out_ms = 5_000 , max_body_bytes = 64 * 1024 * 1024 , ) let client = @anthropic. Anthropic :: new ( api_key~ , transport , @http_async. AsyncClock :: new ( ) , timer = @http_async. ClockTimer :: new ( ) , total_timeout_ms = 900_000 , ) Set max_body_bytes : the transport reads a buffered body whole unless told otherwise, and this client cannot set it because the transport is yo",
+          "official SDKs limit a call to 600 s, and connecting to 5 s. This module has no clock of its own to enforce that, so pass a timer, as above: ClockTimer from gaato/http-async limits each attempt to timeout_ms (600 s by default), and total_timeout_ms limits the whole call, retries and their waits included. Give the transport the same limits, as above: AsyncTransport 's own"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "gaato/github",
+    "version": "0.17.0",
+    "url": "https://mooncakes.io/docs/gaato/github@0.17.0",
+    "disposition": "排除直接 PTP 命中",
+    "note": "HTTP/SDK 的注入时钟和 async/同步类型邻接导致宽泛正则命中；不提供物理时钟同步。",
+    "hits": [
+      {
+        "kind": "neighbor",
+        "count": 1,
+        "excerpts": [
+          "README # gaato/github Unofficial GitHub API client for MoonBit, on gaato/http and gaato/sdk-runtime . The caller supplies a Transport and a Clock , for example gaato/http-async . REST is generated in full; GraphQL is a passthrough. Unofficial and experimental. Source, issues and design notes: https://github.com/gaato/mbt-sdk All 1,221 operations of the vendored first-party "
+        ]
+      }
+    ]
+  },
+  {
+    "name": "gaato/http",
+    "version": "0.4.1",
+    "url": "https://mooncakes.io/docs/gaato/http@0.4.1",
+    "disposition": "排除直接 PTP 命中",
+    "note": "HTTP/SDK 的注入时钟和 async/同步类型邻接导致宽泛正则命中；不提供物理时钟同步。",
+    "hits": [
+      {
+        "kind": "neighbor",
+        "count": 2,
+        "excerpts": [
+          "aborts ( encode_utf8 ), header helpers ( parse_retry_after / retry_after_ms , parse_link_next , is_idempotent ), a Clock trait ( gaato/http/clock ), Gate and Timer traits an async runtime implements so sans-IO code can hold a slot or bound a wait ( gaato/http/sync ), a retry-decision core whose policies are data ( gaato/http/retry ), host randomness for jitter and boundaries (",
+          "own the policy, such as gaato/sdk-runtime . An SDK built on this module never imports an async runtime: the caller passes a Transport and a Clock , for example from gaato/http-async . Unofficial and experimental. Source, issues and design notes: https://github.com/gaato/mbt-sdk # Middleware source type Middleware = async ( Request , async ( Request ) -> Response raise HttpError "
+        ]
+      }
+    ]
+  },
+  {
+    "name": "gaato/http-async",
+    "version": "0.4.2",
+    "url": "https://mooncakes.io/docs/gaato/http-async@0.4.2",
+    "disposition": "排除直接 PTP 命中",
+    "note": "HTTP/SDK 的注入时钟和 async/同步类型邻接导致宽泛正则命中；不提供物理时钟同步。",
+    "hits": [
+      {
+        "kind": "neighbor",
+        "count": 32,
+        "excerpts": [
+          "test) 0.4.1 0.4.0 0.3.1 0.3.0 0.2.1 0.2.0 0.1.6 0.1.5 0.1.4 0.1.3 0.1.2 0.1.1 0.1.0 Expand all Collapse all loopback → mock → README T AsyncClock :: new AsyncClock::new :: now_unix_ms AsyncClock::now_unix_ms :: sleep AsyncClock::sleep T AsyncTransport :: close AsyncTransport::close :: idle_connections AsyncTransport::idle_connections :: new AsyncTransport:",
+          "0.3.1 0.3.0 0.2.1 0.2.0 0.1.6 0.1.5 0.1.4 0.1.3 0.1.2 0.1.1 0.1.0 Expand all Collapse all loopback → mock → README T AsyncClock :: new AsyncClock::new :: now_unix_ms AsyncClock::now_unix_ms :: sleep AsyncClock::sleep T AsyncTransport :: close AsyncTransport::close :: idle_connections AsyncTransport::idle_connections :: new AsyncTransport::new :: send AsyncTransport::se",
+          ".1.5 0.1.4 0.1.3 0.1.2 0.1.1 0.1.0 Expand all Collapse all loopback → mock → README T AsyncClock :: new AsyncClock::new :: now_unix_ms AsyncClock::now_unix_ms :: sleep AsyncClock::sleep T AsyncTransport :: close AsyncTransport::close :: idle_connections AsyncTransport::idle_connections :: new AsyncTransport::new :: send AsyncTransport::send :: send_stream AsyncTransport:",
+          "0 Expand all Collapse all loopback → mock → README T AsyncClock :: new AsyncClock::new :: now_unix_ms AsyncClock::now_unix_ms :: sleep AsyncClock::sleep T AsyncTransport :: close AsyncTransport::close :: idle_connections AsyncTransport::idle_connections :: new AsyncTransport::new :: send AsyncTransport::send :: send_stream AsyncTransport::send_stream T ClockTimer :: new ClockTimer:",
+          "nity/flate 0.9.0 gaato/brotli 0.2.0 gaato/zstd 0.1.0 README # gaato/http-async AsyncTransport and AsyncClock : the gaato/http Transport and Clock over moonbitlang/async , for native, JS, and linear-memory Wasm on moonrun . gaato/http-async/mock has VirtualClock , a Clock for async tests whose time moves only when the test advances it: sleeps fire in deadline order, ",
+          "aato/http Transport and Clock over moonbitlang/async , for native, JS, and linear-memory Wasm on moonrun . gaato/http-async/mock has VirtualClock , a Clock for async tests whose time moves only when the test advances it: sleeps fire in deadline order, and settle lets the tasks under test run until they go idle between timers, so timing-dependent code runs the sam",
+          "asks under test run until they go idle between timers, so timing-dependent code runs the same way on every run and target. with_timeout_opt(clock, milliseconds, f) is @async.with_timeout_opt with the deadline taken from a Clock , so code that accepts a clock can have its timeouts driven by VirtualClock too. The Wasm backend uses MoonBit host APIs for sockets and TLS; it ",
+          "proxy): it passes the bracketed address to name resolution, which fails with Connect . Use a host name until that is fixed upstream. # AsyncClock source pub struct AsyncClock { } A production clock backed by moonbitlang/async timers and wall time. impl Clock for AsyncClock fn now_unix_ms ( _self : AsyncClock ) -> Int64 source Returns wall-clock milliseconds since the",
+          "lution, which fails with Connect . Use a host name until that is fixed upstream. # AsyncClock source pub struct AsyncClock { } A production clock backed by moonbitlang/async timers and wall time. impl Clock for AsyncClock fn now_unix_ms ( _self : AsyncClock ) -> Int64 source Returns wall-clock milliseconds since the Unix epoch. async fn sleep ( _self : AsyncClock , milli",
+          " is fixed upstream. # AsyncClock source pub struct AsyncClock { } A production clock backed by moonbitlang/async timers and wall time. impl Clock for AsyncClock fn now_unix_ms ( _self : AsyncClock ) -> Int64 source Returns wall-clock milliseconds since the Unix epoch. async fn sleep ( _self : AsyncClock , milliseconds : Int ) -> Unit noraise source Slee",
+          "eam. # AsyncClock source pub struct AsyncClock { } A production clock backed by moonbitlang/async timers and wall time. impl Clock for AsyncClock fn now_unix_ms ( _self : AsyncClock ) -> Int64 source Returns wall-clock milliseconds since the Unix epoch. async fn sleep ( _self : AsyncClock , milliseconds : Int ) -> Unit noraise source Sleeps without raising an ordinary error",
+          "yncClock , milliseconds : Int ) -> Unit noraise source Sleeps without raising an ordinary error; nonpositive values return directly. # AsyncClock::new source fn AsyncClock :: new () -> AsyncClock Creates an async clock. test { let _ = @adapter. AsyncClock :: new ( ) } # AsyncClock::now_unix_ms source fn AsyncClock :: now_unix_ms ( _self : AsyncClock ) -> Int64 Exp",
+          "Int ) -> Unit noraise source Sleeps without raising an ordinary error; nonpositive values return directly. # AsyncClock::new source fn AsyncClock :: new () -> AsyncClock Creates an async clock. test { let _ = @adapter. AsyncClock :: new ( ) } # AsyncClock::now_unix_ms source fn AsyncClock :: now_unix_ms ( _self : AsyncClock ) -> Int64 Explicit clock methods back",
+          "urce Sleeps without raising an ordinary error; nonpositive values return directly. # AsyncClock::new source fn AsyncClock :: new () -> AsyncClock Creates an async clock. test { let _ = @adapter. AsyncClock :: new ( ) } # AsyncClock::now_unix_ms source fn AsyncClock :: now_unix_ms ( _self : AsyncClock ) -> Int64 Explicit clock methods backed by moonbitlang/asyn",
+          "sing an ordinary error; nonpositive values return directly. # AsyncClock::new source fn AsyncClock :: new () -> AsyncClock Creates an async clock. test { let _ = @adapter. AsyncClock :: new ( ) } # AsyncClock::now_unix_ms source fn AsyncClock :: now_unix_ms ( _self : AsyncClock ) -> Int64 Explicit clock methods backed by moonbitlang/async. # AsyncClock::sleep source async fn",
+          "alues return directly. # AsyncClock::new source fn AsyncClock :: new () -> AsyncClock Creates an async clock. test { let _ = @adapter. AsyncClock :: new ( ) } # AsyncClock::now_unix_ms source fn AsyncClock :: now_unix_ms ( _self : AsyncClock ) -> Int64 Explicit clock methods backed by moonbitlang/async. # AsyncClock::sleep source async fn AsyncClock :: sleep ( _se",
+          "syncClock::new source fn AsyncClock :: new () -> AsyncClock Creates an async clock. test { let _ = @adapter. AsyncClock :: new ( ) } # AsyncClock::now_unix_ms source fn AsyncClock :: now_unix_ms ( _self : AsyncClock ) -> Int64 Explicit clock methods backed by moonbitlang/async. # AsyncClock::sleep source async fn AsyncClock :: sleep ( _self : AsyncClock , milliseconds : I",
+          "k :: new () -> AsyncClock Creates an async clock. test { let _ = @adapter. AsyncClock :: new ( ) } # AsyncClock::now_unix_ms source fn AsyncClock :: now_unix_ms ( _self : AsyncClock ) -> Int64 Explicit clock methods backed by moonbitlang/async. # AsyncClock::sleep source async fn AsyncClock :: sleep ( _self : AsyncClock , milliseconds : Int ) -> Unit noraise Explicit clock ",
+          " = @adapter. AsyncClock :: new ( ) } # AsyncClock::now_unix_ms source fn AsyncClock :: now_unix_ms ( _self : AsyncClock ) -> Int64 Explicit clock methods backed by moonbitlang/async. # AsyncClock::sleep source async fn AsyncClock :: sleep ( _self : AsyncClock , milliseconds : Int ) -> Unit noraise Explicit clock methods backed by moonbitlang/async. # AsyncTransport source pub st",
+          ":now_unix_ms source fn AsyncClock :: now_unix_ms ( _self : AsyncClock ) -> Int64 Explicit clock methods backed by moonbitlang/async. # AsyncClock::sleep source async fn AsyncClock :: sleep ( _self : AsyncClock , milliseconds : Int ) -> Unit noraise Explicit clock methods backed by moonbitlang/async. # AsyncTransport source pub struct AsyncTransport { // private fields } A"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "gaato/openai",
+    "version": "0.6.0",
+    "url": "https://mooncakes.io/docs/gaato/openai@0.6.0",
+    "disposition": "排除直接 PTP 命中",
+    "note": "HTTP/SDK 的注入时钟和 async/同步类型邻接导致宽泛正则命中；不提供物理时钟同步。",
+    "hits": [
+      {
+        "kind": "neighbor",
+        "count": 4,
+        "excerpts": [
+          " facade stays stable across regenerations. Works against OpenAI-compatible servers through base_url . The caller supplies a Transport and a Clock , for example gaato/http-async . let transport = @http_async. AsyncTransport :: new ( timeout_ms = 600_000 , connect_timeout_ms = 5_000 , max_body_bytes = 64 * 1024 * 1024 , ) let clock = @http_async. AsyncClock :: new ( ) let ope",
+          "nsport = @http_async. AsyncTransport :: new ( timeout_ms = 600_000 , connect_timeout_ms = 5_000 , max_body_bytes = 64 * 1024 * 1024 , ) let clock = @http_async. AsyncClock :: new ( ) let openai = @openai. OpenAI :: new ( api_key~ , transport , clock , timer = @http_async. ClockTimer :: new ( ) ) let reply = openai .chat_completion ( @openai. ChatRequest :: new ( m",
+          "dy_bytes = 64 * 1024 * 1024 , ) let clock = @http_async. AsyncClock :: new ( ) let openai = @openai. OpenAI :: new ( api_key~ , transport , clock , timer = @http_async. ClockTimer :: new ( ) ) let reply = openai .chat_completion ( @openai. ChatRequest :: new ( model = \"gpt-5.6-sol\" , messages = [ @openai. ChatMessage :: user ( \"Hello\" ) ] , ) ) Set max_body_bytes a",
+          "official SDKs limit a call to 600 s, and connecting to 5 s. This module has no clock of its own to enforce that, so pass a timer, as above: ClockTimer from gaato/http-async limits each attempt to timeout_ms (600 s by default), and total_timeout_ms limits the whole call, retries and their waits included. Give the transport the same limits, as above: AsyncTransport 's own"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "gaato/req",
+    "version": "0.1.0",
+    "url": "https://mooncakes.io/docs/gaato/req@0.1.0",
+    "disposition": "排除直接 PTP 命中",
+    "note": "HTTP/SDK 的注入时钟和 async/同步类型邻接导致宽泛正则命中；不提供物理时钟同步。",
+    "hits": [
+      {
+        "kind": "neighbor",
+        "count": 1,
+        "excerpts": [
+          "n around the transport, with on_request and on_response hooks. Tests swap the transport for MockTransport::new(request => response) and the clock for VirtualClock from gaato/http-async/mock . Not yet: HTTP/2, response caching. On JS, fetch follows redirects before the client sees them, and in browsers handles cookies itself. # Coming from requests / httpx axios / ky Req gaato/req C"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "gaato/requesto",
+    "version": "0.2.1",
+    "url": "https://mooncakes.io/docs/gaato/requesto@0.2.1",
+    "disposition": "排除直接 PTP 命中",
+    "note": "HTTP/SDK 的注入时钟和 async/同步类型邻接导致宽泛正则命中；不提供物理时钟同步。",
+    "hits": [
+      {
+        "kind": "neighbor",
+        "count": 1,
+        "excerpts": [
+          "n around the transport, with on_request and on_response hooks. Tests swap the transport for MockTransport::new(request => response) and the clock for VirtualClock from gaato/http-async/mock . Not yet: HTTP/2, response caching. On JS, fetch follows redirects before the client sees them, and in browsers handles cookies itself. # Coming from requests / httpx axios / ky Req gaato/reque"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "gaato/sdk-runtime",
+    "version": "0.7.0",
+    "url": "https://mooncakes.io/docs/gaato/sdk-runtime@0.7.0",
+    "disposition": "排除直接 PTP 命中",
+    "note": "HTTP/SDK 的注入时钟和 async/同步类型邻接导致宽泛正则命中；不提供物理时钟同步。",
+    "hits": [
+      {
+        "kind": "neighbor",
+        "count": 1,
+        "excerpts": [
+          "imer attempt_ms : Int ? total_ms : Int ? } Time limits for Client calls, enforced with an injected @sync.Timer (such as gaato/http-async 's ClockTimer ), since this module has no async runtime of its own. attempt_ms bounds each attempt's exchange with the transport: for send and send_json the whole response, for send_stream the response head only (the body belongs to the caller). A"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "helios-house/valence",
+    "version": "0.3.1",
+    "url": "https://mooncakes.io/docs/helios-house/valence@0.3.1",
+    "disposition": "排除直接 PTP 命中",
+    "note": "discrete_event 是离散状态变化的叙述 API，不能因词语相同认定仿真框架重复。",
+    "hits": [
+      {
+        "kind": "neighbor",
+        "count": 3,
+        "excerpts": [
+          "nted_node V counted_state V counted_state_narrative V device_event V device_node V device_state V device_state_narrative V disco_register V discrete_event V discrete_node V discrete_state V discrete_state_narrative V dual_read V element_exists V emit_to_sink V engine_state V engine_state_narrative V escape_html V expose_narrative V expose_narrative_at ",
+          "ferent voices. The sensor kind reports with contempt, change kind editorializes, fog kind murmurs. (Opus 4.8 named this; still to build.) # discrete_event source fn discrete_event ( prev : DiscreteState , cur : DiscreteState , actor : String , source : String , timestamp : String ) -> Event ? A DiscreteState transition (connection, mode, …) is an event",
+          " kind reports with contempt, change kind editorializes, fog kind murmurs. (Opus 4.8 named this; still to build.) # discrete_event source fn discrete_event ( prev : DiscreteState , cur : DiscreteState , actor : String , source : String , timestamp : String ) -> Event ? A DiscreteState transition (connection, mode, …) is an event. # discrete_node source "
+        ]
+      }
+    ]
+  },
+  {
+    "name": "hhxhhx78/moonbit-iec104",
+    "version": "0.3.1",
+    "url": "https://mooncakes.io/docs/hhxhhx78/moonbit-iec104@0.3.1",
+    "disposition": "中：工业时钟同步命令功能相似",
+    "note": "工业遥控的校时事务与 PTP 精密同步协议不同，但不能说工业对时功能在生态中不存在。",
+    "hits": [
+      {
+        "kind": "neighbor",
+        "count": 26,
+        "excerpts": [
+          "ansmission::new :: originator CauseOfTransmission::originator :: qualifier CauseOfTransmission::qualifier :: raw CauseOfTransmission::raw T ClockSyncTransaction :: activate ClockSyncTransaction::activate :: apply ClockSyncTransaction::apply :: new ClockSyncTransaction::new :: received ClockSyncTransaction::received :: status ClockSyncTransaction::status T CommandAudit :: attempt ",
+          "r CauseOfTransmission::qualifier :: raw CauseOfTransmission::raw T ClockSyncTransaction :: activate ClockSyncTransaction::activate :: apply ClockSyncTransaction::apply :: new ClockSyncTransaction::new :: received ClockSyncTransaction::received :: status ClockSyncTransaction::status T CommandAudit :: attempt CommandAudit::attempt :: from CommandAudit::from :: message CommandAudit::m",
+          "yncTransaction :: activate ClockSyncTransaction::activate :: apply ClockSyncTransaction::apply :: new ClockSyncTransaction::new :: received ClockSyncTransaction::received :: status ClockSyncTransaction::status T CommandAudit :: attempt CommandAudit::attempt :: from CommandAudit::from :: message CommandAudit::message :: new CommandAudit::new :: tic",
+          "action::activate :: apply ClockSyncTransaction::apply :: new ClockSyncTransaction::new :: received ClockSyncTransaction::received :: status ClockSyncTransaction::status T CommandAudit :: attempt CommandAudit::attempt :: from CommandAudit::from :: message CommandAudit::message :: new CommandAudit::new :: ticket CommandAudit::ticket :: timestamp Com",
+          "V binary_counter_object V bit_is_set V bit_string_object V byte_statistics V bytes_equal_left V calendar_weekday V cause V cause_category V clock_sync_object V command_lifecycle_examples V command_priority_examples V compatibility_examples V config_change_kind_examples V config_value_examples V conformance_examples V control_type_catalog V counter_",
+          "104 常用 Type ID、VSQ、传送原因、公共地址和信息体地址模型。 单点、双点、步位、归一化值、标度值、短浮点值、累计量及命令对象。 CP24Time2a、CP56Time2a、质量描述符、地址序列和带时标 ASDU 编解码。 点表、历史变更、总召唤/计数量召唤、读命令、时钟同步和命令策略。 站点数据库、事务提交、质量门控、历史归档、遥测死区和告警生命周期。 命令调度、文件分片传输、冗余切换、服务依赖编排和传输会话管理。 资源限制、重放保护、CRC、帧统计、健康报告、契约向量和确定性工作负载。 # 快速开始 需要 MoonBit stable 工具链。首次使用时执行： moon update\nmoon fmt\nmoon check --deny-warn --target",
+          ") ShortFloatSetPoint ( Float , Int ) BitStringCommand ( UInt ) InterrogationCommand ( Int ) CounterInterrogationCommand ( Int ) ReadCommand ClockSyncCommand ( Cp56Time ) TestCommand ( Int ) ResetCommand ( Int ) DelayCommand ( Int ) EndOfInitialization ( Int ) RawValue ( Bytes ) } derive ( Eq , @moonbitlang/core/debug. Debug Debug ) Values carried ",
+          "value. # CauseOfTransmission::raw source fn CauseOfTransmission :: raw ( self : CauseOfTransmission ) -> Int Return the raw cause number. # ClockSyncTransaction source pub struct ClockSyncTransaction { request : ServiceRequest status : ServiceStatus received : Cp56Time ? applied_at : Int ? } derive ( @moonbitlang/core/debug. Debug Debug ) Clock sy",
+          "e fn CauseOfTransmission :: raw ( self : CauseOfTransmission ) -> Int Return the raw cause number. # ClockSyncTransaction source pub struct ClockSyncTransaction { request : ServiceRequest status : ServiceStatus received : Cp56Time ? applied_at : Int ? } derive ( @moonbitlang/core/debug. Debug Debug ) Clock synchronization service with a determinis",
+          " request : ServiceRequest status : ServiceStatus received : Cp56Time ? applied_at : Int ? } derive ( @moonbitlang/core/debug. Debug Debug ) Clock synchronization service with a deterministic skew calculation. # ClockSyncTransaction::activate source fn ClockSyncTransaction :: activate ( self : ClockSyncTransaction ) -> Result [ Unit , String ] # Clo",
+          "applied_at : Int ? } derive ( @moonbitlang/core/debug. Debug Debug ) Clock synchronization service with a deterministic skew calculation. # ClockSyncTransaction::activate source fn ClockSyncTransaction :: activate ( self : ClockSyncTransaction ) -> Result [ Unit , String ] # ClockSyncTransaction::apply source fn ClockSyncTransaction :: apply ( sel",
+          "g/core/debug. Debug Debug ) Clock synchronization service with a deterministic skew calculation. # ClockSyncTransaction::activate source fn ClockSyncTransaction :: activate ( self : ClockSyncTransaction ) -> Result [ Unit , String ] # ClockSyncTransaction::apply source fn ClockSyncTransaction :: apply ( self : ClockSyncTransaction , timestamp : Cp",
+          "ization service with a deterministic skew calculation. # ClockSyncTransaction::activate source fn ClockSyncTransaction :: activate ( self : ClockSyncTransaction ) -> Result [ Unit , String ] # ClockSyncTransaction::apply source fn ClockSyncTransaction :: apply ( self : ClockSyncTransaction , timestamp : Cp56Time , applied_at : Int ) -> Result [ In",
+          ". # ClockSyncTransaction::activate source fn ClockSyncTransaction :: activate ( self : ClockSyncTransaction ) -> Result [ Unit , String ] # ClockSyncTransaction::apply source fn ClockSyncTransaction :: apply ( self : ClockSyncTransaction , timestamp : Cp56Time , applied_at : Int ) -> Result [ Int , String ] # ClockSyncTransaction::new source fn Cl",
+          "rce fn ClockSyncTransaction :: activate ( self : ClockSyncTransaction ) -> Result [ Unit , String ] # ClockSyncTransaction::apply source fn ClockSyncTransaction :: apply ( self : ClockSyncTransaction , timestamp : Cp56Time , applied_at : Int ) -> Result [ Int , String ] # ClockSyncTransaction::new source fn ClockSyncTransaction :: new ( request : ",
+          " ( self : ClockSyncTransaction ) -> Result [ Unit , String ] # ClockSyncTransaction::apply source fn ClockSyncTransaction :: apply ( self : ClockSyncTransaction , timestamp : Cp56Time , applied_at : Int ) -> Result [ Int , String ] # ClockSyncTransaction::new source fn ClockSyncTransaction :: new ( request : ServiceRequest ) -> Result [ ClockSyncT",
+          "rce fn ClockSyncTransaction :: apply ( self : ClockSyncTransaction , timestamp : Cp56Time , applied_at : Int ) -> Result [ Int , String ] # ClockSyncTransaction::new source fn ClockSyncTransaction :: new ( request : ServiceRequest ) -> Result [ ClockSyncTransaction , String ] # ClockSyncTransaction::received source fn ClockSyncTransaction :: recei",
+          " ( self : ClockSyncTransaction , timestamp : Cp56Time , applied_at : Int ) -> Result [ Int , String ] # ClockSyncTransaction::new source fn ClockSyncTransaction :: new ( request : ServiceRequest ) -> Result [ ClockSyncTransaction , String ] # ClockSyncTransaction::received source fn ClockSyncTransaction :: received ( self : ClockSyncTransaction ) ",
+          "Int ) -> Result [ Int , String ] # ClockSyncTransaction::new source fn ClockSyncTransaction :: new ( request : ServiceRequest ) -> Result [ ClockSyncTransaction , String ] # ClockSyncTransaction::received source fn ClockSyncTransaction :: received ( self : ClockSyncTransaction ) -> Cp56Time ? # ClockSyncTransaction::status source fn ClockSyncTransaction :: status ( self : ClockSyn",
+          "kSyncTransaction :: new ( request : ServiceRequest ) -> Result [ ClockSyncTransaction , String ] # ClockSyncTransaction::received source fn ClockSyncTransaction :: received ( self : ClockSyncTransaction ) -> Cp56Time ? # ClockSyncTransaction::status source fn ClockSyncTransaction :: status ( self : ClockSyncTransaction ) -> ServiceStatus # Command"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "lampclaw/minimoon",
+    "version": "0.3.0",
+    "url": "https://mooncakes.io/docs/lampclaw/minimoon@0.3.0",
+    "disposition": "排除直接 PTP 命中",
+    "note": "PageRuntime 与 Synchronize 应用状态相邻触发正则，非时钟同步。",
+    "hits": [
+      {
+        "kind": "neighbor",
+        "count": 1,
+        "excerpts": [
+          "d source fn PageRuntime :: page_id ( self : PageRuntime ) -> String # PageRuntime::refresh source fn PageRuntime :: refresh ( self : PageRuntime ) -> String Synchronize committed application values through the page transaction. # PageRuntime::resolve_effect source fn PageRuntime :: resolve_effect ( self : PageRuntime , request_id : String , phase : String , payload"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Lfan-ke/moonraft",
+    "version": "0.6.0",
+    "url": "https://mooncakes.io/docs/Lfan-ke/moonraft@0.6.0",
+    "disposition": "排除直接 PTP 命中",
+    "note": "Raft term 为逻辑时钟/任期，算法不是 IEEE 1588 BMCA。",
+    "hits": [
+      {
+        "kind": "neighbor",
+        "count": 1,
+        "excerpts": [
+          "ing @Lfan-ke/moonraft/raftpb { type Entry } One command entry in the replicated log. term is the leader's term — a monotonically increasing logical clock — at the moment the entry was created. index is the entry's 1-based position in the log; index 0 is the empty position before the first entry. entry_type tells the apply loop whether command is an ap"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Lfan-ke/moonzero",
+    "version": "0.7.3",
+    "url": "https://mooncakes.io/docs/Lfan-ke/moonzero@0.7.3",
+    "disposition": "排除直接 PTP 命中",
+    "note": "HTTP/SDK 的注入时钟和 async/同步类型邻接导致宽泛正则命中；不提供物理时钟同步。",
+    "hits": [
+      {
+        "kind": "neighbor",
+        "count": 8,
+        "excerpts": [
+          "one is raised to one, the way the other cores here clamp their bounds rather than rejecting them. # auth source fn auth ( secret : String , clock : Clock ) -> (( async ( @Lfan-ke/moonasgi. Scope Scope , async () -> @Lfan-ke/moonasgi. Event Event , async ( @Lfan-ke/moonasgi. Event Event ) -> Unit ) -> Unit ) -> ( async ( @Lfan-ke/moonasgi. Scope Scope , async () -> ",
+          "apped app runs. A limit <= 0 disables the check. Non- HTTP scopes pass through untouched. # metrics source fn metrics ( m : ServerMetrics , clock : Clock ) -> (( async ( @Lfan-ke/moonasgi. Scope Scope , async () -> @Lfan-ke/moonasgi. Event Event , async ( @Lfan-ke/moonasgi. Event Event ) -> Unit ) -> Unit ) -> ( async ( @Lfan-ke/moonasgi. Scope Scope , async () -> ",
+          "s with correct lengths are accepted; the flags default to 0 if unparseable. # period_limit source fn period_limit ( limiter : PeriodLimit , clock : Clock , key ? : String ) -> (( async ( @Lfan-ke/moonasgi. Scope Scope , async () -> @Lfan-ke/moonasgi. Event Event , async ( @Lfan-ke/moonasgi. Event Event ) -> Unit ) -> Unit ) -> ( async ( @Lfan-ke/moonasgi. Scope Scope , async () -> ",
+          " set is empty. A stable choice that only moves when the head instance goes away. # rate_limit source fn rate_limit ( bucket : TokenBucket , clock : Clock ) -> (( async ( @Lfan-ke/moonasgi. Scope Scope , async () -> @Lfan-ke/moonasgi. Event Event , async ( @Lfan-ke/moonasgi. Event Event ) -> Unit ) -> Unit ) -> ( async ( @Lfan-ke/moonasgi. Scope Scope , async () -> ",
+          " the service, not a dependency that should be able to close it. # redis_rate_limit source fn redis_rate_limit ( limiter : RedisTokenLimit , clock : Clock ) -> (( async ( @Lfan-ke/moonasgi. Scope Scope , async () -> @Lfan-ke/moonasgi. Event Event , async ( @Lfan-ke/moonasgi. Event Event ) -> Unit ) -> Unit ) -> ( async ( @Lfan-ke/moonasgi. Scope Scope , async () -> ",
+          "s reported as Unknown , matching how a gRPC client treats an unrecognised code. # structured_logging source fn structured_logging ( clock : Clock , logger ? : Logger ) -> (( async ( @Lfan-ke/moonasgi. Scope Scope , async () -> @Lfan-ke/moonasgi. Event Event , async ( @Lfan-ke/moonasgi. Event Event ) -> Unit ) -> Unit ) -> ( async ( @Lfan-ke/moonasgi. Scope Scope , async () -> ",
+          "gured at error or above emits none of them. Non-HTTP scopes pass through without logging. # timeout source fn timeout ( budget_ms : Int64 , clock : Clock ) -> (( async ( @Lfan-ke/moonasgi. Scope Scope , async () -> @Lfan-ke/moonasgi. Event Event , async ( @Lfan-ke/moonasgi. Event Event ) -> Unit ) -> Unit ) -> ( async ( @Lfan-ke/moonasgi. Scope Scope , async () -> ",
+          "asgi. Event Event ) -> Unit ) -> Unit )) Timeout middleware (← go-zero's TimeoutHandler ): establish a per-request Deadline of budget_ms at clock.now() for the wrapped app. Async boundary (faithful model). Preemptively aborting an in-flight handler the instant its deadline fires requires racing the handler against a timer and cancelling the loser — in MoonBit that is @async.a"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Lfan-ke/raft-moonbit",
+    "version": "0.5.2",
+    "url": "https://mooncakes.io/docs/Lfan-ke/raft-moonbit@0.5.2",
+    "disposition": "排除直接 PTP 命中",
+    "note": "Raft term 为逻辑时钟/任期，算法不是 IEEE 1588 BMCA。",
+    "hits": [
+      {
+        "kind": "neighbor",
+        "count": 1,
+        "excerpts": [
+          "@Lfan-ke/raft-moonbit/raftpb { type Entry } One command entry in the replicated log. term is the leader's term — a monotonically increasing logical clock — at the moment the entry was created. index is the entry's 1-based position in the log; index 0 is the empty position before the first entry. entry_type tells the apply loop whether command is an ap"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Ljh684/moonnet-lab",
+    "version": "0.1.0",
+    "url": "https://mooncakes.io/docs/Ljh684/moonnet-lab@0.1.0",
+    "disposition": "较高：网络仿真能力部分重合",
+    "note": "对方主要模拟 TCP 和队列，本地只有简化同步循环；共同的网络仿真功能仍然存在。",
+    "hits": [
+      {
+        "kind": "neighbor",
+        "count": 5,
+        "excerpts": [
+          ". Switch to light mode. 0.1.0 (latest) 0.1.0 (latest) Expand all Collapse all cmd → examples → src → moonnet-lab Deterministic packet-level network simulator and TCP congestion-control lab for MoonBit simulation network tcp congestion-control deterministic discrete-event moon add Ljh684/moonnet-lab@0.1.0 Download zip Author Ljh684 Version 0.1.0 License Ap",
+          "rministic packet-level network simulator and TCP congestion-control lab for MoonBit simulation network tcp congestion-control deterministic discrete-event moon add Ljh684/moonnet-lab@0.1.0 Download zip Author Ljh684 Version 0.1.0 License Apache-2.0 Repository github.com/Ljh684/moonnet-lab Last updated 18 days ago Downloads 8 Dependencies moonbitlang/x ",
+          "么不把这些做成 moonsim 的补丁\"、与 Mininet / ns-3 的分工、以及立项前的生态扫描）写在 docs/positioning.md 。 # English summary moonnet-lab is a deterministic packet-level network simulator and TCP congestion-control laboratory written in MoonBit, with no third-party dependencies. Given a topology, a traffic pattern and a seed, a run produces byte-identical event ordering, random draws ",
+          "nd what is an implementation detail. # License Apache-2.0 Install moon add Ljh684/moonnet-lab@0.1.0 Download zip Deterministic packet-level network simulator and TCP congestion-control lab for MoonBit simulation network tcp congestion-control deterministic discrete-event Ljh684 Apache-2.0 github.com/Ljh684/moonnet-lab Updated 18 days ago 8 downloads Depen",
+          "rministic packet-level network simulator and TCP congestion-control lab for MoonBit simulation network tcp congestion-control deterministic discrete-event Ljh684 Apache-2.0 github.com/Ljh684/moonnet-lab Updated 18 days ago 8 downloads Dependencies moonbitlang/x 0.5.5 Powered by MoonBit Site source Report issue Packages Build queue Skills Statistics © 2"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Lyllyl789/moon-kalman",
+    "version": "0.2.1",
+    "url": "https://mooncakes.io/docs/Lyllyl789/moon-kalman@0.2.1",
+    "disposition": "邻近：传感器时间对齐与滤波",
+    "note": "样本时间对齐和估计滤波不等于 PTP 物理时钟伺服，也不是本地 PI 算法重复证据。",
+    "hits": [
+      {
+        "kind": "neighbor",
+        "count": 6,
+        "excerpts": [
+          "h_out_of_order StreamWindowSpec::with_out_of_order T Synchronizer :: accept Synchronizer::accept :: accepted Synchronizer::accepted :: last_timestamp Synchronizer::last_timestamp :: new Synchronizer::new :: rejected Synchronizer::rejected :: reset Synchronizer::reset :: tolerance Synchronizer::tolerance T TelemetrySample :: channel TelemetrySample::channel :",
+          "ec::with_out_of_order T Synchronizer :: accept Synchronizer::accept :: accepted Synchronizer::accepted :: last_timestamp Synchronizer::last_timestamp :: new Synchronizer::new :: rejected Synchronizer::rejected :: reset Synchronizer::reset :: tolerance Synchronizer::tolerance T TelemetrySample :: channel TelemetrySample::channel :: is_finite TelemetrySample::is_fini",
+          "、检查点和恢复。 非线性滤波 ： EKF 和 UKF ，支持自定义状态转移、雅可比或 sigma 点、门控、缺失观测和诊断统计。 线性代数 ：向量/矩阵运算、LU 与部分选主元求解、矩阵逆、Cholesky、QR、最小二乘、特征值和条件数估计。 传感器处理 ：多传感器融合、校准、时间同步、数据质量审计、异常值降权、健康评分、有限缓存和遥测。 估计后处理 ：RTS 全平滑、固定时滞平滑、信号处理、轨迹分析、误差指标、模型选择、估计器集成和确定性回放。 几何与质量分析 ：三维坐标/姿态、鲁棒回归、异步传感器对时、批量估计、不确定性预算、轨迹质量、轨迹关联和模型目录。 运行时保护 ：事件时间窗口、流式游标、状态约束修复、安全包络、诊断快照和 CSV 导出。 输入保护 ：检查维度、非有限",
+          " Int last_timestamp : Int ? accepted : Int rejected : Int } # Synchronizer::accept source fn Synchronizer :: accept ( self : Synchronizer , timestamp : Int ) -> Bool # Synchronizer::accepted source fn Synchronizer :: accepted ( self : Synchronizer ) -> Int # Synchronizer::last_timestamp source fn Synchronizer :: last_timestamp ( self : Synchronizer ) -> Int ? # Synchronizer::",
+          ", timestamp : Int ) -> Bool # Synchronizer::accepted source fn Synchronizer :: accepted ( self : Synchronizer ) -> Int # Synchronizer::last_timestamp source fn Synchronizer :: last_timestamp ( self : Synchronizer ) -> Int ? # Synchronizer::new source fn Synchronizer :: new ( tolerance : Int ) -> Synchronizer # Synchronizer::rejected source fn Synchronizer :: rejected ",
+          "r::accepted source fn Synchronizer :: accepted ( self : Synchronizer ) -> Int # Synchronizer::last_timestamp source fn Synchronizer :: last_timestamp ( self : Synchronizer ) -> Int ? # Synchronizer::new source fn Synchronizer :: new ( tolerance : Int ) -> Synchronizer # Synchronizer::rejected source fn Synchronizer :: rejected ( self : Synchronizer ) -> Int # Synchro"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "mizchi/bit_io_native",
+    "version": "0.48.0",
+    "url": "https://mooncakes.io/docs/mizchi/bit_io_native@0.48.0",
+    "disposition": "排除直接 PTP 命中",
+    "note": "存储同步接口接收 Clock 参数，非时钟同步协议。",
+    "hits": [
+      {
+        "kind": "neighbor",
+        "count": 1,
+        "excerpts": [
+          "S3Config S3Config , page_size ? : Int ) -> @mizchi/bit_objstore. S3Store S3Store Build an S3-backed store wired to the native transport and clock. # push source async fn push ( remote : @mizchi/bit_protocol. Remote Remote , req : @mizchi/bit_protocol. PushRequest PushRequest ) -> String raise @mizchi/bit_object. GitError GitError Push a packfile to remote reposito"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "mizchi/bitx_hub",
+    "version": "0.48.0",
+    "url": "https://mooncakes.io/docs/mizchi/bitx_hub@0.48.0",
+    "disposition": "排除直接 PTP 命中",
+    "note": "Git/存储 SyncLink 与 Clock 参数相邻，非物理时钟同步。",
+    "hits": [
+      {
+        "kind": "neighbor",
+        "count": 1,
+        "excerpts": [
+          "elf : Hub , objects : & @mizchi/bit_lib. ObjectStore ObjectStore , refs : & @mizchi/bit_lib. RefStore RefStore , clock : & @mizchi/bit_lib. Clock Clock , link : SyncLink ) -> Unit raise @mizchi/bit_object. GitError GitError Store a SyncLink as a hub record # Hub::record_pr_workflow source fn Hub :: record_pr_workflow ( self : Hub , objects : & @mizchi/bit_lib. Ob"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "mizchi/bitx_kv",
+    "version": "0.48.0",
+    "url": "https://mooncakes.io/docs/mizchi/bitx_kv@0.48.0",
+    "disposition": "排除直接 PTP 命中",
+    "note": "用于合并/冲突检测的逻辑时钟，非物理时钟同步。",
+    "hits": [
+      {
+        "kind": "neighbor",
+        "count": 2,
+        "excerpts": [
+          "ollows the same approach as Noms and Dolt . # Vector Clocks Vector clocks track causal relationships between updates: Each node maintains a logical clock On update: increment own clock On sync: merge clocks, take max for each node Enables detection of concurrent updates for conflict resolution # Merge Strategies LastWriteWins : Take the value with the",
+          "lt . # Vector Clocks Vector clocks track causal relationships between updates: Each node maintains a logical clock On update: increment own clock On sync: merge clocks, take max for each node Enables detection of concurrent updates for conflict resolution # Merge Strategies LastWriteWins : Take the value with the higher vector clock (or timestamp as t"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "mizchi/converge",
+    "version": "0.2.0",
+    "url": "https://mooncakes.io/docs/mizchi/converge@0.2.0",
+    "disposition": "排除直接 PTP 命中",
+    "note": "CRDT 的 Lamport 逻辑时钟，非物理时间同步。",
+    "hits": [
+      {
+        "kind": "neighbor",
+        "count": 1,
+        "excerpts": [
+          ". # Package Structure src/\n├── types/       Core type definitions (PeerId, EventId, Value, RowOp, Event, EventRun)\n├── clock/       Lamport logical clock\n├── graph/       Event DAG with frontier tracking and LCA computation\n├── oplog/       Operation log with RLE compression\n├── merge/       EG-Walker conflict resolution (LWW per column)\n├── doc/     "
+        ]
+      }
+    ]
+  },
+  {
+    "name": "mizchi/crdt_db",
+    "version": "0.1.1",
+    "url": "https://mooncakes.io/docs/mizchi/crdt_db@0.1.1",
+    "disposition": "排除直接 PTP 命中",
+    "note": "CRDT 的 Lamport 逻辑时钟，非物理时间同步。",
+    "hits": [
+      {
+        "kind": "neighbor",
+        "count": 1,
+        "excerpts": [
+          ". # Package Structure src/\n├── types/       Core type definitions (PeerId, EventId, Value, RowOp, Event, EventRun)\n├── clock/       Lamport logical clock\n├── graph/       Event DAG with frontier tracking and LCA computation\n├── oplog/       Operation log with RLE compression\n├── merge/       EG-Walker conflict resolution (LWW per column)\n├── doc/     "
+        ]
+      }
+    ]
+  },
+  {
+    "name": "mizchi/wasmtime",
+    "version": "0.1.6",
+    "url": "https://mooncakes.io/docs/mizchi/wasmtime@0.1.6",
+    "disposition": "排除直接 PTP 命中",
+    "note": "Wasm 运行时 FFI 的 clock_now_ns 与 async 配置邻接，非 PTP。",
+    "hits": [
+      {
+        "kind": "neighbor",
+        "count": 1,
+        "excerpts": [
+          "KIND_F64 V VALKIND_FUNCREF V VALKIND_I32 V VALKIND_I64 V async_context_delete V async_context_new V call_future_delete V call_future_poll V clock_now_ns V config_async_stack_size_set V config_cache_config_load V config_cache_config_load_bytes V config_cache_config_load_default V config_consume_fuel_set V config_cranelift_debug_verifier_set V config_cranelift_flag_e"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "mjfmjf879/moonbit_constraint",
+    "version": "0.1.0",
+    "url": "https://mooncakes.io/docs/mjfmjf879/moonbit_constraint@0.1.0",
+    "disposition": "邻近：确定性离散事件模型",
+    "note": "约束求解/排队仿真领域不同，没有 PTP 实现证据。",
+    "hits": [
+      {
+        "kind": "neighbor",
+        "count": 1,
+        "excerpts": [
+          "bel. # SimulationEventKind source pub enum SimulationEventKind { Arrival ServiceStart ServiceFinish Maintenance CustomEvent } Deterministic discrete-event simulation helpers. The simulation layer is intentionally integer-based: it can replay queue, service, and maintenance scenarios in CI without wall-clock randomness. Events are ordered by time and th"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "mokomoking2501/isoproject",
+    "version": "0.1.0",
+    "url": "https://mooncakes.io/docs/mokomoking2501/isoproject@0.1.0",
+    "disposition": "邻近：同步保证的声明模型",
+    "note": "能力声明不是时钟同步算法，没有证据证明它实现 PTP。",
+    "hits": [
+      {
+        "kind": "neighbor",
+        "count": 11,
+        "excerpts": [
+          "kbench_runner → workbench_runtime → workbench_server → workbench_shared → workbench_view → README T Application :: make Application::make T ClockSyncGuarantee :: label ClockSyncGuarantee::label T DeviceNode :: make DeviceNode::make T DeviceTree :: contains_device DeviceTree::contains_device :: empty DeviceTree::empty :: make DeviceTree::make T IsoProject :: lint IsoProject::",
+          " five-component LinkCapabilityVector to each device path: single initiator, bounded delay, total-order delivery, partition possibility, and clock-sync guarantee. JSON keeps it as a nested capabilities object and the YAML-like device row appends the same five values. Missing vectors, positive task deadlines on unbounded paths, and physical-clock tas",
+          "object and the YAML-like device row appends the same five values. Missing vectors, positive task deadlines on unbounded paths, and physical-clock tasks without physical sync are lint errors. E3 plan text and digest include the canonical vector plus derived E2/envelope/partition/absolute-time obligations. The revision-bound GET /api/project/capabilities resource and Capab",
+          "cate, wrong-kind, or invalid registry bindings. Positive Object Contract max_age_ns or deadline_ns requires bounded delay, while a physical clock requirement needs physical synchronization. These checks participate in preview activation, E3 plan text/digest, the typed run-plan inspection, project validation, and the revision-bound GET /api/project/contract-requirements resou",
+          "ssets ? : Array [ String ], protocol_role_bindings ? : Array [ ProtocolRoleBinding ], library_assets ? : Array [ String ]) -> Application # ClockSyncGuarantee source pub ( all ) enum ClockSyncGuarantee { NoSync Causal Windowed Physical } derive ( Eq , @moonbitlang/core/debug. Debug Debug ) # ClockSyncGuarantee::label source fn ClockSyncGuarantee :",
+          "indings ? : Array [ ProtocolRoleBinding ], library_assets ? : Array [ String ]) -> Application # ClockSyncGuarantee source pub ( all ) enum ClockSyncGuarantee { NoSync Causal Windowed Physical } derive ( Eq , @moonbitlang/core/debug. Debug Debug ) # ClockSyncGuarantee::label source fn ClockSyncGuarantee :: label ( self : ClockSyncGuarantee ) -> String # DeviceNode ",
+          "antee source pub ( all ) enum ClockSyncGuarantee { NoSync Causal Windowed Physical } derive ( Eq , @moonbitlang/core/debug. Debug Debug ) # ClockSyncGuarantee::label source fn ClockSyncGuarantee :: label ( self : ClockSyncGuarantee ) -> String # DeviceNode source pub ( all ) struct DeviceNode { id : String label : String family : String provider_s",
+          "yncGuarantee { NoSync Causal Windowed Physical } derive ( Eq , @moonbitlang/core/debug. Debug Debug ) # ClockSyncGuarantee::label source fn ClockSyncGuarantee :: label ( self : ClockSyncGuarantee ) -> String # DeviceNode source pub ( all ) struct DeviceNode { id : String label : String family : String provider_slot : String runtime_target : String",
+          " Physical } derive ( Eq , @moonbitlang/core/debug. Debug Debug ) # ClockSyncGuarantee::label source fn ClockSyncGuarantee :: label ( self : ClockSyncGuarantee ) -> String # DeviceNode source pub ( all ) struct DeviceNode { id : String label : String family : String provider_slot : String runtime_target : String capabilities : LinkCapabilityVector ",
+          "ub ( all ) struct LinkCapabilityVector { single_initiator : Bool bounded_delay : Bool total_order_delivery : Bool partition_possible : Bool clock_sync : ClockSyncGuarantee } derive ( Eq , @moonbitlang/core/debug. Debug Debug ) # LinkCapabilityVector::absolute_time_allowed source fn LinkCapabilityVector :: absolute_time_allowed ( self : LinkCapabilityVector ) -",
+          "pabilityVector :: make ( single_initiator ~ : Bool , bounded_delay ~ : Bool , total_order_delivery ~ : Bool , partition_possible ~ : Bool , clock_sync ~ : ClockSyncGuarantee ) -> LinkCapabilityVector # LinkCapabilityVector::partition_faults_required source fn LinkCapabilityVector :: partition_faults_required ( self : LinkCapabilityVector ) -> Bool # ProjectAsset"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "mokomoking2501/MoonECAT",
+    "version": "0.2.0",
+    "url": "https://mooncakes.io/docs/mokomoking2501/MoonECAT@0.2.0",
+    "disposition": "较高：工业分布式时钟功能相似",
+    "note": "EtherCAT DC 与 IEEE 1588 协议不同；实际工业时间同步目标和部分功能相近，不能据协议差异排除。",
+    "hits": [
+      {
+        "kind": "neighbor",
+        "count": 1,
+        "excerpts": [
+          "able monitor registry Analysis engine : DC jitter profiling, PDO auto-tuning, topology health, cycle perf, comm quality scoring Distributed Clock : SYNC0 configuration + FRMW drift compensation + propagation delay ENI/ESI tooling : XML→JSON converter with unified configuration model VirtualBus : Multi-slave protocol-level simulation with SDO/Emergenc"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "mokomoking2501/profinet_master",
+    "version": "0.1.0",
+    "url": "https://mooncakes.io/docs/mokomoking2501/profinet_master@0.1.0",
+    "disposition": "标准名命中：未证实 PTP 实现",
+    "note": "802.1AS 可选 MIB 开关不等于 gPTP 协议实现；不能将该命中直接判作 PTP 重复。",
+    "hits": [
+      {
+        "kind": "direct",
+        "count": 3,
+        "excerpts": [
+          "te_probeability_class V snmp_disabled_after_ar_abort V snmp_explicit_enable_required V snmp_feature_bridge_mib_optional V snmp_feature_ieee_8021as_mib_optional V snmp_feature_lldp_mib_required V snmp_feature_mib2_required V snmp_feature_pno_mib_optional V snmp_mib_update_probeability V snmp_mib_update_probeability_class V snmp_service_optional ",
+          "cit_enable_required () -> Bool # snmp_feature_bridge_mib_optional source fn snmp_feature_bridge_mib_optional () -> Bool # snmp_feature_ieee_8021as_mib_optional source fn snmp_feature_ieee_8021as_mib_optional () -> Bool # snmp_feature_lldp_mib_required source fn snmp_feature_lldp_mib_required () -> Bool # snmp_feature_mib2_required source fn snm",
+          "idge_mib_optional source fn snmp_feature_bridge_mib_optional () -> Bool # snmp_feature_ieee_8021as_mib_optional source fn snmp_feature_ieee_8021as_mib_optional () -> Bool # snmp_feature_lldp_mib_required source fn snmp_feature_lldp_mib_required () -> Bool # snmp_feature_mib2_required source fn snmp_feature_mib2_required () -> Bool # snmp_featur"
+        ]
+      },
+      {
+        "kind": "neighbor",
+        "count": 1,
+        "excerpts": [
+          "bounded regression run is needed. --clock monotonic-ms enables a millisecond-deadline loop, and --clock highres uses the native microsecond clock backend. --period-us <value> synchronizes the local RT send loop period with the IOCR send_clock_factor/reduction_ratio values negotiated in Connect.req; values must be exactly representable by the 31.25 us IOCR time base. --rt-perio"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "moonbitstack/moonraft",
+    "version": "0.7.0",
+    "url": "https://mooncakes.io/docs/moonbitstack/moonraft@0.7.0",
+    "disposition": "排除直接 PTP 命中",
+    "note": "Raft term 为逻辑时钟/任期，算法不是 IEEE 1588 BMCA。",
+    "hits": [
+      {
+        "kind": "neighbor",
+        "count": 1,
+        "excerpts": [
+          "moonbitstack/moonraft/raftpb { type Entry } One command entry in the replicated log. term is the leader's term — a monotonically increasing logical clock — at the moment the entry was created. index is the entry's 1-based position in the log; index 0 is the empty position before the first entry. entry_type tells the apply loop whether command is an ap"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "moonbitstack/moonzero",
+    "version": "0.11.2",
+    "url": "https://mooncakes.io/docs/moonbitstack/moonzero@0.11.2",
+    "disposition": "排除直接 PTP 命中",
+    "note": "HTTP/SDK 的注入时钟和 async/同步类型邻接导致宽泛正则命中；不提供物理时钟同步。",
+    "hits": [
+      {
+        "kind": "neighbor",
+        "count": 7,
+        "excerpts": [
+          "one is raised to one, the way the other cores here clamp their bounds rather than rejecting them. # auth source fn auth ( secret : String , clock : Clock ) -> (( async ( @moonbitstack/moonasgi/spec. Scope Scope , async () -> @moonbitstack/moonasgi/spec. Event Event , async ( @moonbitstack/moonasgi/spec. Event Event ) -> Unit ) -> Unit ) -> ( async ( @moonbitstack/m",
+          "essage is written under (← go-zero's logx.content , where zap and slog would write msg ). # metrics source fn metrics ( m : ServerMetrics , clock : Clock ) -> (( async ( @moonbitstack/moonasgi/spec. Scope Scope , async () -> @moonbitstack/moonasgi/spec. Event Event , async ( @moonbitstack/moonasgi/spec. Event Event ) -> Unit ) -> Unit ) -> ( async ( @moonbitstack/m",
+          "ame place, and on a development machine 8888 is somebody else's already. # rate_limit source fn rate_limit ( bucket : TokenBucket , clock : Clock , refusal ? : Refusal ) -> (( async ( @moonbitstack/moonasgi/spec. Scope Scope , async () -> @moonbitstack/moonasgi/spec. Event Event , async ( @moonbitstack/moonasgi/spec. Event Event ) -> Unit ) -> Unit ) -> ( async ( @moonbitstack/m",
+          "vice, not a dependency that should be able to close it. # redis_rate_limit source fn redis_rate_limit ( limiter : RedisTokenLimit , clock : Clock , refusal ? : Refusal ) -> (( async ( @moonbitstack/moonasgi/spec. Scope Scope , async () -> @moonbitstack/moonasgi/spec. Event Event , async ( @moonbitstack/moonasgi/spec. Event Event ) -> Unit ) -> Unit ) -> ( async ( @moonbitstack/m",
+          "s reported as Unknown , matching how a gRPC client treats an unrecognised code. # structured_logging source fn structured_logging ( clock : Clock , logger ? : Logger ) -> (( async ( @moonbitstack/moonasgi/spec. Scope Scope , async () -> @moonbitstack/moonasgi/spec. Event Event , async ( @moonbitstack/moonasgi/spec. Event Event ) -> Unit ) -> Unit ) -> ( async ( @moonbitstack/m",
+          "t middleware answers 503 with this body rather than 504 , so that is the default. # timeout source fn timeout ( budget_ms : Int64 , clock : Clock , refusal ? : Refusal ) -> (( async ( @moonbitstack/moonasgi/spec. Scope Scope , async () -> @moonbitstack/moonasgi/spec. Event Event , async ( @moonbitstack/moonasgi/spec. Event Event ) -> Unit ) -> Unit ) -> ( async ( @moonbitstack/m",
+          "spec. Event Event ) -> Unit ) -> Unit )) Timeout middleware (← go-zero's TimeoutHandler ): establish a per-request Deadline of budget_ms at clock.now() for the wrapped app. Async boundary (faithful model). Preemptively aborting an in-flight handler the instant its deadline fires requires racing the handler against a timer and cancelling the loser — in MoonBit that is @async.a"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "nexacodes/moontask",
+    "version": "0.1.2",
+    "url": "https://mooncakes.io/docs/nexacodes/moontask@0.1.2",
+    "disposition": "排除直接 PTP 命中",
+    "note": "任务运行时读取时钟，非时间同步协议或漂移控制。",
+    "hits": [
+      {
+        "kind": "neighbor",
+        "count": 1,
+        "excerpts": [
+          "# system_runtime_clock source fn system_runtime_clock () -> @nexacodes/moontask/core. RuntimeClock RuntimeClock Returns the default runtime clock backed by moonbitlang/async . Source Files moontask.mbt Install moon add nexacodes/moontask@0.1.2 Download zip A MoonBit task queue library with producer, consumer, admin APIs, and memory/redis backends. moonbit task-queue asyn"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "oyjh0381/moonlab",
+    "version": "0.1.0",
+    "url": "https://mooncakes.io/docs/oyjh0381/moonlab@0.1.0",
+    "disposition": "中：确定性仿真和故障测试相似",
+    "note": "对方是通用框架，本地是固定步进同步实验；不是完整相同实现。",
+    "hits": [
+      {
+        "kind": "neighbor",
+        "count": 5,
+        "excerpts": [
+          "ight mode. 0.1.0 (latest) 0.1.0 (latest) Expand all Collapse all artifact → cmd → examples → explore → runner → sim → moonlab Deterministic distributed-system simulation and fault injection for MoonBit distributed-systems simulation deterministic-testing fault-injection moon add oyjh0381/moonlab@0.1.0 Download zip Author oyjh0381 Version 0.1.0 License Apache-2.0 R",
+          "ll artifact → cmd → examples → explore → runner → sim → moonlab Deterministic distributed-system simulation and fault injection for MoonBit distributed-systems simulation deterministic-testing fault-injection moon add oyjh0381/moonlab@0.1.0 Download zip Author oyjh0381 Version 0.1.0 License Apache-2.0 Repository github.com/oyjh0381/MoonLab Last updated 2 months ago",
+          "ndencies moonbitlang/async 0.20.4 moonbitlang/x 0.4.49 README # MoonLab MoonLab is an original Apache-2.0 MoonBit library for deterministic distributed-system simulation and fault injection. It lets protocol authors express Nodes as typed, pure transitions while MoonLab controls scheduling, Virtual Time, Messages, Timers, Stable Storage, finite Choice Points, cras",
+          " . See CONTRIBUTING.md for verification commands and contribution rules. Install moon add oyjh0381/moonlab@0.1.0 Download zip Deterministic distributed-system simulation and fault injection for MoonBit distributed-systems simulation deterministic-testing fault-injection oyjh0381 Apache-2.0 github.com/oyjh0381/MoonLab Updated 2 months ago 11 downloads Dependencies ",
+          "ion rules. Install moon add oyjh0381/moonlab@0.1.0 Download zip Deterministic distributed-system simulation and fault injection for MoonBit distributed-systems simulation deterministic-testing fault-injection oyjh0381 Apache-2.0 github.com/oyjh0381/MoonLab Updated 2 months ago 11 downloads Dependencies moonbitlang/async 0.20.4 moonbitlang/x 0.4.49 Powered by MoonBi"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "qyt1234567/moonbit-modbus",
+    "version": "0.2.2",
+    "url": "https://mooncakes.io/docs/qyt1234567/moonbit-modbus@0.2.2",
+    "disposition": "排除直接 PTP 命中",
+    "note": "确定性 polling 的 logical-clock schedule，不是 PTP/BMCA。",
+    "hits": [
+      {
+        "kind": "neighbor",
+        "count": 1,
+        "excerpts": [
+          "ut : Int retries : Int next_due : Int attempts : Int runs : Int failures : Int last_response : Frame ? } A polling job with a deterministic logical-clock schedule. # PollJob::is_due source fn PollJob :: is_due ( self : PollJob , now : Int ) -> Bool # PollJob::mark_failure source fn PollJob :: mark_failure ( self : PollJob , now : Int ) -> Unit # PollJ"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RabitLogic/snowflake",
+    "version": "0.1.2",
+    "url": "https://mooncakes.io/docs/RabitLogic/snowflake@0.1.2",
+    "disposition": "排除直接 PTP 命中",
+    "note": "ID 生成器提示 NTP 回拨风险，属于同步结果的使用者，不提供同步协议。",
+    "hits": [
+      {
+        "kind": "neighbor",
+        "count": 2,
+        "excerpts": [
+          " . Consensus : use etcd or ZooKeeper for automatic allocation. # Clock accuracy The generator uses @env.now() (wall‑clock time). A backward NTP adjustment may cause a brief stall while the clock catches up (the library waits for time to recover). To minimise risk: Use ntpd or chronyd with minpoll no smaller than 6 (64 s). Avoid manual date c",
+          "imise risk: Use ntpd or chronyd with minpoll no smaller than 6 (64 s). Avoid manual date commands or large step adjustments. Monitor system clock synchronisation in your observability pipeline. Note : Unlike libraries that use an OS monotonic clock, this library will pause briefly if the clock jumps backwards. This is a deliberate trade‑off for por"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "riantr/snn_mbt",
+    "version": "0.155.0",
+    "url": "https://mooncakes.io/docs/riantr/snn_mbt@0.155.0",
+    "disposition": "排除直接 PTP 命中",
+    "note": "network simulator 指神经元网络仿真，不是分组网络或时钟同步。",
+    "hits": [
+      {
+        "kind": "neighbor",
+        "count": 1,
+        "excerpts": [
+          " dsac_soft_target = SAC soft-Bellman + ε·N(0, 0.01) stochastic perturbation, dsac_sample_action . 12 new tests. # v0.47.0 — Batch 4 unified Network Simulator framework mbt/network_simulator.mbt — extends the existing HeterogeneousModel framework (compose.mbt). New helpers: NetworkSummary struct (counts of pops/conns/stims/monitors/stdp/stp entries + total"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "SCL-NN/moontracekit",
+    "version": "0.2.0",
+    "url": "https://mooncakes.io/docs/SCL-NN/moontracekit@0.2.0",
+    "disposition": "邻近：逻辑时钟",
+    "note": "没有证据表明该包提供 IEEE 1588 或本地物理时间伺服。",
+    "hits": [
+      {
+        "kind": "neighbor",
+        "count": 2,
+        "excerpts": [
+          "ontier V compare_events V find_concurrent_pairs V sample_concurrent_events V sample_linear_events V sample_out_of_order_events moontracekit Logical clocks, vector clocks, happens-before analysis, and causal buffers for MoonBit. causality vector-clock lamport-clock distributed happens-before moon add SCL-NN/moontracekit@0.2.0 Download zip Author SCL-NN",
+          "les analysis.mbt buffer.mbt json.mbt lamport.mbt templates.mbt types.mbt vector.mbt Install moon add SCL-NN/moontracekit@0.2.0 Download zip Logical clocks, vector clocks, happens-before analysis, and causal buffers for MoonBit. causality vector-clock lamport-clock distributed happens-before SCL-NN Apache-2.0 github.com/SCL-NN/MoonTraceKit Updated 3 mo"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "walkzzz/moondes",
+    "version": "0.5.0",
+    "url": "https://mooncakes.io/docs/walkzzz/moondes@0.5.0",
+    "disposition": "邻近：离散事件仿真框架",
+    "note": "通用仿真基础设施，未发现 PTP 实现证据。",
+    "hits": [
+      {
+        "kind": "neighbor",
+        "count": 2,
+        "excerpts": [
+          "EADME V new_config V new_env V new_exclusive V new_plugin_manager V process V version moondes MoonDES - 通用离散事件仿真引擎，基于 MoonBit 构建 simulation discrete-event des moonbit moon add walkzzz/moondes@0.5.0 Download zip Author walkzzz Version 0.5.0 License Apache-2.0 Repository github.com/toadium/MoonDES Last updated 2 months ago Downloads 10 README # MoonDES 通",
+          "ngth ( ) , 1 ) } Source Files moondes.mbt Install moon add walkzzz/moondes@0.5.0 Download zip MoonDES - 通用离散事件仿真引擎，基于 MoonBit 构建 simulation discrete-event des moonbit walkzzz Apache-2.0 github.com/toadium/MoonDES Updated 2 months ago 10 downloads Powered by MoonBit Site source Report issue Packages Build queue Skills Statistics © 2026 mooncakes.io"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "wallll-wal6/moonkv",
+    "version": "0.1.3",
+    "url": "https://mooncakes.io/docs/wallll-wal6/moonkv@0.1.3",
+    "disposition": "排除直接 PTP 命中",
+    "note": "KV 数据库的 logical_clock 计数，不是 PTP/BMCA。",
+    "hits": [
+      {
+        "kind": "neighbor",
+        "count": 2,
+        "excerpts": [
+          "base operations. # DB source pub struct DB { dir : String keydir : Keydir active_file_id : Int active_file_offset : Int max_file_size : Int logical_clock : Int64 } Main database handle. # DB::close source fn DB :: close ( self : DB ) -> Unit Helper to close/clean resources (currently a no-op). # DB::contains source fn DB :: contains ( self : DB , key ",
+          "tats source pub struct DBStats { key_count : Int live_value_bytes : Int64 active_file_id : Int active_file_offset : Int max_file_size : Int logical_clock : Int64 } A compact health and capacity snapshot for monitoring integrations. # HintRecord source pub struct HintRecord { timestamp : Int64 expires_at : Int64 key_sz : Int val_sz : Int value_pos : In"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "wcx789ll/moonsim",
+    "version": "0.1.2",
+    "url": "https://mooncakes.io/docs/wcx789ll/moonsim@0.1.2",
+    "disposition": "中：分布式网络仿真相似",
+    "note": "本地不含通用离散事件引擎；网络条件和可复现实验存在交集。",
+    "hits": [
+      {
+        "kind": "neighbor",
+        "count": 3,
+        "excerpts": [
+          "ule_at Simulation::schedule_at :: start_process Simulation::start_process :: step Simulation::step moonsim A high-performance deterministic discrete-event and multi-agent systems simulation framework in MoonBit simulation des deterministic systems queue moon add wcx789ll/moonsim@0.1.2 Download zip Author wcx789ll Version 0.1.2 License Apache-2.0 Reposi",
+          "icense Apache-2.0 Repository github.com/wcx789ll/moonsim Last updated 2 months ago Downloads 17 README # MoonSim MoonSim is a deterministic discrete-event and distributed-network simulation framework written in MoonBit. It models virtual time, stable event ordering, resource contention, deadlines, packet loss, bandwidth queues, SLA metrics, and trace e",
+          " self : Simulation ) -> Bool Source Files moonsim.mbt Install moon add wcx789ll/moonsim@0.1.2 Download zip A high-performance deterministic discrete-event and multi-agent systems simulation framework in MoonBit simulation des deterministic systems queue wcx789ll Apache-2.0 github.com/wcx789ll/moonsim Updated 2 months ago 17 downloads Powered by MoonBit"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "xuting22/ntp",
+    "version": "0.4.0",
+    "url": "https://mooncakes.io/docs/xuting22/ntp@0.4.0",
+    "disposition": "较高：物理时间同步功能部分相似",
+    "note": "NTP 与 PTP 的报文、源选择算法不同；当前 simulate 不是 NTP 的四时间戳测量实现。不能据协议不同排除功能相似。",
+    "hits": [
+      {
+        "kind": "neighbor",
+        "count": 17,
+        "excerpts": [
+          "xuting22/ntp - mooncakes.io 🥮 mooncakes.io xuting22 / ntp Search Sign in Using system theme. Switch to light mode. 0.4.0 (latest) 0.4.0 (latest) Expand all Collapse all cmd → README E NtpError T ClockFilter :: be",
+          "xuting22/ntp - mooncakes.io 🥮 mooncakes.io xuting22 / ntp Search Sign in Using system theme. Switch to light mode. 0.4.0 (latest) 0.4.0 (latest) Expand all Collapse all cmd → README E NtpError T ClockFilter :: begin_poll ClockFilter::begin_poll :: estimate ",
+          "p::unix_seconds :: zero Timestamp::zero V analyze V combine_peers V decode V decode_datagram V from_unix V lowest_delay V measure V request ntp NTP packet analysis, authenticated UDP, clock filters and source consensus moon add xuting22/ntp@0.4.0 Download zip Author xuting22 Version 0.4.0 License MIT Repository github.com/xuting22/moonbit-nt",
+          "nix_seconds :: zero Timestamp::zero V analyze V combine_peers V decode V decode_datagram V from_unix V lowest_delay V measure V request ntp NTP packet analysis, authenticated UDP, clock filters and source consensus moon add xuting22/ntp@0.4.0 Download zip Author xuting22 Version 0.4.0 License MIT Repository github.com/xuting22/moonbit-ntp La",
+          "om_unix V lowest_delay V measure V request ntp NTP packet analysis, authenticated UDP, clock filters and source consensus moon add xuting22/ntp@0.4.0 Download zip Author xuting22 Version 0.4.0 License MIT Repository github.com/xuting22/moonbit-ntp Last updated 27 days ago Downloads 6 README # 可执行 API 示例 MoonBit API 示例随两个后端测试运行。Node UDP、认证和浏览",
+          " source consensus moon add xuting22/ntp@0.4.0 Download zip Author xuting22 Version 0.4.0 License MIT Repository github.com/xuting22/moonbit-ntp Last updated 27 days ago Downloads 6 README # 可执行 API 示例 MoonBit API 示例随两个后端测试运行。Node UDP、认证和浏览器宿主另有集成检查。 ///| test \"empty measurement selection\" { assert_true ( @ntp. lowest_delay ( [ ] ) is None ) ",
+          "o Downloads 6 README # 可执行 API 示例 MoonBit API 示例随两个后端测试运行。Node UDP、认证和浏览器宿主另有集成检查。 ///| test \"empty measurement selection\" { assert_true ( @ntp. lowest_delay ( [ ] ) is None ) } ///| test \"eight-stage clock filter example\" { let filter = @ntp. ClockFilter :: new ( ) for i = 1 ; i <= 8 ; i = i + 1 { let now = i .to_double ( ) filter .begin_po",
+          " measurement selection\" { assert_true ( @ntp. lowest_delay ( [ ] ) is None ) } ///| test \"eight-stage clock filter example\" { let filter = @ntp. ClockFilter :: new ( ) for i = 1 ; i <= 8 ; i = i + 1 { let now = i .to_double ( ) filter .begin_poll ( now ) ignore ( filter .observe ( { offset_seconds : 0.01 , delay_seconds : 0.02 , dispersion_s",
+          " , 255 ) assert_eq ( result .offset_seconds , 0.01 ) assert_true ( ! result .fresh ) } 过滤器返回统计估计； fresh=false 表示最佳样本没有更新。这里不修改操作系统时钟，也不实现完整 NTP daemon。 # NtpError source pub suberror NtpError { Invalid ( String ) } derive ( @moonbitlang/core/debug. Debug Debug ) # ClockFilter source pub struct ClockFilter { entries : Array [ FilterSample ] p",
+          "se NtpError Check synchronization health in addition to measure's request/time validation. Freshness and peer-distance limits follow beevik/ntp's Validate defaults. # PeerEstimate source pub ( all ) struct PeerEstimate { id : String offset_seconds : Double root_distance_seconds : Double jitter_seconds : Double stratum : Int } derive ( Eq , @",
+          "Timestamp::near_unix source fn Timestamp :: near_unix ( self : Timestamp , pivot : Double ) -> Double raise NtpError Resolve within half an NTP era of a trusted local pivot (pivot in eras 0/1). # Timestamp::unix_seconds source fn Timestamp :: unix_seconds ( self : Timestamp , era : Int ) -> Double raise NtpError NTP era is supplied by the ca",
+          "pivot in eras 0/1). # Timestamp::unix_seconds source fn Timestamp :: unix_seconds ( self : Timestamp , era : Int ) -> Double raise NtpError NTP era is supplied by the caller: 0 before 2036 rollover, 1 afterwards. # Timestamp::zero source fn Timestamp :: zero () -> Timestamp # analyze source fn analyze ( sent : Timestamp , reply : Packet , ar",
+          "yze source fn analyze ( sent : Timestamp , reply : Packet , arrived : Timestamp , pivot_unix : Double ) -> ResponseInfo raise NtpError Rich SNTP analysis. A small negative measured network delay is clamped to zero, as in beevik/ntp; strict measure() retains its existing rejection. # combine_peers source fn combine_peers ( peers : Array [ Peer",
+          "unix : Double ) -> ResponseInfo raise NtpError Rich SNTP analysis. A small negative measured network delay is clamped to zero, as in beevik/ntp; strict measure() retains its existing rejection. # combine_peers source fn combine_peers ( peers : Array [ PeerEstimate ], minimum ? : Int , cluster_minimum ? : Int , maximum_distance ? : Double ) -",
+          " Source Files analysis.mbt consensus.mbt datagram.mbt filter.mbt packet.mbt response.mbt sample.mbt usability.mbt Install moon add xuting22/ntp@0.4.0 Download zip NTP packet analysis, authenticated UDP, clock filters and source consensus xuting22 MIT github.com/xuting22/moonbit-ntp Updated 27 days ago 6 downloads Powered by MoonBit Site sour",
+          "mbt consensus.mbt datagram.mbt filter.mbt packet.mbt response.mbt sample.mbt usability.mbt Install moon add xuting22/ntp@0.4.0 Download zip NTP packet analysis, authenticated UDP, clock filters and source consensus xuting22 MIT github.com/xuting22/moonbit-ntp Updated 27 days ago 6 downloads Powered by MoonBit Site source Report issue Package",
+          "/ntp@0.4.0 Download zip NTP packet analysis, authenticated UDP, clock filters and source consensus xuting22 MIT github.com/xuting22/moonbit-ntp Updated 27 days ago 6 downloads Powered by MoonBit Site source Report issue Packages Build queue Skills Statistics © 2026 mooncakes.io"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "xuting22/rinex",
+    "version": "0.1.2",
+    "url": "https://mooncakes.io/docs/xuting22/rinex@0.1.2",
+    "disposition": "排除直接 PTP 命中",
+    "note": "GNSS 文件校验项目的历史说明提及 NTP，不能据此判定包含 NTP/PTP 实现。",
+    "hits": [
+      {
+        "kind": "neighbor",
+        "count": 1,
+        "excerpts": [
+          "X 观测文件接收检查 本项目仓库： moonbit-rinex 。 本地交付版 0.1.2 仅补全已存在公开仓库的包元数据地址，算法未改；尚未推送或发布，公开版仍为 0.1.1。 模块 xuting22/rinex ，本地交付版 0.1.2、公开版 0.1.1，MIT。拟替换旧 NTP 申报，换题尚未获赛事确认。 面向接收 GNSS 观测文件的 MoonBit 应用：在数据进入后续解算/归档前，分行检查观测声明、载荷、时间窗和缺失记录，并输出可定位的失败。核心读取流、时间计算和检查策略均为 MoonBit；Node 只提供有界文件 I/O。支持范围见 SCOPE 。 # 可直接复现 moon build --target js --release\nnode tools/chec"
+        ]
+      }
+    ]
+  }
+]

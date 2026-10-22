@@ -1,0 +1,15 @@
+PTP audit 0.2.0: Pass
+Pass WIRE.FIXED_BODY frames=1 expected=supported fixed message layout actual=decoded
+Pass WIRE.FIXED_BODY frames=2 expected=supported fixed message layout actual=decoded
+Pass WIRE.FIXED_BODY frames=3 expected=supported fixed message layout actual=decoded
+Pass WIRE.FIXED_BODY frames=4 expected=supported fixed message layout actual=decoded
+Pass WIRE.FIXED_BODY frames=5 expected=supported fixed message layout actual=decoded
+Pass WIRE.FIXED_BODY frames=6 expected=supported fixed message layout actual=decoded
+Pass EXCHANGE.SYNC_FOLLOW_UP frames=1,2 expected=same epoch/domain/source/sequence actual=unique matching pair
+Pass CLAIM.SYNC_FOLLOW_UP frames=1,2 expected=two-step Sync/Follow_Up with same epoch/domain/source/sequence actual=matching
+Pass CLAIM.E2E_IDENTITY frames=1,2,3,4 expected=same epoch/domain, matching requester/sequence and selected master actual=matching
+Pass MEASUREMENT.E2E frames=1,2,3,4 expected=exact rational algebra under supplied assumptions actual=offset and delay in 1/131072 ns units
+Pass BMCA.DIFFERENT_GM.priority1 frames=5,6 expected=100 actual=120
+Pass BMCA.OBSERVED_DECISION frames=5 expected=A actual=A
+offset=3342336/131072 ns; mean delay=36012032/131072 ns
+Conditional supported rules only; full IEEE compliance and physical accuracy are not checked.

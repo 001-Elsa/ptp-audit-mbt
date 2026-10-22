@@ -1,0 +1,171 @@
+{
+  "generated_at": "2026-10-19T11:36:41.018100+00:00",
+  "purpose": "Plan completeness audit; gap probes document current behavior, not approval of missing preconditions.",
+  "source_manifest": "research/validation/manifest.json",
+  "probes": [
+    {
+      "name": "baseline",
+      "note": "现有完整构造案例；报告只返回通用 assumptions 文本，未回显本次布尔值、epoch、时间域及计算所用字段。",
+      "input": "research/plan-audit/baseline.json",
+      "report": "research/plan-audit/baseline-report.json",
+      "status": "Pass",
+      "exit_code": 0,
+      "measurement_count": 1,
+      "bmca_steps": [
+        "Preferred candidate: A; topology=false",
+        "Dataset preference only, conditional on complete eligible snapshot. Not the full port-state algorithm."
+      ],
+      "assumptions": [
+        "Epochs, capture provenance, eligibility and completeness are caller-supplied, not independently authenticated.",
+        "Measurement additionally requires symmetric paths and stable relative clock rates."
+      ]
+    },
+    {
+      "name": "omitted-epoch",
+      "note": "删除所有 epoch；当前解析器默认0，仍可 Pass，不能宣称强制提供显式观察分期。",
+      "input": "research/plan-audit/omitted-epoch.json",
+      "report": "research/plan-audit/omitted-epoch-report.json",
+      "status": "Pass",
+      "exit_code": 0,
+      "measurement_count": 1,
+      "bmca_steps": [
+        "Preferred candidate: A; topology=false",
+        "Dataset preference only, conditional on complete eligible snapshot. Not the full port-state algorithm."
+      ],
+      "assumptions": [
+        "Epochs, capture provenance, eligibility and completeness are caller-supplied, not independently authenticated.",
+        "Measurement additionally requires symmetric paths and stable relative clock rates."
+      ]
+    },
+    {
+      "name": "mixed-bmca-epoch",
+      "note": "两条 Announce epoch 不同；当前 BMCA Candidate 不携带 epoch，仍可 Pass。候选时效/快照前提尚未完全约束。",
+      "input": "research/plan-audit/mixed-bmca-epoch.json",
+      "report": "research/plan-audit/mixed-bmca-epoch-report.json",
+      "status": "Pass",
+      "exit_code": 0,
+      "measurement_count": 1,
+      "bmca_steps": [
+        "Preferred candidate: A; topology=false",
+        "Dataset preference only, conditional on complete eligible snapshot. Not the full port-state algorithm."
+      ],
+      "assumptions": [
+        "Epochs, capture provenance, eligibility and completeness are caller-supplied, not independently authenticated.",
+        "Measurement additionally requires symmetric paths and stable relative clock rates."
+      ]
+    },
+    {
+      "name": "three-candidates-order-0",
+      "note": "三个不同 GM 的决定性 priority1；核对多候选逐步解释及六种输入顺序。",
+      "input": "research/plan-audit/three-candidates-order-0.json",
+      "report": "research/plan-audit/three-candidates-order-0-report.json",
+      "status": "Pass",
+      "exit_code": 0,
+      "measurement_count": 1,
+      "bmca_steps": [
+        "Preferred candidate: A; topology=false",
+        "Preferred candidate: C; topology=false",
+        "Dataset preference only, conditional on complete eligible snapshot. Not the full port-state algorithm."
+      ],
+      "assumptions": [
+        "Epochs, capture provenance, eligibility and completeness are caller-supplied, not independently authenticated.",
+        "Measurement additionally requires symmetric paths and stable relative clock rates."
+      ]
+    },
+    {
+      "name": "three-candidates-order-1",
+      "note": "三个不同 GM 的决定性 priority1；核对多候选逐步解释及六种输入顺序。",
+      "input": "research/plan-audit/three-candidates-order-1.json",
+      "report": "research/plan-audit/three-candidates-order-1-report.json",
+      "status": "Pass",
+      "exit_code": 0,
+      "measurement_count": 1,
+      "bmca_steps": [
+        "Preferred candidate: C; topology=false",
+        "Preferred candidate: C; topology=false",
+        "Dataset preference only, conditional on complete eligible snapshot. Not the full port-state algorithm."
+      ],
+      "assumptions": [
+        "Epochs, capture provenance, eligibility and completeness are caller-supplied, not independently authenticated.",
+        "Measurement additionally requires symmetric paths and stable relative clock rates."
+      ]
+    },
+    {
+      "name": "three-candidates-order-2",
+      "note": "三个不同 GM 的决定性 priority1；核对多候选逐步解释及六种输入顺序。",
+      "input": "research/plan-audit/three-candidates-order-2.json",
+      "report": "research/plan-audit/three-candidates-order-2-report.json",
+      "status": "Pass",
+      "exit_code": 0,
+      "measurement_count": 1,
+      "bmca_steps": [
+        "Preferred candidate: A; topology=false",
+        "Preferred candidate: C; topology=false",
+        "Dataset preference only, conditional on complete eligible snapshot. Not the full port-state algorithm."
+      ],
+      "assumptions": [
+        "Epochs, capture provenance, eligibility and completeness are caller-supplied, not independently authenticated.",
+        "Measurement additionally requires symmetric paths and stable relative clock rates."
+      ]
+    },
+    {
+      "name": "three-candidates-order-3",
+      "note": "三个不同 GM 的决定性 priority1；核对多候选逐步解释及六种输入顺序。",
+      "input": "research/plan-audit/three-candidates-order-3.json",
+      "report": "research/plan-audit/three-candidates-order-3-report.json",
+      "status": "Pass",
+      "exit_code": 0,
+      "measurement_count": 1,
+      "bmca_steps": [
+        "Preferred candidate: C; topology=false",
+        "Preferred candidate: C; topology=false",
+        "Dataset preference only, conditional on complete eligible snapshot. Not the full port-state algorithm."
+      ],
+      "assumptions": [
+        "Epochs, capture provenance, eligibility and completeness are caller-supplied, not independently authenticated.",
+        "Measurement additionally requires symmetric paths and stable relative clock rates."
+      ]
+    },
+    {
+      "name": "three-candidates-order-4",
+      "note": "三个不同 GM 的决定性 priority1；核对多候选逐步解释及六种输入顺序。",
+      "input": "research/plan-audit/three-candidates-order-4.json",
+      "report": "research/plan-audit/three-candidates-order-4-report.json",
+      "status": "Pass",
+      "exit_code": 0,
+      "measurement_count": 1,
+      "bmca_steps": [
+        "Preferred candidate: C; topology=false",
+        "Preferred candidate: C; topology=false",
+        "Dataset preference only, conditional on complete eligible snapshot. Not the full port-state algorithm."
+      ],
+      "assumptions": [
+        "Epochs, capture provenance, eligibility and completeness are caller-supplied, not independently authenticated.",
+        "Measurement additionally requires symmetric paths and stable relative clock rates."
+      ]
+    },
+    {
+      "name": "three-candidates-order-5",
+      "note": "三个不同 GM 的决定性 priority1；核对多候选逐步解释及六种输入顺序。",
+      "input": "research/plan-audit/three-candidates-order-5.json",
+      "report": "research/plan-audit/three-candidates-order-5-report.json",
+      "status": "Pass",
+      "exit_code": 0,
+      "measurement_count": 1,
+      "bmca_steps": [
+        "Preferred candidate: C; topology=false",
+        "Preferred candidate: C; topology=false",
+        "Dataset preference only, conditional on complete eligible snapshot. Not the full port-state algorithm."
+      ],
+      "assumptions": [
+        "Epochs, capture provenance, eligibility and completeness are caller-supplied, not independently authenticated.",
+        "Measurement additionally requires symmetric paths and stable relative clock rates."
+      ]
+    }
+  ],
+  "source_sha256": {
+    "audit/audit.mbt": "fed34958371245e1d4c12010d370279d0ab98d0e3e9c39ccb45386582d6efa53",
+    "bmca/bmca.mbt": "6e93a00e17c9065239bdeb8f86352546242937a94559791cca63ffc39214ced0",
+    "exchange/exchange.mbt": "9b7b8e052aa2b547a7a62193c98112a7a0c9ed718fbeb33a7fb579f01a77ea49"
+  }
+}

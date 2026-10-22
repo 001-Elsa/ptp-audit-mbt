@@ -1,0 +1,902 @@
+[
+  {
+    "name": "any07557-wq/moonvcs",
+    "old_version": null,
+    "new_version": "0.1.0",
+    "kind": "new_name",
+    "description": "Native MoonBit VCS core with typed SHA-256 objects, lazy storage and policy boundaries.",
+    "keywords": [
+      "version-control",
+      "content-addressed-storage",
+      "wasm",
+      "moonbit"
+    ],
+    "evidence_file": "research/2026-10-19-release-review/pages/any07557-wq__moonvcs--358845d14308.txt",
+    "root_status": "ok",
+    "review": "新增VCS SHA256对象与惰性存储；offline/fetch_events词组命中，无PTP语义。"
+  },
+  {
+    "name": "cstoooo/mooniso_lite",
+    "old_version": "0.3.0",
+    "new_version": "0.4.2",
+    "kind": "new_version",
+    "description": "MoonBit ISO 20022 pain.001 validator.",
+    "keywords": [
+      "moonbit",
+      "iso20022",
+      "pain001",
+      "validator",
+      "finance"
+    ],
+    "evidence_file": "research/2026-10-19-release-review/pages/cstoooo__mooniso_lite--15450ce35c90.txt",
+    "root_status": "ok",
+    "review": "ISO20022 XML消息验证与支付状态对账；规则验证/关联报告是通用交集，无PTP核心。"
+  },
+  {
+    "name": "DDD12345-D/moon-snmp",
+    "old_version": "0.2.2",
+    "new_version": "0.3.0",
+    "kind": "new_version",
+    "description": "Pure MoonBit SNMP protocol library: client and notification receiver (v1, v2c, v3)",
+    "keywords": [
+      "snmp",
+      "network-management",
+      "protocol",
+      "ber"
+    ],
+    "evidence_file": "research/2026-10-19-release-review/pages/DDD12345-D__moon-snmp--3e449348f310.txt",
+    "root_status": "limited",
+    "review": "SNMP请求ID关联、重试/超时和stray-reply处理；关联与生命周期基础能力已有，未发现IEEE1588 two-step或BMCA。根页无README，以发布ZIP核实。"
+  },
+  {
+    "name": "f4ah6o/dsh",
+    "old_version": "0.1.25",
+    "new_version": "0.1.27",
+    "kind": "new_version",
+    "description": "A MoonBit port of DeepSeek Harness with gpui.mbt UI and capability APIs.",
+    "keywords": [],
+    "evidence_file": "research/2026-10-19-release-review/pages/f4ah6o__dsh--cc91dc6eb7a0.txt",
+    "root_status": "ok",
+    "review": "A MoonBit port of DeepSeek Harness with gpui.mbt UI and capability APIs.；本轮新根文档未定位PTP two-step/BMCA语义，常规解析/验证/回放抽象不视作独有。"
+  },
+  {
+    "name": "gmlewis/b2",
+    "old_version": "0.35.2",
+    "new_version": "0.35.3",
+    "kind": "new_version",
+    "description": "MoonBit b2 client: This library can be used to communicate with Backblaze B2.",
+    "keywords": [
+      "b2",
+      "backblaze",
+      "client",
+      "moonbit"
+    ],
+    "evidence_file": "research/2026-10-19-release-review/pages/gmlewis__b2--819686ed5130.txt",
+    "root_status": "ok",
+    "review": "压缩、哈希、I/O、图像或Wasm SDK基础库更新；共同字节/校验能力不独有，根文档未检出PTP核心。"
+  },
+  {
+    "name": "gmlewis/crc32",
+    "old_version": "0.9.1",
+    "new_version": "0.9.2",
+    "kind": "new_version",
+    "description": "MoonBit crc32: provide simple crc32 hash algorithm.",
+    "keywords": [
+      "crc32",
+      "hash",
+      "algorithm",
+      "moonbit"
+    ],
+    "evidence_file": "research/2026-10-19-release-review/pages/gmlewis__crc32--58d8eb69ee24.txt",
+    "root_status": "ok",
+    "review": "压缩、哈希、I/O、图像或Wasm SDK基础库更新；共同字节/校验能力不独有，根文档未检出PTP核心。"
+  },
+  {
+    "name": "gmlewis/flate",
+    "old_version": "0.36.16",
+    "new_version": "0.36.17",
+    "kind": "new_version",
+    "description": "MoonBit flate: provide simplified flate (LZW) compression algorithm.",
+    "keywords": [
+      "flate",
+      "algorithm",
+      "lzw",
+      "moonbit"
+    ],
+    "evidence_file": "research/2026-10-19-release-review/pages/gmlewis__flate--69297385bbda.txt",
+    "root_status": "ok",
+    "review": "压缩、哈希、I/O、图像或Wasm SDK基础库更新；共同字节/校验能力不独有，根文档未检出PTP核心。"
+  },
+  {
+    "name": "gmlewis/fonts",
+    "old_version": "0.19.18",
+    "new_version": "0.19.19",
+    "kind": "new_version",
+    "description": "Experimental package to manipulate open source font data.",
+    "keywords": [
+      "html5 canvas",
+      "pdf",
+      "svg",
+      "open source",
+      "fonts"
+    ],
+    "evidence_file": "research/2026-10-19-release-review/pages/gmlewis__fonts--9e3700c0b2fa.txt",
+    "root_status": "ok",
+    "review": "字体轮廓/开放字体数据及编译器兼容更新；根文档无PTP/观察关联关键词命中，不把全部字体源码称已穷举。"
+  },
+  {
+    "name": "gmlewis/fonts-a",
+    "old_version": "0.19.18",
+    "new_version": "0.19.19",
+    "kind": "new_version",
+    "description": "A collection of hard-coded font data in MoonBit with font names starting with 'a'.",
+    "keywords": [
+      "html5 canvas",
+      "pdf",
+      "svg",
+      "open source",
+      "fonts"
+    ],
+    "evidence_file": "research/2026-10-19-release-review/pages/gmlewis__fonts-a--9c109aed0716.txt",
+    "root_status": "ok",
+    "review": "字体轮廓/开放字体数据及编译器兼容更新；根文档无PTP/观察关联关键词命中，不把全部字体源码称已穷举。"
+  },
+  {
+    "name": "gmlewis/fonts-b",
+    "old_version": "0.19.18",
+    "new_version": "0.19.19",
+    "kind": "new_version",
+    "description": "A collection of hard-coded font data in MoonBit with font names starting with 'b'.",
+    "keywords": [
+      "html5 canvas",
+      "pdf",
+      "svg",
+      "open source",
+      "fonts"
+    ],
+    "evidence_file": "research/2026-10-19-release-review/pages/gmlewis__fonts-b--8743ec4ca3e9.txt",
+    "root_status": "ok",
+    "review": "字体轮廓/开放字体数据及编译器兼容更新；根文档无PTP/观察关联关键词命中，不把全部字体源码称已穷举。"
+  },
+  {
+    "name": "gmlewis/fonts-c",
+    "old_version": "0.19.18",
+    "new_version": "0.19.19",
+    "kind": "new_version",
+    "description": "A collection of hard-coded font data in MoonBit with font names starting with 'c'.",
+    "keywords": [
+      "html5 canvas",
+      "pdf",
+      "svg",
+      "open source",
+      "fonts"
+    ],
+    "evidence_file": "research/2026-10-19-release-review/pages/gmlewis__fonts-c--4e956a72b37c.txt",
+    "root_status": "ok",
+    "review": "字体轮廓/开放字体数据及编译器兼容更新；根文档无PTP/观察关联关键词命中，不把全部字体源码称已穷举。"
+  },
+  {
+    "name": "gmlewis/fonts-d",
+    "old_version": "0.19.18",
+    "new_version": "0.19.19",
+    "kind": "new_version",
+    "description": "A collection of hard-coded font data in MoonBit with font names starting with 'd'.",
+    "keywords": [
+      "html5 canvas",
+      "pdf",
+      "svg",
+      "open source",
+      "fonts"
+    ],
+    "evidence_file": "research/2026-10-19-release-review/pages/gmlewis__fonts-d--e4bea0da3736.txt",
+    "root_status": "ok",
+    "review": "字体轮廓/开放字体数据及编译器兼容更新；根文档无PTP/观察关联关键词命中，不把全部字体源码称已穷举。"
+  },
+  {
+    "name": "gmlewis/fonts-e",
+    "old_version": "0.19.18",
+    "new_version": "0.19.19",
+    "kind": "new_version",
+    "description": "A collection of hard-coded font data in MoonBit with font names starting with 'e'.",
+    "keywords": [
+      "html5 canvas",
+      "pdf",
+      "svg",
+      "open source",
+      "fonts"
+    ],
+    "evidence_file": "research/2026-10-19-release-review/pages/gmlewis__fonts-e--b9d26ec464c5.txt",
+    "root_status": "ok",
+    "review": "字体轮廓/开放字体数据及编译器兼容更新；根文档无PTP/观察关联关键词命中，不把全部字体源码称已穷举。"
+  },
+  {
+    "name": "gmlewis/fonts-f",
+    "old_version": "0.19.18",
+    "new_version": "0.19.19",
+    "kind": "new_version",
+    "description": "A collection of hard-coded font data in MoonBit with font names starting with 'f'.",
+    "keywords": [
+      "html5 canvas",
+      "pdf",
+      "svg",
+      "open source",
+      "fonts"
+    ],
+    "evidence_file": "research/2026-10-19-release-review/pages/gmlewis__fonts-f--083bcd8db312.txt",
+    "root_status": "ok",
+    "review": "字体轮廓/开放字体数据及编译器兼容更新；根文档无PTP/观察关联关键词命中，不把全部字体源码称已穷举。"
+  },
+  {
+    "name": "gmlewis/fonts-g",
+    "old_version": "0.19.18",
+    "new_version": "0.19.19",
+    "kind": "new_version",
+    "description": "A collection of hard-coded font data in MoonBit with font names starting with 'g'.",
+    "keywords": [
+      "html5 canvas",
+      "pdf",
+      "svg",
+      "open source",
+      "fonts"
+    ],
+    "evidence_file": "research/2026-10-19-release-review/pages/gmlewis__fonts-g--121a717012e2.txt",
+    "root_status": "ok",
+    "review": "字体轮廓/开放字体数据及编译器兼容更新；根文档无PTP/观察关联关键词命中，不把全部字体源码称已穷举。"
+  },
+  {
+    "name": "gmlewis/fonts-h",
+    "old_version": "0.19.18",
+    "new_version": "0.19.19",
+    "kind": "new_version",
+    "description": "A collection of hard-coded font data in MoonBit with font names starting with 'h'.",
+    "keywords": [
+      "html5 canvas",
+      "pdf",
+      "svg",
+      "open source",
+      "fonts"
+    ],
+    "evidence_file": "research/2026-10-19-release-review/pages/gmlewis__fonts-h--9a143a5dd633.txt",
+    "root_status": "ok",
+    "review": "字体轮廓/开放字体数据及编译器兼容更新；根文档无PTP/观察关联关键词命中，不把全部字体源码称已穷举。"
+  },
+  {
+    "name": "gmlewis/fonts-i",
+    "old_version": "0.19.18",
+    "new_version": "0.19.19",
+    "kind": "new_version",
+    "description": "A collection of hard-coded font data in MoonBit with font names starting with 'i'.",
+    "keywords": [
+      "html5 canvas",
+      "pdf",
+      "svg",
+      "open source",
+      "fonts"
+    ],
+    "evidence_file": "research/2026-10-19-release-review/pages/gmlewis__fonts-i--57dd6e4637c5.txt",
+    "root_status": "ok",
+    "review": "字体轮廓/开放字体数据及编译器兼容更新；根文档无PTP/观察关联关键词命中，不把全部字体源码称已穷举。"
+  },
+  {
+    "name": "gmlewis/fonts-j",
+    "old_version": "0.19.18",
+    "new_version": "0.19.19",
+    "kind": "new_version",
+    "description": "A collection of hard-coded font data in MoonBit with font names starting with 'j'.",
+    "keywords": [
+      "html5 canvas",
+      "pdf",
+      "svg",
+      "open source",
+      "fonts"
+    ],
+    "evidence_file": "research/2026-10-19-release-review/pages/gmlewis__fonts-j--3f56c39680fb.txt",
+    "root_status": "ok",
+    "review": "字体轮廓/开放字体数据及编译器兼容更新；根文档无PTP/观察关联关键词命中，不把全部字体源码称已穷举。"
+  },
+  {
+    "name": "gmlewis/fonts-k",
+    "old_version": "0.19.18",
+    "new_version": "0.19.19",
+    "kind": "new_version",
+    "description": "A collection of hard-coded font data in MoonBit with font names starting with 'k'.",
+    "keywords": [
+      "html5 canvas",
+      "pdf",
+      "svg",
+      "open source",
+      "fonts"
+    ],
+    "evidence_file": "research/2026-10-19-release-review/pages/gmlewis__fonts-k--9681360b91c7.txt",
+    "root_status": "ok",
+    "review": "字体轮廓/开放字体数据及编译器兼容更新；根文档无PTP/观察关联关键词命中，不把全部字体源码称已穷举。"
+  },
+  {
+    "name": "gmlewis/fonts-l",
+    "old_version": "0.19.18",
+    "new_version": "0.19.19",
+    "kind": "new_version",
+    "description": "A collection of hard-coded font data in MoonBit with font names starting with 'l'.",
+    "keywords": [
+      "html5 canvas",
+      "pdf",
+      "svg",
+      "open source",
+      "fonts"
+    ],
+    "evidence_file": "research/2026-10-19-release-review/pages/gmlewis__fonts-l--8831e2b50a73.txt",
+    "root_status": "ok",
+    "review": "字体轮廓/开放字体数据及编译器兼容更新；根文档无PTP/观察关联关键词命中，不把全部字体源码称已穷举。"
+  },
+  {
+    "name": "gmlewis/fonts-m",
+    "old_version": "0.19.18",
+    "new_version": "0.19.19",
+    "kind": "new_version",
+    "description": "A collection of hard-coded font data in MoonBit with font names starting with 'm'.",
+    "keywords": [
+      "html5 canvas",
+      "pdf",
+      "svg",
+      "open source",
+      "fonts"
+    ],
+    "evidence_file": "research/2026-10-19-release-review/pages/gmlewis__fonts-m--c7b6e029873d.txt",
+    "root_status": "ok",
+    "review": "字体轮廓/开放字体数据及编译器兼容更新；根文档无PTP/观察关联关键词命中，不把全部字体源码称已穷举。"
+  },
+  {
+    "name": "gmlewis/fonts-n",
+    "old_version": "0.19.18",
+    "new_version": "0.19.19",
+    "kind": "new_version",
+    "description": "A collection of hard-coded font data in MoonBit with font names starting with 'n'.",
+    "keywords": [
+      "html5 canvas",
+      "pdf",
+      "svg",
+      "open source",
+      "fonts"
+    ],
+    "evidence_file": "research/2026-10-19-release-review/pages/gmlewis__fonts-n--13a7a379231e.txt",
+    "root_status": "ok",
+    "review": "字体轮廓/开放字体数据及编译器兼容更新；根文档无PTP/观察关联关键词命中，不把全部字体源码称已穷举。"
+  },
+  {
+    "name": "gmlewis/fonts-o",
+    "old_version": "0.19.18",
+    "new_version": "0.19.19",
+    "kind": "new_version",
+    "description": "A collection of hard-coded font data in MoonBit with font names starting with 'o'.",
+    "keywords": [
+      "html5 canvas",
+      "pdf",
+      "svg",
+      "open source",
+      "fonts"
+    ],
+    "evidence_file": "research/2026-10-19-release-review/pages/gmlewis__fonts-o--372901bb5c10.txt",
+    "root_status": "ok",
+    "review": "字体轮廓/开放字体数据及编译器兼容更新；根文档无PTP/观察关联关键词命中，不把全部字体源码称已穷举。"
+  },
+  {
+    "name": "gmlewis/fonts-p",
+    "old_version": "0.19.18",
+    "new_version": "0.19.19",
+    "kind": "new_version",
+    "description": "A collection of hard-coded font data in MoonBit with font names starting with 'p'.",
+    "keywords": [
+      "html5 canvas",
+      "pdf",
+      "svg",
+      "open source",
+      "fonts"
+    ],
+    "evidence_file": "research/2026-10-19-release-review/pages/gmlewis__fonts-p--0ff9ca85f6ab.txt",
+    "root_status": "ok",
+    "review": "字体轮廓/开放字体数据及编译器兼容更新；根文档无PTP/观察关联关键词命中，不把全部字体源码称已穷举。"
+  },
+  {
+    "name": "gmlewis/fonts-q",
+    "old_version": "0.19.18",
+    "new_version": "0.19.19",
+    "kind": "new_version",
+    "description": "A collection of hard-coded font data in MoonBit with font names starting with 'q'.",
+    "keywords": [
+      "html5 canvas",
+      "pdf",
+      "svg",
+      "open source",
+      "fonts"
+    ],
+    "evidence_file": "research/2026-10-19-release-review/pages/gmlewis__fonts-q--f9dac67b46b4.txt",
+    "root_status": "ok",
+    "review": "字体轮廓/开放字体数据及编译器兼容更新；根文档无PTP/观察关联关键词命中，不把全部字体源码称已穷举。"
+  },
+  {
+    "name": "gmlewis/fonts-r",
+    "old_version": "0.19.18",
+    "new_version": "0.19.19",
+    "kind": "new_version",
+    "description": "A collection of hard-coded font data in MoonBit with font names starting with 'r'.",
+    "keywords": [
+      "html5 canvas",
+      "pdf",
+      "svg",
+      "open source",
+      "fonts"
+    ],
+    "evidence_file": "research/2026-10-19-release-review/pages/gmlewis__fonts-r--85538135de06.txt",
+    "root_status": "ok",
+    "review": "字体轮廓/开放字体数据及编译器兼容更新；根文档无PTP/观察关联关键词命中，不把全部字体源码称已穷举。"
+  },
+  {
+    "name": "gmlewis/fonts-s",
+    "old_version": "0.19.18",
+    "new_version": "0.19.19",
+    "kind": "new_version",
+    "description": "A collection of hard-coded font data in MoonBit with font names starting with 's'.",
+    "keywords": [
+      "html5 canvas",
+      "pdf",
+      "svg",
+      "open source",
+      "fonts"
+    ],
+    "evidence_file": "research/2026-10-19-release-review/pages/gmlewis__fonts-s--4217786d7b1f.txt",
+    "root_status": "ok",
+    "review": "字体轮廓/开放字体数据及编译器兼容更新；根文档无PTP/观察关联关键词命中，不把全部字体源码称已穷举。"
+  },
+  {
+    "name": "gmlewis/fonts-t",
+    "old_version": "0.19.18",
+    "new_version": "0.19.19",
+    "kind": "new_version",
+    "description": "A collection of hard-coded font data in MoonBit with font names starting with 't'.",
+    "keywords": [
+      "html5 canvas",
+      "pdf",
+      "svg",
+      "open source",
+      "fonts"
+    ],
+    "evidence_file": "research/2026-10-19-release-review/pages/gmlewis__fonts-t--550b1ea2566a.txt",
+    "root_status": "ok",
+    "review": "字体轮廓/开放字体数据及编译器兼容更新；根文档无PTP/观察关联关键词命中，不把全部字体源码称已穷举。"
+  },
+  {
+    "name": "gmlewis/fonts-u",
+    "old_version": "0.19.18",
+    "new_version": "0.19.19",
+    "kind": "new_version",
+    "description": "A collection of hard-coded font data in MoonBit with font names starting with 'u'.",
+    "keywords": [
+      "html5 canvas",
+      "pdf",
+      "svg",
+      "open source",
+      "fonts"
+    ],
+    "evidence_file": "research/2026-10-19-release-review/pages/gmlewis__fonts-u--b56c77a5268e.txt",
+    "root_status": "ok",
+    "review": "字体轮廓/开放字体数据及编译器兼容更新；根文档无PTP/观察关联关键词命中，不把全部字体源码称已穷举。"
+  },
+  {
+    "name": "gmlewis/fonts-v",
+    "old_version": "0.19.18",
+    "new_version": "0.19.19",
+    "kind": "new_version",
+    "description": "A collection of hard-coded font data in MoonBit with font names starting with 'v'.",
+    "keywords": [
+      "html5 canvas",
+      "pdf",
+      "svg",
+      "open source",
+      "fonts"
+    ],
+    "evidence_file": "research/2026-10-19-release-review/pages/gmlewis__fonts-v--e85a671b9a30.txt",
+    "root_status": "ok",
+    "review": "字体轮廓/开放字体数据及编译器兼容更新；根文档无PTP/观察关联关键词命中，不把全部字体源码称已穷举。"
+  },
+  {
+    "name": "gmlewis/fonts-w",
+    "old_version": "0.19.18",
+    "new_version": "0.19.19",
+    "kind": "new_version",
+    "description": "A collection of hard-coded font data in MoonBit with font names starting with 'w'.",
+    "keywords": [
+      "html5 canvas",
+      "pdf",
+      "svg",
+      "open source",
+      "fonts"
+    ],
+    "evidence_file": "research/2026-10-19-release-review/pages/gmlewis__fonts-w--4279c501fead.txt",
+    "root_status": "ok",
+    "review": "字体轮廓/开放字体数据及编译器兼容更新；根文档无PTP/观察关联关键词命中，不把全部字体源码称已穷举。"
+  },
+  {
+    "name": "gmlewis/fonts-y",
+    "old_version": "0.19.18",
+    "new_version": "0.19.19",
+    "kind": "new_version",
+    "description": "A collection of hard-coded font data in MoonBit with font names starting with 'y'.",
+    "keywords": [
+      "html5 canvas",
+      "pdf",
+      "svg",
+      "open source",
+      "fonts"
+    ],
+    "evidence_file": "research/2026-10-19-release-review/pages/gmlewis__fonts-y--8a06dc5ef434.txt",
+    "root_status": "ok",
+    "review": "字体轮廓/开放字体数据及编译器兼容更新；根文档无PTP/观察关联关键词命中，不把全部字体源码称已穷举。"
+  },
+  {
+    "name": "gmlewis/fonts-z",
+    "old_version": "0.19.18",
+    "new_version": "0.19.19",
+    "kind": "new_version",
+    "description": "A collection of hard-coded font data in MoonBit with font names starting with 'z'.",
+    "keywords": [
+      "html5 canvas",
+      "pdf",
+      "svg",
+      "open source",
+      "fonts"
+    ],
+    "evidence_file": "research/2026-10-19-release-review/pages/gmlewis__fonts-z--d2b288c4375c.txt",
+    "root_status": "ok",
+    "review": "字体轮廓/开放字体数据及编译器兼容更新；根文档无PTP/观察关联关键词命中，不把全部字体源码称已穷举。"
+  },
+  {
+    "name": "gmlewis/gzip",
+    "old_version": "0.34.16",
+    "new_version": "0.34.17",
+    "kind": "new_version",
+    "description": "MoonBit gzip: provide simple gzip and gunzip algorithms.",
+    "keywords": [
+      "gzip",
+      "gunzip",
+      "algorithm",
+      "moonbit"
+    ],
+    "evidence_file": "research/2026-10-19-release-review/pages/gmlewis__gzip--3ec485098d35.txt",
+    "root_status": "ok",
+    "review": "压缩、哈希、I/O、图像或Wasm SDK基础库更新；共同字节/校验能力不独有，根文档未检出PTP核心。"
+  },
+  {
+    "name": "gmlewis/hash",
+    "old_version": "0.21.1",
+    "new_version": "0.21.2",
+    "kind": "new_version",
+    "description": "MoonBit hash: provide hash functions similar to Go.",
+    "keywords": [
+      "hash",
+      "algorithm",
+      "moonbit"
+    ],
+    "evidence_file": "research/2026-10-19-release-review/pages/gmlewis__hash--15d2b108d43f.txt",
+    "root_status": "ok",
+    "review": "压缩、哈希、I/O、图像或Wasm SDK基础库更新；共同字节/校验能力不独有，根文档未检出PTP核心。"
+  },
+  {
+    "name": "gmlewis/image",
+    "old_version": "0.17.17",
+    "new_version": "0.17.18",
+    "kind": "new_version",
+    "description": "MoonBit image: simple image representation.",
+    "keywords": [
+      "image",
+      "color",
+      "moonbit"
+    ],
+    "evidence_file": "research/2026-10-19-release-review/pages/gmlewis__image--944b3f896b6e.txt",
+    "root_status": "ok",
+    "review": "压缩、哈希、I/O、图像或Wasm SDK基础库更新；共同字节/校验能力不独有，根文档未检出PTP核心。"
+  },
+  {
+    "name": "gmlewis/io",
+    "old_version": "0.23.19",
+    "new_version": "0.23.20",
+    "kind": "new_version",
+    "description": "MoonBit io: provide simplified I/O abstractions similar to Go.",
+    "keywords": [
+      "io",
+      "moonbit"
+    ],
+    "evidence_file": "research/2026-10-19-release-review/pages/gmlewis__io--b752f76eab39.txt",
+    "root_status": "ok",
+    "review": "压缩、哈希、I/O、图像或Wasm SDK基础库更新；共同字节/校验能力不独有，根文档未检出PTP核心。"
+  },
+  {
+    "name": "gmlewis/md5",
+    "old_version": "0.20.1",
+    "new_version": "0.20.2",
+    "kind": "new_version",
+    "description": "MoonBit md5: provide simple md5 hash algorithm.",
+    "keywords": [
+      "md5",
+      "hash",
+      "algorithm",
+      "moonbit"
+    ],
+    "evidence_file": "research/2026-10-19-release-review/pages/gmlewis__md5--4c6056b461a6.txt",
+    "root_status": "ok",
+    "review": "压缩、哈希、I/O、图像或Wasm SDK基础库更新；共同字节/校验能力不独有，根文档未检出PTP核心。"
+  },
+  {
+    "name": "gmlewis/moonbit-pdk",
+    "old_version": "0.47.33",
+    "new_version": "0.47.34",
+    "kind": "new_version",
+    "description": "Extism MoonBit PDK: This library can be used to write Extism Plug-ins in MoonBit.",
+    "keywords": [
+      "extism",
+      "pdk",
+      "moonbit"
+    ],
+    "evidence_file": "research/2026-10-19-release-review/pages/gmlewis__moonbit-pdk--58e57c2e1bd9.txt",
+    "root_status": "ok",
+    "review": "压缩、哈希、I/O、图像或Wasm SDK基础库更新；共同字节/校验能力不独有，根文档未检出PTP核心。"
+  },
+  {
+    "name": "gmlewis/sha1",
+    "old_version": "0.12.16",
+    "new_version": "0.12.17",
+    "kind": "new_version",
+    "description": "MoonBit sha1: provide simple sha1 hash algorithm.",
+    "keywords": [
+      "sha1",
+      "hash",
+      "algorithm",
+      "moonbit"
+    ],
+    "evidence_file": "research/2026-10-19-release-review/pages/gmlewis__sha1--10ff74488bb6.txt",
+    "root_status": "ok",
+    "review": "压缩、哈希、I/O、图像或Wasm SDK基础库更新；共同字节/校验能力不独有，根文档未检出PTP核心。"
+  },
+  {
+    "name": "gmlewis/sha256",
+    "old_version": "0.18.1",
+    "new_version": "0.18.2",
+    "kind": "new_version",
+    "description": "MoonBit sha256: provide simple sha256 hash algorithm.",
+    "keywords": [
+      "sha256",
+      "hash",
+      "algorithm",
+      "moonbit"
+    ],
+    "evidence_file": "research/2026-10-19-release-review/pages/gmlewis__sha256--69e3fda08a48.txt",
+    "root_status": "ok",
+    "review": "压缩、哈希、I/O、图像或Wasm SDK基础库更新；共同字节/校验能力不独有，根文档未检出PTP核心。"
+  },
+  {
+    "name": "gmlewis/spin-moonbit-sdk",
+    "old_version": "0.55.3",
+    "new_version": "0.55.4",
+    "kind": "new_version",
+    "description": "Experimental Spin SDK for the MoonBit programming language.",
+    "keywords": [
+      "spin",
+      "moonbit",
+      "sdk"
+    ],
+    "evidence_file": "research/2026-10-19-release-review/pages/gmlewis__spin-moonbit-sdk--fcd12d1f7781.txt",
+    "root_status": "ok",
+    "review": "压缩、哈希、I/O、图像或Wasm SDK基础库更新；共同字节/校验能力不独有，根文档未检出PTP核心。"
+  },
+  {
+    "name": "gmlewis/zlib",
+    "old_version": "0.21.16",
+    "new_version": "0.21.17",
+    "kind": "new_version",
+    "description": "MoonBit zlib: provide simplified zlib format compressed data.",
+    "keywords": [
+      "zlib",
+      "algorithm",
+      "compress",
+      "moonbit"
+    ],
+    "evidence_file": "research/2026-10-19-release-review/pages/gmlewis__zlib--13b6973c4815.txt",
+    "root_status": "ok",
+    "review": "压缩、哈希、I/O、图像或Wasm SDK基础库更新；共同字节/校验能力不独有，根文档未检出PTP核心。"
+  },
+  {
+    "name": "golemcloud/golem_sdk",
+    "old_version": "0.6.0-rc6",
+    "new_version": "0.6.0",
+    "kind": "new_version",
+    "description": "Golem SDK for MoonBit — build durable, fault-tolerant agents on the Golem platform",
+    "keywords": [
+      "golem",
+      "wasm",
+      "agent",
+      "sdk",
+      "webassembly",
+      "durable",
+      "component-model"
+    ],
+    "evidence_file": "research/2026-10-19-release-review/pages/golemcloud__golem_sdk--f4b4eb771659.txt",
+    "root_status": "ok",
+    "review": "持久Agent SDK/生成工具，根文档未定位PTP；tools另读源码ZIP。"
+  },
+  {
+    "name": "golemcloud/golem_sdk_tools",
+    "old_version": "0.6.0-rc6",
+    "new_version": "0.6.0",
+    "kind": "new_version",
+    "description": "Code generation tools for the Golem SDK for MoonBit",
+    "keywords": [
+      "golem",
+      "wasm",
+      "agent",
+      "codegen",
+      "webassembly",
+      "component-model"
+    ],
+    "evidence_file": "research/2026-10-19-release-review/pages/golemcloud__golem_sdk_tools--f5624e06f8a0.txt",
+    "root_status": "limited",
+    "review": "Golem Agent SDK代码生成工具；根页build失败，以70个发布文本核实，无PTP专项命中。"
+  },
+  {
+    "name": "JingLan0v0/jmespath",
+    "old_version": "0.1.1",
+    "new_version": "0.1.2",
+    "kind": "new_version",
+    "description": "A standards-oriented JMESPath parser and JSON query engine in MoonBit.",
+    "keywords": [
+      "jmespath",
+      "json",
+      "query",
+      "parser"
+    ],
+    "evidence_file": "research/2026-10-19-release-review/pages/JingLan0v0__jmespath--e043cc89e7bf.txt",
+    "root_status": "ok",
+    "review": "A standards-oriented JMESPath parser and JSON query engine in MoonBit.；本轮新根文档未定位PTP two-step/BMCA语义，常规解析/验证/回放抽象不视作独有。"
+  },
+  {
+    "name": "JingLan0v0/moonpatch",
+    "old_version": "0.1.0",
+    "new_version": "0.2.0",
+    "kind": "new_version",
+    "description": "Guarded rollback receipts for RFC 6902 JSON Patch transactions in MoonBit.",
+    "keywords": [
+      "json-patch",
+      "json-pointer",
+      "rollback",
+      "rfc6902",
+      "rfc6901"
+    ],
+    "evidence_file": "research/2026-10-19-release-review/pages/JingLan0v0__moonpatch--7a6cfffa5136.txt",
+    "root_status": "ok",
+    "review": "Guarded rollback receipts for RFC 6902 JSON Patch transactions in MoonBit.；本轮新根文档未定位PTP two-step/BMCA语义，常规解析/验证/回放抽象不视作独有。"
+  },
+  {
+    "name": "kaigeliang/upload",
+    "old_version": "0.4.0",
+    "new_version": "0.4.1",
+    "kind": "new_version",
+    "description": "MoonBit reliable file transfer library and CLI with SSH resume, SHA-256 verification and authenticated HTTP",
+    "keywords": [],
+    "evidence_file": "research/2026-10-19-release-review/pages/kaigeliang__upload--0661317a26c3.txt",
+    "root_status": "ok",
+    "review": "MoonBit reliable file transfer library and CLI with SSH resume, SHA-256 verification and authenticated HTTP；本轮新根文档未定位PTP two-step/BMCA语义，常规解析/验证/回放抽象不视作独有。"
+  },
+  {
+    "name": "kupas/xmlfmt",
+    "old_version": "0.1.2",
+    "new_version": "0.1.4",
+    "kind": "new_version",
+    "description": "An XML formatter written in MoonBit, ported from python xmlformatter.",
+    "keywords": [
+      "xml",
+      "formatter",
+      "pretty-print",
+      "cli"
+    ],
+    "evidence_file": "research/2026-10-19-release-review/pages/kupas__xmlfmt--e1b19ffeab63.txt",
+    "root_status": "ok",
+    "review": "An XML formatter written in MoonBit, ported from python xmlformatter.；本轮新根文档未定位PTP two-step/BMCA语义，常规解析/验证/回放抽象不视作独有。"
+  },
+  {
+    "name": "Novanke/quireloom",
+    "old_version": "0.1.0",
+    "new_version": "0.2.0",
+    "kind": "new_version",
+    "description": "Deterministic booklet imposition and fold-order verification in pure MoonBit",
+    "keywords": [
+      "booklet",
+      "imposition",
+      "printing"
+    ],
+    "evidence_file": "research/2026-10-19-release-review/pages/Novanke__quireloom--fa53c488a096.txt",
+    "root_status": "ok",
+    "review": "Deterministic booklet imposition and fold-order verification in pure MoonBit；本轮新根文档未定位PTP two-step/BMCA语义，常规解析/验证/回放抽象不视作独有。"
+  },
+  {
+    "name": "riantr/moonbit_doubleML",
+    "old_version": "0.163.6",
+    "new_version": "0.163.7",
+    "kind": "new_version",
+    "description": "Pure-MoonBit port of doubleml-for-py: Double / Debiased Machine Learning for partial linear, IRM, IV, DID, SSM, APO(S), PQ, QTE, LPQ, CVaR, RDD, BLP, and policy-tree models",
+    "keywords": [
+      "doubleml",
+      "DML",
+      "causal-inference",
+      "machine-learning",
+      "debiased-estimation"
+    ],
+    "evidence_file": "research/2026-10-19-release-review/pages/riantr__moonbit_doubleML--103849132884.txt",
+    "root_status": "ok",
+    "review": "统计/因果机器学习估计器；follow-up为未来工作文字，未见PTP语义。"
+  },
+  {
+    "name": "riantr/tesseract",
+    "old_version": "0.1.1",
+    "new_version": "0.1.2",
+    "kind": "new_version",
+    "description": "Tiny multi-key JSON value database over a 4D sudoku lattice (1..215 cells per axis, 81 by default), with a SQL surface and sudoku digit constraints.",
+    "keywords": [
+      "sudoku",
+      "database",
+      "key-value",
+      "lattice",
+      "4d"
+    ],
+    "evidence_file": "research/2026-10-19-release-review/pages/riantr__tesseract--04dc0a2ecfe3.txt",
+    "root_status": "ok",
+    "review": "Tiny multi-key JSON value database over a 4D sudoku lattice (1..215 cells per axis, 81 by default), with a SQL surface and sudoku digit constraints.；本轮新根文档未定位PTP two-step/BMCA语义，常规解析/验证/回放抽象不视作独有。"
+  },
+  {
+    "name": "wiretokenbotca4491/wire_token",
+    "old_version": null,
+    "new_version": "0.1.0",
+    "kind": "new_name",
+    "description": "Allocation-free RFC 9110 HTTP token syntax validation.",
+    "keywords": [
+      "http",
+      "token",
+      "validation",
+      "rfc9110",
+      "ascii"
+    ],
+    "evidence_file": "research/2026-10-19-release-review/pages/wiretokenbotca4491__wire_token--b553f7f73b72.txt",
+    "root_status": "ok",
+    "review": "新增HTTP RFC9110 token字符语法验证；wire名称不表示网络帧或PTP。"
+  },
+  {
+    "name": "zbhzs1/moonbagit",
+    "old_version": "0.2.0",
+    "new_version": "0.2.1",
+    "kind": "new_version",
+    "description": "BagIt 1.0 archive package creation and validation for MoonBit",
+    "keywords": [
+      "bagit",
+      "rfc8493",
+      "preservation",
+      "integrity"
+    ],
+    "evidence_file": "research/2026-10-19-release-review/pages/zbhzs1__moonbagit--ef0e50ec163d.txt",
+    "root_status": "ok",
+    "review": "BagIt 1.0 archive package creation and validation for MoonBit；本轮新根文档未定位PTP two-step/BMCA语义，常规解析/验证/回放抽象不视作独有。"
+  },
+  {
+    "name": "zhangbowen2006/agentcanary",
+    "old_version": null,
+    "new_version": "0.1.1",
+    "kind": "new_name",
+    "description": "Deterministic, artifact-aware policy replay and counterfactual regression testing for AI tool traces.",
+    "keywords": [
+      "agent",
+      "policy",
+      "replay",
+      "security",
+      "testing"
+    ],
+    "evidence_file": "research/2026-10-19-release-review/pages/zhangbowen2006__agentcanary--7bbe6d64828c.txt",
+    "root_status": "ok",
+    "review": "AI工具历史离线策略回放、会话窗口费用/频率及审批过期；时间窗/过期/证据报告抽象相似，业务规则不同。"
+  }
+]

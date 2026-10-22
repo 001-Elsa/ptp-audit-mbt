@@ -1,0 +1,28 @@
+cghyyrrt/moonbit-pcap - mooncakes.io 🥮 mooncakes.io cghyyrrt  /  moonbit-pcap Search Sign in Using system theme. Switch to light mode. 0.1.2 (latest) 0.1.2 (latest) 0.1.1 0.1.0 Expand all Collapse all benchmarks → cmd → src → moonbit-pcap Pure MoonBit network packet capture (PCAP / PCAPNG) parser, stream reassembly, and multi-protocol analyzer library pcap pcapng network packet protocol reassembly tcp dns moon add cghyyrrt/moonbit-pcap@0.1.2 Download zip Author cghyyrrt Version 0.1.2 License Apache-2.0 Repository github.com/cghyyrrt/moonbit-pcap Last updated last month Downloads 18 README # moonbit-pcap Pure MoonBit packet-capture parsing and network analysis for PCAP and PCAPNG 
+ data. The library has no libpcap or C runtime dependency and is suitable for 
+ offline analysis, embedded tooling, CLI utilities, and WebAssembly hosts. 
+ # Features Endian-aware binary readers, writers, cursors, queues, checksums, CRCs, hex, 
+ Base64, and bounded varints. Classic PCAP and PCAPNG readers and writers with structural validators. Ethernet, VLAN, ARP, IPv4, IPv6 extensions, ICMP, ICMPv6, TCP, UDP, SCTP, 
+ DNS, HTTP, MQTT, CoAP, CAN, Modbus TCP, PROFINET, EtherNet/IP, and DNP3 
+ parsing. Bounded TCP stream, UDP flow, and IP fragment reassembly. Traffic statistics, time series, RTT, bandwidth, filtering, packet 
+ classification, anomaly detection, and Markdown/JSON/CSV/HTML/text export. CLI and WebAssembly integration points. # Requirements MoonBit stable toolchain (the CI installs the current stable release). No native packet-capture library is required. # Installation Add the package to a MoonBit module: moon add cghyyrrt/moonbit-pcap Then import the package you need: import   "cghyyrrt/moonbit-pcap/src/pcap" import   "cghyyrrt/moonbit-pcap/src/layers" fn   inspect_capture ( bytes   :   Bytes )   ->   Int   {    match   @pcap. PcapReader :: new ( bytes )   {      Some ( reader )   =>   reader .read_all ( ) .length ( )      None   =>   0    } } # Package layout Package Responsibility src/binary Safe binary I/O, cursors, queues, checksums, CRCs, and encoders src/pcap Classic PCAP headers, packets, writer, validator, and filters src/pcapng PCAPNG blocks, options, writer, and validator src/layers Link, network, transport, application, and industrial protocols src/reassembly TCP, UDP, IP-fragment, and bounded stream reassembly src/analyzer Statistics, sessions, rates, reports, and anomaly detection src/exporter JSON, CSV, HTML, terminal, and Markdown reports src/cli Command-line analysis pipeline src/wasm WebAssembly-facing integration functions # Validation Run the same checks locally as CI: moon fmt --check
+moon check --deny-warn --target all
+moon test --deny-warn --target all
+powershell -NoProfile -ExecutionPolicy Bypass -File scripts/source-metrics.ps1
+moon bench benchmarks The source metric script counts only handwritten  .mbt  files under  src/  and 
+ cmd/ ; generated  _build/  files are excluded. The current verified metric is 
+ available from the script output rather than maintained as an unchecked claim. The benchmark uses a fixed 42-byte Ethernet/IPv4/UDP frame. See 
+ benchmarks/README.md  for the command and the latest 
+ measured local result. # Command-line usage Build and run the example executable: moon run cmd/main -- --help The CLI pipeline reads a capture, analyzes packet and protocol statistics, and 
+ can emit the library's report formats. Library packages can also be composed 
+ directly when an application needs custom ingestion or filtering. # WebAssembly The  src/wasm  package exposes small host-friendly functions for browser or 
+ embedded WebAssembly integrations. Build it with the stable WebAssembly target 
+ supported by the installed MoonBit toolchain. # Continuous integration GitHub Actions runs stable MoonBit checks on Ubuntu, macOS, and Windows. It 
+ checks formatting and all stable compile/test targets on Ubuntu, macOS, and 
+ Windows. The workflow also verifies that formatting does not modify tracked 
+ source. # Publishing Package publishing is a manual GitHub Actions workflow. It performs the same 
+ pre-publish checks and reads a Mooncakes token from the repository secret 
+ MOONCAKES_TOKEN ; credentials are never committed to the repository. # Contributing Please add a focused test for parser behavior and malformed-input handling, 
+ run the validation commands above, and keep public types in the package that 
+ owns their API. Changes should remain independent of native packet-capture 
+ libraries. # License Apache License 2.0. See  LICENSE . Install moon add cghyyrrt/moonbit-pcap@0.1.2 Download zip Pure MoonBit network packet capture (PCAP / PCAPNG) parser, stream reassembly, and multi-protocol analyzer library pcap pcapng network packet protocol reassembly tcp dns cghyyrrt Apache-2.0 github.com/cghyyrrt/moonbit-pcap Updated last month 18 downloads Powered by MoonBit Site source Report issue Packages Build queue Skills Statistics © 2026 mooncakes.io

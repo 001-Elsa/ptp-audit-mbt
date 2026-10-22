@@ -1,0 +1,308 @@
+ M CHANGELOG.md
+ M README.mbt.md
+ M audit/audit.mbt
+ M audit/moon.pkg
+ M audit/pkg.generated.mbti
+ M bin/ptp-audit.mjs
+ M cmd/ptp-audit/main.mbt
+ M cmd/ptp-audit/moon.pkg
+ M docs/architecture.md
+ M docs/charter-compliance.md
+ M docs/non-overlap-current.md
+ M docs/non-overlap.md
+ M docs/normative-evidence.md
+ M docs/plan-requirements-audit.md
+ M docs/redesign-plan.md
+ M docs/rule-traceability.md
+ M docs/rules.md
+ M docs/validation.md
+ M evidence/references.mbt
+ M facade.mbt
+ M moon.pkg
+ M pkg.generated.mbti
+ M research/full-source-audit/README.md
+ M research/full-source-audit/audit_source_nul.py
+ M research/full-source-audit/dns-resolution.json
+ M research/full-source-audit/index.json
+ M research/full-source-audit/manifest.json
+ M research/full-source-audit/modules-response.headers.txt
+ M research/full-source-audit/modules-response.raw.json
+ M research/full-source-audit/modules.json
+ M research/full-source-audit/results/04ba88d465c12bad14213bf5fcce18f96dba958c1b554f4ea6a85b069f75a792.json
+ M research/full-source-audit/results/2c7832cc2a7da406df723a71c6fc298385a0a6754cb0764c5d27b1577483e2b2.json
+ M research/full-source-audit/supplemental-binary-text.json
+ M research/full-source-audit/text-source-nul-review-recheck-summary.json
+ M research/full-source-audit/text-source-nul-review.json
+ M research/full-source-audit/verification.json
+ M research/normative-completion/build_rule_inventory.py
+ M research/normative-completion/rule-inventory.json
+ M research/normative-completion/rule-inventory.md
+ M research/normative-completion/test-coverage.json
+ M research/originality-completion/README.md
+ M research/originality-completion/clock-neighbor-context-review.json
+ M research/originality-completion/clone-shards/part-00.json
+ M research/originality-completion/clone-shards/part-00.log
+ M research/originality-completion/clone-shards/part-01.json
+ M research/originality-completion/clone-shards/part-01.log
+ M research/originality-completion/clone-shards/part-02.json
+ M research/originality-completion/clone-shards/part-02.log
+ M research/originality-completion/clone-shards/part-03.json
+ M research/originality-completion/clone-shards/part-03.log
+ M research/originality-completion/clone-shards/part-04.json
+ M research/originality-completion/clone-shards/part-04.log
+ M research/originality-completion/clone-shards/part-05.json
+ M research/originality-completion/clone-shards/part-05.log
+ M research/originality-completion/final-neighbor-review-coverage.json
+ M research/originality-completion/full-source-clone-human-review.json
+ M research/originality-completion/full-source-clone-screen-40.json
+ M research/originality-completion/full-source-clone-screen-80.json
+ M research/originality-completion/full-source-semantic-review.json
+ M research/originality-completion/manual-semantic-dispositions.json
+ M research/originality-completion/supplemental-source-semantic-review.json
+ M research/report-evidence/complete-report.json
+ M research/report-evidence/missing-epoch-report.json
+ M research/report-evidence/verification.json
+ M research/report-evidence/wrong-requester-report.json
+ M research/validation-0.3.0/check-all.log
+ M research/validation-0.3.0/fmt-check.log
+ M research/validation-0.3.0/generate-format.log
+ M research/validation-0.3.0/info.log
+ M research/validation-0.3.0/manifest.json
+ M research/validation-0.3.0/package-local-self-test.log
+ M research/validation-0.3.0/report-evidence.log
+ M research/validation-0.3.0/rule-inventory.log
+ M research/validation-0.3.0/test-all.log
+ M scripts/package_local.py
+ M scripts/test_package_local.py
+ M scripts/validate_local.py
+ M scripts/verify_source_originality.py
+?? commissioning/commissioning.mbt
+?? commissioning/commissioning_wbtest.mbt
+?? commissioning/moon.pkg
+?? commissioning/pkg.generated.mbti
+?? docs/commissioning.md
+?? examples/commissioning.md
+?? fixtures/commissioning/commissioning-indeterminate-offset-budget.json
+?? fixtures/commissioning/commissioning-outside-offset-budget.json
+?? fixtures/commissioning/commissioning-within-offset-budget.json
+?? fixtures/commissioning/contradictory-overlapping-selection.json
+?? fixtures/commissioning/decision-outside-window.json
+?? fixtures/commissioning/different-observer-port.json
+?? fixtures/commissioning/duplicate-step-id.json
+?? fixtures/commissioning/empty-steps.json
+?? fixtures/commissioning/exchange-before-decision.json
+?? fixtures/commissioning/grandmaster-switch.json
+?? fixtures/commissioning/incomplete-candidates.json
+?? fixtures/commissioning/isolated-exchange-context.json
+?? fixtures/commissioning/manifest.json
+?? fixtures/commissioning/metrology-blank-assumptions.json
+?? fixtures/commissioning/metrology-blank-source.json
+?? fixtures/commissioning/metrology-declared-asymmetry-bound.json
+?? fixtures/commissioning/metrology-exact-negative-limit.json
+?? fixtures/commissioning/metrology-exact-positive-limit.json
+?? fixtures/commissioning/metrology-interval-crosses-positive-limit.json
+?? fixtures/commissioning/metrology-interval-touches-outside-edge.json
+?? fixtures/commissioning/metrology-interval-touches-positive-limit.json
+?? fixtures/commissioning/metrology-ledger-only.json
+?? fixtures/commissioning/metrology-max-256-digit-bound.json
+?? fixtures/commissioning/metrology-missing-assumptions.json
+?? fixtures/commissioning/metrology-missing-relative-rate-bound-confirmed.json
+?? fixtures/commissioning/metrology-missing-source.json
+?? fixtures/commissioning/metrology-negative-bound.json
+?? fixtures/commissioning/metrology-noncanonical-bound.json
+?? fixtures/commissioning/metrology-outside-limit.json
+?? fixtures/commissioning/metrology-oversized-bound.json
+?? fixtures/commissioning/metrology-request-correction-invariant.json
+?? fixtures/commissioning/metrology-short-timestamp-array.json
+?? fixtures/commissioning/metrology-uncertain-boundary.json
+?? fixtures/commissioning/metrology-unconfirmed-rate.json
+?? fixtures/commissioning/metrology-within-limit.json
+?? fixtures/commissioning/missing-bmca.json
+?? fixtures/commissioning/missing-clock-continuity.json
+?? fixtures/commissioning/missing-selection-stability.json
+?? fixtures/commissioning/mixed-event-clock.json
+?? fixtures/commissioning/no-accepted-quartet.json
+?? fixtures/commissioning/nonadjacent-contradictory-selection.json
+?? fixtures/commissioning/nonadjacent-selection-safe-control.json
+?? fixtures/commissioning/old-master-after-switch.json
+?? fixtures/commissioning/rejected-middle-is-not-skipped.json
+?? fixtures/commissioning/reversed-step-order.json
+?? fixtures/commissioning/same-grandmaster-sender-switch.json
+?? fixtures/commissioning/same-sender-new-grandmaster.json
+?? fixtures/commissioning/selection-stability-ends-early.json
+?? fixtures/commissioning/stability-outside-window.json
+?? fixtures/commissioning/stable-master.json
+?? fixtures/commissioning/too-many-steps.json
+?? fixtures/commissioning/unconfirmed-clock-continuity.json
+?? fixtures/commissioning/unconfirmed-selection-stability.json
+?? fixtures/commissioning/unknown-input-field.json
+?? metrology/json.mbt
+?? metrology/metrology.mbt
+?? metrology/metrology_test.mbt
+?? metrology/moon.pkg
+?? metrology/pkg.generated.mbti
+?? research/commissioning/commissioning-indeterminate-offset-budget.report.json
+?? research/commissioning/commissioning-outside-offset-budget.report.json
+?? research/commissioning/commissioning-within-offset-budget.report.json
+?? research/commissioning/contradictory-overlapping-selection.report.json
+?? research/commissioning/decision-outside-window.report.json
+?? research/commissioning/different-observer-port.report.json
+?? research/commissioning/duplicate-step-id.report.json
+?? research/commissioning/empty-steps.report.json
+?? research/commissioning/exchange-before-decision.report.json
+?? research/commissioning/grandmaster-switch.report.json
+?? research/commissioning/incomplete-candidates.report.json
+?? research/commissioning/isolated-exchange-context.report.json
+?? research/commissioning/manifest.json
+?? research/commissioning/metrology-blank-assumptions.report.json
+?? research/commissioning/metrology-blank-source.report.json
+?? research/commissioning/metrology-declared-asymmetry-bound.report.json
+?? research/commissioning/metrology-exact-negative-limit.report.json
+?? research/commissioning/metrology-exact-positive-limit.report.json
+?? research/commissioning/metrology-interval-crosses-positive-limit.report.json
+?? research/commissioning/metrology-interval-touches-outside-edge.report.json
+?? research/commissioning/metrology-interval-touches-positive-limit.report.json
+?? research/commissioning/metrology-ledger-only.report.json
+?? research/commissioning/metrology-max-256-digit-bound.report.json
+?? research/commissioning/metrology-missing-assumptions.report.json
+?? research/commissioning/metrology-missing-relative-rate-bound-confirmed.report.json
+?? research/commissioning/metrology-missing-source.report.json
+?? research/commissioning/metrology-negative-bound.report.json
+?? research/commissioning/metrology-noncanonical-bound.report.json
+?? research/commissioning/metrology-outside-limit.report.json
+?? research/commissioning/metrology-oversized-bound.report.json
+?? research/commissioning/metrology-request-correction-invariant.report.json
+?? research/commissioning/metrology-short-timestamp-array.report.json
+?? research/commissioning/metrology-uncertain-boundary.report.json
+?? research/commissioning/metrology-unconfirmed-rate.report.json
+?? research/commissioning/metrology-within-limit.report.json
+?? research/commissioning/missing-bmca.report.json
+?? research/commissioning/missing-clock-continuity.report.json
+?? research/commissioning/missing-selection-stability.report.json
+?? research/commissioning/mixed-event-clock.report.json
+?? research/commissioning/no-accepted-quartet.report.json
+?? research/commissioning/nonadjacent-contradictory-selection.report.json
+?? research/commissioning/nonadjacent-independent-review-input.json
+?? research/commissioning/nonadjacent-independent-review.report.json
+?? research/commissioning/nonadjacent-selection-safe-control.report.json
+?? research/commissioning/old-master-after-switch.report.json
+?? research/commissioning/rejected-middle-is-not-skipped.report.json
+?? research/commissioning/reversed-step-order.report.json
+?? research/commissioning/same-grandmaster-sender-switch.report.json
+?? research/commissioning/same-sender-new-grandmaster.report.json
+?? research/commissioning/selection-stability-ends-early.report.json
+?? research/commissioning/stability-outside-window.report.json
+?? research/commissioning/stable-master.report.json
+?? research/commissioning/too-many-steps.report.json
+?? research/commissioning/unconfirmed-clock-continuity.report.json
+?? research/commissioning/unconfirmed-selection-stability.report.json
+?? research/commissioning/unknown-input-field.report.json
+?? research/full-source-audit/final-refresh-index-delta-2026-10-20.json
+?? research/full-source-audit/history/2026-10-20-1120/index.json
+?? research/full-source-audit/history/2026-10-20-1120/manifest.json
+?? research/full-source-audit/history/2026-10-20-1120/modules-response.headers.txt
+?? research/full-source-audit/history/2026-10-20-1120/modules-response.raw.json
+?? research/full-source-audit/history/2026-10-20-1120/modules.json
+?? research/full-source-audit/history/2026-10-20-1120/text-source-nul-review.json
+?? research/full-source-audit/history/2026-10-20-3123/README.md
+?? research/full-source-audit/history/2026-10-20-3123/index.json
+?? research/full-source-audit/history/2026-10-20-3123/manifest.json
+?? research/full-source-audit/history/2026-10-20-3123/modules-response.headers.txt
+?? research/full-source-audit/history/2026-10-20-3123/modules-response.raw.json
+?? research/full-source-audit/history/2026-10-20-3123/modules.json
+?? research/full-source-audit/history/2026-10-20-3123/supplemental-binary-text.json
+?? research/full-source-audit/history/2026-10-20-3123/text-source-nul-review-recheck-summary.json
+?? research/full-source-audit/history/2026-10-20-3123/text-source-nul-review.json
+?? research/full-source-audit/history/2026-10-20-3123/verification.json
+?? research/full-source-audit/refresh-index-delta-2026-10-20.json
+?? research/full-source-audit/refresh_source_nul.py
+?? research/full-source-audit/results/036742ff1134746aa0ca9ea66634880d0c6d10d4072c9add9b4a0457057ddae4.json
+?? research/full-source-audit/results/03ab0cb29394eb6794993a0f65f6bd055f33aced41c252e0cd053b179d15953e.json
+?? research/full-source-audit/results/04ab2d5e400c7cb2009b84547b0783593864bdb7e4275b31c92a0c2b45a76c8b.json
+?? research/full-source-audit/results/056e44b58550e7a072b58e564be06340bd3e4cac09a5e25dc0df8a576c7b45bc.json
+?? research/full-source-audit/results/0600cefd64e62596b946b8224ff367cb07abc0016417333e83ac94907743e4f5.json
+?? research/full-source-audit/results/06d7acb87a29c29f3d9cd42c7aece455da34c3ac6a7594afa9db62e6d73864ca.json
+?? research/full-source-audit/results/0729d445453b1d194d2740558aedcf46e62c8f03df0a13740914af0d44dd490a.json
+?? research/full-source-audit/results/09f2d89f2ecbcf3eaf3d42c99ae14599b13ea172ea443acf1cf7f0642783897a.json
+?? research/full-source-audit/results/0a8b427a4040ab4ba43a8817a76953cfb47e17a17bfe8f3c3f5bf64643cf4cf7.json
+?? research/full-source-audit/results/0c839de5ed5782ee103f82d5a8b021c1c2c9ec52b4cbaa27b0af64b71585876e.json
+?? research/full-source-audit/results/1238ad9e605951b274211ebab858b884dc51e4e2702af3845bc7faed8c18023d.json
+?? research/full-source-audit/results/1373f59d79aaba8c4a910c38573837cc80c9a54b4778121861596310f3bf45d1.json
+?? research/full-source-audit/results/18033170e669f016de9b85ac048964c571da8a1eab6a4e37f15b650051ecf5a0.json
+?? research/full-source-audit/results/18679ba3348f5cdb206d08300c90461044558a1bb7de0c1a9b86439825f04168.json
+?? research/full-source-audit/results/1a0f0fa9a502389091930b3708d8b9e549e33cd1adc910f78d12e732a87eb8bb.json
+?? research/full-source-audit/results/1b8520f4eeca3b63a2f6be91888113899940e74b0dc054c9bab3c9d7041b99a7.json
+?? research/full-source-audit/results/1cfcdf4b4f4ad22927b61252825ffc142970ef50e76e76a6bb80def133d5c44e.json
+?? research/full-source-audit/results/22954d7f7e4244b62251add9412fc7a2366d39378c9b413c26067a0be5828899.json
+?? research/full-source-audit/results/24d803cc0ac3c652d8a6f27eb5a0dc90601d8f27cfac912d023482194d507dae.json
+?? research/full-source-audit/results/258de100740e6b19e4241eafe7c4a61d886cc619be4fa6cfb349226ea3d4526a.json
+?? research/full-source-audit/results/2ebb729d9e8cf052588aa23570d8d98017179891dc1d97b192ea188122b4b2e9.json
+?? research/full-source-audit/results/2fce1dee07ec87fd92be0697508833a9fb371f4201aaa06475028c881291f12f.json
+?? research/full-source-audit/results/354fba237866bcccb929f1f308239c37ad1509946b42e53c8f0a8472103543d7.json
+?? research/full-source-audit/results/3768400ba50e26fe9674ae11ba8db4f9133b44527aa926f88d7f7be4d1dcd496.json
+?? research/full-source-audit/results/38b0011c9f4f94f29f560d34c38570e6922e8c99a1f2edc1e102480fbfd418ba.json
+?? research/full-source-audit/results/409cafcb1d2cd03145ff9722d5f64aec365e799686a3d7c0a02e114dbce7aab4.json
+?? research/full-source-audit/results/4a31815da521d1bfcf36958e29a4cb287aa7a581911ca2396fb164caf803ffa9.json
+?? research/full-source-audit/results/4f2605985eac0c36e08eb7e15ad42bb7faaef19a1d5ab66acdc29fba90b7c370.json
+?? research/full-source-audit/results/506380aa1a61e8218d2b4a2e6d32d84595c2ebbbce438f7d001b9475110ad412.json
+?? research/full-source-audit/results/51398c1301e0d6badade488ffbe36b80034fe0f8e88d4b5152e92650b32f96b3.json
+?? research/full-source-audit/results/52de478d6e377ea7ec0114c6c68460db6448b9ee34e8993496d728b303703bb0.json
+?? research/full-source-audit/results/5d012516adb053ccfdb36907175d31ef54b333679b92f146e6fa90742d2ad372.json
+?? research/full-source-audit/results/5f859d3b4e5e9eee3250f7b599cbe3fe473bc9463f53b5c6ad9ca1149cb7d286.json
+?? research/full-source-audit/results/62e302a8d9c4afd58c120d524aea4266113c2a226795025e673310579d337494.json
+?? research/full-source-audit/results/64b911de1f0e37622fefbba8043981b5b3fcd17216caa6b467eeb4c64e5d2a0e.json
+?? research/full-source-audit/results/663689ff23cddcb7950f78d2b19cb307d4135ca4e3338cd62ccdc07561921a8c.json
+?? research/full-source-audit/results/67e2ca6ee5e7a1ab6a19ffc15789c3d01dfede0878efd22ea5c6437ba729a0f1.json
+?? research/full-source-audit/results/6e3a5e6989b8da42f950f51155c96755fde3beba0334fafb68a927cd6696e8b1.json
+?? research/full-source-audit/results/754c1e53a4612cfbab4cfa52692daad7780f82e3c372b417bbe85fed5e540bc1.json
+?? research/full-source-audit/results/78030b80249b86c931c21c34ae748923db6dff7578e8b2f86661c37b4d89992a.json
+?? research/full-source-audit/results/791032db6390226191195743a2a229699b8f04f89ccc5fb6f56428d358ecf656.json
+?? research/full-source-audit/results/7937fff65bda6b871c0dd65ece3e0f388756865f13e5bc46880634be11f76475.json
+?? research/full-source-audit/results/7bc2adc53d390470cbfbfcc55d00a1106f5dd7cacf1b0cb74836acf9943932cf.json
+?? research/full-source-audit/results/7dd6232464de05b8d9adc122a3120cbee893c260255d7bbbb3a5a7839c2acde3.json
+?? research/full-source-audit/results/7e4d3f3d2a1ec82139e99a0332275e2ad41c34b05481580f888a740b7c0d34ea.json
+?? research/full-source-audit/results/81fccc110dd17b7d24f0e633e0a0f078294fdfd989babe87bf15afe7f598ab30.json
+?? research/full-source-audit/results/821246e19d16fd2b5d873cda1e358c7241861d5b15418145f756b32dadb9bd12.json
+?? research/full-source-audit/results/829c61387d7b16343bfa1393502710eb2e823e5d0c062665820ae3e9b520c0ec.json
+?? research/full-source-audit/results/829ed60ec8942dbb605de2798e019221e20778d7ec65b531dae93248a55605f0.json
+?? research/full-source-audit/results/88a272da4fef2649e0ac59e992ede80cb8f8fd01a34fbdcb37c6f0d1bab9a34b.json
+?? research/full-source-audit/results/89c81a39d3a194dac21212cbfd9ace5f2b76422c694c504fac0d203453eda3f7.json
+?? research/full-source-audit/results/8c541b8d5b10b141cd1f5776fb3fc7703b29bc4294ab4c789535bc91a5bea0c9.json
+?? research/full-source-audit/results/93bfac2b20bb32b70d24f2b3f6cbcc143780a93a88aa71672b771142df135333.json
+?? research/full-source-audit/results/9eb8f46cce0c7631e5e65f28d39c04c311549c047feb40e50d3eafade0c71efe.json
+?? research/full-source-audit/results/a5dce83911f6de8f194a1b329e26e337526ce01221f836f580abd4653d1cd2d7.json
+?? research/full-source-audit/results/a72c581bd77cdd29d1ad8bebb9ee564170ad2a84f0a5c2080ba623292ae5154e.json
+?? research/full-source-audit/results/a740573d04e0439aa244f42f6e8bb00a33e481afac50c1acbf07dfd4519213a6.json
+?? research/full-source-audit/results/ae2c28e408baf215c7e791ef770d4822671901dc63c4f0cd9b7f1297b4edd95e.json
+?? research/full-source-audit/results/b1bcf04ca89430e8f6b06c5c22e847eda3c44fd46dd1a12cd28aa464f598edc3.json
+?? research/full-source-audit/results/b5b715dda19bf027e2f4bac23a13784605f25aef1e068a42cf033b1bae2c952c.json
+?? research/full-source-audit/results/b7ab9722f3ae7c821ee3f218660275cc03160c60735ab42edd426dfe4851877b.json
+?? research/full-source-audit/results/bb167dae7a6e62efb3ca215b768429c153e329c507cda9e9319bbea310c8faf9.json
+?? research/full-source-audit/results/bc62d15d45b6701d3e818a22dadc594245fb24287e3e38dd42e5e53fb7cb9b01.json
+?? research/full-source-audit/results/bfd5ac81e4cd09b89e6020e40bd95d770fb880efc1dbda80e0fc0d6156c7de26.json
+?? research/full-source-audit/results/c152c37279f2e7a38f2ca589f23f8f242cbbf65389217a5f87334e5896079c85.json
+?? research/full-source-audit/results/c8a1d8fcac8a6248c272c0afd3f59c0062ff075c6c175c947af34c96124048d7.json
+?? research/full-source-audit/results/ca8c68ca77f0bc79ae3b216ac5c39ac82eb7c29c5d25a1eb6f6f09b9d4c51d6a.json
+?? research/full-source-audit/results/cf70149a644b009e222af88ff02486dec732c7e0ddad1b05ebb0c9a6e17076a8.json
+?? research/full-source-audit/results/d58ff5770dbf11e4029a02b3bda6ffed722a14a5a4f63fc797b30df10bfb2d75.json
+?? research/full-source-audit/results/d67a40692c7701b59d7653dc631a6e8187b8776f2db896cf20b1a3bb547a6ec1.json
+?? research/full-source-audit/results/d7569e86a62d29e5212d9254841944c37e8aa41f1d6ae5ef3d7ddfe620acc84d.json
+?? research/full-source-audit/results/d92ffc82f64802f4d8f68c31c1fefec1a73322af842496deaef7212396691236.json
+?? research/full-source-audit/results/dff6bb167c54404dcbeebb1b2338fc165b200e43f2a8b94bee12782d9b275374.json
+?? research/full-source-audit/results/e1effc6ef8866555d6c69971d2b53d98fe12e8a03caaec623d45aa5acd85a56a.json
+?? research/full-source-audit/results/f1bb62c05e53c5efe48ab6c41eb3bb62fe608240aa043b376acefe19b21f05fc.json
+?? research/full-source-audit/results/f27eab3555ba37863c22731a8f87f6913e52c50015a1f29524188df87a37ec58.json
+?? research/full-source-audit/results/f320fcde320fcb723e285fd621efc1c8c7e8891262426f63959e5226622e7d71.json
+?? research/full-source-audit/results/ffcb5fd2f52f7ddee505d2bbbce83ed19ace4c6faaf910f787f2a9d8a79f69c6.json
+?? research/full-source-audit/text-source-nul-review-recheck.json
+?? research/originality-completion/domain-enhancement-neighbor-review.json
+?? research/originality-completion/history/2026-10-20-pre-enhancement/README.md
+?? research/originality-completion/history/2026-10-20-pre-enhancement/full-source-clone-human-review.json
+?? research/originality-completion/history/2026-10-20-pre-enhancement/full-source-clone-screen-40.json
+?? research/originality-completion/history/2026-10-20-pre-enhancement/full-source-clone-screen-80.json
+?? research/originality-completion/registry-3138-delta-neighbor-review.json
+?? research/originality-completion/registry-3138-delta-semantic-review.json
+?? research/validation-0.3.0/generate-operational.log
+?? research/validation-0.3.0/operational-evidence.log
+?? scripts/build_commissioning_fixtures.py
+?? scripts/verify_commissioning.py

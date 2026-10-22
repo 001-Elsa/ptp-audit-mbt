@@ -1,0 +1,3118 @@
+{
+  "schema": "ptp-operational-verification/v1",
+  "generated_at": "2026-10-21T08:13:02.003493+00:00",
+  "status": "pass",
+  "checks": 935,
+  "fixture_count": 53,
+  "fixture_manifest": "fixtures/commissioning/manifest.json",
+  "fixture_manifest_sha256": "8a1733027de9bc2e1e6b68c8cd97f086af82a3e91796ae9eca6f60f97af373b7",
+  "independent_method": "Python network-order struct decode and fractions.Fraction from fixture inputs; no MoonBit imports or result-derived expected values.",
+  "provenance": "All inputs are explicitly synthetic, not hardware captures; declared bounds are not authenticated calibration.",
+  "source_bindings": {
+    "audit/audit.mbt": "7ad1fda48991ff69edfdd1760e7975811ba20c206bc685966188c46f034e9624",
+    "audit/pkg.generated.mbti": "669c70a73796092eea54df9cc2cb429c29151dbd9cf0136f7eb7459e844b5f65",
+    "bin/ptp-audit.mjs": "e029c4f87eae9001ed6697001a3fadc882ea05500405e00bd46564db6fdaa5e8",
+    "bmca/bmca.mbt": "12247cac2d73b5e7e867963eb03427a367368dc69f0b394e0c7e1b02ff9df261",
+    "bmca/pkg.generated.mbti": "487ea401aaabd5ceff55a07ff093f94423a1404bbfb43ed4cd3381b8e6f20129",
+    "bmca/snapshot.mbt": "139b80ad1ad725aa4ff1eb14b5442b3719c4b27140d5f3c5204a3fd5e1003b6b",
+    "bmca/tutorial_flow_wbtest.mbt": "3f211512e10780985b61eacf05e6f87246171c391600fa0d8a17503a7516a70c",
+    "cmd/ptp-audit/main.mbt": "1ea0921d7f50f1b773616ef0a1bccc2a66cda9e34015b155c2ea40db1809ec69",
+    "commissioning/commissioning.mbt": "8fbfe7f3396431d8d58d7f0491ad4b066fddaab9d6dbf986fa1303622c542b41",
+    "commissioning/commissioning_wbtest.mbt": "397787ae2cb691fc021167725b180e1ff269242b67620c5990de8ecb6c39369c",
+    "commissioning/pkg.generated.mbti": "528f4ecff5221706fe361706bb0ee351e1ab0af1547847cc2eb2deeb5badd61f",
+    "diagnostic/diagnostic.mbt": "03696558c79240e31eeb686f80d18cc97b3ac64e9ae289bc7749143111e823d3",
+    "diagnostic/pkg.generated.mbti": "876ab1f702a0ca308c219b63ec0ae5bf1f46665bb6231e196f46bde1f1581a21",
+    "evidence/coverage.mbt": "dabb72c3b6a93f6d5518fc99b4258c94b5ca6c34c9afc26d07a62e3574a7436d",
+    "evidence/evidence_wbtest.mbt": "27ee9455b769d3ac448811b5cc426568b1f0db82658c1a0e0af871951f197253",
+    "evidence/findings.mbt": "cd26c5636f6c7863de840a0192c071d373dbd3875650bd1f45825edff5c14b83",
+    "evidence/measurements.mbt": "45d69751b07d5e03b0425b0f8033ca5a6b98f36f6c3759df1bdbf0b6dc56d811",
+    "evidence/pkg.generated.mbti": "7a8b48311489c54b8ee163f7bf8ac867a53670e20b320320e234e615d5be4b18",
+    "evidence/references.mbt": "af6e4c70fab2c8b1be04fce06b96159788a1531c78812d476b2cd346e62c2555",
+    "evidence/values.mbt": "608c25b006e6255460f438cfd27efe181d02acbe24ddb21ccacf8e7947a78262",
+    "exchange/context.mbt": "b6ea6fd812913b02514bda678c93549ef393d6249d323a9641c9d6132c155bbf",
+    "exchange/context_wbtest.mbt": "293c1db1fdbf59f4796b25274a7580b0e2ae59cbea75592864fce74c5b7faceb",
+    "exchange/exchange.mbt": "3aaec5b238f0f347f4af2f1e905845fbea7d410e0653717633a845bac43028d8",
+    "exchange/pkg.generated.mbti": "e81c5308b747521beb4448fab87b0208dc5aa054ee37ba6932ecb2a78d5725a7",
+    "exchange/rule_resource_wbtest.mbt": "0629f22253a4945c74a8de0fd0cc17282949187c5b814c90afe4f31e896ea8bf",
+    "facade.mbt": "f1c07e720d1dbcdc0948c9d766fa926757074eb146822bcdbda97e05eca0b500",
+    "metrology/json.mbt": "d6743c49d38019dcb2a0e40927d493d3c3ac2205485029ccf74b064066320f45",
+    "metrology/metrology.mbt": "4bc6c1de071413111c5484ae7c3ffd2304923df8b9a9a47f87e0a6858547aef3",
+    "metrology/metrology_test.mbt": "a67f67197878140e402ad620682fb4ad8b000d4c96715169c40bc51ea35f00a5",
+    "metrology/pkg.generated.mbti": "9b25a913a35d93aa4f4072af6a3afd358c24aaa4f7dc355d44720a3342bab23b",
+    "observation/observation.mbt": "41317a12623303e9d4862d1b87b9284ed535d5e134838f9d16a06e648511ed2b",
+    "observation/observation_wbtest.mbt": "2dbe04c24e1838684858678272be87d328c9dd020ffbb818d269ec995fe74fc1",
+    "observation/pkg.generated.mbti": "bc0a7caadcecc0e4d1bd3af3fdb448d61a53e2895ed7f4f91f2734a8202cfd60",
+    "pkg.generated.mbti": "b13e71bc3f2b0396dec3a8157a55302fcb65116cf63c6834a6dd99ebbb542d5e",
+    "scripts/build_commissioning_fixtures.py": "49f47e335e86de94f88eba961db859b9c06e2a9266f7252cc7ac3b3a58599085",
+    "scripts/moon-local": "86ce57d3376c1e65c6c8e8d05cc2bf6fbeab4a2b7e036a3aa0280727269cec3d",
+    "scripts/verify_commissioning.py": "4f53f35438b558348f6baddbfe820b22e7e4d2ead7ff1bc482bed56d5ef03c1a",
+    "tests/audit_test.mbt": "5b83490b21f11ef1c66fd747d2bc9e2dec3023e5e065dfe748852681b3028624",
+    "tests/fixtures_test.mbt": "f3047e24aecc5eae54186b1fd148f43cc24635a7f28683bea6b88cf133237dec",
+    "tests/hex_input_test.mbt": "8e745508af828354d6ec6b268b583a3c1453a1c9c282c471c3c7cf7762dbd921",
+    "tests/pkg.generated.mbti": "bb33cc5703d05d0738bf64384a9775df701efe91b1f3944354e8dd741c249eaf",
+    "tests/reference_test.mbt": "e52f99eb0ea3b5968fbb84e05d9d8901af976e0899db3ef01be625448151495b",
+    "tests/rule_coverage_test.mbt": "a05e31b696d2e91e1075d39ca2e3ad2f88717e871112d1b3cf5877556f7a4832",
+    "tests/wire_boundary_test.mbt": "71eb0cedb101787df3a93431b7b09264f99219c311d17750bea2a6259e8b1dfe",
+    "wire/pkg.generated.mbti": "aacedd588cea5d00322751e697aa5940cb2a9c430fdc88e061f0de1cd0857fae",
+    "wire/wire.mbt": "d9728257cf6488c2c3162f34eb387a195a3491467b22da8aa4255a2f653ba1b2"
+  },
+  "sources_unchanged_during_run": true,
+  "cases": [
+    {
+      "name": "grandmaster-switch",
+      "command": "commission",
+      "input": "fixtures/commissioning/grandmaster-switch.json",
+      "input_sha256": "e84a89ddf8f5162a8b81e432cc1e95bb026cf90962fd5df36a63bc51e6efbcbf",
+      "report": "/private/var/folders/s5/kpmwrbfn04l362zwtk9cjby80000gn/T/moonbit2-charter-20261021-qi8asrff/project/research/commissioning/grandmaster-switch.report.json",
+      "report_sha256": "cd893ccdb6bd265d636a4447035aed8764697da6f9a421536fd3c05e475a3350",
+      "expected_status": "Pass",
+      "process_exit": 0,
+      "stderr": "",
+      "status": "Pass",
+      "rules": [
+        "BMCA.DIFFERENT_GM.priority1",
+        "BMCA.OBSERVED_DECISION",
+        "BMCA.SNAPSHOT.FRESH",
+        "BMCA.SNAPSHOT.WINDOW",
+        "CLAIM.DELAY_WINDOW",
+        "CLAIM.E2E_IDENTITY",
+        "CLAIM.EXCHANGE_WINDOW",
+        "CLAIM.SYNC_FOLLOW_UP",
+        "CLAIM.SYNC_WINDOW",
+        "COMMISSION.BINDING.ACCEPTED",
+        "COMMISSION.CASE",
+        "COMMISSION.TRANSITION.OBSERVED",
+        "EXCHANGE.SYNC_FOLLOW_UP",
+        "EXCHANGE.WINDOW",
+        "MEASUREMENT.E2E",
+        "METROLOGY.LEDGER",
+        "WIRE.FIXED_BODY"
+      ],
+      "independent_selection": [
+        {
+          "candidate": "A",
+          "announce_frame": 5,
+          "upstream_sender": {
+            "clock": "0011223344556677",
+            "port": 1
+          },
+          "receiver": {
+            "clock": "8899aabbccddeeff",
+            "port": 1
+          },
+          "grandmaster": "0011223344556677",
+          "domain": 0
+        },
+        {
+          "candidate": "B",
+          "announce_frame": 6,
+          "upstream_sender": {
+            "clock": "0011223344556678",
+            "port": 1
+          },
+          "receiver": {
+            "clock": "8899aabbccddeeff",
+            "port": 1
+          },
+          "grandmaster": "0011223344556678",
+          "domain": 0
+        }
+      ]
+    },
+    {
+      "name": "old-master-after-switch",
+      "command": "commission",
+      "input": "fixtures/commissioning/old-master-after-switch.json",
+      "input_sha256": "d5f34b0b2a711d7119051b454cc27b0c45f242b1d458004809c7f60f4d1622ba",
+      "report": "/private/var/folders/s5/kpmwrbfn04l362zwtk9cjby80000gn/T/moonbit2-charter-20261021-qi8asrff/project/research/commissioning/old-master-after-switch.report.json",
+      "report_sha256": "3eab0d690ca03d3264680087e402f97c26eeccacaa04733f98c79c6b8b49c480",
+      "expected_status": "Violation",
+      "process_exit": 1,
+      "stderr": "",
+      "status": "Violation",
+      "rules": [
+        "BMCA.DIFFERENT_GM.priority1",
+        "BMCA.OBSERVED_DECISION",
+        "BMCA.SNAPSHOT.FRESH",
+        "BMCA.SNAPSHOT.WINDOW",
+        "CLAIM.DELAY_WINDOW",
+        "CLAIM.E2E_IDENTITY",
+        "CLAIM.EXCHANGE_WINDOW",
+        "CLAIM.SYNC_FOLLOW_UP",
+        "CLAIM.SYNC_WINDOW",
+        "COMMISSION.BINDING.ACCEPTED",
+        "COMMISSION.BINDING.IDENTITY",
+        "COMMISSION.CASE",
+        "COMMISSION.TRANSITION.EVIDENCE",
+        "EXCHANGE.SYNC_FOLLOW_UP",
+        "EXCHANGE.WINDOW",
+        "MEASUREMENT.E2E",
+        "METROLOGY.LEDGER",
+        "WIRE.FIXED_BODY"
+      ]
+    },
+    {
+      "name": "same-grandmaster-sender-switch",
+      "command": "commission",
+      "input": "fixtures/commissioning/same-grandmaster-sender-switch.json",
+      "input_sha256": "6c2cf8c917c9d214d72ac1d31dbbd61942b28bec85581be9ef43a9a1afc4d086",
+      "report": "/private/var/folders/s5/kpmwrbfn04l362zwtk9cjby80000gn/T/moonbit2-charter-20261021-qi8asrff/project/research/commissioning/same-grandmaster-sender-switch.report.json",
+      "report_sha256": "6f2a043863873c33ae6d62907defa34f571d0e7f7eccf0fbc61c22b6706f9257",
+      "expected_status": "Pass",
+      "process_exit": 0,
+      "stderr": "",
+      "status": "Pass",
+      "rules": [
+        "BMCA.OBSERVED_DECISION",
+        "BMCA.SAME_GM.stepsRemoved",
+        "BMCA.SNAPSHOT.FRESH",
+        "BMCA.SNAPSHOT.WINDOW",
+        "CLAIM.DELAY_WINDOW",
+        "CLAIM.E2E_IDENTITY",
+        "CLAIM.EXCHANGE_WINDOW",
+        "CLAIM.SYNC_FOLLOW_UP",
+        "CLAIM.SYNC_WINDOW",
+        "COMMISSION.BINDING.ACCEPTED",
+        "COMMISSION.CASE",
+        "COMMISSION.TRANSITION.OBSERVED",
+        "EXCHANGE.SYNC_FOLLOW_UP",
+        "EXCHANGE.WINDOW",
+        "MEASUREMENT.E2E",
+        "METROLOGY.LEDGER",
+        "WIRE.FIXED_BODY"
+      ],
+      "independent_selection": [
+        {
+          "candidate": "A",
+          "announce_frame": 5,
+          "upstream_sender": {
+            "clock": "0011223344556677",
+            "port": 1
+          },
+          "receiver": {
+            "clock": "8899aabbccddeeff",
+            "port": 1
+          },
+          "grandmaster": "0011223344556677",
+          "domain": 0
+        },
+        {
+          "candidate": "B",
+          "announce_frame": 6,
+          "upstream_sender": {
+            "clock": "0011223344556678",
+            "port": 1
+          },
+          "receiver": {
+            "clock": "8899aabbccddeeff",
+            "port": 1
+          },
+          "grandmaster": "0011223344556677",
+          "domain": 0
+        }
+      ]
+    },
+    {
+      "name": "stable-master",
+      "command": "commission",
+      "input": "fixtures/commissioning/stable-master.json",
+      "input_sha256": "cb388967afd3922ef47b6df3e5b38e1684ba0005ba9a29639497f78d990bcd5b",
+      "report": "/private/var/folders/s5/kpmwrbfn04l362zwtk9cjby80000gn/T/moonbit2-charter-20261021-qi8asrff/project/research/commissioning/stable-master.report.json",
+      "report_sha256": "8bbe4e1ba1483efd86d2b523f7c395a58a3041f08fff3a2cec443aeb199d5c0a",
+      "expected_status": "Pass",
+      "process_exit": 0,
+      "stderr": "",
+      "status": "Pass",
+      "rules": [
+        "BMCA.DIFFERENT_GM.priority1",
+        "BMCA.OBSERVED_DECISION",
+        "BMCA.SNAPSHOT.FRESH",
+        "BMCA.SNAPSHOT.WINDOW",
+        "CLAIM.DELAY_WINDOW",
+        "CLAIM.E2E_IDENTITY",
+        "CLAIM.EXCHANGE_WINDOW",
+        "CLAIM.SYNC_FOLLOW_UP",
+        "CLAIM.SYNC_WINDOW",
+        "COMMISSION.BINDING.ACCEPTED",
+        "COMMISSION.CASE",
+        "COMMISSION.TRANSITION.OBSERVED",
+        "EXCHANGE.SYNC_FOLLOW_UP",
+        "EXCHANGE.WINDOW",
+        "MEASUREMENT.E2E",
+        "METROLOGY.LEDGER",
+        "WIRE.FIXED_BODY"
+      ],
+      "independent_selection": [
+        {
+          "candidate": "A",
+          "announce_frame": 5,
+          "upstream_sender": {
+            "clock": "0011223344556677",
+            "port": 1
+          },
+          "receiver": {
+            "clock": "8899aabbccddeeff",
+            "port": 1
+          },
+          "grandmaster": "0011223344556677",
+          "domain": 0
+        },
+        {
+          "candidate": "A",
+          "announce_frame": 5,
+          "upstream_sender": {
+            "clock": "0011223344556677",
+            "port": 1
+          },
+          "receiver": {
+            "clock": "8899aabbccddeeff",
+            "port": 1
+          },
+          "grandmaster": "0011223344556677",
+          "domain": 0
+        }
+      ]
+    },
+    {
+      "name": "missing-clock-continuity",
+      "command": "commission",
+      "input": "fixtures/commissioning/missing-clock-continuity.json",
+      "input_sha256": "10b47cb406964fcd730ba4e6af8d9e1139c126eda5ea54d1dd28f7533c0c8be8",
+      "report": "/private/var/folders/s5/kpmwrbfn04l362zwtk9cjby80000gn/T/moonbit2-charter-20261021-qi8asrff/project/research/commissioning/missing-clock-continuity.report.json",
+      "report_sha256": "500b85c58f4c5a2f034036bde0680b771becab8ce266efd90d4b2d70d0046a3a",
+      "expected_status": "InsufficientEvidence",
+      "process_exit": 3,
+      "stderr": "",
+      "status": "InsufficientEvidence",
+      "rules": [
+        "BMCA.DIFFERENT_GM.priority1",
+        "BMCA.OBSERVED_DECISION",
+        "BMCA.SNAPSHOT.FRESH",
+        "BMCA.SNAPSHOT.WINDOW",
+        "CLAIM.DELAY_WINDOW",
+        "CLAIM.E2E_IDENTITY",
+        "CLAIM.EXCHANGE_WINDOW",
+        "CLAIM.SYNC_FOLLOW_UP",
+        "CLAIM.SYNC_WINDOW",
+        "COMMISSION.BINDING.ACCEPTED",
+        "COMMISSION.CASE",
+        "COMMISSION.TRANSITION.EVIDENCE",
+        "EXCHANGE.SYNC_FOLLOW_UP",
+        "EXCHANGE.WINDOW",
+        "MEASUREMENT.E2E",
+        "METROLOGY.LEDGER",
+        "WIRE.FIXED_BODY"
+      ]
+    },
+    {
+      "name": "unconfirmed-clock-continuity",
+      "command": "commission",
+      "input": "fixtures/commissioning/unconfirmed-clock-continuity.json",
+      "input_sha256": "6c67d48c800487487d9a9ad64e5ab2ad9b834cfc6bd728aea9b9e2516c642c80",
+      "report": "/private/var/folders/s5/kpmwrbfn04l362zwtk9cjby80000gn/T/moonbit2-charter-20261021-qi8asrff/project/research/commissioning/unconfirmed-clock-continuity.report.json",
+      "report_sha256": "95f56f63db9c73af91819237c7756316579fae189bdd00d753f8188f19c9942a",
+      "expected_status": "InsufficientEvidence",
+      "process_exit": 3,
+      "stderr": "",
+      "status": "InsufficientEvidence",
+      "rules": [
+        "BMCA.DIFFERENT_GM.priority1",
+        "BMCA.OBSERVED_DECISION",
+        "BMCA.SNAPSHOT.FRESH",
+        "BMCA.SNAPSHOT.WINDOW",
+        "CLAIM.DELAY_WINDOW",
+        "CLAIM.E2E_IDENTITY",
+        "CLAIM.EXCHANGE_WINDOW",
+        "CLAIM.SYNC_FOLLOW_UP",
+        "CLAIM.SYNC_WINDOW",
+        "COMMISSION.BINDING.ACCEPTED",
+        "COMMISSION.CASE",
+        "COMMISSION.TRANSITION.EVIDENCE",
+        "EXCHANGE.SYNC_FOLLOW_UP",
+        "EXCHANGE.WINDOW",
+        "MEASUREMENT.E2E",
+        "METROLOGY.LEDGER",
+        "WIRE.FIXED_BODY"
+      ]
+    },
+    {
+      "name": "missing-selection-stability",
+      "command": "commission",
+      "input": "fixtures/commissioning/missing-selection-stability.json",
+      "input_sha256": "47fbe54e1c0613fa26619bd740c7d15b8faae36189a868ce4bdfd7e3bb476e0c",
+      "report": "/private/var/folders/s5/kpmwrbfn04l362zwtk9cjby80000gn/T/moonbit2-charter-20261021-qi8asrff/project/research/commissioning/missing-selection-stability.report.json",
+      "report_sha256": "db250af0a5db67b20094de388aa6ff89e3dbc94d57093af81d918e532797e48d",
+      "expected_status": "InsufficientEvidence",
+      "process_exit": 3,
+      "stderr": "",
+      "status": "InsufficientEvidence",
+      "rules": [
+        "BMCA.DIFFERENT_GM.priority1",
+        "BMCA.OBSERVED_DECISION",
+        "BMCA.SNAPSHOT.FRESH",
+        "BMCA.SNAPSHOT.WINDOW",
+        "CLAIM.DELAY_WINDOW",
+        "CLAIM.E2E_IDENTITY",
+        "CLAIM.EXCHANGE_WINDOW",
+        "CLAIM.SYNC_FOLLOW_UP",
+        "CLAIM.SYNC_WINDOW",
+        "COMMISSION.BINDING.ACCEPTED",
+        "COMMISSION.CASE",
+        "COMMISSION.STABILITY.EVIDENCE",
+        "COMMISSION.TRANSITION.EVIDENCE",
+        "EXCHANGE.SYNC_FOLLOW_UP",
+        "EXCHANGE.WINDOW",
+        "MEASUREMENT.E2E",
+        "METROLOGY.LEDGER",
+        "WIRE.FIXED_BODY"
+      ]
+    },
+    {
+      "name": "unconfirmed-selection-stability",
+      "command": "commission",
+      "input": "fixtures/commissioning/unconfirmed-selection-stability.json",
+      "input_sha256": "09aef083383c836d4c0c29aa9e4d82561727a82f856ae8e96b837ee7c6602de1",
+      "report": "/private/var/folders/s5/kpmwrbfn04l362zwtk9cjby80000gn/T/moonbit2-charter-20261021-qi8asrff/project/research/commissioning/unconfirmed-selection-stability.report.json",
+      "report_sha256": "db250af0a5db67b20094de388aa6ff89e3dbc94d57093af81d918e532797e48d",
+      "expected_status": "InsufficientEvidence",
+      "process_exit": 3,
+      "stderr": "",
+      "status": "InsufficientEvidence",
+      "rules": [
+        "BMCA.DIFFERENT_GM.priority1",
+        "BMCA.OBSERVED_DECISION",
+        "BMCA.SNAPSHOT.FRESH",
+        "BMCA.SNAPSHOT.WINDOW",
+        "CLAIM.DELAY_WINDOW",
+        "CLAIM.E2E_IDENTITY",
+        "CLAIM.EXCHANGE_WINDOW",
+        "CLAIM.SYNC_FOLLOW_UP",
+        "CLAIM.SYNC_WINDOW",
+        "COMMISSION.BINDING.ACCEPTED",
+        "COMMISSION.CASE",
+        "COMMISSION.STABILITY.EVIDENCE",
+        "COMMISSION.TRANSITION.EVIDENCE",
+        "EXCHANGE.SYNC_FOLLOW_UP",
+        "EXCHANGE.WINDOW",
+        "MEASUREMENT.E2E",
+        "METROLOGY.LEDGER",
+        "WIRE.FIXED_BODY"
+      ]
+    },
+    {
+      "name": "selection-stability-ends-early",
+      "command": "commission",
+      "input": "fixtures/commissioning/selection-stability-ends-early.json",
+      "input_sha256": "1eca31b74bef5bd17097e36d1717a11e639f6eea5754f747e37ebb11ba57dd16",
+      "report": "/private/var/folders/s5/kpmwrbfn04l362zwtk9cjby80000gn/T/moonbit2-charter-20261021-qi8asrff/project/research/commissioning/selection-stability-ends-early.report.json",
+      "report_sha256": "7353f681142bab87787e119c65f6f5044760832b449cc2d494e5de41865c05c9",
+      "expected_status": "Violation",
+      "process_exit": 1,
+      "stderr": "",
+      "status": "Violation",
+      "rules": [
+        "BMCA.DIFFERENT_GM.priority1",
+        "BMCA.OBSERVED_DECISION",
+        "BMCA.SNAPSHOT.FRESH",
+        "BMCA.SNAPSHOT.WINDOW",
+        "CLAIM.DELAY_WINDOW",
+        "CLAIM.E2E_IDENTITY",
+        "CLAIM.EXCHANGE_WINDOW",
+        "CLAIM.SYNC_FOLLOW_UP",
+        "CLAIM.SYNC_WINDOW",
+        "COMMISSION.BINDING.ACCEPTED",
+        "COMMISSION.BINDING.VALIDITY",
+        "COMMISSION.CASE",
+        "COMMISSION.TRANSITION.EVIDENCE",
+        "EXCHANGE.SYNC_FOLLOW_UP",
+        "EXCHANGE.WINDOW",
+        "MEASUREMENT.E2E",
+        "METROLOGY.LEDGER",
+        "WIRE.FIXED_BODY"
+      ]
+    },
+    {
+      "name": "exchange-before-decision",
+      "command": "commission",
+      "input": "fixtures/commissioning/exchange-before-decision.json",
+      "input_sha256": "3c730102f288b87f89cb018e97b90ca4ec8a958c73e4de88cfdb130436c87af2",
+      "report": "/private/var/folders/s5/kpmwrbfn04l362zwtk9cjby80000gn/T/moonbit2-charter-20261021-qi8asrff/project/research/commissioning/exchange-before-decision.report.json",
+      "report_sha256": "d74e5ea33480ccaae78d292f0566f4e43d34d0bf3b401b6c3586466be8b75d76",
+      "expected_status": "Violation",
+      "process_exit": 1,
+      "stderr": "",
+      "status": "Violation",
+      "rules": [
+        "BMCA.DIFFERENT_GM.priority1",
+        "BMCA.OBSERVED_DECISION",
+        "BMCA.SNAPSHOT.FRESH",
+        "BMCA.SNAPSHOT.WINDOW",
+        "CLAIM.DELAY_WINDOW",
+        "CLAIM.E2E_IDENTITY",
+        "CLAIM.EXCHANGE_WINDOW",
+        "CLAIM.SYNC_FOLLOW_UP",
+        "CLAIM.SYNC_WINDOW",
+        "COMMISSION.BINDING.ACCEPTED",
+        "COMMISSION.BINDING.VALIDITY",
+        "COMMISSION.CASE",
+        "COMMISSION.TRANSITION.EVIDENCE",
+        "EXCHANGE.SYNC_FOLLOW_UP",
+        "EXCHANGE.WINDOW",
+        "MEASUREMENT.E2E",
+        "METROLOGY.LEDGER",
+        "WIRE.FIXED_BODY"
+      ]
+    },
+    {
+      "name": "decision-outside-window",
+      "command": "commission",
+      "input": "fixtures/commissioning/decision-outside-window.json",
+      "input_sha256": "fa4fbffe434accbe442ca62b38c884e42f65ed25045859a797f45a9eb836751a",
+      "report": "/private/var/folders/s5/kpmwrbfn04l362zwtk9cjby80000gn/T/moonbit2-charter-20261021-qi8asrff/project/research/commissioning/decision-outside-window.report.json",
+      "report_sha256": "f6dd0d07b5a15e6dd55e9f590c74d5862ebe4c0aa6e1a8c8a417da36a8b4b40f",
+      "expected_status": "InsufficientEvidence",
+      "process_exit": 3,
+      "stderr": "",
+      "status": "InsufficientEvidence",
+      "rules": [
+        "BMCA.DIFFERENT_GM.priority1",
+        "BMCA.OBSERVED_DECISION",
+        "BMCA.SNAPSHOT.FRESH",
+        "BMCA.SNAPSHOT.WINDOW",
+        "CLAIM.DELAY_WINDOW",
+        "CLAIM.E2E_IDENTITY",
+        "CLAIM.EXCHANGE_WINDOW",
+        "CLAIM.SYNC_FOLLOW_UP",
+        "CLAIM.SYNC_WINDOW",
+        "COMMISSION.BINDING.ACCEPTED",
+        "COMMISSION.CASE",
+        "COMMISSION.TRANSITION.EVIDENCE",
+        "EXCHANGE.SYNC_FOLLOW_UP",
+        "EXCHANGE.WINDOW",
+        "MEASUREMENT.E2E",
+        "METROLOGY.LEDGER",
+        "WIRE.FIXED_BODY"
+      ]
+    },
+    {
+      "name": "incomplete-candidates",
+      "command": "commission",
+      "input": "fixtures/commissioning/incomplete-candidates.json",
+      "input_sha256": "5af71e6cc5bc51a577adad33698806eb259401ea07f185bb10cda5c545647a89",
+      "report": "/private/var/folders/s5/kpmwrbfn04l362zwtk9cjby80000gn/T/moonbit2-charter-20261021-qi8asrff/project/research/commissioning/incomplete-candidates.report.json",
+      "report_sha256": "6f075b77ea775d005146a7103fc5f5545925ddd3057d5d030edc60faf5a7bd06",
+      "expected_status": "InsufficientEvidence",
+      "process_exit": 3,
+      "stderr": "",
+      "status": "InsufficientEvidence",
+      "rules": [
+        "BMCA.DIFFERENT_GM.priority1",
+        "BMCA.EVIDENCE",
+        "BMCA.OBSERVED_DECISION",
+        "BMCA.SNAPSHOT.FRESH",
+        "BMCA.SNAPSHOT.WINDOW",
+        "CLAIM.DELAY_WINDOW",
+        "CLAIM.E2E_IDENTITY",
+        "CLAIM.EXCHANGE_WINDOW",
+        "CLAIM.SYNC_FOLLOW_UP",
+        "CLAIM.SYNC_WINDOW",
+        "COMMISSION.BINDING.ACCEPTED",
+        "COMMISSION.CASE",
+        "COMMISSION.TRANSITION.EVIDENCE",
+        "EXCHANGE.SYNC_FOLLOW_UP",
+        "EXCHANGE.WINDOW",
+        "MEASUREMENT.E2E",
+        "METROLOGY.LEDGER",
+        "WIRE.FIXED_BODY"
+      ]
+    },
+    {
+      "name": "duplicate-step-id",
+      "command": "commission",
+      "input": "fixtures/commissioning/duplicate-step-id.json",
+      "input_sha256": "b4aec48e509d91f402473717b0a61314aec1b9de5489929523f5e2b91d054e60",
+      "report": "/private/var/folders/s5/kpmwrbfn04l362zwtk9cjby80000gn/T/moonbit2-charter-20261021-qi8asrff/project/research/commissioning/duplicate-step-id.report.json",
+      "report_sha256": "fc34b990bed86072f01656129156422280a607bb4fb4e4df41e012482b150fbf",
+      "expected_status": "Violation",
+      "process_exit": 1,
+      "stderr": "",
+      "status": "Violation",
+      "rules": [
+        "COMMISSION.INPUT.SCHEMA"
+      ]
+    },
+    {
+      "name": "unknown-input-field",
+      "command": "commission",
+      "input": "fixtures/commissioning/unknown-input-field.json",
+      "input_sha256": "0d1cdbc6d7705f56c3a474a66e8e1a8667d9428e9fb7e711e32ae0fd91bffeac",
+      "report": "/private/var/folders/s5/kpmwrbfn04l362zwtk9cjby80000gn/T/moonbit2-charter-20261021-qi8asrff/project/research/commissioning/unknown-input-field.report.json",
+      "report_sha256": "e3031a5546c7a012a949f8b982153a4fce5285d60675a3abf7c629a272859c6b",
+      "expected_status": "Violation",
+      "process_exit": 1,
+      "stderr": "",
+      "status": "Violation",
+      "rules": [
+        "COMMISSION.INPUT.SCHEMA"
+      ]
+    },
+    {
+      "name": "reversed-step-order",
+      "command": "commission",
+      "input": "fixtures/commissioning/reversed-step-order.json",
+      "input_sha256": "9819fc67c8093ecc0aed6efaf06ec89e0620fc9090c36cb7e98473fd8bceeb26",
+      "report": "/private/var/folders/s5/kpmwrbfn04l362zwtk9cjby80000gn/T/moonbit2-charter-20261021-qi8asrff/project/research/commissioning/reversed-step-order.report.json",
+      "report_sha256": "fa063897de4e5504974d2ed38899acb58a4455cc9e9c7503234a07f9066f0270",
+      "expected_status": "InsufficientEvidence",
+      "process_exit": 3,
+      "stderr": "",
+      "status": "InsufficientEvidence",
+      "rules": [
+        "BMCA.DIFFERENT_GM.priority1",
+        "BMCA.OBSERVED_DECISION",
+        "BMCA.SNAPSHOT.FRESH",
+        "BMCA.SNAPSHOT.WINDOW",
+        "CLAIM.DELAY_WINDOW",
+        "CLAIM.E2E_IDENTITY",
+        "CLAIM.EXCHANGE_WINDOW",
+        "CLAIM.SYNC_FOLLOW_UP",
+        "CLAIM.SYNC_WINDOW",
+        "COMMISSION.BINDING.ACCEPTED",
+        "COMMISSION.CASE",
+        "COMMISSION.TRANSITION.EVIDENCE",
+        "EXCHANGE.SYNC_FOLLOW_UP",
+        "EXCHANGE.WINDOW",
+        "MEASUREMENT.E2E",
+        "METROLOGY.LEDGER",
+        "WIRE.FIXED_BODY"
+      ]
+    },
+    {
+      "name": "mixed-event-clock",
+      "command": "commission",
+      "input": "fixtures/commissioning/mixed-event-clock.json",
+      "input_sha256": "75754c0ec47889e6cd2a971bba8ca482d3819ef2a2567aea1f643a8ccfd4ce08",
+      "report": "/private/var/folders/s5/kpmwrbfn04l362zwtk9cjby80000gn/T/moonbit2-charter-20261021-qi8asrff/project/research/commissioning/mixed-event-clock.report.json",
+      "report_sha256": "ee931acc17046a1c7bcbb13bb99960e837cb926c33058f7f5f540117ed976786",
+      "expected_status": "InsufficientEvidence",
+      "process_exit": 3,
+      "stderr": "",
+      "status": "InsufficientEvidence",
+      "rules": [
+        "BMCA.DIFFERENT_GM.priority1",
+        "BMCA.OBSERVED_DECISION",
+        "BMCA.SNAPSHOT.FRESH",
+        "BMCA.SNAPSHOT.WINDOW",
+        "CLAIM.DELAY_WINDOW",
+        "CLAIM.E2E_IDENTITY",
+        "CLAIM.EXCHANGE_WINDOW",
+        "CLAIM.SYNC_FOLLOW_UP",
+        "CLAIM.SYNC_WINDOW",
+        "COMMISSION.BINDING.ACCEPTED",
+        "COMMISSION.CASE",
+        "COMMISSION.TRANSITION.EVIDENCE",
+        "EXCHANGE.SYNC_FOLLOW_UP",
+        "EXCHANGE.WINDOW",
+        "MEASUREMENT.E2E",
+        "MEASUREMENT.EVIDENCE",
+        "METROLOGY.LEDGER",
+        "WIRE.FIXED_BODY"
+      ]
+    },
+    {
+      "name": "missing-bmca",
+      "command": "commission",
+      "input": "fixtures/commissioning/missing-bmca.json",
+      "input_sha256": "fff3168f3879488a1e2907f06b90486b35ff3cecc873a13b9c2324515480bd89",
+      "report": "/private/var/folders/s5/kpmwrbfn04l362zwtk9cjby80000gn/T/moonbit2-charter-20261021-qi8asrff/project/research/commissioning/missing-bmca.report.json",
+      "report_sha256": "e4cb0931923a88ce3c349d9e5cbb7108a64848ee67ab37b2dbab7c2e97c1bc4d",
+      "expected_status": "InsufficientEvidence",
+      "process_exit": 3,
+      "stderr": "",
+      "status": "InsufficientEvidence",
+      "rules": [
+        "BMCA.DIFFERENT_GM.priority1",
+        "BMCA.OBSERVED_DECISION",
+        "BMCA.SNAPSHOT.FRESH",
+        "BMCA.SNAPSHOT.WINDOW",
+        "CLAIM.DELAY_WINDOW",
+        "CLAIM.E2E_IDENTITY",
+        "CLAIM.EXCHANGE_WINDOW",
+        "CLAIM.SYNC_FOLLOW_UP",
+        "CLAIM.SYNC_WINDOW",
+        "COMMISSION.BINDING.ACCEPTED",
+        "COMMISSION.CASE",
+        "COMMISSION.SELECTION.EVIDENCE",
+        "COMMISSION.TRANSITION.EVIDENCE",
+        "EXCHANGE.SYNC_FOLLOW_UP",
+        "EXCHANGE.WINDOW",
+        "MEASUREMENT.E2E",
+        "METROLOGY.LEDGER",
+        "WIRE.FIXED_BODY"
+      ]
+    },
+    {
+      "name": "empty-steps",
+      "command": "commission",
+      "input": "fixtures/commissioning/empty-steps.json",
+      "input_sha256": "b92e93f59893a2cca90a80b8c1b952712ad5382ae8f4f43e8d1611cc4144be98",
+      "report": "/private/var/folders/s5/kpmwrbfn04l362zwtk9cjby80000gn/T/moonbit2-charter-20261021-qi8asrff/project/research/commissioning/empty-steps.report.json",
+      "report_sha256": "931cb4327a89afa84377163030b4e8c16b985dc2335d39347552ba760a5b0f77",
+      "expected_status": "Violation",
+      "process_exit": 1,
+      "stderr": "",
+      "status": "Violation",
+      "rules": [
+        "COMMISSION.INPUT.SCHEMA"
+      ]
+    },
+    {
+      "name": "too-many-steps",
+      "command": "commission",
+      "input": "fixtures/commissioning/too-many-steps.json",
+      "input_sha256": "412f0caf2717e72599911c61202c6ce2500cb2027df041b9b148c721ce47cf45",
+      "report": "/private/var/folders/s5/kpmwrbfn04l362zwtk9cjby80000gn/T/moonbit2-charter-20261021-qi8asrff/project/research/commissioning/too-many-steps.report.json",
+      "report_sha256": "d12bbee157681fcb89760165d080a6b5714c09a5dcc8019dcd40f24914edb28b",
+      "expected_status": "Unsupported",
+      "process_exit": 4,
+      "stderr": "",
+      "status": "Unsupported",
+      "rules": [
+        "COMMISSION.INPUT.RESOURCE"
+      ]
+    },
+    {
+      "name": "stability-outside-window",
+      "command": "commission",
+      "input": "fixtures/commissioning/stability-outside-window.json",
+      "input_sha256": "4898c24fba115af267cd5711d4ede698971d335c81677632161f725f9b138a70",
+      "report": "/private/var/folders/s5/kpmwrbfn04l362zwtk9cjby80000gn/T/moonbit2-charter-20261021-qi8asrff/project/research/commissioning/stability-outside-window.report.json",
+      "report_sha256": "8a671f1f781e2073d01ed471d3572e8e1854f02c308a0bdb817ab556b8e121ee",
+      "expected_status": "Violation",
+      "process_exit": 1,
+      "stderr": "",
+      "status": "Violation",
+      "rules": [
+        "BMCA.DIFFERENT_GM.priority1",
+        "BMCA.OBSERVED_DECISION",
+        "BMCA.SNAPSHOT.FRESH",
+        "BMCA.SNAPSHOT.WINDOW",
+        "CLAIM.DELAY_WINDOW",
+        "CLAIM.E2E_IDENTITY",
+        "CLAIM.EXCHANGE_WINDOW",
+        "CLAIM.SYNC_FOLLOW_UP",
+        "CLAIM.SYNC_WINDOW",
+        "COMMISSION.BINDING.ACCEPTED",
+        "COMMISSION.CASE",
+        "COMMISSION.STABILITY.WINDOW",
+        "COMMISSION.TRANSITION.EVIDENCE",
+        "EXCHANGE.SYNC_FOLLOW_UP",
+        "EXCHANGE.WINDOW",
+        "MEASUREMENT.E2E",
+        "METROLOGY.LEDGER",
+        "WIRE.FIXED_BODY"
+      ]
+    },
+    {
+      "name": "different-observer-port",
+      "command": "commission",
+      "input": "fixtures/commissioning/different-observer-port.json",
+      "input_sha256": "aee7bf5b39a8756c3f30cdbc17a599d06aab4c72170081e41404200684554a27",
+      "report": "/private/var/folders/s5/kpmwrbfn04l362zwtk9cjby80000gn/T/moonbit2-charter-20261021-qi8asrff/project/research/commissioning/different-observer-port.report.json",
+      "report_sha256": "eebe0ccff7dee1ffef28f8583cddbab55fd82fcb99b204c23c75efce2d6cc3d5",
+      "expected_status": "Violation",
+      "process_exit": 1,
+      "stderr": "",
+      "status": "Violation",
+      "rules": [
+        "BMCA.DIFFERENT_GM.priority1",
+        "BMCA.OBSERVED_DECISION",
+        "BMCA.SNAPSHOT.FRESH",
+        "BMCA.SNAPSHOT.WINDOW",
+        "CLAIM.DELAY_WINDOW",
+        "CLAIM.E2E_IDENTITY",
+        "CLAIM.EXCHANGE_WINDOW",
+        "CLAIM.SYNC_FOLLOW_UP",
+        "CLAIM.SYNC_WINDOW",
+        "COMMISSION.BINDING.ACCEPTED",
+        "COMMISSION.BINDING.IDENTITY",
+        "COMMISSION.CASE",
+        "COMMISSION.TRANSITION.EVIDENCE",
+        "EXCHANGE.SYNC_FOLLOW_UP",
+        "EXCHANGE.WINDOW",
+        "MEASUREMENT.E2E",
+        "METROLOGY.LEDGER",
+        "WIRE.FIXED_BODY"
+      ]
+    },
+    {
+      "name": "isolated-exchange-context",
+      "command": "commission",
+      "input": "fixtures/commissioning/isolated-exchange-context.json",
+      "input_sha256": "eb56861cafc1a30a3f14c968b7124c6c6a941007c9958d299528ddfd80f42ce8",
+      "report": "/private/var/folders/s5/kpmwrbfn04l362zwtk9cjby80000gn/T/moonbit2-charter-20261021-qi8asrff/project/research/commissioning/isolated-exchange-context.report.json",
+      "report_sha256": "285da28825faa354cbaae02b40588cc41d8dff9710dc9b1a258710db7be85daf",
+      "expected_status": "Violation",
+      "process_exit": 1,
+      "stderr": "",
+      "status": "Violation",
+      "rules": [
+        "BMCA.DIFFERENT_GM.priority1",
+        "BMCA.OBSERVED_DECISION",
+        "BMCA.SNAPSHOT.FRESH",
+        "BMCA.SNAPSHOT.WINDOW",
+        "CLAIM.DELAY_WINDOW",
+        "CLAIM.E2E_IDENTITY",
+        "CLAIM.EXCHANGE_WINDOW",
+        "CLAIM.SYNC_FOLLOW_UP",
+        "CLAIM.SYNC_WINDOW",
+        "COMMISSION.BINDING.ACCEPTED",
+        "COMMISSION.BINDING.CONTEXT",
+        "COMMISSION.CASE",
+        "COMMISSION.TRANSITION.EVIDENCE",
+        "EXCHANGE.SYNC_FOLLOW_UP",
+        "EXCHANGE.WINDOW",
+        "MEASUREMENT.E2E",
+        "METROLOGY.LEDGER",
+        "WIRE.FIXED_BODY"
+      ]
+    },
+    {
+      "name": "no-accepted-quartet",
+      "command": "commission",
+      "input": "fixtures/commissioning/no-accepted-quartet.json",
+      "input_sha256": "29716edaf85f96d39547dcad221aaa9792e62d30277f8ccfd42079f3735dd21a",
+      "report": "/private/var/folders/s5/kpmwrbfn04l362zwtk9cjby80000gn/T/moonbit2-charter-20261021-qi8asrff/project/research/commissioning/no-accepted-quartet.report.json",
+      "report_sha256": "b296228d897ba549576c0dfedd9e16d2f3e315097ff064868803a10e07dea4dc",
+      "expected_status": "InsufficientEvidence",
+      "process_exit": 3,
+      "stderr": "",
+      "status": "InsufficientEvidence",
+      "rules": [
+        "BMCA.DIFFERENT_GM.priority1",
+        "BMCA.OBSERVED_DECISION",
+        "BMCA.SNAPSHOT.FRESH",
+        "BMCA.SNAPSHOT.WINDOW",
+        "CLAIM.DELAY_WINDOW",
+        "CLAIM.E2E_IDENTITY",
+        "CLAIM.EXCHANGE_WINDOW",
+        "CLAIM.SYNC_FOLLOW_UP",
+        "CLAIM.SYNC_WINDOW",
+        "COMMISSION.BINDING.ACCEPTED",
+        "COMMISSION.BINDING.EVIDENCE",
+        "COMMISSION.CASE",
+        "COMMISSION.TRANSITION.EVIDENCE",
+        "EXCHANGE.SYNC_FOLLOW_UP",
+        "EXCHANGE.WINDOW",
+        "MEASUREMENT.E2E",
+        "METROLOGY.LEDGER",
+        "WIRE.FIXED_BODY"
+      ]
+    },
+    {
+      "name": "same-sender-new-grandmaster",
+      "command": "commission",
+      "input": "fixtures/commissioning/same-sender-new-grandmaster.json",
+      "input_sha256": "913205469146410d0e4c3aea2a3bb924180ea6c17fe98ab5cd24ba1744b1d0ba",
+      "report": "/private/var/folders/s5/kpmwrbfn04l362zwtk9cjby80000gn/T/moonbit2-charter-20261021-qi8asrff/project/research/commissioning/same-sender-new-grandmaster.report.json",
+      "report_sha256": "a65adde8cb14fd8151ac90f1546c8dafffd12d3c119c9d471ac520f7b37d980b",
+      "expected_status": "Pass",
+      "process_exit": 0,
+      "stderr": "",
+      "status": "Pass",
+      "rules": [
+        "BMCA.DIFFERENT_GM.priority1",
+        "BMCA.OBSERVED_DECISION",
+        "BMCA.SNAPSHOT.FRESH",
+        "BMCA.SNAPSHOT.WINDOW",
+        "CLAIM.DELAY_WINDOW",
+        "CLAIM.E2E_IDENTITY",
+        "CLAIM.EXCHANGE_WINDOW",
+        "CLAIM.SYNC_FOLLOW_UP",
+        "CLAIM.SYNC_WINDOW",
+        "COMMISSION.BINDING.ACCEPTED",
+        "COMMISSION.CASE",
+        "COMMISSION.TRANSITION.OBSERVED",
+        "EXCHANGE.SYNC_FOLLOW_UP",
+        "EXCHANGE.WINDOW",
+        "MEASUREMENT.E2E",
+        "METROLOGY.LEDGER",
+        "WIRE.FIXED_BODY"
+      ],
+      "independent_selection": [
+        {
+          "candidate": "A",
+          "announce_frame": 5,
+          "upstream_sender": {
+            "clock": "0011223344556677",
+            "port": 1
+          },
+          "receiver": {
+            "clock": "8899aabbccddeeff",
+            "port": 1
+          },
+          "grandmaster": "0011223344556677",
+          "domain": 0
+        },
+        {
+          "candidate": "B",
+          "announce_frame": 6,
+          "upstream_sender": {
+            "clock": "0011223344556677",
+            "port": 1
+          },
+          "receiver": {
+            "clock": "8899aabbccddeeff",
+            "port": 1
+          },
+          "grandmaster": "0011223344556678",
+          "domain": 0
+        }
+      ]
+    },
+    {
+      "name": "contradictory-overlapping-selection",
+      "command": "commission",
+      "input": "fixtures/commissioning/contradictory-overlapping-selection.json",
+      "input_sha256": "684ccb16b6b0c75280b708759ce3e7f05123b56e96657216c541781f018794fb",
+      "report": "/private/var/folders/s5/kpmwrbfn04l362zwtk9cjby80000gn/T/moonbit2-charter-20261021-qi8asrff/project/research/commissioning/contradictory-overlapping-selection.report.json",
+      "report_sha256": "51bc5578adf049bf9c597ee7df6a60708446e56061982b4b34d61b346dd3de56",
+      "expected_status": "Violation",
+      "process_exit": 1,
+      "stderr": "",
+      "status": "Violation",
+      "rules": [
+        "BMCA.DIFFERENT_GM.priority1",
+        "BMCA.OBSERVED_DECISION",
+        "BMCA.SNAPSHOT.FRESH",
+        "BMCA.SNAPSHOT.WINDOW",
+        "CLAIM.DELAY_WINDOW",
+        "CLAIM.E2E_IDENTITY",
+        "CLAIM.EXCHANGE_WINDOW",
+        "CLAIM.SYNC_FOLLOW_UP",
+        "CLAIM.SYNC_WINDOW",
+        "COMMISSION.BINDING.ACCEPTED",
+        "COMMISSION.CASE",
+        "COMMISSION.TRANSITION.CONTRADICTORY_STABILITY",
+        "EXCHANGE.SYNC_FOLLOW_UP",
+        "EXCHANGE.WINDOW",
+        "MEASUREMENT.E2E",
+        "METROLOGY.LEDGER",
+        "WIRE.FIXED_BODY"
+      ]
+    },
+    {
+      "name": "rejected-middle-is-not-skipped",
+      "command": "commission",
+      "input": "fixtures/commissioning/rejected-middle-is-not-skipped.json",
+      "input_sha256": "bf162b36b007968a182a4701b83281f9fb117a6ddcb02106626e07c37046de17",
+      "report": "/private/var/folders/s5/kpmwrbfn04l362zwtk9cjby80000gn/T/moonbit2-charter-20261021-qi8asrff/project/research/commissioning/rejected-middle-is-not-skipped.report.json",
+      "report_sha256": "23e946a1743b035d05fcc895a84ea3ef8d66a5e1739734dd2c3838295f0dc2da",
+      "expected_status": "Violation",
+      "process_exit": 1,
+      "stderr": "",
+      "status": "Violation",
+      "rules": [
+        "BMCA.DIFFERENT_GM.priority1",
+        "BMCA.OBSERVED_DECISION",
+        "BMCA.SNAPSHOT.FRESH",
+        "BMCA.SNAPSHOT.WINDOW",
+        "CLAIM.DELAY_WINDOW",
+        "CLAIM.E2E_IDENTITY",
+        "CLAIM.EXCHANGE_WINDOW",
+        "CLAIM.SYNC_FOLLOW_UP",
+        "CLAIM.SYNC_WINDOW",
+        "COMMISSION.BINDING.ACCEPTED",
+        "COMMISSION.BINDING.IDENTITY",
+        "COMMISSION.CASE",
+        "COMMISSION.TRANSITION.EVIDENCE",
+        "EXCHANGE.SYNC_FOLLOW_UP",
+        "EXCHANGE.WINDOW",
+        "MEASUREMENT.E2E",
+        "METROLOGY.LEDGER",
+        "WIRE.FIXED_BODY"
+      ]
+    },
+    {
+      "name": "nonadjacent-contradictory-selection",
+      "command": "commission",
+      "input": "fixtures/commissioning/nonadjacent-contradictory-selection.json",
+      "input_sha256": "3901b085f365e059ec8b48d071139a9bfe32dd5c6f804c1e301d2045a8f08990",
+      "report": "/private/var/folders/s5/kpmwrbfn04l362zwtk9cjby80000gn/T/moonbit2-charter-20261021-qi8asrff/project/research/commissioning/nonadjacent-contradictory-selection.report.json",
+      "report_sha256": "cb5cbda6dc28434f42e91f28616822465219d9333fb93322701ea6944e6ffd68",
+      "expected_status": "Violation",
+      "process_exit": 1,
+      "stderr": "",
+      "status": "Violation",
+      "rules": [
+        "BMCA.DIFFERENT_GM.priority1",
+        "BMCA.OBSERVED_DECISION",
+        "BMCA.SNAPSHOT.FRESH",
+        "BMCA.SNAPSHOT.WINDOW",
+        "CLAIM.DELAY_WINDOW",
+        "CLAIM.E2E_IDENTITY",
+        "CLAIM.EXCHANGE_WINDOW",
+        "CLAIM.SYNC_FOLLOW_UP",
+        "CLAIM.SYNC_WINDOW",
+        "COMMISSION.BINDING.ACCEPTED",
+        "COMMISSION.CASE",
+        "COMMISSION.TRANSITION.CONTRADICTORY_STABILITY",
+        "COMMISSION.TRANSITION.OBSERVED",
+        "EXCHANGE.SYNC_FOLLOW_UP",
+        "EXCHANGE.WINDOW",
+        "MEASUREMENT.E2E",
+        "METROLOGY.LEDGER",
+        "WIRE.FIXED_BODY"
+      ],
+      "independent_selection_conflicts": [
+        [
+          "long-A",
+          "new-B"
+        ]
+      ]
+    },
+    {
+      "name": "nonadjacent-selection-safe-control",
+      "command": "commission",
+      "input": "fixtures/commissioning/nonadjacent-selection-safe-control.json",
+      "input_sha256": "8867ba73834ae5b343091e79bfb65134ab4453622be46e6bf4ffe0799c6f06df",
+      "report": "/private/var/folders/s5/kpmwrbfn04l362zwtk9cjby80000gn/T/moonbit2-charter-20261021-qi8asrff/project/research/commissioning/nonadjacent-selection-safe-control.report.json",
+      "report_sha256": "7d7cbda8328c3249729dfddbc2be6374b1d1644e81a53241b0a70e6bcd4e148e",
+      "expected_status": "Pass",
+      "process_exit": 0,
+      "stderr": "",
+      "status": "Pass",
+      "rules": [
+        "BMCA.DIFFERENT_GM.priority1",
+        "BMCA.OBSERVED_DECISION",
+        "BMCA.SNAPSHOT.FRESH",
+        "BMCA.SNAPSHOT.WINDOW",
+        "CLAIM.DELAY_WINDOW",
+        "CLAIM.E2E_IDENTITY",
+        "CLAIM.EXCHANGE_WINDOW",
+        "CLAIM.SYNC_FOLLOW_UP",
+        "CLAIM.SYNC_WINDOW",
+        "COMMISSION.BINDING.ACCEPTED",
+        "COMMISSION.CASE",
+        "COMMISSION.TRANSITION.OBSERVED",
+        "EXCHANGE.SYNC_FOLLOW_UP",
+        "EXCHANGE.WINDOW",
+        "MEASUREMENT.E2E",
+        "METROLOGY.LEDGER",
+        "WIRE.FIXED_BODY"
+      ],
+      "independent_selection": [
+        {
+          "candidate": "A",
+          "announce_frame": 5,
+          "upstream_sender": {
+            "clock": "0011223344556677",
+            "port": 1
+          },
+          "receiver": {
+            "clock": "8899aabbccddeeff",
+            "port": 1
+          },
+          "grandmaster": "0011223344556677",
+          "domain": 0
+        },
+        {
+          "candidate": "A",
+          "announce_frame": 5,
+          "upstream_sender": {
+            "clock": "0011223344556677",
+            "port": 1
+          },
+          "receiver": {
+            "clock": "8899aabbccddeeff",
+            "port": 1
+          },
+          "grandmaster": "0011223344556677",
+          "domain": 0
+        },
+        {
+          "candidate": "B",
+          "announce_frame": 6,
+          "upstream_sender": {
+            "clock": "0011223344556678",
+            "port": 1
+          },
+          "receiver": {
+            "clock": "8899aabbccddeeff",
+            "port": 1
+          },
+          "grandmaster": "0011223344556678",
+          "domain": 0
+        }
+      ],
+      "independent_selection_conflicts": []
+    },
+    {
+      "name": "commissioning-within-offset-budget",
+      "command": "commission",
+      "input": "fixtures/commissioning/commissioning-within-offset-budget.json",
+      "input_sha256": "1b5c3e4572a89311f2d9d1ef67a634ef1a802619b8b9effee032832ca2fb93e0",
+      "report": "/private/var/folders/s5/kpmwrbfn04l362zwtk9cjby80000gn/T/moonbit2-charter-20261021-qi8asrff/project/research/commissioning/commissioning-within-offset-budget.report.json",
+      "report_sha256": "e97d1126621e79bccc9d4c3bac075c99be9a98a4c7b0f3259953aab763812b2a",
+      "expected_status": "Pass",
+      "process_exit": 0,
+      "stderr": "",
+      "status": "Pass",
+      "rules": [
+        "BMCA.DIFFERENT_GM.priority1",
+        "BMCA.OBSERVED_DECISION",
+        "BMCA.SNAPSHOT.FRESH",
+        "BMCA.SNAPSHOT.WINDOW",
+        "CLAIM.DELAY_WINDOW",
+        "CLAIM.E2E_IDENTITY",
+        "CLAIM.EXCHANGE_WINDOW",
+        "CLAIM.SYNC_FOLLOW_UP",
+        "CLAIM.SYNC_WINDOW",
+        "COMMISSION.BINDING.ACCEPTED",
+        "COMMISSION.CASE",
+        "COMMISSION.TRANSITION.OBSERVED",
+        "EXCHANGE.SYNC_FOLLOW_UP",
+        "EXCHANGE.WINDOW",
+        "MEASUREMENT.E2E",
+        "METROLOGY.ERROR_BUDGET",
+        "WIRE.FIXED_BODY"
+      ],
+      "independent_selection": [
+        {
+          "candidate": "A",
+          "announce_frame": 5,
+          "upstream_sender": {
+            "clock": "0011223344556677",
+            "port": 1
+          },
+          "receiver": {
+            "clock": "8899aabbccddeeff",
+            "port": 1
+          },
+          "grandmaster": "0011223344556677",
+          "domain": 0
+        },
+        {
+          "candidate": "B",
+          "announce_frame": 6,
+          "upstream_sender": {
+            "clock": "0011223344556678",
+            "port": 1
+          },
+          "receiver": {
+            "clock": "8899aabbccddeeff",
+            "port": 1
+          },
+          "grandmaster": "0011223344556678",
+          "domain": 0
+        }
+      ]
+    },
+    {
+      "name": "commissioning-outside-offset-budget",
+      "command": "commission",
+      "input": "fixtures/commissioning/commissioning-outside-offset-budget.json",
+      "input_sha256": "abf48ed82abad9a8b1dea2c4fe9e7d92493b569be7b671bbfcad6cc896005abf",
+      "report": "/private/var/folders/s5/kpmwrbfn04l362zwtk9cjby80000gn/T/moonbit2-charter-20261021-qi8asrff/project/research/commissioning/commissioning-outside-offset-budget.report.json",
+      "report_sha256": "5c2a2271aa1907b51b3aab0f734e367c1735d7a4cdef46082d369309db819ed0",
+      "expected_status": "Pass",
+      "process_exit": 0,
+      "stderr": "",
+      "status": "Pass",
+      "rules": [
+        "BMCA.DIFFERENT_GM.priority1",
+        "BMCA.OBSERVED_DECISION",
+        "BMCA.SNAPSHOT.FRESH",
+        "BMCA.SNAPSHOT.WINDOW",
+        "CLAIM.DELAY_WINDOW",
+        "CLAIM.E2E_IDENTITY",
+        "CLAIM.EXCHANGE_WINDOW",
+        "CLAIM.SYNC_FOLLOW_UP",
+        "CLAIM.SYNC_WINDOW",
+        "COMMISSION.BINDING.ACCEPTED",
+        "COMMISSION.CASE",
+        "COMMISSION.TRANSITION.OBSERVED",
+        "EXCHANGE.SYNC_FOLLOW_UP",
+        "EXCHANGE.WINDOW",
+        "MEASUREMENT.E2E",
+        "METROLOGY.ERROR_BUDGET",
+        "WIRE.FIXED_BODY"
+      ],
+      "independent_selection": [
+        {
+          "candidate": "A",
+          "announce_frame": 5,
+          "upstream_sender": {
+            "clock": "0011223344556677",
+            "port": 1
+          },
+          "receiver": {
+            "clock": "8899aabbccddeeff",
+            "port": 1
+          },
+          "grandmaster": "0011223344556677",
+          "domain": 0
+        },
+        {
+          "candidate": "B",
+          "announce_frame": 6,
+          "upstream_sender": {
+            "clock": "0011223344556678",
+            "port": 1
+          },
+          "receiver": {
+            "clock": "8899aabbccddeeff",
+            "port": 1
+          },
+          "grandmaster": "0011223344556678",
+          "domain": 0
+        }
+      ]
+    },
+    {
+      "name": "commissioning-indeterminate-offset-budget",
+      "command": "commission",
+      "input": "fixtures/commissioning/commissioning-indeterminate-offset-budget.json",
+      "input_sha256": "71c6647bf5ccced74a26e964227e97c5df5427d59f9876210ca00bf3752a9d13",
+      "report": "/private/var/folders/s5/kpmwrbfn04l362zwtk9cjby80000gn/T/moonbit2-charter-20261021-qi8asrff/project/research/commissioning/commissioning-indeterminate-offset-budget.report.json",
+      "report_sha256": "369faa41f8537b3920a8b3b610b775361003906910205aa1a517c092c8e03b47",
+      "expected_status": "Pass",
+      "process_exit": 0,
+      "stderr": "",
+      "status": "Pass",
+      "rules": [
+        "BMCA.DIFFERENT_GM.priority1",
+        "BMCA.OBSERVED_DECISION",
+        "BMCA.SNAPSHOT.FRESH",
+        "BMCA.SNAPSHOT.WINDOW",
+        "CLAIM.DELAY_WINDOW",
+        "CLAIM.E2E_IDENTITY",
+        "CLAIM.EXCHANGE_WINDOW",
+        "CLAIM.SYNC_FOLLOW_UP",
+        "CLAIM.SYNC_WINDOW",
+        "COMMISSION.BINDING.ACCEPTED",
+        "COMMISSION.CASE",
+        "COMMISSION.TRANSITION.OBSERVED",
+        "EXCHANGE.SYNC_FOLLOW_UP",
+        "EXCHANGE.WINDOW",
+        "MEASUREMENT.E2E",
+        "METROLOGY.ERROR_BUDGET",
+        "WIRE.FIXED_BODY"
+      ],
+      "independent_selection": [
+        {
+          "candidate": "A",
+          "announce_frame": 5,
+          "upstream_sender": {
+            "clock": "0011223344556677",
+            "port": 1
+          },
+          "receiver": {
+            "clock": "8899aabbccddeeff",
+            "port": 1
+          },
+          "grandmaster": "0011223344556677",
+          "domain": 0
+        },
+        {
+          "candidate": "B",
+          "announce_frame": 6,
+          "upstream_sender": {
+            "clock": "0011223344556678",
+            "port": 1
+          },
+          "receiver": {
+            "clock": "8899aabbccddeeff",
+            "port": 1
+          },
+          "grandmaster": "0011223344556678",
+          "domain": 0
+        }
+      ]
+    },
+    {
+      "name": "metrology-ledger-only",
+      "command": "check",
+      "input": "fixtures/commissioning/metrology-ledger-only.json",
+      "input_sha256": "614841d32edd9ad977a7edb7913b77389930bfe77b81c8c57da194e244dbee4b",
+      "report": "/private/var/folders/s5/kpmwrbfn04l362zwtk9cjby80000gn/T/moonbit2-charter-20261021-qi8asrff/project/research/commissioning/metrology-ledger-only.report.json",
+      "report_sha256": "c1551ee23118a0c86bb280ece99be1f0d0fe2f8a74792e95282dce6aca08ecd2",
+      "expected_status": "Pass",
+      "process_exit": 0,
+      "stderr": "",
+      "status": "Pass",
+      "rules": [
+        "CLAIM.DELAY_WINDOW",
+        "CLAIM.E2E_IDENTITY",
+        "CLAIM.EXCHANGE_WINDOW",
+        "CLAIM.SYNC_FOLLOW_UP",
+        "CLAIM.SYNC_WINDOW",
+        "EXCHANGE.SYNC_FOLLOW_UP",
+        "EXCHANGE.WINDOW",
+        "MEASUREMENT.E2E",
+        "METROLOGY.LEDGER",
+        "WIRE.FIXED_BODY"
+      ],
+      "independent_reference": {
+        "frames": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "ledger": {
+          "uncorrected_offset_numerator": "3276800",
+          "uncorrected_delay_numerator": "36044800",
+          "corrected_offset_numerator": "3342336",
+          "corrected_delay_numerator": "36012032",
+          "forward_raw_scaled": "19660800",
+          "reverse_raw_scaled": "16384000",
+          "denominator": 131072
+        },
+        "contributions": [
+          {
+            "frame": 1,
+            "field": "Sync.correctionField",
+            "correction_scaled": "-32768",
+            "offset_numerator": "32768",
+            "delay_numerator": "32768",
+            "included": true,
+            "denominator": 131072
+          },
+          {
+            "frame": 2,
+            "field": "Follow_Up.correctionField",
+            "correction_scaled": "16384",
+            "offset_numerator": "-16384",
+            "delay_numerator": "-16384",
+            "included": true,
+            "denominator": 131072
+          },
+          {
+            "frame": 4,
+            "field": "Delay_Resp.correctionField",
+            "correction_scaled": "49152",
+            "offset_numerator": "49152",
+            "delay_numerator": "-49152",
+            "included": true,
+            "denominator": 131072
+          },
+          {
+            "frame": 3,
+            "field": "Delay_Req.correctionField",
+            "correction_scaled": "999999",
+            "offset_numerator": "0",
+            "delay_numerator": "0",
+            "included": false,
+            "denominator": 131072
+          }
+        ],
+        "offset_ns": "51/2",
+        "mean_delay_ns": "1099/4"
+      }
+    },
+    {
+      "name": "metrology-within-limit",
+      "command": "check",
+      "input": "fixtures/commissioning/metrology-within-limit.json",
+      "input_sha256": "e031f4023e82ac0572d337e939e44dfcf99f0c69ad3847fe5d25fd1d25b4386e",
+      "report": "/private/var/folders/s5/kpmwrbfn04l362zwtk9cjby80000gn/T/moonbit2-charter-20261021-qi8asrff/project/research/commissioning/metrology-within-limit.report.json",
+      "report_sha256": "00c430e6876db871a812c3715defa669ec80af2b213e3d6177b48ea7cd502641",
+      "expected_status": "Pass",
+      "process_exit": 0,
+      "stderr": "",
+      "status": "Pass",
+      "rules": [
+        "CLAIM.DELAY_WINDOW",
+        "CLAIM.E2E_IDENTITY",
+        "CLAIM.EXCHANGE_WINDOW",
+        "CLAIM.SYNC_FOLLOW_UP",
+        "CLAIM.SYNC_WINDOW",
+        "EXCHANGE.SYNC_FOLLOW_UP",
+        "EXCHANGE.WINDOW",
+        "MEASUREMENT.E2E",
+        "METROLOGY.ERROR_BUDGET",
+        "WIRE.FIXED_BODY"
+      ],
+      "independent_reference": {
+        "frames": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "ledger": {
+          "uncorrected_offset_numerator": "3276800",
+          "uncorrected_delay_numerator": "36044800",
+          "corrected_offset_numerator": "3342336",
+          "corrected_delay_numerator": "36012032",
+          "forward_raw_scaled": "19660800",
+          "reverse_raw_scaled": "16384000",
+          "denominator": 131072
+        },
+        "contributions": [
+          {
+            "frame": 1,
+            "field": "Sync.correctionField",
+            "correction_scaled": "-32768",
+            "offset_numerator": "32768",
+            "delay_numerator": "32768",
+            "included": true,
+            "denominator": 131072
+          },
+          {
+            "frame": 2,
+            "field": "Follow_Up.correctionField",
+            "correction_scaled": "16384",
+            "offset_numerator": "-16384",
+            "delay_numerator": "-16384",
+            "included": true,
+            "denominator": 131072
+          },
+          {
+            "frame": 4,
+            "field": "Delay_Resp.correctionField",
+            "correction_scaled": "49152",
+            "offset_numerator": "49152",
+            "delay_numerator": "-49152",
+            "included": true,
+            "denominator": 131072
+          },
+          {
+            "frame": 3,
+            "field": "Delay_Req.correctionField",
+            "correction_scaled": "999999",
+            "offset_numerator": "0",
+            "delay_numerator": "0",
+            "included": false,
+            "denominator": 131072
+          }
+        ],
+        "offset_ns": "51/2",
+        "mean_delay_ns": "1099/4",
+        "assessment": {
+          "verdict": "within_limit",
+          "lower_numerator": "3342336",
+          "upper_numerator": "3342336",
+          "radius_numerator": "0",
+          "limit_numerator": "6553600",
+          "denominator": 131072
+        }
+      }
+    },
+    {
+      "name": "metrology-outside-limit",
+      "command": "check",
+      "input": "fixtures/commissioning/metrology-outside-limit.json",
+      "input_sha256": "61c1200e498f54de9468f5887be004efe392e68a1b45f1c3b55c90078042f74f",
+      "report": "/private/var/folders/s5/kpmwrbfn04l362zwtk9cjby80000gn/T/moonbit2-charter-20261021-qi8asrff/project/research/commissioning/metrology-outside-limit.report.json",
+      "report_sha256": "813c59ef4f361b8e4308444168b857396a60017a0b8d0f04d66704009f361b67",
+      "expected_status": "Pass",
+      "process_exit": 0,
+      "stderr": "",
+      "status": "Pass",
+      "rules": [
+        "CLAIM.DELAY_WINDOW",
+        "CLAIM.E2E_IDENTITY",
+        "CLAIM.EXCHANGE_WINDOW",
+        "CLAIM.SYNC_FOLLOW_UP",
+        "CLAIM.SYNC_WINDOW",
+        "EXCHANGE.SYNC_FOLLOW_UP",
+        "EXCHANGE.WINDOW",
+        "MEASUREMENT.E2E",
+        "METROLOGY.ERROR_BUDGET",
+        "WIRE.FIXED_BODY"
+      ],
+      "independent_reference": {
+        "frames": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "ledger": {
+          "uncorrected_offset_numerator": "3276800",
+          "uncorrected_delay_numerator": "36044800",
+          "corrected_offset_numerator": "3342336",
+          "corrected_delay_numerator": "36012032",
+          "forward_raw_scaled": "19660800",
+          "reverse_raw_scaled": "16384000",
+          "denominator": 131072
+        },
+        "contributions": [
+          {
+            "frame": 1,
+            "field": "Sync.correctionField",
+            "correction_scaled": "-32768",
+            "offset_numerator": "32768",
+            "delay_numerator": "32768",
+            "included": true,
+            "denominator": 131072
+          },
+          {
+            "frame": 2,
+            "field": "Follow_Up.correctionField",
+            "correction_scaled": "16384",
+            "offset_numerator": "-16384",
+            "delay_numerator": "-16384",
+            "included": true,
+            "denominator": 131072
+          },
+          {
+            "frame": 4,
+            "field": "Delay_Resp.correctionField",
+            "correction_scaled": "49152",
+            "offset_numerator": "49152",
+            "delay_numerator": "-49152",
+            "included": true,
+            "denominator": 131072
+          },
+          {
+            "frame": 3,
+            "field": "Delay_Req.correctionField",
+            "correction_scaled": "999999",
+            "offset_numerator": "0",
+            "delay_numerator": "0",
+            "included": false,
+            "denominator": 131072
+          }
+        ],
+        "offset_ns": "51/2",
+        "mean_delay_ns": "1099/4",
+        "assessment": {
+          "verdict": "outside_limit",
+          "lower_numerator": "3342336",
+          "upper_numerator": "3342336",
+          "radius_numerator": "0",
+          "limit_numerator": "1310720",
+          "denominator": 131072
+        }
+      }
+    },
+    {
+      "name": "metrology-uncertain-boundary",
+      "command": "check",
+      "input": "fixtures/commissioning/metrology-uncertain-boundary.json",
+      "input_sha256": "b94106fbfc100011fcfac78664cb02a26cff43802811a207705370a258cb16a4",
+      "report": "/private/var/folders/s5/kpmwrbfn04l362zwtk9cjby80000gn/T/moonbit2-charter-20261021-qi8asrff/project/research/commissioning/metrology-uncertain-boundary.report.json",
+      "report_sha256": "44fb30253908dea1548782006855e43236374fc195c80a341d65603f9982b9fa",
+      "expected_status": "Pass",
+      "process_exit": 0,
+      "stderr": "",
+      "status": "Pass",
+      "rules": [
+        "CLAIM.DELAY_WINDOW",
+        "CLAIM.E2E_IDENTITY",
+        "CLAIM.EXCHANGE_WINDOW",
+        "CLAIM.SYNC_FOLLOW_UP",
+        "CLAIM.SYNC_WINDOW",
+        "EXCHANGE.SYNC_FOLLOW_UP",
+        "EXCHANGE.WINDOW",
+        "MEASUREMENT.E2E",
+        "METROLOGY.ERROR_BUDGET",
+        "WIRE.FIXED_BODY"
+      ],
+      "independent_reference": {
+        "frames": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "ledger": {
+          "uncorrected_offset_numerator": "3276800",
+          "uncorrected_delay_numerator": "36044800",
+          "corrected_offset_numerator": "3342336",
+          "corrected_delay_numerator": "36012032",
+          "forward_raw_scaled": "19660800",
+          "reverse_raw_scaled": "16384000",
+          "denominator": 131072
+        },
+        "contributions": [
+          {
+            "frame": 1,
+            "field": "Sync.correctionField",
+            "correction_scaled": "-32768",
+            "offset_numerator": "32768",
+            "delay_numerator": "32768",
+            "included": true,
+            "denominator": 131072
+          },
+          {
+            "frame": 2,
+            "field": "Follow_Up.correctionField",
+            "correction_scaled": "16384",
+            "offset_numerator": "-16384",
+            "delay_numerator": "-16384",
+            "included": true,
+            "denominator": 131072
+          },
+          {
+            "frame": 4,
+            "field": "Delay_Resp.correctionField",
+            "correction_scaled": "49152",
+            "offset_numerator": "49152",
+            "delay_numerator": "-49152",
+            "included": true,
+            "denominator": 131072
+          },
+          {
+            "frame": 3,
+            "field": "Delay_Req.correctionField",
+            "correction_scaled": "999999",
+            "offset_numerator": "0",
+            "delay_numerator": "0",
+            "included": false,
+            "denominator": 131072
+          }
+        ],
+        "offset_ns": "51/2",
+        "mean_delay_ns": "1099/4",
+        "assessment": {
+          "verdict": "indeterminate",
+          "lower_numerator": "3080192",
+          "upper_numerator": "3604480",
+          "radius_numerator": "262144",
+          "limit_numerator": "3342336",
+          "denominator": 131072
+        }
+      }
+    },
+    {
+      "name": "metrology-exact-positive-limit",
+      "command": "check",
+      "input": "fixtures/commissioning/metrology-exact-positive-limit.json",
+      "input_sha256": "7c5c0f40a7d4b27a57f0d1b40bd85825176b6527800719cb805f88a83dd507f8",
+      "report": "/private/var/folders/s5/kpmwrbfn04l362zwtk9cjby80000gn/T/moonbit2-charter-20261021-qi8asrff/project/research/commissioning/metrology-exact-positive-limit.report.json",
+      "report_sha256": "9110adf19d1d0247f5339ad22c4c77c3afdc2555d4fa6905a99d65d335e3873f",
+      "expected_status": "Pass",
+      "process_exit": 0,
+      "stderr": "",
+      "status": "Pass",
+      "rules": [
+        "CLAIM.DELAY_WINDOW",
+        "CLAIM.E2E_IDENTITY",
+        "CLAIM.EXCHANGE_WINDOW",
+        "CLAIM.SYNC_FOLLOW_UP",
+        "CLAIM.SYNC_WINDOW",
+        "EXCHANGE.SYNC_FOLLOW_UP",
+        "EXCHANGE.WINDOW",
+        "MEASUREMENT.E2E",
+        "METROLOGY.ERROR_BUDGET",
+        "WIRE.FIXED_BODY"
+      ],
+      "independent_reference": {
+        "frames": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "ledger": {
+          "uncorrected_offset_numerator": "3276800",
+          "uncorrected_delay_numerator": "36044800",
+          "corrected_offset_numerator": "3342336",
+          "corrected_delay_numerator": "36012032",
+          "forward_raw_scaled": "19660800",
+          "reverse_raw_scaled": "16384000",
+          "denominator": 131072
+        },
+        "contributions": [
+          {
+            "frame": 1,
+            "field": "Sync.correctionField",
+            "correction_scaled": "-32768",
+            "offset_numerator": "32768",
+            "delay_numerator": "32768",
+            "included": true,
+            "denominator": 131072
+          },
+          {
+            "frame": 2,
+            "field": "Follow_Up.correctionField",
+            "correction_scaled": "16384",
+            "offset_numerator": "-16384",
+            "delay_numerator": "-16384",
+            "included": true,
+            "denominator": 131072
+          },
+          {
+            "frame": 4,
+            "field": "Delay_Resp.correctionField",
+            "correction_scaled": "49152",
+            "offset_numerator": "49152",
+            "delay_numerator": "-49152",
+            "included": true,
+            "denominator": 131072
+          },
+          {
+            "frame": 3,
+            "field": "Delay_Req.correctionField",
+            "correction_scaled": "999999",
+            "offset_numerator": "0",
+            "delay_numerator": "0",
+            "included": false,
+            "denominator": 131072
+          }
+        ],
+        "offset_ns": "51/2",
+        "mean_delay_ns": "1099/4",
+        "assessment": {
+          "verdict": "within_limit",
+          "lower_numerator": "3342336",
+          "upper_numerator": "3342336",
+          "radius_numerator": "0",
+          "limit_numerator": "3342336",
+          "denominator": 131072
+        }
+      }
+    },
+    {
+      "name": "metrology-exact-negative-limit",
+      "command": "check",
+      "input": "fixtures/commissioning/metrology-exact-negative-limit.json",
+      "input_sha256": "f138f3b5813cba71320c1ef5af4030945d6ea19c80b6fd9f96a7d19ef517c941",
+      "report": "/private/var/folders/s5/kpmwrbfn04l362zwtk9cjby80000gn/T/moonbit2-charter-20261021-qi8asrff/project/research/commissioning/metrology-exact-negative-limit.report.json",
+      "report_sha256": "728a69b47d909e22b17bd8a5d85d7c015f997c13aa73e3f8c5af8b4c5793ab7b",
+      "expected_status": "Pass",
+      "process_exit": 0,
+      "stderr": "",
+      "status": "Pass",
+      "rules": [
+        "CLAIM.DELAY_WINDOW",
+        "CLAIM.E2E_IDENTITY",
+        "CLAIM.EXCHANGE_WINDOW",
+        "CLAIM.SYNC_FOLLOW_UP",
+        "CLAIM.SYNC_WINDOW",
+        "EXCHANGE.SYNC_FOLLOW_UP",
+        "EXCHANGE.WINDOW",
+        "MEASUREMENT.E2E",
+        "METROLOGY.ERROR_BUDGET",
+        "WIRE.FIXED_BODY"
+      ],
+      "independent_reference": {
+        "frames": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "ledger": {
+          "uncorrected_offset_numerator": "-3407872",
+          "uncorrected_delay_numerator": "29360128",
+          "corrected_offset_numerator": "-3342336",
+          "corrected_delay_numerator": "29327360",
+          "forward_raw_scaled": "12976128",
+          "reverse_raw_scaled": "16384000",
+          "denominator": 131072
+        },
+        "contributions": [
+          {
+            "frame": 1,
+            "field": "Sync.correctionField",
+            "correction_scaled": "-32768",
+            "offset_numerator": "32768",
+            "delay_numerator": "32768",
+            "included": true,
+            "denominator": 131072
+          },
+          {
+            "frame": 2,
+            "field": "Follow_Up.correctionField",
+            "correction_scaled": "16384",
+            "offset_numerator": "-16384",
+            "delay_numerator": "-16384",
+            "included": true,
+            "denominator": 131072
+          },
+          {
+            "frame": 4,
+            "field": "Delay_Resp.correctionField",
+            "correction_scaled": "49152",
+            "offset_numerator": "49152",
+            "delay_numerator": "-49152",
+            "included": true,
+            "denominator": 131072
+          },
+          {
+            "frame": 3,
+            "field": "Delay_Req.correctionField",
+            "correction_scaled": "999999",
+            "offset_numerator": "0",
+            "delay_numerator": "0",
+            "included": false,
+            "denominator": 131072
+          }
+        ],
+        "offset_ns": "-51/2",
+        "mean_delay_ns": "895/4",
+        "assessment": {
+          "verdict": "within_limit",
+          "lower_numerator": "-3342336",
+          "upper_numerator": "-3342336",
+          "radius_numerator": "0",
+          "limit_numerator": "3342336",
+          "denominator": 131072
+        }
+      }
+    },
+    {
+      "name": "metrology-interval-touches-positive-limit",
+      "command": "check",
+      "input": "fixtures/commissioning/metrology-interval-touches-positive-limit.json",
+      "input_sha256": "461706a9a7d1f8d909cb0a2e5f2c943d2c30be876a247560e7e0f94d20a3505b",
+      "report": "/private/var/folders/s5/kpmwrbfn04l362zwtk9cjby80000gn/T/moonbit2-charter-20261021-qi8asrff/project/research/commissioning/metrology-interval-touches-positive-limit.report.json",
+      "report_sha256": "c3da24d84d191a269e223613fffa7049bec8e1563f3fa3a4f54741522a627ba6",
+      "expected_status": "Pass",
+      "process_exit": 0,
+      "stderr": "",
+      "status": "Pass",
+      "rules": [
+        "CLAIM.DELAY_WINDOW",
+        "CLAIM.E2E_IDENTITY",
+        "CLAIM.EXCHANGE_WINDOW",
+        "CLAIM.SYNC_FOLLOW_UP",
+        "CLAIM.SYNC_WINDOW",
+        "EXCHANGE.SYNC_FOLLOW_UP",
+        "EXCHANGE.WINDOW",
+        "MEASUREMENT.E2E",
+        "METROLOGY.ERROR_BUDGET",
+        "WIRE.FIXED_BODY"
+      ],
+      "independent_reference": {
+        "frames": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "ledger": {
+          "uncorrected_offset_numerator": "3276800",
+          "uncorrected_delay_numerator": "36044800",
+          "corrected_offset_numerator": "3342336",
+          "corrected_delay_numerator": "36012032",
+          "forward_raw_scaled": "19660800",
+          "reverse_raw_scaled": "16384000",
+          "denominator": 131072
+        },
+        "contributions": [
+          {
+            "frame": 1,
+            "field": "Sync.correctionField",
+            "correction_scaled": "-32768",
+            "offset_numerator": "32768",
+            "delay_numerator": "32768",
+            "included": true,
+            "denominator": 131072
+          },
+          {
+            "frame": 2,
+            "field": "Follow_Up.correctionField",
+            "correction_scaled": "16384",
+            "offset_numerator": "-16384",
+            "delay_numerator": "-16384",
+            "included": true,
+            "denominator": 131072
+          },
+          {
+            "frame": 4,
+            "field": "Delay_Resp.correctionField",
+            "correction_scaled": "49152",
+            "offset_numerator": "49152",
+            "delay_numerator": "-49152",
+            "included": true,
+            "denominator": 131072
+          },
+          {
+            "frame": 3,
+            "field": "Delay_Req.correctionField",
+            "correction_scaled": "999999",
+            "offset_numerator": "0",
+            "delay_numerator": "0",
+            "included": false,
+            "denominator": 131072
+          }
+        ],
+        "offset_ns": "51/2",
+        "mean_delay_ns": "1099/4",
+        "assessment": {
+          "verdict": "within_limit",
+          "lower_numerator": "3276800",
+          "upper_numerator": "3407872",
+          "radius_numerator": "65536",
+          "limit_numerator": "3407872",
+          "denominator": 131072
+        }
+      }
+    },
+    {
+      "name": "metrology-interval-crosses-positive-limit",
+      "command": "check",
+      "input": "fixtures/commissioning/metrology-interval-crosses-positive-limit.json",
+      "input_sha256": "b9c5d4fb9ab78ff96952032f8cda19cd3465163cb850a4b25ea6ff6c57a8b5e7",
+      "report": "/private/var/folders/s5/kpmwrbfn04l362zwtk9cjby80000gn/T/moonbit2-charter-20261021-qi8asrff/project/research/commissioning/metrology-interval-crosses-positive-limit.report.json",
+      "report_sha256": "a2ff963914d872017623348bd96e68368d40f8e661ecc78a3f854ba794338f8b",
+      "expected_status": "Pass",
+      "process_exit": 0,
+      "stderr": "",
+      "status": "Pass",
+      "rules": [
+        "CLAIM.DELAY_WINDOW",
+        "CLAIM.E2E_IDENTITY",
+        "CLAIM.EXCHANGE_WINDOW",
+        "CLAIM.SYNC_FOLLOW_UP",
+        "CLAIM.SYNC_WINDOW",
+        "EXCHANGE.SYNC_FOLLOW_UP",
+        "EXCHANGE.WINDOW",
+        "MEASUREMENT.E2E",
+        "METROLOGY.ERROR_BUDGET",
+        "WIRE.FIXED_BODY"
+      ],
+      "independent_reference": {
+        "frames": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "ledger": {
+          "uncorrected_offset_numerator": "3276800",
+          "uncorrected_delay_numerator": "36044800",
+          "corrected_offset_numerator": "3342336",
+          "corrected_delay_numerator": "36012032",
+          "forward_raw_scaled": "19660800",
+          "reverse_raw_scaled": "16384000",
+          "denominator": 131072
+        },
+        "contributions": [
+          {
+            "frame": 1,
+            "field": "Sync.correctionField",
+            "correction_scaled": "-32768",
+            "offset_numerator": "32768",
+            "delay_numerator": "32768",
+            "included": true,
+            "denominator": 131072
+          },
+          {
+            "frame": 2,
+            "field": "Follow_Up.correctionField",
+            "correction_scaled": "16384",
+            "offset_numerator": "-16384",
+            "delay_numerator": "-16384",
+            "included": true,
+            "denominator": 131072
+          },
+          {
+            "frame": 4,
+            "field": "Delay_Resp.correctionField",
+            "correction_scaled": "49152",
+            "offset_numerator": "49152",
+            "delay_numerator": "-49152",
+            "included": true,
+            "denominator": 131072
+          },
+          {
+            "frame": 3,
+            "field": "Delay_Req.correctionField",
+            "correction_scaled": "999999",
+            "offset_numerator": "0",
+            "delay_numerator": "0",
+            "included": false,
+            "denominator": 131072
+          }
+        ],
+        "offset_ns": "51/2",
+        "mean_delay_ns": "1099/4",
+        "assessment": {
+          "verdict": "indeterminate",
+          "lower_numerator": "3276800",
+          "upper_numerator": "3407872",
+          "radius_numerator": "65536",
+          "limit_numerator": "3342336",
+          "denominator": 131072
+        }
+      }
+    },
+    {
+      "name": "metrology-interval-touches-outside-edge",
+      "command": "check",
+      "input": "fixtures/commissioning/metrology-interval-touches-outside-edge.json",
+      "input_sha256": "28e6025b7ba4228eb0365e94019ad07b42a5a8f8cdae46dca9403205c9ca1710",
+      "report": "/private/var/folders/s5/kpmwrbfn04l362zwtk9cjby80000gn/T/moonbit2-charter-20261021-qi8asrff/project/research/commissioning/metrology-interval-touches-outside-edge.report.json",
+      "report_sha256": "ff1834482a75e296efec18c6e7147960568607fadb767ccc44231e679e3eb2d6",
+      "expected_status": "Pass",
+      "process_exit": 0,
+      "stderr": "",
+      "status": "Pass",
+      "rules": [
+        "CLAIM.DELAY_WINDOW",
+        "CLAIM.E2E_IDENTITY",
+        "CLAIM.EXCHANGE_WINDOW",
+        "CLAIM.SYNC_FOLLOW_UP",
+        "CLAIM.SYNC_WINDOW",
+        "EXCHANGE.SYNC_FOLLOW_UP",
+        "EXCHANGE.WINDOW",
+        "MEASUREMENT.E2E",
+        "METROLOGY.ERROR_BUDGET",
+        "WIRE.FIXED_BODY"
+      ],
+      "independent_reference": {
+        "frames": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "ledger": {
+          "uncorrected_offset_numerator": "3276800",
+          "uncorrected_delay_numerator": "36044800",
+          "corrected_offset_numerator": "3342336",
+          "corrected_delay_numerator": "36012032",
+          "forward_raw_scaled": "19660800",
+          "reverse_raw_scaled": "16384000",
+          "denominator": 131072
+        },
+        "contributions": [
+          {
+            "frame": 1,
+            "field": "Sync.correctionField",
+            "correction_scaled": "-32768",
+            "offset_numerator": "32768",
+            "delay_numerator": "32768",
+            "included": true,
+            "denominator": 131072
+          },
+          {
+            "frame": 2,
+            "field": "Follow_Up.correctionField",
+            "correction_scaled": "16384",
+            "offset_numerator": "-16384",
+            "delay_numerator": "-16384",
+            "included": true,
+            "denominator": 131072
+          },
+          {
+            "frame": 4,
+            "field": "Delay_Resp.correctionField",
+            "correction_scaled": "49152",
+            "offset_numerator": "49152",
+            "delay_numerator": "-49152",
+            "included": true,
+            "denominator": 131072
+          },
+          {
+            "frame": 3,
+            "field": "Delay_Req.correctionField",
+            "correction_scaled": "999999",
+            "offset_numerator": "0",
+            "delay_numerator": "0",
+            "included": false,
+            "denominator": 131072
+          }
+        ],
+        "offset_ns": "51/2",
+        "mean_delay_ns": "1099/4",
+        "assessment": {
+          "verdict": "indeterminate",
+          "lower_numerator": "3276800",
+          "upper_numerator": "3407872",
+          "radius_numerator": "65536",
+          "limit_numerator": "3276800",
+          "denominator": 131072
+        }
+      }
+    },
+    {
+      "name": "metrology-declared-asymmetry-bound",
+      "command": "check",
+      "input": "fixtures/commissioning/metrology-declared-asymmetry-bound.json",
+      "input_sha256": "4906b3cb5e01e803496e2d4cfb7005d4f3480acaeed7b95ce7647c139810e553",
+      "report": "/private/var/folders/s5/kpmwrbfn04l362zwtk9cjby80000gn/T/moonbit2-charter-20261021-qi8asrff/project/research/commissioning/metrology-declared-asymmetry-bound.report.json",
+      "report_sha256": "2cc0ffa911e05d269cf8d8ee557bd31d24c30087c4f655c516420a8345cff511",
+      "expected_status": "Pass",
+      "process_exit": 0,
+      "stderr": "",
+      "status": "Pass",
+      "rules": [
+        "CLAIM.DELAY_WINDOW",
+        "CLAIM.E2E_IDENTITY",
+        "CLAIM.EXCHANGE_WINDOW",
+        "CLAIM.SYNC_FOLLOW_UP",
+        "CLAIM.SYNC_WINDOW",
+        "EXCHANGE.SYNC_FOLLOW_UP",
+        "EXCHANGE.WINDOW",
+        "MEASUREMENT.E2E",
+        "METROLOGY.ERROR_BUDGET",
+        "WIRE.FIXED_BODY"
+      ],
+      "independent_reference": {
+        "frames": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "ledger": {
+          "uncorrected_offset_numerator": "3276800",
+          "uncorrected_delay_numerator": "36044800",
+          "corrected_offset_numerator": "3342336",
+          "corrected_delay_numerator": "36012032",
+          "forward_raw_scaled": "19660800",
+          "reverse_raw_scaled": "16384000",
+          "denominator": 131072
+        },
+        "contributions": [
+          {
+            "frame": 1,
+            "field": "Sync.correctionField",
+            "correction_scaled": "-32768",
+            "offset_numerator": "32768",
+            "delay_numerator": "32768",
+            "included": true,
+            "denominator": 131072
+          },
+          {
+            "frame": 2,
+            "field": "Follow_Up.correctionField",
+            "correction_scaled": "16384",
+            "offset_numerator": "-16384",
+            "delay_numerator": "-16384",
+            "included": true,
+            "denominator": 131072
+          },
+          {
+            "frame": 4,
+            "field": "Delay_Resp.correctionField",
+            "correction_scaled": "49152",
+            "offset_numerator": "49152",
+            "delay_numerator": "-49152",
+            "included": true,
+            "denominator": 131072
+          },
+          {
+            "frame": 3,
+            "field": "Delay_Req.correctionField",
+            "correction_scaled": "999999",
+            "offset_numerator": "0",
+            "delay_numerator": "0",
+            "included": false,
+            "denominator": 131072
+          }
+        ],
+        "offset_ns": "51/2",
+        "mean_delay_ns": "1099/4",
+        "assessment": {
+          "verdict": "within_limit",
+          "lower_numerator": "3211264",
+          "upper_numerator": "3473408",
+          "radius_numerator": "131072",
+          "limit_numerator": "6553600",
+          "denominator": 131072
+        }
+      }
+    },
+    {
+      "name": "metrology-max-256-digit-bound",
+      "command": "check",
+      "input": "fixtures/commissioning/metrology-max-256-digit-bound.json",
+      "input_sha256": "55adea2ebe10b4c56bf2af5e802a1e5a374feb9042cfcdfab60d3ca4d6312c58",
+      "report": "/private/var/folders/s5/kpmwrbfn04l362zwtk9cjby80000gn/T/moonbit2-charter-20261021-qi8asrff/project/research/commissioning/metrology-max-256-digit-bound.report.json",
+      "report_sha256": "26d466f177669e219aacdd440c2a1c73e025a437b3d6203df722de48b52b5b7c",
+      "expected_status": "Pass",
+      "process_exit": 0,
+      "stderr": "",
+      "status": "Pass",
+      "rules": [
+        "CLAIM.DELAY_WINDOW",
+        "CLAIM.E2E_IDENTITY",
+        "CLAIM.EXCHANGE_WINDOW",
+        "CLAIM.SYNC_FOLLOW_UP",
+        "CLAIM.SYNC_WINDOW",
+        "EXCHANGE.SYNC_FOLLOW_UP",
+        "EXCHANGE.WINDOW",
+        "MEASUREMENT.E2E",
+        "METROLOGY.ERROR_BUDGET",
+        "WIRE.FIXED_BODY"
+      ],
+      "independent_reference": {
+        "frames": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "ledger": {
+          "uncorrected_offset_numerator": "3276800",
+          "uncorrected_delay_numerator": "36044800",
+          "corrected_offset_numerator": "3342336",
+          "corrected_delay_numerator": "36012032",
+          "forward_raw_scaled": "19660800",
+          "reverse_raw_scaled": "16384000",
+          "denominator": 131072
+        },
+        "contributions": [
+          {
+            "frame": 1,
+            "field": "Sync.correctionField",
+            "correction_scaled": "-32768",
+            "offset_numerator": "32768",
+            "delay_numerator": "32768",
+            "included": true,
+            "denominator": 131072
+          },
+          {
+            "frame": 2,
+            "field": "Follow_Up.correctionField",
+            "correction_scaled": "16384",
+            "offset_numerator": "-16384",
+            "delay_numerator": "-16384",
+            "included": true,
+            "denominator": 131072
+          },
+          {
+            "frame": 4,
+            "field": "Delay_Resp.correctionField",
+            "correction_scaled": "49152",
+            "offset_numerator": "49152",
+            "delay_numerator": "-49152",
+            "included": true,
+            "denominator": 131072
+          },
+          {
+            "frame": 3,
+            "field": "Delay_Req.correctionField",
+            "correction_scaled": "999999",
+            "offset_numerator": "0",
+            "delay_numerator": "0",
+            "included": false,
+            "denominator": 131072
+          }
+        ],
+        "offset_ns": "51/2",
+        "mean_delay_ns": "1099/4",
+        "assessment": {
+          "verdict": "indeterminate",
+          "lower_numerator": "-9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999996657663",
+          "upper_numerator": "10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003342335",
+          "radius_numerator": "9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999",
+          "limit_numerator": "6553600",
+          "denominator": 131072
+        }
+      }
+    },
+    {
+      "name": "metrology-request-correction-invariant",
+      "command": "check",
+      "input": "fixtures/commissioning/metrology-request-correction-invariant.json",
+      "input_sha256": "69d7e0208c8a81be37038c6c598ea72ecab21452201f2aecbe7496475124b502",
+      "report": "/private/var/folders/s5/kpmwrbfn04l362zwtk9cjby80000gn/T/moonbit2-charter-20261021-qi8asrff/project/research/commissioning/metrology-request-correction-invariant.report.json",
+      "report_sha256": "e60daa06e58ab170d018b55b5e2d8c6369ad1e999656350714823b5c387fbd21",
+      "expected_status": "Pass",
+      "process_exit": 0,
+      "stderr": "",
+      "status": "Pass",
+      "rules": [
+        "CLAIM.DELAY_WINDOW",
+        "CLAIM.E2E_IDENTITY",
+        "CLAIM.EXCHANGE_WINDOW",
+        "CLAIM.SYNC_FOLLOW_UP",
+        "CLAIM.SYNC_WINDOW",
+        "EXCHANGE.SYNC_FOLLOW_UP",
+        "EXCHANGE.WINDOW",
+        "MEASUREMENT.E2E",
+        "METROLOGY.ERROR_BUDGET",
+        "WIRE.FIXED_BODY"
+      ],
+      "independent_reference": {
+        "frames": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "ledger": {
+          "uncorrected_offset_numerator": "3276800",
+          "uncorrected_delay_numerator": "36044800",
+          "corrected_offset_numerator": "3342336",
+          "corrected_delay_numerator": "36012032",
+          "forward_raw_scaled": "19660800",
+          "reverse_raw_scaled": "16384000",
+          "denominator": 131072
+        },
+        "contributions": [
+          {
+            "frame": 1,
+            "field": "Sync.correctionField",
+            "correction_scaled": "-32768",
+            "offset_numerator": "32768",
+            "delay_numerator": "32768",
+            "included": true,
+            "denominator": 131072
+          },
+          {
+            "frame": 2,
+            "field": "Follow_Up.correctionField",
+            "correction_scaled": "16384",
+            "offset_numerator": "-16384",
+            "delay_numerator": "-16384",
+            "included": true,
+            "denominator": 131072
+          },
+          {
+            "frame": 4,
+            "field": "Delay_Resp.correctionField",
+            "correction_scaled": "49152",
+            "offset_numerator": "49152",
+            "delay_numerator": "-49152",
+            "included": true,
+            "denominator": 131072
+          },
+          {
+            "frame": 3,
+            "field": "Delay_Req.correctionField",
+            "correction_scaled": "-123456789",
+            "offset_numerator": "0",
+            "delay_numerator": "0",
+            "included": false,
+            "denominator": 131072
+          }
+        ],
+        "offset_ns": "51/2",
+        "mean_delay_ns": "1099/4",
+        "assessment": {
+          "verdict": "within_limit",
+          "lower_numerator": "3342336",
+          "upper_numerator": "3342336",
+          "radius_numerator": "0",
+          "limit_numerator": "6553600",
+          "denominator": 131072
+        }
+      }
+    },
+    {
+      "name": "metrology-blank-source",
+      "command": "check",
+      "input": "fixtures/commissioning/metrology-blank-source.json",
+      "input_sha256": "43b2b8f324310fd595c5cb92042068734f6b3f1f824783bb87aee9dc3360b63f",
+      "report": "/private/var/folders/s5/kpmwrbfn04l362zwtk9cjby80000gn/T/moonbit2-charter-20261021-qi8asrff/project/research/commissioning/metrology-blank-source.report.json",
+      "report_sha256": "1c5067525a43f523d067aabd715dfa770066f0e6381db34b344814cb70f5675e",
+      "expected_status": "InsufficientEvidence",
+      "process_exit": 3,
+      "stderr": "",
+      "status": "InsufficientEvidence",
+      "rules": [
+        "CLAIM.DELAY_WINDOW",
+        "CLAIM.E2E_IDENTITY",
+        "CLAIM.EXCHANGE_WINDOW",
+        "CLAIM.SYNC_FOLLOW_UP",
+        "CLAIM.SYNC_WINDOW",
+        "EXCHANGE.SYNC_FOLLOW_UP",
+        "EXCHANGE.WINDOW",
+        "MEASUREMENT.E2E",
+        "METROLOGY.ERROR_BUDGET",
+        "WIRE.FIXED_BODY"
+      ],
+      "independent_reference": {
+        "frames": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "ledger": {
+          "uncorrected_offset_numerator": "3276800",
+          "uncorrected_delay_numerator": "36044800",
+          "corrected_offset_numerator": "3342336",
+          "corrected_delay_numerator": "36012032",
+          "forward_raw_scaled": "19660800",
+          "reverse_raw_scaled": "16384000",
+          "denominator": 131072
+        },
+        "contributions": [
+          {
+            "frame": 1,
+            "field": "Sync.correctionField",
+            "correction_scaled": "-32768",
+            "offset_numerator": "32768",
+            "delay_numerator": "32768",
+            "included": true,
+            "denominator": 131072
+          },
+          {
+            "frame": 2,
+            "field": "Follow_Up.correctionField",
+            "correction_scaled": "16384",
+            "offset_numerator": "-16384",
+            "delay_numerator": "-16384",
+            "included": true,
+            "denominator": 131072
+          },
+          {
+            "frame": 4,
+            "field": "Delay_Resp.correctionField",
+            "correction_scaled": "49152",
+            "offset_numerator": "49152",
+            "delay_numerator": "-49152",
+            "included": true,
+            "denominator": 131072
+          },
+          {
+            "frame": 3,
+            "field": "Delay_Req.correctionField",
+            "correction_scaled": "999999",
+            "offset_numerator": "0",
+            "delay_numerator": "0",
+            "included": false,
+            "denominator": 131072
+          }
+        ],
+        "offset_ns": "51/2",
+        "mean_delay_ns": "1099/4"
+      }
+    },
+    {
+      "name": "metrology-blank-assumptions",
+      "command": "check",
+      "input": "fixtures/commissioning/metrology-blank-assumptions.json",
+      "input_sha256": "e6110b8c750cac3791b9c8cb188b8cc09ded140df0e10dc9d48de64790ea40a5",
+      "report": "/private/var/folders/s5/kpmwrbfn04l362zwtk9cjby80000gn/T/moonbit2-charter-20261021-qi8asrff/project/research/commissioning/metrology-blank-assumptions.report.json",
+      "report_sha256": "ac1f7921d84055c0a00e29d4256a24463b8f82fa6cb3a0fd4cd574a8e650a091",
+      "expected_status": "InsufficientEvidence",
+      "process_exit": 3,
+      "stderr": "",
+      "status": "InsufficientEvidence",
+      "rules": [
+        "CLAIM.DELAY_WINDOW",
+        "CLAIM.E2E_IDENTITY",
+        "CLAIM.EXCHANGE_WINDOW",
+        "CLAIM.SYNC_FOLLOW_UP",
+        "CLAIM.SYNC_WINDOW",
+        "EXCHANGE.SYNC_FOLLOW_UP",
+        "EXCHANGE.WINDOW",
+        "MEASUREMENT.E2E",
+        "METROLOGY.ERROR_BUDGET",
+        "WIRE.FIXED_BODY"
+      ],
+      "independent_reference": {
+        "frames": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "ledger": {
+          "uncorrected_offset_numerator": "3276800",
+          "uncorrected_delay_numerator": "36044800",
+          "corrected_offset_numerator": "3342336",
+          "corrected_delay_numerator": "36012032",
+          "forward_raw_scaled": "19660800",
+          "reverse_raw_scaled": "16384000",
+          "denominator": 131072
+        },
+        "contributions": [
+          {
+            "frame": 1,
+            "field": "Sync.correctionField",
+            "correction_scaled": "-32768",
+            "offset_numerator": "32768",
+            "delay_numerator": "32768",
+            "included": true,
+            "denominator": 131072
+          },
+          {
+            "frame": 2,
+            "field": "Follow_Up.correctionField",
+            "correction_scaled": "16384",
+            "offset_numerator": "-16384",
+            "delay_numerator": "-16384",
+            "included": true,
+            "denominator": 131072
+          },
+          {
+            "frame": 4,
+            "field": "Delay_Resp.correctionField",
+            "correction_scaled": "49152",
+            "offset_numerator": "49152",
+            "delay_numerator": "-49152",
+            "included": true,
+            "denominator": 131072
+          },
+          {
+            "frame": 3,
+            "field": "Delay_Req.correctionField",
+            "correction_scaled": "999999",
+            "offset_numerator": "0",
+            "delay_numerator": "0",
+            "included": false,
+            "denominator": 131072
+          }
+        ],
+        "offset_ns": "51/2",
+        "mean_delay_ns": "1099/4"
+      }
+    },
+    {
+      "name": "metrology-unconfirmed-rate",
+      "command": "check",
+      "input": "fixtures/commissioning/metrology-unconfirmed-rate.json",
+      "input_sha256": "b574e1bbcc182a3457a1a4589ab7383dc597c6b592f75879280e9451126bf5df",
+      "report": "/private/var/folders/s5/kpmwrbfn04l362zwtk9cjby80000gn/T/moonbit2-charter-20261021-qi8asrff/project/research/commissioning/metrology-unconfirmed-rate.report.json",
+      "report_sha256": "d6be45bfe7cb95c18945fdbf187f2b6f7f57743b76416df3eb16ff44eb68f164",
+      "expected_status": "InsufficientEvidence",
+      "process_exit": 3,
+      "stderr": "",
+      "status": "InsufficientEvidence",
+      "rules": [
+        "CLAIM.DELAY_WINDOW",
+        "CLAIM.E2E_IDENTITY",
+        "CLAIM.EXCHANGE_WINDOW",
+        "CLAIM.SYNC_FOLLOW_UP",
+        "CLAIM.SYNC_WINDOW",
+        "EXCHANGE.SYNC_FOLLOW_UP",
+        "EXCHANGE.WINDOW",
+        "MEASUREMENT.E2E",
+        "METROLOGY.ERROR_BUDGET",
+        "WIRE.FIXED_BODY"
+      ],
+      "independent_reference": {
+        "frames": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "ledger": {
+          "uncorrected_offset_numerator": "3276800",
+          "uncorrected_delay_numerator": "36044800",
+          "corrected_offset_numerator": "3342336",
+          "corrected_delay_numerator": "36012032",
+          "forward_raw_scaled": "19660800",
+          "reverse_raw_scaled": "16384000",
+          "denominator": 131072
+        },
+        "contributions": [
+          {
+            "frame": 1,
+            "field": "Sync.correctionField",
+            "correction_scaled": "-32768",
+            "offset_numerator": "32768",
+            "delay_numerator": "32768",
+            "included": true,
+            "denominator": 131072
+          },
+          {
+            "frame": 2,
+            "field": "Follow_Up.correctionField",
+            "correction_scaled": "16384",
+            "offset_numerator": "-16384",
+            "delay_numerator": "-16384",
+            "included": true,
+            "denominator": 131072
+          },
+          {
+            "frame": 4,
+            "field": "Delay_Resp.correctionField",
+            "correction_scaled": "49152",
+            "offset_numerator": "49152",
+            "delay_numerator": "-49152",
+            "included": true,
+            "denominator": 131072
+          },
+          {
+            "frame": 3,
+            "field": "Delay_Req.correctionField",
+            "correction_scaled": "999999",
+            "offset_numerator": "0",
+            "delay_numerator": "0",
+            "included": false,
+            "denominator": 131072
+          }
+        ],
+        "offset_ns": "51/2",
+        "mean_delay_ns": "1099/4"
+      }
+    },
+    {
+      "name": "metrology-negative-bound",
+      "command": "check",
+      "input": "fixtures/commissioning/metrology-negative-bound.json",
+      "input_sha256": "a95e442dc77de8b3819c0f0ae005b14f08fe56933cb0608ebf5b2193649e7f7f",
+      "report": "/private/var/folders/s5/kpmwrbfn04l362zwtk9cjby80000gn/T/moonbit2-charter-20261021-qi8asrff/project/research/commissioning/metrology-negative-bound.report.json",
+      "report_sha256": "f89a5759fb2ef5ca4196419c0764b0658e7b57421cffb59834e238903d15f130",
+      "expected_status": "Violation",
+      "process_exit": 1,
+      "stderr": "",
+      "status": "Violation",
+      "rules": [
+        "CLAIM.DELAY_WINDOW",
+        "CLAIM.E2E_IDENTITY",
+        "CLAIM.EXCHANGE_WINDOW",
+        "CLAIM.SYNC_FOLLOW_UP",
+        "CLAIM.SYNC_WINDOW",
+        "EXCHANGE.SYNC_FOLLOW_UP",
+        "EXCHANGE.WINDOW",
+        "MEASUREMENT.E2E",
+        "METROLOGY.ERROR_BUDGET",
+        "WIRE.FIXED_BODY"
+      ],
+      "independent_reference": {
+        "frames": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "ledger": {
+          "uncorrected_offset_numerator": "3276800",
+          "uncorrected_delay_numerator": "36044800",
+          "corrected_offset_numerator": "3342336",
+          "corrected_delay_numerator": "36012032",
+          "forward_raw_scaled": "19660800",
+          "reverse_raw_scaled": "16384000",
+          "denominator": 131072
+        },
+        "contributions": [
+          {
+            "frame": 1,
+            "field": "Sync.correctionField",
+            "correction_scaled": "-32768",
+            "offset_numerator": "32768",
+            "delay_numerator": "32768",
+            "included": true,
+            "denominator": 131072
+          },
+          {
+            "frame": 2,
+            "field": "Follow_Up.correctionField",
+            "correction_scaled": "16384",
+            "offset_numerator": "-16384",
+            "delay_numerator": "-16384",
+            "included": true,
+            "denominator": 131072
+          },
+          {
+            "frame": 4,
+            "field": "Delay_Resp.correctionField",
+            "correction_scaled": "49152",
+            "offset_numerator": "49152",
+            "delay_numerator": "-49152",
+            "included": true,
+            "denominator": 131072
+          },
+          {
+            "frame": 3,
+            "field": "Delay_Req.correctionField",
+            "correction_scaled": "999999",
+            "offset_numerator": "0",
+            "delay_numerator": "0",
+            "included": false,
+            "denominator": 131072
+          }
+        ],
+        "offset_ns": "51/2",
+        "mean_delay_ns": "1099/4"
+      }
+    },
+    {
+      "name": "metrology-noncanonical-bound",
+      "command": "check",
+      "input": "fixtures/commissioning/metrology-noncanonical-bound.json",
+      "input_sha256": "6b4d25194b5a5ee0f0f690b863b12dae7d491447014aadd6c253c3372ea6457c",
+      "report": "/private/var/folders/s5/kpmwrbfn04l362zwtk9cjby80000gn/T/moonbit2-charter-20261021-qi8asrff/project/research/commissioning/metrology-noncanonical-bound.report.json",
+      "report_sha256": "fd94f532f2ee8daa7b6c35a88a2d832bd4b1c1ce44b82f478aa53dc61878dc19",
+      "expected_status": "Violation",
+      "process_exit": 1,
+      "stderr": "",
+      "status": "Violation",
+      "rules": [
+        "CLAIM.DELAY_WINDOW",
+        "CLAIM.E2E_IDENTITY",
+        "CLAIM.EXCHANGE_WINDOW",
+        "CLAIM.SYNC_FOLLOW_UP",
+        "CLAIM.SYNC_WINDOW",
+        "EXCHANGE.SYNC_FOLLOW_UP",
+        "EXCHANGE.WINDOW",
+        "MEASUREMENT.E2E",
+        "METROLOGY.ERROR_BUDGET",
+        "WIRE.FIXED_BODY"
+      ],
+      "independent_reference": {
+        "frames": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "ledger": {
+          "uncorrected_offset_numerator": "3276800",
+          "uncorrected_delay_numerator": "36044800",
+          "corrected_offset_numerator": "3342336",
+          "corrected_delay_numerator": "36012032",
+          "forward_raw_scaled": "19660800",
+          "reverse_raw_scaled": "16384000",
+          "denominator": 131072
+        },
+        "contributions": [
+          {
+            "frame": 1,
+            "field": "Sync.correctionField",
+            "correction_scaled": "-32768",
+            "offset_numerator": "32768",
+            "delay_numerator": "32768",
+            "included": true,
+            "denominator": 131072
+          },
+          {
+            "frame": 2,
+            "field": "Follow_Up.correctionField",
+            "correction_scaled": "16384",
+            "offset_numerator": "-16384",
+            "delay_numerator": "-16384",
+            "included": true,
+            "denominator": 131072
+          },
+          {
+            "frame": 4,
+            "field": "Delay_Resp.correctionField",
+            "correction_scaled": "49152",
+            "offset_numerator": "49152",
+            "delay_numerator": "-49152",
+            "included": true,
+            "denominator": 131072
+          },
+          {
+            "frame": 3,
+            "field": "Delay_Req.correctionField",
+            "correction_scaled": "999999",
+            "offset_numerator": "0",
+            "delay_numerator": "0",
+            "included": false,
+            "denominator": 131072
+          }
+        ],
+        "offset_ns": "51/2",
+        "mean_delay_ns": "1099/4"
+      }
+    },
+    {
+      "name": "metrology-oversized-bound",
+      "command": "check",
+      "input": "fixtures/commissioning/metrology-oversized-bound.json",
+      "input_sha256": "4976268f43848ffee179f2896583a4fa15988a70b6728f5fb724df3823dcf598",
+      "report": "/private/var/folders/s5/kpmwrbfn04l362zwtk9cjby80000gn/T/moonbit2-charter-20261021-qi8asrff/project/research/commissioning/metrology-oversized-bound.report.json",
+      "report_sha256": "91895eb3e075acdb277518176371fb6db39992e62f86f22d8af4039e6fa06c5d",
+      "expected_status": "Violation",
+      "process_exit": 1,
+      "stderr": "",
+      "status": "Violation",
+      "rules": [
+        "CLAIM.DELAY_WINDOW",
+        "CLAIM.E2E_IDENTITY",
+        "CLAIM.EXCHANGE_WINDOW",
+        "CLAIM.SYNC_FOLLOW_UP",
+        "CLAIM.SYNC_WINDOW",
+        "EXCHANGE.SYNC_FOLLOW_UP",
+        "EXCHANGE.WINDOW",
+        "MEASUREMENT.E2E",
+        "METROLOGY.ERROR_BUDGET",
+        "WIRE.FIXED_BODY"
+      ],
+      "independent_reference": {
+        "frames": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "ledger": {
+          "uncorrected_offset_numerator": "3276800",
+          "uncorrected_delay_numerator": "36044800",
+          "corrected_offset_numerator": "3342336",
+          "corrected_delay_numerator": "36012032",
+          "forward_raw_scaled": "19660800",
+          "reverse_raw_scaled": "16384000",
+          "denominator": 131072
+        },
+        "contributions": [
+          {
+            "frame": 1,
+            "field": "Sync.correctionField",
+            "correction_scaled": "-32768",
+            "offset_numerator": "32768",
+            "delay_numerator": "32768",
+            "included": true,
+            "denominator": 131072
+          },
+          {
+            "frame": 2,
+            "field": "Follow_Up.correctionField",
+            "correction_scaled": "16384",
+            "offset_numerator": "-16384",
+            "delay_numerator": "-16384",
+            "included": true,
+            "denominator": 131072
+          },
+          {
+            "frame": 4,
+            "field": "Delay_Resp.correctionField",
+            "correction_scaled": "49152",
+            "offset_numerator": "49152",
+            "delay_numerator": "-49152",
+            "included": true,
+            "denominator": 131072
+          },
+          {
+            "frame": 3,
+            "field": "Delay_Req.correctionField",
+            "correction_scaled": "999999",
+            "offset_numerator": "0",
+            "delay_numerator": "0",
+            "included": false,
+            "denominator": 131072
+          }
+        ],
+        "offset_ns": "51/2",
+        "mean_delay_ns": "1099/4"
+      }
+    },
+    {
+      "name": "metrology-short-timestamp-array",
+      "command": "check",
+      "input": "fixtures/commissioning/metrology-short-timestamp-array.json",
+      "input_sha256": "1c73351891a18ac1bd4f4ef9a38175383269fbe3c4c4086091bc8144eb3cd4ff",
+      "report": "/private/var/folders/s5/kpmwrbfn04l362zwtk9cjby80000gn/T/moonbit2-charter-20261021-qi8asrff/project/research/commissioning/metrology-short-timestamp-array.report.json",
+      "report_sha256": "0d1ccc1e13e43d84d35d3e7195f280dcece5bc3de077e1c5798ffdcadb595f12",
+      "expected_status": "Violation",
+      "process_exit": 1,
+      "stderr": "",
+      "status": "Violation",
+      "rules": [
+        "CLAIM.DELAY_WINDOW",
+        "CLAIM.E2E_IDENTITY",
+        "CLAIM.EXCHANGE_WINDOW",
+        "CLAIM.SYNC_FOLLOW_UP",
+        "CLAIM.SYNC_WINDOW",
+        "EXCHANGE.SYNC_FOLLOW_UP",
+        "EXCHANGE.WINDOW",
+        "MEASUREMENT.E2E",
+        "METROLOGY.ERROR_BUDGET",
+        "WIRE.FIXED_BODY"
+      ],
+      "independent_reference": {
+        "frames": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "ledger": {
+          "uncorrected_offset_numerator": "3276800",
+          "uncorrected_delay_numerator": "36044800",
+          "corrected_offset_numerator": "3342336",
+          "corrected_delay_numerator": "36012032",
+          "forward_raw_scaled": "19660800",
+          "reverse_raw_scaled": "16384000",
+          "denominator": 131072
+        },
+        "contributions": [
+          {
+            "frame": 1,
+            "field": "Sync.correctionField",
+            "correction_scaled": "-32768",
+            "offset_numerator": "32768",
+            "delay_numerator": "32768",
+            "included": true,
+            "denominator": 131072
+          },
+          {
+            "frame": 2,
+            "field": "Follow_Up.correctionField",
+            "correction_scaled": "16384",
+            "offset_numerator": "-16384",
+            "delay_numerator": "-16384",
+            "included": true,
+            "denominator": 131072
+          },
+          {
+            "frame": 4,
+            "field": "Delay_Resp.correctionField",
+            "correction_scaled": "49152",
+            "offset_numerator": "49152",
+            "delay_numerator": "-49152",
+            "included": true,
+            "denominator": 131072
+          },
+          {
+            "frame": 3,
+            "field": "Delay_Req.correctionField",
+            "correction_scaled": "999999",
+            "offset_numerator": "0",
+            "delay_numerator": "0",
+            "included": false,
+            "denominator": 131072
+          }
+        ],
+        "offset_ns": "51/2",
+        "mean_delay_ns": "1099/4"
+      }
+    },
+    {
+      "name": "metrology-missing-source",
+      "command": "check",
+      "input": "fixtures/commissioning/metrology-missing-source.json",
+      "input_sha256": "3281417af217fbad0b60801852c65e7d29dadbaa480ead9eabf8c45d75efc9e6",
+      "report": "/private/var/folders/s5/kpmwrbfn04l362zwtk9cjby80000gn/T/moonbit2-charter-20261021-qi8asrff/project/research/commissioning/metrology-missing-source.report.json",
+      "report_sha256": "62b9528d43bac4752aaa5c9456612c6b9f5618a3bf9503bf3f3fcbb11bb1e728",
+      "expected_status": "InsufficientEvidence",
+      "process_exit": 3,
+      "stderr": "",
+      "status": "InsufficientEvidence",
+      "rules": [
+        "CLAIM.DELAY_WINDOW",
+        "CLAIM.E2E_IDENTITY",
+        "CLAIM.EXCHANGE_WINDOW",
+        "CLAIM.SYNC_FOLLOW_UP",
+        "CLAIM.SYNC_WINDOW",
+        "EXCHANGE.SYNC_FOLLOW_UP",
+        "EXCHANGE.WINDOW",
+        "MEASUREMENT.E2E",
+        "METROLOGY.ERROR_BUDGET",
+        "WIRE.FIXED_BODY"
+      ],
+      "independent_reference": {
+        "frames": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "ledger": {
+          "uncorrected_offset_numerator": "3276800",
+          "uncorrected_delay_numerator": "36044800",
+          "corrected_offset_numerator": "3342336",
+          "corrected_delay_numerator": "36012032",
+          "forward_raw_scaled": "19660800",
+          "reverse_raw_scaled": "16384000",
+          "denominator": 131072
+        },
+        "contributions": [
+          {
+            "frame": 1,
+            "field": "Sync.correctionField",
+            "correction_scaled": "-32768",
+            "offset_numerator": "32768",
+            "delay_numerator": "32768",
+            "included": true,
+            "denominator": 131072
+          },
+          {
+            "frame": 2,
+            "field": "Follow_Up.correctionField",
+            "correction_scaled": "16384",
+            "offset_numerator": "-16384",
+            "delay_numerator": "-16384",
+            "included": true,
+            "denominator": 131072
+          },
+          {
+            "frame": 4,
+            "field": "Delay_Resp.correctionField",
+            "correction_scaled": "49152",
+            "offset_numerator": "49152",
+            "delay_numerator": "-49152",
+            "included": true,
+            "denominator": 131072
+          },
+          {
+            "frame": 3,
+            "field": "Delay_Req.correctionField",
+            "correction_scaled": "999999",
+            "offset_numerator": "0",
+            "delay_numerator": "0",
+            "included": false,
+            "denominator": 131072
+          }
+        ],
+        "offset_ns": "51/2",
+        "mean_delay_ns": "1099/4"
+      }
+    },
+    {
+      "name": "metrology-missing-assumptions",
+      "command": "check",
+      "input": "fixtures/commissioning/metrology-missing-assumptions.json",
+      "input_sha256": "91598404c1c5a8cf816da41ba7d497f376ff9fb8e10e3ec9889c01094a406f7a",
+      "report": "/private/var/folders/s5/kpmwrbfn04l362zwtk9cjby80000gn/T/moonbit2-charter-20261021-qi8asrff/project/research/commissioning/metrology-missing-assumptions.report.json",
+      "report_sha256": "a71f6d305986a63cce91f3b4228b7aba35316ef9210b0a3fc6f2f5918635fe80",
+      "expected_status": "InsufficientEvidence",
+      "process_exit": 3,
+      "stderr": "",
+      "status": "InsufficientEvidence",
+      "rules": [
+        "CLAIM.DELAY_WINDOW",
+        "CLAIM.E2E_IDENTITY",
+        "CLAIM.EXCHANGE_WINDOW",
+        "CLAIM.SYNC_FOLLOW_UP",
+        "CLAIM.SYNC_WINDOW",
+        "EXCHANGE.SYNC_FOLLOW_UP",
+        "EXCHANGE.WINDOW",
+        "MEASUREMENT.E2E",
+        "METROLOGY.ERROR_BUDGET",
+        "WIRE.FIXED_BODY"
+      ],
+      "independent_reference": {
+        "frames": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "ledger": {
+          "uncorrected_offset_numerator": "3276800",
+          "uncorrected_delay_numerator": "36044800",
+          "corrected_offset_numerator": "3342336",
+          "corrected_delay_numerator": "36012032",
+          "forward_raw_scaled": "19660800",
+          "reverse_raw_scaled": "16384000",
+          "denominator": 131072
+        },
+        "contributions": [
+          {
+            "frame": 1,
+            "field": "Sync.correctionField",
+            "correction_scaled": "-32768",
+            "offset_numerator": "32768",
+            "delay_numerator": "32768",
+            "included": true,
+            "denominator": 131072
+          },
+          {
+            "frame": 2,
+            "field": "Follow_Up.correctionField",
+            "correction_scaled": "16384",
+            "offset_numerator": "-16384",
+            "delay_numerator": "-16384",
+            "included": true,
+            "denominator": 131072
+          },
+          {
+            "frame": 4,
+            "field": "Delay_Resp.correctionField",
+            "correction_scaled": "49152",
+            "offset_numerator": "49152",
+            "delay_numerator": "-49152",
+            "included": true,
+            "denominator": 131072
+          },
+          {
+            "frame": 3,
+            "field": "Delay_Req.correctionField",
+            "correction_scaled": "999999",
+            "offset_numerator": "0",
+            "delay_numerator": "0",
+            "included": false,
+            "denominator": 131072
+          }
+        ],
+        "offset_ns": "51/2",
+        "mean_delay_ns": "1099/4"
+      }
+    },
+    {
+      "name": "metrology-missing-relative-rate-bound-confirmed",
+      "command": "check",
+      "input": "fixtures/commissioning/metrology-missing-relative-rate-bound-confirmed.json",
+      "input_sha256": "64c0640eb5828f6d1fc5c66b0af2283cec85e5ad2abc83ed35c2a32001677a98",
+      "report": "/private/var/folders/s5/kpmwrbfn04l362zwtk9cjby80000gn/T/moonbit2-charter-20261021-qi8asrff/project/research/commissioning/metrology-missing-relative-rate-bound-confirmed.report.json",
+      "report_sha256": "4467cfb186fc5bdde75687da9bea8b3577cbeaa73e1094ac410322ac41a295e7",
+      "expected_status": "InsufficientEvidence",
+      "process_exit": 3,
+      "stderr": "",
+      "status": "InsufficientEvidence",
+      "rules": [
+        "CLAIM.DELAY_WINDOW",
+        "CLAIM.E2E_IDENTITY",
+        "CLAIM.EXCHANGE_WINDOW",
+        "CLAIM.SYNC_FOLLOW_UP",
+        "CLAIM.SYNC_WINDOW",
+        "EXCHANGE.SYNC_FOLLOW_UP",
+        "EXCHANGE.WINDOW",
+        "MEASUREMENT.E2E",
+        "METROLOGY.ERROR_BUDGET",
+        "WIRE.FIXED_BODY"
+      ],
+      "independent_reference": {
+        "frames": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "ledger": {
+          "uncorrected_offset_numerator": "3276800",
+          "uncorrected_delay_numerator": "36044800",
+          "corrected_offset_numerator": "3342336",
+          "corrected_delay_numerator": "36012032",
+          "forward_raw_scaled": "19660800",
+          "reverse_raw_scaled": "16384000",
+          "denominator": 131072
+        },
+        "contributions": [
+          {
+            "frame": 1,
+            "field": "Sync.correctionField",
+            "correction_scaled": "-32768",
+            "offset_numerator": "32768",
+            "delay_numerator": "32768",
+            "included": true,
+            "denominator": 131072
+          },
+          {
+            "frame": 2,
+            "field": "Follow_Up.correctionField",
+            "correction_scaled": "16384",
+            "offset_numerator": "-16384",
+            "delay_numerator": "-16384",
+            "included": true,
+            "denominator": 131072
+          },
+          {
+            "frame": 4,
+            "field": "Delay_Resp.correctionField",
+            "correction_scaled": "49152",
+            "offset_numerator": "49152",
+            "delay_numerator": "-49152",
+            "included": true,
+            "denominator": 131072
+          },
+          {
+            "frame": 3,
+            "field": "Delay_Req.correctionField",
+            "correction_scaled": "999999",
+            "offset_numerator": "0",
+            "delay_numerator": "0",
+            "included": false,
+            "denominator": 131072
+          }
+        ],
+        "offset_ns": "51/2",
+        "mean_delay_ns": "1099/4"
+      }
+    }
+  ],
+  "independent_review_regression": {
+    "input": "research/commissioning/nonadjacent-independent-review-input.json",
+    "input_sha256": "29fe63b136af29cbc122334dff7f832a8ed12a6b69086e9bf4d230170320e8dd",
+    "report": "/private/var/folders/s5/kpmwrbfn04l362zwtk9cjby80000gn/T/moonbit2-charter-20261021-qi8asrff/project/research/commissioning/nonadjacent-independent-review.report.json",
+    "report_sha256": "3a89abe599338d900e4a60ac51ed2c823a96a36ad956a893919cf73adb6b6658",
+    "process_exit": 1,
+    "independent_conflict_pairs": [
+      [
+        "long-A",
+        "new-B"
+      ]
+    ]
+  },
+  "failures": []
+}

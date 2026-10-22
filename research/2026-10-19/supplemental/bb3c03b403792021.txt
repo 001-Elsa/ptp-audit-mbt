@@ -1,0 +1,14 @@
+# Executable examples
+
+List the bundled Scenarios with:
+
+```sh
+moon run cmd/moonlab --target native -- list
+```
+
+- `raft-election` demonstrates typed vote messages and an at-most-one-leader Safety Invariant.
+- `replicated-register` demonstrates deterministic message scheduling and a bounded replication condition.
+- `two-phase-commit` demonstrates prepare/prepared/commit message flow and a bounded all-committed condition.
+- `faulty-election` deliberately boots two leaders and demonstrates immediate Safety Violation classification.
+
+These are compact executable teaching models used to verify MoonLab's framework behavior. They omit production concerns such as log replication, quorum reconfiguration, client deduplication, transaction recovery, authentication, and real transport integration.

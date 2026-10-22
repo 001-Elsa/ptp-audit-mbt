@@ -1,0 +1,22 @@
+# Architecture
+
+MoonLab is organized around four deep public Modules.
+
+- **sim** compiles Scenarios and owns deterministic Virtual Time, Enabled Actions, Envelopes, Timers, Stable Storage, faults, Observations, correctness checks, and one Simulation Run.
+- **explore** owns seeded campaigns, exact Replay, Failure Signatures, and the bounded Shrinker.
+- **artifact** owns strict versioned Replay JSON, Trace JSONL, and Run Report JSON data contracts.
+- **runner** owns static Scenario registration, command behavior, exit classification, and Native artifact-file orchestration.
+
+```mermaid
+flowchart LR
+  Model["Typed System Model"] --> Compile["Scenario compile"]
+  Compile --> Sim["sim: one bounded run"]
+  Sim --> Explore["explore: campaign/replay/shrink"]
+  Sim --> Artifact["artifact: replay/trace/report"]
+  Explore --> Artifact
+  Artifact --> Runner["runner: registered CLI"]
+  Runner --> Native["Native files and terminal"]
+```
+
+The portable Modules do not access host time, randomness, filesystems, processes, threads, or sockets. Simulated network and storage behavior are implementations inside `sim`, not external Adapter Interfaces. Important choices are recorded under `docs/adr/`; domain terminology lives in `CONTEXT.md`.
+

@@ -1,0 +1,2235 @@
+[
+  {
+    "name": "mokomoking2501/fieldbus_core",
+    "version": "0.1.0",
+    "evidence_mode": "reused_previous_version_pinned_zip",
+    "sha256": "5812cbc8395ccc99c05f3c37ac3bd7b1fbd36249edaefa034e698d43d89cede9",
+    "review": "沿用已核实版本的历史源码审查，并以新关联/观察专项正则重新扫描；结论仍限于所读发布文本。",
+    "hits_reviewed": [
+      {
+        "path": "profinet_live_adapter/live_dcp.mbt",
+        "line": 103,
+        "kinds": [
+          "observation_association_neighbor"
+        ],
+        "text": "/// Captures frames until timeout, parsing each as a DCP response addressed to",
+        "review": "网络/日志/策略领域的关联或观察邻近能力；所读命中未定位PTP/BMCA。"
+      },
+      {
+        "path": "profinet_trace_bridge/bridge.mbt",
+        "line": 2,
+        "kinds": [
+          "observation_association_neighbor"
+        ],
+        "text": "/// Offline PROFINET trace bridge for W5A.",
+        "review": "网络/日志/策略领域的关联或观察邻近能力；所读命中未定位PTP/BMCA。"
+      },
+      {
+        "path": "profinet_trace_bridge/bridge.mbt",
+        "line": 74,
+        "kinds": [
+          "observation_association_neighbor"
+        ],
+        "text": "pub(all) struct ProfinetOfflineTraceBridgeReport {",
+        "review": "网络/日志/策略领域的关联或观察邻近能力；所读命中未定位PTP/BMCA。"
+      },
+      {
+        "path": "profinet_trace_bridge/bridge.mbt",
+        "line": 87,
+        "kinds": [
+          "observation_association_neighbor"
+        ],
+        "text": "pub fn ProfinetOfflineTraceBridgeReport::passes(",
+        "review": "网络/日志/策略领域的关联或观察邻近能力；所读命中未定位PTP/BMCA。"
+      },
+      {
+        "path": "profinet_trace_bridge/bridge.mbt",
+        "line": 88,
+        "kinds": [
+          "observation_association_neighbor"
+        ],
+        "text": "  self : ProfinetOfflineTraceBridgeReport,",
+        "review": "网络/日志/策略领域的关联或观察邻近能力；所读命中未定位PTP/BMCA。"
+      },
+      {
+        "path": "profinet_trace_bridge/bridge.mbt",
+        "line": 235,
+        "kinds": [
+          "observation_association_neighbor"
+        ],
+        "text": "pub fn profinet_offline_trace_fixture(seed? : Int = 501) -> @trace.TraceLog {",
+        "review": "网络/日志/策略领域的关联或观察邻近能力；所读命中未定位PTP/BMCA。"
+      },
+      {
+        "path": "profinet_trace_bridge/bridge.mbt",
+        "line": 267,
+        "kinds": [
+          "observation_association_neighbor"
+        ],
+        "text": "    protocol_id=\"ProfinetOfflineStageTrace\",",
+        "review": "网络/日志/策略领域的关联或观察邻近能力；所读命中未定位PTP/BMCA。"
+      },
+      {
+        "path": "profinet_trace_bridge/bridge.mbt",
+        "line": 297,
+        "kinds": [
+          "observation_association_neighbor"
+        ],
+        "text": "  ).check_trace(profinet_offline_trace_fixture(seed~))",
+        "review": "网络/日志/策略领域的关联或观察邻近能力；所读命中未定位PTP/BMCA。"
+      },
+      {
+        "path": "profinet_trace_bridge/bridge.mbt",
+        "line": 301,
+        "kinds": [
+          "observation_association_neighbor"
+        ],
+        "text": "pub fn profinet_offline_trace_bridge_report(",
+        "review": "网络/日志/策略领域的关联或观察邻近能力；所读命中未定位PTP/BMCA。"
+      },
+      {
+        "path": "profinet_trace_bridge/bridge.mbt",
+        "line": 303,
+        "kinds": [
+          "observation_association_neighbor"
+        ],
+        "text": ") -> ProfinetOfflineTraceBridgeReport {",
+        "review": "网络/日志/策略领域的关联或观察邻近能力；所读命中未定位PTP/BMCA。"
+      },
+      {
+        "path": "profinet_trace_bridge/bridge.mbt",
+        "line": 304,
+        "kinds": [
+          "observation_association_neighbor"
+        ],
+        "text": "  let trace = profinet_offline_trace_fixture(seed~)",
+        "review": "网络/日志/策略领域的关联或观察邻近能力；所读命中未定位PTP/BMCA。"
+      },
+      {
+        "path": "profinet_trace_bridge/profinet_trace_bridge_test.mbt",
+        "line": 31,
+        "kinds": [
+          "observation_association_neighbor"
+        ],
+        "text": "test \"profinet offline trace fixture replays with stage labels\" {",
+        "review": "网络/日志/策略领域的关联或观察邻近能力；所读命中未定位PTP/BMCA。"
+      },
+      {
+        "path": "profinet_trace_bridge/profinet_trace_bridge_test.mbt",
+        "line": 32,
+        "kinds": [
+          "observation_association_neighbor"
+        ],
+        "text": "  let trace = @profinet_trace_bridge.profinet_offline_trace_fixture(seed=501)",
+        "review": "网络/日志/策略领域的关联或观察邻近能力；所读命中未定位PTP/BMCA。"
+      },
+      {
+        "path": "profinet_trace_bridge/profinet_trace_bridge_test.mbt",
+        "line": 53,
+        "kinds": [
+          "observation_association_neighbor"
+        ],
+        "text": "test \"profinet offline protocol monitor consumes the bridge trace\" {",
+        "review": "网络/日志/策略领域的关联或观察邻近能力；所读命中未定位PTP/BMCA。"
+      },
+      {
+        "path": "profinet_trace_bridge/profinet_trace_bridge_test.mbt",
+        "line": 54,
+        "kinds": [
+          "observation_association_neighbor"
+        ],
+        "text": "  let trace = @profinet_trace_bridge.profinet_offline_trace_fixture(seed=502)",
+        "review": "网络/日志/策略领域的关联或观察邻近能力；所读命中未定位PTP/BMCA。"
+      },
+      {
+        "path": "profinet_trace_bridge/profinet_trace_bridge_test.mbt",
+        "line": 63,
+        "kinds": [
+          "observation_association_neighbor"
+        ],
+        "text": "  let report = @profinet_trace_bridge.profinet_offline_trace_bridge_report(",
+        "review": "网络/日志/策略领域的关联或观察邻近能力；所读命中未定位PTP/BMCA。"
+      }
+    ]
+  },
+  {
+    "name": "mokomoking2501/lockwire",
+    "version": "0.1.0",
+    "evidence_mode": "reused_previous_version_pinned_zip",
+    "sha256": "47258f2a4843bb4c2b79969a21b65e9ff2dad93429d36157d8242a6b88c6e0a3",
+    "review": "沿用已核实版本的历史源码审查，并以新关联/观察专项正则重新扫描；结论仍限于所读发布文本。",
+    "hits_reviewed": [
+      {
+        "path": "driver/native/native_test.mbt",
+        "line": 787,
+        "kinds": [
+          "observation_association_neighbor"
+        ],
+        "text": "  let live_capture = find_module(\"native.stub.npcap_windows_live_capture\")",
+        "review": "网络/日志/策略领域的关联或观察邻近能力；所读命中未定位PTP/BMCA。"
+      },
+      {
+        "path": "driver/native/native_test.mbt",
+        "line": 790,
+        "kinds": [
+          "observation_association_neighbor"
+        ],
+        "text": "    contains_file(live_capture.c_files, \"stub_npcap_windows_live_capture.c\"),",
+        "review": "网络/日志/策略领域的关联或观察邻近能力；所读命中未定位PTP/BMCA。"
+      },
+      {
+        "path": "hal/embedded/c/stub_stm32_periph.c",
+        "line": 7,
+        "kinds": [
+          "ptp_specific_token"
+        ],
+        "text": " * follow-up. They are compiled by the external arm-none-eabi-gcc build.",
+        "review": "迭代文档、测试函数或普通后续工作文字，无PTP Follow_Up语义。"
+      },
+      {
+        "path": "README.mbt.md",
+        "line": 325,
+        "kinds": [
+          "observation_association_neighbor"
+        ],
+        "text": "The benchmark report path is deterministic and offline. `RuntimeBenchmarkReport` exposes `events/run`, portable `trace-bytes/run`, and declared `copy/frame`, while `events/s`, `trace-throughput`, and `alloc/event` are explicit `unsupported` metrics until a backend supplies wall-clock and allocation counters. The P2P native/wasm comparison uses portable trace size and digest, not backend-labelled golden text, and does not claim hard real-time or real NIC performance.",
+        "review": "网络/日志/策略领域的关联或观察邻近能力；所读命中未定位PTP/BMCA。"
+      },
+      {
+        "path": "sim/arbitrated_bus_test.mbt",
+        "line": 89,
+        "kinds": [
+          "observation_association_neighbor"
+        ],
+        "text": "  let text = @sim.run_arbitrated_bus_offline(seed=766).trace.to_golden_text()",
+        "review": "网络/日志/策略领域的关联或观察邻近能力；所读命中未定位PTP/BMCA。"
+      }
+    ]
+  },
+  {
+    "name": "mokomoking2501/profinet_master",
+    "version": "0.1.0",
+    "evidence_mode": "reused_previous_version_pinned_zip",
+    "sha256": "7d4757bde619567b711891748f9010b323416420f5415e5c05a8a312964d66b6",
+    "review": "802.1AS命中为snmp_feature_ieee_8021as_mib_optional能力标志，源码为MIB声明/输出/测试，未发现gPTP报文关联或BMCA。",
+    "hits_reviewed": [
+      {
+        "path": "docs/live-regression-checklist.md",
+        "line": 332,
+        "kinds": [
+          "ptp_specific_token"
+        ],
+        "text": "`TASKS.md` 的 `RT/AR Follow-up Backlog`。未达到代码实现和实机证据前不得勾选。",
+        "review": "迭代文档、测试函数或普通后续工作文字，无PTP Follow_Up语义。"
+      },
+      {
+        "path": "docs/protocol-feature-pending.md",
+        "line": 15,
+        "kinds": [
+          "ptp_specific_token"
+        ],
+        "text": "2026-06-12 按 PN-AL-Protocol d25 复查 live RT/AR 路径后新增一批 RT 层缺口。2026-06-15 已将其拆入 `TASKS.md` 的 `RT/AR Follow-up Backlog`，并在 `protocol-feature-acceptance.md` / `live-regression-checklist.md` 建验收入口。",
+        "review": "迭代文档、测试函数或普通后续工作文字，无PTP Follow_Up语义。"
+      },
+      {
+        "path": "docs/research/rt-006-iocr-phase-sequence.md",
+        "line": 41,
+        "kinds": [
+          "ptp_specific_token"
+        ],
+        "text": "- `docs/rt-pitfalls-and-lessons.md`，访问日期 2026-06-16：Phase/Sequence follow-up rationale。",
+        "review": "迭代文档、测试函数或普通后续工作文字，无PTP Follow_Up语义。"
+      },
+      {
+        "path": "docs/rt-pitfalls-and-lessons.md",
+        "line": 58,
+        "kinds": [
+          "ptp_specific_token"
+        ],
+        "text": "以下是本轮按参考规范复查 RT/AR 路径后明确的缺口，按建议优先级排列。2026-06-15 已拆入 `TASKS.md` 的 `RT/AR Follow-up Backlog`（RT-001..RT-008），并在 `docs/protocol-feature-acceptance.md` / `docs/live-regression-checklist.md` 建验收入口；落地时从 `TASKS.md` 取项推进。",
+        "review": "迭代文档、测试函数或普通后续工作文字，无PTP Follow_Up语义。"
+      },
+      {
+        "path": "gsd_file_fallback.mbt",
+        "line": 335,
+        "kinds": [
+          "observation_association_neighbor"
+        ],
+        "text": "    \"arp_response_timeout_ms=\" + arp_response_timeout_ms().to_string(),",
+        "review": "802.1AS命中为snmp_feature_ieee_8021as_mib_optional能力标志，源码为MIB声明/输出/测试，未发现gPTP报文关联或BMCA。"
+      },
+      {
+        "path": "gsd_file_fallback.mbt",
+        "line": 336,
+        "kinds": [
+          "observation_association_neighbor"
+        ],
+        "text": "    \"dns_request_timeout_ms=\" + dns_request_timeout_ms().to_string(),",
+        "review": "802.1AS命中为snmp_feature_ieee_8021as_mib_optional能力标志，源码为MIB声明/输出/测试，未发现gPTP报文关联或BMCA。"
+      },
+      {
+        "path": "gsd_file_fallback.mbt",
+        "line": 366,
+        "kinds": [
+          "ptp_specific_token"
+        ],
+        "text": "    \"snmp_feature_ieee_8021as_mib_optional=\" +",
+        "review": "PROFINET可选802.1AS MIB能力声明及测试。"
+      },
+      {
+        "path": "gsd_file_fallback.mbt",
+        "line": 367,
+        "kinds": [
+          "ptp_specific_token"
+        ],
+        "text": "    snmp_feature_ieee_8021as_mib_optional().to_string(),",
+        "review": "PROFINET可选802.1AS MIB能力声明及测试。"
+      },
+      {
+        "path": "gsd_native.mbt",
+        "line": 283,
+        "kinds": [
+          "observation_association_neighbor"
+        ],
+        "text": "    \"arp_response_timeout_ms=\" + arp_response_timeout_ms().to_string(),",
+        "review": "802.1AS命中为snmp_feature_ieee_8021as_mib_optional能力标志，源码为MIB声明/输出/测试，未发现gPTP报文关联或BMCA。"
+      },
+      {
+        "path": "gsd_native.mbt",
+        "line": 284,
+        "kinds": [
+          "observation_association_neighbor"
+        ],
+        "text": "    \"dns_request_timeout_ms=\" + dns_request_timeout_ms().to_string(),",
+        "review": "802.1AS命中为snmp_feature_ieee_8021as_mib_optional能力标志，源码为MIB声明/输出/测试，未发现gPTP报文关联或BMCA。"
+      },
+      {
+        "path": "gsd_native.mbt",
+        "line": 314,
+        "kinds": [
+          "ptp_specific_token"
+        ],
+        "text": "    \"snmp_feature_ieee_8021as_mib_optional=\" +",
+        "review": "PROFINET可选802.1AS MIB能力声明及测试。"
+      },
+      {
+        "path": "gsd_native.mbt",
+        "line": 315,
+        "kinds": [
+          "ptp_specific_token"
+        ],
+        "text": "    snmp_feature_ieee_8021as_mib_optional().to_string(),",
+        "review": "PROFINET可选802.1AS MIB能力声明及测试。"
+      },
+      {
+        "path": "profinet_master.mbt",
+        "line": 362,
+        "kinds": [
+          "ptp_specific_token"
+        ],
+        "text": "pub fn snmp_feature_ieee_8021as_mib_optional() -> Bool {",
+        "review": "PROFINET可选802.1AS MIB能力声明及测试。"
+      },
+      {
+        "path": "profinet_master.mbt",
+        "line": 2507,
+        "kinds": [
+          "ptp_specific_token"
+        ],
+        "text": "  let mut supported_ieee_8021as = snmp_feature_ieee_8021as_mib_optional().to_string()",
+        "review": "PROFINET可选802.1AS MIB能力声明及测试。"
+      },
+      {
+        "path": "profinet_master.mbt",
+        "line": 2530,
+        "kinds": [
+          "ptp_specific_token"
+        ],
+        "text": "      \"supported_ieee_8021as\" =>",
+        "review": "PROFINET可选802.1AS MIB能力声明及测试。"
+      },
+      {
+        "path": "profinet_master.mbt",
+        "line": 2531,
+        "kinds": [
+          "ptp_specific_token"
+        ],
+        "text": "        supported_ieee_8021as = normalize_fixture_bool_text(value)",
+        "review": "PROFINET可选802.1AS MIB能力声明及测试。"
+      },
+      {
+        "path": "profinet_master.mbt",
+        "line": 2553,
+        "kinds": [
+          "ptp_specific_token"
+        ],
+        "text": "    \"supported_ieee_8021as=\" + supported_ieee_8021as,",
+        "review": "PROFINET可选802.1AS MIB能力声明及测试。"
+      },
+      {
+        "path": "profinet_master.mbt",
+        "line": 2732,
+        "kinds": [
+          "observation_association_neighbor"
+        ],
+        "text": "    \"arp_response_timeout_ms=\" + arp_response_timeout_ms().to_string(),",
+        "review": "802.1AS命中为snmp_feature_ieee_8021as_mib_optional能力标志，源码为MIB声明/输出/测试，未发现gPTP报文关联或BMCA。"
+      },
+      {
+        "path": "profinet_master.mbt",
+        "line": 2733,
+        "kinds": [
+          "observation_association_neighbor"
+        ],
+        "text": "    \"dns_request_timeout_ms=\" + dns_request_timeout_ms().to_string(),",
+        "review": "802.1AS命中为snmp_feature_ieee_8021as_mib_optional能力标志，源码为MIB声明/输出/测试，未发现gPTP报文关联或BMCA。"
+      },
+      {
+        "path": "profinet_master.mbt",
+        "line": 2763,
+        "kinds": [
+          "ptp_specific_token"
+        ],
+        "text": "    \"snmp_feature_ieee_8021as_mib_optional=\" +",
+        "review": "PROFINET可选802.1AS MIB能力声明及测试。"
+      },
+      {
+        "path": "profinet_master.mbt",
+        "line": 2764,
+        "kinds": [
+          "ptp_specific_token"
+        ],
+        "text": "    snmp_feature_ieee_8021as_mib_optional().to_string(),",
+        "review": "PROFINET可选802.1AS MIB能力声明及测试。"
+      },
+      {
+        "path": "profinet_master.mbt",
+        "line": 2869,
+        "kinds": [
+          "observation_association_neighbor"
+        ],
+        "text": "      \"arp_response_timeout_ms=\" + arp_response_timeout_ms().to_string(),",
+        "review": "802.1AS命中为snmp_feature_ieee_8021as_mib_optional能力标志，源码为MIB声明/输出/测试，未发现gPTP报文关联或BMCA。"
+      },
+      {
+        "path": "profinet_master.mbt",
+        "line": 2870,
+        "kinds": [
+          "observation_association_neighbor"
+        ],
+        "text": "      \"dns_request_timeout_ms=\" + dns_request_timeout_ms().to_string(),",
+        "review": "802.1AS命中为snmp_feature_ieee_8021as_mib_optional能力标志，源码为MIB声明/输出/测试，未发现gPTP报文关联或BMCA。"
+      },
+      {
+        "path": "profinet_master.mbt",
+        "line": 2905,
+        "kinds": [
+          "ptp_specific_token"
+        ],
+        "text": "      \"snmp_feature_ieee_8021as_mib_optional=\" +",
+        "review": "PROFINET可选802.1AS MIB能力声明及测试。"
+      },
+      {
+        "path": "profinet_master.mbt",
+        "line": 2906,
+        "kinds": [
+          "ptp_specific_token"
+        ],
+        "text": "      snmp_feature_ieee_8021as_mib_optional().to_string(),",
+        "review": "PROFINET可选802.1AS MIB能力声明及测试。"
+      },
+      {
+        "path": "profinet_master_test.mbt",
+        "line": 148,
+        "kinds": [
+          "ptp_specific_token"
+        ],
+        "text": "  assert_eq(@profinet_master.snmp_feature_ieee_8021as_mib_optional(), true)",
+        "review": "PROFINET可选802.1AS MIB能力声明及测试。"
+      },
+      {
+        "path": "profinet_master_test.mbt",
+        "line": 497,
+        "kinds": [
+          "observation_association_neighbor"
+        ],
+        "text": "    \"arp_cache_timeout_ms=60000\", \"arp_response_timeout_ms=2000\", \"dns_request_timeout_ms=16000\",",
+        "review": "802.1AS命中为snmp_feature_ieee_8021as_mib_optional能力标志，源码为MIB声明/输出/测试，未发现gPTP报文关联或BMCA。"
+      },
+      {
+        "path": "profinet_master_test.mbt",
+        "line": 505,
+        "kinds": [
+          "ptp_specific_token"
+        ],
+        "text": "    \"snmp_feature_mib2_required=true\", \"snmp_feature_lldp_mib_required=true\", \"snmp_feature_ieee_8021as_mib_optional=true\",",
+        "review": "PROFINET可选802.1AS MIB能力声明及测试。"
+      },
+      {
+        "path": "profinet_master_test.mbt",
+        "line": 1302,
+        "kinds": [
+          "ptp_specific_token"
+        ],
+        "text": "    \"supported_mib2=true\", \"supported_lldp=true\", \"supported_ieee_8021as=false\",",
+        "review": "PROFINET可选802.1AS MIB能力声明及测试。"
+      },
+      {
+        "path": "profinet_master_test.mbt",
+        "line": 1310,
+        "kinds": [
+          "ptp_specific_token"
+        ],
+        "text": "    \"supported_ieee_8021as=false\", \"supported_bridge=false\", \"supported_pno=true\",",
+        "review": "PROFINET可选802.1AS MIB能力声明及测试。"
+      },
+      {
+        "path": "TASKS.md",
+        "line": 33,
+        "kinds": [
+          "ptp_specific_token"
+        ],
+        "text": "## RT/AR Follow-up Backlog",
+        "review": "迭代文档、测试函数或普通后续工作文字，无PTP Follow_Up语义。"
+      },
+      {
+        "path": "TASKS.md",
+        "line": 104,
+        "kinds": [
+          "ptp_specific_token"
+        ],
+        "text": "当前 RT/AR Follow-up Backlog 暂无新的 Open 项；`RT-007` 保持 Deferred，等待未来 UDP-RTC 路径。`RT-001`、`RT-002`、`RT-003`、`RT-004`、`RT-005`、`RT-006`",
+        "review": "迭代文档、测试函数或普通后续工作文字，无PTP Follow_Up语义。"
+      }
+    ]
+  },
+  {
+    "name": "mokomoking2501/MoonECAT",
+    "version": "0.2.0",
+    "evidence_mode": "reused_previous_version_pinned_zip",
+    "sha256": "acb5fc45947d4c7caec98008d41ad89114ab10dc2544d5fcea9b65ff1288b3da",
+    "review": "沿用已核实版本的历史源码审查，并以新关联/观察专项正则重新扫描；结论仍限于所读发布文本。",
+    "hits_reviewed": [
+      {
+        "path": "cmd/main/sii_format.mbt",
+        "line": 702,
+        "kinds": [
+          "observation_association_neighbor"
+        ],
+        "text": "    timeouts.mailbox_request_timeout_ms.to_string() +",
+        "review": "网络/日志/策略领域的关联或观察邻近能力；所读命中未定位PTP/BMCA。"
+      },
+      {
+        "path": "cmd/main/sii_format.mbt",
+        "line": 707,
+        "kinds": [
+          "observation_association_neighbor"
+        ],
+        "text": "    timeouts.mailbox_response_timeout_ms.to_string() +",
+        "review": "网络/日志/策略领域的关联或观察邻近能力；所读命中未定位PTP/BMCA。"
+      },
+      {
+        "path": "mailbox/mailbox_test.mbt",
+        "line": 262,
+        "kinds": [
+          "observation_association_neighbor"
+        ],
+        "text": "  @debug.assert_eq(timeouts.mailbox_request_timeout_ms, 100U)",
+        "review": "网络/日志/策略领域的关联或观察邻近能力；所读命中未定位PTP/BMCA。"
+      },
+      {
+        "path": "mailbox/mailbox_test.mbt",
+        "line": 263,
+        "kinds": [
+          "observation_association_neighbor"
+        ],
+        "text": "  @debug.assert_eq(timeouts.mailbox_response_timeout_ms, 1000U)",
+        "review": "网络/日志/策略领域的关联或观察邻近能力；所读命中未定位PTP/BMCA。"
+      },
+      {
+        "path": "plugin/extism/entrypoints.mbt",
+        "line": 74,
+        "kinds": [
+          "observation_association_neighbor"
+        ],
+        "text": "  let timeout = request_timeout(req)",
+        "review": "网络/日志/策略领域的关联或观察邻近能力；所读命中未定位PTP/BMCA。"
+      },
+      {
+        "path": "plugin/extism/entrypoints.mbt",
+        "line": 84,
+        "kinds": [
+          "observation_association_neighbor"
+        ],
+        "text": "fn request_timeout(req : PluginRequest) -> @hal.Duration {",
+        "review": "网络/日志/策略领域的关联或观察邻近能力；所读命中未定位PTP/BMCA。"
+      },
+      {
+        "path": "protocol/protocol_test.mbt",
+        "line": 1526,
+        "kinds": [
+          "observation_association_neighbor"
+        ],
+        "text": "test \"request_state_with_process_data_snapshot captures AL error window\" {",
+        "review": "网络/日志/策略领域的关联或观察邻近能力；所读命中未定位PTP/BMCA。"
+      },
+      {
+        "path": "runtime/diagnostic_surface_test.mbt",
+        "line": 462,
+        "kinds": [
+          "observation_association_neighbor"
+        ],
+        "text": "  // Issues: timeouts>0 (Degrade), cycles_ok<requested (Degrade), DcDrift (Block)",
+        "review": "网络/日志/策略领域的关联或观察邻近能力；所读命中未定位PTP/BMCA。"
+      },
+      {
+        "path": "src/ethercrab-callflow-analysis.md",
+        "line": 410,
+        "kinds": [
+          "observation_association_neighbor"
+        ],
+        "text": "        │             │   └── .timeout(mailbox_response)",
+        "review": "网络/日志/策略领域的关联或观察邻近能力；所读命中未定位PTP/BMCA。"
+      }
+    ]
+  },
+  {
+    "name": "CJR-ai-nb/evowitness",
+    "version": "0.1.1",
+    "evidence_mode": "reused_previous_version_pinned_zip",
+    "sha256": "c049b9511e769ddaf61946bf29786d0aa9dbe1245a7015272c44f27100b9e443",
+    "review": "沿用已核实版本的历史源码审查，并以新关联/观察专项正则重新扫描；结论仍限于所读发布文本。",
+    "hits_reviewed": []
+  },
+  {
+    "name": "HhWw96/moontxnwitness",
+    "version": "0.1.0",
+    "evidence_mode": "reused_previous_version_pinned_zip",
+    "sha256": "671c44572cda9871389b7dbb2368c5d6c18c031f9210b457363392a14f0c78b9",
+    "review": "沿用已核实版本的历史源码审查，并以新关联/观察专项正则重新扫描；结论仍限于所读发布文本。",
+    "hits_reviewed": [
+      {
+        "path": "scripts/performance-baseline.py",
+        "line": 23,
+        "kinds": [
+          "observation_association_neighbor"
+        ],
+        "text": "        with urllib.request.urlopen(request, timeout=60) as response:",
+        "review": "网络/日志/策略领域的关联或观察邻近能力；所读命中未定位PTP/BMCA。"
+      },
+      {
+        "path": "scripts/release.py",
+        "line": 39,
+        "kinds": [
+          "observation_association_neighbor"
+        ],
+        "text": "            raise TimeoutError('CI did not finish within the observation window: ' + workflow)",
+        "review": "网络/日志/策略领域的关联或观察邻近能力；所读命中未定位PTP/BMCA。"
+      },
+      {
+        "path": "scripts/verify_publication.py",
+        "line": 49,
+        "kinds": [
+          "observation_association_neighbor"
+        ],
+        "text": "    with urllib.request.urlopen(request, timeout=60) as response:",
+        "review": "网络/日志/策略领域的关联或观察邻近能力；所读命中未定位PTP/BMCA。"
+      },
+      {
+        "path": "verification/releases/0.0.10/complete-v010.json",
+        "line": 3649,
+        "kinds": [
+          "ptp_specific_token"
+        ],
+        "text": "            1.1588999999999885,",
+        "review": "数字/哈希/测试性能值中的1588子串，无协议语义。"
+      },
+      {
+        "path": "verification/releases/0.0.10/complete-v010.json",
+        "line": 3671,
+        "kinds": [
+          "ptp_specific_token"
+        ],
+        "text": "          \"medianMs\": 1.1588999999999885,",
+        "review": "数字/哈希/测试性能值中的1588子串，无协议语义。"
+      },
+      {
+        "path": "verification/releases/0.0.10/direct-parser-reduction-v010.json",
+        "line": 25,
+        "kinds": [
+          "ptp_specific_token"
+        ],
+        "text": "      \"memoryRatio\": 0.9476684601588522,",
+        "review": "数字/哈希/测试性能值中的1588子串，无协议语义。"
+      },
+      {
+        "path": "verification/releases/0.0.10/final-reduction-v010.json",
+        "line": 4059,
+        "kinds": [
+          "ptp_specific_token"
+        ],
+        "text": "            3.1588000000000136,",
+        "review": "数字/哈希/测试性能值中的1588子串，无协议语义。"
+      },
+      {
+        "path": "verification/releases/0.0.10/release-gate-v010.json",
+        "line": 246,
+        "kinds": [
+          "ptp_specific_token"
+        ],
+        "text": "            39.1588999999999",
+        "review": "数字/哈希/测试性能值中的1588子串，无协议语义。"
+      },
+      {
+        "path": "verification/releases/0.0.10/release-gate-v010.json",
+        "line": 2321,
+        "kinds": [
+          "ptp_specific_token"
+        ],
+        "text": "            1.1588000000000136,",
+        "review": "数字/哈希/测试性能值中的1588子串，无协议语义。"
+      },
+      {
+        "path": "verification/releases/0.0.11/postgres/sql-events.json",
+        "line": 1773,
+        "kinds": [
+          "ptp_specific_token"
+        ],
+        "text": "    \"backendPid\": 158848,",
+        "review": "数字/哈希/测试性能值中的1588子串，无协议语义。"
+      },
+      {
+        "path": "verification/releases/0.1.0/release-gate-v1.json",
+        "line": 1471,
+        "kinds": [
+          "ptp_specific_token"
+        ],
+        "text": "            5.1588999999999885,",
+        "review": "数字/哈希/测试性能值中的1588子串，无协议语义。"
+      },
+      {
+        "path": "verification/releases/0.1.0/release-gate-v1.json",
+        "line": 1500,
+        "kinds": [
+          "ptp_specific_token"
+        ],
+        "text": "          \"p95Ms\": 5.1588999999999885,",
+        "review": "数字/哈希/测试性能值中的1588子串，无协议语义。"
+      }
+    ]
+  },
+  {
+    "name": "length-super/moonctl",
+    "version": "0.2.0",
+    "evidence_mode": "reused_previous_version_pinned_zip",
+    "sha256": "5146fc479080f35a72c8d9d45d46d616eed57b436359ff75d3788b3ec1694249",
+    "review": "沿用已核实版本的历史源码审查，并以新关联/观察专项正则重新扫描；结论仍限于所读发布文本。",
+    "hits_reviewed": []
+  },
+  {
+    "name": "cghyyrrt/moonbit-pcap",
+    "version": "0.1.2",
+    "evidence_mode": "reused_previous_version_pinned_zip",
+    "sha256": "ddf593d445aafa76f6a18b55a6f974bb53226e870d8790258982e8725625ec0c",
+    "review": "沿用已核实版本的历史源码审查，并以新关联/观察专项正则重新扫描；结论仍限于所读发布文本。",
+    "hits_reviewed": []
+  },
+  {
+    "name": "vicTop-cw/mcpconftest",
+    "version": "0.8.0",
+    "evidence_mode": "reused_previous_version_pinned_zip",
+    "sha256": "cbfaa8bc93387608f66cf14e59618d70b53111a330a44a83868e99682eab736b",
+    "review": "沿用已核实版本的历史源码审查，并以新关联/观察专项正则重新扫描；结论仍限于所读发布文本。",
+    "hits_reviewed": []
+  },
+  {
+    "name": "xuting22/ntp",
+    "version": "0.4.0",
+    "evidence_mode": "reused_previous_version_pinned_zip",
+    "sha256": "ab90ce938633becc22f782f392a483d01d238a4a01857f6f3b212034c6436eb3",
+    "review": "沿用已核实版本的历史源码审查，并以新关联/观察专项正则重新扫描；结论仍限于所读发布文本。",
+    "hits_reviewed": [
+      {
+        "path": "filter_golden_test.mbt",
+        "line": 39,
+        "kinds": [
+          "ptp_specific_token"
+        ],
+        "text": "    \".00022468769431114197,\\\"jitter\\\":0.0013655672398473697,\\\"selected\\\":156,\\\"count\\\":8,\\\"reach\\\":239,\\\"fresh\\\":false}},{\\\"op\\\":\\\"poll\\\",\\\"now\\\":164},{\\\"op\\\":\\\"observe\\\",\\\"offset\\\":0.000732421875,\\\"delay\\\":0.0107421875,\\\"dispersion\\\":2.86102294921875e-06,\\\"now\\\":164,\\\"expected\\\":{\\\"offset\\\":0.0009765625,\\\"delay\\\":0.005859375,\\\"dispersion\\\":0.00021052290797233581,\\\"jitter\\\":0.0012066715884490927,\\\"selected\\\":156,\\\"count\\\":8,\\\"reach\\\":223,\\\"fresh\\\":false}},{\\\"op\\\":\\\"state\\\",\\\"now\\\":166,\\\"expected\\\":{\\\"offset\\\":0.0009765625,\\\"delay\\\":0.005859375,\\\"dispersion\\\":0.00024040572047233583,\\\"jitter\\\":0.0012066715884490927,\\\"selected\\\":156,\\\"count\\\":8,\\\"reach\\\":223,\\\"fresh\\\":false}},{\\\"op\\\":\\\"poll\\\",\\\"now\\\":168},{\\\"op\\\":\\\"observe\\\",\\\"offset\\\":-0.001708984375,\\\"delay\\\":0.0146484375,\\\"dispersion\\\":5.7220458984375e-06,\\\"now\\\":168,\\\"expected\\\":{\\\"offset\\\":0.0009765625,\\\"delay\\\":0.005859375,\\\"dispersion\\\":0.00023683655619621276,\\\"jitter\\\":0.0014764237226922937,\\\"selected\\\":156,\\\"count\\\":8,\\\"reach\\\":1",
+        "review": "数字/哈希/测试性能值中的1588子串，无协议语义。"
+      },
+      {
+        "path": "filter_golden_test.mbt",
+        "line": 104,
+        "kinds": [
+          "ptp_specific_token"
+        ],
+        "text": "    \",\\\"jitter\\\":0.0011301514889801654,\\\"selected\\\":128,\\\"count\\\":8,\\\"reach\\\":251,\\\"fresh\\\":true}},{\\\"op\\\":\\\"state\\\",\\\"now\\\":146,\\\"expected\\\":{\\\"offset\\\":0.0,\\\"delay\\\":0.009765625,\\\"dispersion\\\":0.0002557214152812958,\\\"jitter\\\":0.0011301514889801654,\\\"selected\\\":128,\\\"count\\\":8,\\\"reach\\\":251,\\\"fresh\\\":false}},{\\\"op\\\":\\\"poll\\\",\\\"now\\\":148},{\\\"op\\\":\\\"observe\\\",\\\"offset\\\":0.001220703125,\\\"delay\\\":0.01953125,\\\"dispersion\\\":2.86102294921875e-06,\\\"now\\\":148,\\\"expected\\\":{\\\"offset\\\":0.0,\\\"delay\\\":0.009765625,\\\"dispersion\\\":0.00021774659991264343,\\\"jitter\\\":0.0012066715884490927,\\\"selected\\\":128,\\\"count\\\":8,\\\"reach\\\":247,\\\"fresh\\\":false}},{\\\"op\\\":\\\"state\\\",\\\"now\\\":150,\\\"expected\\\":{\\\"offset\\\":0.0,\\\"delay\\\":0.009765625,\\\"dispersion\\\":0.00024762941241264345,\\\"jitter\\\":0.0012066715884490927,\\\"selected\\\":128,\\\"count\\\":8,\\\"reach\\\":247,\\\"fresh\\\":false}},{\\\"op\\\":\\\"poll\\\",\\\"now\\\":152},{\\\"op\\\":\\\"observe\\\",\\\"offset\\\":-0.0009765625,\\\"delay\\\":0.021484375,\\\"dispersion\\\":5.7220458984375e-06,\\\"now\\\":152,\\\"ex",
+        "review": "数字/哈希/测试性能值中的1588子串，无协议语义。"
+      },
+      {
+        "path": "filter_golden_test.mbt",
+        "line": 110,
+        "kinds": [
+          "ptp_specific_token"
+        ],
+        "text": "    \"684,\\\"selected\\\":136,\\\"count\\\":8,\\\"reach\\\":255,\\\"fresh\\\":false}},{\\\"op\\\":\\\"poll\\\",\\\"now\\\":140},{\\\"op\\\":\\\"observe\\\",\\\"offset\\\":-0.001220703125,\\\"delay\\\":0.00390625,\\\"dispersion\\\":1.9073486328125e-06,\\\"now\\\":140,\\\"expected\\\":{\\\"offset\\\":-0.0009765625,\\\"delay\\\":0.0009765625,\\\"dispersion\\\":0.0001973004138469696,\\\"jitter\\\":0.0011525328991251608,\\\"selected\\\":136,\\\"count\\\":8,\\\"reach\\\":255,\\\"fresh\\\":false}},{\\\"op\\\":\\\"state\\\",\\\"now\\\":142,\\\"expected\\\":{\\\"offset\\\":-0.0009765625,\\\"delay\\\":0.0009765625,\\\"dispersion\\\":0.0002570660388469696,\\\"jitter\\\":0.0011525328991251608,\\\"selected\\\":136,\\\"count\\\":8,\\\"reach\\\":255,\\\"fresh\\\":false}},{\\\"op\\\":\\\"poll\\\",\\\"now\\\":144},{\\\"op\\\":\\\"observe\\\",\\\"offset\\\":0.00146484375,\\\"delay\\\":0.021484375,\\\"dispersion\\\":6.67572021484375e-06,\\\"now\\\":144,\\\"expected\\\":{\\\"offset\\\":-0.0009765625,\\\"delay\\\":0.0009765625,\\\"dispersion\\\":0.00031308911442756655,\\\"jitter\\\":0.001220703125,\\\"selected\\\":136,\\\"count\\\":8,\\\"reach\\\":255,\\\"fresh\\\":false}},{\\\"op\\\":\\\"state\\\",\\\"now\\\":146,\\\"expec",
+        "review": "网络/日志/策略领域的关联或观察邻近能力；所读命中未定位PTP/BMCA。"
+      },
+      {
+        "path": "filter_golden_test.mbt",
+        "line": 133,
+        "kinds": [
+          "ptp_specific_token"
+        ],
+        "text": "    \"h\\\":false}},{\\\"op\\\":\\\"poll\\\",\\\"now\\\":156},{\\\"op\\\":\\\"observe\\\",\\\"offset\\\":-0.001220703125,\\\"delay\\\":0.015625,\\\"dispersion\\\":4.76837158203125e-06,\\\"now\\\":156,\\\"expected\\\":{\\\"offset\\\":0.0009765625,\\\"delay\\\":0.0029296875,\\\"dispersion\\\":3.1851232051849365e-06,\\\"jitter\\\":0.0020613004821131704,\\\"selected\\\":132,\\\"count\\\":8,\\\"reach\\\":255,\\\"fresh\\\":true}},{\\\"op\\\":\\\"state\\\",\\\"now\\\":158,\\\"expected\\\":{\\\"offset\\\":0.0009765625,\\\"delay\\\":0.0029296875,\\\"dispersion\\\":3.1851232051849365e-06,\\\"jitter\\\":0.0020613004821131704,\\\"selected\\\":132,\\\"count\\\":8,\\\"reach\\\":255,\\\"fresh\\\":false}},{\\\"op\\\":\\\"poll\\\",\\\"now\\\":160},{\\\"op\\\":\\\"observe\\\",\\\"offset\\\":0.0009765625,\\\"delay\\\":0.0146484375,\\\"dispersion\\\":3.814697265625e-06,\\\"now\\\":160,\\\"expected\\\":{\\\"offset\\\":0.0009765625,\\\"delay\\\":0.0029296875,\\\"dispersion\\\":3.155320882797241e-06,\\\"jitter\\\":0.001794059870202523,\\\"selected\\\":132,\\\"count\\\":8,\\\"reach\\\":255,\\\"fresh\\\":false}},{\\\"op\\\":\\\"state\\\",\\\"now\\\":162,\\\"expected\\\":{\\\"offset\\\":0.0009765625,\\\"delay\\\":0.0029296875",
+        "review": "网络/日志/策略领域的关联或观察邻近能力；所读命中未定位PTP/BMCA。"
+      },
+      {
+        "path": "evidence/filter-oracle.json",
+        "line": 1103,
+        "kinds": [
+          "ptp_specific_token"
+        ],
+        "text": "            \"jitter\": 0.0012066715884490927,",
+        "review": "数字/哈希/测试性能值中的1588子串，无协议语义。"
+      },
+      {
+        "path": "evidence/filter-oracle.json",
+        "line": 1117,
+        "kinds": [
+          "ptp_specific_token"
+        ],
+        "text": "            \"jitter\": 0.0012066715884490927,",
+        "review": "数字/哈希/测试性能值中的1588子串，无协议语义。"
+      },
+      {
+        "path": "evidence/filter-oracle.json",
+        "line": 9662,
+        "kinds": [
+          "ptp_specific_token"
+        ],
+        "text": "            \"jitter\": 0.0012066715884490927,",
+        "review": "数字/哈希/测试性能值中的1588子串，无协议语义。"
+      },
+      {
+        "path": "evidence/filter-oracle.json",
+        "line": 9676,
+        "kinds": [
+          "ptp_specific_token"
+        ],
+        "text": "            \"jitter\": 0.0012066715884490927,",
+        "review": "数字/哈希/测试性能值中的1588子串，无协议语义。"
+      },
+      {
+        "path": "evidence/filter-oracle.json",
+        "line": 9697,
+        "kinds": [
+          "ptp_specific_token"
+        ],
+        "text": "            \"jitter\": 0.0012066715884490927,",
+        "review": "数字/哈希/测试性能值中的1588子串，无协议语义。"
+      },
+      {
+        "path": "evidence/filter-oracle.json",
+        "line": 9711,
+        "kinds": [
+          "ptp_specific_token"
+        ],
+        "text": "            \"jitter\": 0.0012066715884490927,",
+        "review": "数字/哈希/测试性能值中的1588子串，无协议语义。"
+      },
+      {
+        "path": "evidence/filter-oracle.json",
+        "line": 10491,
+        "kinds": [
+          "ptp_specific_token"
+        ],
+        "text": "            \"jitter\": 0.0012066715884490927,",
+        "review": "数字/哈希/测试性能值中的1588子串，无协议语义。"
+      },
+      {
+        "path": "evidence/filter-oracle.json",
+        "line": 10505,
+        "kinds": [
+          "ptp_specific_token"
+        ],
+        "text": "            \"jitter\": 0.0012066715884490927,",
+        "review": "数字/哈希/测试性能值中的1588子串，无协议语义。"
+      },
+      {
+        "path": "evidence/filter-oracle.json",
+        "line": 13537,
+        "kinds": [
+          "ptp_specific_token"
+        ],
+        "text": "            \"jitter\": 0.0012066715884490927,",
+        "review": "数字/哈希/测试性能值中的1588子串，无协议语义。"
+      },
+      {
+        "path": "evidence/filter-oracle.json",
+        "line": 13551,
+        "kinds": [
+          "ptp_specific_token"
+        ],
+        "text": "            \"jitter\": 0.0012066715884490927,",
+        "review": "数字/哈希/测试性能值中的1588子串，无协议语义。"
+      },
+      {
+        "path": "TESTING.md",
+        "line": 5,
+        "kinds": [
+          "observation_association_neighbor"
+        ],
+        "text": "## Independent evidence",
+        "review": "网络/日志/策略领域的关联或观察邻近能力；所读命中未定位PTP/BMCA。"
+      }
+    ]
+  },
+  {
+    "name": "Ljh684/moonnet-lab",
+    "version": "0.1.0",
+    "evidence_mode": "reused_previous_version_pinned_zip",
+    "sha256": "5ce9ee2ee757c72d12497141721f3cdc02ba7028a6e88e0b287b6a0620f65884",
+    "review": "沿用已核实版本的历史源码审查，并以新关联/观察专项正则重新扫描；结论仍限于所读发布文本。",
+    "hits_reviewed": []
+  },
+  {
+    "name": "lxyhgvb/moonbit-radioframe",
+    "version": "0.2.0",
+    "evidence_mode": "reused_previous_version_pinned_zip",
+    "sha256": "3e359aeacb1e02d675dca721c2c9f96dc2b8d7f8fd4776bfbb8ea973336a497d",
+    "review": "沿用已核实版本的历史源码审查，并以新关联/观察专项正则重新扫描；结论仍限于所读发布文本。",
+    "hits_reviewed": []
+  },
+  {
+    "name": "sbqrre/moonbit-mcu-hal",
+    "version": "0.2.1",
+    "evidence_mode": "reused_previous_version_pinned_zip",
+    "sha256": "7371ec0b49d383fed815e39bb94eb1847c44c0f15a8239d3442ce749ac17ecab",
+    "review": "沿用已核实版本的历史源码审查，并以新关联/观察专项正则重新扫描；结论仍限于所读发布文本。",
+    "hits_reviewed": []
+  },
+  {
+    "name": "oyjh0381/moonlab",
+    "version": "0.1.0",
+    "evidence_mode": "reused_previous_version_pinned_zip",
+    "sha256": "1cf67ba9d2d408afabce112dab796917c19917d9a55fb5623d981bab09f7a330",
+    "review": "沿用已核实版本的历史源码审查，并以新关联/观察专项正则重新扫描；结论仍限于所读发布文本。",
+    "hits_reviewed": []
+  },
+  {
+    "name": "cauchyQ/moonbit-causalkit",
+    "version": "0.1.0",
+    "evidence_mode": "reused_previous_version_pinned_zip",
+    "sha256": "83ffa745827a9fd4b0d5e2e8925cf9d8b9c8d6c90673660e51e2fd87b9554bf7",
+    "review": "沿用已核实版本的历史源码审查，并以新关联/观察专项正则重新扫描；结论仍限于所读发布文本。",
+    "hits_reviewed": [
+      {
+        "path": "simulator.mbt",
+        "line": 111,
+        "kinds": [
+          "observation_association_neighbor"
+        ],
+        "text": "///| Emit one local event. Offline replicas reject events rather than silently",
+        "review": "网络/日志/策略领域的关联或观察邻近能力；所读命中未定位PTP/BMCA。"
+      }
+    ]
+  },
+  {
+    "name": "SCL-NN/moontracekit",
+    "version": "0.2.0",
+    "evidence_mode": "reused_previous_version_pinned_zip",
+    "sha256": "1e9cb93cbbc3a45af3e332d7bf9c42935530d7c313b9cdb8618b09b55e144ae7",
+    "review": "沿用已核实版本的历史源码审查，并以新关联/观察专项正则重新扫描；结论仍限于所读发布文本。",
+    "hits_reviewed": []
+  },
+  {
+    "name": "zlhahaha/moonsim",
+    "version": "0.3.1",
+    "evidence_mode": "reused_previous_version_pinned_zip",
+    "sha256": "83c212e27cb221f4dd0b76114cde14605054ad0a5d3f7a3aedde00c1ab326bfc",
+    "review": "沿用已核实版本的历史源码审查，并以新关联/观察专项正则重新扫描；结论仍限于所读发布文本。",
+    "hits_reviewed": [
+      {
+        "path": "moonsim_test.mbt",
+        "line": 509,
+        "kinds": [
+          "observation_association_neighbor"
+        ],
+        "text": "  ignore(sim.schedule_timeout(3, \"request\"))",
+        "review": "网络/日志/策略领域的关联或观察邻近能力；所读命中未定位PTP/BMCA。"
+      },
+      {
+        "path": "moonsim_test.mbt",
+        "line": 511,
+        "kinds": [
+          "observation_association_neighbor"
+        ],
+        "text": "  assert_eq(event.name, \"timeout:request\")",
+        "review": "网络/日志/策略领域的关联或观察邻近能力；所读命中未定位PTP/BMCA。"
+      }
+    ]
+  },
+  {
+    "name": "wcx789ll/moonsim",
+    "version": "0.1.2",
+    "evidence_mode": "reused_previous_version_pinned_zip",
+    "sha256": "43e014cfe04036e0c7a89b420acb5d22b39c79fd6d0869d6911bd3230580c5b1",
+    "review": "沿用已核实版本的历史源码审查，并以新关联/观察专项正则重新扫描；结论仍限于所读发布文本。",
+    "hits_reviewed": []
+  },
+  {
+    "name": "usagi-star/mooncap",
+    "version": "0.1.0",
+    "evidence_mode": "reused_previous_version_pinned_zip",
+    "sha256": "455ec6535f36494863e13a47f94c8e62dc6cdea8b0ec3036c57b5f53860a1bbe",
+    "review": "沿用已核实版本的历史源码审查，并以新关联/观察专项正则重新扫描；结论仍限于所读发布文本。",
+    "hits_reviewed": [
+      {
+        "path": "docs/verification/milestones.md",
+        "line": 41,
+        "kinds": [
+          "observation_association_neighbor"
+        ],
+        "text": "| Native capture test execution | BLOCKED - Windows application control policy, OS error 4551 |",
+        "review": "网络/日志/策略领域的关联或观察邻近能力；所读命中未定位PTP/BMCA。"
+      }
+    ]
+  },
+  {
+    "name": "bzy-debug/hello",
+    "version": "0.1.20240510+81e045f4e",
+    "evidence_mode": "reused_previous_version_pinned_zip",
+    "sha256": "8b8f5bed8489bc7b272f1ad8071ab9a5af42587e86586f6477eb07a82c43517f",
+    "review": "沿用已核实版本的历史源码审查，并以新关联/观察专项正则重新扫描；结论仍限于所读发布文本。",
+    "hits_reviewed": []
+  },
+  {
+    "name": "moonbitlang/core",
+    "version": "0.1.20261019+b1a0e846e",
+    "evidence_mode": "reused_previous_version_pinned_zip",
+    "sha256": "628ffb667fe049a128fe11bfb641343d44f1f74058d8cfc9cf3f8094a69f4b45",
+    "review": "沿用已核实版本的历史源码审查，并以新关联/观察专项正则重新扫描；结论仍限于所读发布文本。",
+    "hits_reviewed": [
+      {
+        "path": "random/internal/random_source/random_source_chacha.mbt",
+        "line": 460,
+        "kinds": [
+          "ptp_specific_token"
+        ],
+        "text": "    10270419548610515257UL, 4775977266197392933UL, 5858955664787759631UL, 15884112255303985129UL,",
+        "review": "数字/哈希/测试性能值中的1588子串，无协议语义。"
+      },
+      {
+        "path": "float/to_string_cases_test.mbt",
+        "line": 1923,
+        "kinds": [
+          "ptp_specific_token"
+        ],
+        "text": "  (0x44E2FC5BU, \"18158861\", -4),",
+        "review": "数字/哈希/测试性能值中的1588子串，无协议语义。"
+      },
+      {
+        "path": "builtin/double_ryu_nonjs.mbt",
+        "line": 173,
+        "kinds": [
+          "ptp_specific_token"
+        ],
+        "text": "  1, 2305843009213693952, 5955668970331000884, 1784059615882449851, 8982663654677661702,",
+        "review": "数字/哈希/测试性能值中的1588子串，无协议语义。"
+      },
+      {
+        "path": "math/prime.mbt",
+        "line": 160,
+        "kinds": [
+          "ptp_specific_token"
+        ],
+        "text": "  15797, 15803, 15809, 15817, 15823, 15859, 15877, 15881, 15887, 15889, 15901, 15907,",
+        "review": "数字/哈希/测试性能值中的1588子串，无协议语义。"
+      }
+    ]
+  },
+  {
+    "name": "BigOrangeQWQ/wit-wasi-clocks",
+    "version": "0.2.6",
+    "evidence_mode": "reused_previous_version_pinned_zip",
+    "sha256": "4208f3f557c5ce0e822f8f175aca44afd280a2888ca82fefc6a91fa28cea7699",
+    "review": "沿用已核实版本的历史源码审查，并以新关联/观察专项正则重新扫描；结论仍限于所读发布文本。",
+    "hits_reviewed": []
+  },
+  {
+    "name": "BigOrangeQWQ/wit-wasi-io",
+    "version": "0.2.6",
+    "evidence_mode": "reused_previous_version_pinned_zip",
+    "sha256": "00d18962d813adfbf88652e8cabd2c77ee7469e3c0dc8f5a9fc8cf067966207e",
+    "review": "沿用已核实版本的历史源码审查，并以新关联/观察专项正则重新扫描；结论仍限于所读发布文本。",
+    "hits_reviewed": []
+  },
+  {
+    "name": "CAIMEOX/原来可以发中文包",
+    "version": "0.1.1",
+    "evidence_mode": "reused_previous_version_pinned_zip",
+    "sha256": "b2c6785e5974d3e6f3777acfd9555b70a2c19de68398c3b78cd21c7d215bcb69",
+    "review": "沿用已核实版本的历史源码审查，并以新关联/观察专项正则重新扫描；结论仍限于所读发布文本。",
+    "hits_reviewed": []
+  },
+  {
+    "name": "illusory0x0/🐫",
+    "version": "0.1.0",
+    "evidence_mode": "reused_previous_version_pinned_zip",
+    "sha256": "88b9238704f844ee3abb3068cf44b56a22128e70c2318e271d25db4011358cf0",
+    "review": "沿用已核实版本的历史源码审查，并以新关联/观察专项正则重新扫描；结论仍限于所读发布文本。",
+    "hits_reviewed": []
+  },
+  {
+    "name": "moonbit-community/moongrep-skill",
+    "version": "0.1.0",
+    "evidence_mode": "reused_previous_version_pinned_zip",
+    "sha256": "b1ce9eb4f52d0d64a6f7eea0d104eac7e9ad0290e832f41f59413e9bab7706d7",
+    "review": "沿用已核实版本的历史源码审查，并以新关联/观察专项正则重新扫描；结论仍限于所读发布文本。",
+    "hits_reviewed": []
+  },
+  {
+    "name": "tonyfettes/ssl",
+    "version": "0.1.1",
+    "evidence_mode": "reused_previous_version_pinned_zip",
+    "sha256": "016bb9ccf714eb7c7c88de43bda0f185f97483f84daa3ae78dff558405400b5f",
+    "review": "沿用已核实版本的历史源码审查，并以新关联/观察专项正则重新扫描；结论仍限于所读发布文本。",
+    "hits_reviewed": []
+  },
+  {
+    "name": "2111950632/szs",
+    "version": "0.2.0",
+    "evidence_mode": "reused_previous_version_pinned_zip",
+    "sha256": "eccefbb1830577ad61acccb8e381fd5c19b2a14dcaad9095ab644e2c4038f24b",
+    "review": "沿用已核实版本的历史源码审查，并以新关联/观察专项正则重新扫描；结论仍限于所读发布文本。",
+    "hits_reviewed": [
+      {
+        "path": "docs/FORMAT_CONTRACTS.md",
+        "line": 82,
+        "kinds": [
+          "observation_association_neighbor"
+        ],
+        "text": "复现：Python 3.12 下执行 `python tests/format_conformance.py --msgfmt PATH`，或在配置好 GNU gettext 后执行 `npm run verify:independent`。证据为 evidence/format-conformance-0.1.2.json 与 evidence/moongettext-baseline-0.1.2.json。检查核心仍全部在 MoonBit；Python 仅用于独立验收。",
+        "review": "网络/日志/策略领域的关联或观察邻近能力；所读命中未定位PTP/BMCA。"
+      }
+    ]
+  },
+  {
+    "name": "f4ah6o/gpui",
+    "version": "0.10.0",
+    "evidence_mode": "reused_previous_version_pinned_zip",
+    "sha256": "e725133c07e175d86dcd1dececbd07bc29fcec2a4190e9f9078fe8a17174e1fe",
+    "review": "沿用已核实版本的历史源码审查，并以新关联/观察专项正则重新扫描；结论仍限于所读发布文本。",
+    "hits_reviewed": [
+      {
+        "path": "infra/linux-desktop/wayland-ime/README.md",
+        "line": 7,
+        "kinds": [
+          "observation_association_neighbor"
+        ],
+        "text": "`gpui-wayland-ime-runtime-evidence/runs/native-4/result.json` passed in 3.57 seconds, including owned-process cleanup. Its independent `transport-evidence.json` replay matches:",
+        "review": "网络/日志/策略领域的关联或观察邻近能力；所读命中未定位PTP/BMCA。"
+      },
+      {
+        "path": "infra/linux-desktop/README.md",
+        "line": 377,
+        "kinds": [
+          "observation_association_neighbor"
+        ],
+        "text": "5. Capture engine/version, window identity, key sequence and screenshots of",
+        "review": "网络/日志/策略领域的关联或观察邻近能力；所读命中未定位PTP/BMCA。"
+      },
+      {
+        "path": "infra/linux-desktop/INPUT-HOTPATH.md",
+        "line": 44,
+        "kinds": [
+          "ptp_specific_token"
+        ],
+        "text": "`87a8d8494d5e2c2b4fed2115882315ba652dc37c`, tree",
+        "review": "数字/哈希/测试性能值中的1588子串，无协议语义。"
+      },
+      {
+        "path": "infra/linux-desktop/INPUT-HOTPATH.md",
+        "line": 53,
+        "kinds": [
+          "ptp_specific_token"
+        ],
+        "text": "  87a8d8494d5e2c2b4fed2115882315ba652dc37c",
+        "review": "数字/哈希/测试性能值中的1588子串，无协议语义。"
+      },
+      {
+        "path": "infra/linux-desktop/hotpath.lock.json",
+        "line": 9,
+        "kinds": [
+          "ptp_specific_token"
+        ],
+        "text": "    \"main_commit\": \"87a8d8494d5e2c2b4fed2115882315ba652dc37c\",",
+        "review": "数字/哈希/测试性能值中的1588子串，无协议语义。"
+      },
+      {
+        "path": "platform/testing/testing_wbtest.mbt",
+        "line": 55,
+        "kinds": [
+          "observation_association_neighbor"
+        ],
+        "text": "  assert_true(capture_frame(deterministic, window) is Err(_))",
+        "review": "网络/日志/策略领域的关联或观察邻近能力；所读命中未定位PTP/BMCA。"
+      },
+      {
+        "path": "platform/testing/testing_wbtest.mbt",
+        "line": 60,
+        "kinds": [
+          "observation_association_neighbor"
+        ],
+        "text": "  let capture = capture_frame(deterministic, window).unwrap()",
+        "review": "网络/日志/策略领域的关联或观察邻近能力；所读命中未定位PTP/BMCA。"
+      },
+      {
+        "path": "platform/testing/testing_wbtest.mbt",
+        "line": 81,
+        "kinds": [
+          "observation_association_neighbor"
+        ],
+        "text": "  assert_true(capture_frame(oversized, window) is Err(_))",
+        "review": "网络/日志/策略领域的关联或观察邻近能力；所读命中未定位PTP/BMCA。"
+      },
+      {
+        "path": "platform/testing/testing_wbtest.mbt",
+        "line": 93,
+        "kinds": [
+          "observation_association_neighbor"
+        ],
+        "text": "  assert_true(capture_frame(invalid_scale, window) is Err(_))",
+        "review": "网络/日志/策略领域的关联或观察邻近能力；所读命中未定位PTP/BMCA。"
+      },
+      {
+        "path": "platform/testing/testing_wbtest.mbt",
+        "line": 130,
+        "kinds": [
+          "observation_association_neighbor"
+        ],
+        "text": "  let first = capture_frame(fixture, window).unwrap()",
+        "review": "网络/日志/策略领域的关联或观察邻近能力；所读命中未定位PTP/BMCA。"
+      },
+      {
+        "path": "platform/testing/testing_wbtest.mbt",
+        "line": 160,
+        "kinds": [
+          "observation_association_neighbor"
+        ],
+        "text": "  let second = capture_frame(changed, window).unwrap()",
+        "review": "网络/日志/策略领域的关联或观察邻近能力；所读命中未定位PTP/BMCA。"
+      },
+      {
+        "path": "platform/testing/pkg.generated.mbti",
+        "line": 12,
+        "kinds": [
+          "observation_association_neighbor"
+        ],
+        "text": "pub fn[H : FrameReadback] capture_frame(H, @platform.WindowId) -> Result[FrameCapture, @diagnostics.FrameworkError]",
+        "review": "网络/日志/策略领域的关联或观察邻近能力；所读命中未定位PTP/BMCA。"
+      },
+      {
+        "path": "tests/ubuntu/backend_test.c",
+        "line": 657,
+        "kinds": [
+          "observation_association_neighbor"
+        ],
+        "text": "static void test_capture_fixture(int host, int window) {",
+        "review": "网络/日志/策略领域的关联或观察邻近能力；所读命中未定位PTP/BMCA。"
+      },
+      {
+        "path": "tests/ubuntu/backend_test.c",
+        "line": 975,
+        "kinds": [
+          "observation_association_neighbor"
+        ],
+        "text": "      test_capture_fixture(host, window);",
+        "review": "网络/日志/策略领域的关联或观察邻近能力；所读命中未定位PTP/BMCA。"
+      },
+      {
+        "path": "docs/conformance-gap-budget.md",
+        "line": 43,
+        "kinds": [
+          "ptp_specific_token"
+        ],
+        "text": "measured follow-up, not a claimed result of this grow correction.",
+        "review": "迭代文档、测试函数或普通后续工作文字，无PTP Follow_Up语义。"
+      },
+      {
+        "path": "docs/conformance-fractional-grow.md",
+        "line": 25,
+        "kinds": [
+          "ptp_specific_token"
+        ],
+        "text": "positive space for the existing justification step. The gap-budget follow-up",
+        "review": "迭代文档、测试函数或普通后续工作文字，无PTP Follow_Up语义。"
+      },
+      {
+        "path": "docs/conformance-fractional-grow.md",
+        "line": 34,
+        "kinds": [
+          "ptp_specific_token"
+        ],
+        "text": "resolved to 35 points each in MoonBit versus 31 in pinned GPUI. The follow-up",
+        "review": "迭代文档、测试函数或普通后续工作文字，无PTP Follow_Up语义。"
+      },
+      {
+        "path": "docs/native-ui-contract.md",
+        "line": 48,
+        "kinds": [
+          "observation_association_neighbor"
+        ],
+        "text": "- `f4ah6o/gpui/platform/testing` exposes `capture_frame(host, window)` as an",
+        "review": "网络/日志/策略领域的关联或观察邻近能力；所读命中未定位PTP/BMCA。"
+      },
+      {
+        "path": "docs/ubuntu-ime.md",
+        "line": 52,
+        "kinds": [
+          "observation_association_neighbor"
+        ],
+        "text": "Every text event captures window generation, native sequence, epoch, seat global",
+        "review": "网络/日志/策略领域的关联或观察邻近能力；所读命中未定位PTP/BMCA。"
+      },
+      {
+        "path": "docs/ubuntu-ime.md",
+        "line": 105,
+        "kinds": [
+          "observation_association_neighbor"
+        ],
+        "text": "captures the owner seat/proxy generation. Window, epoch, FIFO sequence and",
+        "review": "网络/日志/策略领域的关联或观察邻近能力；所读命中未定位PTP/BMCA。"
+      },
+      {
+        "path": "docs/linux-text-field.md",
+        "line": 163,
+        "kinds": [
+          "observation_association_neighbor"
+        ],
+        "text": "Appending or extending a group evicts whole oldest undo groups until both",
+        "review": "网络/日志/策略领域的关联或观察邻近能力；所读命中未定位PTP/BMCA。"
+      },
+      {
+        "path": "docs/command-palette.md",
+        "line": 19,
+        "kinds": [
+          "observation_association_neighbor"
+        ],
+        "text": "A host must retain its live tree during ordinary modal edits instead of constructing a new tree every event. If it reconstructs the tree, old focus tokens deliberately become stale. Asynchronous/native edits capture open_epoch and use install_field_at; the epoch is checked before installing the candidate. Synchronous install_field assumes the caller has just prepared the candidate from the current field.",
+        "review": "网络/日志/策略领域的关联或观察邻近能力；所读命中未定位PTP/BMCA。"
+      },
+      {
+        "path": "docs/native-input-qualification-r4.json",
+        "line": 10,
+        "kinds": [
+          "observation_association_neighbor"
+        ],
+        "text": "    \"boundary\": \"Earlier pending recovery/catalog wording is historical. Frozen-source basic/select-all and independent repeat R2 evidence retain their original identities.\"",
+        "review": "网络/日志/策略领域的关联或观察邻近能力；所读命中未定位PTP/BMCA。"
+      },
+      {
+        "path": "controls/command_palette/palette.mbt",
+        "line": 359,
+        "kinds": [
+          "observation_association_neighbor"
+        ],
+        "text": "/// Asynchronous/native owners capture the open epoch before preparing an edit.",
+        "review": "网络/日志/策略领域的关联或观察邻近能力；所读命中未定位PTP/BMCA。"
+      },
+      {
+        "path": "testing/core_model/model_test.mbt",
+        "line": 697,
+        "kinds": [
+          "observation_association_neighbor"
+        ],
+        "text": "test \"cancelled timers leave pending work and expired task contexts\" {",
+        "review": "网络/日志/策略领域的关联或观察邻近能力；所读命中未定位PTP/BMCA。"
+      },
+      {
+        "path": "examples/windows_command_palette/main.mbt",
+        "line": 1686,
+        "kinds": [
+          "ptp_specific_token"
+        ],
+        "text": "                let (focus_reconciled, close_followup_dirty) = match",
+        "review": "迭代文档、测试函数或普通后续工作文字，无PTP Follow_Up语义。"
+      },
+      {
+        "path": "examples/windows_command_palette/main.mbt",
+        "line": 1759,
+        "kinds": [
+          "ptp_specific_token"
+        ],
+        "text": "                dirty.val = close_followup_dirty",
+        "review": "迭代文档、测试函数或普通后续工作文字，无PTP Follow_Up语义。"
+      },
+      {
+        "path": "examples/windows_command_palette/controller_wbtest.mbt",
+        "line": 578,
+        "kinds": [
+          "ptp_specific_token"
+        ],
+        "text": "  let (reconciled, close_followup_dirty) = palette_reconcile_accepted_present_focus(",
+        "review": "迭代文档、测试函数或普通后续工作文字，无PTP Follow_Up语义。"
+      },
+      {
+        "path": "examples/windows_command_palette/controller_wbtest.mbt",
+        "line": 598,
+        "kinds": [
+          "ptp_specific_token"
+        ],
+        "text": "  dirty.val = close_followup_dirty",
+        "review": "迭代文档、测试函数或普通后续工作文字，无PTP Follow_Up语义。"
+      },
+      {
+        "path": "examples/windows_command_palette/controller_wbtest.mbt",
+        "line": 601,
+        "kinds": [
+          "ptp_specific_token"
+        ],
+        "text": "  assert_true(close_followup_dirty)",
+        "review": "迭代文档、测试函数或普通后续工作文字，无PTP Follow_Up语义。"
+      },
+      {
+        "path": "examples/windows_button/main.mbt",
+        "line": 316,
+        "kinds": [
+          "observation_association_neighbor"
+        ],
+        "text": "                match @testing.capture_frame(host, window) {",
+        "review": "网络/日志/策略领域的关联或观察邻近能力；所读命中未定位PTP/BMCA。"
+      },
+      {
+        "path": "examples/macos_button/main.mbt",
+        "line": 224,
+        "kinds": [
+          "observation_association_neighbor"
+        ],
+        "text": "  @testing.capture_frame(host, window)",
+        "review": "网络/日志/策略领域的关联或观察邻近能力；所读命中未定位PTP/BMCA。"
+      },
+      {
+        "path": "examples/macos_button/main.mbt",
+        "line": 232,
+        "kinds": [
+          "observation_association_neighbor"
+        ],
+        "text": "  let frame = match mac_button_capture(host, window) {",
+        "review": "网络/日志/策略领域的关联或观察邻近能力；所读命中未定位PTP/BMCA。"
+      },
+      {
+        "path": "examples/macos_button/main.mbt",
+        "line": 269,
+        "kinds": [
+          "observation_association_neighbor"
+        ],
+        "text": "  let frame = match mac_button_capture(host, window) {",
+        "review": "网络/日志/策略领域的关联或观察邻近能力；所读命中未定位PTP/BMCA。"
+      },
+      {
+        "path": "examples/macos_button/main.mbt",
+        "line": 292,
+        "kinds": [
+          "observation_association_neighbor"
+        ],
+        "text": "  let frame = match mac_button_capture(host, window) {",
+        "review": "网络/日志/策略领域的关联或观察邻近能力；所读命中未定位PTP/BMCA。"
+      },
+      {
+        "path": "examples/macos_command_palette/main.mbt",
+        "line": 316,
+        "kinds": [
+          "observation_association_neighbor"
+        ],
+        "text": "    let frame = match @testing.capture_frame(host, window) {",
+        "review": "网络/日志/策略领域的关联或观察邻近能力；所读命中未定位PTP/BMCA。"
+      },
+      {
+        "path": "windows/backend.h",
+        "line": 138,
+        "kinds": [
+          "observation_association_neighbor"
+        ],
+        "text": " * last new-capture target (0 none, 1 this window, 2 another). */",
+        "review": "网络/日志/策略领域的关联或观察邻近能力；所读命中未定位PTP/BMCA。"
+      },
+      {
+        "path": "windows/backend.h",
+        "line": 139,
+        "kinds": [
+          "observation_association_neighbor"
+        ],
+        "text": "int32_t gpui_windows_test_mouse_capture(int32_t host, int32_t window,",
+        "review": "网络/日志/策略领域的关联或观察邻近能力；所读命中未定位PTP/BMCA。"
+      },
+      {
+        "path": "windows/backend.c",
+        "line": 2482,
+        "kinds": [
+          "observation_association_neighbor"
+        ],
+        "text": " * expected/actual capture (0 none, 1 this window, 2 another window), message,",
+        "review": "网络/日志/策略领域的关联或观察邻近能力；所读命中未定位PTP/BMCA。"
+      },
+      {
+        "path": "windows/backend.c",
+        "line": 2485,
+        "kinds": [
+          "observation_association_neighbor"
+        ],
+        "text": "int32_t gpui_windows_test_mouse_capture(int32_t token, int32_t window,",
+        "review": "网络/日志/策略领域的关联或观察邻近能力；所读命中未定位PTP/BMCA。"
+      },
+      {
+        "path": "windows/backend.c",
+        "line": 3973,
+        "kinds": [
+          "observation_association_neighbor"
+        ],
+        "text": "int32_t gpui_windows_test_mouse_capture(int32_t host, int32_t window,",
+        "review": "网络/日志/策略领域的关联或观察邻近能力；所读命中未定位PTP/BMCA。"
+      },
+      {
+        "path": "issues/closed/0014-gui-api-mcp-equivalence-conformance.md",
+        "line": 73,
+        "kinds": [
+          "ptp_specific_token"
+        ],
+        "text": "Remaining follow-up scope:",
+        "review": "迭代文档、测试函数或普通后续工作文字，无PTP Follow_Up语义。"
+      },
+      {
+        "path": "issues/closed/0012-semantic-capability-model.md",
+        "line": 89,
+        "kinds": [
+          "ptp_specific_token"
+        ],
+        "text": "Follow-up work after core closure:",
+        "review": "迭代文档、测试函数或普通后续工作文字，无PTP Follow_Up语义。"
+      },
+      {
+        "path": "issues/done/0010-browser-vite-plus-toolchain.md",
+        "line": 217,
+        "kinds": [
+          "ptp_specific_token"
+        ],
+        "text": "## Follow-up",
+        "review": "迭代文档、测试函数或普通后续工作文字，无PTP Follow_Up语义。"
+      },
+      {
+        "path": "issues/open/0024-apple-silicon-macos-button-integration.md",
+        "line": 395,
+        "kinds": [
+          "observation_association_neighbor"
+        ],
+        "text": "  eight observations, then failed because `AXWindows` was unavailable with",
+        "review": "网络/日志/策略领域的关联或观察邻近能力；所读命中未定位PTP/BMCA。"
+      },
+      {
+        "path": "issues/open/0004-platform-rendering-and-native-boundaries.md",
+        "line": 92,
+        "kinds": [
+          "ptp_specific_token"
+        ],
+        "text": "references. A test-only follow-up now observes finalizer callbacks under",
+        "review": "迭代文档、测试函数或普通后续工作文字，无PTP Follow_Up语义。"
+      },
+      {
+        "path": "issues/open/0004-platform-rendering-and-native-boundaries.md",
+        "line": 94,
+        "kinds": [
+          "ptp_specific_token"
+        ],
+        "text": "production cleanup path remains unchanged. Hosted CI for the follow-up is",
+        "review": "迭代文档、测试函数或普通后续工作文字，无PTP Follow_Up语义。"
+      },
+      {
+        "path": "issues/open/0022-apple-silicon-macos-command-palette-parity.md",
+        "line": 3,
+        "kinds": [
+          "ptp_specific_token"
+        ],
+        "text": "Status: open — follow-up; implementation and native acceptance pending\\",
+        "review": "迭代文档、测试函数或普通后续工作文字，无PTP Follow_Up语义。"
+      }
+    ]
+  },
+  {
+    "name": "forey217/moonged",
+    "version": "0.2.0",
+    "evidence_mode": "reused_previous_version_pinned_zip",
+    "sha256": "8a8d931146a0b524121f46ae8348b0b84f4e150a24a8293746816a748998d871",
+    "review": "沿用已核实版本的历史源码审查，并以新关联/观察专项正则重新扫描；结论仍限于所读发布文本。",
+    "hits_reviewed": []
+  },
+  {
+    "name": "mizchi/crater-layout",
+    "version": "0.19.1",
+    "evidence_mode": "reused_previous_version_pinned_zip",
+    "sha256": "d3c577d91cf797b79419ea8fcdf667e5ef52f9a05b09284c9845eaa64545c80f",
+    "review": "沿用已核实版本的历史源码审查，并以新关联/观察专项正则重新扫描；结论仍限于所读发布文本。",
+    "hits_reviewed": []
+  },
+  {
+    "name": "mizchi/css",
+    "version": "0.7.4",
+    "evidence_mode": "reused_previous_version_pinned_zip",
+    "sha256": "635d95e2aa5cee55fa7348110bc5052b6113df762b3324ee4e589c25be9e30d3",
+    "review": "沿用已核实版本的历史源码审查，并以新关联/观察专项正则重新扫描；结论仍限于所读发布文本。",
+    "hits_reviewed": []
+  },
+  {
+    "name": "mizchi/markdown",
+    "version": "0.8.4",
+    "evidence_mode": "reused_previous_version_pinned_zip",
+    "sha256": "b6278b6b02d16e00b62590f0511a29900854cdb4552888b11d402ce5e1cc3660",
+    "review": "沿用已核实版本的历史源码审查，并以新关联/观察专项正则重新扫描；结论仍限于所读发布文本。",
+    "hits_reviewed": [
+      {
+        "path": "docs/optimize-highlight-editor.md",
+        "line": 193,
+        "kinds": [
+          "observation_association_neighbor"
+        ],
+        "text": "### 1. Debouncing with setTimeout / requestAnimationFrame",
+        "review": "网络/日志/策略领域的关联或观察邻近能力；所读命中未定位PTP/BMCA。"
+      }
+    ]
+  },
+  {
+    "name": "moonbit-community/opentelemetry",
+    "version": "0.1.8",
+    "evidence_mode": "reused_previous_version_pinned_zip",
+    "sha256": "2039d8609065199553e7275deefa8f9380f9db10d2b23e428eea98d299a2e7da",
+    "review": "沿用已核实版本的历史源码审查，并以新关联/观察专项正则重新扫描；结论仍限于所读发布文本。",
+    "hits_reviewed": []
+  },
+  {
+    "name": "noweizongqing/numsolve",
+    "version": "0.5.1",
+    "evidence_mode": "reused_previous_version_pinned_zip",
+    "sha256": "cbe6106c4a9b715235771b245138d224d49da08f65c5ead905605a68aecbeaac",
+    "review": "沿用已核实版本的历史源码审查，并以新关联/观察专项正则重新扫描；结论仍限于所读发布文本。",
+    "hits_reviewed": []
+  },
+  {
+    "name": "SongYZZZ/moon-liberty",
+    "version": "0.1.0",
+    "evidence_mode": "reused_previous_version_pinned_zip",
+    "sha256": "2d13f1dde12bfe4b2c9ca862bdff0ddc64fed633a0906be997be9169b8ff76d3",
+    "review": "沿用已核实版本的历史源码审查，并以新关联/观察专项正则重新扫描；结论仍限于所读发布文本。",
+    "hits_reviewed": []
+  },
+  {
+    "name": "vicTop-cw/RX-MBT",
+    "version": "0.3.0",
+    "evidence_mode": "reused_previous_version_pinned_zip",
+    "sha256": "fdbaf5ac2eaec889520b3f7111995a6bea2de91000ebd40bd4836176ddd4be1b",
+    "review": "沿用已核实版本的历史源码审查，并以新关联/观察专项正则重新扫描；结论仍限于所读发布文本。",
+    "hits_reviewed": []
+  },
+  {
+    "name": "golemcloud/golem_sdk_tools",
+    "version": "0.6.0",
+    "evidence_mode": "fresh_source_zip",
+    "sha256": "f716e13951104fc09dd2520063bea52fdd5ed6a359b96cc32aa6974f40a30188",
+    "review": "Golem Agent SDK代码生成工具；根页build失败，以70个发布文本核实，无PTP专项命中。",
+    "hits_reviewed": []
+  },
+  {
+    "name": "Han-Wentao/mooniso8583",
+    "version": "0.1.1",
+    "evidence_mode": "fresh_source_zip",
+    "sha256": "fbfcb2f547e23ed099f7d2274f27d6958cd45b4637000be6b2ee45b414d291a7",
+    "review": "ISO8583请求响应STAN/金额/终端/币种/DE90字段关联；具体协议字段不同，但字段关联检查这一通用能力部分相似。",
+    "hits_reviewed": [
+      {
+        "path": "common_fields.mbt",
+        "line": 258,
+        "kinds": [
+          "observation_association_neighbor"
+        ],
+        "text": "    \"68\" => (false, \"timeout\", \"response received too late\")",
+        "review": "ISO8583请求响应STAN/金额/终端/币种/DE90字段关联；具体协议字段不同，但字段关联检查这一通用能力部分相似。"
+      },
+      {
+        "path": "correlation.mbt",
+        "line": 25,
+        "kinds": [
+          "observation_association_neighbor"
+        ],
+        "text": "          \"request is missing correlation field \\{field}\",",
+        "review": "ISO8583请求响应STAN/金额/终端/币种/DE90字段关联；具体协议字段不同，但字段关联检查这一通用能力部分相似。"
+      },
+      {
+        "path": "correlation.mbt",
+        "line": 165,
+        "kinds": [
+          "observation_association_neighbor"
+        ],
+        "text": "/// True when request and response pass all correlation checks.",
+        "review": "ISO8583请求响应STAN/金额/终端/币种/DE90字段关联；具体协议字段不同，但字段关联检查这一通用能力部分相似。"
+      },
+      {
+        "path": "correlation_wbtest.mbt",
+        "line": 19,
+        "kinds": [
+          "observation_association_neighbor"
+        ],
+        "text": "  let request = correlated_request()",
+        "review": "ISO8583请求响应STAN/金额/终端/币种/DE90字段关联；具体协议字段不同，但字段关联检查这一通用能力部分相似。"
+      },
+      {
+        "path": "correlation_wbtest.mbt",
+        "line": 28,
+        "kinds": [
+          "observation_association_neighbor"
+        ],
+        "text": "  let request = correlated_request()",
+        "review": "ISO8583请求响应STAN/金额/终端/币种/DE90字段关联；具体协议字段不同，但字段关联检查这一通用能力部分相似。"
+      },
+      {
+        "path": "correlation_wbtest.mbt",
+        "line": 97,
+        "kinds": [
+          "observation_association_neighbor"
+        ],
+        "text": "  let request = correlated_request()",
+        "review": "ISO8583请求响应STAN/金额/终端/币种/DE90字段关联；具体协议字段不同，但字段关联检查这一通用能力部分相似。"
+      }
+    ]
+  },
+  {
+    "name": "shangwuxi/moonradius",
+    "version": "0.1.1",
+    "evidence_mode": "fresh_source_zip",
+    "sha256": "c5a370c9fc02cfa4fa5ab31480038310a6d33bed2658c4af8181b903b3e901f9",
+    "review": "RADIUS identifier/request-authenticator重传/冲突分类与有界请求缓存；重复键与生命周期管理基础能力有交集。",
+    "hits_reviewed": [
+      {
+        "path": "replay.mbt",
+        "line": 4,
+        "kinds": [
+          "observation_association_neighbor"
+        ],
+        "text": "/// RADIUS uses an identifier plus request authenticator to correlate",
+        "review": "RADIUS identifier/request-authenticator重传/冲突分类与有界请求缓存；重复键与生命周期管理基础能力有交集。"
+      }
+    ]
+  },
+  {
+    "name": "mokomoking2501/concord",
+    "version": "0.1.0",
+    "evidence_mode": "fresh_source_zip",
+    "sha256": "2f34245daa3aa52a2de2e1ddacf240062a6e62415d77de15d4f3a72217862084",
+    "review": "协议AST、角色局部投影、trace-backed协议监控和违规报告；协议检查产品类别与迹线证据相似，当前AxisAuthority消息标签模型无PTP/BMCA规则。",
+    "hits_reviewed": []
+  },
+  {
+    "name": "btlqql/moon_tracelens",
+    "version": "0.3.0",
+    "evidence_mode": "fresh_source_zip",
+    "sha256": "608bed427eeba3ed84fc44ed05e9e5a3fbf6e2222325be738719e657c16f4d33",
+    "review": "离线日志规范化、request_id分组、时间线与时间桶；与离线关联/时间窗口有通用功能交集，不含PTP sourcePortIdentity/sequence/correction/BMCA规则。followup命中是迭代文档/测试名。",
+    "hits_reviewed": [
+      {
+        "path": "docs/followup-20261018.md",
+        "line": 1,
+        "kinds": [
+          "ptp_specific_token"
+        ],
+        "text": "# Follow-up 0.3.0 / registry 0.3.0",
+        "review": "迭代文档、测试函数或普通后续工作文字，无PTP Follow_Up语义。"
+      },
+      {
+        "path": "docs/followup-20261018.md",
+        "line": 15,
+        "kinds": [
+          "ptp_specific_token"
+        ],
+        "text": "The existing fixture ladder remains in CI. New assertions are in tests/cases.json and independent oracles run through the real compiled CLI via scripts/followup_reference.py. Tests use synthetic deterministic inputs. Claims of release validation are recorded only after the relevant CI and independent installation checks finish.",
+        "review": "迭代文档、测试函数或普通后续工作文字，无PTP Follow_Up语义。"
+      },
+      {
+        "path": "docs/proposal.md",
+        "line": 78,
+        "kinds": [
+          "ptp_specific_token"
+        ],
+        "text": "python -B scripts/followup_reference.py",
+        "review": "迭代文档、测试函数或普通后续工作文字，无PTP Follow_Up语义。"
+      },
+      {
+        "path": "docs/proposal.md",
+        "line": 79,
+        "kinds": [
+          "ptp_specific_token"
+        ],
+        "text": "moon run cmd/main --target js -- examples/followup-20261018.json",
+        "review": "迭代文档、测试函数或普通后续工作文字，无PTP Follow_Up语义。"
+      },
+      {
+        "path": "followup_features_wbtest.mbt",
+        "line": 2,
+        "kinds": [
+          "ptp_specific_token"
+        ],
+        "text": "fn followup_at(value : Value, keys : Array[String]) -> Value raise {",
+        "review": "迭代文档、测试函数或普通后续工作文字，无PTP Follow_Up语义。"
+      },
+      {
+        "path": "followup_features_wbtest.mbt",
+        "line": 21,
+        "kinds": [
+          "ptp_specific_token"
+        ],
+        "text": "test \"followup time bucket boundaries\" {",
+        "review": "迭代文档、测试函数或普通后续工作文字，无PTP Follow_Up语义。"
+      },
+      {
+        "path": "followup_features_wbtest.mbt",
+        "line": 30,
+        "kinds": [
+          "ptp_specific_token"
+        ],
+        "text": "    followup_at(result, [\"events_considered\"]),",
+        "review": "迭代文档、测试函数或普通后续工作文字，无PTP Follow_Up语义。"
+      },
+      {
+        "path": "followup_features_wbtest.mbt",
+        "line": 34,
+        "kinds": [
+          "ptp_specific_token"
+        ],
+        "text": "    followup_at(result, [\"buckets\", \"0\", \"start\"]),",
+        "review": "迭代文档、测试函数或普通后续工作文字，无PTP Follow_Up语义。"
+      },
+      {
+        "path": "followup_features_wbtest.mbt",
+        "line": 38,
+        "kinds": [
+          "ptp_specific_token"
+        ],
+        "text": "    followup_at(result, [\"buckets\", \"0\", \"metrics\", \"count\"]),",
+        "review": "迭代文档、测试函数或普通后续工作文字，无PTP Follow_Up语义。"
+      },
+      {
+        "path": "followup_features_wbtest.mbt",
+        "line": 42,
+        "kinds": [
+          "ptp_specific_token"
+        ],
+        "text": "    followup_at(result, [\"buckets\", \"1\", \"start\"]),",
+        "review": "迭代文档、测试函数或普通后续工作文字，无PTP Follow_Up语义。"
+      },
+      {
+        "path": "followup_features_wbtest.mbt",
+        "line": 46,
+        "kinds": [
+          "ptp_specific_token"
+        ],
+        "text": "    followup_at(result, [\"buckets\", \"1\", \"metrics\", \"count\"]),",
+        "review": "迭代文档、测试函数或普通后续工作文字，无PTP Follow_Up语义。"
+      },
+      {
+        "path": "followup_features_wbtest.mbt",
+        "line": 50,
+        "kinds": [
+          "ptp_specific_token"
+        ],
+        "text": "    followup_at(result, [\"buckets\", \"2\", \"start\"]),",
+        "review": "迭代文档、测试函数或普通后续工作文字，无PTP Follow_Up语义。"
+      },
+      {
+        "path": "followup_features_wbtest.mbt",
+        "line": 54,
+        "kinds": [
+          "ptp_specific_token"
+        ],
+        "text": "    followup_at(result, [\"buckets\", \"2\", \"metrics\", \"errors\"]),",
+        "review": "迭代文档、测试函数或普通后续工作文字，无PTP Follow_Up语义。"
+      },
+      {
+        "path": "followup_features_wbtest.mbt",
+        "line": 60,
+        "kinds": [
+          "ptp_specific_token"
+        ],
+        "text": "test \"followup bucket zero width\" {",
+        "review": "迭代文档、测试函数或普通后续工作文字，无PTP Follow_Up语义。"
+      },
+      {
+        "path": "followup_features_wbtest.mbt",
+        "line": 79,
+        "kinds": [
+          "ptp_specific_token"
+        ],
+        "text": "test \"followup bucket filtered counts\" {",
+        "review": "迭代文档、测试函数或普通后续工作文字，无PTP Follow_Up语义。"
+      },
+      {
+        "path": "followup_features_wbtest.mbt",
+        "line": 88,
+        "kinds": [
+          "ptp_specific_token"
+        ],
+        "text": "    followup_at(result, [\"events_considered\"]),",
+        "review": "迭代文档、测试函数或普通后续工作文字，无PTP Follow_Up语义。"
+      },
+      {
+        "path": "followup_features_wbtest.mbt",
+        "line": 92,
+        "kinds": [
+          "ptp_specific_token"
+        ],
+        "text": "    followup_at(result, [\"buckets\", \"0\", \"metrics\", \"count\"]),",
+        "review": "迭代文档、测试函数或普通后续工作文字，无PTP Follow_Up语义。"
+      },
+      {
+        "path": "followup_features_wbtest.mbt",
+        "line": 98,
+        "kinds": [
+          "ptp_specific_token"
+        ],
+        "text": "test \"followup empty buckets omitted\" {",
+        "review": "迭代文档、测试函数或普通后续工作文字，无PTP Follow_Up语义。"
+      },
+      {
+        "path": "followup_features_wbtest.mbt",
+        "line": 106,
+        "kinds": [
+          "ptp_specific_token"
+        ],
+        "text": "  assert_eq(followup_at(result, [\"buckets\"]), from_json(@json.parse(\"[]\")))",
+        "review": "迭代文档、测试函数或普通后续工作文字，无PTP Follow_Up语义。"
+      },
+      {
+        "path": "followup_features_wbtest.mbt",
+        "line": 108,
+        "kinds": [
+          "ptp_specific_token"
+        ],
+        "text": "    followup_at(result, [\"events_considered\"]),",
+        "review": "迭代文档、测试函数或普通后续工作文字，无PTP Follow_Up语义。"
+      },
+      {
+        "path": "moon.mod",
+        "line": 13,
+        "kinds": [
+          "observation_association_neighbor"
+        ],
+        "text": "description = \"Offline event normalization, query and request correlation\"",
+        "review": "离线日志规范化、request_id分组、时间线与时间桶；与离线关联/时间窗口有通用功能交集，不含PTP sourcePortIdentity/sequence/correction/BMCA规则。followup命中是迭代文档/测试名。"
+      },
+      {
+        "path": "README.md",
+        "line": 84,
+        "kinds": [
+          "ptp_specific_token"
+        ],
+        "text": "## 2026-10-18 follow-up",
+        "review": "迭代文档、测试函数或普通后续工作文字，无PTP Follow_Up语义。"
+      },
+      {
+        "path": "README.md",
+        "line": 92,
+        "kinds": [
+          "ptp_specific_token"
+        ],
+        "text": "Current source contains 18 MoonBit test declarations and 16 CLI fixtures (generated fixture tests are included in the declaration count). Run `python -B scripts/followup_reference.py` for independent follow-up oracles and `examples/followup-20261018.json` for the new scenario.",
+        "review": "迭代文档、测试函数或普通后续工作文字，无PTP Follow_Up语义。"
+      },
+      {
+        "path": "scripts/followup_reference.py",
+        "line": 1,
+        "kinds": [
+          "ptp_specific_token"
+        ],
+        "text": "\"\"\"Independent follow-up oracles over synthetic deterministic inputs.\"\"\"",
+        "review": "迭代文档、测试函数或普通后续工作文字，无PTP Follow_Up语义。"
+      },
+      {
+        "path": "tests/cases.json",
+        "line": 293,
+        "kinds": [
+          "ptp_specific_token"
+        ],
+        "text": "    \"name\": \"followup time bucket boundaries\",",
+        "review": "迭代文档、测试函数或普通后续工作文字，无PTP Follow_Up语义。"
+      },
+      {
+        "path": "tests/cases.json",
+        "line": 332,
+        "kinds": [
+          "ptp_specific_token"
+        ],
+        "text": "    \"name\": \"followup bucket zero width\",",
+        "review": "迭代文档、测试函数或普通后续工作文字，无PTP Follow_Up语义。"
+      },
+      {
+        "path": "tests/cases.json",
+        "line": 342,
+        "kinds": [
+          "ptp_specific_token"
+        ],
+        "text": "    \"name\": \"followup bucket filtered counts\",",
+        "review": "迭代文档、测试函数或普通后续工作文字，无PTP Follow_Up语义。"
+      },
+      {
+        "path": "tests/cases.json",
+        "line": 378,
+        "kinds": [
+          "ptp_specific_token"
+        ],
+        "text": "    \"name\": \"followup empty buckets omitted\",",
+        "review": "迭代文档、测试函数或普通后续工作文字，无PTP Follow_Up语义。"
+      }
+    ]
+  },
+  {
+    "name": "xuting22/rinex",
+    "version": "0.1.2",
+    "evidence_mode": "fresh_source_zip",
+    "sha256": "15900e5747f6c0ca4896a39445d8adc7bc13f2133d64d7de5243361cc4f067c9",
+    "review": "显式GPS daily/hourly窗口、时间间隔和缺失epoch检查；观察窗/缺失证据是基础设计交集，GNSS文件接收契约不等于PTP关联。",
+    "hits_reviewed": [
+      {
+        "path": "moon.mod",
+        "line": 9,
+        "kinds": [
+          "observation_association_neighbor"
+        ],
+        "text": "description = \"Bounded RINEX observation delivery checks with explicit GPS window contracts\"",
+        "review": "显式GPS daily/hourly窗口、时间间隔和缺失epoch检查；观察窗/缺失证据是基础设计交集，GNSS文件接收契约不等于PTP关联。"
+      },
+      {
+        "path": "tools/fetch-georinex-reference.py",
+        "line": 16,
+        "kinds": [
+          "observation_association_neighbor"
+        ],
+        "text": "    with urllib.request.urlopen(URL,timeout=60) as response:compressed=response.read(8*1024*1024+1)",
+        "review": "显式GPS daily/hourly窗口、时间间隔和缺失epoch检查；观察窗/缺失证据是基础设计交集，GNSS文件接收契约不等于PTP关联。"
+      }
+    ]
+  },
+  {
+    "name": "z2823253773-p/moontick",
+    "version": "0.1.1",
+    "evidence_mode": "fresh_source_zip",
+    "sha256": "40393815a8ae5f7f788955451e6a4cf0c907ae7b9f32e0a50c11aa94c7ed2fc0",
+    "review": "固定采样网格覆盖、缺失、重复和乱序时间戳审计；时间窗口与重复检查部分相似，不包含PTP报文和BMCA。",
+    "hits_reviewed": []
+  },
+  {
+    "name": "yujieMamba/moonallen",
+    "version": "0.1.0",
+    "evidence_mode": "fresh_source_zip",
+    "sha256": "f4ed726df9e9be5e40a2e790b3bb567f1a3474d5ac03efdbbc54ef88869f7d00",
+    "review": "Allen定性区间约束、可核查见证与Unknown预算语义；时间和证据边界概念相似，不含精确PTP定点时间及报文关联。",
+    "hits_reviewed": [
+      {
+        "path": "CHANGELOG.md",
+        "line": 8,
+        "kinds": [
+          "observation_association_neighbor"
+        ],
+        "text": "  explicit SAT/UNSAT/Unknown outcomes and independently checkable witnesses.",
+        "review": "Allen定性区间约束、可核查见证与Unknown预算语义；时间和证据边界概念相似，不含精确PTP定点时间及报文关联。"
+      }
+    ]
+  },
+  {
+    "name": "yyyt0807/moonbitemporal",
+    "version": "0.2.0",
+    "evidence_mode": "fresh_source_zip",
+    "sha256": "2753e7b89ad16b50b110817b34cf5fc12a85542f7171f646e352bedbb83c8bba",
+    "review": "双时态事实、修订区间和历史决策证据；有效时序/决策复核抽象相似，不含PTP数据集比较。",
+    "hits_reviewed": []
+  },
+  {
+    "name": "oyjh0381/moonipfix",
+    "version": "0.1.0",
+    "evidence_mode": "fresh_source_zip",
+    "sha256": "c9161d72280b6ab941864abaa7135e6c8f53ebfc9079ffb2749a0668138b3ae1",
+    "review": "IPFIX模板驱动流记录解析、会话状态与结束时残余输入检查；网络报文审计及状态边界有交集，未发现PTP/BMCA规则。",
+    "hits_reviewed": []
+  },
+  {
+    "name": "wcj12314/moon-flow-guard",
+    "version": "0.1.0",
+    "evidence_mode": "fresh_source_zip",
+    "sha256": "add300dab5bc2bc015b6e03891532f05a3af1955a0e2565bc4fafb96cb8ee52c",
+    "review": "离线网络流/已解码包审计、Finding、门禁和跨流行为；产品类别存在部分功能相似。registry.mbt的1588是端口数字，35063(0x88F7)仅EtherType名称ptp，不是PTP消息实现。根页build失败，使用ZIP核实。",
+    "hits_reviewed": [
+      {
+        "path": "registry.mbt",
+        "line": 1592,
+        "kinds": [
+          "ptp_specific_token"
+        ],
+        "text": "    1588 => \"registered-port-1588\"",
+        "review": "端口数值或EtherType 0x88F7名称查表；PTP标签本身不构成消息编解码/关联/BMCA实现。"
+      },
+      {
+        "path": "registry.mbt",
+        "line": 5696,
+        "kinds": [
+          "ptp_specific_token"
+        ],
+        "text": "    35063 => \"ptp\"",
+        "review": "端口数值或EtherType 0x88F7名称查表；PTP标签本身不构成消息编解码/关联/BMCA实现。"
+      }
+    ]
+  },
+  {
+    "name": "chen-657/moon-change-window-auditor",
+    "version": "0.2.0",
+    "evidence_mode": "fresh_source_zip",
+    "sha256": "9cbdd117f52917946a2acf36efe8932e6dbf70309cb1cac9c6ca4614a70e7b4f",
+    "review": "维护窗口冲突/冻结/依赖与安全时段规划；窗口校验属于通用交集，无协议交换或时钟数据集规则。",
+    "hits_reviewed": []
+  },
+  {
+    "name": "Magic486/moonnetlink",
+    "version": "0.2.0",
+    "evidence_mode": "fresh_source_zip",
+    "sha256": "5906581253bb981727fd635a27e5d8a451711699f4e3353668eaf308cc829705",
+    "review": "Netlink seq事务关联、DONE快照完成标记、loss/stale处理和重放；缺失不能当完整、快照有效前提等基础语义有交集，协议规则不同。",
+    "hits_reviewed": []
+  },
+  {
+    "name": "LAOBIAO656/moonreplaykit",
+    "version": "0.2.0",
+    "evidence_mode": "fresh_source_zip",
+    "sha256": "709b7ef3d3fe5257f4f04f15c8465fe026e6c6e067f2824ed01c815c41f04afc",
+    "review": "确定性状态机重放、checkpoint和偏离诊断；重放/证据报告模式通用，不是PTP具体关联。",
+    "hits_reviewed": []
+  },
+  {
+    "name": "zhangbowen2006/agentcanary",
+    "version": "0.1.1",
+    "evidence_mode": "fresh_source_zip",
+    "sha256": "e2ca34d7456a5052adc9e73dd66e2237078a23d52ceef4e57429be42d35d389c",
+    "review": "AI工具历史离线策略回放、会话窗口费用/频率及审批过期；时间窗/过期/证据报告抽象相似，业务规则不同。",
+    "hits_reviewed": []
+  },
+  {
+    "name": "DDD12345-D/moon-snmp",
+    "version": "0.3.0",
+    "evidence_mode": "fresh_source_zip",
+    "sha256": "29220149360062499e5cd066c84dd959147d1c31cf641c10ab5bfde30fbf211e",
+    "review": "SNMP请求ID关联、重试/超时和stray-reply处理；关联与生命周期基础能力已有，未发现IEEE1588 two-step或BMCA。根页无README，以发布ZIP核实。",
+    "hits_reviewed": [
+      {
+        "path": "AGENTS.md",
+        "line": 62,
+        "kinds": [
+          "observation_association_neighbor"
+        ],
+        "text": "  (UDP transport, request/response correlation, retry), `mib` (generic walk",
+        "review": "SNMP请求ID关联、重试/超时和stray-reply处理；关联与生命周期基础能力已有，未发现IEEE1588 two-step或BMCA。根页无README，以发布ZIP核实。"
+      },
+      {
+        "path": "session/receiver.mbt",
+        "line": 780,
+        "kinds": [
+          "observation_association_neighbor"
+        ],
+        "text": "      @transport.TransportError::Timeout => raise SnmpError::NoResponse",
+        "review": "SNMP请求ID关联、重试/超时和stray-reply处理；关联与生命周期基础能力已有，未发现IEEE1588 two-step或BMCA。根页无README，以发布ZIP核实。"
+      },
+      {
+        "path": "session/session_test.mbt",
+        "line": 17,
+        "kinds": [
+          "observation_association_neighbor"
+        ],
+        "text": "  /// The session treats any non-timeout failure as `NoResponse`.",
+        "review": "SNMP请求ID关联、重试/超时和stray-reply处理；关联与生命周期基础能力已有，未发现IEEE1588 two-step或BMCA。根页无README，以发布ZIP核实。"
+      },
+      {
+        "path": "session/v3client.mbt",
+        "line": 20,
+        "kinds": [
+          "observation_association_neighbor"
+        ],
+        "text": "/// the socket, the timeouts, the request ids — works the same way, which",
+        "review": "SNMP请求ID关联、重试/超时和stray-reply处理；关联与生命周期基础能力已有，未发现IEEE1588 two-step或BMCA。根页无README，以发布ZIP核实。"
+      },
+      {
+        "path": "session/v3client.mbt",
+        "line": 199,
+        "kinds": [
+          "observation_association_neighbor"
+        ],
+        "text": "    @transport.TransportError::Timeout => raise SnmpError::NoResponse",
+        "review": "SNMP请求ID关联、重试/超时和stray-reply处理；关联与生命周期基础能力已有，未发现IEEE1588 two-step或BMCA。根页无README，以发布ZIP核实。"
+      },
+      {
+        "path": "session/v3client.mbt",
+        "line": 327,
+        "kinds": [
+          "observation_association_neighbor"
+        ],
+        "text": "    @transport.TransportError::Timeout => raise SnmpError::NoResponse",
+        "review": "SNMP请求ID关联、重试/超时和stray-reply处理；关联与生命周期基础能力已有，未发现IEEE1588 two-step或BMCA。根页无README，以发布ZIP核实。"
+      }
+    ]
+  },
+  {
+    "name": "cstoooo/mooniso_lite",
+    "version": "0.4.2",
+    "evidence_mode": "fresh_source_zip",
+    "sha256": "287b92336a73238298eec8aed355a5843b4bd02aac66a1573bdecb66a193ef8d",
+    "review": "ISO20022 XML消息验证与支付状态对账；规则验证/关联报告是通用交集，无PTP核心。",
+    "hits_reviewed": []
+  },
+  {
+    "name": "any07557-wq/moonvcs",
+    "version": "0.1.0",
+    "evidence_mode": "fresh_source_zip",
+    "sha256": "5006035f75de4f963213a92257bafa3a5d2f751bb117c803c49d9c09f21867d3",
+    "review": "新增VCS SHA256对象与惰性存储；offline/fetch_events词组命中，无PTP语义。",
+    "hits_reviewed": [
+      {
+        "path": "repository.mbt",
+        "line": 24,
+        "kinds": [
+          "observation_association_neighbor"
+        ],
+        "text": "  { root, store: LazyObjectStore::new(root, offline~, fetch_events~), }",
+        "review": "新增VCS SHA256对象与惰性存储；offline/fetch_events词组命中，无PTP语义。"
+      },
+      {
+        "path": "lazy_store.mbt",
+        "line": 282,
+        "kinds": [
+          "observation_association_neighbor"
+        ],
+        "text": "  { root, cache: LocalObjectStore::new(root), offline, fetch_events, }",
+        "review": "新增VCS SHA256对象与惰性存储；offline/fetch_events词组命中，无PTP语义。"
+      },
+      {
+        "path": "cli.mbt",
+        "line": 343,
+        "kinds": [
+          "observation_association_neighbor"
+        ],
+        "text": "      let repository = Repository::at(root, offline~, fetch_events=true)",
+        "review": "新增VCS SHA256对象与惰性存储；offline/fetch_events词组命中，无PTP语义。"
+      }
+    ]
+  },
+  {
+    "name": "wiretokenbotca4491/wire_token",
+    "version": "0.1.0",
+    "evidence_mode": "fresh_source_zip",
+    "sha256": "e8fa268ebc0bcde0bbe09acf8bb3f4d6ef7b496222975e267ac644d9eae3b358",
+    "review": "新增HTTP RFC9110 token字符语法验证；wire名称不表示网络帧或PTP。",
+    "hits_reviewed": []
+  }
+]

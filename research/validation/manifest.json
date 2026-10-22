@@ -1,0 +1,94 @@
+{
+  "generated_at": "2026-10-19T11:18:44.021068+00:00",
+  "toolchain": "moon 0.1.20261012 (748b63c 2026-10-12) ~/.moon/bin/moon\nmoonc v0.10.15+943464bfa (2026-10-12) ~/.moon/bin/moonc\nmoonrun 0.1.20261012 (748b63c 2026-10-12) ~/.moon/bin/moonrun\n\nFeature flags enabled: rr_moon_mod,rr_moon_pkg",
+  "platform": "macOS-26.6-arm64-arm-64bit",
+  "native_sdk_selected": "/Library/Developer/CommandLineTools/SDKs/MacOSX26.5.sdk",
+  "default_sdk_problem": "macOS27 SDK .tbd arm64e.x1 incompatible with the installed Apple ld; compile/execute probe selects SDK26.5",
+  "runtime_repair_manifest": "research/toolchain-repair/manifest.json",
+  "results": {
+    "check_all_deny_warn": "pass",
+    "tests_per_backend": 289,
+    "backends": [
+      "wasm",
+      "wasm-gc",
+      "js",
+      "native"
+    ],
+    "total_test_executions": 1156,
+    "clean_native_tests": 289,
+    "cli_fixture_files": 60,
+    "cli_boundaries": 7,
+    "fixture_regeneration": "stable after regeneration and formatting",
+    "info": "pass",
+    "fmt_check": "pass",
+    "readme_sync": "same symlink content"
+  },
+  "test_sources": [
+    {
+      "path": "tests/audit_test.mbt",
+      "tests": 3,
+      "sha256": "5b83490b21f11ef1c66fd747d2bc9e2dec3023e5e065dfe748852681b3028624"
+    },
+    {
+      "path": "tests/fixtures_test.mbt",
+      "tests": 63,
+      "sha256": "10169d78967b8929c22e667ab16cacff268b187021a09390441ffc285beb10f6"
+    },
+    {
+      "path": "tests/reference_test.mbt",
+      "tests": 219,
+      "sha256": "e52f99eb0ea3b5968fbb84e05d9d8901af976e0899db3ef01be625448151495b"
+    },
+    {
+      "path": "tests/wire_boundary_test.mbt",
+      "tests": 4,
+      "sha256": "e802a266108b20bd50df0beac93b53c1494d7da06d5a7b334f293d1d6f10a0dc"
+    }
+  ],
+  "product_sources": [
+    {
+      "path": "audit/audit.mbt",
+      "sha256": "fed34958371245e1d4c12010d370279d0ab98d0e3e9c39ccb45386582d6efa53",
+      "physical_lines": 501,
+      "nonempty_noncomment_lines": 466
+    },
+    {
+      "path": "bmca/bmca.mbt",
+      "sha256": "6e93a00e17c9065239bdeb8f86352546242937a94559791cca63ffc39214ced0",
+      "physical_lines": 355,
+      "nonempty_noncomment_lines": 336
+    },
+    {
+      "path": "cmd/ptp-audit/main.mbt",
+      "sha256": "f5f39a97e2ed703110272b6dfdd64d5e218d8ea7ded54516f06f67602eb79e15",
+      "physical_lines": 47,
+      "nonempty_noncomment_lines": 40
+    },
+    {
+      "path": "diagnostic/diagnostic.mbt",
+      "sha256": "03696558c79240e31eeb686f80d18cc97b3ac64e9ae289bc7749143111e823d3",
+      "physical_lines": 82,
+      "nonempty_noncomment_lines": 69
+    },
+    {
+      "path": "exchange/exchange.mbt",
+      "sha256": "9b7b8e052aa2b547a7a62193c98112a7a0c9ed718fbeb33a7fb579f01a77ea49",
+      "physical_lines": 455,
+      "nonempty_noncomment_lines": 436
+    },
+    {
+      "path": "facade.mbt",
+      "sha256": "6bf09da6549cfd31aa521d25f7af0b3e670ae6ae5b1b025b716756d2a1155f1f",
+      "physical_lines": 5,
+      "nonempty_noncomment_lines": 3
+    },
+    {
+      "path": "wire/wire.mbt",
+      "sha256": "4db28fcff16d4d3b8c0e24430929584240faf0fe1ecc04954627cf850b930222",
+      "physical_lines": 564,
+      "nonempty_noncomment_lines": 494
+    }
+  ],
+  "non_generated_product_nonempty_noncomment_lines": 1844,
+  "scope_notice": "Local declared subset passed; no full IEEE, physical-clock or contest-eligibility certification."
+}

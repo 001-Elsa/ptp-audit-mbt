@@ -1,0 +1,559 @@
+[
+  {
+    "name": "mokomoking2501/fieldbus_core",
+    "version": "0.1.0",
+    "url": "https://download.mooncakes.io/user/mokomoking2501/fieldbus_core/0.1.0.zip",
+    "status": "ok",
+    "sha256": "5812cbc8395ccc99c05f3c37ac3bd7b1fbd36249edaefa034e698d43d89cede9",
+    "text_files": 72,
+    "text_bytes": 580244,
+    "skipped": [],
+    "hits": []
+  },
+  {
+    "name": "mokomoking2501/lockwire",
+    "version": "0.1.0",
+    "url": "https://download.mooncakes.io/user/mokomoking2501/lockwire/0.1.0.zip",
+    "status": "ok",
+    "sha256": "47258f2a4843bb4c2b79969a21b65e9ff2dad93429d36157d8242a6b88c6e0a3",
+    "text_files": 272,
+    "text_bytes": 2379442,
+    "skipped": [],
+    "hits": [
+      {
+        "path": "hal/embedded/c/stub_stm32_periph.c",
+        "line": 7,
+        "text": " * follow-up. They are compiled by the external arm-none-eabi-gcc build."
+      }
+    ]
+  },
+  {
+    "name": "mokomoking2501/profinet_master",
+    "version": "0.1.0",
+    "url": "https://download.mooncakes.io/user/mokomoking2501/profinet_master/0.1.0.zip",
+    "status": "ok",
+    "sha256": "7d4757bde619567b711891748f9010b323416420f5415e5c05a8a312964d66b6",
+    "text_files": 135,
+    "text_bytes": 961678,
+    "skipped": [],
+    "hits": [
+      {
+        "path": "docs/live-regression-checklist.md",
+        "line": 332,
+        "text": "`TASKS.md` 的 `RT/AR Follow-up Backlog`。未达到代码实现和实机证据前不得勾选。"
+      },
+      {
+        "path": "docs/protocol-feature-pending.md",
+        "line": 15,
+        "text": "2026-06-12 按 PN-AL-Protocol d25 复查 live RT/AR 路径后新增一批 RT 层缺口。2026-06-15 已将其拆入 `TASKS.md` 的 `RT/AR Follow-up Backlog`，并在 `protocol-feature-acceptance.md` / `live-regression-checklist.md` 建验收入口。"
+      },
+      {
+        "path": "docs/research/rt-006-iocr-phase-sequence.md",
+        "line": 41,
+        "text": "- `docs/rt-pitfalls-and-lessons.md`，访问日期 2026-06-16：Phase/Sequence follow-up rationale。"
+      },
+      {
+        "path": "docs/rt-pitfalls-and-lessons.md",
+        "line": 58,
+        "text": "以下是本轮按参考规范复查 RT/AR 路径后明确的缺口，按建议优先级排列。2026-06-15 已拆入 `TASKS.md` 的 `RT/AR Follow-up Backlog`（RT-001..RT-008），并在 `docs/protocol-feature-acceptance.md` / `docs/live-regression-checklist.md` 建验收入口；落地时从 `TASKS.md` 取项推进。"
+      },
+      {
+        "path": "gsd_file_fallback.mbt",
+        "line": 366,
+        "text": "    \"snmp_feature_ieee_8021as_mib_optional=\" +"
+      },
+      {
+        "path": "gsd_file_fallback.mbt",
+        "line": 367,
+        "text": "    snmp_feature_ieee_8021as_mib_optional().to_string(),"
+      },
+      {
+        "path": "gsd_native.mbt",
+        "line": 314,
+        "text": "    \"snmp_feature_ieee_8021as_mib_optional=\" +"
+      },
+      {
+        "path": "gsd_native.mbt",
+        "line": 315,
+        "text": "    snmp_feature_ieee_8021as_mib_optional().to_string(),"
+      },
+      {
+        "path": "profinet_master.mbt",
+        "line": 362,
+        "text": "pub fn snmp_feature_ieee_8021as_mib_optional() -> Bool {"
+      },
+      {
+        "path": "profinet_master.mbt",
+        "line": 2507,
+        "text": "  let mut supported_ieee_8021as = snmp_feature_ieee_8021as_mib_optional().to_string()"
+      },
+      {
+        "path": "profinet_master.mbt",
+        "line": 2530,
+        "text": "      \"supported_ieee_8021as\" =>"
+      },
+      {
+        "path": "profinet_master.mbt",
+        "line": 2531,
+        "text": "        supported_ieee_8021as = normalize_fixture_bool_text(value)"
+      },
+      {
+        "path": "profinet_master.mbt",
+        "line": 2553,
+        "text": "    \"supported_ieee_8021as=\" + supported_ieee_8021as,"
+      },
+      {
+        "path": "profinet_master.mbt",
+        "line": 2763,
+        "text": "    \"snmp_feature_ieee_8021as_mib_optional=\" +"
+      },
+      {
+        "path": "profinet_master.mbt",
+        "line": 2764,
+        "text": "    snmp_feature_ieee_8021as_mib_optional().to_string(),"
+      },
+      {
+        "path": "profinet_master.mbt",
+        "line": 2905,
+        "text": "      \"snmp_feature_ieee_8021as_mib_optional=\" +"
+      },
+      {
+        "path": "profinet_master.mbt",
+        "line": 2906,
+        "text": "      snmp_feature_ieee_8021as_mib_optional().to_string(),"
+      },
+      {
+        "path": "profinet_master_test.mbt",
+        "line": 148,
+        "text": "  assert_eq(@profinet_master.snmp_feature_ieee_8021as_mib_optional(), true)"
+      },
+      {
+        "path": "profinet_master_test.mbt",
+        "line": 505,
+        "text": "    \"snmp_feature_mib2_required=true\", \"snmp_feature_lldp_mib_required=true\", \"snmp_feature_ieee_8021as_mib_optional=true\","
+      },
+      {
+        "path": "profinet_master_test.mbt",
+        "line": 1302,
+        "text": "    \"supported_mib2=true\", \"supported_lldp=true\", \"supported_ieee_8021as=false\","
+      },
+      {
+        "path": "profinet_master_test.mbt",
+        "line": 1310,
+        "text": "    \"supported_ieee_8021as=false\", \"supported_bridge=false\", \"supported_pno=true\","
+      },
+      {
+        "path": "TASKS.md",
+        "line": 33,
+        "text": "## RT/AR Follow-up Backlog"
+      },
+      {
+        "path": "TASKS.md",
+        "line": 104,
+        "text": "当前 RT/AR Follow-up Backlog 暂无新的 Open 项；`RT-007` 保持 Deferred，等待未来 UDP-RTC 路径。`RT-001`、`RT-002`、`RT-003`、`RT-004`、`RT-005`、`RT-006`"
+      }
+    ]
+  },
+  {
+    "name": "mokomoking2501/MoonECAT",
+    "version": "0.2.0",
+    "url": "https://download.mooncakes.io/user/mokomoking2501/MoonECAT/0.2.0.zip",
+    "status": "ok",
+    "sha256": "acb5fc45947d4c7caec98008d41ad89114ab10dc2544d5fcea9b65ff1288b3da",
+    "text_files": 227,
+    "text_bytes": 2786392,
+    "skipped": [],
+    "hits": []
+  },
+  {
+    "name": "CJR-ai-nb/evowitness",
+    "version": "0.1.1",
+    "url": "https://download.mooncakes.io/user/CJR-ai-nb/evowitness/0.1.1.zip",
+    "status": "ok",
+    "sha256": "c049b9511e769ddaf61946bf29786d0aa9dbe1245a7015272c44f27100b9e443",
+    "text_files": 54,
+    "text_bytes": 227975,
+    "skipped": [],
+    "hits": []
+  },
+  {
+    "name": "HhWw96/moontxnwitness",
+    "version": "0.1.0",
+    "url": "https://download.mooncakes.io/user/HhWw96/moontxnwitness/0.1.0.zip",
+    "status": "ok",
+    "sha256": "671c44572cda9871389b7dbb2368c5d6c18c031f9210b457363392a14f0c78b9",
+    "text_files": 184,
+    "text_bytes": 5234256,
+    "skipped": [],
+    "hits": [
+      {
+        "path": "verification/releases/0.0.10/complete-v010.json",
+        "line": 3649,
+        "text": "            1.1588999999999885,"
+      },
+      {
+        "path": "verification/releases/0.0.10/complete-v010.json",
+        "line": 3671,
+        "text": "          \"medianMs\": 1.1588999999999885,"
+      },
+      {
+        "path": "verification/releases/0.0.10/direct-parser-reduction-v010.json",
+        "line": 25,
+        "text": "      \"memoryRatio\": 0.9476684601588522,"
+      },
+      {
+        "path": "verification/releases/0.0.10/final-reduction-v010.json",
+        "line": 4059,
+        "text": "            3.1588000000000136,"
+      },
+      {
+        "path": "verification/releases/0.0.10/release-gate-v010.json",
+        "line": 246,
+        "text": "            39.1588999999999"
+      },
+      {
+        "path": "verification/releases/0.0.10/release-gate-v010.json",
+        "line": 2321,
+        "text": "            1.1588000000000136,"
+      },
+      {
+        "path": "verification/releases/0.0.11/postgres/sql-events.json",
+        "line": 1773,
+        "text": "    \"backendPid\": 158848,"
+      },
+      {
+        "path": "verification/releases/0.1.0/release-gate-v1.json",
+        "line": 1471,
+        "text": "            5.1588999999999885,"
+      },
+      {
+        "path": "verification/releases/0.1.0/release-gate-v1.json",
+        "line": 1500,
+        "text": "          \"p95Ms\": 5.1588999999999885,"
+      }
+    ]
+  },
+  {
+    "name": "length-super/moonctl",
+    "version": "0.2.0",
+    "url": "https://download.mooncakes.io/user/length-super/moonctl/0.2.0.zip",
+    "status": "ok",
+    "sha256": "5146fc479080f35a72c8d9d45d46d616eed57b436359ff75d3788b3ec1694249",
+    "text_files": 39,
+    "text_bytes": 115358,
+    "skipped": [],
+    "hits": []
+  },
+  {
+    "name": "cghyyrrt/moonbit-pcap",
+    "version": "0.1.2",
+    "url": "https://download.mooncakes.io/user/cghyyrrt/moonbit-pcap/0.1.2.zip",
+    "status": "ok",
+    "sha256": "ddf593d445aafa76f6a18b55a6f974bb53226e870d8790258982e8725625ec0c",
+    "text_files": 117,
+    "text_bytes": 232073,
+    "skipped": [],
+    "hits": []
+  },
+  {
+    "name": "vicTop-cw/mcpconftest",
+    "version": "0.8.0",
+    "url": "https://download.mooncakes.io/user/vicTop-cw/mcpconftest/0.8.0.zip",
+    "status": "ok",
+    "sha256": "cbfaa8bc93387608f66cf14e59618d70b53111a330a44a83868e99682eab736b",
+    "text_files": 38,
+    "text_bytes": 155995,
+    "skipped": [],
+    "hits": []
+  },
+  {
+    "name": "xuting22/ntp",
+    "version": "0.4.0",
+    "url": "https://download.mooncakes.io/user/xuting22/ntp/0.4.0.zip",
+    "status": "ok",
+    "sha256": "ab90ce938633becc22f782f392a483d01d238a4a01857f6f3b212034c6436eb3",
+    "text_files": 63,
+    "text_bytes": 2030303,
+    "skipped": [],
+    "hits": [
+      {
+        "path": "filter_golden_test.mbt",
+        "line": 39,
+        "text": "    \".00022468769431114197,\\\"jitter\\\":0.0013655672398473697,\\\"selected\\\":156,\\\"count\\\":8,\\\"reach\\\":239,\\\"fresh\\\":false}},{\\\"op\\\":\\\"poll\\\",\\\"now\\\":164},{\\\"op\\\":\\\"observe\\\",\\\"offset\\\":0.000732421875,\\\"delay\\\":0.0107421875,\\\"dispersion\\\":2.86102294921875e-06,\\\"now\\\":164,\\\"expected\\\":{\\\"offset\\\":0.0009765625,\\\"delay\\\":0.005859375,\\\"dispersion\\\":0.00021052290797233581,\\\"jitter\\\":0.0012066715884490927,\\\"selected\\\":156,\\\"count\\\":8,\\\"reach\\\":223,\\\"fresh\\\":false}},{\\\"op\\\":\\\"state\\\",\\\"now\\\":166,\\\"expected\\\":{\\\"offset\\\":0.0009765625,\\\"delay\\\":0.005859375,\\\"dispersion\\\":0.00024040572047233583,\\\"jitter\\\":0"
+      },
+      {
+        "path": "filter_golden_test.mbt",
+        "line": 104,
+        "text": "    \",\\\"jitter\\\":0.0011301514889801654,\\\"selected\\\":128,\\\"count\\\":8,\\\"reach\\\":251,\\\"fresh\\\":true}},{\\\"op\\\":\\\"state\\\",\\\"now\\\":146,\\\"expected\\\":{\\\"offset\\\":0.0,\\\"delay\\\":0.009765625,\\\"dispersion\\\":0.0002557214152812958,\\\"jitter\\\":0.0011301514889801654,\\\"selected\\\":128,\\\"count\\\":8,\\\"reach\\\":251,\\\"fresh\\\":false}},{\\\"op\\\":\\\"poll\\\",\\\"now\\\":148},{\\\"op\\\":\\\"observe\\\",\\\"offset\\\":0.001220703125,\\\"delay\\\":0.01953125,\\\"dispersion\\\":2.86102294921875e-06,\\\"now\\\":148,\\\"expected\\\":{\\\"offset\\\":0.0,\\\"delay\\\":0.009765625,\\\"dispersion\\\":0.00021774659991264343,\\\"jitter\\\":0.0012066715884490927,\\\"selected\\\":128,\\\"cou"
+      },
+      {
+        "path": "filter_golden_test.mbt",
+        "line": 110,
+        "text": "    \"684,\\\"selected\\\":136,\\\"count\\\":8,\\\"reach\\\":255,\\\"fresh\\\":false}},{\\\"op\\\":\\\"poll\\\",\\\"now\\\":140},{\\\"op\\\":\\\"observe\\\",\\\"offset\\\":-0.001220703125,\\\"delay\\\":0.00390625,\\\"dispersion\\\":1.9073486328125e-06,\\\"now\\\":140,\\\"expected\\\":{\\\"offset\\\":-0.0009765625,\\\"delay\\\":0.0009765625,\\\"dispersion\\\":0.0001973004138469696,\\\"jitter\\\":0.0011525328991251608,\\\"selected\\\":136,\\\"count\\\":8,\\\"reach\\\":255,\\\"fresh\\\":false}},{\\\"op\\\":\\\"state\\\",\\\"now\\\":142,\\\"expected\\\":{\\\"offset\\\":-0.0009765625,\\\"delay\\\":0.0009765625,\\\"dispersion\\\":0.0002570660388469696,\\\"jitter\\\":0.0011525328991251608,\\\"selected\\\":136,\\\"count\\\":8,\\"
+      },
+      {
+        "path": "filter_golden_test.mbt",
+        "line": 133,
+        "text": "    \"h\\\":false}},{\\\"op\\\":\\\"poll\\\",\\\"now\\\":156},{\\\"op\\\":\\\"observe\\\",\\\"offset\\\":-0.001220703125,\\\"delay\\\":0.015625,\\\"dispersion\\\":4.76837158203125e-06,\\\"now\\\":156,\\\"expected\\\":{\\\"offset\\\":0.0009765625,\\\"delay\\\":0.0029296875,\\\"dispersion\\\":3.1851232051849365e-06,\\\"jitter\\\":0.0020613004821131704,\\\"selected\\\":132,\\\"count\\\":8,\\\"reach\\\":255,\\\"fresh\\\":true}},{\\\"op\\\":\\\"state\\\",\\\"now\\\":158,\\\"expected\\\":{\\\"offset\\\":0.0009765625,\\\"delay\\\":0.0029296875,\\\"dispersion\\\":3.1851232051849365e-06,\\\"jitter\\\":0.0020613004821131704,\\\"selected\\\":132,\\\"count\\\":8,\\\"reach\\\":255,\\\"fresh\\\":false}},{\\\"op\\\":\\\"poll\\\",\\\"now\\\""
+      },
+      {
+        "path": "evidence/filter-oracle.json",
+        "line": 1103,
+        "text": "            \"jitter\": 0.0012066715884490927,"
+      },
+      {
+        "path": "evidence/filter-oracle.json",
+        "line": 1117,
+        "text": "            \"jitter\": 0.0012066715884490927,"
+      },
+      {
+        "path": "evidence/filter-oracle.json",
+        "line": 9662,
+        "text": "            \"jitter\": 0.0012066715884490927,"
+      },
+      {
+        "path": "evidence/filter-oracle.json",
+        "line": 9676,
+        "text": "            \"jitter\": 0.0012066715884490927,"
+      },
+      {
+        "path": "evidence/filter-oracle.json",
+        "line": 9697,
+        "text": "            \"jitter\": 0.0012066715884490927,"
+      },
+      {
+        "path": "evidence/filter-oracle.json",
+        "line": 9711,
+        "text": "            \"jitter\": 0.0012066715884490927,"
+      },
+      {
+        "path": "evidence/filter-oracle.json",
+        "line": 10491,
+        "text": "            \"jitter\": 0.0012066715884490927,"
+      },
+      {
+        "path": "evidence/filter-oracle.json",
+        "line": 10505,
+        "text": "            \"jitter\": 0.0012066715884490927,"
+      },
+      {
+        "path": "evidence/filter-oracle.json",
+        "line": 13537,
+        "text": "            \"jitter\": 0.0012066715884490927,"
+      },
+      {
+        "path": "evidence/filter-oracle.json",
+        "line": 13551,
+        "text": "            \"jitter\": 0.0012066715884490927,"
+      }
+    ]
+  },
+  {
+    "name": "Ljh684/moonnet-lab",
+    "version": "0.1.0",
+    "url": "https://download.mooncakes.io/user/Ljh684/moonnet-lab/0.1.0.zip",
+    "status": "ok",
+    "sha256": "5ce9ee2ee757c72d12497141721f3cdc02ba7028a6e88e0b287b6a0620f65884",
+    "text_files": 70,
+    "text_bytes": 450037,
+    "skipped": [],
+    "hits": []
+  },
+  {
+    "name": "lxyhgvb/moonbit-radioframe",
+    "version": "0.2.0",
+    "url": "https://download.mooncakes.io/user/lxyhgvb/moonbit-radioframe/0.2.0.zip",
+    "status": "ok",
+    "sha256": "3e359aeacb1e02d675dca721c2c9f96dc2b8d7f8fd4776bfbb8ea973336a497d",
+    "text_files": 132,
+    "text_bytes": 247440,
+    "skipped": [],
+    "hits": []
+  },
+  {
+    "name": "sbqrre/moonbit-mcu-hal",
+    "version": "0.2.1",
+    "url": "https://download.mooncakes.io/user/sbqrre/moonbit-mcu-hal/0.2.1.zip",
+    "status": "ok",
+    "sha256": "7371ec0b49d383fed815e39bb94eb1847c44c0f15a8239d3442ce749ac17ecab",
+    "text_files": 243,
+    "text_bytes": 359520,
+    "skipped": [],
+    "hits": []
+  },
+  {
+    "name": "oyjh0381/moonlab",
+    "version": "0.1.0",
+    "url": "https://download.mooncakes.io/user/oyjh0381/moonlab/0.1.0.zip",
+    "status": "ok",
+    "sha256": "1cf67ba9d2d408afabce112dab796917c19917d9a55fb5623d981bab09f7a330",
+    "text_files": 75,
+    "text_bytes": 182516,
+    "skipped": [],
+    "hits": []
+  },
+  {
+    "name": "cauchyQ/moonbit-causalkit",
+    "version": "0.1.0",
+    "url": "https://download.mooncakes.io/user/cauchyQ/moonbit-causalkit/0.1.0.zip",
+    "status": "ok",
+    "sha256": "83ffa745827a9fd4b0d5e2e8925cf9d8b9c8d6c90673660e51e2fd87b9554bf7",
+    "text_files": 32,
+    "text_bytes": 152883,
+    "skipped": [],
+    "hits": []
+  },
+  {
+    "name": "SCL-NN/moontracekit",
+    "version": "0.2.0",
+    "url": "https://download.mooncakes.io/user/SCL-NN/moontracekit/0.2.0.zip",
+    "status": "ok",
+    "sha256": "1e9cb93cbbc3a45af3e332d7bf9c42935530d7c313b9cdb8618b09b55e144ae7",
+    "text_files": 21,
+    "text_bytes": 32505,
+    "skipped": [],
+    "hits": []
+  },
+  {
+    "name": "zlhahaha/moonsim",
+    "version": "0.3.1",
+    "url": "https://download.mooncakes.io/user/zlhahaha/moonsim/0.3.1.zip",
+    "status": "ok",
+    "sha256": "83c212e27cb221f4dd0b76114cde14605054ad0a5d3f7a3aedde00c1ab326bfc",
+    "text_files": 104,
+    "text_bytes": 373026,
+    "skipped": [],
+    "hits": []
+  },
+  {
+    "name": "wcx789ll/moonsim",
+    "version": "0.1.2",
+    "url": "https://download.mooncakes.io/user/wcx789ll/moonsim/0.1.2.zip",
+    "status": "ok",
+    "sha256": "43e014cfe04036e0c7a89b420acb5d22b39c79fd6d0869d6911bd3230580c5b1",
+    "text_files": 76,
+    "text_bytes": 156033,
+    "skipped": [],
+    "hits": []
+  },
+  {
+    "name": "usagi-star/mooncap",
+    "version": "0.1.0",
+    "url": "https://download.mooncakes.io/user/usagi-star/mooncap/0.1.0.zip",
+    "status": "ok",
+    "sha256": "455ec6535f36494863e13a47f94c8e62dc6cdea8b0ec3036c57b5f53860a1bbe",
+    "text_files": 85,
+    "text_bytes": 275206,
+    "skipped": [],
+    "hits": []
+  },
+  {
+    "name": "bzy-debug/hello",
+    "version": "0.1.20240510+81e045f4e",
+    "url": "https://download.mooncakes.io/user/bzy-debug/hello/0.1.20240510+81e045f4e.zip",
+    "status": "ok",
+    "sha256": "8b8f5bed8489bc7b272f1ad8071ab9a5af42587e86586f6477eb07a82c43517f",
+    "text_files": 7,
+    "text_bytes": 444,
+    "skipped": [],
+    "hits": []
+  },
+  {
+    "name": "moonbitlang/core",
+    "version": "0.1.20261019+b1a0e846e",
+    "url": "https://download.mooncakes.io/user/moonbitlang/core/0.1.20261019+b1a0e846e.zip",
+    "status": "ok",
+    "sha256": "628ffb667fe049a128fe11bfb641343d44f1f74058d8cfc9cf3f8094a69f4b45",
+    "text_files": 1180,
+    "text_bytes": 7562501,
+    "skipped": [],
+    "hits": [
+      {
+        "path": "random/internal/random_source/random_source_chacha.mbt",
+        "line": 460,
+        "text": "    10270419548610515257UL, 4775977266197392933UL, 5858955664787759631UL, 15884112255303985129UL,"
+      },
+      {
+        "path": "float/to_string_cases_test.mbt",
+        "line": 1923,
+        "text": "  (0x44E2FC5BU, \"18158861\", -4),"
+      },
+      {
+        "path": "builtin/double_ryu_nonjs.mbt",
+        "line": 173,
+        "text": "  1, 2305843009213693952, 5955668970331000884, 1784059615882449851, 8982663654677661702,"
+      },
+      {
+        "path": "math/prime.mbt",
+        "line": 160,
+        "text": "  15797, 15803, 15809, 15817, 15823, 15859, 15877, 15881, 15887, 15889, 15901, 15907,"
+      }
+    ]
+  },
+  {
+    "name": "BigOrangeQWQ/wit-wasi-clocks",
+    "version": "0.2.6",
+    "url": "https://download.mooncakes.io/user/BigOrangeQWQ/wit-wasi-clocks/0.2.6.zip",
+    "status": "ok",
+    "sha256": "4208f3f557c5ce0e822f8f175aca44afd280a2888ca82fefc6a91fa28cea7699",
+    "text_files": 10,
+    "text_bytes": 4505,
+    "skipped": [],
+    "hits": []
+  },
+  {
+    "name": "BigOrangeQWQ/wit-wasi-io",
+    "version": "0.2.6",
+    "url": "https://download.mooncakes.io/user/BigOrangeQWQ/wit-wasi-io/0.2.6.zip",
+    "status": "ok",
+    "sha256": "00d18962d813adfbf88652e8cabd2c77ee7469e3c0dc8f5a9fc8cf067966207e",
+    "text_files": 18,
+    "text_bytes": 29848,
+    "skipped": [],
+    "hits": []
+  },
+  {
+    "name": "CAIMEOX/原来可以发中文包",
+    "version": "0.1.1",
+    "url": "https://download.mooncakes.io/user/CAIMEOX/原来可以发中文包/0.1.1.zip",
+    "status": "ok",
+    "sha256": "b2c6785e5974d3e6f3777acfd9555b70a2c19de68398c3b78cd21c7d215bcb69",
+    "text_files": 5,
+    "text_bytes": 402,
+    "skipped": [],
+    "hits": []
+  },
+  {
+    "name": "illusory0x0/🐫",
+    "version": "0.1.0",
+    "url": "https://download.mooncakes.io/user/illusory0x0/🐫/0.1.0.zip",
+    "status": "ok",
+    "sha256": "88b9238704f844ee3abb3068cf44b56a22128e70c2318e271d25db4011358cf0",
+    "text_files": 7,
+    "text_bytes": 457,
+    "skipped": [],
+    "hits": []
+  },
+  {
+    "name": "moonbit-community/moongrep-skill",
+    "version": "0.1.0",
+    "url": "https://download.mooncakes.io/user/moonbit-community/moongrep-skill/0.1.0.zip",
+    "status": "ok",
+    "sha256": "b1ce9eb4f52d0d64a6f7eea0d104eac7e9ad0290e832f41f59413e9bab7706d7",
+    "text_files": 4,
+    "text_bytes": 28626,
+    "skipped": [],
+    "hits": []
+  },
+  {
+    "name": "tonyfettes/ssl",
+    "version": "0.1.1",
+    "url": "https://download.mooncakes.io/user/tonyfettes/ssl/0.1.1.zip",
+    "status": "ok",
+    "sha256": "016bb9ccf714eb7c7c88de43bda0f185f97483f84daa3ae78dff558405400b5f",
+    "text_files": 10,
+    "text_bytes": 12898,
+    "skipped": [],
+    "hits": []
+  }
+]

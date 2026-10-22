@@ -1,0 +1,201 @@
+{
+  "schema": "ptp-audit-report/v1",
+  "rule_set": "ptp-audit/0.2.0",
+  "scope": "IEEE1588-2008 default multicast E2E two-step fixed-body subset; dataset preference only",
+  "status": "Pass",
+  "exit_code": 0,
+  "input_fingerprint": "fnv1a32-utf16:2836167361",
+  "fingerprint_notice": "FNV1a32 over UTF-16 code units; non-cryptographic, not an authenticity guarantee",
+  "findings": [
+    {
+      "rule": "WIRE.FIXED_BODY",
+      "status": "Pass",
+      "frames": [
+        1
+      ],
+      "offset": null,
+      "expected": "supported fixed message layout",
+      "actual": "decoded",
+      "detail": "Only implemented wire rules checked; not full IEEE certification."
+    },
+    {
+      "rule": "WIRE.FIXED_BODY",
+      "status": "Pass",
+      "frames": [
+        2
+      ],
+      "offset": null,
+      "expected": "supported fixed message layout",
+      "actual": "decoded",
+      "detail": "Only implemented wire rules checked; not full IEEE certification."
+    },
+    {
+      "rule": "WIRE.FIXED_BODY",
+      "status": "Pass",
+      "frames": [
+        3
+      ],
+      "offset": null,
+      "expected": "supported fixed message layout",
+      "actual": "decoded",
+      "detail": "Only implemented wire rules checked; not full IEEE certification."
+    },
+    {
+      "rule": "WIRE.FIXED_BODY",
+      "status": "Pass",
+      "frames": [
+        4
+      ],
+      "offset": null,
+      "expected": "supported fixed message layout",
+      "actual": "decoded",
+      "detail": "Only implemented wire rules checked; not full IEEE certification."
+    },
+    {
+      "rule": "WIRE.FIXED_BODY",
+      "status": "Pass",
+      "frames": [
+        5
+      ],
+      "offset": null,
+      "expected": "supported fixed message layout",
+      "actual": "decoded",
+      "detail": "Only implemented wire rules checked; not full IEEE certification."
+    },
+    {
+      "rule": "WIRE.FIXED_BODY",
+      "status": "Pass",
+      "frames": [
+        6
+      ],
+      "offset": null,
+      "expected": "supported fixed message layout",
+      "actual": "decoded",
+      "detail": "Only implemented wire rules checked; not full IEEE certification."
+    },
+    {
+      "rule": "WIRE.FIXED_BODY",
+      "status": "Pass",
+      "frames": [
+        7
+      ],
+      "offset": null,
+      "expected": "supported fixed message layout",
+      "actual": "decoded",
+      "detail": "Only implemented wire rules checked; not full IEEE certification."
+    },
+    {
+      "rule": "EXCHANGE.SYNC_FOLLOW_UP",
+      "status": "Pass",
+      "frames": [
+        1,
+        2
+      ],
+      "offset": 20,
+      "expected": "same epoch/domain/source/sequence",
+      "actual": "unique matching pair",
+      "detail": "Arrival order is irrelevant. This checks association only, not clock accuracy."
+    },
+    {
+      "rule": "CLAIM.SYNC_FOLLOW_UP",
+      "status": "Pass",
+      "frames": [
+        1,
+        2
+      ],
+      "offset": 20,
+      "expected": "two-step Sync/Follow_Up with same epoch/domain/source/sequence",
+      "actual": "matching",
+      "detail": "Verdict applies to the explicitly asserted device association, not to mere coexistence of packets."
+    },
+    {
+      "rule": "CLAIM.E2E_IDENTITY",
+      "status": "Pass",
+      "frames": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "offset": 20,
+      "expected": "same epoch/domain, matching requester/sequence and selected master",
+      "actual": "matching",
+      "detail": "An explicit four-frame device association is being checked. Request correction is not counted twice."
+    },
+    {
+      "rule": "MEASUREMENT.E2E",
+      "status": "Pass",
+      "frames": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "offset": null,
+      "expected": "exact rational algebra under supplied assumptions",
+      "actual": "offset and delay in 1/131072 ns units",
+      "detail": "Uses arbitrary precision core integers internally. Not a clock-discipline or absolute-accuracy claim."
+    },
+    {
+      "rule": "BMCA.DIFFERENT_GM.priority1",
+      "status": "Pass",
+      "frames": [
+        5,
+        7
+      ],
+      "offset": null,
+      "expected": "100",
+      "actual": "90",
+      "detail": "Preferred candidate: C; topology=false"
+    },
+    {
+      "rule": "BMCA.DIFFERENT_GM.priority1",
+      "status": "Pass",
+      "frames": [
+        7,
+        6
+      ],
+      "offset": null,
+      "expected": "90",
+      "actual": "120",
+      "detail": "Preferred candidate: C; topology=false"
+    },
+    {
+      "rule": "BMCA.OBSERVED_DECISION",
+      "status": "Pass",
+      "frames": [
+        7
+      ],
+      "offset": null,
+      "expected": "C",
+      "actual": "C",
+      "detail": "Dataset preference only, conditional on complete eligible snapshot. Not the full port-state algorithm."
+    }
+  ],
+  "measurements": [
+    {
+      "frames": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "offset_numerator": "3342336",
+      "mean_delay_numerator": "36012032",
+      "denominator": 131072,
+      "unit": "ns"
+    }
+  ],
+  "assumptions": [
+    "Epochs, capture provenance, eligibility and completeness are caller-supplied, not independently authenticated.",
+    "Measurement additionally requires symmetric paths and stable relative clock rates."
+  ],
+  "not_checked": [
+    "Full IEEE compliance, clock accuracy, hardware/transport, qualification and port-state BMCA, unsupported profiles/TLVs, capture completeness"
+  ],
+  "references": [
+    "https://github.com/richardcochran/linuxptp/blob/v4.4/msg.h",
+    "https://github.com/richardcochran/linuxptp/blob/v4.4/port.c",
+    "https://github.com/richardcochran/linuxptp/blob/v4.4/bmc.c"
+  ]
+}

@@ -1,0 +1,9 @@
+# Security model
+
+MoonLab runs user-authored System Models in-process; it is not a sandbox for untrusted code. Security controls bound simulator-owned work and artifact parsing rather than isolate arbitrary model instructions.
+
+The engine validates Scenario declarations before execution, enforces configurable Resource Budgets below hard limits, checks Virtual Time addition, and returns a non-success result when a run limit is reached. Artifact parsing rejects unsupported versions, input above 16 MiB, nesting beyond 32 levels, duplicate object keys, malformed or oversized Decision Streams, and replay identity mismatches. Trace encoding rejects lines above 1 MiB and total output above 16 MiB.
+
+The v0.1 hard-limit categories include Node count, identifier characters, actions, Virtual Time, pending actions, Effects per transition, Choice alternatives, Stable Storage operations per batch, aggregate Stable Storage bytes, retained Trace events, artifact bytes/depth, Decision Stream length, and Shrinker attempts. Effect expansion is projected against the pending-work budget before actions are materialized; Timer replacement/cancellation and network alternatives are included in the projection. Arbitrary data retained inside trusted user State is not fully accounted by the engine.
+
+Out of scope are process isolation, hostile Native code, real network security, Message authentication, Byzantine faults, disk corruption, and resource accounting for arbitrary data retained inside user model State.

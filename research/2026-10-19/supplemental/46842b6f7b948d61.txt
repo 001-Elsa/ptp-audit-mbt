@@ -1,0 +1,11 @@
+# Artifact compatibility
+
+MoonLab separates three deterministic artifacts:
+
+- Replay JSON binds Scenario and model identity, normalized inputs, Resource Budgets, Seed, and Decision Stream to a replay-compatibility version.
+- Trace JSONL explains selected actions and observable consequences in order.
+- Run Report JSON summarizes the Run Outcome/Failure Signature, Scenario and model identities, action/time totals, peak pending work, Message delivery/drop counts, and Crash/Restart statistics.
+
+Replay validates schema version, replay-compatibility version, engine identity, model identity, and the normalized SHA-256 Scenario identity before execution. A mismatch is `IncompatibleArtifact`. `ReplayDiverged` is reserved for a compatible artifact whose next recorded choice is not available in the current enabled set. Replay never falls back to randomized exploration.
+
+Artifact schemas are independently versioned from the library's semantic version. Pre-1.0 library releases may evolve Interfaces, but a schema or replay-compatibility change must be explicit.

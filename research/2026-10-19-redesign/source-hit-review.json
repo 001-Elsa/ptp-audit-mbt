@@ -1,0 +1,475 @@
+[
+  {
+    "name": "mokomoking2501/fieldbus_core",
+    "version": "0.1.0",
+    "status": "ok",
+    "hits_reviewed": []
+  },
+  {
+    "name": "mokomoking2501/lockwire",
+    "version": "0.1.0",
+    "status": "ok",
+    "hits_reviewed": [
+      {
+        "path": "hal/embedded/c/stub_stm32_periph.c",
+        "line": 7,
+        "text": " * follow-up. They are compiled by the external arm-none-eabi-gcc build.",
+        "review": "Ordinary follow-up prose, not PTP Follow_Up semantics."
+      }
+    ]
+  },
+  {
+    "name": "mokomoking2501/profinet_master",
+    "version": "0.1.0",
+    "status": "ok",
+    "hits_reviewed": [
+      {
+        "path": "docs/live-regression-checklist.md",
+        "line": 332,
+        "text": "`TASKS.md` 的 `RT/AR Follow-up Backlog`。未达到代码实现和实机证据前不得勾选。",
+        "review": "Ordinary follow-up prose, not PTP Follow_Up semantics."
+      },
+      {
+        "path": "docs/protocol-feature-pending.md",
+        "line": 15,
+        "text": "2026-06-12 按 PN-AL-Protocol d25 复查 live RT/AR 路径后新增一批 RT 层缺口。2026-06-15 已将其拆入 `TASKS.md` 的 `RT/AR Follow-up Backlog`，并在 `protocol-feature-acceptance.md` / `live-regression-checklist.md` 建验收入口。",
+        "review": "Ordinary follow-up prose, not PTP Follow_Up semantics."
+      },
+      {
+        "path": "docs/research/rt-006-iocr-phase-sequence.md",
+        "line": 41,
+        "text": "- `docs/rt-pitfalls-and-lessons.md`，访问日期 2026-06-16：Phase/Sequence follow-up rationale。",
+        "review": "Ordinary follow-up prose, not PTP Follow_Up semantics."
+      },
+      {
+        "path": "docs/rt-pitfalls-and-lessons.md",
+        "line": 58,
+        "text": "以下是本轮按参考规范复查 RT/AR 路径后明确的缺口，按建议优先级排列。2026-06-15 已拆入 `TASKS.md` 的 `RT/AR Follow-up Backlog`（RT-001..RT-008），并在 `docs/protocol-feature-acceptance.md` / `docs/live-regression-checklist.md` 建验收入口；落地时从 `TASKS.md` 取项推进。",
+        "review": "Ordinary follow-up prose, not PTP Follow_Up semantics."
+      },
+      {
+        "path": "gsd_file_fallback.mbt",
+        "line": 366,
+        "text": "    \"snmp_feature_ieee_8021as_mib_optional=\" +",
+        "review": "PROFINET optional MIB capability/fixture, not PTP protocol implementation."
+      },
+      {
+        "path": "gsd_file_fallback.mbt",
+        "line": 367,
+        "text": "    snmp_feature_ieee_8021as_mib_optional().to_string(),",
+        "review": "PROFINET optional MIB capability/fixture, not PTP protocol implementation."
+      },
+      {
+        "path": "gsd_native.mbt",
+        "line": 314,
+        "text": "    \"snmp_feature_ieee_8021as_mib_optional=\" +",
+        "review": "PROFINET optional MIB capability/fixture, not PTP protocol implementation."
+      },
+      {
+        "path": "gsd_native.mbt",
+        "line": 315,
+        "text": "    snmp_feature_ieee_8021as_mib_optional().to_string(),",
+        "review": "PROFINET optional MIB capability/fixture, not PTP protocol implementation."
+      },
+      {
+        "path": "profinet_master.mbt",
+        "line": 362,
+        "text": "pub fn snmp_feature_ieee_8021as_mib_optional() -> Bool {",
+        "review": "PROFINET optional MIB capability/fixture, not PTP protocol implementation."
+      },
+      {
+        "path": "profinet_master.mbt",
+        "line": 2507,
+        "text": "  let mut supported_ieee_8021as = snmp_feature_ieee_8021as_mib_optional().to_string()",
+        "review": "PROFINET optional MIB capability/fixture, not PTP protocol implementation."
+      },
+      {
+        "path": "profinet_master.mbt",
+        "line": 2530,
+        "text": "      \"supported_ieee_8021as\" =>",
+        "review": "PROFINET optional MIB capability/fixture, not PTP protocol implementation."
+      },
+      {
+        "path": "profinet_master.mbt",
+        "line": 2531,
+        "text": "        supported_ieee_8021as = normalize_fixture_bool_text(value)",
+        "review": "PROFINET optional MIB capability/fixture, not PTP protocol implementation."
+      },
+      {
+        "path": "profinet_master.mbt",
+        "line": 2553,
+        "text": "    \"supported_ieee_8021as=\" + supported_ieee_8021as,",
+        "review": "PROFINET optional MIB capability/fixture, not PTP protocol implementation."
+      },
+      {
+        "path": "profinet_master.mbt",
+        "line": 2763,
+        "text": "    \"snmp_feature_ieee_8021as_mib_optional=\" +",
+        "review": "PROFINET optional MIB capability/fixture, not PTP protocol implementation."
+      },
+      {
+        "path": "profinet_master.mbt",
+        "line": 2764,
+        "text": "    snmp_feature_ieee_8021as_mib_optional().to_string(),",
+        "review": "PROFINET optional MIB capability/fixture, not PTP protocol implementation."
+      },
+      {
+        "path": "profinet_master.mbt",
+        "line": 2905,
+        "text": "      \"snmp_feature_ieee_8021as_mib_optional=\" +",
+        "review": "PROFINET optional MIB capability/fixture, not PTP protocol implementation."
+      },
+      {
+        "path": "profinet_master.mbt",
+        "line": 2906,
+        "text": "      snmp_feature_ieee_8021as_mib_optional().to_string(),",
+        "review": "PROFINET optional MIB capability/fixture, not PTP protocol implementation."
+      },
+      {
+        "path": "profinet_master_test.mbt",
+        "line": 148,
+        "text": "  assert_eq(@profinet_master.snmp_feature_ieee_8021as_mib_optional(), true)",
+        "review": "PROFINET optional MIB capability/fixture, not PTP protocol implementation."
+      },
+      {
+        "path": "profinet_master_test.mbt",
+        "line": 505,
+        "text": "    \"snmp_feature_mib2_required=true\", \"snmp_feature_lldp_mib_required=true\", \"snmp_feature_ieee_8021as_mib_optional=true\",",
+        "review": "PROFINET optional MIB capability/fixture, not PTP protocol implementation."
+      },
+      {
+        "path": "profinet_master_test.mbt",
+        "line": 1302,
+        "text": "    \"supported_mib2=true\", \"supported_lldp=true\", \"supported_ieee_8021as=false\",",
+        "review": "PROFINET optional MIB capability/fixture, not PTP protocol implementation."
+      },
+      {
+        "path": "profinet_master_test.mbt",
+        "line": 1310,
+        "text": "    \"supported_ieee_8021as=false\", \"supported_bridge=false\", \"supported_pno=true\",",
+        "review": "PROFINET optional MIB capability/fixture, not PTP protocol implementation."
+      },
+      {
+        "path": "TASKS.md",
+        "line": 33,
+        "text": "## RT/AR Follow-up Backlog",
+        "review": "Ordinary follow-up prose, not PTP Follow_Up semantics."
+      },
+      {
+        "path": "TASKS.md",
+        "line": 104,
+        "text": "当前 RT/AR Follow-up Backlog 暂无新的 Open 项；`RT-007` 保持 Deferred，等待未来 UDP-RTC 路径。`RT-001`、`RT-002`、`RT-003`、`RT-004`、`RT-005`、`RT-006`",
+        "review": "Ordinary follow-up prose, not PTP Follow_Up semantics."
+      }
+    ]
+  },
+  {
+    "name": "mokomoking2501/MoonECAT",
+    "version": "0.2.0",
+    "status": "ok",
+    "hits_reviewed": []
+  },
+  {
+    "name": "CJR-ai-nb/evowitness",
+    "version": "0.1.1",
+    "status": "ok",
+    "hits_reviewed": []
+  },
+  {
+    "name": "HhWw96/moontxnwitness",
+    "version": "0.1.0",
+    "status": "ok",
+    "hits_reviewed": [
+      {
+        "path": "verification/releases/0.0.10/complete-v010.json",
+        "line": 3649,
+        "text": "            1.1588999999999885,",
+        "review": "Incidental numerical substring in code/test/benchmark data, not a protocol implementation."
+      },
+      {
+        "path": "verification/releases/0.0.10/complete-v010.json",
+        "line": 3671,
+        "text": "          \"medianMs\": 1.1588999999999885,",
+        "review": "Incidental numerical substring in code/test/benchmark data, not a protocol implementation."
+      },
+      {
+        "path": "verification/releases/0.0.10/direct-parser-reduction-v010.json",
+        "line": 25,
+        "text": "      \"memoryRatio\": 0.9476684601588522,",
+        "review": "Incidental numerical substring in code/test/benchmark data, not a protocol implementation."
+      },
+      {
+        "path": "verification/releases/0.0.10/final-reduction-v010.json",
+        "line": 4059,
+        "text": "            3.1588000000000136,",
+        "review": "Incidental numerical substring in code/test/benchmark data, not a protocol implementation."
+      },
+      {
+        "path": "verification/releases/0.0.10/release-gate-v010.json",
+        "line": 246,
+        "text": "            39.1588999999999",
+        "review": "Incidental numerical substring in code/test/benchmark data, not a protocol implementation."
+      },
+      {
+        "path": "verification/releases/0.0.10/release-gate-v010.json",
+        "line": 2321,
+        "text": "            1.1588000000000136,",
+        "review": "Incidental numerical substring in code/test/benchmark data, not a protocol implementation."
+      },
+      {
+        "path": "verification/releases/0.0.11/postgres/sql-events.json",
+        "line": 1773,
+        "text": "    \"backendPid\": 158848,",
+        "review": "Incidental numerical substring in code/test/benchmark data, not a protocol implementation."
+      },
+      {
+        "path": "verification/releases/0.1.0/release-gate-v1.json",
+        "line": 1471,
+        "text": "            5.1588999999999885,",
+        "review": "Incidental numerical substring in code/test/benchmark data, not a protocol implementation."
+      },
+      {
+        "path": "verification/releases/0.1.0/release-gate-v1.json",
+        "line": 1500,
+        "text": "          \"p95Ms\": 5.1588999999999885,",
+        "review": "Incidental numerical substring in code/test/benchmark data, not a protocol implementation."
+      }
+    ]
+  },
+  {
+    "name": "length-super/moonctl",
+    "version": "0.2.0",
+    "status": "ok",
+    "hits_reviewed": []
+  },
+  {
+    "name": "cghyyrrt/moonbit-pcap",
+    "version": "0.1.2",
+    "status": "ok",
+    "hits_reviewed": []
+  },
+  {
+    "name": "vicTop-cw/mcpconftest",
+    "version": "0.8.0",
+    "status": "ok",
+    "hits_reviewed": []
+  },
+  {
+    "name": "xuting22/ntp",
+    "version": "0.4.0",
+    "status": "ok",
+    "hits_reviewed": [
+      {
+        "path": "filter_golden_test.mbt",
+        "line": 39,
+        "text": "    \".00022468769431114197,\\\"jitter\\\":0.0013655672398473697,\\\"selected\\\":156,\\\"count\\\":8,\\\"reach\\\":239,\\\"fresh\\\":false}},{\\\"op\\\":\\\"poll\\\",\\\"now\\\":164},{\\\"op\\\":\\\"observe\\\",\\\"offset\\\":0.000732421875,\\\"delay\\\":0.0107421875,\\\"dispersion\\\":2.86102294921875e-06,\\\"now\\\":164,\\\"expected\\\":{\\\"offset\\\":0.0009765625,\\\"delay\\\":0.005859375,\\\"dispersion\\\":0.00021052290797233581,\\\"jitter\\\":0.0012066715884490927,\\\"selected\\\":156,\\\"count\\\":8,\\\"reach\\\":223,\\\"fresh\\\":false}},{\\\"op\\\":\\\"state\\\",\\\"now\\\":166,\\\"expected\\\":{\\\"offset\\\":0.0009765625,\\\"delay\\\":0.005859375,\\\"dispersion\\\":0.00024040572047233583,\\\"jitter\\\":0",
+        "review": "Incidental numerical substring in code/test/benchmark data, not a protocol implementation."
+      },
+      {
+        "path": "filter_golden_test.mbt",
+        "line": 104,
+        "text": "    \",\\\"jitter\\\":0.0011301514889801654,\\\"selected\\\":128,\\\"count\\\":8,\\\"reach\\\":251,\\\"fresh\\\":true}},{\\\"op\\\":\\\"state\\\",\\\"now\\\":146,\\\"expected\\\":{\\\"offset\\\":0.0,\\\"delay\\\":0.009765625,\\\"dispersion\\\":0.0002557214152812958,\\\"jitter\\\":0.0011301514889801654,\\\"selected\\\":128,\\\"count\\\":8,\\\"reach\\\":251,\\\"fresh\\\":false}},{\\\"op\\\":\\\"poll\\\",\\\"now\\\":148},{\\\"op\\\":\\\"observe\\\",\\\"offset\\\":0.001220703125,\\\"delay\\\":0.01953125,\\\"dispersion\\\":2.86102294921875e-06,\\\"now\\\":148,\\\"expected\\\":{\\\"offset\\\":0.0,\\\"delay\\\":0.009765625,\\\"dispersion\\\":0.00021774659991264343,\\\"jitter\\\":0.0012066715884490927,\\\"selected\\\":128,\\\"cou",
+        "review": "Incidental numerical substring in code/test/benchmark data, not a protocol implementation."
+      },
+      {
+        "path": "filter_golden_test.mbt",
+        "line": 110,
+        "text": "    \"684,\\\"selected\\\":136,\\\"count\\\":8,\\\"reach\\\":255,\\\"fresh\\\":false}},{\\\"op\\\":\\\"poll\\\",\\\"now\\\":140},{\\\"op\\\":\\\"observe\\\",\\\"offset\\\":-0.001220703125,\\\"delay\\\":0.00390625,\\\"dispersion\\\":1.9073486328125e-06,\\\"now\\\":140,\\\"expected\\\":{\\\"offset\\\":-0.0009765625,\\\"delay\\\":0.0009765625,\\\"dispersion\\\":0.0001973004138469696,\\\"jitter\\\":0.0011525328991251608,\\\"selected\\\":136,\\\"count\\\":8,\\\"reach\\\":255,\\\"fresh\\\":false}},{\\\"op\\\":\\\"state\\\",\\\"now\\\":142,\\\"expected\\\":{\\\"offset\\\":-0.0009765625,\\\"delay\\\":0.0009765625,\\\"dispersion\\\":0.0002570660388469696,\\\"jitter\\\":0.0011525328991251608,\\\"selected\\\":136,\\\"count\\\":8,\\",
+        "review": "Ordinary follow-up prose, not PTP Follow_Up semantics."
+      },
+      {
+        "path": "filter_golden_test.mbt",
+        "line": 133,
+        "text": "    \"h\\\":false}},{\\\"op\\\":\\\"poll\\\",\\\"now\\\":156},{\\\"op\\\":\\\"observe\\\",\\\"offset\\\":-0.001220703125,\\\"delay\\\":0.015625,\\\"dispersion\\\":4.76837158203125e-06,\\\"now\\\":156,\\\"expected\\\":{\\\"offset\\\":0.0009765625,\\\"delay\\\":0.0029296875,\\\"dispersion\\\":3.1851232051849365e-06,\\\"jitter\\\":0.0020613004821131704,\\\"selected\\\":132,\\\"count\\\":8,\\\"reach\\\":255,\\\"fresh\\\":true}},{\\\"op\\\":\\\"state\\\",\\\"now\\\":158,\\\"expected\\\":{\\\"offset\\\":0.0009765625,\\\"delay\\\":0.0029296875,\\\"dispersion\\\":3.1851232051849365e-06,\\\"jitter\\\":0.0020613004821131704,\\\"selected\\\":132,\\\"count\\\":8,\\\"reach\\\":255,\\\"fresh\\\":false}},{\\\"op\\\":\\\"poll\\\",\\\"now\\\"",
+        "review": "Ordinary follow-up prose, not PTP Follow_Up semantics."
+      },
+      {
+        "path": "evidence/filter-oracle.json",
+        "line": 1103,
+        "text": "            \"jitter\": 0.0012066715884490927,",
+        "review": "Incidental numerical substring in code/test/benchmark data, not a protocol implementation."
+      },
+      {
+        "path": "evidence/filter-oracle.json",
+        "line": 1117,
+        "text": "            \"jitter\": 0.0012066715884490927,",
+        "review": "Incidental numerical substring in code/test/benchmark data, not a protocol implementation."
+      },
+      {
+        "path": "evidence/filter-oracle.json",
+        "line": 9662,
+        "text": "            \"jitter\": 0.0012066715884490927,",
+        "review": "Incidental numerical substring in code/test/benchmark data, not a protocol implementation."
+      },
+      {
+        "path": "evidence/filter-oracle.json",
+        "line": 9676,
+        "text": "            \"jitter\": 0.0012066715884490927,",
+        "review": "Incidental numerical substring in code/test/benchmark data, not a protocol implementation."
+      },
+      {
+        "path": "evidence/filter-oracle.json",
+        "line": 9697,
+        "text": "            \"jitter\": 0.0012066715884490927,",
+        "review": "Incidental numerical substring in code/test/benchmark data, not a protocol implementation."
+      },
+      {
+        "path": "evidence/filter-oracle.json",
+        "line": 9711,
+        "text": "            \"jitter\": 0.0012066715884490927,",
+        "review": "Incidental numerical substring in code/test/benchmark data, not a protocol implementation."
+      },
+      {
+        "path": "evidence/filter-oracle.json",
+        "line": 10491,
+        "text": "            \"jitter\": 0.0012066715884490927,",
+        "review": "Incidental numerical substring in code/test/benchmark data, not a protocol implementation."
+      },
+      {
+        "path": "evidence/filter-oracle.json",
+        "line": 10505,
+        "text": "            \"jitter\": 0.0012066715884490927,",
+        "review": "Incidental numerical substring in code/test/benchmark data, not a protocol implementation."
+      },
+      {
+        "path": "evidence/filter-oracle.json",
+        "line": 13537,
+        "text": "            \"jitter\": 0.0012066715884490927,",
+        "review": "Incidental numerical substring in code/test/benchmark data, not a protocol implementation."
+      },
+      {
+        "path": "evidence/filter-oracle.json",
+        "line": 13551,
+        "text": "            \"jitter\": 0.0012066715884490927,",
+        "review": "Incidental numerical substring in code/test/benchmark data, not a protocol implementation."
+      }
+    ]
+  },
+  {
+    "name": "Ljh684/moonnet-lab",
+    "version": "0.1.0",
+    "status": "ok",
+    "hits_reviewed": []
+  },
+  {
+    "name": "lxyhgvb/moonbit-radioframe",
+    "version": "0.2.0",
+    "status": "ok",
+    "hits_reviewed": []
+  },
+  {
+    "name": "sbqrre/moonbit-mcu-hal",
+    "version": "0.2.1",
+    "status": "ok",
+    "hits_reviewed": []
+  },
+  {
+    "name": "oyjh0381/moonlab",
+    "version": "0.1.0",
+    "status": "ok",
+    "hits_reviewed": []
+  },
+  {
+    "name": "cauchyQ/moonbit-causalkit",
+    "version": "0.1.0",
+    "status": "ok",
+    "hits_reviewed": []
+  },
+  {
+    "name": "SCL-NN/moontracekit",
+    "version": "0.2.0",
+    "status": "ok",
+    "hits_reviewed": []
+  },
+  {
+    "name": "zlhahaha/moonsim",
+    "version": "0.3.1",
+    "status": "ok",
+    "hits_reviewed": []
+  },
+  {
+    "name": "wcx789ll/moonsim",
+    "version": "0.1.2",
+    "status": "ok",
+    "hits_reviewed": []
+  },
+  {
+    "name": "usagi-star/mooncap",
+    "version": "0.1.0",
+    "status": "ok",
+    "hits_reviewed": []
+  },
+  {
+    "name": "bzy-debug/hello",
+    "version": "0.1.20240510+81e045f4e",
+    "status": "ok",
+    "hits_reviewed": []
+  },
+  {
+    "name": "moonbitlang/core",
+    "version": "0.1.20261019+b1a0e846e",
+    "status": "ok",
+    "hits_reviewed": [
+      {
+        "path": "random/internal/random_source/random_source_chacha.mbt",
+        "line": 460,
+        "text": "    10270419548610515257UL, 4775977266197392933UL, 5858955664787759631UL, 15884112255303985129UL,",
+        "review": "Incidental numerical substring in code/test/benchmark data, not a protocol implementation."
+      },
+      {
+        "path": "float/to_string_cases_test.mbt",
+        "line": 1923,
+        "text": "  (0x44E2FC5BU, \"18158861\", -4),",
+        "review": "Incidental numerical substring in code/test/benchmark data, not a protocol implementation."
+      },
+      {
+        "path": "builtin/double_ryu_nonjs.mbt",
+        "line": 173,
+        "text": "  1, 2305843009213693952, 5955668970331000884, 1784059615882449851, 8982663654677661702,",
+        "review": "Incidental numerical substring in code/test/benchmark data, not a protocol implementation."
+      },
+      {
+        "path": "math/prime.mbt",
+        "line": 160,
+        "text": "  15797, 15803, 15809, 15817, 15823, 15859, 15877, 15881, 15887, 15889, 15901, 15907,",
+        "review": "Incidental numerical substring in code/test/benchmark data, not a protocol implementation."
+      }
+    ]
+  },
+  {
+    "name": "BigOrangeQWQ/wit-wasi-clocks",
+    "version": "0.2.6",
+    "status": "ok",
+    "hits_reviewed": []
+  },
+  {
+    "name": "BigOrangeQWQ/wit-wasi-io",
+    "version": "0.2.6",
+    "status": "ok",
+    "hits_reviewed": []
+  },
+  {
+    "name": "CAIMEOX/原来可以发中文包",
+    "version": "0.1.1",
+    "status": "ok",
+    "hits_reviewed": []
+  },
+  {
+    "name": "illusory0x0/🐫",
+    "version": "0.1.0",
+    "status": "ok",
+    "hits_reviewed": []
+  },
+  {
+    "name": "moonbit-community/moongrep-skill",
+    "version": "0.1.0",
+    "status": "ok",
+    "hits_reviewed": []
+  },
+  {
+    "name": "tonyfettes/ssl",
+    "version": "0.1.1",
+    "status": "ok",
+    "hits_reviewed": []
+  }
+]

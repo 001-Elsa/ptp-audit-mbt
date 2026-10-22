@@ -1,0 +1,25 @@
+# API guide
+
+## 1. Define a System Model
+
+Choose one type family for `State`, `Message`, `Config`, `Observation`, and model-defined `Choice`. Heterogeneous roles should normally be represented by tagged enums inside that family. Implement `boot`, `step`, and `observe`; transitions return a new State plus an array of declarative Effects.
+
+`Event` variants cover Message delivery, Timer firing, Stable Storage read/commit completion, and a selected model Choice. `Effect` variants cover sending, Timer replacement/cancellation, asynchronous Stable Storage operations, and finite Choice Points.
+
+## 2. Compile a Scenario
+
+Construct `ScenarioSpec::new` with stable Node and Scenario identifiers and a non-empty caller-maintained `input_identity`. The input identity must change whenever generic typed configuration or external test inputs change. Compilation validates budgets, network delay bounds, duplicate Nodes/properties, finite Eventually horizons, Fault Plans, same-time bounded Fault Policies, and the Quiescence termination expectation. It normalizes actual execution order and calculates a SHA-256 Scenario identity over inputs, budgets, network behavior, properties, faults, policies, and termination. Treat `Invalid(findings)` as a configuration error; do not run an uncompiled specification.
+
+## 3. Run and check
+
+Call `sim.run(scenario, DecisionStream::empty())` for the canonical first schedule, `DecisionStream::guided(values)` for bounded exploration guidance, or `DecisionStream::replay(values)` for strict exact Replay. Every engine choice is recorded in `RunResult.decisions`.
+
+Safety Invariants are checked in the initial state and after every selected action. A Bounded Eventually Condition records whether it became true before both its action and Virtual Time horizons. Inspect `RunOutcome`: normal depletion passes only for `QuiescencePass`; `QuiescenceFail`, violations, budget exhaustion, deadlock, model errors, and Replay divergence remain distinct.
+
+## 4. Explore and shrink
+
+`explore.campaign` derives deterministic run seeds and returns a Replay Artifact for every run. `explore.failure_signature` creates an unambiguous length-prefixed class containing the outcome kind, Finding code, and Finding path. `explore.shrink` greedily removes decisions only when the supplied evaluator returns exactly the expected signature and stops at its attempt budget; after every accepted deletion it restarts from decision zero.
+
+## 5. Persist artifacts
+
+`artifact.encode_replay`, `encode_trace`, and `encode_report` keep reproduction, explanation, and summary data separate. Validate model and Scenario identity before Replay. The Native CLI is the supplied filesystem boundary; portable packages perform no host I/O.
