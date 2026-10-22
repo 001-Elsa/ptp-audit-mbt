@@ -1,0 +1,50 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "001-Elsa/ptp-audit/bmca"
+
+import {
+  "001-Elsa/ptp-audit/diagnostic",
+  "001-Elsa/ptp-audit/observation",
+  "001-Elsa/ptp-audit/wire",
+}
+
+// Values
+pub fn audit(Array[Candidate], String?, Bool, Bool, @observation.Context, Snapshot) -> Array[@diagnostic.Finding]
+
+pub fn compare(Candidate, Candidate) -> Comparison
+
+// Errors
+
+// Types and methods
+pub(all) struct Candidate {
+  id : String
+  frame : Int
+  domain : Int
+  data : @wire.AnnounceData
+  sender : @wire.PortIdentity
+  receiver : @wire.PortIdentity
+}
+
+pub(all) struct Comparison {
+  status : @diagnostic.Status
+  side : Int
+  topology : Bool
+  rule : String
+  left : String
+  right : String
+}
+
+pub(all) struct Snapshot {
+  epoch : Int?
+  window : String?
+  clock_domain : String?
+  decision_time : @wire.PtpTimestamp?
+  announce_validity_ns : Int64?
+  validity_source : String?
+  validity_confirmed : Bool
+  capture_window_confirmed : Bool
+  samples : Array[@observation.Sample]
+}
+
+// Type aliases
+
+// Traits
