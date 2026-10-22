@@ -1,0 +1,70 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "001-Elsa/ptp-audit/metrology"
+
+import {
+  "001-Elsa/ptp-audit/diagnostic",
+  "001-Elsa/ptp-audit/exchange",
+}
+
+// Values
+pub fn explain(@exchange.Measurement, Array[@exchange.Frame], ErrorBudget?) -> Explanation
+
+// Errors
+
+// Types and methods
+pub(all) struct Assessment {
+  verdict : String
+  lower_numerator : String
+  upper_numerator : String
+  radius_numerator : String
+  limit_numerator : String
+  denominator : Int
+  budget : ErrorBudget
+}
+pub fn Assessment::to_json(Self) -> Json
+
+pub(all) struct CorrectionContribution {
+  frame : Int
+  field : String
+  correction_scaled : String
+  offset_numerator : String
+  delay_numerator : String
+  included : Bool
+}
+pub fn CorrectionContribution::to_json(Self) -> Json
+
+pub(all) struct CorrectionLedger {
+  uncorrected_offset_numerator : String
+  uncorrected_delay_numerator : String
+  corrected_offset_numerator : String
+  corrected_delay_numerator : String
+  denominator : Int
+  forward_raw_scaled : String
+  reverse_raw_scaled : String
+  contributions : Array[CorrectionContribution]
+}
+pub fn CorrectionLedger::to_json(Self) -> Json
+
+pub(all) struct ErrorBudget {
+  timestamp_error_bounds_scaled : Array[String]
+  correction_error_bound_scaled : String
+  path_asymmetry_bound_scaled : String
+  offset_limit_scaled : String
+  source : String
+  assumptions : String
+  relative_rate_bound_confirmed : Bool
+}
+pub fn ErrorBudget::to_json(Self) -> Json
+
+pub(all) struct Explanation {
+  frames : Array[Int]
+  status : @diagnostic.Status
+  detail : String
+  ledger : CorrectionLedger?
+  assessment : Assessment?
+}
+pub fn Explanation::to_json(Self) -> Json
+
+// Type aliases
+
+// Traits
