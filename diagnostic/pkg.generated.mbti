@@ -1,0 +1,35 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "001-Elsa/ptp-audit/diagnostic"
+
+// Values
+pub fn finding(String, Status, Array[Int], Int?, String, String, String) -> Finding
+
+pub fn summarize(Array[Finding]) -> Status
+
+// Errors
+
+// Types and methods
+pub(all) struct Finding {
+  rule : String
+  status : Status
+  frames : Array[Int]
+  offset : Int?
+  expected : String
+  actual : String
+  detail : String
+}
+pub fn Finding::to_json(Self) -> Json
+
+pub(all) enum Status {
+  Pass
+  Violation
+  InsufficientEvidence
+  Unsupported
+} derive(Eq)
+pub fn Status::equal(Self, Self) -> Bool
+pub fn Status::label(Self) -> String
+pub fn Status::not_equal(Self, Self) -> Bool
+
+// Type aliases
+
+// Traits

@@ -1,0 +1,104 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "001-Elsa/ptp-audit/wire"
+
+import {
+  "001-Elsa/ptp-audit/diagnostic",
+}
+
+// Values
+pub fn decode(Bytes) -> Result[Packet, WireError]
+
+pub fn encode(Packet) -> Result[Bytes, WireError]
+
+pub fn from_hex(String) -> Result[Bytes, WireError]
+
+pub fn to_hex(Bytes) -> String
+
+pub fn valid_port(PortIdentity) -> Bool
+
+pub fn valid_time(PtpTimestamp) -> Bool
+
+// Errors
+
+// Types and methods
+pub(all) struct AnnounceData {
+  origin : PtpTimestamp
+  utc_offset : Int
+  priority1 : Int
+  clock_class : Int
+  accuracy : Int
+  variance : Int
+  priority2 : Int
+  grandmaster : String
+  steps_removed : Int
+  time_source : Int
+} derive(Eq)
+pub fn AnnounceData::equal(Self, Self) -> Bool
+pub fn AnnounceData::not_equal(Self, Self) -> Bool
+
+pub(all) enum Body {
+  TimestampBody(PtpTimestamp)
+  Response(PtpTimestamp, PortIdentity)
+  Announcement(AnnounceData)
+} derive(Eq)
+pub fn Body::equal(Self, Self) -> Bool
+pub fn Body::not_equal(Self, Self) -> Bool
+
+pub(all) struct Header {
+  kind : Kind
+  domain : Int
+  flags : Int
+  correction : Int64
+  source : PortIdentity
+  sequence : Int
+  log_interval : Int
+} derive(Eq)
+pub fn Header::equal(Self, Self) -> Bool
+pub fn Header::not_equal(Self, Self) -> Bool
+
+pub(all) enum Kind {
+  Sync
+  FollowUp
+  DelayReq
+  DelayResp
+  Announce
+} derive(Eq)
+pub fn Kind::code(Self) -> Int
+pub fn Kind::control(Self) -> Int
+pub fn Kind::equal(Self, Self) -> Bool
+pub fn Kind::length(Self) -> Int
+pub fn Kind::not_equal(Self, Self) -> Bool
+
+pub(all) struct Packet {
+  header : Header
+  body : Body
+} derive(Eq)
+pub fn Packet::equal(Self, Self) -> Bool
+pub fn Packet::not_equal(Self, Self) -> Bool
+
+pub(all) struct PortIdentity {
+  clock : String
+  port : Int
+} derive(Eq)
+pub fn PortIdentity::equal(Self, Self) -> Bool
+pub fn PortIdentity::label(Self) -> String
+pub fn PortIdentity::not_equal(Self, Self) -> Bool
+
+pub(all) struct PtpTimestamp {
+  seconds : Int64
+  nanos : Int
+} derive(Eq)
+pub fn PtpTimestamp::equal(Self, Self) -> Bool
+pub fn PtpTimestamp::not_equal(Self, Self) -> Bool
+
+pub(all) struct WireError {
+  status : @diagnostic.Status
+  code : String
+  offset : Int
+  expected : String
+  actual : String
+}
+
+// Type aliases
+
+// Traits
