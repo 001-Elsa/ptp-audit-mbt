@@ -1,0 +1,27 @@
+.DS_Store
+_build/
+target/
+.mooncakes/
+.moonagent/
+__pycache__/
+*.pyc
+research/wireshark/ptpv2.pcap
+output/submission/
+output/preview/
+tmp/
+# Retain the audit manifests and result summaries, keep raw third-party caches local.
+research/2026-10-19/pages/
+research/2026-10-19-redesign/pages/
+research/2026-10-19-final/pages/
+research/2026-10-19/source-review/
+research/2026-10-19-redesign/source-review/
+research/2026-10-19-final/source-review/
+!/.moonignore
+!/.github/
+!/.github/**
+
+research/2026-10-19-release-review/pages/
+research/2026-10-19-release-review/source-review/
+
+# Mutable remote publication receipts are kept in Git, outside the immutable registry package.
+research/publication/
