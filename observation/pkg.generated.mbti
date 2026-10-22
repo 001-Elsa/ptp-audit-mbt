@@ -1,0 +1,62 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "001-Elsa/ptp-audit/observation"
+
+import {
+  "001-Elsa/ptp-audit/diagnostic",
+  "001-Elsa/ptp-audit/wire",
+  "moonbitlang/core/bigint",
+}
+
+// Values
+pub fn check_group(Context, Array[Sample], String, Int64?, Bool) -> Array[@diagnostic.Finding]
+
+pub fn deadline(Context, Sample, Int64?, String) -> @diagnostic.Finding
+
+pub fn get_window(Context, String) -> Window?
+
+pub fn text_ok(String, Int) -> Bool
+
+pub fn time_ns(@wire.PtpTimestamp) -> @bigint.BigInt
+
+pub fn valid_time(@wire.PtpTimestamp) -> Bool
+
+pub fn validate(Context) -> Array[@diagnostic.Finding]
+
+// Errors
+
+// Types and methods
+pub(all) struct Context {
+  windows : Array[Window]
+  policy : Policy?
+}
+pub fn Context::to_json(Self) -> Json
+
+pub(all) struct Policy {
+  source : String
+  sync_follow_up_ns : Int64?
+  delay_response_ns : Int64?
+}
+pub fn Policy::to_json(Self) -> Json
+
+pub(all) struct Sample {
+  frame : Int
+  epoch : Int?
+  window : String?
+  time : @wire.PtpTimestamp?
+  clock_domain : String?
+}
+pub fn Sample::to_json(Self) -> Json
+
+pub(all) struct Window {
+  id : String
+  epoch : Int
+  clock_domain : String
+  start : @wire.PtpTimestamp
+  end : @wire.PtpTimestamp
+  complete : Bool
+}
+pub fn Window::to_json(Self) -> Json
+
+// Type aliases
+
+// Traits

@@ -1,0 +1,63 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "001-Elsa/ptp-audit/exchange"
+
+import {
+  "001-Elsa/ptp-audit/diagnostic",
+  "001-Elsa/ptp-audit/observation",
+  "001-Elsa/ptp-audit/wire",
+}
+
+// Values
+pub fn audit(Array[Frame], Array[PairClaim], Array[ExchangeClaim], Bool, Bool, Bool, @observation.Context) -> Report
+
+pub fn get_frame(Array[Frame], Int) -> Frame?
+
+pub fn sample(Frame) -> @observation.Sample
+
+// Errors
+
+// Types and methods
+pub(all) struct ExchangeClaim {
+  sync : Int
+  follow_up : Int
+  delay_req : Int
+  delay_resp : Int
+}
+
+pub(all) struct Frame {
+  id : Int
+  epoch : Int?
+  window : String?
+  capture_time : @wire.PtpTimestamp?
+  capture_clock_domain : String?
+  packet : @wire.Packet
+  local_port : @wire.PortIdentity?
+  event_time : @wire.PtpTimestamp?
+  clock_domain : String?
+  direction : String?
+}
+
+pub(all) struct Measurement {
+  frames : Array[Int]
+  offset_numerator : String
+  delay_numerator : String
+  denominator : Int
+  forward_scaled : String
+  reverse_scaled : String
+  sync_correction_scaled : String
+  delay_correction_scaled : String
+}
+
+pub(all) struct PairClaim {
+  sync : Int
+  follow_up : Int
+}
+
+pub(all) struct Report {
+  findings : Array[@diagnostic.Finding]
+  measurements : Array[Measurement]
+}
+
+// Type aliases
+
+// Traits
