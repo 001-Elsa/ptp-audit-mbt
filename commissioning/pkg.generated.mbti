@@ -1,0 +1,80 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "001-Elsa/ptp-audit/commissioning"
+
+import {
+  "001-Elsa/ptp-audit/audit",
+  "001-Elsa/ptp-audit/diagnostic",
+  "001-Elsa/ptp-audit/wire",
+}
+
+// Values
+pub fn audit(String) -> Report
+
+pub fn audit_json(String) -> String
+
+// Errors
+
+// Types and methods
+pub(all) struct Binding {
+  frames : Array[Int]
+  findings : Array[@diagnostic.Finding]
+  evidence : Json
+}
+
+pub(all) struct Report {
+  steps : Array[Step]
+  transitions : Array[Transition]
+  selection_conflicts : Array[StabilityConflict]
+  findings : Array[@diagnostic.Finding]
+}
+pub fn Report::exit_code(Self) -> Int
+pub fn Report::operational_acceptance(Self) -> String
+pub fn Report::status(Self) -> @diagnostic.Status
+pub fn Report::to_json(Self) -> Json
+
+pub(all) struct Selection {
+  candidate : String
+  announce_frame : Int
+  sender : @wire.PortIdentity
+  receiver : @wire.PortIdentity
+  grandmaster : String
+  domain : Int
+  epoch : Int
+  window : String
+  capture_clock : String
+  announce_time : @wire.PtpTimestamp
+  decision_time : @wire.PtpTimestamp
+  announce_expiry_ns : String
+  announce_validity_ns : Int64
+  stability_source : String
+  stability_until : @wire.PtpTimestamp
+}
+
+pub(all) struct StabilityConflict {
+  from_step : String
+  to_step : String
+  finding : @diagnostic.Finding
+  evidence : Json
+}
+
+pub(all) struct Step {
+  id : String
+  case_report : @audit.Report
+  selection : Selection?
+  bindings : Array[Binding]
+  findings : Array[@diagnostic.Finding]
+  capture_start : @wire.PtpTimestamp?
+  capture_end : @wire.PtpTimestamp?
+}
+
+pub(all) struct Transition {
+  from_step : String
+  to_step : String
+  finding : @diagnostic.Finding
+  classification : String?
+  evidence : Json
+}
+
+// Type aliases
+
+// Traits
