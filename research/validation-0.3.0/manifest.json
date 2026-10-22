@@ -1,0 +1,308 @@
+{
+  "version": "0.3.0",
+  "scope": "local project only; no remote operations or registry publication",
+  "result": "pass",
+  "error": null,
+  "commands": [
+    {
+      "label": "generate-fixtures",
+      "command": [
+        "/Library/Developer/CommandLineTools/usr/bin/python3",
+        "scripts/build_acceptance_fixtures.py"
+      ],
+      "exit": 0,
+      "log": "generate-fixtures.log"
+    },
+    {
+      "label": "generate-reference",
+      "command": [
+        "/Library/Developer/CommandLineTools/usr/bin/python3",
+        "scripts/build_reference_vectors.py"
+      ],
+      "exit": 0,
+      "log": "generate-reference.log"
+    },
+    {
+      "label": "generate-operational",
+      "command": [
+        "/Library/Developer/CommandLineTools/usr/bin/python3",
+        "scripts/build_commissioning_fixtures.py"
+      ],
+      "exit": 0,
+      "log": "generate-operational.log"
+    },
+    {
+      "label": "generate-format",
+      "command": [
+        "scripts/moon-local",
+        "fmt"
+      ],
+      "exit": 0,
+      "log": "generate-format.log"
+    },
+    {
+      "label": "check-all",
+      "command": [
+        "scripts/moon-local",
+        "check",
+        "--target",
+        "all",
+        "--deny-warn"
+      ],
+      "exit": 0,
+      "log": "check-all.log"
+    },
+    {
+      "label": "test-all",
+      "command": [
+        "scripts/moon-local",
+        "test",
+        "--target",
+        "all",
+        "--deny-warn"
+      ],
+      "exit": 0,
+      "log": "test-all.log"
+    },
+    {
+      "label": "cli-fixtures",
+      "command": [
+        "/Library/Developer/CommandLineTools/usr/bin/python3",
+        "scripts/verify_cli_fixtures.py"
+      ],
+      "exit": 0,
+      "log": "cli-fixtures.log"
+    },
+    {
+      "label": "report-evidence",
+      "command": [
+        "/Library/Developer/CommandLineTools/usr/bin/python3",
+        "scripts/verify_report_evidence.py"
+      ],
+      "exit": 0,
+      "log": "report-evidence.log"
+    },
+    {
+      "label": "operational-evidence",
+      "command": [
+        "/Library/Developer/CommandLineTools/usr/bin/python3",
+        "scripts/verify_commissioning.py"
+      ],
+      "exit": 0,
+      "log": "operational-evidence.log"
+    },
+    {
+      "label": "rule-inventory",
+      "command": [
+        "/Library/Developer/CommandLineTools/usr/bin/python3",
+        "research/normative-completion/build_rule_inventory.py"
+      ],
+      "exit": 0,
+      "log": "rule-inventory.log"
+    },
+    {
+      "label": "rule-coverage",
+      "command": [
+        "/Library/Developer/CommandLineTools/usr/bin/python3",
+        "scripts/verify_rule_coverage.py"
+      ],
+      "exit": 0,
+      "log": "rule-coverage.log"
+    },
+    {
+      "label": "originality-scanner-self-test",
+      "command": [
+        "/Library/Developer/CommandLineTools/usr/bin/python3",
+        "scripts/verify_source_originality.py",
+        "--self-test"
+      ],
+      "exit": 0,
+      "log": "originality-scanner-self-test.log"
+    },
+    {
+      "label": "package-local-self-test",
+      "command": [
+        "/Library/Developer/CommandLineTools/usr/bin/python3",
+        "scripts/test_package_local.py"
+      ],
+      "exit": 0,
+      "log": "package-local-self-test.log"
+    },
+    {
+      "label": "wire-reference",
+      "command": [
+        "/Library/Developer/CommandLineTools/usr/bin/python3",
+        "scripts/verify_wire_reference.py"
+      ],
+      "exit": 0,
+      "log": "wire-reference.log"
+    },
+    {
+      "label": "info",
+      "command": [
+        "scripts/moon-local",
+        "info"
+      ],
+      "exit": 0,
+      "log": "info.log"
+    },
+    {
+      "label": "fmt",
+      "command": [
+        "scripts/moon-local",
+        "fmt"
+      ],
+      "exit": 0,
+      "log": "fmt.log"
+    },
+    {
+      "label": "fmt-check",
+      "command": [
+        "scripts/moon-local",
+        "fmt",
+        "--check"
+      ],
+      "exit": 0,
+      "log": "fmt-check.log"
+    }
+  ],
+  "backend_tests": [
+    {
+      "total": 455,
+      "passed": 455,
+      "failed": 0,
+      "target": "wasm"
+    },
+    {
+      "total": 455,
+      "passed": 455,
+      "failed": 0,
+      "target": "wasm-gc"
+    },
+    {
+      "total": 455,
+      "passed": 455,
+      "failed": 0,
+      "target": "js"
+    },
+    {
+      "total": 455,
+      "passed": 455,
+      "failed": 0,
+      "target": "native"
+    }
+  ],
+  "fixture_count": 116,
+  "product_effective_moonbit_lines": 6004,
+  "product_lines_by_file": {
+    "audit/audit.mbt": 713,
+    "bmca/bmca.mbt": 336,
+    "bmca/snapshot.mbt": 173,
+    "cmd/ptp-audit/main.mbt": 74,
+    "commissioning/commissioning.mbt": 1159,
+    "diagnostic/diagnostic.mbt": 69,
+    "evidence/coverage.mbt": 63,
+    "evidence/findings.mbt": 282,
+    "evidence/measurements.mbt": 166,
+    "evidence/references.mbt": 470,
+    "evidence/values.mbt": 248,
+    "exchange/context.mbt": 271,
+    "exchange/exchange.mbt": 564,
+    "facade.mbt": 6,
+    "metrology/json.mbt": 107,
+    "metrology/metrology.mbt": 364,
+    "observation/observation.mbt": 440,
+    "wire/wire.mbt": 499
+  },
+  "line_count_policy": "Exclude tests/research/build and blank/full-line comment lines; not a quality metric",
+  "source_sha256": {
+    "audit/audit.mbt": "7ad1fda48991ff69edfdd1760e7975811ba20c206bc685966188c46f034e9624",
+    "audit/moon.pkg": "eb809411e31beb9f85092f26a59b77cfd0a3d2025aa427ed5beb49666c9f29aa",
+    "bin/ptp-audit.mjs": "e029c4f87eae9001ed6697001a3fadc882ea05500405e00bd46564db6fdaa5e8",
+    "bmca/bmca.mbt": "12247cac2d73b5e7e867963eb03427a367368dc69f0b394e0c7e1b02ff9df261",
+    "bmca/moon.pkg": "cf8e40bf38dafadc9e6f0897395964218630b9575fc97457e07faeacf775a65b",
+    "bmca/snapshot.mbt": "139b80ad1ad725aa4ff1eb14b5442b3719c4b27140d5f3c5204a3fd5e1003b6b",
+    "bmca/tutorial_flow_wbtest.mbt": "3f211512e10780985b61eacf05e6f87246171c391600fa0d8a17503a7516a70c",
+    "cmd/ptp-audit/main.mbt": "1ea0921d7f50f1b773616ef0a1bccc2a66cda9e34015b155c2ea40db1809ec69",
+    "cmd/ptp-audit/moon.pkg": "ec5ea68110f4cc5189e6f6c9fe1d272f6d3866193ec00c33b8a3e602d9051bee",
+    "commissioning/commissioning.mbt": "8fbfe7f3396431d8d58d7f0491ad4b066fddaab9d6dbf986fa1303622c542b41",
+    "commissioning/commissioning_wbtest.mbt": "397787ae2cb691fc021167725b180e1ff269242b67620c5990de8ecb6c39369c",
+    "commissioning/moon.pkg": "f2fb19492b68a0e5f1a7fc3a7d2e7e7f527597ae5817d1098672bde3965546f3",
+    "diagnostic/diagnostic.mbt": "03696558c79240e31eeb686f80d18cc97b3ac64e9ae289bc7749143111e823d3",
+    "diagnostic/moon.pkg": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "evidence/coverage.mbt": "dabb72c3b6a93f6d5518fc99b4258c94b5ca6c34c9afc26d07a62e3574a7436d",
+    "evidence/evidence_wbtest.mbt": "27ee9455b769d3ac448811b5cc426568b1f0db82658c1a0e0af871951f197253",
+    "evidence/findings.mbt": "cd26c5636f6c7863de840a0192c071d373dbd3875650bd1f45825edff5c14b83",
+    "evidence/measurements.mbt": "45d69751b07d5e03b0425b0f8033ca5a6b98f36f6c3759df1bdbf0b6dc56d811",
+    "evidence/moon.pkg": "85a54754ca2827b071380e3b7b1ad33bb64c936acd22b22cd0b3d8b6bc57f204",
+    "evidence/references.mbt": "af6e4c70fab2c8b1be04fce06b96159788a1531c78812d476b2cd346e62c2555",
+    "evidence/values.mbt": "608c25b006e6255460f438cfd27efe181d02acbe24ddb21ccacf8e7947a78262",
+    "exchange/context.mbt": "b6ea6fd812913b02514bda678c93549ef393d6249d323a9641c9d6132c155bbf",
+    "exchange/context_wbtest.mbt": "293c1db1fdbf59f4796b25274a7580b0e2ae59cbea75592864fce74c5b7faceb",
+    "exchange/exchange.mbt": "3aaec5b238f0f347f4af2f1e905845fbea7d410e0653717633a845bac43028d8",
+    "exchange/moon.pkg": "aa57688293a72602559b983191926bc85303544f4bd0b7dfe0d3943da466daea",
+    "exchange/rule_resource_wbtest.mbt": "0629f22253a4945c74a8de0fd0cc17282949187c5b814c90afe4f31e896ea8bf",
+    "facade.mbt": "f1c07e720d1dbcdc0948c9d766fa926757074eb146822bcdbda97e05eca0b500",
+    "metrology/json.mbt": "d6743c49d38019dcb2a0e40927d493d3c3ac2205485029ccf74b064066320f45",
+    "metrology/metrology.mbt": "4bc6c1de071413111c5484ae7c3ffd2304923df8b9a9a47f87e0a6858547aef3",
+    "metrology/metrology_test.mbt": "a67f67197878140e402ad620682fb4ad8b000d4c96715169c40bc51ea35f00a5",
+    "metrology/moon.pkg": "73cd7b89c39237d46f999e73fe597749b662db64687b504be6a502da5a5ff4c8",
+    "moon.mod": "70edfab0488a03a0b4a1b9f1d1b2cecbf839a05ac8f6aee147a1e8b502407cdf",
+    "moon.pkg": "29ef735846c17acc9054333708d931e7d6ea6bfde283ac28b40cef1c1db4c21d",
+    "observation/moon.pkg": "51fefbb996fbbe16869f4fea3ef4353a2996ccf11cbeb050fd426c1b5e516ccc",
+    "observation/observation.mbt": "41317a12623303e9d4862d1b87b9284ed535d5e134838f9d16a06e648511ed2b",
+    "observation/observation_wbtest.mbt": "2dbe04c24e1838684858678272be87d328c9dd020ffbb818d269ec995fe74fc1",
+    "tests/audit_test.mbt": "5b83490b21f11ef1c66fd747d2bc9e2dec3023e5e065dfe748852681b3028624",
+    "tests/fixtures_test.mbt": "f3047e24aecc5eae54186b1fd148f43cc24635a7f28683bea6b88cf133237dec",
+    "tests/hex_input_test.mbt": "8e745508af828354d6ec6b268b583a3c1453a1c9c282c471c3c7cf7762dbd921",
+    "tests/moon.pkg": "1128d46da0645c3301df3ec49d5ac0bc6bf9f34d8b765ba9bb1b9c7f171403fc",
+    "tests/reference_test.mbt": "e52f99eb0ea3b5968fbb84e05d9d8901af976e0899db3ef01be625448151495b",
+    "tests/rule_coverage_test.mbt": "a05e31b696d2e91e1075d39ca2e3ad2f88717e871112d1b3cf5877556f7a4832",
+    "tests/wire_boundary_test.mbt": "71eb0cedb101787df3a93431b7b09264f99219c311d17750bea2a6259e8b1dfe",
+    "wire/moon.pkg": "c5c4af2b62c3e1057a785be1ede771fec42876e29008b417815437f0c0ef9e95",
+    "wire/wire.mbt": "d9728257cf6488c2c3162f34eb387a195a3491467b22da8aa4255a2f653ba1b2"
+  },
+  "sources_unchanged_during_run": true,
+  "gate_source_sha256": {
+    "research/normative-completion/build_rule_inventory.py": "76e6fa95fd78dc4857f289bbf4861518e0f3d8617fe3ee98a4c501087c7981fe",
+    "scripts/audit_all_mooncakes_sources.py": "ebd6aaa6ba6aa3e501c836d1e066932b6a687e9f996924236e2ae8775edc9a39",
+    "scripts/audit_mooncakes.py": "9312b47705e30e58223df211cdfbedd346e245ca81f766bb0dd447eeabc67d65",
+    "scripts/audit_ptp_sources.py": "70113649ef197c287d673175bd821fd8f9279424a41f22f53273efd834d0626c",
+    "scripts/build_acceptance_fixtures.py": "954ad309d55063728390c85a9cefaf60e872fede5b4dc3288648b4bacb6920ed",
+    "scripts/build_application_pdf.py": "b084c05546d513e2c17961d52012c513fda8a06815d86440f453492735245e7c",
+    "scripts/build_commissioning_fixtures.py": "49f47e335e86de94f88eba961db859b9c06e2a9266f7252cc7ac3b3a58599085",
+    "scripts/build_mooncakes_review.py": "3b2abb5d3a89f1a0d1ff7f323de1ab3b0962fb1263f2b461284e0fbf3dee7267",
+    "scripts/build_reference_vectors.py": "656d83b3acd0d5620acf0cd6dafd332d77bf7def185280a127eaa9b457017bc5",
+    "scripts/finalize_mooncakes_review.py": "f0acc9bc4044e365612caf5d70d6d8ae8b4703216e2eb9524c8f1d202ef76762",
+    "scripts/moon-local": "86ce57d3376c1e65c6c8e8d05cc2bf6fbeab4a2b7e036a3aa0280727269cec3d",
+    "scripts/package_local.py": "a668c5f3d79576bb776726218bc0165fe11ed710e5284e0f09a9b02209f67842",
+    "scripts/package_submission.py": "9ac196f41aded0be7a1eaaf57bc78a5a380ae0d5a08769698cdecafc3423cf1f",
+    "scripts/repair_moonbit_runtime.py": "609d3ca957e0a2e75f6becf3f6be89e779ea5b4721b91d30896d07912f767607",
+    "scripts/review_mooncakes_hits.py": "ea7bba795d56f13eb627d97d6261c7f0e8b659896755f71e02ec9ee446fa474b",
+    "scripts/review_source_semantic_hits.py": "3bc5aeaea8f6db27a2562b885b27f7fee96ae2fd0473772846ad0b0be3e660f6",
+    "scripts/review_supplemental_semantic_hits.py": "97a08c269f5ec5741e3d008d14fa90d76456837b8e98b084edae15e27785d43e",
+    "scripts/run_source_originality_full.py": "3aab680157acd4112f9a5e539bc943d571b19bf8c423ccc9719193250e190f7d",
+    "scripts/test_package_local.py": "72c3bfa18a5e899325eab594f88eb450f88f81e2fa326fc7e960bdecb00f4a99",
+    "scripts/validate_local.py": "7299ce8836148db7d9929bf4ee55aba0e785c9bb0cd1391a6316af1a269cc9c0",
+    "scripts/verify_cli_fixtures.py": "3afa1ea8e357a1466a27e942162009f321f1e9185d5571596483342f039e338c",
+    "scripts/verify_commissioning.py": "4f53f35438b558348f6baddbfe820b22e7e4d2ead7ff1bc482bed56d5ef03c1a",
+    "scripts/verify_delivery.py": "59463994256a4270a84a1c8c0d5405dd24128b8158ebad7202193cf361f25b92",
+    "scripts/verify_neighbor_reviews.py": "2c3e502f804c51028141e226d80a96dd665a37c366bfa98bbce1ddb3bc723e67",
+    "scripts/verify_report_evidence.py": "afc477c3cb13420d2a28054eeee0b4301c8f70c6bbae2c9c275d83d0fca21652",
+    "scripts/verify_rule_coverage.py": "1e237276a061dbb19a7507f9b11d4cecf855b6a9603e073e082721ae1824ff8b",
+    "scripts/verify_source_originality.py": "3ac7d032ff95bfadbb9184549a3fb4538e217afe8b3b3b3d120dc5a209ea6f3c",
+    "scripts/verify_wire_reference.py": "89813eaae086559a9d7c47359751e8f2dc5e5e7f8a1af645414577cd684cca21",
+    "scripts/write_mooncakes_report.py": "3c03b176b6528e028697aa791c9dcd177c7c6d3577833ad6a4ff53b94fc68664",
+    "scripts/write_redesign_review.py": "02db15e87b5357dd3fb6da8c29393741c9204dfb090d48d6e56e7145fe9e19b8"
+  },
+  "gate_sources_unchanged_during_run": true,
+  "fixture_manifest_sha256": "eac811cb0305a75e73d212d4c736cf7d86f5d1ff308d72b1d3142a1a710b36cd",
+  "operational_fixture_manifest_sha256": "8a1733027de9bc2e1e6b68c8cd97f086af82a3e91796ae9eca6f60f97af373b7",
+  "operational_report_sha256": "7cc5c6270e204d076f29272a00d9c373e4345dd176d6b29dfb7b1e7bc949d3b4",
+  "not_certified": [
+    "full IEEE normative conformity",
+    "capture authenticity",
+    "absolute timing accuracy",
+    "competition originality or external submission"
+  ]
+}

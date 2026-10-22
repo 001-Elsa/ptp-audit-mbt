@@ -1,0 +1,32 @@
+{
+  "schema": "ptp-commission-report/v1",
+  "status": "Violation",
+  "exit_code": 1,
+  "operational_acceptance": "evidence_not_accepted",
+  "timing_limit_notice": "Pass records consistent protocol evidence; it does not accept an operator timing limit. Consult operational_acceptance and each raw case metrology assessment.",
+  "timing_limit_verdicts": [],
+  "scope": "Offline PTP selected-Announce to explicit E2E quartet binding and adjacent observed upstream identity comparison",
+  "findings": [
+    {
+      "rule": "COMMISSION.INPUT.SCHEMA",
+      "status": "Violation",
+      "frames": [],
+      "offset": null,
+      "expected": "strict ptp-commission/v1 campaign",
+      "actual": "duplicate step id: before-change",
+      "detail": "step=campaign; The malformed campaign has no partial acceptance report.",
+      "step_id": "campaign"
+    }
+  ],
+  "steps": [],
+  "transitions": [],
+  "selection_conflicts": [],
+  "limitations": [
+    "Selection stability asserts the selected Announce-derived sender AND advertised grandmaster identities remained unchanged on this receiver/domain over [decision_time, until]. Selection stability, capture-clock continuity, candidate completeness and qualification are caller-supplied assertions; packet bytes do not independently prove them.",
+    "A binding confirms consistency of a bounded offline evidence set, not device port-state execution, servo convergence or absolute clock accuracy.",
+    "Identity transitions compare only adjacent fully accepted steps with the same receiver/domain and confirmed continuous capture clock; rejected steps are never bridged. Selection-stability assertions are separately checked for contradictions across every accepted step pair, including nonadjacent pairs.",
+    "Observed identity changes do not measure failover duration, packet loss, synchronization recovery or a switch instant.",
+    "Offsets remain attached to each raw case report; offsets across masters are never subtracted, and path asymmetry or common PTP timescale is not inferred.",
+    "No complete IEEE 1588 conformance certification, full BMCA qualification, port-state machine or hardware/transport validation is performed."
+  ]
+}
