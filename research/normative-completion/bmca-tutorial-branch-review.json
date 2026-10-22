@@ -1,0 +1,280 @@
+{
+  "schema": "ptp-bmca-public-tutorial-review/v1",
+  "review_date": "2026-10-19",
+  "review_method": "Rendered and visually inspected complete pages 61 and 62; followed every displayed outcome arrow. Independent expectations were recorded directly from the diagram before executing project compare.",
+  "source": {
+    "source_id": "ieee802-garner-1588v2-tutorial-2008",
+    "url": "https://www.ieee802.org/1/files/public/docs2008/as-garner-1588v2-summary-0908.pdf",
+    "sha256": "a023d1d55e20fe4b3ea5dbf11cdcfd650abfa071c3cab11e8247de6ff4eece68",
+    "title": "IEEE 1588 Version 2",
+    "author": "Geoffrey M. Garner",
+    "date": "2008-09-24",
+    "pages_total": 89,
+    "pages_reviewed": [
+      61,
+      62
+    ],
+    "classification": "reviewed_non_normative_official_hosted_tutorial",
+    "full_document_bundled": false
+  },
+  "implementation": "bmca/bmca.mbt",
+  "implementation_sha256_at_review": "12247cac2d73b5e7e867963eb03427a367368dc69f0b394e0c7e1b02ff9df261",
+  "test_file": "bmca/tutorial_flow_wbtest.mbt",
+  "test_count_per_backend": 19,
+  "comparisons_per_backend": 25,
+  "side_semantics": {
+    "-1": "A preferred",
+    "1": "B preferred",
+    "0": "unresolved; no preferred side"
+  },
+  "cases": [
+    {
+      "id": "p61-priority1",
+      "rule": "BMCA.DIFFERENT_GM.priority1",
+      "input": "priority1 A=100 B=101; lower fields oppose A; different GM",
+      "expected_side": -1,
+      "expected_topology": false,
+      "expected_status": "Pass",
+      "comparison_count": 2,
+      "reverse_comparison": {
+        "expected_side": 1,
+        "expected_topology": false,
+        "expected_status": "Pass"
+      }
+    },
+    {
+      "id": "p61-clockClass",
+      "rule": "BMCA.DIFFERENT_GM.clockClass",
+      "input": "equal priority1; clockClass A=6 B=7; lower fields oppose A; different GM",
+      "expected_side": -1,
+      "expected_topology": false,
+      "expected_status": "Pass",
+      "comparison_count": 2,
+      "reverse_comparison": {
+        "expected_side": 1,
+        "expected_topology": false,
+        "expected_status": "Pass"
+      }
+    },
+    {
+      "id": "p61-clockAccuracy",
+      "rule": "BMCA.DIFFERENT_GM.clockAccuracy",
+      "input": "equal higher fields; accuracy A=32 B=33; lower fields oppose A; different GM",
+      "expected_side": -1,
+      "expected_topology": false,
+      "expected_status": "Pass",
+      "comparison_count": 2,
+      "reverse_comparison": {
+        "expected_side": 1,
+        "expected_topology": false,
+        "expected_status": "Pass"
+      }
+    },
+    {
+      "id": "p61-variance",
+      "rule": "BMCA.DIFFERENT_GM.offsetScaledLogVariance",
+      "input": "equal higher fields; variance A=100 B=101; lower fields oppose A; different GM",
+      "expected_side": -1,
+      "expected_topology": false,
+      "expected_status": "Pass",
+      "comparison_count": 2,
+      "reverse_comparison": {
+        "expected_side": 1,
+        "expected_topology": false,
+        "expected_status": "Pass"
+      }
+    },
+    {
+      "id": "p61-priority2",
+      "rule": "BMCA.DIFFERENT_GM.priority2",
+      "input": "equal higher fields; priority2 A=100 B=101; GM identity A=0x90 B=0x10",
+      "expected_side": -1,
+      "expected_topology": false,
+      "expected_status": "Pass",
+      "comparison_count": 2,
+      "reverse_comparison": {
+        "expected_side": 1,
+        "expected_topology": false,
+        "expected_status": "Pass"
+      }
+    },
+    {
+      "id": "p61-identity",
+      "rule": "BMCA.DIFFERENT_GM.identity",
+      "input": "equal quality; GM identity A=0x10 B=0x11",
+      "expected_side": -1,
+      "expected_topology": false,
+      "expected_status": "Pass",
+      "comparison_count": 2,
+      "reverse_comparison": {
+        "expected_side": 1,
+        "expected_topology": false,
+        "expected_status": "Pass"
+      }
+    },
+    {
+      "id": "p62-step-A",
+      "rule": "BMCA.SAME_GM.stepsRemoved",
+      "input": "same GM; steps A=1 B=3",
+      "expected_side": -1,
+      "expected_topology": false,
+      "expected_status": "Pass",
+      "comparison_count": 1,
+      "reverse_comparison": null
+    },
+    {
+      "id": "p62-step-B",
+      "rule": "BMCA.SAME_GM.stepsRemoved",
+      "input": "same GM; steps A=3 B=1",
+      "expected_side": 1,
+      "expected_topology": false,
+      "expected_status": "Pass",
+      "comparison_count": 1,
+      "reverse_comparison": null
+    },
+    {
+      "id": "p62-longer-A-less",
+      "rule": "BMCA.SAME_GM.oneHop",
+      "input": "steps A=2 B=1; longer A receiver clock 0x80 < sender clock 0x90",
+      "expected_side": 1,
+      "expected_topology": false,
+      "expected_status": "Pass",
+      "comparison_count": 1,
+      "reverse_comparison": null
+    },
+    {
+      "id": "p62-longer-A-greater",
+      "rule": "BMCA.SAME_GM.oneHop",
+      "input": "steps A=2 B=1; longer A receiver clock 0x80 > sender clock 0x20",
+      "expected_side": 1,
+      "expected_topology": true,
+      "expected_status": "Pass",
+      "comparison_count": 1,
+      "reverse_comparison": null
+    },
+    {
+      "id": "p62-longer-A-equal",
+      "rule": "BMCA.SAME_GM.error1",
+      "input": "steps A=2 B=1; longer A receiver identity = sender identity",
+      "expected_side": 0,
+      "expected_topology": false,
+      "expected_status": "Unsupported",
+      "comparison_count": 1,
+      "reverse_comparison": null
+    },
+    {
+      "id": "p62-longer-B-less",
+      "rule": "BMCA.SAME_GM.oneHop",
+      "input": "steps A=1 B=2; longer B receiver clock 0x80 < sender clock 0x90",
+      "expected_side": -1,
+      "expected_topology": false,
+      "expected_status": "Pass",
+      "comparison_count": 1,
+      "reverse_comparison": null
+    },
+    {
+      "id": "p62-longer-B-greater",
+      "rule": "BMCA.SAME_GM.oneHop",
+      "input": "steps A=1 B=2; longer B receiver clock 0x80 > sender clock 0x20",
+      "expected_side": -1,
+      "expected_topology": true,
+      "expected_status": "Pass",
+      "comparison_count": 1,
+      "reverse_comparison": null
+    },
+    {
+      "id": "p62-longer-B-equal",
+      "rule": "BMCA.SAME_GM.error1",
+      "input": "steps A=1 B=2; longer B receiver identity = sender identity",
+      "expected_side": 0,
+      "expected_topology": false,
+      "expected_status": "Unsupported",
+      "comparison_count": 1,
+      "reverse_comparison": null
+    },
+    {
+      "id": "p62-sender-A",
+      "rule": "BMCA.SAME_GM.sender",
+      "input": "equal steps; sender clock A=0x20 B=0x30",
+      "expected_side": -1,
+      "expected_topology": true,
+      "expected_status": "Pass",
+      "comparison_count": 1,
+      "reverse_comparison": null
+    },
+    {
+      "id": "p62-sender-B",
+      "rule": "BMCA.SAME_GM.sender",
+      "input": "equal steps; sender clock A=0x30 B=0x20",
+      "expected_side": 1,
+      "expected_topology": true,
+      "expected_status": "Pass",
+      "comparison_count": 1,
+      "reverse_comparison": null
+    },
+    {
+      "id": "p62-port-A",
+      "rule": "BMCA.SAME_GM.receiverPort",
+      "input": "equal steps and senders; receiver port A=1 B=2",
+      "expected_side": -1,
+      "expected_topology": true,
+      "expected_status": "Pass",
+      "comparison_count": 1,
+      "reverse_comparison": null
+    },
+    {
+      "id": "p62-port-B",
+      "rule": "BMCA.SAME_GM.receiverPort",
+      "input": "equal steps and senders; receiver port A=2 B=1",
+      "expected_side": 1,
+      "expected_topology": true,
+      "expected_status": "Pass",
+      "comparison_count": 1,
+      "reverse_comparison": null
+    },
+    {
+      "id": "p62-equal",
+      "rule": "BMCA.SAME_GM.error2",
+      "input": "equal steps, senders and receiver ports",
+      "expected_side": 0,
+      "expected_topology": false,
+      "expected_status": "Unsupported",
+      "comparison_count": 1,
+      "reverse_comparison": null
+    }
+  ],
+  "review_outcome": {
+    "discrepancy_found": false,
+    "production_change_required": false,
+    "error_mapping": "Tutorial error-1/error-2 are mapped to Unsupported, side=0, without asserting a device protocol violation."
+  },
+  "not_established": [
+    "An authorized complete IEEE 1588-2008 normative text was not obtained.",
+    "The tutorial does not replace eligibility, foreign-master qualification or complete port-state decision rules.",
+    "The test preserves project domain/receiver-context bounds and does not certify candidate qualification.",
+    "Passing these comparisons is not a complete IEEE conformance certification."
+  ],
+  "verification": {
+    "command": "scripts/moon-local test bmca --target all --deny-warn",
+    "target_results": {
+      "js": {
+        "passed": 19,
+        "failed": 0
+      },
+      "wasm": {
+        "passed": 19,
+        "failed": 0
+      },
+      "wasm-gc": {
+        "passed": 19,
+        "failed": 0
+      },
+      "native": {
+        "passed": 19,
+        "failed": 0
+      }
+    },
+    "total_test_executions": 76,
+    "total_dataset_comparisons": 100
+  }
+}

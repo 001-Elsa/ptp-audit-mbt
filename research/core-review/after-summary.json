@@ -1,0 +1,94 @@
+[
+  {
+    "case": "whitespace-event-clock-domain",
+    "input_sha256": "ff5d106110b8a3492f33b27ffdb39b7de6ae40fb77049b03b8586672eb9d3e53",
+    "before": {
+      "status": "Pass",
+      "measurements": 1
+    },
+    "after": {
+      "exit": 3,
+      "status": "InsufficientEvidence",
+      "measurements": 0,
+      "nonpass": [
+        "MEASUREMENT.EVIDENCE"
+      ]
+    },
+    "check_pass": true
+  },
+  {
+    "case": "duplicate-exchange-claims",
+    "input_sha256": "0d782bdc515c9a08e5cdf6f9ac5b15e84e1930da09e9dfe11c3dbff02672840f",
+    "before": {
+      "status": "InsufficientEvidence",
+      "measurements": 2
+    },
+    "after": {
+      "exit": 3,
+      "status": "InsufficientEvidence",
+      "measurements": 0,
+      "nonpass": [
+        "CLAIM.AMBIGUOUS",
+        "CLAIM.AMBIGUOUS",
+        "EXCHANGE.STATE.EVICTED",
+        "EXCHANGE.STATE.EVICTED"
+      ]
+    },
+    "check_pass": true
+  },
+  {
+    "case": "whitespace-bmca-validity-source",
+    "input_sha256": "a8ad1a7f1b2d75ff33df9506e6b83e1883e1594a062f68326f45a6dbb71df511",
+    "before": {
+      "status": "Pass",
+      "measurements": 1
+    },
+    "after": {
+      "exit": 3,
+      "status": "InsufficientEvidence",
+      "measurements": 1,
+      "nonpass": [
+        "BMCA.SNAPSHOT.EVIDENCE"
+      ]
+    },
+    "check_pass": true
+  },
+  {
+    "case": "bmca-only-invalid-unused-assumption",
+    "input_sha256": "0cba3258af52c95925fd1ace611a0a7269210454d95e2eb140a2196a1a16a46d",
+    "before": {
+      "status": "Pass",
+      "measurements": 0
+    },
+    "after": {
+      "exit": 1,
+      "status": "Violation",
+      "measurements": 0,
+      "nonpass": [
+        "INPUT.SCHEMA"
+      ]
+    },
+    "check_pass": true
+  },
+  {
+    "case": "expired-sync-no-measurement",
+    "input_sha256": "5bda3a48d445bb3ea28b206b145b19b384af74e2fc1615f77833d347a8cae822",
+    "before": {
+      "status": "InsufficientEvidence",
+      "measurements": 0
+    },
+    "after": {
+      "exit": 3,
+      "status": "InsufficientEvidence",
+      "measurements": 0,
+      "nonpass": [
+        "EXCHANGE.WINDOW",
+        "CLAIM.SYNC_WINDOW",
+        "CLAIM.SYNC_WINDOW",
+        "EXCHANGE.STATE.EVICTED",
+        "EXCHANGE.STATE.EVICTED"
+      ]
+    },
+    "check_pass": true
+  }
+]

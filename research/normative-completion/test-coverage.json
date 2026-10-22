@@ -1,0 +1,629 @@
+{
+  "schema": "ptp-audit/rule-test-execution/v2",
+  "generated_at_utc": "2026-10-22T07:11:00.602214+00:00",
+  "scope": "Explicit rule assertions from public typed APIs and independent byte negatives; internal replay resource defense is separately identified as whitebox.",
+  "boundary": "A passed test proves its concrete assertions executed. It is not exhaustive branch coverage, full protocol conformance or a substitute for licensed normative text.",
+  "sources": [
+    {
+      "path": "README.mbt.md",
+      "sha256": "b855c83eb47a5ef8c1b6107d5ee7a5e74dd523d33b67344ea0e6eb91b02d174d"
+    },
+    {
+      "path": "audit/audit.mbt",
+      "sha256": "7ad1fda48991ff69edfdd1760e7975811ba20c206bc685966188c46f034e9624"
+    },
+    {
+      "path": "audit/moon.pkg",
+      "sha256": "eb809411e31beb9f85092f26a59b77cfd0a3d2025aa427ed5beb49666c9f29aa"
+    },
+    {
+      "path": "audit/pkg.generated.mbti",
+      "sha256": "2262c8711a44eac35fac3e3772c1102b8042538fcccab00a913229cac89413cd"
+    },
+    {
+      "path": "bmca/bmca.mbt",
+      "sha256": "12247cac2d73b5e7e867963eb03427a367368dc69f0b394e0c7e1b02ff9df261"
+    },
+    {
+      "path": "bmca/moon.pkg",
+      "sha256": "cf8e40bf38dafadc9e6f0897395964218630b9575fc97457e07faeacf775a65b"
+    },
+    {
+      "path": "bmca/pkg.generated.mbti",
+      "sha256": "3617a0fbf14e0301e420608fad7769cf67d3db1e8e8f57c77570755a5f4b884a"
+    },
+    {
+      "path": "bmca/snapshot.mbt",
+      "sha256": "139b80ad1ad725aa4ff1eb14b5442b3719c4b27140d5f3c5204a3fd5e1003b6b"
+    },
+    {
+      "path": "bmca/tutorial_flow_wbtest.mbt",
+      "sha256": "3f211512e10780985b61eacf05e6f87246171c391600fa0d8a17503a7516a70c"
+    },
+    {
+      "path": "cmd/ptp-audit/main.mbt",
+      "sha256": "1ea0921d7f50f1b773616ef0a1bccc2a66cda9e34015b155c2ea40db1809ec69"
+    },
+    {
+      "path": "cmd/ptp-audit/moon.pkg",
+      "sha256": "ec5ea68110f4cc5189e6f6c9fe1d272f6d3866193ec00c33b8a3e602d9051bee"
+    },
+    {
+      "path": "commissioning/commissioning.mbt",
+      "sha256": "8fbfe7f3396431d8d58d7f0491ad4b066fddaab9d6dbf986fa1303622c542b41"
+    },
+    {
+      "path": "commissioning/commissioning_wbtest.mbt",
+      "sha256": "397787ae2cb691fc021167725b180e1ff269242b67620c5990de8ecb6c39369c"
+    },
+    {
+      "path": "commissioning/moon.pkg",
+      "sha256": "f2fb19492b68a0e5f1a7fc3a7d2e7e7f527597ae5817d1098672bde3965546f3"
+    },
+    {
+      "path": "commissioning/pkg.generated.mbti",
+      "sha256": "7bc05e94e94eb9d705716187b64f9a9e20705552db48581ee8b68e45b261ba02"
+    },
+    {
+      "path": "diagnostic/diagnostic.mbt",
+      "sha256": "03696558c79240e31eeb686f80d18cc97b3ac64e9ae289bc7749143111e823d3"
+    },
+    {
+      "path": "diagnostic/moon.pkg",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "path": "diagnostic/pkg.generated.mbti",
+      "sha256": "b8135a94b3cfea0912fa7feecc59f85722d69d3c7355147650388d3421f09b28"
+    },
+    {
+      "path": "evidence/coverage.mbt",
+      "sha256": "dabb72c3b6a93f6d5518fc99b4258c94b5ca6c34c9afc26d07a62e3574a7436d"
+    },
+    {
+      "path": "evidence/evidence_wbtest.mbt",
+      "sha256": "27ee9455b769d3ac448811b5cc426568b1f0db82658c1a0e0af871951f197253"
+    },
+    {
+      "path": "evidence/findings.mbt",
+      "sha256": "cd26c5636f6c7863de840a0192c071d373dbd3875650bd1f45825edff5c14b83"
+    },
+    {
+      "path": "evidence/measurements.mbt",
+      "sha256": "45d69751b07d5e03b0425b0f8033ca5a6b98f36f6c3759df1bdbf0b6dc56d811"
+    },
+    {
+      "path": "evidence/moon.pkg",
+      "sha256": "85a54754ca2827b071380e3b7b1ad33bb64c936acd22b22cd0b3d8b6bc57f204"
+    },
+    {
+      "path": "evidence/pkg.generated.mbti",
+      "sha256": "d5c10807c258d44c34a3033695e36e5b57e8fea121e56aa8af8df84449f3e70c"
+    },
+    {
+      "path": "evidence/references.mbt",
+      "sha256": "af6e4c70fab2c8b1be04fce06b96159788a1531c78812d476b2cd346e62c2555"
+    },
+    {
+      "path": "evidence/values.mbt",
+      "sha256": "608c25b006e6255460f438cfd27efe181d02acbe24ddb21ccacf8e7947a78262"
+    },
+    {
+      "path": "exchange/context.mbt",
+      "sha256": "b6ea6fd812913b02514bda678c93549ef393d6249d323a9641c9d6132c155bbf"
+    },
+    {
+      "path": "exchange/context_wbtest.mbt",
+      "sha256": "293c1db1fdbf59f4796b25274a7580b0e2ae59cbea75592864fce74c5b7faceb"
+    },
+    {
+      "path": "exchange/exchange.mbt",
+      "sha256": "3aaec5b238f0f347f4af2f1e905845fbea7d410e0653717633a845bac43028d8"
+    },
+    {
+      "path": "exchange/moon.pkg",
+      "sha256": "aa57688293a72602559b983191926bc85303544f4bd0b7dfe0d3943da466daea"
+    },
+    {
+      "path": "exchange/pkg.generated.mbti",
+      "sha256": "546481ba265a7fd9c599c56688ad1a9a0d1014e60d5a56430b5b75a316f18dd1"
+    },
+    {
+      "path": "exchange/rule_resource_wbtest.mbt",
+      "sha256": "0629f22253a4945c74a8de0fd0cc17282949187c5b814c90afe4f31e896ea8bf"
+    },
+    {
+      "path": "facade.mbt",
+      "sha256": "f1c07e720d1dbcdc0948c9d766fa926757074eb146822bcdbda97e05eca0b500"
+    },
+    {
+      "path": "metrology/json.mbt",
+      "sha256": "d6743c49d38019dcb2a0e40927d493d3c3ac2205485029ccf74b064066320f45"
+    },
+    {
+      "path": "metrology/metrology.mbt",
+      "sha256": "4bc6c1de071413111c5484ae7c3ffd2304923df8b9a9a47f87e0a6858547aef3"
+    },
+    {
+      "path": "metrology/metrology_test.mbt",
+      "sha256": "a67f67197878140e402ad620682fb4ad8b000d4c96715169c40bc51ea35f00a5"
+    },
+    {
+      "path": "metrology/moon.pkg",
+      "sha256": "73cd7b89c39237d46f999e73fe597749b662db64687b504be6a502da5a5ff4c8"
+    },
+    {
+      "path": "metrology/pkg.generated.mbti",
+      "sha256": "7c2b3795a08847c17a833a51b26e218a93334fd62cef7a15f1ca71a105742f8e"
+    },
+    {
+      "path": "moon.mod",
+      "sha256": "70edfab0488a03a0b4a1b9f1d1b2cecbf839a05ac8f6aee147a1e8b502407cdf"
+    },
+    {
+      "path": "moon.pkg",
+      "sha256": "29ef735846c17acc9054333708d931e7d6ea6bfde283ac28b40cef1c1db4c21d"
+    },
+    {
+      "path": "observation/moon.pkg",
+      "sha256": "51fefbb996fbbe16869f4fea3ef4353a2996ccf11cbeb050fd426c1b5e516ccc"
+    },
+    {
+      "path": "observation/observation.mbt",
+      "sha256": "41317a12623303e9d4862d1b87b9284ed535d5e134838f9d16a06e648511ed2b"
+    },
+    {
+      "path": "observation/observation_wbtest.mbt",
+      "sha256": "2dbe04c24e1838684858678272be87d328c9dd020ffbb818d269ec995fe74fc1"
+    },
+    {
+      "path": "observation/pkg.generated.mbti",
+      "sha256": "236d77b93acbc270cc87f262e3957f06987b6e750b0b8fe53c1d2d3c5ff6dfa1"
+    },
+    {
+      "path": "pkg.generated.mbti",
+      "sha256": "14552a8abf85fe86c528c7fdd4d5b23e2355ab8170b8366bf9d7b1597765fa4a"
+    },
+    {
+      "path": "scripts/moon-local",
+      "sha256": "86ce57d3376c1e65c6c8e8d05cc2bf6fbeab4a2b7e036a3aa0280727269cec3d"
+    },
+    {
+      "path": "scripts/verify_rule_coverage.py",
+      "sha256": "1e237276a061dbb19a7507f9b11d4cecf855b6a9603e073e082721ae1824ff8b"
+    },
+    {
+      "path": "tests/audit_test.mbt",
+      "sha256": "5b83490b21f11ef1c66fd747d2bc9e2dec3023e5e065dfe748852681b3028624"
+    },
+    {
+      "path": "tests/fixtures_test.mbt",
+      "sha256": "f3047e24aecc5eae54186b1fd148f43cc24635a7f28683bea6b88cf133237dec"
+    },
+    {
+      "path": "tests/hex_input_test.mbt",
+      "sha256": "8e745508af828354d6ec6b268b583a3c1453a1c9c282c471c3c7cf7762dbd921"
+    },
+    {
+      "path": "tests/moon.pkg",
+      "sha256": "1128d46da0645c3301df3ec49d5ac0bc6bf9f34d8b765ba9bb1b9c7f171403fc"
+    },
+    {
+      "path": "tests/pkg.generated.mbti",
+      "sha256": "c2aed5012e8ce0bf1c4de21d9958fe677776e302ff42a938ca5ffe2ecf3beddc"
+    },
+    {
+      "path": "tests/reference_test.mbt",
+      "sha256": "e52f99eb0ea3b5968fbb84e05d9d8901af976e0899db3ef01be625448151495b"
+    },
+    {
+      "path": "tests/rule_coverage_test.mbt",
+      "sha256": "a05e31b696d2e91e1075d39ca2e3ad2f88717e871112d1b3cf5877556f7a4832"
+    },
+    {
+      "path": "tests/wire_boundary_test.mbt",
+      "sha256": "71eb0cedb101787df3a93431b7b09264f99219c311d17750bea2a6259e8b1dfe"
+    },
+    {
+      "path": "wire/moon.pkg",
+      "sha256": "c5c4af2b62c3e1057a785be1ede771fec42876e29008b417815437f0c0ef9e95"
+    },
+    {
+      "path": "wire/pkg.generated.mbti",
+      "sha256": "8272bb3f6712cb3661d4716bf5a2fdef966c5ab736b660e0a59d50fa6d7572cc"
+    },
+    {
+      "path": "wire/wire.mbt",
+      "sha256": "d9728257cf6488c2c3162f34eb387a195a3491467b22da8aa4255a2f653ba1b2"
+    }
+  ],
+  "sources_unchanged_during_run": true,
+  "runner": {
+    "path": "scripts/verify_rule_coverage.py",
+    "sha256": "1e237276a061dbb19a7507f9b11d4cecf855b6a9603e073e082721ae1824ff8b"
+  },
+  "toolchain": {
+    "command": [
+      "scripts/moon-local",
+      "version",
+      "--all"
+    ],
+    "exit_code": 0,
+    "version_output": "moon 0.1.20261012 (748b63c 2026-10-12) ~/.moon/bin/moon\nmoonc v0.10.15+943464bfa (2026-10-12) ~/.moon/bin/moonc\nmoonrun 0.1.20261012 (748b63c 2026-10-12) ~/.moon/bin/moonrun\n\nFeature flags enabled: rr_moon_mod,rr_moon_pkg\n",
+    "version_observed": true
+  },
+  "typed_rule_tests_successful": true,
+  "successful": true,
+  "rule_count": 22,
+  "test_executions": 88,
+  "rules": [
+    {
+      "rule": "BMCA.CANDIDATE_UNIQUENESS",
+      "test": "rule coverage BMCA.CANDIDATE_UNIQUENESS rejects duplicate ids or frames",
+      "path": "tests/rule_coverage_test.mbt"
+    },
+    {
+      "rule": "BMCA.RESOURCE",
+      "test": "rule coverage BMCA.RESOURCE rejects excess qualified candidates",
+      "path": "tests/rule_coverage_test.mbt"
+    },
+    {
+      "rule": "BMCA.SCOPE.NO_UNIVERSAL_WINNER",
+      "test": "rule coverage BMCA.SCOPE.NO_UNIVERSAL_WINNER blocks cyclic supplied datasets",
+      "path": "tests/rule_coverage_test.mbt"
+    },
+    {
+      "rule": "EXCHANGE.RESOURCE",
+      "test": "rule coverage EXCHANGE.RESOURCE rejects excess frames and both claim lists",
+      "path": "tests/rule_coverage_test.mbt"
+    },
+    {
+      "rule": "EXCHANGE.STATE.RESOURCE",
+      "test": "rule coverage EXCHANGE.STATE.RESOURCE guards direct internal replay",
+      "path": "exchange/rule_resource_wbtest.mbt"
+    },
+    {
+      "rule": "INPUT.FRAME_ID",
+      "test": "rule coverage INPUT.FRAME_ID rejects ambiguous typed frame identity",
+      "path": "tests/rule_coverage_test.mbt"
+    },
+    {
+      "rule": "INPUT.FRAME_METADATA",
+      "test": "rule coverage INPUT.FRAME_METADATA rejects invalid typed observation fields",
+      "path": "tests/rule_coverage_test.mbt"
+    },
+    {
+      "rule": "INPUT.RESOURCE",
+      "test": "rule coverage INPUT.RESOURCE enforces the UTF-16 input boundary",
+      "path": "tests/rule_coverage_test.mbt"
+    },
+    {
+      "rule": "OBSERVATION.RESOURCE",
+      "test": "rule coverage OBSERVATION.RESOURCE rejects excess windows without lookup",
+      "path": "tests/rule_coverage_test.mbt"
+    },
+    {
+      "rule": "SCOPE.FLAGS",
+      "test": "rule coverage SCOPE.FLAGS excludes every unsupported flag bit separately",
+      "path": "tests/rule_coverage_test.mbt"
+    },
+    {
+      "rule": "SCOPE.MESSAGE",
+      "test": "rule coverage SCOPE.MESSAGE excludes every unsupported message type",
+      "path": "tests/rule_coverage_test.mbt"
+    },
+    {
+      "rule": "SCOPE.MODE",
+      "test": "rule coverage SCOPE.MODE excludes alternate-master and unicast independently",
+      "path": "tests/rule_coverage_test.mbt"
+    },
+    {
+      "rule": "SCOPE.PROFILE",
+      "test": "rule coverage SCOPE.PROFILE excludes each nonzero transportSpecific nibble",
+      "path": "tests/rule_coverage_test.mbt"
+    },
+    {
+      "rule": "SCOPE.VERSION",
+      "test": "rule coverage SCOPE.VERSION excludes later or reserved version octets",
+      "path": "tests/rule_coverage_test.mbt"
+    },
+    {
+      "rule": "WIRE.ANNOUNCE",
+      "test": "rule coverage WIRE.ANNOUNCE rejects each lossy field",
+      "path": "tests/rule_coverage_test.mbt"
+    },
+    {
+      "rule": "WIRE.BODY_KIND",
+      "test": "rule coverage WIRE.BODY_KIND rejects mismatched typed body variants",
+      "path": "tests/rule_coverage_test.mbt"
+    },
+    {
+      "rule": "WIRE.BODY_LENGTH",
+      "test": "rule coverage WIRE.BODY_LENGTH distinguishes self-consistent truncation",
+      "path": "tests/rule_coverage_test.mbt"
+    },
+    {
+      "rule": "WIRE.FIELD_RANGE",
+      "test": "rule coverage WIRE.FIELD_RANGE rejects lossy header encodings",
+      "path": "tests/rule_coverage_test.mbt"
+    },
+    {
+      "rule": "WIRE.HEADER_LENGTH",
+      "test": "rule coverage WIRE.HEADER_LENGTH rejects every short common header",
+      "path": "tests/rule_coverage_test.mbt"
+    },
+    {
+      "rule": "WIRE.REQUESTER_PORT",
+      "test": "rule coverage WIRE.REQUESTER_PORT rejects zero response requester",
+      "path": "tests/rule_coverage_test.mbt"
+    },
+    {
+      "rule": "WIRE.RESPONSE",
+      "test": "rule coverage WIRE.RESPONSE rejects invalid requester and timestamp",
+      "path": "tests/rule_coverage_test.mbt"
+    },
+    {
+      "rule": "WIRE.TIMESTAMP",
+      "test": "rule coverage WIRE.TIMESTAMP rejects each out-of-range component",
+      "path": "tests/rule_coverage_test.mbt"
+    }
+  ],
+  "runs": [
+    {
+      "target": "native",
+      "command": [
+        "scripts/moon-local",
+        "test",
+        "tests/rule_coverage_test.mbt",
+        "exchange/rule_resource_wbtest.mbt",
+        "--target",
+        "native",
+        "--deny-warn",
+        "--verbose"
+      ],
+      "exit_code": 0,
+      "successful": true,
+      "test_count": 22,
+      "runtime_passed_tests": [
+        "rule coverage EXCHANGE.STATE.RESOURCE guards direct internal replay",
+        "rule coverage WIRE.HEADER_LENGTH rejects every short common header",
+        "rule coverage WIRE.BODY_LENGTH distinguishes self-consistent truncation",
+        "rule coverage WIRE.REQUESTER_PORT rejects zero response requester",
+        "rule coverage SCOPE.VERSION excludes later or reserved version octets",
+        "rule coverage SCOPE.PROFILE excludes each nonzero transportSpecific nibble",
+        "rule coverage SCOPE.MESSAGE excludes every unsupported message type",
+        "rule coverage SCOPE.FLAGS excludes every unsupported flag bit separately",
+        "rule coverage SCOPE.MODE excludes alternate-master and unicast independently",
+        "rule coverage WIRE.FIELD_RANGE rejects lossy header encodings",
+        "rule coverage WIRE.TIMESTAMP rejects each out-of-range component",
+        "rule coverage WIRE.BODY_KIND rejects mismatched typed body variants",
+        "rule coverage WIRE.RESPONSE rejects invalid requester and timestamp",
+        "rule coverage WIRE.ANNOUNCE rejects each lossy field",
+        "rule coverage EXCHANGE.RESOURCE rejects excess frames and both claim lists",
+        "rule coverage INPUT.FRAME_ID rejects ambiguous typed frame identity",
+        "rule coverage INPUT.FRAME_METADATA rejects invalid typed observation fields",
+        "rule coverage INPUT.RESOURCE enforces the UTF-16 input boundary",
+        "rule coverage OBSERVATION.RESOURCE rejects excess windows without lookup",
+        "rule coverage BMCA.RESOURCE rejects excess qualified candidates",
+        "rule coverage BMCA.CANDIDATE_UNIQUENESS rejects duplicate ids or frames",
+        "rule coverage BMCA.SCOPE.NO_UNIVERSAL_WINNER blocks cyclic supplied datasets"
+      ],
+      "missing_tests": [],
+      "unexpected_tests": [],
+      "log": "research/normative-completion/rule-tests-native.log",
+      "log_sha256": "940debda15a1911e56e6220478295870b9a789c163c7a4faf1e22adf8a41a6ef"
+    },
+    {
+      "target": "js",
+      "command": [
+        "scripts/moon-local",
+        "test",
+        "tests/rule_coverage_test.mbt",
+        "exchange/rule_resource_wbtest.mbt",
+        "--target",
+        "js",
+        "--deny-warn",
+        "--verbose"
+      ],
+      "exit_code": 0,
+      "successful": true,
+      "test_count": 22,
+      "runtime_passed_tests": [
+        "rule coverage EXCHANGE.STATE.RESOURCE guards direct internal replay",
+        "rule coverage WIRE.HEADER_LENGTH rejects every short common header",
+        "rule coverage WIRE.BODY_LENGTH distinguishes self-consistent truncation",
+        "rule coverage WIRE.REQUESTER_PORT rejects zero response requester",
+        "rule coverage SCOPE.VERSION excludes later or reserved version octets",
+        "rule coverage SCOPE.PROFILE excludes each nonzero transportSpecific nibble",
+        "rule coverage SCOPE.MESSAGE excludes every unsupported message type",
+        "rule coverage SCOPE.FLAGS excludes every unsupported flag bit separately",
+        "rule coverage SCOPE.MODE excludes alternate-master and unicast independently",
+        "rule coverage WIRE.FIELD_RANGE rejects lossy header encodings",
+        "rule coverage WIRE.TIMESTAMP rejects each out-of-range component",
+        "rule coverage WIRE.BODY_KIND rejects mismatched typed body variants",
+        "rule coverage WIRE.RESPONSE rejects invalid requester and timestamp",
+        "rule coverage WIRE.ANNOUNCE rejects each lossy field",
+        "rule coverage EXCHANGE.RESOURCE rejects excess frames and both claim lists",
+        "rule coverage INPUT.FRAME_ID rejects ambiguous typed frame identity",
+        "rule coverage INPUT.FRAME_METADATA rejects invalid typed observation fields",
+        "rule coverage INPUT.RESOURCE enforces the UTF-16 input boundary",
+        "rule coverage OBSERVATION.RESOURCE rejects excess windows without lookup",
+        "rule coverage BMCA.RESOURCE rejects excess qualified candidates",
+        "rule coverage BMCA.CANDIDATE_UNIQUENESS rejects duplicate ids or frames",
+        "rule coverage BMCA.SCOPE.NO_UNIVERSAL_WINNER blocks cyclic supplied datasets"
+      ],
+      "missing_tests": [],
+      "unexpected_tests": [],
+      "log": "research/normative-completion/rule-tests-js.log",
+      "log_sha256": "a497f52dbbf526394ea050fab91b43272a95897b22ff182717916687c7e24a1d"
+    },
+    {
+      "target": "wasm",
+      "command": [
+        "scripts/moon-local",
+        "test",
+        "tests/rule_coverage_test.mbt",
+        "exchange/rule_resource_wbtest.mbt",
+        "--target",
+        "wasm",
+        "--deny-warn",
+        "--verbose"
+      ],
+      "exit_code": 0,
+      "successful": true,
+      "test_count": 22,
+      "runtime_passed_tests": [
+        "rule coverage EXCHANGE.STATE.RESOURCE guards direct internal replay",
+        "rule coverage WIRE.HEADER_LENGTH rejects every short common header",
+        "rule coverage WIRE.BODY_LENGTH distinguishes self-consistent truncation",
+        "rule coverage WIRE.REQUESTER_PORT rejects zero response requester",
+        "rule coverage SCOPE.VERSION excludes later or reserved version octets",
+        "rule coverage SCOPE.PROFILE excludes each nonzero transportSpecific nibble",
+        "rule coverage SCOPE.MESSAGE excludes every unsupported message type",
+        "rule coverage SCOPE.FLAGS excludes every unsupported flag bit separately",
+        "rule coverage SCOPE.MODE excludes alternate-master and unicast independently",
+        "rule coverage WIRE.FIELD_RANGE rejects lossy header encodings",
+        "rule coverage WIRE.TIMESTAMP rejects each out-of-range component",
+        "rule coverage WIRE.BODY_KIND rejects mismatched typed body variants",
+        "rule coverage WIRE.RESPONSE rejects invalid requester and timestamp",
+        "rule coverage WIRE.ANNOUNCE rejects each lossy field",
+        "rule coverage EXCHANGE.RESOURCE rejects excess frames and both claim lists",
+        "rule coverage INPUT.FRAME_ID rejects ambiguous typed frame identity",
+        "rule coverage INPUT.FRAME_METADATA rejects invalid typed observation fields",
+        "rule coverage INPUT.RESOURCE enforces the UTF-16 input boundary",
+        "rule coverage OBSERVATION.RESOURCE rejects excess windows without lookup",
+        "rule coverage BMCA.RESOURCE rejects excess qualified candidates",
+        "rule coverage BMCA.CANDIDATE_UNIQUENESS rejects duplicate ids or frames",
+        "rule coverage BMCA.SCOPE.NO_UNIVERSAL_WINNER blocks cyclic supplied datasets"
+      ],
+      "missing_tests": [],
+      "unexpected_tests": [],
+      "log": "research/normative-completion/rule-tests-wasm.log",
+      "log_sha256": "4b29d9b7f9d96e0bf3bb76868f196b4941b6fca7107dc31904e7d6fc76905db4"
+    },
+    {
+      "target": "wasm-gc",
+      "command": [
+        "scripts/moon-local",
+        "test",
+        "tests/rule_coverage_test.mbt",
+        "exchange/rule_resource_wbtest.mbt",
+        "--target",
+        "wasm-gc",
+        "--deny-warn",
+        "--verbose"
+      ],
+      "exit_code": 0,
+      "successful": true,
+      "test_count": 22,
+      "runtime_passed_tests": [
+        "rule coverage EXCHANGE.STATE.RESOURCE guards direct internal replay",
+        "rule coverage WIRE.HEADER_LENGTH rejects every short common header",
+        "rule coverage WIRE.BODY_LENGTH distinguishes self-consistent truncation",
+        "rule coverage WIRE.REQUESTER_PORT rejects zero response requester",
+        "rule coverage SCOPE.VERSION excludes later or reserved version octets",
+        "rule coverage SCOPE.PROFILE excludes each nonzero transportSpecific nibble",
+        "rule coverage SCOPE.MESSAGE excludes every unsupported message type",
+        "rule coverage SCOPE.FLAGS excludes every unsupported flag bit separately",
+        "rule coverage SCOPE.MODE excludes alternate-master and unicast independently",
+        "rule coverage WIRE.FIELD_RANGE rejects lossy header encodings",
+        "rule coverage WIRE.TIMESTAMP rejects each out-of-range component",
+        "rule coverage WIRE.BODY_KIND rejects mismatched typed body variants",
+        "rule coverage WIRE.RESPONSE rejects invalid requester and timestamp",
+        "rule coverage WIRE.ANNOUNCE rejects each lossy field",
+        "rule coverage EXCHANGE.RESOURCE rejects excess frames and both claim lists",
+        "rule coverage INPUT.FRAME_ID rejects ambiguous typed frame identity",
+        "rule coverage INPUT.FRAME_METADATA rejects invalid typed observation fields",
+        "rule coverage INPUT.RESOURCE enforces the UTF-16 input boundary",
+        "rule coverage OBSERVATION.RESOURCE rejects excess windows without lookup",
+        "rule coverage BMCA.RESOURCE rejects excess qualified candidates",
+        "rule coverage BMCA.CANDIDATE_UNIQUENESS rejects duplicate ids or frames",
+        "rule coverage BMCA.SCOPE.NO_UNIVERSAL_WINNER blocks cyclic supplied datasets"
+      ],
+      "missing_tests": [],
+      "unexpected_tests": [],
+      "log": "research/normative-completion/rule-tests-wasm-gc.log",
+      "log_sha256": "7ecb44da00935fbf7ad9820325441393fc038628b543c74b12b30062ed8d4854"
+    }
+  ],
+  "referenced_cli_inventory": {
+    "path": "research/normative-completion/rule-inventory.json",
+    "sha256": "70ed008ab50e96f087eba00b9f3fdf15deaef9f8bb9ee570e06c4ae1ffd6648e",
+    "generated_at_utc": "2026-10-22T07:10:58.561690+00:00",
+    "boundary": "CLI observations are usable only when every declared source SHA-256 matches current files and the inventory stays unchanged during this run. A union counts rule names, not every predicate or branch.",
+    "validation": {
+      "valid": true,
+      "sha256": "70ed008ab50e96f087eba00b9f3fdf15deaef9f8bb9ee570e06c4ae1ffd6648e",
+      "source_checks": [
+        {
+          "path": "wire/wire.mbt",
+          "inventory_sha256": "d9728257cf6488c2c3162f34eb387a195a3491467b22da8aa4255a2f653ba1b2",
+          "current_sha256": "d9728257cf6488c2c3162f34eb387a195a3491467b22da8aa4255a2f653ba1b2",
+          "matching": true
+        },
+        {
+          "path": "exchange/context.mbt",
+          "inventory_sha256": "b6ea6fd812913b02514bda678c93549ef393d6249d323a9641c9d6132c155bbf",
+          "current_sha256": "b6ea6fd812913b02514bda678c93549ef393d6249d323a9641c9d6132c155bbf",
+          "matching": true
+        },
+        {
+          "path": "exchange/exchange.mbt",
+          "inventory_sha256": "3aaec5b238f0f347f4af2f1e905845fbea7d410e0653717633a845bac43028d8",
+          "current_sha256": "3aaec5b238f0f347f4af2f1e905845fbea7d410e0653717633a845bac43028d8",
+          "matching": true
+        },
+        {
+          "path": "bmca/bmca.mbt",
+          "inventory_sha256": "12247cac2d73b5e7e867963eb03427a367368dc69f0b394e0c7e1b02ff9df261",
+          "current_sha256": "12247cac2d73b5e7e867963eb03427a367368dc69f0b394e0c7e1b02ff9df261",
+          "matching": true
+        },
+        {
+          "path": "bmca/snapshot.mbt",
+          "inventory_sha256": "139b80ad1ad725aa4ff1eb14b5442b3719c4b27140d5f3c5204a3fd5e1003b6b",
+          "current_sha256": "139b80ad1ad725aa4ff1eb14b5442b3719c4b27140d5f3c5204a3fd5e1003b6b",
+          "matching": true
+        },
+        {
+          "path": "observation/observation.mbt",
+          "inventory_sha256": "41317a12623303e9d4862d1b87b9284ed535d5e134838f9d16a06e648511ed2b",
+          "current_sha256": "41317a12623303e9d4862d1b87b9284ed535d5e134838f9d16a06e648511ed2b",
+          "matching": true
+        },
+        {
+          "path": "audit/audit.mbt",
+          "inventory_sha256": "7ad1fda48991ff69edfdd1760e7975811ba20c206bc685966188c46f034e9624",
+          "current_sha256": "7ad1fda48991ff69edfdd1760e7975811ba20c206bc685966188c46f034e9624",
+          "matching": true
+        },
+        {
+          "path": "metrology/json.mbt",
+          "inventory_sha256": "d6743c49d38019dcb2a0e40927d493d3c3ac2205485029ccf74b064066320f45",
+          "current_sha256": "d6743c49d38019dcb2a0e40927d493d3c3ac2205485029ccf74b064066320f45",
+          "matching": true
+        },
+        {
+          "path": "metrology/metrology.mbt",
+          "inventory_sha256": "4bc6c1de071413111c5484ae7c3ffd2304923df8b9a9a47f87e0a6858547aef3",
+          "current_sha256": "4bc6c1de071413111c5484ae7c3ffd2304923df8b9a9a47f87e0a6858547aef3",
+          "matching": true
+        },
+        {
+          "path": "commissioning/commissioning.mbt",
+          "inventory_sha256": "8fbfe7f3396431d8d58d7f0491ad4b066fddaab9d6dbf986fa1303622c542b41",
+          "current_sha256": "8fbfe7f3396431d8d58d7f0491ad4b066fddaab9d6dbf986fa1303622c542b41",
+          "matching": true
+        }
+      ],
+      "errors": [],
+      "unchanged_during_run": true,
+      "valid_before_run": true
+    },
+    "established": true,
+    "implemented_rule_count": 95,
+    "cli_observed_rule_count": 73,
+    "cli_or_this_run_observed_rule_count": 95,
+    "without_either_runtime_evidence": []
+  }
+}

@@ -1,0 +1,308 @@
+{
+  "schema": "ptp-normative-source-access/v1",
+  "date": "2026-10-19",
+  "timezone": "Asia/Shanghai",
+  "complete_normative_text_obtained": false,
+  "exhaustive_internet_search": false,
+  "purchased": false,
+  "new_licence_accepted": false,
+  "access_control_bypassed": false,
+  "full_document_bundled": false,
+  "routes": [
+    {
+      "url": "https://standards.ieee.org/standard/1588-2008.html",
+      "http_status": 403,
+      "browser_result": {
+        "final_url": "https://standards.ieee.org/ieee/1588/4355/",
+        "read_success": true,
+        "designation": "IEEE 1588-2008",
+        "published": "2008-07-24",
+        "status": "Superseded",
+        "displayed_access": [
+          "Purchase",
+          "Access via Subscription"
+        ],
+        "purchase_url": "https://store.accuristech.com/ieee/products/vendor_id/4355",
+        "subscription_url": "https://innovate.ieee.org/subscriptions-for-ieee-standards-and-related-content/"
+      }
+    },
+    {
+      "url": "https://standards.ieee.org/products-programs/ieee-get-program/",
+      "browser_read_success": true,
+      "displayed_families": [
+        "IEEE 802",
+        "Design Automation",
+        "AI Ethics and Governance",
+        "IEEE 1680",
+        "IEEE/ANSI N42",
+        "IEEE C95"
+      ],
+      "coverage_of_1588_2008_established": false,
+      "requires_accepting_terms_before_pdf": true
+    },
+    {
+      "url": "https://ieeexplore.ieee.org/document/4579760",
+      "http_status": 202,
+      "response_bytes": 0,
+      "browser_result": "blank document page"
+    },
+    {
+      "url": "https://ieeexplore.ieee.org/browse/standards/get-program/page/series?id=2006",
+      "http_status": 418,
+      "full_text_obtained": false,
+      "series_identity_verified": false
+    },
+    {
+      "url": "https://webstore.iec.ch/en/publication/5639",
+      "browser_read_success": true,
+      "designation": "IEC 61588:2009",
+      "edition": "2.0",
+      "published": "2009-02-27",
+      "isbn": "9782889105465",
+      "pages": 287,
+      "displayed_size": "3.80 MB",
+      "displayed_price": {
+        "currency": "CHF",
+        "amount": 475,
+        "format": "Electronic",
+        "users": "1"
+      },
+      "session_label": "Log in",
+      "cart_action_performed": false
+    },
+    {
+      "url": "https://webstore.iec.ch/en/iec_catalog/product/preview/?id=L3B1Yi9wZGYvcHJldmlldy9pbmZvX2llYzYxNTg4e2VkMi4wfWVuLnBkZg==",
+      "read_from_existing_official_download": true,
+      "pages": 19,
+      "sha256": "e33a07902fcd4ea7812dc09cdb9be66f3cc72c71f38990fe531ea1a8c08ca439",
+      "kind": "preview"
+    },
+    {
+      "url": "https://sagroups.ieee.org/1588/",
+      "http_status": 403
+    },
+    {
+      "url": "https://www.nist.gov/el/intelligent-systems-division-73500/ieee-1588/ordering-ieee-1588-standard",
+      "http_status": 404,
+      "legacy_url_only": true
+    }
+  ],
+  "additional_public_contribution": {
+    "url": "https://www.ieee802.org/1/files/public/docs2008/as-garner-1588v2-summary-0908.pdf",
+    "discovered_via": [
+      "public search result",
+      "https://www.ieee802.org/1/files/public/docs2008/"
+    ],
+    "title": "IEEE 1588 Version 2",
+    "author": "Geoffrey M. Garner",
+    "date": "2008-09-24",
+    "kind": "tutorial",
+    "normative_standard": false,
+    "pages": 89,
+    "bytes": 3623113,
+    "sha256": "a023d1d55e20fe4b3ea5dbf11cdcfd650abfa071c3cab11e8247de6ff4eece68",
+    "local_cache": "~/.local/share/ptp-audit-tools/standards/ieee802-garner-2008-tutorial.pdf",
+    "copyright_full_document_bundled": false,
+    "inspected_pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65
+    ],
+    "factual_corroborations": {
+      "45": "UInteger48 seconds; UInteger32 nanoseconds; Integer64 correctionField in 2^-16 ns units",
+      "54": "priority1, clockClass, clockAccuracy, offsetScaledLogVariance, priority2, clockIdentity ordering",
+      "61-62": "Dataset comparison flow including same-grandmaster topology branches",
+      "64-65": "Profile selections include parameters, optional features and conformance procedure"
+    }
+  },
+  "still_not_normatively_verified_by_this_task": [
+    "all five-body values and lengths",
+    "controlField enumeration",
+    "nanoseconds below one billion clause",
+    "full two-step E2E Clause 11 association rules",
+    "normative Figures 27-28 and topology state semantics",
+    "resolution of official correctionField tooBig interpretation conflict",
+    "profile-specific source port identity policy"
+  ],
+  "notes_file": "source-access.md",
+  "china_equivalent_adoption": {
+    "designation": "GB/T 25931-2010",
+    "title_zh": "网络测量和控制系统的精确时钟同步协议",
+    "adopted_standard": "IEC 61588:2009",
+    "adoption_degree": "IDT / 等同",
+    "adoption_source_url": "https://std.samr.gov.cn/gb/search/gbDetailed?id=71F772D7DBF1D3A7E05397BE0A0AB82A",
+    "adoption_quote": "本标准等同采用IEC国际标准：IEC 61588:2009。",
+    "adoption_metadata_sha256": "a99683e6e0befa8babf6bcec896caae4a4143102bfc08bc02e56b9d783865457",
+    "official_search_url": "https://std.samr.gov.cn/search/std?q=25931",
+    "official_search_iframe_url": "https://std.samr.gov.cn/search/stdPage?q=25931&tid=",
+    "official_search_iframe_sha256": "f8279d07cd607803f5d1dc71db66bd116589b2888cd6699d1c14bb8e915c9dbf",
+    "openstd_search_url": "https://openstd.samr.gov.cn/bzgk/gb/std_list?p.p1=0&p.p90=circulation_date&p.p91=desc&p.p2=25931",
+    "openstd_result_count": 1,
+    "openstd_designation_state": "现行",
+    "published": "2011-01-14",
+    "effective": "2011-05-01",
+    "openstd_detail_url": "https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=EB586F0639AD2D2B3EDA2E202211D0AC",
+    "openstd_detail_http_status": 200,
+    "openstd_detail_html_sha256": "15f193acc9708efe8e6f785dea9abbbad77c5103326dc05aacf46d471b4f3d3b",
+    "access_notice_quote": "该标准采用了ISO、IEC等国际国外组织的标准，由于涉及版权保护问题，本系统暂不提供在线阅读服务。",
+    "full_text_obtained": false,
+    "generic_hidden_reader_invoked": false,
+    "access_control_bypassed": false,
+    "method": "Normal public HTTP GET of official search/result/detail pages following the observed page links and public search parameters. No reader requests were made after the explicit copyright notice."
+  },
+  "russian_official_portal_attempt": {
+    "url": "https://protect.gost.ru/",
+    "result": "DNS resolution failed",
+    "exception": "URLError(gaierror(8, 'nodename nor servname provided, or not known'))",
+    "full_text_obtained": false,
+    "exhaustive_russian_source_search": false,
+    "network_retry": {
+      "date": "2026-10-19",
+      "normal_dns_repair_only": true,
+      "queries": [
+        {
+          "command": "nslookup protect.gost.ru 8.8.8.8",
+          "server": "8.8.8.8#53",
+          "result": "SERVFAIL",
+          "exit_code": 1
+        },
+        {
+          "command": "dig +time=5 +tries=1 @1.1.1.1 protect.gost.ru A",
+          "server": "1.1.1.1#53",
+          "result": "SERVFAIL",
+          "answer_count": 0,
+          "extended_dns_error": "at delegation gost.ru."
+        },
+        {
+          "command": "dig +time=5 +tries=1 @1.1.1.1 gost.ru NS +cdflag",
+          "server": "1.1.1.1#53",
+          "result": "SERVFAIL",
+          "answer_count": 0,
+          "checking_disabled_flag": true,
+          "extended_dns_error": "at delegation gost.ru."
+        },
+        {
+          "url": "https://dns.alidns.com/resolve?name=protect.gost.ru&type=A",
+          "http_status": 200,
+          "dns_status": 2,
+          "answer_count": 0
+        },
+        {
+          "url": "https://dns.google/resolve?name=protect.gost.ru&type=A",
+          "result": "timeout"
+        },
+        {
+          "url": "https://dns.google/resolve?name=protect.gost.ru&type=A&cd=1",
+          "result": "timeout"
+        },
+        {
+          "url": "https://dns.google/resolve?name=gost.ru&type=NS&cd=1",
+          "result": "timeout"
+        },
+        {
+          "url": "https://cloudflare-dns.com/dns-query?name=protect.gost.ru&type=A",
+          "result": "connection reset by peer"
+        }
+      ],
+      "system_getaddrinfo_failed_hosts": [
+        "gost.ru",
+        "www.gost.ru",
+        "protect.gost.ru",
+        "fgis.gost.ru"
+      ],
+      "credible_origin_ip_obtained": false,
+      "curl_resolve_possible": false,
+      "certificate_verification_disabled": false,
+      "conclusion": "The failure is reproduced across independent public DNS resolvers; no verified origin address was returned. This does not establish a paid/free access policy or prove the absence of a lawful full text."
+    },
+    "alternative_government_host_attempts": {
+      "urls": [
+        "https://www.rst.gov.ru/portal/gost/",
+        "https://www.rst.gov.ru/portal/gost/home/standarts"
+      ],
+      "result": "URLError(gaierror(8, 'nodename nor servname provided, or not known'))",
+      "actual_page_provenance_or_catalogue_verified": false,
+      "limits": "Candidate government-host paths also failed DNS before content access; these attempts do not establish their current status or available catalogue."
+    }
+  },
+  "india_official_linked_route": {
+    "official_bis_homepage": "https://www.bis.gov.in/",
+    "official_bis_homepage_http_status": 200,
+    "official_bis_homepage_html_sha256": "c021f83d43fef6d2f360d91661023203cdb2afd15a8161054b866066ecab0c11",
+    "observed_bis_link_label": "Download Indian Standards",
+    "observed_bis_link_destination": "https://standardsbis.bsbedge.com/",
+    "download_site_http_status": 200,
+    "download_site_html_sha256": "b88ae2a827edcff7b873770c2be1052fd0ecf64edeedeb758ef4d0bd33715de4",
+    "displayed_title": "Bureau of Indian Standards - e-Sale",
+    "displayed_banner_quote": "Buy and Download Individual Indian Standards from our Website. Indigenous Indian Standards can be downloaded free of cost.",
+    "public_autocomplete_url": "https://standardsbis.bsbedge.com/popupextender.aspx/GetStdNo_Bis",
+    "autocomplete_method_provenance": "Observed public frontend AutoCompleteBehavior servicePath/serviceMethod and GetID callback.",
+    "autocomplete_body_keys": [
+      "prefixText",
+      "count",
+      "contextKey"
+    ],
+    "autocomplete_empty_queries": [
+      "61588",
+      "IS/IEC 61588",
+      "IS 61588"
+    ],
+    "autocomplete_positive_control": "IS/IEC 615 returned nonempty IS/IEC 61508, 61511, 61537, 61557 and 61558 entries.",
+    "autocomplete_snapshot_sha256": "033c6770694ec31d41f2e3d963fd56d5a7ecbe28c03d438238dc7b056926ad13",
+    "normal_form_results": [
+      {
+        "query": "61588",
+        "type": "Standard Number",
+        "url": "https://standardsbis.bsbedge.com/BIS_SearchStandard.aspx?Standard_Number=61588&id=0",
+        "http_status": 200,
+        "visible_result_quote": "There are no results that match your search.",
+        "snapshot_sha256": "4da09725b83f15c21a4f053ebecd53f5e2adcb2f549717c18abb4fc2b5c02251"
+      },
+      {
+        "query": "precise clock synchronization",
+        "type": "Title",
+        "url": "https://standardsbis.bsbedge.com/BIS_SearchStandard.aspx?keyword=precise%20clock%20synchronization&id=0",
+        "http_status": 200,
+        "visible_result_quote": "There are no results that match your search.",
+        "snapshot_sha256": "c040965ab0002787580555fb9b37b8ec3bc2e87c6f3f880596a94be10ef269e6"
+      }
+    ],
+    "faq_url": "https://standardsbis.bsbedge.com/BIS_FAQ.aspx?id=faq",
+    "faq_quotes": [
+      "Please register/login to purchase a standard.",
+      "Free amendments can be downloaded after logging in."
+    ],
+    "actual_IS_IEC_61588_catalogue_entry_found": false,
+    "equivalent_2009_adoption_verified": false,
+    "price_of_61588_established": false,
+    "free_access_to_61588_established": false,
+    "full_text_obtained": false,
+    "account_created": false,
+    "purchase_performed": false,
+    "new_licence_accepted": false,
+    "limits": "These normal public catalogue queries did not locate a 61588 entry. This is not proof that no equivalent adoption or other entitled institutional source exists."
+  }
+}

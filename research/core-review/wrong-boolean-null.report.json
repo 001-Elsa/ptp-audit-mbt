@@ -1,0 +1,137 @@
+{
+  "schema": "ptp-audit-report/v2",
+  "rule_set": "ptp-audit/0.3.0",
+  "scope": "IEEE1588-2008 default multicast E2E two-step fixed-body subset; dataset preference only",
+  "status": "Violation",
+  "exit_code": 1,
+  "input_fingerprint": "fnv1a32-utf16:2814756878",
+  "fingerprint_notice": "FNV1a32 over UTF-16 code units; non-cryptographic, not an authenticity guarantee",
+  "findings": [
+    {
+      "rule": "INPUT.SCHEMA",
+      "status": "Violation",
+      "frames": [],
+      "offset": null,
+      "expected": "strict ptp-audit/v1 case",
+      "actual": "symmetric_path: expected boolean",
+      "detail": "Input validation failed; no partial success report emitted.",
+      "evidence": {
+        "referenced_frames": [],
+        "unresolved_frame_ids": [],
+        "ambiguous_frame_ids": [],
+        "association_keys": [],
+        "field_comparisons": [],
+        "observation_context": {
+          "windows": [],
+          "policy": null
+        },
+        "supplied_assumptions": {},
+        "supplied_bmca_snapshot": null,
+        "interpretation": "Concrete values supplement expected/actual text. Equality of a displayed field alone is not a protocol verdict; use this finding's rule, status, metadata preconditions and rule_reference."
+      },
+      "rule_reference": {
+        "rule": "INPUT.SCHEMA",
+        "classification": "project_evidence_or_scope_policy",
+        "topic": "Project input, bounded scope, observation validity, evidence completeness or reporting policy",
+        "standard": null,
+        "upstream_sources": [],
+        "reviewed_official_evidence": [],
+        "unverified_normative_boundary": "Project evidence, resource or bounded-scope policy; no IEEE requirement is asserted by this rule.",
+        "project_sources": [
+          {
+            "project_source": "audit/audit.mbt",
+            "symbols": [
+              "parse_case",
+              "audit",
+              "audit_json"
+            ]
+          }
+        ],
+        "rule_basis_document": "docs/rule-traceability.md",
+        "scope_document": "docs/rules.md",
+        "independent_wire_verification": {
+          "document": "docs/wire-reference.md",
+          "evidence": "research/wire-reference/verification.json",
+          "boundary": "Independent dissector agreement on the recorded fixtures supports those field layouts; it is not certification of every possible input or full IEEE conformity."
+        },
+        "verdict_boundary": "This rule's status covers only its stated condition and supplied evidence. It does not certify full IEEE compliance, source authenticity, absolute timing accuracy, or competition originality."
+      }
+    }
+  ],
+  "measurements": [],
+  "coverage": {
+    "meaning": "Rules emitted by this input's execution; not a full normative or test coverage certificate.",
+    "unique_rule_count": 1,
+    "finding_count": 1,
+    "executed_rules": [
+      {
+        "rule": "INPUT.SCHEMA",
+        "statuses": [
+          "Violation"
+        ],
+        "execution_count": 1,
+        "executions": [
+          {
+            "status": "Violation",
+            "frames": []
+          }
+        ],
+        "rule_reference": {
+          "rule": "INPUT.SCHEMA",
+          "classification": "project_evidence_or_scope_policy",
+          "topic": "Project input, bounded scope, observation validity, evidence completeness or reporting policy",
+          "standard": null,
+          "upstream_sources": [],
+          "reviewed_official_evidence": [],
+          "unverified_normative_boundary": "Project evidence, resource or bounded-scope policy; no IEEE requirement is asserted by this rule.",
+          "project_sources": [
+            {
+              "project_source": "audit/audit.mbt",
+              "symbols": [
+                "parse_case",
+                "audit",
+                "audit_json"
+              ]
+            }
+          ],
+          "rule_basis_document": "docs/rule-traceability.md",
+          "scope_document": "docs/rules.md",
+          "independent_wire_verification": {
+            "document": "docs/wire-reference.md",
+            "evidence": "research/wire-reference/verification.json",
+            "boundary": "Independent dissector agreement on the recorded fixtures supports those field layouts; it is not certification of every possible input or full IEEE conformity."
+          },
+          "verdict_boundary": "This rule's status covers only its stated condition and supplied evidence. It does not certify full IEEE compliance, source authenticity, absolute timing accuracy, or competition originality."
+        }
+      }
+    ],
+    "unreported_rule_families": [
+      "WIRE.",
+      "OBSERVATION.",
+      "EXCHANGE.",
+      "CLAIM.",
+      "MEASUREMENT.",
+      "BMCA."
+    ],
+    "unreported_family_semantics": "No finding was emitted from these families. Parsing may have rejected input earlier, or the input may omit that feature. Absence of a finding is not proof that the family passed.",
+    "always_outside_scope": [
+      "IEEE 1588 certification and complete normative conformance",
+      "Hardware timestamp authenticity, transport interoperability and absolute clock accuracy",
+      "Capture completeness independently verified from external evidence",
+      "Announce qualification and the complete BMCA port-state algorithm",
+      "Single-step, IEEE 1588-2019 minor version, 802.1AS, P2P, unicast/alternate-master modes and unknown TLVs",
+      "Competition originality approval or acceptance of the submission"
+    ]
+  },
+  "assumptions": {},
+  "not_checked": [
+    "Full IEEE compliance, clock accuracy, hardware/transport, qualification and port-state BMCA, unsupported profiles/TLVs, capture completeness"
+  ],
+  "references": [
+    "https://github.com/richardcochran/linuxptp/blob/v4.4/msg.h",
+    "https://github.com/richardcochran/linuxptp/blob/v4.4/port.c",
+    "https://github.com/richardcochran/linuxptp/blob/v4.4/bmc.c",
+    "research/wire-reference/verification.json",
+    "docs/rule-traceability.md"
+  ]
+}

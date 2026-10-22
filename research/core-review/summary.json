@@ -1,0 +1,74 @@
+[
+  {
+    "case": "whitespace-event-clock-domain",
+    "exit": 0,
+    "status": "Pass",
+    "measurements": 1,
+    "nonpass": []
+  },
+  {
+    "case": "duplicate-exchange-claims",
+    "exit": 3,
+    "status": "InsufficientEvidence",
+    "measurements": 2,
+    "nonpass": [
+      {
+        "rule": "EXCHANGE.STATE.EVICTED",
+        "status": "InsufficientEvidence",
+        "detail": "Pending entry evicted at the complete observation window deadline. This is bounded capture-state management under analysis policy, not an IEEE device-violation conclusion."
+      },
+      {
+        "rule": "EXCHANGE.STATE.EVICTED",
+        "status": "InsufficientEvidence",
+        "detail": "Pending entry evicted at the complete observation window deadline. This is bounded capture-state management under analysis policy, not an IEEE device-violation conclusion."
+      }
+    ]
+  },
+  {
+    "case": "whitespace-bmca-validity-source",
+    "exit": 0,
+    "status": "Pass",
+    "measurements": 1,
+    "nonpass": []
+  },
+  {
+    "case": "bmca-only-invalid-unused-assumption",
+    "exit": 0,
+    "status": "Pass",
+    "measurements": 0,
+    "nonpass": []
+  },
+  {
+    "case": "expired-sync-no-measurement",
+    "exit": 3,
+    "status": "InsufficientEvidence",
+    "measurements": 0,
+    "nonpass": [
+      {
+        "rule": "EXCHANGE.WINDOW",
+        "status": "InsufficientEvidence",
+        "detail": "Evidence expired under the supplied analysis policy; this is not an IEEE device violation."
+      },
+      {
+        "rule": "CLAIM.SYNC_WINDOW",
+        "status": "InsufficientEvidence",
+        "detail": "Evidence expired under the supplied analysis policy; this is not an IEEE device violation."
+      },
+      {
+        "rule": "CLAIM.SYNC_WINDOW",
+        "status": "InsufficientEvidence",
+        "detail": "Evidence expired under the supplied analysis policy; this is not an IEEE device violation."
+      },
+      {
+        "rule": "EXCHANGE.STATE.EVICTED",
+        "status": "InsufficientEvidence",
+        "detail": "Pending entry evicted before processing an event beyond its deadline. This is bounded capture-state management under analysis policy, not an IEEE device-violation conclusion."
+      },
+      {
+        "rule": "EXCHANGE.STATE.EVICTED",
+        "status": "InsufficientEvidence",
+        "detail": "Pending entry evicted before processing an event beyond its deadline. This is bounded capture-state management under analysis policy, not an IEEE device-violation conclusion."
+      }
+    ]
+  }
+]

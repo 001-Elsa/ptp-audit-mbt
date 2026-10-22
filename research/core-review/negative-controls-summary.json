@@ -1,0 +1,70 @@
+[
+  {
+    "case": "snapshot-future-announce",
+    "exit": 3,
+    "status": "InsufficientEvidence",
+    "measurements": 1,
+    "nonpass": [
+      "BMCA.SNAPSHOT.EXPIRED"
+    ]
+  },
+  {
+    "case": "snapshot-expired-announce",
+    "exit": 3,
+    "status": "InsufficientEvidence",
+    "measurements": 1,
+    "nonpass": [
+      "BMCA.SNAPSHOT.WINDOW"
+    ]
+  },
+  {
+    "case": "snapshot-candidate-epoch-mismatch",
+    "exit": 3,
+    "status": "InsufficientEvidence",
+    "measurements": 1,
+    "nonpass": [
+      "BMCA.SNAPSHOT.WINDOW"
+    ]
+  },
+  {
+    "case": "incomplete-observation-window",
+    "exit": 3,
+    "status": "InsufficientEvidence",
+    "measurements": 0,
+    "nonpass": [
+      "EXCHANGE.WINDOW",
+      "CLAIM.SYNC_WINDOW",
+      "CLAIM.SYNC_WINDOW",
+      "CLAIM.DELAY_WINDOW",
+      "CLAIM.EXCHANGE_WINDOW",
+      "BMCA.SNAPSHOT.WINDOW"
+    ]
+  },
+  {
+    "case": "policy-budget-int64-overflow",
+    "exit": 1,
+    "status": "Violation",
+    "measurements": 0,
+    "nonpass": [
+      "INPUT.SCHEMA"
+    ]
+  },
+  {
+    "case": "wrong-boolean-null",
+    "exit": 1,
+    "status": "Violation",
+    "measurements": 0,
+    "nonpass": [
+      "INPUT.SCHEMA"
+    ]
+  },
+  {
+    "case": "unknown-nested-snapshot-field",
+    "exit": 1,
+    "status": "Violation",
+    "measurements": 0,
+    "nonpass": [
+      "INPUT.SCHEMA"
+    ]
+  }
+]

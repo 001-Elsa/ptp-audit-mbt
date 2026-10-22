@@ -1,0 +1,883 @@
+{
+  "schema": "ptp-audit/independent-wire-reference/v1",
+  "result": "pass",
+  "method": "real external TShark two-pass dissection of exact shipped PTP payloads in a synthetic Ethernet PCAP",
+  "not_claimed": [
+    "hardware capture provenance",
+    "full IEEE1588 conformance certification",
+    "independent validation of product association, measurements or BMCA algorithm"
+  ],
+  "fixture": "fixtures/complete-audit.json",
+  "fixture_sha256": "e1c15d176061045b5579325437e031699ac8995f52543f4cd6ff02ccdedca057",
+  "tshark_version": "TShark (Wireshark) 4.6.9 (v4.6.9-0-g2d548b197c75).",
+  "tshark_binary_sha256": "a9f0dd3ad6488be6dd4bf4506c3d72e667933a8aceaa6ada1a5fe9284b69774f",
+  "command": [
+    "tshark",
+    "-2",
+    "-n",
+    "-r",
+    "complete-audit.pcap",
+    "-T",
+    "json"
+  ],
+  "packet_count": 6,
+  "message_types": [
+    "Announce",
+    "Delay_Req",
+    "Delay_Resp",
+    "Follow_Up",
+    "Sync"
+  ],
+  "field_checks": 130,
+  "checks": [
+    {
+      "frame": 1,
+      "message": "Sync",
+      "payload_sha256": "e35eaa85f2be088ed2ab8616ef3924496690e49e442448a8afa55daa7f28b9a7",
+      "ptp_length": 44,
+      "malformed": false,
+      "checks": [
+        {
+          "field": "ptp.v2.messagetype",
+          "expected": "0",
+          "actual": "0",
+          "pass": true
+        },
+        {
+          "field": "ptp.v2.majorsdoid",
+          "expected": "0",
+          "actual": "0",
+          "pass": true
+        },
+        {
+          "field": "ptp.v2.minorversionptp",
+          "expected": "0",
+          "actual": "0",
+          "pass": true
+        },
+        {
+          "field": "ptp.v2.versionptp",
+          "expected": "2",
+          "actual": "2",
+          "pass": true
+        },
+        {
+          "field": "ptp.v2.messagelength",
+          "expected": "44",
+          "actual": "44",
+          "pass": true
+        },
+        {
+          "field": "ptp.v2.domainnumber",
+          "expected": "0",
+          "actual": "0",
+          "pass": true
+        },
+        {
+          "field": "ptp.v2.minorsdoid",
+          "expected": "0",
+          "actual": "0",
+          "pass": true
+        },
+        {
+          "field": "ptp.v2.flags",
+          "expected": "512",
+          "actual": "512",
+          "pass": true
+        },
+        {
+          "field": "ptp.v2.flags.twostep",
+          "expected": "1",
+          "actual": "1",
+          "pass": true
+        },
+        {
+          "field": "ptp.v2.messagetypespecific",
+          "expected": "0",
+          "actual": "0",
+          "pass": true
+        },
+        {
+          "field": "ptp.v2.clockidentity",
+          "expected": "0x0011223344556677",
+          "actual": "0x0011223344556677",
+          "pass": true
+        },
+        {
+          "field": "ptp.v2.sourceportid",
+          "expected": "1",
+          "actual": "1",
+          "pass": true
+        },
+        {
+          "field": "ptp.v2.sequenceid",
+          "expected": "7",
+          "actual": "7",
+          "pass": true
+        },
+        {
+          "field": "ptp.v2.controlfield",
+          "expected": "0",
+          "actual": "0",
+          "pass": true
+        },
+        {
+          "field": "ptp.v2.logmessageinterval",
+          "expected": "0",
+          "actual": "0",
+          "pass": true
+        },
+        {
+          "field": "ptp.v2.sdr.origintimestamp.seconds",
+          "expected": "100",
+          "actual": "100",
+          "pass": true
+        },
+        {
+          "field": "ptp.v2.sdr.origintimestamp.nanoseconds",
+          "expected": "0",
+          "actual": "0",
+          "pass": true
+        },
+        {
+          "field": "correction_scaled_ns",
+          "expected": "-32768",
+          "actual": "-32768",
+          "pass": true
+        }
+      ]
+    },
+    {
+      "frame": 2,
+      "message": "Follow_Up",
+      "payload_sha256": "87d015e948672f7fff2522dd0b0d29b370900748868c509e7c6c19d086efdd60",
+      "ptp_length": 44,
+      "malformed": false,
+      "checks": [
+        {
+          "field": "ptp.v2.messagetype",
+          "expected": "8",
+          "actual": "8",
+          "pass": true
+        },
+        {
+          "field": "ptp.v2.majorsdoid",
+          "expected": "0",
+          "actual": "0",
+          "pass": true
+        },
+        {
+          "field": "ptp.v2.minorversionptp",
+          "expected": "0",
+          "actual": "0",
+          "pass": true
+        },
+        {
+          "field": "ptp.v2.versionptp",
+          "expected": "2",
+          "actual": "2",
+          "pass": true
+        },
+        {
+          "field": "ptp.v2.messagelength",
+          "expected": "44",
+          "actual": "44",
+          "pass": true
+        },
+        {
+          "field": "ptp.v2.domainnumber",
+          "expected": "0",
+          "actual": "0",
+          "pass": true
+        },
+        {
+          "field": "ptp.v2.minorsdoid",
+          "expected": "0",
+          "actual": "0",
+          "pass": true
+        },
+        {
+          "field": "ptp.v2.flags",
+          "expected": "0",
+          "actual": "0",
+          "pass": true
+        },
+        {
+          "field": "ptp.v2.flags.twostep",
+          "expected": "0",
+          "actual": "0",
+          "pass": true
+        },
+        {
+          "field": "ptp.v2.messagetypespecific",
+          "expected": "0",
+          "actual": "0",
+          "pass": true
+        },
+        {
+          "field": "ptp.v2.clockidentity",
+          "expected": "0x0011223344556677",
+          "actual": "0x0011223344556677",
+          "pass": true
+        },
+        {
+          "field": "ptp.v2.sourceportid",
+          "expected": "1",
+          "actual": "1",
+          "pass": true
+        },
+        {
+          "field": "ptp.v2.sequenceid",
+          "expected": "7",
+          "actual": "7",
+          "pass": true
+        },
+        {
+          "field": "ptp.v2.controlfield",
+          "expected": "2",
+          "actual": "2",
+          "pass": true
+        },
+        {
+          "field": "ptp.v2.logmessageinterval",
+          "expected": "0",
+          "actual": "0",
+          "pass": true
+        },
+        {
+          "field": "ptp.v2.fu.preciseorigintimestamp.seconds",
+          "expected": "100",
+          "actual": "100",
+          "pass": true
+        },
+        {
+          "field": "ptp.v2.fu.preciseorigintimestamp.nanoseconds",
+          "expected": "1000",
+          "actual": "1000",
+          "pass": true
+        },
+        {
+          "field": "correction_scaled_ns",
+          "expected": "16384",
+          "actual": "16384",
+          "pass": true
+        }
+      ]
+    },
+    {
+      "frame": 3,
+      "message": "Delay_Req",
+      "payload_sha256": "f163552ea146bbf3a46872020d3e58156e70b4d28eb9e4ebb31afbd3247333de",
+      "ptp_length": 44,
+      "malformed": false,
+      "checks": [
+        {
+          "field": "ptp.v2.messagetype",
+          "expected": "1",
+          "actual": "1",
+          "pass": true
+        },
+        {
+          "field": "ptp.v2.majorsdoid",
+          "expected": "0",
+          "actual": "0",
+          "pass": true
+        },
+        {
+          "field": "ptp.v2.minorversionptp",
+          "expected": "0",
+          "actual": "0",
+          "pass": true
+        },
+        {
+          "field": "ptp.v2.versionptp",
+          "expected": "2",
+          "actual": "2",
+          "pass": true
+        },
+        {
+          "field": "ptp.v2.messagelength",
+          "expected": "44",
+          "actual": "44",
+          "pass": true
+        },
+        {
+          "field": "ptp.v2.domainnumber",
+          "expected": "0",
+          "actual": "0",
+          "pass": true
+        },
+        {
+          "field": "ptp.v2.minorsdoid",
+          "expected": "0",
+          "actual": "0",
+          "pass": true
+        },
+        {
+          "field": "ptp.v2.flags",
+          "expected": "0",
+          "actual": "0",
+          "pass": true
+        },
+        {
+          "field": "ptp.v2.flags.twostep",
+          "expected": "0",
+          "actual": "0",
+          "pass": true
+        },
+        {
+          "field": "ptp.v2.messagetypespecific",
+          "expected": "0",
+          "actual": "0",
+          "pass": true
+        },
+        {
+          "field": "ptp.v2.clockidentity",
+          "expected": "0x8899aabbccddeeff",
+          "actual": "0x8899aabbccddeeff",
+          "pass": true
+        },
+        {
+          "field": "ptp.v2.sourceportid",
+          "expected": "1",
+          "actual": "1",
+          "pass": true
+        },
+        {
+          "field": "ptp.v2.sequenceid",
+          "expected": "31",
+          "actual": "31",
+          "pass": true
+        },
+        {
+          "field": "ptp.v2.controlfield",
+          "expected": "1",
+          "actual": "1",
+          "pass": true
+        },
+        {
+          "field": "ptp.v2.logmessageinterval",
+          "expected": "0",
+          "actual": "0",
+          "pass": true
+        },
+        {
+          "field": "ptp.v2.sdr.origintimestamp.seconds",
+          "expected": "100",
+          "actual": "100",
+          "pass": true
+        },
+        {
+          "field": "ptp.v2.sdr.origintimestamp.nanoseconds",
+          "expected": "5000",
+          "actual": "5000",
+          "pass": true
+        },
+        {
+          "field": "correction_scaled_ns",
+          "expected": "999999",
+          "actual": "999999",
+          "pass": true
+        }
+      ]
+    },
+    {
+      "frame": 4,
+      "message": "Delay_Resp",
+      "payload_sha256": "cdfd83ad58c1709c18ad35ea4873a346ef06c528ae0755156d16bf34e856ce4f",
+      "ptp_length": 54,
+      "malformed": false,
+      "checks": [
+        {
+          "field": "ptp.v2.messagetype",
+          "expected": "9",
+          "actual": "9",
+          "pass": true
+        },
+        {
+          "field": "ptp.v2.majorsdoid",
+          "expected": "0",
+          "actual": "0",
+          "pass": true
+        },
+        {
+          "field": "ptp.v2.minorversionptp",
+          "expected": "0",
+          "actual": "0",
+          "pass": true
+        },
+        {
+          "field": "ptp.v2.versionptp",
+          "expected": "2",
+          "actual": "2",
+          "pass": true
+        },
+        {
+          "field": "ptp.v2.messagelength",
+          "expected": "54",
+          "actual": "54",
+          "pass": true
+        },
+        {
+          "field": "ptp.v2.domainnumber",
+          "expected": "0",
+          "actual": "0",
+          "pass": true
+        },
+        {
+          "field": "ptp.v2.minorsdoid",
+          "expected": "0",
+          "actual": "0",
+          "pass": true
+        },
+        {
+          "field": "ptp.v2.flags",
+          "expected": "0",
+          "actual": "0",
+          "pass": true
+        },
+        {
+          "field": "ptp.v2.flags.twostep",
+          "expected": "0",
+          "actual": "0",
+          "pass": true
+        },
+        {
+          "field": "ptp.v2.messagetypespecific",
+          "expected": "0",
+          "actual": "0",
+          "pass": true
+        },
+        {
+          "field": "ptp.v2.clockidentity",
+          "expected": "0x0011223344556677",
+          "actual": "0x0011223344556677",
+          "pass": true
+        },
+        {
+          "field": "ptp.v2.sourceportid",
+          "expected": "1",
+          "actual": "1",
+          "pass": true
+        },
+        {
+          "field": "ptp.v2.sequenceid",
+          "expected": "31",
+          "actual": "31",
+          "pass": true
+        },
+        {
+          "field": "ptp.v2.controlfield",
+          "expected": "3",
+          "actual": "3",
+          "pass": true
+        },
+        {
+          "field": "ptp.v2.logmessageinterval",
+          "expected": "0",
+          "actual": "0",
+          "pass": true
+        },
+        {
+          "field": "ptp.v2.dr.receivetimestamp.seconds",
+          "expected": "100",
+          "actual": "100",
+          "pass": true
+        },
+        {
+          "field": "ptp.v2.dr.receivetimestamp.nanoseconds",
+          "expected": "5250",
+          "actual": "5250",
+          "pass": true
+        },
+        {
+          "field": "correction_scaled_ns",
+          "expected": "49152",
+          "actual": "49152",
+          "pass": true
+        },
+        {
+          "field": "ptp.v2.dr.requestingsourceportidentity",
+          "expected": "0x8899aabbccddeeff",
+          "actual": "0x8899aabbccddeeff",
+          "pass": true
+        },
+        {
+          "field": "ptp.v2.dr.requestingsourceportid",
+          "expected": "1",
+          "actual": "1",
+          "pass": true
+        }
+      ]
+    },
+    {
+      "frame": 5,
+      "message": "Announce",
+      "payload_sha256": "c15666d3d7a66da521bdb04e8effb3e305493f965e87e61a9a81f2cc93fc0ef9",
+      "ptp_length": 64,
+      "malformed": false,
+      "checks": [
+        {
+          "field": "ptp.v2.messagetype",
+          "expected": "11",
+          "actual": "11",
+          "pass": true
+        },
+        {
+          "field": "ptp.v2.majorsdoid",
+          "expected": "0",
+          "actual": "0",
+          "pass": true
+        },
+        {
+          "field": "ptp.v2.minorversionptp",
+          "expected": "0",
+          "actual": "0",
+          "pass": true
+        },
+        {
+          "field": "ptp.v2.versionptp",
+          "expected": "2",
+          "actual": "2",
+          "pass": true
+        },
+        {
+          "field": "ptp.v2.messagelength",
+          "expected": "64",
+          "actual": "64",
+          "pass": true
+        },
+        {
+          "field": "ptp.v2.domainnumber",
+          "expected": "0",
+          "actual": "0",
+          "pass": true
+        },
+        {
+          "field": "ptp.v2.minorsdoid",
+          "expected": "0",
+          "actual": "0",
+          "pass": true
+        },
+        {
+          "field": "ptp.v2.flags",
+          "expected": "0",
+          "actual": "0",
+          "pass": true
+        },
+        {
+          "field": "ptp.v2.flags.twostep",
+          "expected": "0",
+          "actual": "0",
+          "pass": true
+        },
+        {
+          "field": "ptp.v2.messagetypespecific",
+          "expected": "0",
+          "actual": "0",
+          "pass": true
+        },
+        {
+          "field": "ptp.v2.clockidentity",
+          "expected": "0x0011223344556677",
+          "actual": "0x0011223344556677",
+          "pass": true
+        },
+        {
+          "field": "ptp.v2.sourceportid",
+          "expected": "1",
+          "actual": "1",
+          "pass": true
+        },
+        {
+          "field": "ptp.v2.sequenceid",
+          "expected": "7",
+          "actual": "7",
+          "pass": true
+        },
+        {
+          "field": "ptp.v2.controlfield",
+          "expected": "5",
+          "actual": "5",
+          "pass": true
+        },
+        {
+          "field": "ptp.v2.logmessageinterval",
+          "expected": "0",
+          "actual": "0",
+          "pass": true
+        },
+        {
+          "field": "ptp.v2.an.origintimestamp.seconds",
+          "expected": "100",
+          "actual": "100",
+          "pass": true
+        },
+        {
+          "field": "ptp.v2.an.origintimestamp.nanoseconds",
+          "expected": "0",
+          "actual": "0",
+          "pass": true
+        },
+        {
+          "field": "correction_scaled_ns",
+          "expected": "0",
+          "actual": "0",
+          "pass": true
+        },
+        {
+          "field": "ptp.v2.an.origincurrentutcoffset",
+          "expected": "37",
+          "actual": "37",
+          "pass": true
+        },
+        {
+          "field": "ptp.v2.an.reserved2",
+          "expected": "00",
+          "actual": "00",
+          "pass": true
+        },
+        {
+          "field": "ptp.v2.an.priority1",
+          "expected": "100",
+          "actual": "100",
+          "pass": true
+        },
+        {
+          "field": "ptp.v2.an.grandmasterclockclass",
+          "expected": "248",
+          "actual": "248",
+          "pass": true
+        },
+        {
+          "field": "ptp.v2.an.grandmasterclockaccuracy",
+          "expected": "34",
+          "actual": "34",
+          "pass": true
+        },
+        {
+          "field": "ptp.v2.an.grandmasterclockvariance",
+          "expected": "17185",
+          "actual": "17185",
+          "pass": true
+        },
+        {
+          "field": "ptp.v2.an.priority2",
+          "expected": "128",
+          "actual": "128",
+          "pass": true
+        },
+        {
+          "field": "ptp.v2.an.grandmasterclockidentity",
+          "expected": "0x0011223344556677",
+          "actual": "0x0011223344556677",
+          "pass": true
+        },
+        {
+          "field": "ptp.v2.an.localstepsremoved",
+          "expected": "0",
+          "actual": "0",
+          "pass": true
+        },
+        {
+          "field": "ptp.v2.timesource",
+          "expected": "160",
+          "actual": "160",
+          "pass": true
+        }
+      ]
+    },
+    {
+      "frame": 6,
+      "message": "Announce",
+      "payload_sha256": "432833d8de43a1b4d324afda85119875b527c7d84865974ce8c63564caadfcb1",
+      "ptp_length": 64,
+      "malformed": false,
+      "checks": [
+        {
+          "field": "ptp.v2.messagetype",
+          "expected": "11",
+          "actual": "11",
+          "pass": true
+        },
+        {
+          "field": "ptp.v2.majorsdoid",
+          "expected": "0",
+          "actual": "0",
+          "pass": true
+        },
+        {
+          "field": "ptp.v2.minorversionptp",
+          "expected": "0",
+          "actual": "0",
+          "pass": true
+        },
+        {
+          "field": "ptp.v2.versionptp",
+          "expected": "2",
+          "actual": "2",
+          "pass": true
+        },
+        {
+          "field": "ptp.v2.messagelength",
+          "expected": "64",
+          "actual": "64",
+          "pass": true
+        },
+        {
+          "field": "ptp.v2.domainnumber",
+          "expected": "0",
+          "actual": "0",
+          "pass": true
+        },
+        {
+          "field": "ptp.v2.minorsdoid",
+          "expected": "0",
+          "actual": "0",
+          "pass": true
+        },
+        {
+          "field": "ptp.v2.flags",
+          "expected": "0",
+          "actual": "0",
+          "pass": true
+        },
+        {
+          "field": "ptp.v2.flags.twostep",
+          "expected": "0",
+          "actual": "0",
+          "pass": true
+        },
+        {
+          "field": "ptp.v2.messagetypespecific",
+          "expected": "0",
+          "actual": "0",
+          "pass": true
+        },
+        {
+          "field": "ptp.v2.clockidentity",
+          "expected": "0x0011223344556678",
+          "actual": "0x0011223344556678",
+          "pass": true
+        },
+        {
+          "field": "ptp.v2.sourceportid",
+          "expected": "1",
+          "actual": "1",
+          "pass": true
+        },
+        {
+          "field": "ptp.v2.sequenceid",
+          "expected": "7",
+          "actual": "7",
+          "pass": true
+        },
+        {
+          "field": "ptp.v2.controlfield",
+          "expected": "5",
+          "actual": "5",
+          "pass": true
+        },
+        {
+          "field": "ptp.v2.logmessageinterval",
+          "expected": "0",
+          "actual": "0",
+          "pass": true
+        },
+        {
+          "field": "ptp.v2.an.origintimestamp.seconds",
+          "expected": "100",
+          "actual": "100",
+          "pass": true
+        },
+        {
+          "field": "ptp.v2.an.origintimestamp.nanoseconds",
+          "expected": "0",
+          "actual": "0",
+          "pass": true
+        },
+        {
+          "field": "correction_scaled_ns",
+          "expected": "0",
+          "actual": "0",
+          "pass": true
+        },
+        {
+          "field": "ptp.v2.an.origincurrentutcoffset",
+          "expected": "37",
+          "actual": "37",
+          "pass": true
+        },
+        {
+          "field": "ptp.v2.an.reserved2",
+          "expected": "00",
+          "actual": "00",
+          "pass": true
+        },
+        {
+          "field": "ptp.v2.an.priority1",
+          "expected": "120",
+          "actual": "120",
+          "pass": true
+        },
+        {
+          "field": "ptp.v2.an.grandmasterclockclass",
+          "expected": "248",
+          "actual": "248",
+          "pass": true
+        },
+        {
+          "field": "ptp.v2.an.grandmasterclockaccuracy",
+          "expected": "34",
+          "actual": "34",
+          "pass": true
+        },
+        {
+          "field": "ptp.v2.an.grandmasterclockvariance",
+          "expected": "17185",
+          "actual": "17185",
+          "pass": true
+        },
+        {
+          "field": "ptp.v2.an.priority2",
+          "expected": "128",
+          "actual": "128",
+          "pass": true
+        },
+        {
+          "field": "ptp.v2.an.grandmasterclockidentity",
+          "expected": "0x0011223344556678",
+          "actual": "0x0011223344556678",
+          "pass": true
+        },
+        {
+          "field": "ptp.v2.an.localstepsremoved",
+          "expected": "0",
+          "actual": "0",
+          "pass": true
+        },
+        {
+          "field": "ptp.v2.timesource",
+          "expected": "160",
+          "actual": "160",
+          "pass": true
+        }
+      ]
+    }
+  ],
+  "failures": [],
+  "artifacts": {
+    "complete-audit.pcap": {
+      "sha256": "f9ec864a3ec82e573e548acef21f1f3aaad29be2d88efe169cf6e83670577de6",
+      "bytes": 524
+    },
+    "tshark-complete-audit.json": {
+      "sha256": "2bb681b81707420866ffcbd552e49105e20f686397b1c7f744dc753cbfa0cade",
+      "bytes": 21829
+    },
+    "tshark-version.txt": {
+      "sha256": "4ed38ad84a2bf9e6fa21faff1a15f6a3682d1431264782ab1708303aac55e816",
+      "bytes": 1412
+    }
+  }
+}

@@ -1,0 +1,25 @@
+[001-Elsa/ptp-audit] test exchange/rule_resource_wbtest.mbt:2 ("rule coverage EXCHANGE.STATE.RESOURCE guards direct internal replay") ok
+[001-Elsa/ptp-audit] test tests/rule_coverage_test.mbt:182 ("rule coverage WIRE.HEADER_LENGTH rejects every short common header") ok
+[001-Elsa/ptp-audit] test tests/rule_coverage_test.mbt:195 ("rule coverage WIRE.BODY_LENGTH distinguishes self-consistent truncation") ok
+[001-Elsa/ptp-audit] test tests/rule_coverage_test.mbt:214 ("rule coverage WIRE.REQUESTER_PORT rejects zero response requester") ok
+[001-Elsa/ptp-audit] test tests/rule_coverage_test.mbt:228 ("rule coverage SCOPE.VERSION excludes later or reserved version octets") ok
+[001-Elsa/ptp-audit] test tests/rule_coverage_test.mbt:244 ("rule coverage SCOPE.PROFILE excludes each nonzero transportSpecific nibble") ok
+[001-Elsa/ptp-audit] test tests/rule_coverage_test.mbt:260 ("rule coverage SCOPE.MESSAGE excludes every unsupported message type") ok
+[001-Elsa/ptp-audit] test tests/rule_coverage_test.mbt:276 ("rule coverage SCOPE.FLAGS excludes every unsupported flag bit separately") ok
+[001-Elsa/ptp-audit] test tests/rule_coverage_test.mbt:293 ("rule coverage SCOPE.MODE excludes alternate-master and unicast independently") ok
+[001-Elsa/ptp-audit] test tests/rule_coverage_test.mbt:309 ("rule coverage WIRE.FIELD_RANGE rejects lossy header encodings") ok
+[001-Elsa/ptp-audit] test tests/rule_coverage_test.mbt:333 ("rule coverage WIRE.TIMESTAMP rejects each out-of-range component") ok
+[001-Elsa/ptp-audit] test tests/rule_coverage_test.mbt:351 ("rule coverage WIRE.BODY_KIND rejects mismatched typed body variants") ok
+[001-Elsa/ptp-audit] test tests/rule_coverage_test.mbt:372 ("rule coverage WIRE.RESPONSE rejects invalid requester and timestamp") ok
+[001-Elsa/ptp-audit] test tests/rule_coverage_test.mbt:393 ("rule coverage WIRE.ANNOUNCE rejects each lossy field") ok
+[001-Elsa/ptp-audit] test tests/rule_coverage_test.mbt:427 ("rule coverage EXCHANGE.RESOURCE rejects excess frames and both claim lists") ok
+[001-Elsa/ptp-audit] test tests/rule_coverage_test.mbt:468 ("rule coverage INPUT.FRAME_ID rejects ambiguous typed frame identity") ok
+[001-Elsa/ptp-audit] test tests/rule_coverage_test.mbt:477 ("rule coverage INPUT.FRAME_METADATA rejects invalid typed observation fields") ok
+[001-Elsa/ptp-audit] test tests/rule_coverage_test.mbt:500 ("rule coverage INPUT.RESOURCE enforces the UTF-16 input boundary") ok
+[001-Elsa/ptp-audit] test tests/rule_coverage_test.mbt:516 ("rule coverage OBSERVATION.RESOURCE rejects excess windows without lookup") ok
+[001-Elsa/ptp-audit] test tests/rule_coverage_test.mbt:526 ("rule coverage BMCA.RESOURCE rejects excess qualified candidates") ok
+[001-Elsa/ptp-audit] test tests/rule_coverage_test.mbt:534 ("rule coverage BMCA.CANDIDATE_UNIQUENESS rejects duplicate ids or frames") ok
+[001-Elsa/ptp-audit] test tests/rule_coverage_test.mbt:568 ("rule coverage BMCA.SCOPE.NO_UNIVERSAL_WINNER blocks cyclic supplied datasets") ok
+Total tests: 22, passed: 22, failed: 0.
+/Users/hanzhen09/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node --enable-source-maps ./_build/js/debug/test/exchange/exchange.whitebox_test.js '{"package":"001-Elsa/ptp-audit/exchange","file_and_index":[["rule_resource_wbtest.mbt",[{"start":0,"end":1}]]]}'
+/Users/hanzhen09/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node --enable-source-maps ./_build/js/debug/test/tests/tests.blackbox_test.js '{"package":"001-Elsa/ptp-audit/tests","file_and_index":[["rule_coverage_test.mbt",[{"start":0,"end":21}]]]}'
