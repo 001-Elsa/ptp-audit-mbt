@@ -1,0 +1,46 @@
+{
+  "schema": "ptp-source-clone-human-review/v1",
+  "source_screen": "research/originality-completion/source-clone-sensitive-screen.json",
+  "status": "reviewed",
+  "scope": "Two long-token candidates at 40 tokens / 5 source lines in the saved 56-package collection. This is not a review of every semantic capability.",
+  "candidate_reviews": [
+    {
+      "kind": "exact_tokens",
+      "package": "Magic486/moonnetlink",
+      "version": "0.2.0",
+      "external_path": "journal/hex.mbt",
+      "external_lines": [
+        3,
+        7
+      ],
+      "local_path": "wire/wire.mbt",
+      "local_lines": [
+        164,
+        168
+      ],
+      "tokens": 44,
+      "disposition": "standard_hexadecimal_alphabet_not_protocol_algorithm_clone",
+      "reason": "The matching seed includes the standard 16 hexadecimal digit strings, comma punctuation and nearby generic function syntax. Local code concatenates digit strings; moonnetlink/SNMP collect string arrays. The surrounding functions and variable names differ. This is concrete textual overlap but not evidence of copied PTP association, scaled correction arithmetic or BMCA implementation.",
+      "action": "Reuse a verified standard-library encoding routine, or use nibble-to-codepoint construction if no suitable standard encoder is available. Preserve public output and byte-for-byte roundtrip tests; do not remove hex support."
+    },
+    {
+      "kind": "exact_tokens",
+      "package": "DDD12345-D/moon-snmp",
+      "version": "0.3.0",
+      "external_path": "e2e/v3query/main.mbt",
+      "external_lines": [
+        561,
+        565
+      ],
+      "local_path": "wire/wire.mbt",
+      "local_lines": [
+        164,
+        168
+      ],
+      "tokens": 44,
+      "disposition": "standard_hexadecimal_alphabet_not_protocol_algorithm_clone",
+      "reason": "The matching seed includes the standard 16 hexadecimal digit strings, comma punctuation and nearby generic function syntax. Local code concatenates digit strings; moonnetlink/SNMP collect string arrays. The surrounding functions and variable names differ. This is concrete textual overlap but not evidence of copied PTP association, scaled correction arithmetic or BMCA implementation.",
+      "action": "Reuse a verified standard-library encoding routine, or use nibble-to-codepoint construction if no suitable standard encoder is available. Preserve public output and byte-for-byte roundtrip tests; do not remove hex support."
+    }
+  ]
+}

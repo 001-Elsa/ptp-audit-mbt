@@ -1,0 +1,76 @@
+{
+  "schema": "ptp-supplemental-source-hit-review/v1",
+  "complete": true,
+  "summary": {
+    "all_keyword_hit_records": 1,
+    "manually_reviewed_records": 1,
+    "pending_manual_review": 0,
+    "keyword_kinds": {
+      "ieee1588_context": 1,
+      "protocol_capture_audit": 1
+    },
+    "source_nul_members_expected": 20,
+    "source_nul_members_checked": 20,
+    "identified_mixed_readme_tails": 3
+  },
+  "snapshot": {
+    "supplemental_path": "research/full-source-audit/supplemental-binary-text.json",
+    "supplemental_sha256": "b0f0f34adb018e24a31228f6b6d78ba8c7a83c424a17ff7f94b19cb57316a295",
+    "main_manifest_sha256": "8dfe36f6ec05292a8eb639ab49be90cd5f28a6b6690fc91866ae648157262096",
+    "source_nul_review_sha256": "d70a4af24380358dc64897ee6516915125e87f1bbaa765b703416c87b85fffc5",
+    "manual_ledgers": [
+      {
+        "path": "research/originality-completion/manual-semantic-dispositions.json",
+        "sha256": "4812525a9e562dfe464f4833fd9562cfc4c9cde6b05d2469d05eb60e0c4f847b"
+      },
+      {
+        "path": "research/originality-completion/supplemental-manual-dispositions.json",
+        "sha256": "98dbf2889ee422cfe2a485db30b8af0f59f8bf31637e8031dc801d8c0e02207c"
+      }
+    ],
+    "join_script_sha256": "97a08c269f5ec5741e3d008d14fa90d76456837b8e98b084edae15e27785d43e",
+    "identity_script": {
+      "path": "scripts/review_source_semantic_hits.py",
+      "sha256": "3bc5aeaea8f6db27a2562b885b27f7fee96ae2fd0473772846ad0b0be3e660f6"
+    },
+    "inputs_unchanged_after_join": true
+  },
+  "reviews": [
+    {
+      "source_hit_id": "ff3bd9e28395bc3e35cffc9675c33c95378f024ca3c40e7625b65355367d6c50",
+      "name": "tanglong2001/dockerlint",
+      "version": "0.12.0",
+      "zip_sha256": "3cb4ebb966fa6c96358ec840e297d3778245043904a17257b63a41eeb17adb1a",
+      "member_sha256": "7571356da3b7b2767fd0a5ae7de012c7d1bdcba9ce4145c7959e6b9ad9899186",
+      "origin": "complete_logical_line",
+      "path": "evidence/tempo-docker-update-20260716/source/git-tree.json",
+      "line": 1,
+      "match_column": 14383,
+      "excerpt_start_column": 14223,
+      "kinds": [
+        "ieee1588_context",
+        "protocol_capture_audit"
+      ],
+      "text": "916d8bc04207dae9604a8\",\"size\":208,\"url\":\"https://api.github.com/repos/grafana/tempo/git/blobs/9684a419c8c4bfffd0b916d8bc04207dae9604a8\"},{\"path\":\".chloggen/fix-traceql-query-size-validation.yaml\",\"mode\":\"100644\",\"type\":\"blob\",\"sha\":\"659e514b29b994f9d4d5612e89815b8fca9b484d\",\"size\":184,\"url\":\"https://api.github.com/repos/grafana/tempo/git/blobs/659e514b29b994f9d4d5612e89815b8fca9b484d\"},{\"path\":\".chloggen/fix_live_store_keda_average_value.yaml\",\"mode\":\"100644\",\"type\":\"blob\",\"sha\":\"9b6fc48ae3a925ea9e177649a2c7d8c45c3ca61d\",\"size\":299,\"url\":\"https://api.github.com/repos/grafana/tempo/git/blobs/9b6fc48ae3a925ea9e177649a2c7d8c45c3ca61d\"},{\"path\":\".chloggen/fix_tempo-cli-immutable-tags.yaml\",\"mode\":\"100644\",\"type\":\"blob\",\"sha\":\"55ca37c65378d1bbf35dc285876250e8d38091e0\",\"size\":199,\"url\":\"https://",
+      "manual_review": {
+        "source_hit_id": "ff3bd9e28395bc3e35cffc9675c33c95378f024ca3c40e7625b65355367d6c50",
+        "name": "tanglong2001/dockerlint",
+        "version": "0.12.0",
+        "zip_sha256": "3cb4ebb966fa6c96358ec840e297d3778245043904a17257b63a41eeb17adb1a",
+        "path": "evidence/tempo-docker-update-20260716/source/git-tree.json",
+        "line": 1,
+        "classification": "github_tree_hash_and_byte_size_metadata",
+        "manual_context_review": "Parsed the entire 4,885,216-byte one-line git-tree.json as JSON and inspected every tree object whose JSON contains 1588 (17 objects/27 textual occurrences). Values are Git SHA substrings, URLs repeating those hashes, or file byte sizes (1588, 15881, 15883, 15888, 15889). Exact size 1588 belongs to TLS config, telemetry number.go, and gRPC weighted-round-robin internal.go. The streamed first excerpt is offset within the giant JSON line; it is not protocol code and does not establish IEEE 1588 behavior.",
+        "product_action": "Retain broader dockerlint evidence/report capability intersection separately; no PTP core duplication at these hits.",
+        "claim_scope": "Cited occurrence and reviewed surrounding context only; does not certify full package semantic non-equivalence."
+      }
+    }
+  ],
+  "pending": [],
+  "scope": "Every saved supplemental keyword occurrence, including ordinary follow-up words and general clock/association/audit categories; source-NUL strict/byte probes and identified mixed README tails are enumerated explicitly; only saved human dispositions count as reviewed.",
+  "limitations": [
+    "This does not transform byte-view text into a claim about original encoding.",
+    "A complete occurrence review is not a proof of all semantic non-equivalence or absolute zero similarity.",
+    "Actual standard layouts and generic product-capability intersections remain documented."
+  ]
+}

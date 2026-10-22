@@ -1,0 +1,175 @@
+{
+  "schema": "ptp-source-clone-human-review/v1",
+  "source_screen": {
+    "path": "research/originality-completion/before-remediation-full-source-clone-screen-40.json",
+    "sha256": "a9dd1fadaec17064ad2ecc5dbee5ebee61c9cf353f11da8674046ec5b97e0fac"
+  },
+  "reviewed_candidate_count": 8,
+  "pending_manual_review": 0,
+  "candidate_reviews": [
+    {
+      "candidate_index": 0,
+      "disposition": "common_standard_fragment",
+      "package": "3smallpig/mooncutstock",
+      "version": "0.1.0",
+      "external_path": "decode.mbt",
+      "external_lines": [
+        54,
+        59
+      ],
+      "local_path": "audit/audit.mbt",
+      "local_lines": [
+        99,
+        104
+      ],
+      "tokens": 46,
+      "reason": "The 46-token consistently renamed block is a conventional JSON required-field getter: Map.get, Some passthrough, None raises a package-specific error. Names, errors, surrounding callers and domain differ; no PTP algorithm or source-history evidence.",
+      "manual_context_review": "Read both source contexts from the hash-pinned ZIP and the pre-remediation local snapshot; no third-party code executed.",
+      "claim_scope": "This disposition addresses the reported lexical candidate only; it does not certify semantic non-equivalence of the whole package or product."
+    },
+    {
+      "candidate_index": 1,
+      "disposition": "remediated",
+      "package": "chenzehaoo/moon_guard",
+      "version": "0.1.11",
+      "external_path": "lib/crypto/ed25519.mbt",
+      "external_lines": [
+        26,
+        33
+      ],
+      "local_path": "wire/wire.mbt",
+      "local_lines": [
+        127,
+        134
+      ],
+      "tokens": 44,
+      "reason": "The matched 44–48-token block is a conventional ASCII hexadecimal nibble mapping (48/87/55) with range checks. It appears in unrelated crypto/protocol/parser code; no PTP wire behavior, and the local implementation was replaced with the verified core encoding/hex API after this pre-remediation scan.",
+      "manual_context_review": "Read both source contexts from the hash-pinned ZIP and the pre-remediation local snapshot; no third-party code executed.",
+      "claim_scope": "This disposition addresses the reported lexical candidate only; it does not certify semantic non-equivalence of the whole package or product."
+    },
+    {
+      "candidate_index": 2,
+      "disposition": "common_standard_fragment",
+      "package": "xiefei-coding/wfc",
+      "version": "0.5.1",
+      "external_path": "json_api.mbt",
+      "external_lines": [
+        57,
+        62
+      ],
+      "local_path": "audit/audit.mbt",
+      "local_lines": [
+        99,
+        104
+      ],
+      "tokens": 46,
+      "reason": "The 46-token consistently renamed block is a conventional JSON required-field getter: Map.get, Some passthrough, None raises a package-specific error. Names, errors, surrounding callers and domain differ; no PTP algorithm or source-history evidence.",
+      "manual_context_review": "Read both source contexts from the hash-pinned ZIP and the pre-remediation local snapshot; no third-party code executed.",
+      "claim_scope": "This disposition addresses the reported lexical candidate only; it does not certify semantic non-equivalence of the whole package or product."
+    },
+    {
+      "candidate_index": 3,
+      "disposition": "common_standard_fragment",
+      "package": "fuyun-2026/moonbit-canbus",
+      "version": "0.2.4",
+      "external_path": "src/log/json.mbt",
+      "external_lines": [
+        59,
+        64
+      ],
+      "local_path": "audit/audit.mbt",
+      "local_lines": [
+        99,
+        104
+      ],
+      "tokens": 46,
+      "reason": "The 46-token consistently renamed block is a conventional JSON required-field getter: Map.get, Some passthrough, None raises a package-specific error. Names, errors, surrounding callers and domain differ; no PTP algorithm or source-history evidence.",
+      "manual_context_review": "Read both source contexts from the hash-pinned ZIP and the pre-remediation local snapshot; no third-party code executed.",
+      "claim_scope": "This disposition addresses the reported lexical candidate only; it does not certify semantic non-equivalence of the whole package or product."
+    },
+    {
+      "candidate_index": 4,
+      "disposition": "remediated",
+      "package": "wang-chen89/amqp",
+      "version": "0.25.0",
+      "external_path": "cmd/web/main.mbt",
+      "external_lines": [
+        81,
+        91
+      ],
+      "local_path": "wire/wire.mbt",
+      "local_lines": [
+        127,
+        137
+      ],
+      "tokens": 48,
+      "reason": "The matched 44–48-token block is a conventional ASCII hexadecimal nibble mapping (48/87/55) with range checks. It appears in unrelated crypto/protocol/parser code; no PTP wire behavior, and the local implementation was replaced with the verified core encoding/hex API after this pre-remediation scan.",
+      "manual_context_review": "Read both source contexts from the hash-pinned ZIP and the pre-remediation local snapshot; no third-party code executed.",
+      "claim_scope": "This disposition addresses the reported lexical candidate only; it does not certify semantic non-equivalence of the whole package or product."
+    },
+    {
+      "candidate_index": 5,
+      "disposition": "remediated",
+      "package": "bobzhang/pygments",
+      "version": "0.2.4",
+      "external_path": "regex/ast.mbt",
+      "external_lines": [
+        152,
+        162
+      ],
+      "local_path": "wire/wire.mbt",
+      "local_lines": [
+        127,
+        137
+      ],
+      "tokens": 48,
+      "reason": "The matched 44–48-token block is a conventional ASCII hexadecimal nibble mapping (48/87/55) with range checks. It appears in unrelated crypto/protocol/parser code; no PTP wire behavior, and the local implementation was replaced with the verified core encoding/hex API after this pre-remediation scan.",
+      "manual_context_review": "Read both source contexts from the hash-pinned ZIP and the pre-remediation local snapshot; no third-party code executed.",
+      "claim_scope": "This disposition addresses the reported lexical candidate only; it does not certify semantic non-equivalence of the whole package or product."
+    },
+    {
+      "candidate_index": 6,
+      "disposition": "remediated",
+      "package": "Juwan-Hwang/moon-certified",
+      "version": "0.1.1",
+      "external_path": "crypto/sha3/sha3.mbt",
+      "external_lines": [
+        309,
+        316
+      ],
+      "local_path": "wire/wire.mbt",
+      "local_lines": [
+        127,
+        134
+      ],
+      "tokens": 44,
+      "reason": "The matched 44–48-token block is a conventional ASCII hexadecimal nibble mapping (48/87/55) with range checks. It appears in unrelated crypto/protocol/parser code; no PTP wire behavior, and the local implementation was replaced with the verified core encoding/hex API after this pre-remediation scan.",
+      "manual_context_review": "Read both source contexts from the hash-pinned ZIP and the pre-remediation local snapshot; no third-party code executed.",
+      "claim_scope": "This disposition addresses the reported lexical candidate only; it does not certify semantic non-equivalence of the whole package or product."
+    },
+    {
+      "candidate_index": 7,
+      "disposition": "independent_implementation",
+      "package": "Milky2018/moon_rodio",
+      "version": "0.3.6",
+      "external_path": "common_source.mbt",
+      "external_lines": [
+        305,
+        317
+      ],
+      "local_path": "bmca/bmca.mbt",
+      "local_lines": [
+        46,
+        58
+      ],
+      "tokens": 74,
+      "reason": "The 74-token consistently renamed block is a lexicographic comparator skeleton, but external fields are audio Duration secs/nanos while local fields are PTP PortIdentity clock/port. It is a generic ordering idiom, not copied PTP logic or a semantic product overlap.",
+      "manual_context_review": "Read both source contexts from the hash-pinned ZIP and the pre-remediation local snapshot; no third-party code executed.",
+      "claim_scope": "This disposition addresses the reported lexical candidate only; it does not certify semantic non-equivalence of the whole package or product."
+    }
+  ],
+  "scope": "Manual review of every 40-token/5-line candidate in the frozen pre-remediation inclusive 3,123-module screen. The derived 80-token/8-line report has zero candidates.",
+  "limitations": [
+    "A lexical candidate is not plagiarism or semantic equivalence. Standards, generic mapping and comparator idioms remain real textual intersections. This is not an absolute zero-similarity or contest-eligibility certificate."
+  ]
+}

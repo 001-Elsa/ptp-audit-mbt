@@ -1,0 +1,828 @@
+{
+  "name": "hevienz/moonbit_libbpf",
+  "version": "0.10.0",
+  "sha256": "4efc7979bb05aba205c351c2b9a9c2b4b997e9e9905d5121fc67e733dd30d49f",
+  "scanner_version": 4,
+  "hits": [
+    {
+      "path": "vmlinux.h",
+      "line": 67818,
+      "kinds": [
+        "ptp_protocol"
+      ],
+      "text": "struct ptp_clock_time {",
+      "excerpt_start_column": 1,
+      "match_column": 8
+    },
+    {
+      "path": "vmlinux.h",
+      "line": 67824,
+      "kinds": [
+        "ptp_protocol"
+      ],
+      "text": "struct ptp_clock_caps {",
+      "excerpt_start_column": 1,
+      "match_column": 8
+    },
+    {
+      "path": "vmlinux.h",
+      "line": 67837,
+      "kinds": [
+        "ptp_protocol"
+      ],
+      "text": "struct ptp_extts_request {",
+      "excerpt_start_column": 1,
+      "match_column": 8
+    },
+    {
+      "path": "vmlinux.h",
+      "line": 67843,
+      "kinds": [
+        "ptp_protocol"
+      ],
+      "text": "struct ptp_perout_request {",
+      "excerpt_start_column": 1,
+      "match_column": 8
+    },
+    {
+      "path": "vmlinux.h",
+      "line": 67845,
+      "kinds": [
+        "ptp_protocol"
+      ],
+      "text": "\t\tstruct ptp_clock_time start;",
+      "excerpt_start_column": 1,
+      "match_column": 10
+    },
+    {
+      "path": "vmlinux.h",
+      "line": 67846,
+      "kinds": [
+        "ptp_protocol"
+      ],
+      "text": "\t\tstruct ptp_clock_time phase;",
+      "excerpt_start_column": 1,
+      "match_column": 10
+    },
+    {
+      "path": "vmlinux.h",
+      "line": 67848,
+      "kinds": [
+        "ptp_protocol"
+      ],
+      "text": "\tstruct ptp_clock_time period;",
+      "excerpt_start_column": 1,
+      "match_column": 9
+    },
+    {
+      "path": "vmlinux.h",
+      "line": 67852,
+      "kinds": [
+        "ptp_protocol"
+      ],
+      "text": "\t\tstruct ptp_clock_time on;",
+      "excerpt_start_column": 1,
+      "match_column": 10
+    },
+    {
+      "path": "vmlinux.h",
+      "line": 67857,
+      "kinds": [
+        "ptp_protocol"
+      ],
+      "text": "struct ptp_sys_offset {",
+      "excerpt_start_column": 1,
+      "match_column": 8
+    },
+    {
+      "path": "vmlinux.h",
+      "line": 67860,
+      "kinds": [
+        "ptp_protocol"
+      ],
+      "text": "\tstruct ptp_clock_time ts[51];",
+      "excerpt_start_column": 1,
+      "match_column": 9
+    },
+    {
+      "path": "vmlinux.h",
+      "line": 67863,
+      "kinds": [
+        "ptp_protocol"
+      ],
+      "text": "struct ptp_sys_offset_extended {",
+      "excerpt_start_column": 1,
+      "match_column": 8
+    },
+    {
+      "path": "vmlinux.h",
+      "line": 67866,
+      "kinds": [
+        "ptp_protocol"
+      ],
+      "text": "\tstruct ptp_clock_time ts[75];",
+      "excerpt_start_column": 1,
+      "match_column": 9
+    },
+    {
+      "path": "vmlinux.h",
+      "line": 67869,
+      "kinds": [
+        "ptp_protocol"
+      ],
+      "text": "struct ptp_sys_offset_precise {",
+      "excerpt_start_column": 1,
+      "match_column": 8
+    },
+    {
+      "path": "vmlinux.h",
+      "line": 67870,
+      "kinds": [
+        "ptp_protocol"
+      ],
+      "text": "\tstruct ptp_clock_time device;",
+      "excerpt_start_column": 1,
+      "match_column": 9
+    },
+    {
+      "path": "vmlinux.h",
+      "line": 67871,
+      "kinds": [
+        "ptp_protocol"
+      ],
+      "text": "\tstruct ptp_clock_time sys_realtime;",
+      "excerpt_start_column": 1,
+      "match_column": 9
+    },
+    {
+      "path": "vmlinux.h",
+      "line": 67872,
+      "kinds": [
+        "ptp_protocol"
+      ],
+      "text": "\tstruct ptp_clock_time sys_monoraw;",
+      "excerpt_start_column": 1,
+      "match_column": 9
+    },
+    {
+      "path": "vmlinux.h",
+      "line": 67876,
+      "kinds": [
+        "ptp_protocol"
+      ],
+      "text": "enum ptp_pin_function {",
+      "excerpt_start_column": 1,
+      "match_column": 6
+    },
+    {
+      "path": "vmlinux.h",
+      "line": 67877,
+      "kinds": [
+        "ptp_protocol"
+      ],
+      "text": "\tPTP_PF_NONE = 0,",
+      "excerpt_start_column": 1,
+      "match_column": 2
+    },
+    {
+      "path": "vmlinux.h",
+      "line": 67878,
+      "kinds": [
+        "ptp_protocol"
+      ],
+      "text": "\tPTP_PF_EXTTS = 1,",
+      "excerpt_start_column": 1,
+      "match_column": 2
+    },
+    {
+      "path": "vmlinux.h",
+      "line": 67879,
+      "kinds": [
+        "ptp_protocol"
+      ],
+      "text": "\tPTP_PF_PEROUT = 2,",
+      "excerpt_start_column": 1,
+      "match_column": 2
+    },
+    {
+      "path": "vmlinux.h",
+      "line": 67880,
+      "kinds": [
+        "ptp_protocol"
+      ],
+      "text": "\tPTP_PF_PHYSYNC = 3,",
+      "excerpt_start_column": 1,
+      "match_column": 2
+    },
+    {
+      "path": "vmlinux.h",
+      "line": 67883,
+      "kinds": [
+        "ptp_protocol"
+      ],
+      "text": "struct ptp_pin_desc {",
+      "excerpt_start_column": 1,
+      "match_column": 8
+    },
+    {
+      "path": "vmlinux.h",
+      "line": 67891,
+      "kinds": [
+        "ptp_protocol"
+      ],
+      "text": "struct ptp_extts_event {",
+      "excerpt_start_column": 1,
+      "match_column": 8
+    },
+    {
+      "path": "vmlinux.h",
+      "line": 67892,
+      "kinds": [
+        "ptp_protocol"
+      ],
+      "text": "\tstruct ptp_clock_time t;",
+      "excerpt_start_column": 1,
+      "match_column": 9
+    },
+    {
+      "path": "vmlinux.h",
+      "line": 67898,
+      "kinds": [
+        "ptp_protocol"
+      ],
+      "text": "struct ptp_clock_request {",
+      "excerpt_start_column": 1,
+      "match_column": 8
+    },
+    {
+      "path": "vmlinux.h",
+      "line": 67900,
+      "kinds": [
+        "ptp_protocol"
+      ],
+      "text": "\t\tPTP_CLK_REQ_EXTTS = 0,",
+      "excerpt_start_column": 1,
+      "match_column": 3
+    },
+    {
+      "path": "vmlinux.h",
+      "line": 67901,
+      "kinds": [
+        "ptp_protocol"
+      ],
+      "text": "\t\tPTP_CLK_REQ_PEROUT = 1,",
+      "excerpt_start_column": 1,
+      "match_column": 3
+    },
+    {
+      "path": "vmlinux.h",
+      "line": 67902,
+      "kinds": [
+        "ptp_protocol"
+      ],
+      "text": "\t\tPTP_CLK_REQ_PPS = 2,",
+      "excerpt_start_column": 1,
+      "match_column": 3
+    },
+    {
+      "path": "vmlinux.h",
+      "line": 67905,
+      "kinds": [
+        "ptp_protocol"
+      ],
+      "text": "\t\tstruct ptp_extts_request extts;",
+      "excerpt_start_column": 1,
+      "match_column": 10
+    },
+    {
+      "path": "vmlinux.h",
+      "line": 67906,
+      "kinds": [
+        "ptp_protocol"
+      ],
+      "text": "\t\tstruct ptp_perout_request perout;",
+      "excerpt_start_column": 1,
+      "match_column": 10
+    },
+    {
+      "path": "vmlinux.h",
+      "line": 67910,
+      "kinds": [
+        "ptp_protocol"
+      ],
+      "text": "struct ptp_system_timestamp {",
+      "excerpt_start_column": 1,
+      "match_column": 8
+    },
+    {
+      "path": "vmlinux.h",
+      "line": 67915,
+      "kinds": [
+        "ptp_protocol"
+      ],
+      "text": "struct ptp_clock_info {",
+      "excerpt_start_column": 1,
+      "match_column": 8
+    },
+    {
+      "path": "vmlinux.h",
+      "line": 67924,
+      "kinds": [
+        "ptp_protocol"
+      ],
+      "text": "\tstruct ptp_pin_desc *pin_config;",
+      "excerpt_start_column": 1,
+      "match_column": 9
+    },
+    {
+      "path": "vmlinux.h",
+      "line": 67925,
+      "kinds": [
+        "ptp_protocol"
+      ],
+      "text": "\tint (*adjfine)(struct ptp_clock_info *, long int);",
+      "excerpt_start_column": 1,
+      "match_column": 24
+    },
+    {
+      "path": "vmlinux.h",
+      "line": 67926,
+      "kinds": [
+        "ptp_protocol"
+      ],
+      "text": "\tint (*adjphase)(struct ptp_clock_info *, s32);",
+      "excerpt_start_column": 1,
+      "match_column": 25
+    },
+    {
+      "path": "vmlinux.h",
+      "line": 67927,
+      "kinds": [
+        "ptp_protocol"
+      ],
+      "text": "\ts32 (*getmaxphase)(struct ptp_clock_info *);",
+      "excerpt_start_column": 1,
+      "match_column": 28
+    },
+    {
+      "path": "vmlinux.h",
+      "line": 67928,
+      "kinds": [
+        "ptp_protocol"
+      ],
+      "text": "\tint (*adjtime)(struct ptp_clock_info *, s64);",
+      "excerpt_start_column": 1,
+      "match_column": 24
+    },
+    {
+      "path": "vmlinux.h",
+      "line": 67929,
+      "kinds": [
+        "ptp_protocol"
+      ],
+      "text": "\tint (*gettime64)(struct ptp_clock_info *, struct timespec64 *);",
+      "excerpt_start_column": 1,
+      "match_column": 26
+    },
+    {
+      "path": "vmlinux.h",
+      "line": 67930,
+      "kinds": [
+        "ptp_protocol"
+      ],
+      "text": "\tint (*gettimex64)(struct ptp_clock_info *, struct timespec64 *, struct ptp_system_timestamp *);",
+      "excerpt_start_column": 1,
+      "match_column": 27
+    },
+    {
+      "path": "vmlinux.h",
+      "line": 67931,
+      "kinds": [
+        "ptp_protocol"
+      ],
+      "text": "\tint (*getcrosststamp)(struct ptp_clock_info *, struct system_device_crosststamp *);",
+      "excerpt_start_column": 1,
+      "match_column": 31
+    },
+    {
+      "path": "vmlinux.h",
+      "line": 67932,
+      "kinds": [
+        "ptp_protocol"
+      ],
+      "text": "\tint (*settime64)(struct ptp_clock_info *, const struct timespec64 *);",
+      "excerpt_start_column": 1,
+      "match_column": 26
+    },
+    {
+      "path": "vmlinux.h",
+      "line": 67933,
+      "kinds": [
+        "ptp_protocol"
+      ],
+      "text": "\tint (*getcycles64)(struct ptp_clock_info *, struct timespec64 *);",
+      "excerpt_start_column": 1,
+      "match_column": 28
+    },
+    {
+      "path": "vmlinux.h",
+      "line": 67934,
+      "kinds": [
+        "ptp_protocol"
+      ],
+      "text": "\tint (*getcyclesx64)(struct ptp_clock_info *, struct timespec64 *, struct ptp_system_timestamp *);",
+      "excerpt_start_column": 1,
+      "match_column": 29
+    },
+    {
+      "path": "vmlinux.h",
+      "line": 67935,
+      "kinds": [
+        "ptp_protocol"
+      ],
+      "text": "\tint (*getcrosscycles)(struct ptp_clock_info *, struct system_device_crosststamp *);",
+      "excerpt_start_column": 1,
+      "match_column": 31
+    },
+    {
+      "path": "vmlinux.h",
+      "line": 67936,
+      "kinds": [
+        "ptp_protocol"
+      ],
+      "text": "\tint (*enable)(struct ptp_clock_info *, struct ptp_clock_request *, int);",
+      "excerpt_start_column": 1,
+      "match_column": 23
+    },
+    {
+      "path": "vmlinux.h",
+      "line": 67937,
+      "kinds": [
+        "ptp_protocol"
+      ],
+      "text": "\tint (*verify)(struct ptp_clock_info *, unsigned int, enum ptp_pin_function, unsigned int);",
+      "excerpt_start_column": 1,
+      "match_column": 23
+    },
+    {
+      "path": "vmlinux.h",
+      "line": 67938,
+      "kinds": [
+        "ptp_protocol"
+      ],
+      "text": "\tlong int (*do_aux_work)(struct ptp_clock_info *);",
+      "excerpt_start_column": 1,
+      "match_column": 33
+    },
+    {
+      "path": "vmlinux.h",
+      "line": 67942,
+      "kinds": [
+        "ptp_protocol"
+      ],
+      "text": "\tstruct ptp_extts_event buf[128];",
+      "excerpt_start_column": 1,
+      "match_column": 9
+    },
+    {
+      "path": "vmlinux.h",
+      "line": 67948,
+      "kinds": [
+        "ptp_protocol"
+      ],
+      "text": "struct ptp_clock {",
+      "excerpt_start_column": 1,
+      "match_column": 8
+    },
+    {
+      "path": "vmlinux.h",
+      "line": 67951,
+      "kinds": [
+        "ptp_protocol"
+      ],
+      "text": "\tstruct ptp_clock_info *info;",
+      "excerpt_start_column": 1,
+      "match_column": 9
+    },
+    {
+      "path": "vmlinux.h",
+      "line": 79405,
+      "kinds": [
+        "ptp_protocol"
+      ],
+      "text": "\tbool ptp_sts_supported;",
+      "excerpt_start_column": 1,
+      "match_column": 7
+    },
+    {
+      "path": "vmlinux.h",
+      "line": 79440,
+      "kinds": [
+        "ptp_protocol"
+      ],
+      "text": "\tunsigned int ptp_sts_word_pre;",
+      "excerpt_start_column": 1,
+      "match_column": 15
+    },
+    {
+      "path": "vmlinux.h",
+      "line": 79441,
+      "kinds": [
+        "ptp_protocol"
+      ],
+      "text": "\tunsigned int ptp_sts_word_post;",
+      "excerpt_start_column": 1,
+      "match_column": 15
+    },
+    {
+      "path": "vmlinux.h",
+      "line": 79442,
+      "kinds": [
+        "ptp_protocol"
+      ],
+      "text": "\tstruct ptp_system_timestamp *ptp_sts;",
+      "excerpt_start_column": 1,
+      "match_column": 9
+    },
+    {
+      "path": "vmlinux.h",
+      "line": 90165,
+      "kinds": [
+        "ptp_protocol"
+      ],
+      "text": "struct ptp_vclock {",
+      "excerpt_start_column": 1,
+      "match_column": 8
+    },
+    {
+      "path": "vmlinux.h",
+      "line": 90166,
+      "kinds": [
+        "ptp_protocol"
+      ],
+      "text": "\tstruct ptp_clock *pclock;",
+      "excerpt_start_column": 1,
+      "match_column": 9
+    },
+    {
+      "path": "vmlinux.h",
+      "line": 90167,
+      "kinds": [
+        "ptp_protocol"
+      ],
+      "text": "\tstruct ptp_clock_info info;",
+      "excerpt_start_column": 1,
+      "match_column": 9
+    },
+    {
+      "path": "vmlinux.h",
+      "line": 90168,
+      "kinds": [
+        "ptp_protocol"
+      ],
+      "text": "\tstruct ptp_clock *clock;",
+      "excerpt_start_column": 1,
+      "match_column": 9
+    },
+    {
+      "path": "vmlinux.h",
+      "line": 106134,
+      "kinds": [
+        "ptp_protocol"
+      ],
+      "text": "\tHWTSTAMP_FILTER_PTP_V1_L4_EVENT = 3,",
+      "excerpt_start_column": 1,
+      "match_column": 18
+    },
+    {
+      "path": "vmlinux.h",
+      "line": 106135,
+      "kinds": [
+        "ptp_protocol"
+      ],
+      "text": "\tHWTSTAMP_FILTER_PTP_V1_L4_SYNC = 4,",
+      "excerpt_start_column": 1,
+      "match_column": 18
+    },
+    {
+      "path": "vmlinux.h",
+      "line": 106136,
+      "kinds": [
+        "ptp_protocol"
+      ],
+      "text": "\tHWTSTAMP_FILTER_PTP_V1_L4_DELAY_REQ = 5,",
+      "excerpt_start_column": 1,
+      "match_column": 18
+    },
+    {
+      "path": "vmlinux.h",
+      "line": 106137,
+      "kinds": [
+        "ptp_protocol"
+      ],
+      "text": "\tHWTSTAMP_FILTER_PTP_V2_L4_EVENT = 6,",
+      "excerpt_start_column": 1,
+      "match_column": 18
+    },
+    {
+      "path": "vmlinux.h",
+      "line": 106138,
+      "kinds": [
+        "ptp_protocol"
+      ],
+      "text": "\tHWTSTAMP_FILTER_PTP_V2_L4_SYNC = 7,",
+      "excerpt_start_column": 1,
+      "match_column": 18
+    },
+    {
+      "path": "vmlinux.h",
+      "line": 106139,
+      "kinds": [
+        "ptp_protocol"
+      ],
+      "text": "\tHWTSTAMP_FILTER_PTP_V2_L4_DELAY_REQ = 8,",
+      "excerpt_start_column": 1,
+      "match_column": 18
+    },
+    {
+      "path": "vmlinux.h",
+      "line": 106140,
+      "kinds": [
+        "ptp_protocol"
+      ],
+      "text": "\tHWTSTAMP_FILTER_PTP_V2_L2_EVENT = 9,",
+      "excerpt_start_column": 1,
+      "match_column": 18
+    },
+    {
+      "path": "vmlinux.h",
+      "line": 106141,
+      "kinds": [
+        "ptp_protocol"
+      ],
+      "text": "\tHWTSTAMP_FILTER_PTP_V2_L2_SYNC = 10,",
+      "excerpt_start_column": 1,
+      "match_column": 18
+    },
+    {
+      "path": "vmlinux.h",
+      "line": 106142,
+      "kinds": [
+        "ptp_protocol"
+      ],
+      "text": "\tHWTSTAMP_FILTER_PTP_V2_L2_DELAY_REQ = 11,",
+      "excerpt_start_column": 1,
+      "match_column": 18
+    },
+    {
+      "path": "vmlinux.h",
+      "line": 106143,
+      "kinds": [
+        "ptp_protocol"
+      ],
+      "text": "\tHWTSTAMP_FILTER_PTP_V2_EVENT = 12,",
+      "excerpt_start_column": 1,
+      "match_column": 18
+    },
+    {
+      "path": "vmlinux.h",
+      "line": 106144,
+      "kinds": [
+        "ptp_protocol"
+      ],
+      "text": "\tHWTSTAMP_FILTER_PTP_V2_SYNC = 13,",
+      "excerpt_start_column": 1,
+      "match_column": 18
+    },
+    {
+      "path": "vmlinux.h",
+      "line": 106145,
+      "kinds": [
+        "ptp_protocol"
+      ],
+      "text": "\tHWTSTAMP_FILTER_PTP_V2_DELAY_REQ = 14,",
+      "excerpt_start_column": 1,
+      "match_column": 18
+    },
+    {
+      "path": "vmlinux.h",
+      "line": 111499,
+      "kinds": [
+        "ptp_protocol"
+      ],
+      "text": "\tDEVLINK_TRAP_GENERIC_ID_PTP_EVENT = 69,",
+      "excerpt_start_column": 1,
+      "match_column": 26
+    },
+    {
+      "path": "vmlinux.h",
+      "line": 111500,
+      "kinds": [
+        "ptp_protocol"
+      ],
+      "text": "\tDEVLINK_TRAP_GENERIC_ID_PTP_GENERAL = 70,",
+      "excerpt_start_column": 1,
+      "match_column": 26
+    },
+    {
+      "path": "vmlinux.h",
+      "line": 111550,
+      "kinds": [
+        "ptp_protocol"
+      ],
+      "text": "\tDEVLINK_TRAP_GROUP_GENERIC_ID_PTP_EVENT = 21,",
+      "excerpt_start_column": 1,
+      "match_column": 32
+    },
+    {
+      "path": "vmlinux.h",
+      "line": 111551,
+      "kinds": [
+        "ptp_protocol"
+      ],
+      "text": "\tDEVLINK_TRAP_GROUP_GENERIC_ID_PTP_GENERAL = 22,",
+      "excerpt_start_column": 1,
+      "match_column": 32
+    },
+    {
+      "path": "vmlinux.h",
+      "line": 118794,
+      "kinds": [
+        "ptp_protocol"
+      ],
+      "text": "struct ptp_header {",
+      "excerpt_start_column": 1,
+      "match_column": 8
+    },
+    {
+      "path": "vmlinux.h",
+      "line": 118803,
+      "kinds": [
+        "port_identity"
+      ],
+      "text": "\tstruct port_identity source_port_identity;",
+      "excerpt_start_column": 1,
+      "match_column": 23
+    },
+    {
+      "path": "vmlinux.h",
+      "line": 141046,
+      "kinds": [
+        "ptp_protocol"
+      ],
+      "text": "enum ptp_clock_events {",
+      "excerpt_start_column": 1,
+      "match_column": 6
+    },
+    {
+      "path": "vmlinux.h",
+      "line": 141047,
+      "kinds": [
+        "ptp_protocol"
+      ],
+      "text": "\tPTP_CLOCK_ALARM = 0,",
+      "excerpt_start_column": 1,
+      "match_column": 2
+    },
+    {
+      "path": "vmlinux.h",
+      "line": 141048,
+      "kinds": [
+        "ptp_protocol"
+      ],
+      "text": "\tPTP_CLOCK_EXTTS = 1,",
+      "excerpt_start_column": 1,
+      "match_column": 2
+    },
+    {
+      "path": "vmlinux.h",
+      "line": 141049,
+      "kinds": [
+        "ptp_protocol"
+      ],
+      "text": "\tPTP_CLOCK_PPS = 2,",
+      "excerpt_start_column": 1,
+      "match_column": 2
+    },
+    {
+      "path": "vmlinux.h",
+      "line": 141050,
+      "kinds": [
+        "ptp_protocol"
+      ],
+      "text": "\tPTP_CLOCK_PPSUSR = 3,",
+      "excerpt_start_column": 1,
+      "match_column": 2
+    },
+    {
+      "path": "vmlinux.h",
+      "line": 141053,
+      "kinds": [
+        "ptp_protocol"
+      ],
+      "text": "struct ptp_clock_event {",
+      "excerpt_start_column": 1,
+      "match_column": 8
+    }
+  ]
+}

@@ -1,0 +1,180 @@
+{
+  "schema": "ptp-source-clone-human-review/v1",
+  "created_at": "2026-10-20T03:39:57.156135+00:00",
+  "source_screen": {
+    "path": "research/originality-completion/full-source-clone-screen-40.json",
+    "sha256": "de049544271b313b9703d78197ab3bf3e4d370dbfba0bd2abf33ba9c18f5b8bb"
+  },
+  "reviewed_candidate_count": 4,
+  "pending_manual_review": 0,
+  "candidate_reviews": [
+    {
+      "candidate_index": 0,
+      "kind": "consistent_identifier_rename_block",
+      "package": "Milky2018/moon_rodio",
+      "version": "0.3.6",
+      "external_path": "common_source.mbt",
+      "external_lines": [
+        305,
+        317
+      ],
+      "local_path": "bmca/bmca.mbt",
+      "local_lines": [
+        46,
+        58
+      ],
+      "tokens": 74,
+      "disposition": "common_standard_fragment",
+      "reason": "The complete renamed block is the standard two-field lexicographic comparison skeleton. External fields are audio Duration secs/nanos; local fields are PTP PortIdentity clock/port. The actually read callers and types differ. This is a real generic textual intersection, not evidence that the external package implements PTP BMCA; the source text alone does not establish authorship or copying history.",
+      "manual_context_review": "Actually read the local and pinned external source contexts; after the campaign-wide stability fix, independently reverified their identical current file/member SHA and complete recorded contexts. No third-party code executed.",
+      "source_result_sha256": "e823aa06d452f9e52afd9478e88096bb37936ab4a9c5169270b07f507f60434b",
+      "archive_sha256": "e3d47e932fea2a40f50faee0065c60a8fcf71c0da70e29fa32d469766382e2ee",
+      "local_source": {
+        "path": "bmca/bmca.mbt",
+        "sha256": "12247cac2d73b5e7e867963eb03427a367368dc69f0b394e0c7e1b02ff9df261",
+        "lines_read": [
+          43,
+          61
+        ],
+        "context": "43: }\n44: \n45: ///|\n46: fn cmp_port(a : @wire.PortIdentity, b : @wire.PortIdentity) -> Int32 {\n47:   if a.clock < b.clock {\n48:     -1\n49:   } else if a.clock > b.clock {\n50:     1\n51:   } else if a.port < b.port {\n52:     -1\n53:   } else if a.port > b.port {\n54:     1\n55:   } else {\n56:     0\n57:   }\n58: }\n59: \n60: ///|\n61: fn valid(c : Candidate) -> Bool {"
+      },
+      "external_source": {
+        "path": "common_source.mbt",
+        "member_sha256": "a2c473267eebd6b1612d021c6ecbbe8546d6e67787aef3f2f18eee72dd6282e1",
+        "lines_read": [
+          302,
+          320
+        ],
+        "context": "302: }\n303: \n304: ///|\n305: fn duration_compare(a : @moon_cpal.Duration, b : @moon_cpal.Duration) -> Int32 {\n306:   if a.secs < b.secs {\n307:     -1\n308:   } else if a.secs > b.secs {\n309:     1\n310:   } else if a.nanos < b.nanos {\n311:     -1\n312:   } else if a.nanos > b.nanos {\n313:     1\n314:   } else {\n315:     0\n316:   }\n317: }\n318: \n319: ///|\n320: fn duration_min("
+      },
+      "claim_scope": "Only the reported lexical candidate and cited contexts; not whole-package semantic non-equivalence, absolute non-similarity, or contest eligibility."
+    },
+    {
+      "candidate_index": 1,
+      "kind": "consistent_identifier_rename_block",
+      "package": "xiefei-coding/wfc",
+      "version": "0.5.1",
+      "external_path": "json_api.mbt",
+      "external_lines": [
+        57,
+        62
+      ],
+      "local_path": "audit/audit.mbt",
+      "local_lines": [
+        101,
+        106
+      ],
+      "tokens": 46,
+      "disposition": "common_standard_fragment",
+      "reason": "The complete renamed block is a conventional required-field getter: Map.get, Some passthrough, None raises a domain-specific error. It contains no PTP fields, identities, correction arithmetic or BMCA branch. This is a real generic textual intersection; no renaming or threshold manipulation was used to hide it, and its classification does not remove other product-function intersections.",
+      "manual_context_review": "Actually read the local and pinned external source contexts; after the campaign-wide stability fix, independently reverified their identical current file/member SHA and complete recorded contexts. No third-party code executed.",
+      "source_result_sha256": "92855923cb838dd992337b5debb8f0ec813a34d6e748af23f775a89770ac9796",
+      "archive_sha256": "4777901c5bb9315084b1dbbaff26f485fae66775dd5c873ba5e32c25f48918e8",
+      "local_source": {
+        "path": "audit/audit.mbt",
+        "sha256": "7ad1fda48991ff69edfdd1760e7975811ba20c206bc685966188c46f034e9624",
+        "lines_read": [
+          98,
+          109
+        ],
+        "context": "98: }\n99: \n100: ///|\n101: fn required(m : Map[String, Json], key : String) -> Json raise InputError {\n102:   match m.get(key) {\n103:     Some(v) => v\n104:     None => raise Invalid(\"missing field: \" + key)\n105:   }\n106: }\n107: \n108: ///|\n109: fn string(v : Json) -> String raise InputError {"
+      },
+      "external_source": {
+        "path": "json_api.mbt",
+        "member_sha256": "2c4392139a1c9f821cf548f93f0bc9d8d7760f1c4a474836fefef0bd697645db",
+        "lines_read": [
+          54,
+          65
+        ],
+        "context": "54: }\n55: \n56: ///|\n57: fn required(items : Map[String, Json], key : String) -> Json raise SolveError {\n58:   match items.get(key) {\n59:     Some(value) => value\n60:     None => raise Invalid(\"missing field: \" + key)\n61:   }\n62: }\n63: \n64: ///|\n65: fn read_rules(value : Json) -> RuleModel raise SolveError {"
+      },
+      "claim_scope": "Only the reported lexical candidate and cited contexts; not whole-package semantic non-equivalence, absolute non-similarity, or contest eligibility."
+    },
+    {
+      "candidate_index": 2,
+      "kind": "consistent_identifier_rename_block",
+      "package": "3smallpig/mooncutstock",
+      "version": "0.1.0",
+      "external_path": "decode.mbt",
+      "external_lines": [
+        54,
+        59
+      ],
+      "local_path": "audit/audit.mbt",
+      "local_lines": [
+        101,
+        106
+      ],
+      "tokens": 46,
+      "disposition": "common_standard_fragment",
+      "reason": "The complete renamed block is a conventional required-field getter: Map.get, Some passthrough, None raises a domain-specific error. It contains no PTP fields, identities, correction arithmetic or BMCA branch. This is a real generic textual intersection; no renaming or threshold manipulation was used to hide it, and its classification does not remove other product-function intersections.",
+      "manual_context_review": "Actually read the local and pinned external source contexts; after the campaign-wide stability fix, independently reverified their identical current file/member SHA and complete recorded contexts. No third-party code executed.",
+      "source_result_sha256": "6140b7b14f4d5ca73970f1c3c06b17900763627dc91c4acb88580689475e6d0b",
+      "archive_sha256": "4f7a2adc77778ab3d25561dc1aa67069701bc3248a10de72a09739cd291d89b8",
+      "local_source": {
+        "path": "audit/audit.mbt",
+        "sha256": "7ad1fda48991ff69edfdd1760e7975811ba20c206bc685966188c46f034e9624",
+        "lines_read": [
+          98,
+          109
+        ],
+        "context": "98: }\n99: \n100: ///|\n101: fn required(m : Map[String, Json], key : String) -> Json raise InputError {\n102:   match m.get(key) {\n103:     Some(v) => v\n104:     None => raise Invalid(\"missing field: \" + key)\n105:   }\n106: }\n107: \n108: ///|\n109: fn string(v : Json) -> String raise InputError {"
+      },
+      "external_source": {
+        "path": "decode.mbt",
+        "member_sha256": "ac2a7810c0a73d14d78c2b8fb92a0437a8e9e45c398287a69f515fc59870f98b",
+        "lines_read": [
+          51,
+          62
+        ],
+        "context": "51: }\n52: \n53: ///|\n54: fn required(fields : Map[String, Json], key : String) -> Json raise CodecError {\n55:   match fields.get(key) {\n56:     Some(v) => v\n57:     None => raise Invalid(\"missing field: \" + key)\n58:   }\n59: }\n60: \n61: ///|\n62: fn codec_string(value : Json) -> String raise CodecError {"
+      },
+      "claim_scope": "Only the reported lexical candidate and cited contexts; not whole-package semantic non-equivalence, absolute non-similarity, or contest eligibility."
+    },
+    {
+      "candidate_index": 3,
+      "kind": "consistent_identifier_rename_block",
+      "package": "fuyun-2026/moonbit-canbus",
+      "version": "0.2.4",
+      "external_path": "src/log/json.mbt",
+      "external_lines": [
+        59,
+        64
+      ],
+      "local_path": "audit/audit.mbt",
+      "local_lines": [
+        101,
+        106
+      ],
+      "tokens": 46,
+      "disposition": "common_standard_fragment",
+      "reason": "The complete renamed block is a conventional required-field getter: Map.get, Some passthrough, None raises a domain-specific error. It contains no PTP fields, identities, correction arithmetic or BMCA branch. This is a real generic textual intersection; no renaming or threshold manipulation was used to hide it, and its classification does not remove other product-function intersections.",
+      "manual_context_review": "Actually read the local and pinned external source contexts; after the campaign-wide stability fix, independently reverified their identical current file/member SHA and complete recorded contexts. No third-party code executed.",
+      "source_result_sha256": "948d76ea0e19685aef7bbe7deb3ea63c4a53dc8262c50720fd28c744abcd9672",
+      "archive_sha256": "27195c6c5c31a5ce1f57627c82f9ad93fe2e5df04829f429037cd243676ece26",
+      "local_source": {
+        "path": "audit/audit.mbt",
+        "sha256": "7ad1fda48991ff69edfdd1760e7975811ba20c206bc685966188c46f034e9624",
+        "lines_read": [
+          98,
+          109
+        ],
+        "context": "98: }\n99: \n100: ///|\n101: fn required(m : Map[String, Json], key : String) -> Json raise InputError {\n102:   match m.get(key) {\n103:     Some(v) => v\n104:     None => raise Invalid(\"missing field: \" + key)\n105:   }\n106: }\n107: \n108: ///|\n109: fn string(v : Json) -> String raise InputError {"
+      },
+      "external_source": {
+        "path": "src/log/json.mbt",
+        "member_sha256": "3027f9c3e1cd9ce22d97d063b252f3f5de4ef7e4942fae178637b18424b234da",
+        "lines_read": [
+          56,
+          67
+        ],
+        "context": "56: }\n57: \n58: ///|\n59: fn field(obj : Map[String, Json], key : String) -> Json raise LogError {\n60:   match obj.get(key) {\n61:     Some(value) => value\n62:     None => raise InvalidLog(\"missing field: \" + key)\n63:   }\n64: }\n65: \n66: ///|\n67: fn int_value(value : Json, label : String) -> Int raise LogError {"
+      },
+      "claim_scope": "Only the reported lexical candidate and cited contexts; not whole-package semantic non-equivalence, absolute non-similarity, or contest eligibility."
+    }
+  ],
+  "scope": "All 40-token/5-line candidates from the frozen post-enhancement screen of 18 production MoonBit files across 3,140 current module versions, including generated foreign source and foreign tests. The strict 80-token/8-line derivation has 0 candidates.",
+  "limitations": [
+    "Generic JSON getters and comparator idioms remain real textual intersections. A lexical candidate is not an authorship verdict or semantic product-equivalence finding. No absolute zero-similarity or contest-eligibility certificate is issued."
+  ]
+}

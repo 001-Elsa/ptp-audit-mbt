@@ -1,0 +1,692 @@
+{
+  "name": "oboard/mocket",
+  "version": "0.10.2",
+  "zip_sha256": "5b06bde532090abf4520456dbc0bc83156102db11a17cf355a9ca331f95f9b20",
+  "read_only": true,
+  "third_party_code_executed": false,
+  "scanned_hits_reviewed": 10,
+  "additional_manually_found_register_names": [
+    "PTPTSCR",
+    "PTPSSIR",
+    "PTPTSHR",
+    "PTPPPSCR"
+  ],
+  "files": [
+    {
+      "path": "native/mongoose/mongoose.c",
+      "sha256": "4afefb608060a542dcc6e2121d4721b9258d7105742ac859f4c6d50f106bb54e",
+      "xmc7_register_declaration": [
+        {
+          "line": 25229,
+          "text": "#ifdef MG_ENABLE_LINES"
+        },
+        {
+          "line": 25230,
+          "text": "#line 1 \"src/drivers/xmc7.c\""
+        },
+        {
+          "line": 25231,
+          "text": "#endif"
+        },
+        {
+          "line": 25232,
+          "text": ""
+        },
+        {
+          "line": 25233,
+          "text": ""
+        },
+        {
+          "line": 25234,
+          "text": "#if MG_ENABLE_TCPIP && defined(MG_ENABLE_DRIVER_XMC7) && MG_ENABLE_DRIVER_XMC7"
+        },
+        {
+          "line": 25235,
+          "text": ""
+        },
+        {
+          "line": 25236,
+          "text": "struct ETH_Type {"
+        },
+        {
+          "line": 25237,
+          "text": "  volatile uint32_t CTL, STATUS, RESERVED[1022], NETWORK_CONTROL,"
+        },
+        {
+          "line": 25238,
+          "text": "      NETWORK_CONFIG, NETWORK_STATUS, USER_IO_REGISTER, DMA_CONFIG,"
+        },
+        {
+          "line": 25239,
+          "text": "      TRANSMIT_STATUS, RECEIVE_Q_PTR, TRANSMIT_Q_PTR, RECEIVE_STATUS,"
+        },
+        {
+          "line": 25240,
+          "text": "      INT_STATUS, INT_ENABLE, INT_DISABLE, INT_MASK, PHY_MANAGEMENT, PAUSE_TIME,"
+        },
+        {
+          "line": 25241,
+          "text": "      TX_PAUSE_QUANTUM, PBUF_TXCUTTHRU, PBUF_RXCUTTHRU, JUMBO_MAX_LENGTH,"
+        },
+        {
+          "line": 25242,
+          "text": "      EXTERNAL_FIFO_INTERFACE, RESERVED1, AXI_MAX_PIPELINE, RSC_CONTROL,"
+        },
+        {
+          "line": 25243,
+          "text": "      INT_MODERATION, SYS_WAKE_TIME, RESERVED2[7], HASH_BOTTOM, HASH_TOP,"
+        },
+        {
+          "line": 25244,
+          "text": "      SPEC_ADD1_BOTTOM, SPEC_ADD1_TOP, SPEC_ADD2_BOTTOM, SPEC_ADD2_TOP,"
+        },
+        {
+          "line": 25245,
+          "text": "      SPEC_ADD3_BOTTOM, SPEC_ADD3_TOP, SPEC_ADD4_BOTTOM, SPEC_ADD4_TOP,"
+        },
+        {
+          "line": 25246,
+          "text": "      SPEC_TYPE1, SPEC_TYPE2, SPEC_TYPE3, SPEC_TYPE4, WOL_REGISTER,"
+        },
+        {
+          "line": 25247,
+          "text": "      STRETCH_RATIO, STACKED_VLAN, TX_PFC_PAUSE, MASK_ADD1_BOTTOM,"
+        },
+        {
+          "line": 25248,
+          "text": "      MASK_ADD1_TOP, DMA_ADDR_OR_MASK, RX_PTP_UNICAST, TX_PTP_UNICAST,"
+        },
+        {
+          "line": 25249,
+          "text": "      TSU_NSEC_CMP, TSU_SEC_CMP, TSU_MSB_SEC_CMP, TSU_PTP_TX_MSB_SEC,"
+        },
+        {
+          "line": 25250,
+          "text": "      TSU_PTP_RX_MSB_SEC, TSU_PEER_TX_MSB_SEC, TSU_PEER_RX_MSB_SEC,"
+        },
+        {
+          "line": 25251,
+          "text": "      DPRAM_FILL_DBG, REVISION_REG, OCTETS_TXED_BOTTOM, OCTETS_TXED_TOP,"
+        },
+        {
+          "line": 25252,
+          "text": "      FRAMES_TXED_OK, BROADCAST_TXED, MULTICAST_TXED, PAUSE_FRAMES_TXED,"
+        },
+        {
+          "line": 25253,
+          "text": "      FRAMES_TXED_64, FRAMES_TXED_65, FRAMES_TXED_128, FRAMES_TXED_256,"
+        },
+        {
+          "line": 25254,
+          "text": "      FRAMES_TXED_512, FRAMES_TXED_1024, FRAMES_TXED_1519, TX_UNDERRUNS,"
+        },
+        {
+          "line": 25255,
+          "text": "      SINGLE_COLLISIONS, MULTIPLE_COLLISIONS, EXCESSIVE_COLLISIONS,"
+        },
+        {
+          "line": 25256,
+          "text": "      LATE_COLLISIONS, DEFERRED_FRAMES, CRS_ERRORS, OCTETS_RXED_BOTTOM,"
+        },
+        {
+          "line": 25257,
+          "text": "      OCTETS_RXED_TOP, FRAMES_RXED_OK, BROADCAST_RXED, MULTICAST_RXED,"
+        },
+        {
+          "line": 25258,
+          "text": "      PAUSE_FRAMES_RXED, FRAMES_RXED_64, FRAMES_RXED_65, FRAMES_RXED_128,"
+        },
+        {
+          "line": 25259,
+          "text": "      FRAMES_RXED_256, FRAMES_RXED_512, FRAMES_RXED_1024, FRAMES_RXED_1519,"
+        },
+        {
+          "line": 25260,
+          "text": "      UNDERSIZE_FRAMES, EXCESSIVE_RX_LENGTH, RX_JABBERS, FCS_ERRORS,"
+        },
+        {
+          "line": 25261,
+          "text": "      RX_LENGTH_ERRORS, RX_SYMBOL_ERRORS, ALIGNMENT_ERRORS, RX_RESOURCE_ERRORS,"
+        },
+        {
+          "line": 25262,
+          "text": "      RX_OVERRUNS, RX_IP_CK_ERRORS, RX_TCP_CK_ERRORS, RX_UDP_CK_ERRORS,"
+        },
+        {
+          "line": 25263,
+          "text": "      AUTO_FLUSHED_PKTS, RESERVED3, TSU_TIMER_INCR_SUB_NSEC, TSU_TIMER_MSB_SEC,"
+        },
+        {
+          "line": 25264,
+          "text": "      TSU_STROBE_MSB_SEC, TSU_STROBE_SEC, TSU_STROBE_NSEC, TSU_TIMER_SEC,"
+        },
+        {
+          "line": 25265,
+          "text": "      TSU_TIMER_NSEC, TSU_TIMER_ADJUST, TSU_TIMER_INCR, TSU_PTP_TX_SEC,"
+        },
+        {
+          "line": 25266,
+          "text": "      TSU_PTP_TX_NSEC, TSU_PTP_RX_SEC, TSU_PTP_RX_NSEC, TSU_PEER_TX_SEC,"
+        },
+        {
+          "line": 25267,
+          "text": "      TSU_PEER_TX_NSEC, TSU_PEER_RX_SEC, TSU_PEER_RX_NSEC, PCS_CONTROL,"
+        },
+        {
+          "line": 25268,
+          "text": "      PCS_STATUS, RESERVED4[2], PCS_AN_ADV, PCS_AN_LP_BASE, PCS_AN_EXP,"
+        },
+        {
+          "line": 25269,
+          "text": "      PCS_AN_NP_TX, PCS_AN_LP_NP, RESERVED5[6], PCS_AN_EXT_STATUS, RESERVED6[8],"
+        },
+        {
+          "line": 25270,
+          "text": "      TX_PAUSE_QUANTUM1, TX_PAUSE_QUANTUM2, TX_PAUSE_QUANTUM3, RESERVED7,"
+        },
+        {
+          "line": 25271,
+          "text": "      RX_LPI, RX_LPI_TIME, TX_LPI, TX_LPI_TIME, DESIGNCFG_DEBUG1,"
+        },
+        {
+          "line": 25272,
+          "text": "      DESIGNCFG_DEBUG2, DESIGNCFG_DEBUG3, DESIGNCFG_DEBUG4, DESIGNCFG_DEBUG5,"
+        },
+        {
+          "line": 25273,
+          "text": "      DESIGNCFG_DEBUG6, DESIGNCFG_DEBUG7, DESIGNCFG_DEBUG8, DESIGNCFG_DEBUG9,"
+        },
+        {
+          "line": 25274,
+          "text": "      DESIGNCFG_DEBUG10, RESERVED8[22], SPEC_ADD5_BOTTOM, SPEC_ADD5_TOP,"
+        },
+        {
+          "line": 25275,
+          "text": "      RESERVED9[60], SPEC_ADD36_BOTTOM, SPEC_ADD36_TOP, INT_Q1_STATUS,"
+        },
+        {
+          "line": 25276,
+          "text": "      INT_Q2_STATUS, INT_Q3_STATUS, RESERVED10[11], INT_Q15_STATUS, RESERVED11,"
+        },
+        {
+          "line": 25277,
+          "text": "      TRANSMIT_Q1_PTR, TRANSMIT_Q2_PTR, TRANSMIT_Q3_PTR, RESERVED12[11],"
+        },
+        {
+          "line": 25278,
+          "text": "      TRANSMIT_Q15_PTR, RESERVED13, RECEIVE_Q1_PTR, RECEIVE_Q2_PTR,"
+        },
+        {
+          "line": 25279,
+          "text": "      RECEIVE_Q3_PTR, RESERVED14[3], RECEIVE_Q7_PTR, RESERVED15,"
+        },
+        {
+          "line": 25280,
+          "text": "      DMA_RXBUF_SIZE_Q1, DMA_RXBUF_SIZE_Q2, DMA_RXBUF_SIZE_Q3, RESERVED16[3],"
+        }
+      ],
+      "additional_stm32_register_declaration": [
+        {
+          "line": 23742,
+          "text": "#ifdef MG_ENABLE_LINES"
+        },
+        {
+          "line": 23743,
+          "text": "#line 1 \"src/drivers/stm32f.c\""
+        },
+        {
+          "line": 23744,
+          "text": "#endif"
+        },
+        {
+          "line": 23745,
+          "text": ""
+        },
+        {
+          "line": 23746,
+          "text": ""
+        },
+        {
+          "line": 23747,
+          "text": "#if MG_ENABLE_TCPIP && defined(MG_ENABLE_DRIVER_STM32F) && \\"
+        },
+        {
+          "line": 23748,
+          "text": "    MG_ENABLE_DRIVER_STM32F"
+        },
+        {
+          "line": 23749,
+          "text": "struct stm32f_eth {"
+        },
+        {
+          "line": 23750,
+          "text": "  volatile uint32_t MACCR, MACFFR, MACHTHR, MACHTLR, MACMIIAR, MACMIIDR, MACFCR,"
+        },
+        {
+          "line": 23751,
+          "text": "      MACVLANTR, RESERVED0[2], MACRWUFFR, MACPMTCSR, RESERVED1, MACDBGR, MACSR,"
+        },
+        {
+          "line": 23752,
+          "text": "      MACIMR, MACA0HR, MACA0LR, MACA1HR, MACA1LR, MACA2HR, MACA2LR, MACA3HR,"
+        },
+        {
+          "line": 23753,
+          "text": "      MACA3LR, RESERVED2[40], MMCCR, MMCRIR, MMCTIR, MMCRIMR, MMCTIMR,"
+        },
+        {
+          "line": 23754,
+          "text": "      RESERVED3[14], MMCTGFSCCR, MMCTGFMSCCR, RESERVED4[5], MMCTGFCR,"
+        },
+        {
+          "line": 23755,
+          "text": "      RESERVED5[10], MMCRFCECR, MMCRFAECR, RESERVED6[10], MMCRGUFCR,"
+        },
+        {
+          "line": 23756,
+          "text": "      RESERVED7[334], PTPTSCR, PTPSSIR, PTPTSHR, PTPTSLR, PTPTSHUR, PTPTSLUR,"
+        },
+        {
+          "line": 23757,
+          "text": "      PTPTSAR, PTPTTHR, PTPTTLR, RESERVED8, PTPTSSR, PTPPPSCR, RESERVED9[564],"
+        },
+        {
+          "line": 23758,
+          "text": "      DMABMR, DMATPDR, DMARPDR, DMARDLAR, DMATDLAR, DMASR, DMAOMR, DMAIER,"
+        },
+        {
+          "line": 23759,
+          "text": "      DMAMFBOCR, DMARSWTR, RESERVED10[8], DMACHTDR, DMACHRDR, DMACHTBAR,"
+        },
+        {
+          "line": 23760,
+          "text": "      DMACHRBAR;"
+        },
+        {
+          "line": 23761,
+          "text": "};"
+        },
+        {
+          "line": 23762,
+          "text": "#undef ETH"
+        },
+        {
+          "line": 23763,
+          "text": "#define ETH ((struct stm32f_eth *) (uintptr_t) 0x40028000)"
+        },
+        {
+          "line": 23764,
+          "text": ""
+        }
+      ],
+      "named_occurrences": [
+        {
+          "line": 23756,
+          "text": "      RESERVED7[334], PTPTSCR, PTPSSIR, PTPTSHR, PTPTSLR, PTPTSHUR, PTPTSLUR,"
+        },
+        {
+          "line": 23757,
+          "text": "      PTPTSAR, PTPTTHR, PTPTTLR, RESERVED8, PTPTSSR, PTPPPSCR, RESERVED9[564],"
+        },
+        {
+          "line": 25248,
+          "text": "      MASK_ADD1_TOP, DMA_ADDR_OR_MASK, RX_PTP_UNICAST, TX_PTP_UNICAST,"
+        },
+        {
+          "line": 25249,
+          "text": "      TSU_NSEC_CMP, TSU_SEC_CMP, TSU_MSB_SEC_CMP, TSU_PTP_TX_MSB_SEC,"
+        },
+        {
+          "line": 25250,
+          "text": "      TSU_PTP_RX_MSB_SEC, TSU_PEER_TX_MSB_SEC, TSU_PEER_RX_MSB_SEC,"
+        },
+        {
+          "line": 25265,
+          "text": "      TSU_TIMER_NSEC, TSU_TIMER_ADJUST, TSU_TIMER_INCR, TSU_PTP_TX_SEC,"
+        },
+        {
+          "line": 25266,
+          "text": "      TSU_PTP_TX_NSEC, TSU_PTP_RX_SEC, TSU_PTP_RX_NSEC, TSU_PEER_TX_SEC,"
+        }
+      ]
+    },
+    {
+      "path": "mongoose.c",
+      "sha256": "4afefb608060a542dcc6e2121d4721b9258d7105742ac859f4c6d50f106bb54e",
+      "xmc7_register_declaration": [
+        {
+          "line": 25229,
+          "text": "#ifdef MG_ENABLE_LINES"
+        },
+        {
+          "line": 25230,
+          "text": "#line 1 \"src/drivers/xmc7.c\""
+        },
+        {
+          "line": 25231,
+          "text": "#endif"
+        },
+        {
+          "line": 25232,
+          "text": ""
+        },
+        {
+          "line": 25233,
+          "text": ""
+        },
+        {
+          "line": 25234,
+          "text": "#if MG_ENABLE_TCPIP && defined(MG_ENABLE_DRIVER_XMC7) && MG_ENABLE_DRIVER_XMC7"
+        },
+        {
+          "line": 25235,
+          "text": ""
+        },
+        {
+          "line": 25236,
+          "text": "struct ETH_Type {"
+        },
+        {
+          "line": 25237,
+          "text": "  volatile uint32_t CTL, STATUS, RESERVED[1022], NETWORK_CONTROL,"
+        },
+        {
+          "line": 25238,
+          "text": "      NETWORK_CONFIG, NETWORK_STATUS, USER_IO_REGISTER, DMA_CONFIG,"
+        },
+        {
+          "line": 25239,
+          "text": "      TRANSMIT_STATUS, RECEIVE_Q_PTR, TRANSMIT_Q_PTR, RECEIVE_STATUS,"
+        },
+        {
+          "line": 25240,
+          "text": "      INT_STATUS, INT_ENABLE, INT_DISABLE, INT_MASK, PHY_MANAGEMENT, PAUSE_TIME,"
+        },
+        {
+          "line": 25241,
+          "text": "      TX_PAUSE_QUANTUM, PBUF_TXCUTTHRU, PBUF_RXCUTTHRU, JUMBO_MAX_LENGTH,"
+        },
+        {
+          "line": 25242,
+          "text": "      EXTERNAL_FIFO_INTERFACE, RESERVED1, AXI_MAX_PIPELINE, RSC_CONTROL,"
+        },
+        {
+          "line": 25243,
+          "text": "      INT_MODERATION, SYS_WAKE_TIME, RESERVED2[7], HASH_BOTTOM, HASH_TOP,"
+        },
+        {
+          "line": 25244,
+          "text": "      SPEC_ADD1_BOTTOM, SPEC_ADD1_TOP, SPEC_ADD2_BOTTOM, SPEC_ADD2_TOP,"
+        },
+        {
+          "line": 25245,
+          "text": "      SPEC_ADD3_BOTTOM, SPEC_ADD3_TOP, SPEC_ADD4_BOTTOM, SPEC_ADD4_TOP,"
+        },
+        {
+          "line": 25246,
+          "text": "      SPEC_TYPE1, SPEC_TYPE2, SPEC_TYPE3, SPEC_TYPE4, WOL_REGISTER,"
+        },
+        {
+          "line": 25247,
+          "text": "      STRETCH_RATIO, STACKED_VLAN, TX_PFC_PAUSE, MASK_ADD1_BOTTOM,"
+        },
+        {
+          "line": 25248,
+          "text": "      MASK_ADD1_TOP, DMA_ADDR_OR_MASK, RX_PTP_UNICAST, TX_PTP_UNICAST,"
+        },
+        {
+          "line": 25249,
+          "text": "      TSU_NSEC_CMP, TSU_SEC_CMP, TSU_MSB_SEC_CMP, TSU_PTP_TX_MSB_SEC,"
+        },
+        {
+          "line": 25250,
+          "text": "      TSU_PTP_RX_MSB_SEC, TSU_PEER_TX_MSB_SEC, TSU_PEER_RX_MSB_SEC,"
+        },
+        {
+          "line": 25251,
+          "text": "      DPRAM_FILL_DBG, REVISION_REG, OCTETS_TXED_BOTTOM, OCTETS_TXED_TOP,"
+        },
+        {
+          "line": 25252,
+          "text": "      FRAMES_TXED_OK, BROADCAST_TXED, MULTICAST_TXED, PAUSE_FRAMES_TXED,"
+        },
+        {
+          "line": 25253,
+          "text": "      FRAMES_TXED_64, FRAMES_TXED_65, FRAMES_TXED_128, FRAMES_TXED_256,"
+        },
+        {
+          "line": 25254,
+          "text": "      FRAMES_TXED_512, FRAMES_TXED_1024, FRAMES_TXED_1519, TX_UNDERRUNS,"
+        },
+        {
+          "line": 25255,
+          "text": "      SINGLE_COLLISIONS, MULTIPLE_COLLISIONS, EXCESSIVE_COLLISIONS,"
+        },
+        {
+          "line": 25256,
+          "text": "      LATE_COLLISIONS, DEFERRED_FRAMES, CRS_ERRORS, OCTETS_RXED_BOTTOM,"
+        },
+        {
+          "line": 25257,
+          "text": "      OCTETS_RXED_TOP, FRAMES_RXED_OK, BROADCAST_RXED, MULTICAST_RXED,"
+        },
+        {
+          "line": 25258,
+          "text": "      PAUSE_FRAMES_RXED, FRAMES_RXED_64, FRAMES_RXED_65, FRAMES_RXED_128,"
+        },
+        {
+          "line": 25259,
+          "text": "      FRAMES_RXED_256, FRAMES_RXED_512, FRAMES_RXED_1024, FRAMES_RXED_1519,"
+        },
+        {
+          "line": 25260,
+          "text": "      UNDERSIZE_FRAMES, EXCESSIVE_RX_LENGTH, RX_JABBERS, FCS_ERRORS,"
+        },
+        {
+          "line": 25261,
+          "text": "      RX_LENGTH_ERRORS, RX_SYMBOL_ERRORS, ALIGNMENT_ERRORS, RX_RESOURCE_ERRORS,"
+        },
+        {
+          "line": 25262,
+          "text": "      RX_OVERRUNS, RX_IP_CK_ERRORS, RX_TCP_CK_ERRORS, RX_UDP_CK_ERRORS,"
+        },
+        {
+          "line": 25263,
+          "text": "      AUTO_FLUSHED_PKTS, RESERVED3, TSU_TIMER_INCR_SUB_NSEC, TSU_TIMER_MSB_SEC,"
+        },
+        {
+          "line": 25264,
+          "text": "      TSU_STROBE_MSB_SEC, TSU_STROBE_SEC, TSU_STROBE_NSEC, TSU_TIMER_SEC,"
+        },
+        {
+          "line": 25265,
+          "text": "      TSU_TIMER_NSEC, TSU_TIMER_ADJUST, TSU_TIMER_INCR, TSU_PTP_TX_SEC,"
+        },
+        {
+          "line": 25266,
+          "text": "      TSU_PTP_TX_NSEC, TSU_PTP_RX_SEC, TSU_PTP_RX_NSEC, TSU_PEER_TX_SEC,"
+        },
+        {
+          "line": 25267,
+          "text": "      TSU_PEER_TX_NSEC, TSU_PEER_RX_SEC, TSU_PEER_RX_NSEC, PCS_CONTROL,"
+        },
+        {
+          "line": 25268,
+          "text": "      PCS_STATUS, RESERVED4[2], PCS_AN_ADV, PCS_AN_LP_BASE, PCS_AN_EXP,"
+        },
+        {
+          "line": 25269,
+          "text": "      PCS_AN_NP_TX, PCS_AN_LP_NP, RESERVED5[6], PCS_AN_EXT_STATUS, RESERVED6[8],"
+        },
+        {
+          "line": 25270,
+          "text": "      TX_PAUSE_QUANTUM1, TX_PAUSE_QUANTUM2, TX_PAUSE_QUANTUM3, RESERVED7,"
+        },
+        {
+          "line": 25271,
+          "text": "      RX_LPI, RX_LPI_TIME, TX_LPI, TX_LPI_TIME, DESIGNCFG_DEBUG1,"
+        },
+        {
+          "line": 25272,
+          "text": "      DESIGNCFG_DEBUG2, DESIGNCFG_DEBUG3, DESIGNCFG_DEBUG4, DESIGNCFG_DEBUG5,"
+        },
+        {
+          "line": 25273,
+          "text": "      DESIGNCFG_DEBUG6, DESIGNCFG_DEBUG7, DESIGNCFG_DEBUG8, DESIGNCFG_DEBUG9,"
+        },
+        {
+          "line": 25274,
+          "text": "      DESIGNCFG_DEBUG10, RESERVED8[22], SPEC_ADD5_BOTTOM, SPEC_ADD5_TOP,"
+        },
+        {
+          "line": 25275,
+          "text": "      RESERVED9[60], SPEC_ADD36_BOTTOM, SPEC_ADD36_TOP, INT_Q1_STATUS,"
+        },
+        {
+          "line": 25276,
+          "text": "      INT_Q2_STATUS, INT_Q3_STATUS, RESERVED10[11], INT_Q15_STATUS, RESERVED11,"
+        },
+        {
+          "line": 25277,
+          "text": "      TRANSMIT_Q1_PTR, TRANSMIT_Q2_PTR, TRANSMIT_Q3_PTR, RESERVED12[11],"
+        },
+        {
+          "line": 25278,
+          "text": "      TRANSMIT_Q15_PTR, RESERVED13, RECEIVE_Q1_PTR, RECEIVE_Q2_PTR,"
+        },
+        {
+          "line": 25279,
+          "text": "      RECEIVE_Q3_PTR, RESERVED14[3], RECEIVE_Q7_PTR, RESERVED15,"
+        },
+        {
+          "line": 25280,
+          "text": "      DMA_RXBUF_SIZE_Q1, DMA_RXBUF_SIZE_Q2, DMA_RXBUF_SIZE_Q3, RESERVED16[3],"
+        }
+      ],
+      "additional_stm32_register_declaration": [
+        {
+          "line": 23742,
+          "text": "#ifdef MG_ENABLE_LINES"
+        },
+        {
+          "line": 23743,
+          "text": "#line 1 \"src/drivers/stm32f.c\""
+        },
+        {
+          "line": 23744,
+          "text": "#endif"
+        },
+        {
+          "line": 23745,
+          "text": ""
+        },
+        {
+          "line": 23746,
+          "text": ""
+        },
+        {
+          "line": 23747,
+          "text": "#if MG_ENABLE_TCPIP && defined(MG_ENABLE_DRIVER_STM32F) && \\"
+        },
+        {
+          "line": 23748,
+          "text": "    MG_ENABLE_DRIVER_STM32F"
+        },
+        {
+          "line": 23749,
+          "text": "struct stm32f_eth {"
+        },
+        {
+          "line": 23750,
+          "text": "  volatile uint32_t MACCR, MACFFR, MACHTHR, MACHTLR, MACMIIAR, MACMIIDR, MACFCR,"
+        },
+        {
+          "line": 23751,
+          "text": "      MACVLANTR, RESERVED0[2], MACRWUFFR, MACPMTCSR, RESERVED1, MACDBGR, MACSR,"
+        },
+        {
+          "line": 23752,
+          "text": "      MACIMR, MACA0HR, MACA0LR, MACA1HR, MACA1LR, MACA2HR, MACA2LR, MACA3HR,"
+        },
+        {
+          "line": 23753,
+          "text": "      MACA3LR, RESERVED2[40], MMCCR, MMCRIR, MMCTIR, MMCRIMR, MMCTIMR,"
+        },
+        {
+          "line": 23754,
+          "text": "      RESERVED3[14], MMCTGFSCCR, MMCTGFMSCCR, RESERVED4[5], MMCTGFCR,"
+        },
+        {
+          "line": 23755,
+          "text": "      RESERVED5[10], MMCRFCECR, MMCRFAECR, RESERVED6[10], MMCRGUFCR,"
+        },
+        {
+          "line": 23756,
+          "text": "      RESERVED7[334], PTPTSCR, PTPSSIR, PTPTSHR, PTPTSLR, PTPTSHUR, PTPTSLUR,"
+        },
+        {
+          "line": 23757,
+          "text": "      PTPTSAR, PTPTTHR, PTPTTLR, RESERVED8, PTPTSSR, PTPPPSCR, RESERVED9[564],"
+        },
+        {
+          "line": 23758,
+          "text": "      DMABMR, DMATPDR, DMARPDR, DMARDLAR, DMATDLAR, DMASR, DMAOMR, DMAIER,"
+        },
+        {
+          "line": 23759,
+          "text": "      DMAMFBOCR, DMARSWTR, RESERVED10[8], DMACHTDR, DMACHRDR, DMACHTBAR,"
+        },
+        {
+          "line": 23760,
+          "text": "      DMACHRBAR;"
+        },
+        {
+          "line": 23761,
+          "text": "};"
+        },
+        {
+          "line": 23762,
+          "text": "#undef ETH"
+        },
+        {
+          "line": 23763,
+          "text": "#define ETH ((struct stm32f_eth *) (uintptr_t) 0x40028000)"
+        },
+        {
+          "line": 23764,
+          "text": ""
+        }
+      ],
+      "named_occurrences": [
+        {
+          "line": 23756,
+          "text": "      RESERVED7[334], PTPTSCR, PTPSSIR, PTPTSHR, PTPTSLR, PTPTSHUR, PTPTSLUR,"
+        },
+        {
+          "line": 23757,
+          "text": "      PTPTSAR, PTPTTHR, PTPTTLR, RESERVED8, PTPTSSR, PTPPPSCR, RESERVED9[564],"
+        },
+        {
+          "line": 25248,
+          "text": "      MASK_ADD1_TOP, DMA_ADDR_OR_MASK, RX_PTP_UNICAST, TX_PTP_UNICAST,"
+        },
+        {
+          "line": 25249,
+          "text": "      TSU_NSEC_CMP, TSU_SEC_CMP, TSU_MSB_SEC_CMP, TSU_PTP_TX_MSB_SEC,"
+        },
+        {
+          "line": 25250,
+          "text": "      TSU_PTP_RX_MSB_SEC, TSU_PEER_TX_MSB_SEC, TSU_PEER_RX_MSB_SEC,"
+        },
+        {
+          "line": 25265,
+          "text": "      TSU_TIMER_NSEC, TSU_TIMER_ADJUST, TSU_TIMER_INCR, TSU_PTP_TX_SEC,"
+        },
+        {
+          "line": 25266,
+          "text": "      TSU_PTP_TX_NSEC, TSU_PTP_RX_SEC, TSU_PTP_RX_NSEC, TSU_PEER_TX_SEC,"
+        }
+      ]
+    }
+  ]
+}

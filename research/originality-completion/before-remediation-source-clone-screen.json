@@ -1,0 +1,874 @@
+{
+  "schema": "ptp-source-clone-screen/v1",
+  "purpose": "Bounded source-clone candidate detection, not an absolute non-similarity certificate",
+  "audit": "research/2026-10-19-release-review/source-audit.json",
+  "audit_sha256": "9675c2d3733d2aa2a9b0b6e6e09c782d513f2bc2e63d742312b6e4c2f5034adb",
+  "source_inventory": null,
+  "method": {
+    "exact": "Comments and whitespace removed; all identifiers, literals and operators preserved. Every matching seed is extended maximally and collision-verified.",
+    "renamed": "Complete ///| blocks with consistently bijective identifier renaming; keywords, types and literals retained.",
+    "minimum_tokens": 80,
+    "minimum_local_source_span_lines": 8,
+    "seed_tokens": 32,
+    "excluded": "Local and foreign tests, interfaces, non-MoonBit files, explicit generated files and snippets below thresholds",
+    "third_party_code_executed": false
+  },
+  "local_sources": [
+    {
+      "path": "audit/audit.mbt",
+      "sha256": "f0768a2bea3ba05c18cafd1edb9d452000fa80b23b0bc60732822ae548dbbde6",
+      "tokens": 3629
+    },
+    {
+      "path": "bmca/bmca.mbt",
+      "sha256": "12247cac2d73b5e7e867963eb03427a367368dc69f0b394e0c7e1b02ff9df261",
+      "tokens": 1596
+    },
+    {
+      "path": "bmca/snapshot.mbt",
+      "sha256": "139b80ad1ad725aa4ff1eb14b5442b3719c4b27140d5f3c5204a3fd5e1003b6b",
+      "tokens": 835
+    },
+    {
+      "path": "cmd/ptp-audit/main.mbt",
+      "sha256": "6b9e4b1838f41df0c37bdba023a08c3f9e0c3fb10c02ee4015b816f4361f8b7b",
+      "tokens": 188
+    },
+    {
+      "path": "diagnostic/diagnostic.mbt",
+      "sha256": "03696558c79240e31eeb686f80d18cc97b3ac64e9ae289bc7749143111e823d3",
+      "tokens": 363
+    },
+    {
+      "path": "evidence/coverage.mbt",
+      "sha256": "dabb72c3b6a93f6d5518fc99b4258c94b5ca6c34c9afc26d07a62e3574a7436d",
+      "tokens": 389
+    },
+    {
+      "path": "evidence/findings.mbt",
+      "sha256": "5c44eb8d02b437ea6b8b7173901134c2afea58d61abb4e98526f50d7d92c828e",
+      "tokens": 1413
+    },
+    {
+      "path": "evidence/measurements.mbt",
+      "sha256": "45d69751b07d5e03b0425b0f8033ca5a6b98f36f6c3759df1bdbf0b6dc56d811",
+      "tokens": 941
+    },
+    {
+      "path": "evidence/references.mbt",
+      "sha256": "e9986f22433389c961448f79d9a7705fa309dbc2f61051001025c2a99ff35165",
+      "tokens": 1295
+    },
+    {
+      "path": "evidence/values.mbt",
+      "sha256": "608c25b006e6255460f438cfd27efe181d02acbe24ddb21ccacf8e7947a78262",
+      "tokens": 1720
+    },
+    {
+      "path": "exchange/context.mbt",
+      "sha256": "b6ea6fd812913b02514bda678c93549ef393d6249d323a9641c9d6132c155bbf",
+      "tokens": 1637
+    },
+    {
+      "path": "exchange/exchange.mbt",
+      "sha256": "3aaec5b238f0f347f4af2f1e905845fbea7d410e0653717633a845bac43028d8",
+      "tokens": 2900
+    },
+    {
+      "path": "facade.mbt",
+      "sha256": "6bf09da6549cfd31aa521d25f7af0b3e670ae6ae5b1b025b716756d2a1155f1f",
+      "tokens": 19
+    },
+    {
+      "path": "observation/observation.mbt",
+      "sha256": "41317a12623303e9d4862d1b87b9284ed535d5e134838f9d16a06e648511ed2b",
+      "tokens": 2442
+    },
+    {
+      "path": "wire/wire.mbt",
+      "sha256": "a318beb085b6f1c847e20276d9f9ad86d7839cbc80903d307b2886058dd52a09",
+      "tokens": 3091
+    }
+  ],
+  "packages": [
+    {
+      "name": "mokomoking2501/fieldbus_core",
+      "version": "0.1.0",
+      "zip_sha256": "5812cbc8395ccc99c05f3c37ac3bd7b1fbd36249edaefa034e698d43d89cede9",
+      "evidence_file": "research/2026-10-19-final/source-review/mokomoking2501__fieldbus_core.zip",
+      "moonbit_files": 54,
+      "production_files": 29,
+      "test_files": 25,
+      "generated_files": 0,
+      "tokens": 54029,
+      "candidate_matches": 0
+    },
+    {
+      "name": "mokomoking2501/lockwire",
+      "version": "0.1.0",
+      "zip_sha256": "47258f2a4843bb4c2b79969a21b65e9ff2dad93429d36157d8242a6b88c6e0a3",
+      "evidence_file": "research/2026-10-19-final/source-review/mokomoking2501__lockwire.zip",
+      "moonbit_files": 151,
+      "production_files": 95,
+      "test_files": 56,
+      "generated_files": 0,
+      "tokens": 221145,
+      "candidate_matches": 0
+    },
+    {
+      "name": "mokomoking2501/profinet_master",
+      "version": "0.1.0",
+      "zip_sha256": "7d4757bde619567b711891748f9010b323416420f5415e5c05a8a312964d66b6",
+      "evidence_file": "research/2026-10-19-final/source-review/mokomoking2501__profinet_master.zip",
+      "moonbit_files": 84,
+      "production_files": 51,
+      "test_files": 33,
+      "generated_files": 0,
+      "tokens": 87525,
+      "candidate_matches": 0
+    },
+    {
+      "name": "mokomoking2501/MoonECAT",
+      "version": "0.2.0",
+      "zip_sha256": "acb5fc45947d4c7caec98008d41ad89114ab10dc2544d5fcea9b65ff1288b3da",
+      "evidence_file": "research/2026-10-19-final/source-review/mokomoking2501__MoonECAT.zip",
+      "moonbit_files": 168,
+      "production_files": 125,
+      "test_files": 43,
+      "generated_files": 0,
+      "tokens": 191000,
+      "candidate_matches": 0
+    },
+    {
+      "name": "CJR-ai-nb/evowitness",
+      "version": "0.1.1",
+      "zip_sha256": "c049b9511e769ddaf61946bf29786d0aa9dbe1245a7015272c44f27100b9e443",
+      "evidence_file": "research/2026-10-19-final/source-review/CJR-ai-nb__evowitness.zip",
+      "moonbit_files": 28,
+      "production_files": 16,
+      "test_files": 12,
+      "generated_files": 0,
+      "tokens": 18785,
+      "candidate_matches": 0
+    },
+    {
+      "name": "HhWw96/moontxnwitness",
+      "version": "0.1.0",
+      "zip_sha256": "671c44572cda9871389b7dbb2368c5d6c18c031f9210b457363392a14f0c78b9",
+      "evidence_file": "research/2026-10-19-final/source-review/HhWw96__moontxnwitness.zip",
+      "moonbit_files": 30,
+      "production_files": 21,
+      "test_files": 9,
+      "generated_files": 0,
+      "tokens": 25266,
+      "candidate_matches": 0
+    },
+    {
+      "name": "length-super/moonctl",
+      "version": "0.2.0",
+      "zip_sha256": "5146fc479080f35a72c8d9d45d46d616eed57b436359ff75d3788b3ec1694249",
+      "evidence_file": "research/2026-10-19-final/source-review/length-super__moonctl.zip",
+      "moonbit_files": 17,
+      "production_files": 11,
+      "test_files": 6,
+      "generated_files": 0,
+      "tokens": 7152,
+      "candidate_matches": 0
+    },
+    {
+      "name": "cghyyrrt/moonbit-pcap",
+      "version": "0.1.2",
+      "zip_sha256": "ddf593d445aafa76f6a18b55a6f974bb53226e870d8790258982e8725625ec0c",
+      "evidence_file": "research/2026-10-19-final/source-review/cghyyrrt__moonbit-pcap.zip",
+      "moonbit_files": 101,
+      "production_files": 71,
+      "test_files": 30,
+      "generated_files": 0,
+      "tokens": 31512,
+      "candidate_matches": 0
+    },
+    {
+      "name": "vicTop-cw/mcpconftest",
+      "version": "0.8.0",
+      "zip_sha256": "cbfaa8bc93387608f66cf14e59618d70b53111a330a44a83868e99682eab736b",
+      "evidence_file": "research/2026-10-19-final/source-review/vicTop-cw__mcpconftest.zip",
+      "moonbit_files": 18,
+      "production_files": 17,
+      "test_files": 1,
+      "generated_files": 0,
+      "tokens": 16754,
+      "candidate_matches": 0
+    },
+    {
+      "name": "xuting22/ntp",
+      "version": "0.4.0",
+      "zip_sha256": "ab90ce938633becc22f782f392a483d01d238a4a01857f6f3b212034c6436eb3",
+      "evidence_file": "research/2026-10-19-final/source-review/xuting22__ntp.zip",
+      "moonbit_files": 16,
+      "production_files": 11,
+      "test_files": 5,
+      "generated_files": 0,
+      "tokens": 7709,
+      "candidate_matches": 0
+    },
+    {
+      "name": "Ljh684/moonnet-lab",
+      "version": "0.1.0",
+      "zip_sha256": "5ce9ee2ee757c72d12497141721f3cdc02ba7028a6e88e0b287b6a0620f65884",
+      "evidence_file": "research/2026-10-19-final/source-review/Ljh684__moonnet-lab.zip",
+      "moonbit_files": 34,
+      "production_files": 24,
+      "test_files": 10,
+      "generated_files": 0,
+      "tokens": 35236,
+      "candidate_matches": 0
+    },
+    {
+      "name": "lxyhgvb/moonbit-radioframe",
+      "version": "0.2.0",
+      "zip_sha256": "3e359aeacb1e02d675dca721c2c9f96dc2b8d7f8fd4776bfbb8ea973336a497d",
+      "evidence_file": "research/2026-10-19-final/source-review/lxyhgvb__moonbit-radioframe.zip",
+      "moonbit_files": 93,
+      "production_files": 64,
+      "test_files": 29,
+      "generated_files": 0,
+      "tokens": 33016,
+      "candidate_matches": 0
+    },
+    {
+      "name": "sbqrre/moonbit-mcu-hal",
+      "version": "0.2.1",
+      "zip_sha256": "7371ec0b49d383fed815e39bb94eb1847c44c0f15a8239d3442ce749ac17ecab",
+      "evidence_file": "research/2026-10-19-final/source-review/sbqrre__moonbit-mcu-hal.zip",
+      "moonbit_files": 145,
+      "production_files": 100,
+      "test_files": 45,
+      "generated_files": 0,
+      "tokens": 40764,
+      "candidate_matches": 0
+    },
+    {
+      "name": "oyjh0381/moonlab",
+      "version": "0.1.0",
+      "zip_sha256": "1cf67ba9d2d408afabce112dab796917c19917d9a55fb5623d981bab09f7a330",
+      "evidence_file": "research/2026-10-19-final/source-review/oyjh0381__moonlab.zip",
+      "moonbit_files": 22,
+      "production_files": 12,
+      "test_files": 10,
+      "generated_files": 0,
+      "tokens": 19028,
+      "candidate_matches": 0
+    },
+    {
+      "name": "cauchyQ/moonbit-causalkit",
+      "version": "0.1.0",
+      "zip_sha256": "83ffa745827a9fd4b0d5e2e8925cf9d8b9c8d6c90673660e51e2fd87b9554bf7",
+      "evidence_file": "research/2026-10-19-final/source-review/cauchyQ__moonbit-causalkit.zip",
+      "moonbit_files": 25,
+      "production_files": 23,
+      "test_files": 2,
+      "generated_files": 0,
+      "tokens": 16271,
+      "candidate_matches": 0
+    },
+    {
+      "name": "SCL-NN/moontracekit",
+      "version": "0.2.0",
+      "zip_sha256": "1e9cb93cbbc3a45af3e332d7bf9c42935530d7c313b9cdb8618b09b55e144ae7",
+      "evidence_file": "research/2026-10-19-final/source-review/SCL-NN__moontracekit.zip",
+      "moonbit_files": 9,
+      "production_files": 8,
+      "test_files": 1,
+      "generated_files": 0,
+      "tokens": 2256,
+      "candidate_matches": 0
+    },
+    {
+      "name": "zlhahaha/moonsim",
+      "version": "0.3.1",
+      "zip_sha256": "83c212e27cb221f4dd0b76114cde14605054ad0a5d3f7a3aedde00c1ab326bfc",
+      "evidence_file": "research/2026-10-19-final/source-review/zlhahaha__moonsim.zip",
+      "moonbit_files": 55,
+      "production_files": 49,
+      "test_files": 6,
+      "generated_files": 0,
+      "tokens": 41039,
+      "candidate_matches": 0
+    },
+    {
+      "name": "wcx789ll/moonsim",
+      "version": "0.1.2",
+      "zip_sha256": "43e014cfe04036e0c7a89b420acb5d22b39c79fd6d0869d6911bd3230580c5b1",
+      "evidence_file": "research/2026-10-19-final/source-review/wcx789ll__moonsim.zip",
+      "moonbit_files": 38,
+      "production_files": 29,
+      "test_files": 9,
+      "generated_files": 0,
+      "tokens": 16513,
+      "candidate_matches": 0
+    },
+    {
+      "name": "usagi-star/mooncap",
+      "version": "0.1.0",
+      "zip_sha256": "455ec6535f36494863e13a47f94c8e62dc6cdea8b0ec3036c57b5f53860a1bbe",
+      "evidence_file": "research/2026-10-19-final/source-review/usagi-star__mooncap.zip",
+      "moonbit_files": 39,
+      "production_files": 27,
+      "test_files": 12,
+      "generated_files": 0,
+      "tokens": 16505,
+      "candidate_matches": 0
+    },
+    {
+      "name": "bzy-debug/hello",
+      "version": "0.1.20240510+81e045f4e",
+      "zip_sha256": "8b8f5bed8489bc7b272f1ad8071ab9a5af42587e86586f6477eb07a82c43517f",
+      "evidence_file": "research/2026-10-19-final/source-review/bzy-debug__hello.zip",
+      "moonbit_files": 3,
+      "production_files": 2,
+      "test_files": 1,
+      "generated_files": 0,
+      "tokens": 23,
+      "candidate_matches": 0
+    },
+    {
+      "name": "moonbitlang/core",
+      "version": "0.1.20261019+b1a0e846e",
+      "zip_sha256": "628ffb667fe049a128fe11bfb641343d44f1f74058d8cfc9cf3f8094a69f4b45",
+      "evidence_file": "research/2026-10-19-final/source-review/moonbitlang__core.zip",
+      "moonbit_files": 944,
+      "production_files": 469,
+      "test_files": 474,
+      "generated_files": 1,
+      "tokens": 443916,
+      "candidate_matches": 0
+    },
+    {
+      "name": "BigOrangeQWQ/wit-wasi-clocks",
+      "version": "0.2.6",
+      "zip_sha256": "4208f3f557c5ce0e822f8f175aca44afd280a2888ca82fefc6a91fa28cea7699",
+      "evidence_file": "research/2026-10-19-final/source-review/BigOrangeQWQ__wit-wasi-clocks.zip",
+      "moonbit_files": 4,
+      "production_files": 0,
+      "test_files": 0,
+      "generated_files": 4,
+      "tokens": 0,
+      "candidate_matches": 0
+    },
+    {
+      "name": "BigOrangeQWQ/wit-wasi-io",
+      "version": "0.2.6",
+      "zip_sha256": "00d18962d813adfbf88652e8cabd2c77ee7469e3c0dc8f5a9fc8cf067966207e",
+      "evidence_file": "research/2026-10-19-final/source-review/BigOrangeQWQ__wit-wasi-io.zip",
+      "moonbit_files": 7,
+      "production_files": 1,
+      "test_files": 0,
+      "generated_files": 6,
+      "tokens": 9,
+      "candidate_matches": 0
+    },
+    {
+      "name": "CAIMEOX/原来可以发中文包",
+      "version": "0.1.1",
+      "zip_sha256": "b2c6785e5974d3e6f3777acfd9555b70a2c19de68398c3b78cd21c7d215bcb69",
+      "evidence_file": "research/2026-10-19-final/source-review/CAIMEOX__原来可以发中文包.zip",
+      "moonbit_files": 2,
+      "production_files": 1,
+      "test_files": 1,
+      "generated_files": 0,
+      "tokens": 10,
+      "candidate_matches": 0
+    },
+    {
+      "name": "illusory0x0/🐫",
+      "version": "0.1.0",
+      "zip_sha256": "88b9238704f844ee3abb3068cf44b56a22128e70c2318e271d25db4011358cf0",
+      "evidence_file": "research/2026-10-19-final/source-review/illusory0x0__🐫.zip",
+      "moonbit_files": 3,
+      "production_files": 2,
+      "test_files": 1,
+      "generated_files": 0,
+      "tokens": 23,
+      "candidate_matches": 0
+    },
+    {
+      "name": "moonbit-community/moongrep-skill",
+      "version": "0.1.0",
+      "zip_sha256": "b1ce9eb4f52d0d64a6f7eea0d104eac7e9ad0290e832f41f59413e9bab7706d7",
+      "evidence_file": "research/2026-10-19-final/source-review/moonbit-community__moongrep-skill.zip",
+      "moonbit_files": 1,
+      "production_files": 0,
+      "test_files": 1,
+      "generated_files": 0,
+      "tokens": 0,
+      "candidate_matches": 0
+    },
+    {
+      "name": "tonyfettes/ssl",
+      "version": "0.1.1",
+      "zip_sha256": "016bb9ccf714eb7c7c88de43bda0f185f97483f84daa3ae78dff558405400b5f",
+      "evidence_file": "research/2026-10-19-final/source-review/tonyfettes__ssl.zip",
+      "moonbit_files": 2,
+      "production_files": 1,
+      "test_files": 1,
+      "generated_files": 0,
+      "tokens": 271,
+      "candidate_matches": 0
+    },
+    {
+      "name": "2111950632/szs",
+      "version": "0.2.0",
+      "zip_sha256": "eccefbb1830577ad61acccb8e381fd5c19b2a14dcaad9095ab644e2c4038f24b",
+      "evidence_file": "research/2026-10-19-final/source-review/2111950632__szs.zip",
+      "moonbit_files": 38,
+      "production_files": 25,
+      "test_files": 13,
+      "generated_files": 0,
+      "tokens": 29993,
+      "candidate_matches": 0
+    },
+    {
+      "name": "f4ah6o/gpui",
+      "version": "0.10.0",
+      "zip_sha256": "e725133c07e175d86dcd1dececbd07bc29fcec2a4190e9f9078fe8a17174e1fe",
+      "evidence_file": "research/2026-10-19-final/source-review/f4ah6o__gpui.zip",
+      "moonbit_files": 320,
+      "production_files": 147,
+      "test_files": 173,
+      "generated_files": 0,
+      "tokens": 275054,
+      "candidate_matches": 0
+    },
+    {
+      "name": "forey217/moonged",
+      "version": "0.2.0",
+      "zip_sha256": "8a8d931146a0b524121f46ae8348b0b84f4e150a24a8293746816a748998d871",
+      "evidence_file": "research/2026-10-19-final/source-review/forey217__moonged.zip",
+      "moonbit_files": 32,
+      "production_files": 19,
+      "test_files": 12,
+      "generated_files": 1,
+      "tokens": 23872,
+      "candidate_matches": 0
+    },
+    {
+      "name": "mizchi/crater-layout",
+      "version": "0.19.1",
+      "zip_sha256": "d3c577d91cf797b79419ea8fcdf667e5ef52f9a05b09284c9845eaa64545c80f",
+      "evidence_file": "research/2026-10-19-final/source-review/mizchi__crater-layout.zip",
+      "moonbit_files": 53,
+      "production_files": 31,
+      "test_files": 22,
+      "generated_files": 0,
+      "tokens": 200299,
+      "candidate_matches": 0
+    },
+    {
+      "name": "mizchi/css",
+      "version": "0.7.4",
+      "zip_sha256": "635d95e2aa5cee55fa7348110bc5052b6113df762b3324ee4e589c25be9e30d3",
+      "evidence_file": "research/2026-10-19-final/source-review/mizchi__css.zip",
+      "moonbit_files": 84,
+      "production_files": 33,
+      "test_files": 50,
+      "generated_files": 1,
+      "tokens": 137972,
+      "candidate_matches": 0
+    },
+    {
+      "name": "mizchi/markdown",
+      "version": "0.8.4",
+      "zip_sha256": "b6278b6b02d16e00b62590f0511a29900854cdb4552888b11d402ce5e1cc3660",
+      "evidence_file": "research/2026-10-19-final/source-review/mizchi__markdown.zip",
+      "moonbit_files": 135,
+      "production_files": 95,
+      "test_files": 38,
+      "generated_files": 2,
+      "tokens": 110056,
+      "candidate_matches": 0
+    },
+    {
+      "name": "moonbit-community/opentelemetry",
+      "version": "0.1.8",
+      "zip_sha256": "2039d8609065199553e7275deefa8f9380f9db10d2b23e428eea98d299a2e7da",
+      "evidence_file": "research/2026-10-19-final/source-review/moonbit-community__opentelemetry.zip",
+      "moonbit_files": 53,
+      "production_files": 37,
+      "test_files": 16,
+      "generated_files": 0,
+      "tokens": 148696,
+      "candidate_matches": 0
+    },
+    {
+      "name": "noweizongqing/numsolve",
+      "version": "0.5.1",
+      "zip_sha256": "cbe6106c4a9b715235771b245138d224d49da08f65c5ead905605a68aecbeaac",
+      "evidence_file": "research/2026-10-19-final/source-review/noweizongqing__numsolve.zip",
+      "moonbit_files": 20,
+      "production_files": 10,
+      "test_files": 10,
+      "generated_files": 0,
+      "tokens": 16372,
+      "candidate_matches": 0
+    },
+    {
+      "name": "SongYZZZ/moon-liberty",
+      "version": "0.1.0",
+      "zip_sha256": "2d13f1dde12bfe4b2c9ca862bdff0ddc64fed633a0906be997be9169b8ff76d3",
+      "evidence_file": "research/2026-10-19-final/source-review/SongYZZZ__moon-liberty.zip",
+      "moonbit_files": 36,
+      "production_files": 24,
+      "test_files": 12,
+      "generated_files": 0,
+      "tokens": 17162,
+      "candidate_matches": 0
+    },
+    {
+      "name": "vicTop-cw/RX-MBT",
+      "version": "0.3.0",
+      "zip_sha256": "fdbaf5ac2eaec889520b3f7111995a6bea2de91000ebd40bd4836176ddd4be1b",
+      "evidence_file": "research/2026-10-19-final/source-review/vicTop-cw__RX-MBT.zip",
+      "moonbit_files": 42,
+      "production_files": 26,
+      "test_files": 16,
+      "generated_files": 0,
+      "tokens": 62743,
+      "candidate_matches": 0
+    },
+    {
+      "name": "golemcloud/golem_sdk_tools",
+      "version": "0.6.0",
+      "zip_sha256": "f716e13951104fc09dd2520063bea52fdd5ed6a359b96cc32aa6974f40a30188",
+      "evidence_file": "research/2026-10-19-release-review/source-review/golemcloud__golem_sdk_tools.zip",
+      "moonbit_files": 61,
+      "production_files": 37,
+      "test_files": 23,
+      "generated_files": 1,
+      "tokens": 66672,
+      "candidate_matches": 0
+    },
+    {
+      "name": "Han-Wentao/mooniso8583",
+      "version": "0.1.1",
+      "zip_sha256": "fbfcb2f547e23ed099f7d2274f27d6958cd45b4637000be6b2ee45b414d291a7",
+      "evidence_file": "research/2026-10-19-release-review/source-review/Han-Wentao__mooniso8583.zip",
+      "moonbit_files": 42,
+      "production_files": 24,
+      "test_files": 18,
+      "generated_files": 0,
+      "tokens": 29091,
+      "candidate_matches": 0
+    },
+    {
+      "name": "shangwuxi/moonradius",
+      "version": "0.1.1",
+      "zip_sha256": "c5a370c9fc02cfa4fa5ab31480038310a6d33bed2658c4af8181b903b3e901f9",
+      "evidence_file": "research/2026-10-19-release-review/source-review/shangwuxi__moonradius.zip",
+      "moonbit_files": 28,
+      "production_files": 16,
+      "test_files": 12,
+      "generated_files": 0,
+      "tokens": 9611,
+      "candidate_matches": 0
+    },
+    {
+      "name": "mokomoking2501/concord",
+      "version": "0.1.0",
+      "zip_sha256": "2f34245daa3aa52a2de2e1ddacf240062a6e62415d77de15d4f3a72217862084",
+      "evidence_file": "research/2026-10-19-release-review/source-review/mokomoking2501__concord.zip",
+      "moonbit_files": 5,
+      "production_files": 3,
+      "test_files": 2,
+      "generated_files": 0,
+      "tokens": 3840,
+      "candidate_matches": 0
+    },
+    {
+      "name": "btlqql/moon_tracelens",
+      "version": "0.3.0",
+      "zip_sha256": "608bed427eeba3ed84fc44ed05e9e5a3fbf6e2222325be738719e657c16f4d33",
+      "evidence_file": "research/2026-10-19-release-review/source-review/btlqql__moon_tracelens.zip",
+      "moonbit_files": 11,
+      "production_files": 7,
+      "test_files": 4,
+      "generated_files": 0,
+      "tokens": 4667,
+      "candidate_matches": 0
+    },
+    {
+      "name": "xuting22/rinex",
+      "version": "0.1.2",
+      "zip_sha256": "15900e5747f6c0ca4896a39445d8adc7bc13f2133d64d7de5243361cc4f067c9",
+      "evidence_file": "research/2026-10-19-release-review/source-review/xuting22__rinex.zip",
+      "moonbit_files": 9,
+      "production_files": 7,
+      "test_files": 2,
+      "generated_files": 0,
+      "tokens": 5816,
+      "candidate_matches": 0
+    },
+    {
+      "name": "z2823253773-p/moontick",
+      "version": "0.1.1",
+      "zip_sha256": "40393815a8ae5f7f788955451e6a4cf0c907ae7b9f32e0a50c11aa94c7ed2fc0",
+      "evidence_file": "research/2026-10-19-release-review/source-review/z2823253773-p__moontick.zip",
+      "moonbit_files": 9,
+      "production_files": 9,
+      "test_files": 0,
+      "generated_files": 0,
+      "tokens": 6559,
+      "candidate_matches": 0
+    },
+    {
+      "name": "yujieMamba/moonallen",
+      "version": "0.1.0",
+      "zip_sha256": "f4ed726df9e9be5e40a2e790b3bb567f1a3474d5ac03efdbbc54ef88869f7d00",
+      "evidence_file": "research/2026-10-19-release-review/source-review/yujieMamba__moonallen.zip",
+      "moonbit_files": 40,
+      "production_files": 21,
+      "test_files": 19,
+      "generated_files": 0,
+      "tokens": 11399,
+      "candidate_matches": 0
+    },
+    {
+      "name": "yyyt0807/moonbitemporal",
+      "version": "0.2.0",
+      "zip_sha256": "2753e7b89ad16b50b110817b34cf5fc12a85542f7171f646e352bedbb83c8bba",
+      "evidence_file": "research/2026-10-19-release-review/source-review/yyyt0807__moonbitemporal.zip",
+      "moonbit_files": 85,
+      "production_files": 46,
+      "test_files": 39,
+      "generated_files": 0,
+      "tokens": 20686,
+      "candidate_matches": 0
+    },
+    {
+      "name": "oyjh0381/moonipfix",
+      "version": "0.1.0",
+      "zip_sha256": "c9161d72280b6ab941864abaa7135e6c8f53ebfc9079ffb2749a0668138b3ae1",
+      "evidence_file": "research/2026-10-19-release-review/source-review/oyjh0381__moonipfix.zip",
+      "moonbit_files": 28,
+      "production_files": 13,
+      "test_files": 14,
+      "generated_files": 1,
+      "tokens": 12318,
+      "candidate_matches": 0
+    },
+    {
+      "name": "wcj12314/moon-flow-guard",
+      "version": "0.1.0",
+      "zip_sha256": "add300dab5bc2bc015b6e03891532f05a3af1955a0e2565bc4fafb96cb8ee52c",
+      "evidence_file": "research/2026-10-19-release-review/source-review/wcj12314__moon-flow-guard.zip",
+      "moonbit_files": 24,
+      "production_files": 20,
+      "test_files": 4,
+      "generated_files": 0,
+      "tokens": 33525,
+      "candidate_matches": 0
+    },
+    {
+      "name": "chen-657/moon-change-window-auditor",
+      "version": "0.2.0",
+      "zip_sha256": "9cbdd117f52917946a2acf36efe8932e6dbf70309cb1cac9c6ca4614a70e7b4f",
+      "evidence_file": "research/2026-10-19-release-review/source-review/chen-657__moon-change-window-auditor.zip",
+      "moonbit_files": 37,
+      "production_files": 19,
+      "test_files": 18,
+      "generated_files": 0,
+      "tokens": 19835,
+      "candidate_matches": 0
+    },
+    {
+      "name": "Magic486/moonnetlink",
+      "version": "0.2.0",
+      "zip_sha256": "5906581253bb981727fd635a27e5d8a451711699f4e3353668eaf308cc829705",
+      "evidence_file": "research/2026-10-19-release-review/source-review/Magic486__moonnetlink.zip",
+      "moonbit_files": 45,
+      "production_files": 28,
+      "test_files": 17,
+      "generated_files": 0,
+      "tokens": 14338,
+      "candidate_matches": 0
+    },
+    {
+      "name": "LAOBIAO656/moonreplaykit",
+      "version": "0.2.0",
+      "zip_sha256": "709b7ef3d3fe5257f4f04f15c8465fe026e6c6e067f2824ed01c815c41f04afc",
+      "evidence_file": "research/2026-10-19-release-review/source-review/LAOBIAO656__moonreplaykit.zip",
+      "moonbit_files": 22,
+      "production_files": 13,
+      "test_files": 9,
+      "generated_files": 0,
+      "tokens": 6322,
+      "candidate_matches": 0
+    },
+    {
+      "name": "zhangbowen2006/agentcanary",
+      "version": "0.1.1",
+      "zip_sha256": "e2ca34d7456a5052adc9e73dd66e2237078a23d52ceef4e57429be42d35d389c",
+      "evidence_file": "research/2026-10-19-release-review/source-review/zhangbowen2006__agentcanary.zip",
+      "moonbit_files": 23,
+      "production_files": 14,
+      "test_files": 9,
+      "generated_files": 0,
+      "tokens": 8120,
+      "candidate_matches": 0
+    },
+    {
+      "name": "DDD12345-D/moon-snmp",
+      "version": "0.3.0",
+      "zip_sha256": "29220149360062499e5cd066c84dd959147d1c31cf641c10ab5bfde30fbf211e",
+      "evidence_file": "research/2026-10-19-release-review/source-review/DDD12345-D__moon-snmp.zip",
+      "moonbit_files": 74,
+      "production_files": 47,
+      "test_files": 27,
+      "generated_files": 0,
+      "tokens": 35376,
+      "candidate_matches": 0
+    },
+    {
+      "name": "cstoooo/mooniso_lite",
+      "version": "0.4.2",
+      "zip_sha256": "287b92336a73238298eec8aed355a5843b4bd02aac66a1573bdecb66a193ef8d",
+      "evidence_file": "research/2026-10-19-release-review/source-review/cstoooo__mooniso_lite.zip",
+      "moonbit_files": 25,
+      "production_files": 10,
+      "test_files": 15,
+      "generated_files": 0,
+      "tokens": 11451,
+      "candidate_matches": 0
+    },
+    {
+      "name": "any07557-wq/moonvcs",
+      "version": "0.1.0",
+      "zip_sha256": "5006035f75de4f963213a92257bafa3a5d2f751bb117c803c49d9c09f21867d3",
+      "evidence_file": "research/2026-10-19-release-review/source-review/any07557-wq__moonvcs.zip",
+      "moonbit_files": 27,
+      "production_files": 15,
+      "test_files": 12,
+      "generated_files": 0,
+      "tokens": 29605,
+      "candidate_matches": 0
+    },
+    {
+      "name": "wiretokenbotca4491/wire_token",
+      "version": "0.1.0",
+      "zip_sha256": "e8fa268ebc0bcde0bbe09acf8bb3f4d6ef7b496222975e267ac644d9eae3b358",
+      "evidence_file": "research/2026-10-19-release-review/source-review/wiretokenbotca4491__wire_token.zip",
+      "moonbit_files": 2,
+      "production_files": 1,
+      "test_files": 1,
+      "generated_files": 0,
+      "tokens": 120,
+      "candidate_matches": 0
+    }
+  ],
+  "summary": {
+    "packages": 56,
+    "unresolved_packages": 0,
+    "expected_packages": 56,
+    "local_files": 15,
+    "local_tokens": 22458,
+    "external_production_files": 2056,
+    "external_tokens": 2677327,
+    "candidate_matches": 0,
+    "excluded_generated_files": 17,
+    "excluded_test_files": 1430
+  },
+  "candidate_matches": [],
+  "explicit_exclusions": [
+    {
+      "package": "moonbitlang/core",
+      "path": "internal/strconv/strconv_eisel_lemire_table.mbt",
+      "reason": "explicit generation marker: do not edit"
+    },
+    {
+      "package": "BigOrangeQWQ/wit-wasi-clocks",
+      "path": "src/monotonicClock/ffi.mbt",
+      "reason": "explicit generation marker: do not edit"
+    },
+    {
+      "package": "BigOrangeQWQ/wit-wasi-clocks",
+      "path": "src/monotonicClock/top.mbt",
+      "reason": "explicit generation marker: do not edit"
+    },
+    {
+      "package": "BigOrangeQWQ/wit-wasi-clocks",
+      "path": "src/wallClock/ffi.mbt",
+      "reason": "explicit generation marker: do not edit"
+    },
+    {
+      "package": "BigOrangeQWQ/wit-wasi-clocks",
+      "path": "src/wallClock/top.mbt",
+      "reason": "explicit generation marker: do not edit"
+    },
+    {
+      "package": "BigOrangeQWQ/wit-wasi-io",
+      "path": "src/error/ffi.mbt",
+      "reason": "explicit generation marker: do not edit"
+    },
+    {
+      "package": "BigOrangeQWQ/wit-wasi-io",
+      "path": "src/error/top.mbt",
+      "reason": "explicit generation marker: do not edit"
+    },
+    {
+      "package": "BigOrangeQWQ/wit-wasi-io",
+      "path": "src/poll/ffi.mbt",
+      "reason": "explicit generation marker: do not edit"
+    },
+    {
+      "package": "BigOrangeQWQ/wit-wasi-io",
+      "path": "src/poll/top.mbt",
+      "reason": "explicit generation marker: do not edit"
+    },
+    {
+      "package": "BigOrangeQWQ/wit-wasi-io",
+      "path": "src/streams/ffi.mbt",
+      "reason": "explicit generation marker: do not edit"
+    },
+    {
+      "package": "BigOrangeQWQ/wit-wasi-io",
+      "path": "src/streams/top.mbt",
+      "reason": "explicit generation marker: do not edit"
+    },
+    {
+      "package": "forey217/moonged",
+      "path": "schema_data.mbt",
+      "reason": "explicit generation marker: do not edit"
+    },
+    {
+      "package": "mizchi/css",
+      "path": "src/wpt/harness.mbt",
+      "reason": "explicit generation marker: auto-generated"
+    },
+    {
+      "package": "mizchi/markdown",
+      "path": "component/impl/bindings.mbt",
+      "reason": "explicit generation marker: do not edit"
+    },
+    {
+      "package": "mizchi/markdown",
+      "path": "src/entity_data.mbt",
+      "reason": "explicit generation marker: do not edit"
+    },
+    {
+      "package": "golemcloud/golem_sdk_tools",
+      "path": "cmd/main.mbt",
+      "reason": "explicit generation marker: do not edit"
+    },
+    {
+      "package": "oyjh0381/moonipfix",
+      "path": "registry/iana_snapshot.mbt",
+      "reason": "explicit generation marker: do not edit"
+    }
+  ],
+  "unresolved_packages": [],
+  "limitations": [
+    "This saved source collection is not the full Mooncakes ecosystem.",
+    "Semantic equivalence, reordered or substantially edited code, subthreshold snippets, comments, other languages and unpublished/history versions are not proven absent.",
+    "A candidate is not plagiarism; attribution, standard algorithms and source history require human review.",
+    "No candidate does not establish absolute source originality or contest eligibility."
+  ]
+}
