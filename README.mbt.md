@@ -19,6 +19,8 @@
 - GitHub：<https://github.com/001-Elsa/ptp-audit-mbt>。
 - GitLink：<https://gitlink.org.cn/Hzhhhh/ptp-audit-mbt>。
 
+Mooncakes 包用于库消费和所附自构造测试，省略体积较大的 `research/` 审查证据。完整源码、独立参考生成、全量验证和参赛归档请使用上述 Git 仓库；其中保留全部原始证据。registry 包内的代码、接口、测试、文档及 PDF 与完整源码逐文件保持相同字节。
+
 在 MoonBit 消费项目中添加已发布模块：
 
 ```sh

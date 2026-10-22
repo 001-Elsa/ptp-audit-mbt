@@ -30,6 +30,8 @@
 4. **文档同步**：`verify_delivery.py` 核对版本、接口/命令、输入输出 schema、实测行数、fixture/测试数量、Markdown 本地链接、许可证和撤回样本；生成的交付快照记录文档与代码 hash。代码、测试或文档变化后须重新核对并打包，不能沿用旧成功清单。
 5. **源码冻结**：交付 ZIP 按当前已保存文件制作，包含本期新增 metrology/commissioning 实现及其文档/测试，不只取旧 Git HEAD；本地提交与更新日志用于记录实质贡献，不添加空提交凑次数。
 
+registry 包通过 `scripts/prepare_registry.py` 从已验证源码 ZIP 逐字节派生，仅省略 `research/`，用于控制包体；完整审查证据由源码 ZIP 和两站仓库承载，完整验收须在这些源码入口执行。registry 下载后的文件清单与 staging 清单逐项核对。
+
 ## 本期贡献怎样复核
 
 `CHANGELOG.md` 顶部区分当前增强和原 0.3.0 基线。可从 `metrology/` 的逐帧 correction 贡献与条件区间，追到 `commissioning/` 的有效选主绑定、相邻身份变化及全 campaign 稳定区间冲突检查。新增 `fixtures/commissioning/manifest.json` 记录 53 个案例；`scripts/verify_commissioning.py` 以 Python struct/Fraction 独立读取报文字节与预期数值。新增能力是具体 PTP 证据链工程，不将通用区间算法、时序窗口或报告格式宣称独有。

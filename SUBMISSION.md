@@ -18,4 +18,6 @@ python3 scripts/validate_local.py
 
 运行前准备 MoonBit（已验证 moonc v0.10.15+943464bfa）、Node.js 22+、Python 3.9+ 及 C 编译器。所有演示均为自构造数据；不代表硬件精度实测或完整 IEEE 一致性认证。源码内 `docs/submission-ready.md` 说明支持范围、来源及复现方式。
 
+registry 发布包省略 `research/` 以满足上传大小限制；完整研究证据包含在此源码 ZIP 和两站 Git 仓库中，其余相同文件逐字节一致。完整验收请在解压后的源码 ZIP 或 Git checkout 中执行。
+
 个人身份和联系方式按用户要求不写入本 PDF，在官方报名表中另行提供。源码平台使用 GitHub `001-Elsa/ptp-audit-mbt` 与 GitLink `Hzhhhh/ptp-audit-mbt`；Mooncakes 模块为 `001-Elsa/ptp-audit@0.3.0`。平台实际结果见仓库中的 `research/publication/current.json`，正式报名由本人另行办理，材料包的存在不表示赛事已受理。官网当前十月报名与验收截止为 2026-10-31，最终执行以官方通知和章程为准。
