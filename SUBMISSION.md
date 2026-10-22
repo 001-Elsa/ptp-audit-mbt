@@ -16,7 +16,7 @@ bin/ptp-audit.mjs commission fixtures/commissioning/grandmaster-switch.json --js
 python3 scripts/validate_local.py
 ```
 
-运行前准备 MoonBit（已验证 moonc v0.10.15+943464bfa）、Node.js 22+、Python 3.9+ 及 C 编译器。所有演示均为自构造数据；不代表硬件精度实测或完整 IEEE 一致性认证。源码内 `docs/submission-ready.md` 说明支持范围、来源及复现方式。
+运行前准备 MoonBit（已验证 moonc v0.10.15+943464bfa，官方 Core eb321a18f7a33d37114546682a8d1cd6658afab8）、Node.js 22+、Python 3.9+ 及 C 编译器。所有演示均为自构造数据；不代表硬件精度实测或完整 IEEE 一致性认证。源码内 `docs/submission-ready.md` 说明支持范围、来源及复现方式。
 
 registry 发布包省略 `research/` 以满足上传大小限制；完整研究证据包含在此源码 ZIP 和两站 Git 仓库中，其余相同文件逐字节一致。完整验收请在解压后的源码 ZIP 或 Git checkout 中执行。
 

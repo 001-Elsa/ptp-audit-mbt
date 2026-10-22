@@ -19,3 +19,7 @@ The external Wireshark/TShark 4.6.9 installation used by `scripts/verify_wire_re
 Official IEEE interpretations, the IEC authorized preview and IEEE802 contributions are referenced by URL, page and SHA-256 in `research/wire-reference/sources/README.md`. Only reviewed facts and limitations are recorded; the copyrighted full documents are not bundled or relicensed under Apache-2.0. These materials and the LinuxPTP reference do not constitute a complete normative review or conformity certificate.
 
 The official IEEE802-hosted 2008 Garner tutorial is registered in `research/normative-completion/source-access.json`. It supplies a separately reviewed explanation of timestamp widths, scaled correction, quality precedence and dataset comparison flowcharts. It is a tutorial, not the complete IEEE 1588 normative standard. The PDF cache remains outside this project; tests use independently written inputs and assertions rather than copied tutorial graphics or text.
+
+## Tested standard library revision
+
+The verified official MoonBit Core checkout is `eb321a18f7a33d37114546682a8d1cd6658afab8` (2026-10-16), without local modifications, from https://github.com/moonbitlang/core. Its strict JSON duplicate-key option is required. CI checks out and bundles this exact revision separately from the compiler archive because the historical compiler bundle contains an older Core API. Core remains a toolchain component and is not vendored into this project.

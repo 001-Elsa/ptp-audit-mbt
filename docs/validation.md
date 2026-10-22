@@ -48,6 +48,8 @@ python3 scripts/package_local.py
 
 ## 工具链
 
+官方 Core 固定为 `eb321a18f7a33d37114546682a8d1cd6658afab8`（2026-10-16，工作树干净），编译器为 `0.10.15+943464bfa`。首轮 Ubuntu CI 证明同编号历史安装包附带 Core 缺少 `reject_duplicate_keys`，现由 workflow 单独检出该官方 Core 并重新 bundle 所有后端，保持与本机实际标准库一致。原始失败作为修复依据保留，不将失败的 run 记为通过。
+
 本机 MoonBit 工具链版本、macOS SDK 探针与 runtime 来源记录在 `research/toolchain-repair/manifest.json`。此前缺失的 native runtime C 源文件已从官方 Apple Silicon bundle 恢复；下载包 SHA-256 为 `563109ff02c6dc77fdc74acd0be423964ef678dfea4d9b948c19d245dc8b0e83`，只补齐 `~/.moon/lib`、`~/.moon/include` 和 `bin/internal` 中缺失文件，不替换现有编译器或项目源码。当前 `scripts/moon-local test --target native --deny-warn` 已在本轮验证中 455/455 通过，`moon check --target all --deny-warn` 也已通过。本轮工具链和门禁结果须以本轮日志为准；历史 manifest 只描述生成当时状态。
 
 独立核心复审发现的空白事件时钟域、空白 BMCA 有效期来源、未使用假设的类型检查及重复交换声明四项问题均已修复，原始反例与修复后 CLI 复验保存在 `research/core-review/`；这五个新增 fixture 已纳入 116 个固定案例。重复/冲突的请求或响应声明通过 `CLAIM.AMBIGUOUS` 阻止产生重复测量。

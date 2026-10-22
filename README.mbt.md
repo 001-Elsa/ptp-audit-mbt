@@ -38,11 +38,15 @@ import {
 
 `@ptp.audit_json(input)` 和 `@ptp.commission_json(input)` 接收 JSON 字符串并返回报告 JSON 字符串；更细的 typed API 分布在各子包。仓库中的 CLI 可直接运行下面的自构造案例。源码发布、registry 版本可下载和远端 CI 结果分别验证，具体流程见[发布与复现说明](docs/release-runbook.md)。
 
+## 标准库版本要求
+
+本项目使用官方 Core JSON 的 `reject_duplicate_keys` 严格解析参数。已验证组合为 MoonBit `0.10.15+943464bfa` 加官方 [Core 提交 eb321a18](https://github.com/moonbitlang/core/tree/eb321a18f7a33d37114546682a8d1cd6658afab8)。仅安装同编号编译器的历史 bundle，其附带 Core 可能较旧，不能保证提供该参数。CI 在安装编译器后单独检出上述官方 Core、重新 bundle 全后端；复现时请使用这个组合，或提供同等 API 的更新官方工具链。没有修改标准库源码来让本机测试通过。具体可执行步骤见[CI 配置](.github/workflows/test.yml)。
+
 ## 运行完整案例
 
 需要 MoonBit CLI（本地验证版本 `moonc v0.10.15+943464bfa`）、Node.js 22+ 和 Python 3.9+。
 
-先安装 [MoonBit 工具链](https://docs.moonbitlang.com/en/latest/tutorial/tour.html)、Node.js 并将二者加入 PATH；独立参考向量和 native 后端另需系统 C 编译器。CI 固定 MoonBit `0.10.15+943464bfa`、Node.js 24 和 Python 3.12，产品库不依赖 Python 或外部 TShark。
+先安装 [MoonBit 工具链](https://docs.moonbitlang.com/en/latest/tutorial/tour.html)、Node.js 并将二者加入 PATH；独立参考向量和 native 后端另需系统 C 编译器。CI 固定 MoonBit `0.10.15+943464bfa` 与官方 Core `eb321a18f7a33d37114546682a8d1cd6658afab8`、Node.js 24 和 Python 3.12，产品库不依赖 Python 或外部 TShark。
 
 ```sh
 ./bin/ptp-audit.mjs check fixtures/complete-audit.json --json

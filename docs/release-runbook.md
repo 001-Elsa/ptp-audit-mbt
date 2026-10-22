@@ -2,6 +2,8 @@
 
 更新：2026-10-22。用户已授权向指定 GitHub、GitLink 仓库按内容细分提交、分多批同步，并发布 Mooncakes。模块为 `001-Elsa/ptp-audit@0.3.0`，源码仓库名为 `ptp-audit-mbt`。个人信息和正式报名由本人在官方流程中提供。
 
+复现工具链须同时满足 README 中的编译器与官方 Core 版本要求，不能只固定编译器而沿用不同的标准库。CI 在 Ubuntu 上单独检出并 bundle Core `eb321a18f7a33d37114546682a8d1cd6658afab8`。
+
 ## 验收与材料冻结
 
 ```sh
@@ -29,9 +31,9 @@ GitHub 使用 `main`，GitLink 保持原默认分支 `master`，二者最终 ref
 
 ## Mooncakes 发布与消费验证
 
-先执行 `moon whoami`，确认登录身份有 `001-Elsa` 命名空间权限；确认 `0.3.0` 未占用，完成最终归档检查，再执行 `python3 scripts/prepare_registry.py`。它从已验证的完整源码 ZIP 逐字节生成 `_build/registry-stage`，仅省略 `research/`，保留所有库代码、接口、测试、样例、文档和 PDF。完整审查证据继续在两个 Git 仓库和参赛源码 ZIP 中交付。此划分用于避免 registry 对约 41 MB 完整证据包返回 HTTP 413。
+先执行 `moon whoami`，确认登录身份有 `001-Elsa` 命名空间权限；确认 `0.3.0` 未占用，完成最终归档检查，再执行 `python3 scripts/prepare_registry.py`。它从已验证的完整源码 ZIP 逐字节生成系统临时目录中的独立 staging（路径写入 `_build/publish/registry-staging-0.3.0.json`），仅省略 `research/`，保留所有库代码、接口、测试、样例、文档和 PDF。完整审查证据继续在两个 Git 仓库和参赛源码 ZIP 中交付。此划分用于避免 registry 对约 41 MB 完整证据包返回 HTTP 413。
 
-在 `_build/registry-stage` 中执行 `scripts/moon-local package`、`scripts/moon-local check --target all --deny-warn`，确认精简 ZIP 小于上传限制，再执行 `scripts/moon-local publish`。不要依赖当前工具链的通用 `--dry-run` 选项作为不上传保证。账号凭据只存本机凭据位置，不能进入源码、日志或提交。
+staging 不放在受上层 `.gitignore` 排除的 `_build/` 内；生成器会实际打包，并检查文件集合、逐项哈希及体积，防止生成空 ZIP。在生成器输出的 staging 路径中执行 `scripts/moon-local package`、`scripts/moon-local check --target all --deny-warn`，确认精简 ZIP 小于上传限制，再执行 `scripts/moon-local publish`。不要依赖当前工具链的通用 `--dry-run` 选项作为不上传保证。账号凭据只存本机凭据位置，不能进入源码、日志或提交。
 
 发布后读取官方 registry 元数据及 `https://download.mooncakes.io/user/001-Elsa/ptp-audit/0.3.0.zip`，核对名称、版本、repository、许可证，以及 ZIP 内全部文件与 `registry-staging-0.3.0.json` 中逐字节绑定的内容哈希；检查撤回抓包和 Git 对象未被带入。再在独立 MoonBit 消费项目执行 `moon add 001-Elsa/ptp-audit@0.3.0`，调用两个公开 JSON 入口并运行测试，证明消费端实际可下载、可编译和调用。
 

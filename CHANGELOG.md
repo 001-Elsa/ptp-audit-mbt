@@ -6,6 +6,8 @@
 - Prepared a clean public history on the existing GitLink initialization commit, grouped by real engineering content and pushed in multiple batches. Older development objects containing a withdrawn capture are excluded; the complete local development history is preserved separately.
 - Synchronized current documentation with the newly authorized three-platform release workflow. Remote refs, registry package content and Actions results are verified separately in `research/publication/current.json`; official contest registration is still handled by the participant.
 - Added byte-bound compact registry staging that omits research evidence after the registry rejected the full 41 MB archive with HTTP 413. Both Git repositories and the full source ZIP retain that evidence; the product, tests, docs and proposal bytes remain identical.
+- Verify actual registry ZIP contents and size in a temporary directory outside ancestor ignore rules; CI now runs this archive gate after the full source package gate.
+- Pin the official Core revision eb321a18f7a33d37114546682a8d1cd6658afab8 in CI and document the compiler/Core pairing after the first Ubuntu run exposed an older bundled JSON API. The official local Core checkout is clean; no standard library patch is required.
 - Preserve the user-provided Markdown title link as a clickable PDF link, without displaying Markdown syntax in the proposal.
 
 ## 2026-10-22 local submission preparation on 0.3.0

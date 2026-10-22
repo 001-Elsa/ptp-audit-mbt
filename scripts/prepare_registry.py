@@ -10,15 +10,15 @@ from __future__ import annotations
 import hashlib
 import json
 from pathlib import Path
-import shutil
 import stat
+import subprocess
+import tempfile
 import zipfile
 
 from package_local import safe_name
 
 
 ROOT = Path(__file__).resolve().parents[1]
-STAGE = ROOT / "_build/registry-stage"
 
 
 def sha(data: bytes) -> str:
@@ -29,9 +29,9 @@ def main() -> int:
     report = json.loads((ROOT / "_build/publish/package-audit-0.3.0.json").read_text())
     archive = ROOT / "_build/publish" / report["archive"]
     assert report["result"] == "pass" and sha(archive.read_bytes()) == report["archive_sha256"], "Rebuild and verify the full source archive first"
-    if STAGE.exists():
-        shutil.rmtree(STAGE)
-    STAGE.mkdir(parents=True)
+    # Ancestor .gitignore rules also affect `moon package`. A stage below this
+    # repository's ignored _build/ would otherwise silently produce an empty ZIP.
+    stage = Path(tempfile.mkdtemp(prefix="ptp-audit-registry-0.3.0-"))
     entries = {}
     omitted = []
     with zipfile.ZipFile(archive) as source:
@@ -45,21 +45,29 @@ def main() -> int:
             if name.startswith("research/"):
                 omitted.append(name)
                 continue
-            target = STAGE / name
+            target = stage / name
             target.parent.mkdir(parents=True, exist_ok=True)
             target.write_bytes(data)
             mode = info.external_attr >> 16
             if mode & stat.S_IXUSR:
                 target.chmod(0o755)
             entries[name] = sha(data)
-    assert all((STAGE / name).is_file() for name in ("moon.mod", "moon.pkg", "facade.mbt", "README.md", "LICENSE", "THIRD_PARTY.md", "scripts/moon-local"))
+    assert all((stage / name).is_file() for name in ("moon.mod", "moon.pkg", "facade.mbt", "README.md", "LICENSE", "THIRD_PARTY.md", "scripts/moon-local"))
+    subprocess.run([str(stage / "scripts/moon-local"), "package"], cwd=stage, check=True)
+    registry = stage / "_build/publish/001-Elsa-ptp-audit-0.3.0.zip"
+    with zipfile.ZipFile(registry) as packaged:
+        assert packaged.testzip() is None, "Registry ZIP CRC failure"
+        assert set(packaged.namelist()) == set(entries), "Registry packaging omitted or added files"
+        assert all(sha(packaged.read(name)) == digest for name, digest in entries.items()), "Registry bytes differ from the verified source"
+    assert registry.stat().st_size < 10 * 1024 * 1024, "Registry archive exceeds the compact-package budget"
     record = {"schema": "ptp-registry-staging/v1", "module": "001-Elsa/ptp-audit", "version": "0.3.0",
-              "full_source_archive_sha256": report["archive_sha256"], "stage": str(STAGE),
+              "full_source_archive_sha256": report["archive_sha256"], "stage": str(stage),
+              "registry_archive_sha256": sha(registry.read_bytes()), "registry_archive_bytes": registry.stat().st_size,
               "entry_sha256": entries, "omitted_research_files": len(omitted),
               "omission_policy": "research/ only; complete evidence remains in both Git repositories and the full submission source ZIP",
               "all_included_bytes_match_verified_source": True}
     (ROOT / "_build/publish/registry-staging-0.3.0.json").write_text(json.dumps(record, ensure_ascii=False, indent=2) + "\n")
-    print(json.dumps({"result": "pass", "stage": str(STAGE), "files": len(entries), "omitted_research_files": len(omitted)}))
+    print(json.dumps({"result": "pass", "stage": str(stage), "files": len(entries), "registry_archive_bytes": registry.stat().st_size, "omitted_research_files": len(omitted)}))
     return 0
 
 
