@@ -1,0 +1,625 @@
+{
+  "schema": "ptp-operational-fixtures/v1",
+  "generator": "scripts/build_commissioning_fixtures.py",
+  "provenance": "Synthetic network-order bytes constructed by Python struct; no physical capture or hardware accuracy claim.",
+  "cases": [
+    {
+      "name": "grandmaster-switch",
+      "path": "fixtures/commissioning/grandmaster-switch.json",
+      "command": "commission",
+      "status": "Pass",
+      "rule": "COMMISSION.TRANSITION.OBSERVED",
+      "sha256": "e84a89ddf8f5162a8b81e432cc1e95bb026cf90962fd5df36a63bc51e6efbcbf",
+      "provenance": "Synthetic network-order bytes constructed by Python struct; no physical capture or hardware accuracy claim.",
+      "expect": {
+        "transition": "upstream_port_and_grandmaster_changed"
+      }
+    },
+    {
+      "name": "old-master-after-switch",
+      "path": "fixtures/commissioning/old-master-after-switch.json",
+      "command": "commission",
+      "status": "Violation",
+      "rule": "COMMISSION.BINDING.IDENTITY",
+      "sha256": "d5f34b0b2a711d7119051b454cc27b0c45f242b1d458004809c7f60f4d1622ba",
+      "provenance": "Synthetic network-order bytes constructed by Python struct; no physical capture or hardware accuracy claim.",
+      "expect": {
+        "stale_step": "after-change"
+      }
+    },
+    {
+      "name": "same-grandmaster-sender-switch",
+      "path": "fixtures/commissioning/same-grandmaster-sender-switch.json",
+      "command": "commission",
+      "status": "Pass",
+      "rule": "COMMISSION.TRANSITION.OBSERVED",
+      "sha256": "6c2cf8c917c9d214d72ac1d31dbbd61942b28bec85581be9ef43a9a1afc4d086",
+      "provenance": "Synthetic network-order bytes constructed by Python struct; no physical capture or hardware accuracy claim.",
+      "expect": {
+        "transition": "upstream_port_changed_same_grandmaster"
+      }
+    },
+    {
+      "name": "stable-master",
+      "path": "fixtures/commissioning/stable-master.json",
+      "command": "commission",
+      "status": "Pass",
+      "rule": "COMMISSION.TRANSITION.OBSERVED",
+      "sha256": "cb388967afd3922ef47b6df3e5b38e1684ba0005ba9a29639497f78d990bcd5b",
+      "provenance": "Synthetic network-order bytes constructed by Python struct; no physical capture or hardware accuracy claim.",
+      "expect": {
+        "transition": "unchanged"
+      }
+    },
+    {
+      "name": "missing-clock-continuity",
+      "path": "fixtures/commissioning/missing-clock-continuity.json",
+      "command": "commission",
+      "status": "InsufficientEvidence",
+      "rule": "COMMISSION.TRANSITION.EVIDENCE",
+      "sha256": "10b47cb406964fcd730ba4e6af8d9e1139c126eda5ea54d1dd28f7533c0c8be8",
+      "provenance": "Synthetic network-order bytes constructed by Python struct; no physical capture or hardware accuracy claim.",
+      "expect": {}
+    },
+    {
+      "name": "unconfirmed-clock-continuity",
+      "path": "fixtures/commissioning/unconfirmed-clock-continuity.json",
+      "command": "commission",
+      "status": "InsufficientEvidence",
+      "rule": "COMMISSION.TRANSITION.EVIDENCE",
+      "sha256": "6c67d48c800487487d9a9ad64e5ab2ad9b834cfc6bd728aea9b9e2516c642c80",
+      "provenance": "Synthetic network-order bytes constructed by Python struct; no physical capture or hardware accuracy claim.",
+      "expect": {}
+    },
+    {
+      "name": "missing-selection-stability",
+      "path": "fixtures/commissioning/missing-selection-stability.json",
+      "command": "commission",
+      "status": "InsufficientEvidence",
+      "rule": "COMMISSION.STABILITY.EVIDENCE",
+      "sha256": "47fbe54e1c0613fa26619bd740c7d15b8faae36189a868ce4bdfd7e3bb476e0c",
+      "provenance": "Synthetic network-order bytes constructed by Python struct; no physical capture or hardware accuracy claim.",
+      "expect": {}
+    },
+    {
+      "name": "unconfirmed-selection-stability",
+      "path": "fixtures/commissioning/unconfirmed-selection-stability.json",
+      "command": "commission",
+      "status": "InsufficientEvidence",
+      "rule": "COMMISSION.STABILITY.EVIDENCE",
+      "sha256": "09aef083383c836d4c0c29aa9e4d82561727a82f856ae8e96b837ee7c6602de1",
+      "provenance": "Synthetic network-order bytes constructed by Python struct; no physical capture or hardware accuracy claim.",
+      "expect": {}
+    },
+    {
+      "name": "selection-stability-ends-early",
+      "path": "fixtures/commissioning/selection-stability-ends-early.json",
+      "command": "commission",
+      "status": "Violation",
+      "rule": "COMMISSION.BINDING.VALIDITY",
+      "sha256": "1eca31b74bef5bd17097e36d1717a11e639f6eea5754f747e37ebb11ba57dd16",
+      "provenance": "Synthetic network-order bytes constructed by Python struct; no physical capture or hardware accuracy claim.",
+      "expect": {}
+    },
+    {
+      "name": "exchange-before-decision",
+      "path": "fixtures/commissioning/exchange-before-decision.json",
+      "command": "commission",
+      "status": "Violation",
+      "rule": "COMMISSION.BINDING.VALIDITY",
+      "sha256": "3c730102f288b87f89cb018e97b90ca4ec8a958c73e4de88cfdb130436c87af2",
+      "provenance": "Synthetic network-order bytes constructed by Python struct; no physical capture or hardware accuracy claim.",
+      "expect": {}
+    },
+    {
+      "name": "decision-outside-window",
+      "path": "fixtures/commissioning/decision-outside-window.json",
+      "command": "commission",
+      "status": "InsufficientEvidence",
+      "rule": "COMMISSION.CASE",
+      "sha256": "fa4fbffe434accbe442ca62b38c884e42f65ed25045859a797f45a9eb836751a",
+      "provenance": "Synthetic network-order bytes constructed by Python struct; no physical capture or hardware accuracy claim.",
+      "expect": {}
+    },
+    {
+      "name": "incomplete-candidates",
+      "path": "fixtures/commissioning/incomplete-candidates.json",
+      "command": "commission",
+      "status": "InsufficientEvidence",
+      "rule": "COMMISSION.CASE",
+      "sha256": "5af71e6cc5bc51a577adad33698806eb259401ea07f185bb10cda5c545647a89",
+      "provenance": "Synthetic network-order bytes constructed by Python struct; no physical capture or hardware accuracy claim.",
+      "expect": {}
+    },
+    {
+      "name": "duplicate-step-id",
+      "path": "fixtures/commissioning/duplicate-step-id.json",
+      "command": "commission",
+      "status": "Violation",
+      "rule": "COMMISSION.INPUT.SCHEMA",
+      "sha256": "b4aec48e509d91f402473717b0a61314aec1b9de5489929523f5e2b91d054e60",
+      "provenance": "Synthetic network-order bytes constructed by Python struct; no physical capture or hardware accuracy claim.",
+      "expect": {}
+    },
+    {
+      "name": "unknown-input-field",
+      "path": "fixtures/commissioning/unknown-input-field.json",
+      "command": "commission",
+      "status": "Violation",
+      "rule": "COMMISSION.INPUT.SCHEMA",
+      "sha256": "0d1cdbc6d7705f56c3a474a66e8e1a8667d9428e9fb7e711e32ae0fd91bffeac",
+      "provenance": "Synthetic network-order bytes constructed by Python struct; no physical capture or hardware accuracy claim.",
+      "expect": {}
+    },
+    {
+      "name": "reversed-step-order",
+      "path": "fixtures/commissioning/reversed-step-order.json",
+      "command": "commission",
+      "status": "InsufficientEvidence",
+      "rule": "COMMISSION.TRANSITION.EVIDENCE",
+      "sha256": "9819fc67c8093ecc0aed6efaf06ec89e0620fc9090c36cb7e98473fd8bceeb26",
+      "provenance": "Synthetic network-order bytes constructed by Python struct; no physical capture or hardware accuracy claim.",
+      "expect": {}
+    },
+    {
+      "name": "mixed-event-clock",
+      "path": "fixtures/commissioning/mixed-event-clock.json",
+      "command": "commission",
+      "status": "InsufficientEvidence",
+      "rule": "COMMISSION.CASE",
+      "sha256": "75754c0ec47889e6cd2a971bba8ca482d3819ef2a2567aea1f643a8ccfd4ce08",
+      "provenance": "Synthetic network-order bytes constructed by Python struct; no physical capture or hardware accuracy claim.",
+      "expect": {}
+    },
+    {
+      "name": "missing-bmca",
+      "path": "fixtures/commissioning/missing-bmca.json",
+      "command": "commission",
+      "status": "InsufficientEvidence",
+      "rule": "COMMISSION.SELECTION.EVIDENCE",
+      "sha256": "fff3168f3879488a1e2907f06b90486b35ff3cecc873a13b9c2324515480bd89",
+      "provenance": "Synthetic network-order bytes constructed by Python struct; no physical capture or hardware accuracy claim.",
+      "expect": {}
+    },
+    {
+      "name": "empty-steps",
+      "path": "fixtures/commissioning/empty-steps.json",
+      "command": "commission",
+      "status": "Violation",
+      "rule": "COMMISSION.INPUT.SCHEMA",
+      "sha256": "b92e93f59893a2cca90a80b8c1b952712ad5382ae8f4f43e8d1611cc4144be98",
+      "provenance": "Synthetic network-order bytes constructed by Python struct; no physical capture or hardware accuracy claim.",
+      "expect": {}
+    },
+    {
+      "name": "too-many-steps",
+      "path": "fixtures/commissioning/too-many-steps.json",
+      "command": "commission",
+      "status": "Unsupported",
+      "rule": "COMMISSION.INPUT.RESOURCE",
+      "sha256": "412f0caf2717e72599911c61202c6ce2500cb2027df041b9b148c721ce47cf45",
+      "provenance": "Synthetic network-order bytes constructed by Python struct; no physical capture or hardware accuracy claim.",
+      "expect": {}
+    },
+    {
+      "name": "stability-outside-window",
+      "path": "fixtures/commissioning/stability-outside-window.json",
+      "command": "commission",
+      "status": "Violation",
+      "rule": "COMMISSION.STABILITY.WINDOW",
+      "sha256": "4898c24fba115af267cd5711d4ede698971d335c81677632161f725f9b138a70",
+      "provenance": "Synthetic network-order bytes constructed by Python struct; no physical capture or hardware accuracy claim.",
+      "expect": {}
+    },
+    {
+      "name": "different-observer-port",
+      "path": "fixtures/commissioning/different-observer-port.json",
+      "command": "commission",
+      "status": "Violation",
+      "rule": "COMMISSION.BINDING.IDENTITY",
+      "sha256": "aee7bf5b39a8756c3f30cdbc17a599d06aab4c72170081e41404200684554a27",
+      "provenance": "Synthetic network-order bytes constructed by Python struct; no physical capture or hardware accuracy claim.",
+      "expect": {}
+    },
+    {
+      "name": "isolated-exchange-context",
+      "path": "fixtures/commissioning/isolated-exchange-context.json",
+      "command": "commission",
+      "status": "Violation",
+      "rule": "COMMISSION.BINDING.CONTEXT",
+      "sha256": "eb56861cafc1a30a3f14c968b7124c6c6a941007c9958d299528ddfd80f42ce8",
+      "provenance": "Synthetic network-order bytes constructed by Python struct; no physical capture or hardware accuracy claim.",
+      "expect": {}
+    },
+    {
+      "name": "no-accepted-quartet",
+      "path": "fixtures/commissioning/no-accepted-quartet.json",
+      "command": "commission",
+      "status": "InsufficientEvidence",
+      "rule": "COMMISSION.BINDING.EVIDENCE",
+      "sha256": "29716edaf85f96d39547dcad221aaa9792e62d30277f8ccfd42079f3735dd21a",
+      "provenance": "Synthetic network-order bytes constructed by Python struct; no physical capture or hardware accuracy claim.",
+      "expect": {}
+    },
+    {
+      "name": "same-sender-new-grandmaster",
+      "path": "fixtures/commissioning/same-sender-new-grandmaster.json",
+      "command": "commission",
+      "status": "Pass",
+      "rule": "COMMISSION.TRANSITION.OBSERVED",
+      "sha256": "913205469146410d0e4c3aea2a3bb924180ea6c17fe98ab5cd24ba1744b1d0ba",
+      "provenance": "Synthetic network-order bytes constructed by Python struct; no physical capture or hardware accuracy claim.",
+      "expect": {
+        "transition": "upstream_grandmaster_changed"
+      }
+    },
+    {
+      "name": "contradictory-overlapping-selection",
+      "path": "fixtures/commissioning/contradictory-overlapping-selection.json",
+      "command": "commission",
+      "status": "Violation",
+      "rule": "COMMISSION.TRANSITION.CONTRADICTORY_STABILITY",
+      "sha256": "684ccb16b6b0c75280b708759ce3e7f05123b56e96657216c541781f018794fb",
+      "provenance": "Synthetic network-order bytes constructed by Python struct; no physical capture or hardware accuracy claim.",
+      "expect": {}
+    },
+    {
+      "name": "rejected-middle-is-not-skipped",
+      "path": "fixtures/commissioning/rejected-middle-is-not-skipped.json",
+      "command": "commission",
+      "status": "Violation",
+      "rule": "COMMISSION.TRANSITION.EVIDENCE",
+      "sha256": "bf162b36b007968a182a4701b83281f9fb117a6ddcb02106626e07c37046de17",
+      "provenance": "Synthetic network-order bytes constructed by Python struct; no physical capture or hardware accuracy claim.",
+      "expect": {
+        "rejected_middle": true
+      }
+    },
+    {
+      "name": "nonadjacent-contradictory-selection",
+      "path": "fixtures/commissioning/nonadjacent-contradictory-selection.json",
+      "command": "commission",
+      "status": "Violation",
+      "rule": "COMMISSION.TRANSITION.CONTRADICTORY_STABILITY",
+      "sha256": "3901b085f365e059ec8b48d071139a9bfe32dd5c6f804c1e301d2045a8f08990",
+      "provenance": "Synthetic network-order bytes constructed by Python struct; no physical capture or hardware accuracy claim.",
+      "expect": {
+        "conflict_pairs": [
+          [
+            "long-A",
+            "new-B"
+          ]
+        ],
+        "adjacent_pairs": [
+          [
+            "long-A",
+            "short-A"
+          ],
+          [
+            "short-A",
+            "new-B"
+          ]
+        ]
+      }
+    },
+    {
+      "name": "nonadjacent-selection-safe-control",
+      "path": "fixtures/commissioning/nonadjacent-selection-safe-control.json",
+      "command": "commission",
+      "status": "Pass",
+      "rule": "COMMISSION.TRANSITION.OBSERVED",
+      "sha256": "8867ba73834ae5b343091e79bfb65134ab4453622be46e6bf4ffe0799c6f06df",
+      "provenance": "Synthetic network-order bytes constructed by Python struct; no physical capture or hardware accuracy claim.",
+      "expect": {
+        "conflict_pairs": [],
+        "transitions": [
+          "unchanged",
+          "upstream_port_and_grandmaster_changed"
+        ]
+      }
+    },
+    {
+      "name": "commissioning-within-offset-budget",
+      "path": "fixtures/commissioning/commissioning-within-offset-budget.json",
+      "command": "commission",
+      "status": "Pass",
+      "rule": "COMMISSION.BINDING.ACCEPTED",
+      "sha256": "1b5c3e4572a89311f2d9d1ef67a634ef1a802619b8b9effee032832ca2fb93e0",
+      "provenance": "Synthetic network-order bytes constructed by Python struct; no physical capture or hardware accuracy claim.",
+      "expect": {
+        "transition": "upstream_port_and_grandmaster_changed",
+        "operational_acceptance": "within_limit"
+      }
+    },
+    {
+      "name": "commissioning-outside-offset-budget",
+      "path": "fixtures/commissioning/commissioning-outside-offset-budget.json",
+      "command": "commission",
+      "status": "Pass",
+      "rule": "COMMISSION.BINDING.ACCEPTED",
+      "sha256": "abf48ed82abad9a8b1dea2c4fe9e7d92493b569be7b671bbfcad6cc896005abf",
+      "provenance": "Synthetic network-order bytes constructed by Python struct; no physical capture or hardware accuracy claim.",
+      "expect": {
+        "transition": "upstream_port_and_grandmaster_changed",
+        "operational_acceptance": "outside_limit"
+      }
+    },
+    {
+      "name": "commissioning-indeterminate-offset-budget",
+      "path": "fixtures/commissioning/commissioning-indeterminate-offset-budget.json",
+      "command": "commission",
+      "status": "Pass",
+      "rule": "COMMISSION.BINDING.ACCEPTED",
+      "sha256": "71c6647bf5ccced74a26e964227e97c5df5427d59f9876210ca00bf3752a9d13",
+      "provenance": "Synthetic network-order bytes constructed by Python struct; no physical capture or hardware accuracy claim.",
+      "expect": {
+        "transition": "upstream_port_and_grandmaster_changed",
+        "operational_acceptance": "indeterminate"
+      }
+    },
+    {
+      "name": "metrology-ledger-only",
+      "path": "fixtures/commissioning/metrology-ledger-only.json",
+      "command": "check",
+      "status": "Pass",
+      "rule": "METROLOGY.LEDGER",
+      "sha256": "614841d32edd9ad977a7edb7913b77389930bfe77b81c8c57da194e244dbee4b",
+      "provenance": "Synthetic network-order bytes constructed by Python struct; no physical capture or hardware accuracy claim.",
+      "expect": {
+        "verdict": null
+      }
+    },
+    {
+      "name": "metrology-within-limit",
+      "path": "fixtures/commissioning/metrology-within-limit.json",
+      "command": "check",
+      "status": "Pass",
+      "rule": "METROLOGY.ERROR_BUDGET",
+      "sha256": "e031f4023e82ac0572d337e939e44dfcf99f0c69ad3847fe5d25fd1d25b4386e",
+      "provenance": "Synthetic network-order bytes constructed by Python struct; no physical capture or hardware accuracy claim.",
+      "expect": {
+        "verdict": "within_limit"
+      }
+    },
+    {
+      "name": "metrology-outside-limit",
+      "path": "fixtures/commissioning/metrology-outside-limit.json",
+      "command": "check",
+      "status": "Pass",
+      "rule": "METROLOGY.ERROR_BUDGET",
+      "sha256": "61c1200e498f54de9468f5887be004efe392e68a1b45f1c3b55c90078042f74f",
+      "provenance": "Synthetic network-order bytes constructed by Python struct; no physical capture or hardware accuracy claim.",
+      "expect": {
+        "verdict": "outside_limit"
+      }
+    },
+    {
+      "name": "metrology-uncertain-boundary",
+      "path": "fixtures/commissioning/metrology-uncertain-boundary.json",
+      "command": "check",
+      "status": "Pass",
+      "rule": "METROLOGY.ERROR_BUDGET",
+      "sha256": "b94106fbfc100011fcfac78664cb02a26cff43802811a207705370a258cb16a4",
+      "provenance": "Synthetic network-order bytes constructed by Python struct; no physical capture or hardware accuracy claim.",
+      "expect": {
+        "verdict": "indeterminate"
+      }
+    },
+    {
+      "name": "metrology-exact-positive-limit",
+      "path": "fixtures/commissioning/metrology-exact-positive-limit.json",
+      "command": "check",
+      "status": "Pass",
+      "rule": "METROLOGY.ERROR_BUDGET",
+      "sha256": "7c5c0f40a7d4b27a57f0d1b40bd85825176b6527800719cb805f88a83dd507f8",
+      "provenance": "Synthetic network-order bytes constructed by Python struct; no physical capture or hardware accuracy claim.",
+      "expect": {
+        "verdict": "within_limit"
+      }
+    },
+    {
+      "name": "metrology-exact-negative-limit",
+      "path": "fixtures/commissioning/metrology-exact-negative-limit.json",
+      "command": "check",
+      "status": "Pass",
+      "rule": "METROLOGY.ERROR_BUDGET",
+      "sha256": "f138f3b5813cba71320c1ef5af4030945d6ea19c80b6fd9f96a7d19ef517c941",
+      "provenance": "Synthetic network-order bytes constructed by Python struct; no physical capture or hardware accuracy claim.",
+      "expect": {
+        "verdict": "within_limit"
+      }
+    },
+    {
+      "name": "metrology-interval-touches-positive-limit",
+      "path": "fixtures/commissioning/metrology-interval-touches-positive-limit.json",
+      "command": "check",
+      "status": "Pass",
+      "rule": "METROLOGY.ERROR_BUDGET",
+      "sha256": "461706a9a7d1f8d909cb0a2e5f2c943d2c30be876a247560e7e0f94d20a3505b",
+      "provenance": "Synthetic network-order bytes constructed by Python struct; no physical capture or hardware accuracy claim.",
+      "expect": {
+        "verdict": "within_limit"
+      }
+    },
+    {
+      "name": "metrology-interval-crosses-positive-limit",
+      "path": "fixtures/commissioning/metrology-interval-crosses-positive-limit.json",
+      "command": "check",
+      "status": "Pass",
+      "rule": "METROLOGY.ERROR_BUDGET",
+      "sha256": "b9c5d4fb9ab78ff96952032f8cda19cd3465163cb850a4b25ea6ff6c57a8b5e7",
+      "provenance": "Synthetic network-order bytes constructed by Python struct; no physical capture or hardware accuracy claim.",
+      "expect": {
+        "verdict": "indeterminate"
+      }
+    },
+    {
+      "name": "metrology-interval-touches-outside-edge",
+      "path": "fixtures/commissioning/metrology-interval-touches-outside-edge.json",
+      "command": "check",
+      "status": "Pass",
+      "rule": "METROLOGY.ERROR_BUDGET",
+      "sha256": "28e6025b7ba4228eb0365e94019ad07b42a5a8f8cdae46dca9403205c9ca1710",
+      "provenance": "Synthetic network-order bytes constructed by Python struct; no physical capture or hardware accuracy claim.",
+      "expect": {
+        "verdict": "indeterminate"
+      }
+    },
+    {
+      "name": "metrology-declared-asymmetry-bound",
+      "path": "fixtures/commissioning/metrology-declared-asymmetry-bound.json",
+      "command": "check",
+      "status": "Pass",
+      "rule": "METROLOGY.ERROR_BUDGET",
+      "sha256": "4906b3cb5e01e803496e2d4cfb7005d4f3480acaeed7b95ce7647c139810e553",
+      "provenance": "Synthetic network-order bytes constructed by Python struct; no physical capture or hardware accuracy claim.",
+      "expect": {
+        "verdict": "within_limit"
+      }
+    },
+    {
+      "name": "metrology-max-256-digit-bound",
+      "path": "fixtures/commissioning/metrology-max-256-digit-bound.json",
+      "command": "check",
+      "status": "Pass",
+      "rule": "METROLOGY.ERROR_BUDGET",
+      "sha256": "55adea2ebe10b4c56bf2af5e802a1e5a374feb9042cfcdfab60d3ca4d6312c58",
+      "provenance": "Synthetic network-order bytes constructed by Python struct; no physical capture or hardware accuracy claim.",
+      "expect": {
+        "verdict": "indeterminate"
+      }
+    },
+    {
+      "name": "metrology-request-correction-invariant",
+      "path": "fixtures/commissioning/metrology-request-correction-invariant.json",
+      "command": "check",
+      "status": "Pass",
+      "rule": "METROLOGY.ERROR_BUDGET",
+      "sha256": "69d7e0208c8a81be37038c6c598ea72ecab21452201f2aecbe7496475124b502",
+      "provenance": "Synthetic network-order bytes constructed by Python struct; no physical capture or hardware accuracy claim.",
+      "expect": {
+        "verdict": "within_limit"
+      }
+    },
+    {
+      "name": "metrology-blank-source",
+      "path": "fixtures/commissioning/metrology-blank-source.json",
+      "command": "check",
+      "status": "InsufficientEvidence",
+      "rule": "METROLOGY.ERROR_BUDGET",
+      "sha256": "43b2b8f324310fd595c5cb92042068734f6b3f1f824783bb87aee9dc3360b63f",
+      "provenance": "Synthetic network-order bytes constructed by Python struct; no physical capture or hardware accuracy claim.",
+      "expect": {
+        "verdict": null
+      }
+    },
+    {
+      "name": "metrology-blank-assumptions",
+      "path": "fixtures/commissioning/metrology-blank-assumptions.json",
+      "command": "check",
+      "status": "InsufficientEvidence",
+      "rule": "METROLOGY.ERROR_BUDGET",
+      "sha256": "e6110b8c750cac3791b9c8cb188b8cc09ded140df0e10dc9d48de64790ea40a5",
+      "provenance": "Synthetic network-order bytes constructed by Python struct; no physical capture or hardware accuracy claim.",
+      "expect": {
+        "verdict": null
+      }
+    },
+    {
+      "name": "metrology-unconfirmed-rate",
+      "path": "fixtures/commissioning/metrology-unconfirmed-rate.json",
+      "command": "check",
+      "status": "InsufficientEvidence",
+      "rule": "METROLOGY.ERROR_BUDGET",
+      "sha256": "b574e1bbcc182a3457a1a4589ab7383dc597c6b592f75879280e9451126bf5df",
+      "provenance": "Synthetic network-order bytes constructed by Python struct; no physical capture or hardware accuracy claim.",
+      "expect": {
+        "verdict": null
+      }
+    },
+    {
+      "name": "metrology-negative-bound",
+      "path": "fixtures/commissioning/metrology-negative-bound.json",
+      "command": "check",
+      "status": "Violation",
+      "rule": "METROLOGY.ERROR_BUDGET",
+      "sha256": "a95e442dc77de8b3819c0f0ae005b14f08fe56933cb0608ebf5b2193649e7f7f",
+      "provenance": "Synthetic network-order bytes constructed by Python struct; no physical capture or hardware accuracy claim.",
+      "expect": {
+        "verdict": null
+      }
+    },
+    {
+      "name": "metrology-noncanonical-bound",
+      "path": "fixtures/commissioning/metrology-noncanonical-bound.json",
+      "command": "check",
+      "status": "Violation",
+      "rule": "METROLOGY.ERROR_BUDGET",
+      "sha256": "6b4d25194b5a5ee0f0f690b863b12dae7d491447014aadd6c253c3372ea6457c",
+      "provenance": "Synthetic network-order bytes constructed by Python struct; no physical capture or hardware accuracy claim.",
+      "expect": {
+        "verdict": null
+      }
+    },
+    {
+      "name": "metrology-oversized-bound",
+      "path": "fixtures/commissioning/metrology-oversized-bound.json",
+      "command": "check",
+      "status": "Violation",
+      "rule": "METROLOGY.ERROR_BUDGET",
+      "sha256": "4976268f43848ffee179f2896583a4fa15988a70b6728f5fb724df3823dcf598",
+      "provenance": "Synthetic network-order bytes constructed by Python struct; no physical capture or hardware accuracy claim.",
+      "expect": {
+        "verdict": null
+      }
+    },
+    {
+      "name": "metrology-short-timestamp-array",
+      "path": "fixtures/commissioning/metrology-short-timestamp-array.json",
+      "command": "check",
+      "status": "Violation",
+      "rule": "METROLOGY.ERROR_BUDGET",
+      "sha256": "1c73351891a18ac1bd4f4ef9a38175383269fbe3c4c4086091bc8144eb3cd4ff",
+      "provenance": "Synthetic network-order bytes constructed by Python struct; no physical capture or hardware accuracy claim.",
+      "expect": {
+        "verdict": null
+      }
+    },
+    {
+      "name": "metrology-missing-source",
+      "path": "fixtures/commissioning/metrology-missing-source.json",
+      "command": "check",
+      "status": "InsufficientEvidence",
+      "rule": "METROLOGY.ERROR_BUDGET",
+      "sha256": "3281417af217fbad0b60801852c65e7d29dadbaa480ead9eabf8c45d75efc9e6",
+      "provenance": "Synthetic network-order bytes constructed by Python struct; no physical capture or hardware accuracy claim.",
+      "expect": {
+        "verdict": null
+      }
+    },
+    {
+      "name": "metrology-missing-assumptions",
+      "path": "fixtures/commissioning/metrology-missing-assumptions.json",
+      "command": "check",
+      "status": "InsufficientEvidence",
+      "rule": "METROLOGY.ERROR_BUDGET",
+      "sha256": "91598404c1c5a8cf816da41ba7d497f376ff9fb8e10e3ec9889c01094a406f7a",
+      "provenance": "Synthetic network-order bytes constructed by Python struct; no physical capture or hardware accuracy claim.",
+      "expect": {
+        "verdict": null
+      }
+    },
+    {
+      "name": "metrology-missing-relative-rate-bound-confirmed",
+      "path": "fixtures/commissioning/metrology-missing-relative-rate-bound-confirmed.json",
+      "command": "check",
+      "status": "InsufficientEvidence",
+      "rule": "METROLOGY.ERROR_BUDGET",
+      "sha256": "64c0640eb5828f6d1fc5c66b0af2283cec85e5ad2abc83ed35c2a32001677a98",
+      "provenance": "Synthetic network-order bytes constructed by Python struct; no physical capture or hardware accuracy claim.",
+      "expect": {
+        "verdict": null
+      }
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "schema": "ptp-audit/v1",
+  "profile": "default-e2e-two-step-2008",
+  "frames": [
+    {
+      "id": 1,
+      "epoch": 0,
+      "payload_hex": "0002002c00000200ffffffffffff800000000000001122334455667700010007000000000000006400000000",
+      "window": "capture-0",
+      "capture_time": {
+        "seconds": "100",
+        "nanos": 0
+      },
+      "capture_clock_domain": "slave-monotonic-0",
+      "local_port": {
+        "clock": "8899aabbccddeeff",
+        "port": 1
+      },
+      "event_time": {
+        "seconds": "100",
+        "nanos": 1300
+      },
+      "clock_domain": "slave-monotonic-0",
+      "direction": "rx"
+    },
+    {
+      "id": 2,
+      "epoch": 0,
+      "payload_hex": "0802002c000000000000000000004000000000000011223344556677000100070200000000000064000003e8",
+      "window": "capture-0",
+      "capture_time": {
+        "seconds": "100",
+        "nanos": 1000
+      },
+      "capture_clock_domain": "slave-monotonic-0"
+    },
+    {
+      "id": 3,
+      "epoch": 0,
+      "payload_hex": "0102002c0000000000000000000f423f000000008899aabbccddeeff0001001f010000000000006400001388",
+      "window": "capture-0",
+      "capture_time": {
+        "seconds": "100",
+        "nanos": 5000
+      },
+      "capture_clock_domain": "slave-monotonic-0",
+      "local_port": {
+        "clock": "8899aabbccddeeff",
+        "port": 1
+      },
+      "event_time": {
+        "seconds": "100",
+        "nanos": 5000
+      },
+      "clock_domain": "slave-monotonic-0",
+      "direction": "tx"
+    },
+    {
+      "id": 4,
+      "epoch": 1,
+      "payload_hex": "0902003600000000000000000000c0000000000000112233445566770001001f0300000000000064000014828899aabbccddeeff0001",
+      "window": "capture-0",
+      "capture_time": {
+        "seconds": "100",
+        "nanos": 5250
+      },
+      "capture_clock_domain": "slave-monotonic-0"
+    }
+  ],
+  "observation": {
+    "windows": [
+      {
+        "id": "capture-0",
+        "epoch": 0,
+        "clock_domain": "slave-monotonic-0",
+        "start": {
+          "seconds": "99",
+          "nanos": 0
+        },
+        "end": {
+          "seconds": "101",
+          "nanos": 999999999
+        },
+        "complete": true
+      }
+    ],
+    "policy": {
+      "source": "fixture-analysis-policy",
+      "sync_follow_up_ns": 1000000000,
+      "delay_response_ns": 1000000000
+    }
+  },
+  "pair_claims": [
+    {
+      "sync": 1,
+      "follow_up": 2
+    }
+  ],
+  "exchanges": [
+    {
+      "sync": 1,
+      "follow_up": 2,
+      "delay_req": 3,
+      "delay_resp": 4
+    }
+  ],
+  "assumptions": {
+    "symmetric_path": true,
+    "timestamp_provenance": true,
+    "stable_rates": true
+  }
+}

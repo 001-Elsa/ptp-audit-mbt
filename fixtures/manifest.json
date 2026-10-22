@@ -1,0 +1,1079 @@
+{
+  "generator": "scripts/build_acceptance_fixtures.py",
+  "measurement_reference": {
+    "forward_ns": "1201/4",
+    "reverse_ns": "997/4",
+    "offset_ns": "51/2",
+    "mean_delay_ns": "1099/4"
+  },
+  "cases": [
+    {
+      "name": "complete-exchange",
+      "path": "fixtures/complete-exchange.json",
+      "status": "Pass",
+      "rule": "MEASUREMENT.E2E",
+      "measurement": {
+        "offset_numerator": "3342336",
+        "mean_delay_numerator": "36012032",
+        "denominator": 131072
+      },
+      "sha256": "4979595e2b1eb6cd518a945072437dc235de55adb9dd095b32eba4dc1a89ec49",
+      "provenance": "Constructed from independent network-order fields; not a physical capture."
+    },
+    {
+      "name": "large-48bit-seconds",
+      "path": "fixtures/large-48bit-seconds.json",
+      "status": "Pass",
+      "rule": "MEASUREMENT.E2E",
+      "measurement": {
+        "offset_numerator": "3342336",
+        "mean_delay_numerator": "36012032",
+        "denominator": 131072
+      },
+      "sha256": "45cbda5fa736b7b09167a224cc13748e70db7201a4372518bca85565812ff326",
+      "provenance": "Constructed from independent network-order fields; not a physical capture."
+    },
+    {
+      "name": "reordered-exchange",
+      "path": "fixtures/reordered-exchange.json",
+      "status": "Pass",
+      "rule": "MEASUREMENT.E2E",
+      "measurement": {
+        "offset_numerator": "3342336",
+        "mean_delay_numerator": "36012032",
+        "denominator": 131072
+      },
+      "sha256": "72e3ab5ca4fdbfd510305ba6a297b7e2777cae09bd21c76e52773406d836278d",
+      "provenance": "Constructed from independent network-order fields; not a physical capture."
+    },
+    {
+      "name": "missing-rx-time",
+      "path": "fixtures/missing-rx-time.json",
+      "status": "InsufficientEvidence",
+      "rule": "MEASUREMENT.EVIDENCE",
+      "measurement": null,
+      "sha256": "77ba8d8ae46a369b1c151c6ee860be5fe8ba12dca26b90af83888896d83ccc86",
+      "provenance": "Constructed from independent network-order fields; not a physical capture."
+    },
+    {
+      "name": "missing-symmetric_path",
+      "path": "fixtures/missing-symmetric_path.json",
+      "status": "InsufficientEvidence",
+      "rule": "MEASUREMENT.EVIDENCE",
+      "measurement": null,
+      "sha256": "79a2a973315bd94aac76bcda2d432f67dd70b69ccd138fd5c36f488e8b8c7cad",
+      "provenance": "Constructed from independent network-order fields; not a physical capture."
+    },
+    {
+      "name": "missing-timestamp_provenance",
+      "path": "fixtures/missing-timestamp_provenance.json",
+      "status": "InsufficientEvidence",
+      "rule": "MEASUREMENT.EVIDENCE",
+      "measurement": null,
+      "sha256": "aa3f4c9bb25def13983e4fa586d3dc9f9fb4c42ec3f054ee9abb2e50c52afdaa",
+      "provenance": "Constructed from independent network-order fields; not a physical capture."
+    },
+    {
+      "name": "missing-stable_rates",
+      "path": "fixtures/missing-stable_rates.json",
+      "status": "InsufficientEvidence",
+      "rule": "MEASUREMENT.EVIDENCE",
+      "measurement": null,
+      "sha256": "4b319f79c0a9b578ee9b28fe96268d71285d669fa0ed3592f1e38521c720edad",
+      "provenance": "Constructed from independent network-order fields; not a physical capture."
+    },
+    {
+      "name": "different-clock-domains",
+      "path": "fixtures/different-clock-domains.json",
+      "status": "InsufficientEvidence",
+      "rule": "MEASUREMENT.EVIDENCE",
+      "measurement": null,
+      "sha256": "370e02cecd541a7f0ee99828332ef39fb60b54a8c28dc8264e136458cb6afa4e",
+      "provenance": "Constructed from independent network-order fields; not a physical capture."
+    },
+    {
+      "name": "negative-inferred-delay",
+      "path": "fixtures/negative-inferred-delay.json",
+      "status": "InsufficientEvidence",
+      "rule": "MEASUREMENT.PATH_ASSUMPTIONS",
+      "measurement": null,
+      "sha256": "4a40a45649a0374ad1044d580e7bc4b081bb50594e4dd987c72dfa594beef93a",
+      "provenance": "Constructed from independent network-order fields; not a physical capture."
+    },
+    {
+      "name": "truncated-capture",
+      "path": "fixtures/truncated-capture.json",
+      "status": "InsufficientEvidence",
+      "rule": "CLAIM.MISSING_FRAME",
+      "measurement": null,
+      "sha256": "162b991d3539cb63cec5721c968bf1ba534568ca20e4ddb9fb72bf5570f544af",
+      "provenance": "Constructed from independent network-order fields; not a physical capture."
+    },
+    {
+      "name": "wrong-follow-up-source",
+      "path": "fixtures/wrong-follow-up-source.json",
+      "status": "Violation",
+      "rule": "CLAIM.SYNC_FOLLOW_UP",
+      "measurement": null,
+      "sha256": "adee95dfd9b1f7dc2a1d24255bcd84bbf48d049fca2353c6398fbcb898f3b7ad",
+      "provenance": "Constructed from independent network-order fields; not a physical capture."
+    },
+    {
+      "name": "wrong-follow-up-domain",
+      "path": "fixtures/wrong-follow-up-domain.json",
+      "status": "Violation",
+      "rule": "CLAIM.SYNC_FOLLOW_UP",
+      "measurement": null,
+      "sha256": "02669b2547c9cb14644f4050546e117eb8d27cfc945f0928fcf9af01651d09c3",
+      "provenance": "Constructed from independent network-order fields; not a physical capture."
+    },
+    {
+      "name": "wrong-response-requester",
+      "path": "fixtures/wrong-response-requester.json",
+      "status": "Violation",
+      "rule": "CLAIM.E2E_IDENTITY",
+      "measurement": null,
+      "sha256": "99884c169381cb912fe48cea18d0a798721c3a7b5c8ab027cee7485200502977",
+      "provenance": "Constructed from independent network-order fields; not a physical capture."
+    },
+    {
+      "name": "wrong-response-master",
+      "path": "fixtures/wrong-response-master.json",
+      "status": "Violation",
+      "rule": "CLAIM.E2E_IDENTITY",
+      "measurement": null,
+      "sha256": "e4ad0640f45d1743be6e5e038e1b1295bac26f3d433c31e85a441428d8afc21d",
+      "provenance": "Constructed from independent network-order fields; not a physical capture."
+    },
+    {
+      "name": "wrong-response-sequence",
+      "path": "fixtures/wrong-response-sequence.json",
+      "status": "Violation",
+      "rule": "CLAIM.E2E_IDENTITY",
+      "measurement": null,
+      "sha256": "a825a8e6ade5008006fc3705c75294f6805af7060d61924ce3976f5cf6f0bce5",
+      "provenance": "Constructed from independent network-order fields; not a physical capture."
+    },
+    {
+      "name": "master-change-epoch",
+      "path": "fixtures/master-change-epoch.json",
+      "status": "InsufficientEvidence",
+      "rule": "CLAIM.DELAY_WINDOW",
+      "measurement": null,
+      "sha256": "00fb10e5fc6c3efb1c9769c0f69c4f692106fbd2a960f63ef8b285f5a89a8171",
+      "provenance": "Constructed from independent network-order fields; not a physical capture."
+    },
+    {
+      "name": "duplicate-sync",
+      "path": "fixtures/duplicate-sync.json",
+      "status": "InsufficientEvidence",
+      "rule": "EXCHANGE.SYNC_FOLLOW_UP",
+      "measurement": null,
+      "sha256": "9c2b6baebd8abf0e961cd20996bd6464186b1693d4c145c7c5614c240ed07276",
+      "provenance": "Constructed from independent network-order fields; not a physical capture."
+    },
+    {
+      "name": "duplicate-follow-up",
+      "path": "fixtures/duplicate-follow-up.json",
+      "status": "InsufficientEvidence",
+      "rule": "EXCHANGE.SYNC_FOLLOW_UP",
+      "measurement": null,
+      "sha256": "d7b04027a5e4cf9032994d4af67b9437e0b321ebca17bcb8f5412acb05780810",
+      "provenance": "Constructed from independent network-order fields; not a physical capture."
+    },
+    {
+      "name": "duplicate-delay-request",
+      "path": "fixtures/duplicate-delay-request.json",
+      "status": "InsufficientEvidence",
+      "rule": "MEASUREMENT.AMBIGUOUS",
+      "measurement": null,
+      "sha256": "19125eca59cc3d7defecd7296edd146d42e85a38a11730114df62e54913ad0b1",
+      "provenance": "Constructed from independent network-order fields; not a physical capture."
+    },
+    {
+      "name": "duplicate-delay-response",
+      "path": "fixtures/duplicate-delay-response.json",
+      "status": "InsufficientEvidence",
+      "rule": "MEASUREMENT.AMBIGUOUS",
+      "measurement": null,
+      "sha256": "a5262d6cf64755c818bb13140ff3e539fdc19c769bb900673a39e3e7d2747749",
+      "provenance": "Constructed from independent network-order fields; not a physical capture."
+    },
+    {
+      "name": "unclaimed-different-source",
+      "path": "fixtures/unclaimed-different-source.json",
+      "status": "InsufficientEvidence",
+      "rule": "EXCHANGE.ORPHAN_FOLLOW_UP",
+      "measurement": null,
+      "sha256": "47d87b74a744ee8b39f4511549808085db821748aa0cfe9955e93493eaecb92b",
+      "provenance": "Constructed from independent network-order fields; not a physical capture."
+    },
+    {
+      "name": "sequence-wrap",
+      "path": "fixtures/sequence-wrap.json",
+      "status": "Pass",
+      "rule": "EXCHANGE.SYNC_FOLLOW_UP",
+      "measurement": null,
+      "sha256": "8c351cf1997767577b2716d82f01c32d3a5c9476c5a301833ae2b75956fc7667",
+      "provenance": "Constructed from independent network-order fields; not a physical capture."
+    },
+    {
+      "name": "interleaved-sources-domains",
+      "path": "fixtures/interleaved-sources-domains.json",
+      "status": "Pass",
+      "rule": "EXCHANGE.SYNC_FOLLOW_UP",
+      "measurement": null,
+      "sha256": "e64b0aed1ec4beb0466ca87b55b3f5fdb93a9ff3c6d6de0285353c9e90ca6b44",
+      "provenance": "Constructed from independent network-order fields; not a physical capture."
+    },
+    {
+      "name": "single-step",
+      "path": "fixtures/single-step.json",
+      "status": "Unsupported",
+      "rule": "SCOPE.TWO_STEP",
+      "measurement": null,
+      "sha256": "2b811f206ad6e423c42e9fb56bf0b136861a32ccc9c881b930482b5f0c804688",
+      "provenance": "Constructed from independent network-order fields; not a physical capture."
+    },
+    {
+      "name": "unsupported-profile",
+      "path": "fixtures/unsupported-profile.json",
+      "status": "Unsupported",
+      "rule": "SCOPE.CASE",
+      "measurement": null,
+      "sha256": "3a1c36d009f03cb65fa5d4630a811ab854c0f62afdbc26100d48c57caeb88e20",
+      "provenance": "Constructed from independent network-order fields; not a physical capture."
+    },
+    {
+      "name": "unknown-tlv",
+      "path": "fixtures/unknown-tlv.json",
+      "status": "Unsupported",
+      "rule": "SCOPE.TLV",
+      "measurement": null,
+      "sha256": "48081c5ab433a62b7e5144d356cc8635adbdfbfd5f028a2063146263300c2525",
+      "provenance": "Constructed from independent network-order fields; not a physical capture."
+    },
+    {
+      "name": "bad-length",
+      "path": "fixtures/bad-length.json",
+      "status": "Violation",
+      "rule": "WIRE.MESSAGE_LENGTH",
+      "measurement": null,
+      "sha256": "db66d85b0205e42d173382d0a3aff11e250ab05883c938f14522dbc0db52b262",
+      "provenance": "Constructed from independent network-order fields; not a physical capture."
+    },
+    {
+      "name": "bad-nanoseconds",
+      "path": "fixtures/bad-nanoseconds.json",
+      "status": "Violation",
+      "rule": "WIRE.NANOSECONDS",
+      "measurement": null,
+      "sha256": "6fb29a26e6d49c43ed06127f4cf2d690930c82f3e6f73fc461423b9d34ad4e38",
+      "provenance": "Constructed from independent network-order fields; not a physical capture."
+    },
+    {
+      "name": "bad-reserved",
+      "path": "fixtures/bad-reserved.json",
+      "status": "Violation",
+      "rule": "WIRE.RESERVED",
+      "measurement": null,
+      "sha256": "1c834525d844bfd7228bbb81bf54df329f6f0e0f5b1d78c61310ffd1178cd9b7",
+      "provenance": "Constructed from independent network-order fields; not a physical capture."
+    },
+    {
+      "name": "bad-control",
+      "path": "fixtures/bad-control.json",
+      "status": "Violation",
+      "rule": "WIRE.CONTROL",
+      "measurement": null,
+      "sha256": "44d1e2baf4479d3f1b02715e4b45de01a53f9f78e6fd799fcf7219a1de0b4e2e",
+      "provenance": "Constructed from independent network-order fields; not a physical capture."
+    },
+    {
+      "name": "bad-source-port",
+      "path": "fixtures/bad-source-port.json",
+      "status": "Violation",
+      "rule": "WIRE.SOURCE_PORT",
+      "measurement": null,
+      "sha256": "990fa78c9e1c80a9694a76747695a6186cebcfdbbb56c3d299fa8ccfdf46b9b0",
+      "provenance": "Constructed from independent network-order fields; not a physical capture."
+    },
+    {
+      "name": "nonhex",
+      "path": "fixtures/nonhex.json",
+      "status": "Violation",
+      "rule": "WIRE.HEX",
+      "measurement": null,
+      "sha256": "20a822563f7bda4ae9c9d80df319f12b23d229595f0cfea817dea8232235d477",
+      "provenance": "Constructed from independent network-order fields; not a physical capture."
+    },
+    {
+      "name": "duplicate-frame-id",
+      "path": "fixtures/duplicate-frame-id.json",
+      "status": "Violation",
+      "rule": "INPUT.SCHEMA",
+      "measurement": null,
+      "sha256": "eb9a6abcca7ded121e73f6b871b1e4f0c6e2e8cbdfb2cff8017cf6ed0097522f",
+      "provenance": "Constructed from independent network-order fields; not a physical capture."
+    },
+    {
+      "name": "unknown-schema-key",
+      "path": "fixtures/unknown-schema-key.json",
+      "status": "Violation",
+      "rule": "INPUT.SCHEMA",
+      "measurement": null,
+      "sha256": "d01655b63f0f9902bc4b5f6a62ae81add4f764f12e5a94aa32cd4e484e52f2b4",
+      "provenance": "Constructed from independent network-order fields; not a physical capture."
+    },
+    {
+      "name": "frame-budget",
+      "path": "fixtures/frame-budget.json",
+      "status": "Violation",
+      "rule": "INPUT.SCHEMA",
+      "measurement": null,
+      "sha256": "0f7907346133218f04781098f91ab8219f0e07a1abd366585ff95f117678db65",
+      "provenance": "Constructed from independent network-order fields; not a physical capture."
+    },
+    {
+      "name": "complete-audit",
+      "path": "fixtures/complete-audit.json",
+      "status": "Pass",
+      "rule": "BMCA.OBSERVED_DECISION",
+      "measurement": {
+        "offset_numerator": "3342336",
+        "mean_delay_numerator": "36012032",
+        "denominator": 131072
+      },
+      "sha256": "e1c15d176061045b5579325437e031699ac8995f52543f4cd6ff02ccdedca057",
+      "provenance": "Constructed from independent network-order fields; not a physical capture."
+    },
+    {
+      "name": "bmca-priority1",
+      "path": "fixtures/bmca-priority1.json",
+      "status": "Pass",
+      "rule": "BMCA.DIFFERENT_GM.priority1",
+      "measurement": null,
+      "sha256": "2f595a4dc0364e6ab383558d38a4eac4c6ed045e541af06ddf61351a7299b9b1",
+      "provenance": "Constructed from independent network-order fields; not a physical capture."
+    },
+    {
+      "name": "bmca-clock_class",
+      "path": "fixtures/bmca-clock_class.json",
+      "status": "Pass",
+      "rule": "BMCA.DIFFERENT_GM.clockClass",
+      "measurement": null,
+      "sha256": "c86fe8679bf96fb8139e1f4510f1826306510f6d4f3aa173e4a1975d3246c8f3",
+      "provenance": "Constructed from independent network-order fields; not a physical capture."
+    },
+    {
+      "name": "bmca-accuracy",
+      "path": "fixtures/bmca-accuracy.json",
+      "status": "Pass",
+      "rule": "BMCA.DIFFERENT_GM.clockAccuracy",
+      "measurement": null,
+      "sha256": "9e657f70b1dff9e15195dce2143449e323139d35587de49b514dea67b189b071",
+      "provenance": "Constructed from independent network-order fields; not a physical capture."
+    },
+    {
+      "name": "bmca-variance",
+      "path": "fixtures/bmca-variance.json",
+      "status": "Pass",
+      "rule": "BMCA.DIFFERENT_GM.offsetScaledLogVariance",
+      "measurement": null,
+      "sha256": "b64694cd2b88292ad3e799e0b524e480934241c8b6c46b836777de6f70f88471",
+      "provenance": "Constructed from independent network-order fields; not a physical capture."
+    },
+    {
+      "name": "bmca-priority2",
+      "path": "fixtures/bmca-priority2.json",
+      "status": "Pass",
+      "rule": "BMCA.DIFFERENT_GM.priority2",
+      "measurement": null,
+      "sha256": "fa13cfbffafd5010cae02a2d2a1e779ea910bed60f8be2888a6e9f3238ebc956",
+      "provenance": "Constructed from independent network-order fields; not a physical capture."
+    },
+    {
+      "name": "bmca-identity",
+      "path": "fixtures/bmca-identity.json",
+      "status": "Pass",
+      "rule": "BMCA.DIFFERENT_GM.identity",
+      "measurement": null,
+      "sha256": "fe104d9d106f73d21b64b951297c50a636ead562659ae328d204b1c64426e780",
+      "provenance": "Constructed from independent network-order fields; not a physical capture."
+    },
+    {
+      "name": "bmca-wrong-selection",
+      "path": "fixtures/bmca-wrong-selection.json",
+      "status": "Violation",
+      "rule": "BMCA.OBSERVED_DECISION",
+      "measurement": null,
+      "sha256": "0b5b96c560db2c7618bfcb9926f45386a730d104f5e6fc2f3921c320e8b8bee0",
+      "provenance": "Constructed from independent network-order fields; not a physical capture."
+    },
+    {
+      "name": "bmca-steps",
+      "path": "fixtures/bmca-steps.json",
+      "status": "Pass",
+      "rule": "BMCA.SAME_GM.stepsRemoved",
+      "measurement": null,
+      "sha256": "d82dac748d8dcabff0e4bebfdb15cb81898232a13392bcbb8056c7976c525c2d",
+      "provenance": "Constructed from independent network-order fields; not a physical capture."
+    },
+    {
+      "name": "bmca-one-hop-topology",
+      "path": "fixtures/bmca-one-hop-topology.json",
+      "status": "Pass",
+      "rule": "BMCA.SAME_GM.oneHop",
+      "measurement": null,
+      "sha256": "3a774e9bffaa74fcdc43b4cc371c203012c4b8a38530b0b9e7281d0441d9f9bc",
+      "provenance": "Constructed from independent network-order fields; not a physical capture."
+    },
+    {
+      "name": "bmca-one-hop-ordinary",
+      "path": "fixtures/bmca-one-hop-ordinary.json",
+      "status": "Pass",
+      "rule": "BMCA.SAME_GM.oneHop",
+      "measurement": null,
+      "sha256": "63f5f7663f22f0aba30685fc63991c52e7b90dd74c48a705ae8d99a4301df45e",
+      "provenance": "Constructed from independent network-order fields; not a physical capture."
+    },
+    {
+      "name": "bmca-error1",
+      "path": "fixtures/bmca-error1.json",
+      "status": "Unsupported",
+      "rule": "BMCA.SAME_GM.error1",
+      "measurement": null,
+      "sha256": "0152bd2622af08eefffe3038b19baae5cf591097192395c916f98dd8709ec2db",
+      "provenance": "Constructed from independent network-order fields; not a physical capture."
+    },
+    {
+      "name": "bmca-sender-identity",
+      "path": "fixtures/bmca-sender-identity.json",
+      "status": "Pass",
+      "rule": "BMCA.SAME_GM.sender",
+      "measurement": null,
+      "sha256": "d10e9fd3af8b23a12806eb3bca0eaf47e535b42d68cd78254f5d7fbbe90b3dd4",
+      "provenance": "Constructed from independent network-order fields; not a physical capture."
+    },
+    {
+      "name": "bmca-sender-port",
+      "path": "fixtures/bmca-sender-port.json",
+      "status": "Pass",
+      "rule": "BMCA.SAME_GM.sender",
+      "measurement": null,
+      "sha256": "62b838ccc0af4ef0a9e20d9d399f3e5f5cceac1bac474323c6afe1ec0af60eb4",
+      "provenance": "Constructed from independent network-order fields; not a physical capture."
+    },
+    {
+      "name": "bmca-receiver-port",
+      "path": "fixtures/bmca-receiver-port.json",
+      "status": "Pass",
+      "rule": "BMCA.SAME_GM.receiverPort",
+      "measurement": null,
+      "sha256": "f29731c64940baffa1a2eec031c6147c7c7c01c8a1b05c02bac93c9c414e1b55",
+      "provenance": "Constructed from independent network-order fields; not a physical capture."
+    },
+    {
+      "name": "bmca-error2",
+      "path": "fixtures/bmca-error2.json",
+      "status": "Unsupported",
+      "rule": "BMCA.SAME_GM.error2",
+      "measurement": null,
+      "sha256": "91dff449089ca78614aa8239407f29c9b578e756475d8471a5b960ba2a6f962e",
+      "provenance": "Constructed from independent network-order fields; not a physical capture."
+    },
+    {
+      "name": "bmca-steps-out-of-scope",
+      "path": "fixtures/bmca-steps-out-of-scope.json",
+      "status": "Unsupported",
+      "rule": "BMCA.SCOPE.DATASET",
+      "measurement": null,
+      "sha256": "35fee90cc1305471cd77e04f6d13abee81a853a29453b1b86aa3fa302cea661d",
+      "provenance": "Constructed from independent network-order fields; not a physical capture."
+    },
+    {
+      "name": "bmca-incomplete-candidates",
+      "path": "fixtures/bmca-incomplete-candidates.json",
+      "status": "InsufficientEvidence",
+      "rule": "BMCA.EVIDENCE",
+      "measurement": null,
+      "sha256": "a95ddf3ab1651960bacab8180098e982ccbf0de48ebdbcd40ab63309593400ac",
+      "provenance": "Constructed from independent network-order fields; not a physical capture."
+    },
+    {
+      "name": "bmca-unqualified-candidates",
+      "path": "fixtures/bmca-unqualified-candidates.json",
+      "status": "InsufficientEvidence",
+      "rule": "BMCA.EVIDENCE",
+      "measurement": null,
+      "sha256": "5e23a639b9f1b1ffdcba83a5cf8d36569ddf433d05dbfea4de9454469863b846",
+      "provenance": "Constructed from independent network-order fields; not a physical capture."
+    },
+    {
+      "name": "bmca-no-observed-selection",
+      "path": "fixtures/bmca-no-observed-selection.json",
+      "status": "InsufficientEvidence",
+      "rule": "BMCA.OBSERVED_DECISION",
+      "measurement": null,
+      "sha256": "a08abc7b392bbbb74917562b112f170cdf46f0d9ec93eca763ba0e6905336b66",
+      "provenance": "Constructed from independent network-order fields; not a physical capture."
+    },
+    {
+      "name": "bmca-missing-candidate-frame",
+      "path": "fixtures/bmca-missing-candidate-frame.json",
+      "status": "InsufficientEvidence",
+      "rule": "BMCA.MISSING_FRAME",
+      "measurement": null,
+      "sha256": "caff36264c420c2849c0652d16768c532af9849cdc9829d0d6d8e55a86bef8e8",
+      "provenance": "Constructed from independent network-order fields; not a physical capture."
+    },
+    {
+      "name": "bmca-mixed-receiver",
+      "path": "fixtures/bmca-mixed-receiver.json",
+      "status": "Unsupported",
+      "rule": "BMCA.SCOPE.CONTEXT",
+      "measurement": null,
+      "sha256": "6f45b557fb9e02f2a666efa0eae1dc39609b930d230a6ac73e2e1855c36e93ba",
+      "provenance": "Constructed from independent network-order fields; not a physical capture."
+    },
+    {
+      "name": "bmca-empty",
+      "path": "fixtures/bmca-empty.json",
+      "status": "InsufficientEvidence",
+      "rule": "BMCA.EVIDENCE",
+      "measurement": null,
+      "sha256": "fc6e74e4768fa018755a9cb0af178cfd33c269df625a57b1e3b8e9aa016c3509",
+      "provenance": "Constructed from independent network-order fields; not a physical capture."
+    },
+    {
+      "name": "missing-all-epoch",
+      "path": "fixtures/missing-all-epoch.json",
+      "status": "InsufficientEvidence",
+      "rule": "CLAIM.SYNC_WINDOW",
+      "measurement": null,
+      "sha256": "00948de4e4b88a10979ce87a8f9341e14b98ae838585f79cebd5b426b68a4f5a",
+      "provenance": "Constructed from independent network-order fields; not a physical capture."
+    },
+    {
+      "name": "missing-all-window",
+      "path": "fixtures/missing-all-window.json",
+      "status": "InsufficientEvidence",
+      "rule": "CLAIM.SYNC_WINDOW",
+      "measurement": null,
+      "sha256": "ccfe7cf7576c9c963c7b60529f8556d1a3da5abc30d85c3a8ac17e637d9a2b2c",
+      "provenance": "Constructed from independent network-order fields; not a physical capture."
+    },
+    {
+      "name": "missing-all-capture-time",
+      "path": "fixtures/missing-all-capture-time.json",
+      "status": "InsufficientEvidence",
+      "rule": "CLAIM.SYNC_WINDOW",
+      "measurement": null,
+      "sha256": "56ab3bb137e4d3b04e46eb527462a74dc0fbb8fef885e3173273e306e089510c",
+      "provenance": "Constructed from independent network-order fields; not a physical capture."
+    },
+    {
+      "name": "missing-all-capture-clock-domain",
+      "path": "fixtures/missing-all-capture-clock-domain.json",
+      "status": "InsufficientEvidence",
+      "rule": "CLAIM.SYNC_WINDOW",
+      "measurement": null,
+      "sha256": "ce7e25cfec5243de6baa0f711a7c4d1033697122648810a44584d191e4c6b62b",
+      "provenance": "Constructed from independent network-order fields; not a physical capture."
+    },
+    {
+      "name": "missing-one-epoch",
+      "path": "fixtures/missing-one-epoch.json",
+      "status": "InsufficientEvidence",
+      "rule": "CLAIM.SYNC_WINDOW",
+      "measurement": null,
+      "sha256": "54aa67df86a9081c7034d1f7c81d6f6d7a78fb4c9e8ea3bb2063999b1d5281b1",
+      "provenance": "Constructed from independent network-order fields; not a physical capture."
+    },
+    {
+      "name": "missing-observation",
+      "path": "fixtures/missing-observation.json",
+      "status": "InsufficientEvidence",
+      "rule": "OBSERVATION.WINDOW",
+      "measurement": null,
+      "sha256": "3eb86683ac400b565353cc410e4446292e3075202ef24f92fd6192f368dd2da5",
+      "provenance": "Constructed from independent network-order fields; not a physical capture."
+    },
+    {
+      "name": "missing-deadline-policy",
+      "path": "fixtures/missing-deadline-policy.json",
+      "status": "InsufficientEvidence",
+      "rule": "CLAIM.SYNC_WINDOW",
+      "measurement": null,
+      "sha256": "a76be3667b6af7ee94fd3af80c3189a26ed42b6eeb779b2c06c79bcee3be764a",
+      "provenance": "Constructed from independent network-order fields; not a physical capture."
+    },
+    {
+      "name": "incomplete-capture-window",
+      "path": "fixtures/incomplete-capture-window.json",
+      "status": "InsufficientEvidence",
+      "rule": "CLAIM.SYNC_WINDOW",
+      "measurement": null,
+      "sha256": "97805293d96411e7c8e8b0cabccc10096b249343e213ac81efbbf588cc338729",
+      "provenance": "Constructed from independent network-order fields; not a physical capture."
+    },
+    {
+      "name": "reversed-capture-window",
+      "path": "fixtures/reversed-capture-window.json",
+      "status": "InsufficientEvidence",
+      "rule": "OBSERVATION.WINDOW",
+      "measurement": null,
+      "sha256": "210bd5c1cf908679e731a90590d4fd93b4b3527ceecc0fb4b0a1d09d653c992d",
+      "provenance": "Constructed from independent network-order fields; not a physical capture."
+    },
+    {
+      "name": "frame-outside-capture-window",
+      "path": "fixtures/frame-outside-capture-window.json",
+      "status": "InsufficientEvidence",
+      "rule": "CLAIM.SYNC_WINDOW",
+      "measurement": null,
+      "sha256": "4d986b21454d31a60b7549cab423bf2a0fa0184b9a56d7d63693c572078a4bdc",
+      "provenance": "Constructed from independent network-order fields; not a physical capture."
+    },
+    {
+      "name": "mixed-capture-clock",
+      "path": "fixtures/mixed-capture-clock.json",
+      "status": "InsufficientEvidence",
+      "rule": "CLAIM.SYNC_WINDOW",
+      "measurement": null,
+      "sha256": "21f9c6f45cedf7bde65d96f62a11724733ab8c31465dd6ad4e9d1b571ab00050",
+      "provenance": "Constructed from independent network-order fields; not a physical capture."
+    },
+    {
+      "name": "follow-up-after-budget",
+      "path": "fixtures/follow-up-after-budget.json",
+      "status": "InsufficientEvidence",
+      "rule": "CLAIM.SYNC_WINDOW",
+      "measurement": null,
+      "sha256": "5abf0e81b4dfaa06e771496ce5563f319b5a6cbb85bc48ea3571dfa5febd6430",
+      "provenance": "Constructed from independent network-order fields; not a physical capture."
+    },
+    {
+      "name": "delay-response-after-budget",
+      "path": "fixtures/delay-response-after-budget.json",
+      "status": "InsufficientEvidence",
+      "rule": "CLAIM.DELAY_WINDOW",
+      "measurement": null,
+      "sha256": "52d1fbcb2e5a8447f277c55a59336ac7f177564ddfefcf8208b1250cf554f1a5",
+      "provenance": "Constructed from independent network-order fields; not a physical capture."
+    },
+    {
+      "name": "follow-up-at-budget",
+      "path": "fixtures/follow-up-at-budget.json",
+      "status": "Pass",
+      "rule": "MEASUREMENT.E2E",
+      "measurement": {
+        "offset_numerator": "3342336",
+        "mean_delay_numerator": "36012032",
+        "denominator": 131072
+      },
+      "sha256": "ed555026cb4f20144e30adb9181ce142c171f0f8a4619fc92593bfebe7918391",
+      "provenance": "Constructed from independent network-order fields; not a physical capture."
+    },
+    {
+      "name": "int64-decimal-budgets",
+      "path": "fixtures/int64-decimal-budgets.json",
+      "status": "Pass",
+      "rule": "MEASUREMENT.E2E",
+      "measurement": {
+        "offset_numerator": "3342336",
+        "mean_delay_numerator": "36012032",
+        "denominator": 131072
+      },
+      "sha256": "496a614968838ed4464322573b2a106828869e9c63070226e3f88a08224cced4",
+      "provenance": "Constructed from independent network-order fields; not a physical capture."
+    },
+    {
+      "name": "invalid-budget-73",
+      "path": "fixtures/invalid-budget-73.json",
+      "status": "Violation",
+      "rule": "INPUT.SCHEMA",
+      "measurement": null,
+      "sha256": "648ef8bafd5baec7d599fe66e57ca4db7cdd50808fdee2c7b2adc368e2871031",
+      "provenance": "Constructed from independent network-order fields; not a physical capture."
+    },
+    {
+      "name": "invalid-budget-74",
+      "path": "fixtures/invalid-budget-74.json",
+      "status": "Violation",
+      "rule": "INPUT.SCHEMA",
+      "measurement": null,
+      "sha256": "ba82d135e44563e7843339797b346751a9c5bd1e5cc54fbba42929de6a44ded9",
+      "provenance": "Constructed from independent network-order fields; not a physical capture."
+    },
+    {
+      "name": "invalid-budget-75",
+      "path": "fixtures/invalid-budget-75.json",
+      "status": "Violation",
+      "rule": "INPUT.SCHEMA",
+      "measurement": null,
+      "sha256": "3f692b846146c6b19d41859f552d3f385bbea7ca5889e3793fc307200bcaa743",
+      "provenance": "Constructed from independent network-order fields; not a physical capture."
+    },
+    {
+      "name": "invalid-budget-76",
+      "path": "fixtures/invalid-budget-76.json",
+      "status": "Violation",
+      "rule": "INPUT.SCHEMA",
+      "measurement": null,
+      "sha256": "56377eb4968dc91e6925087e701c0145383c2b1f1512c610c02a4afc931d440e",
+      "provenance": "Constructed from independent network-order fields; not a physical capture."
+    },
+    {
+      "name": "missing-follow-up-expired",
+      "path": "fixtures/missing-follow-up-expired.json",
+      "status": "InsufficientEvidence",
+      "rule": "EXCHANGE.STATE.EVICTED",
+      "measurement": null,
+      "sha256": "f21f4a942c45effb85622b459e7f8aef3e6d820f4a90531fddba8f11a8a5641b",
+      "provenance": "Constructed from independent network-order fields; not a physical capture."
+    },
+    {
+      "name": "missing-follow-up-before-deadline",
+      "path": "fixtures/missing-follow-up-before-deadline.json",
+      "status": "InsufficientEvidence",
+      "rule": "EXCHANGE.STATE.PENDING",
+      "measurement": null,
+      "sha256": "2cda96eca8b78211ef2f03f28997dad18705ebd7a44702004a572141a63d43e5",
+      "provenance": "Constructed from independent network-order fields; not a physical capture."
+    },
+    {
+      "name": "missing-follow-up-capture-gap",
+      "path": "fixtures/missing-follow-up-capture-gap.json",
+      "status": "InsufficientEvidence",
+      "rule": "EXCHANGE.STATE.PENDING",
+      "measurement": null,
+      "sha256": "0201649bcac0a6c190906f4e41eda4563abbf11b6c400470bda72eb565da5187",
+      "provenance": "Constructed from independent network-order fields; not a physical capture."
+    },
+    {
+      "name": "bmca-mixed-epoch",
+      "path": "fixtures/bmca-mixed-epoch.json",
+      "status": "InsufficientEvidence",
+      "rule": "BMCA.SNAPSHOT.WINDOW",
+      "measurement": null,
+      "sha256": "dd578595111eaa225cc3d49cf824edfb4679907a19feb2c3e4037d0e0345bffc",
+      "provenance": "Constructed from independent network-order fields; not a physical capture."
+    },
+    {
+      "name": "bmca-mixed-window",
+      "path": "fixtures/bmca-mixed-window.json",
+      "status": "InsufficientEvidence",
+      "rule": "BMCA.SNAPSHOT.WINDOW",
+      "measurement": null,
+      "sha256": "f1685b6614f58d4c2d4f1ef4ce6247f377898272cb6c96fef1e22add9370fb21",
+      "provenance": "Constructed from independent network-order fields; not a physical capture."
+    },
+    {
+      "name": "bmca-mixed-clock",
+      "path": "fixtures/bmca-mixed-clock.json",
+      "status": "InsufficientEvidence",
+      "rule": "BMCA.SNAPSHOT.WINDOW",
+      "measurement": null,
+      "sha256": "eb1e0a9be11ecff853498270f9d111c771917f7bb6c8905da1c112d8d157f1c0",
+      "provenance": "Constructed from independent network-order fields; not a physical capture."
+    },
+    {
+      "name": "bmca-missing-snapshot",
+      "path": "fixtures/bmca-missing-snapshot.json",
+      "status": "InsufficientEvidence",
+      "rule": "BMCA.SNAPSHOT.EVIDENCE",
+      "measurement": null,
+      "sha256": "6d385e72e43a962f52ea0a06625cc4f6d5d90f82216a82daffd0cbbaba21a8a2",
+      "provenance": "Constructed from independent network-order fields; not a physical capture."
+    },
+    {
+      "name": "bmca-missing-epoch",
+      "path": "fixtures/bmca-missing-epoch.json",
+      "status": "InsufficientEvidence",
+      "rule": "BMCA.SNAPSHOT.EVIDENCE",
+      "measurement": null,
+      "sha256": "d61d3033df5117f0f26ef6dfb4886495345ed712328a4eb5ea4eac416d8a383d",
+      "provenance": "Constructed from independent network-order fields; not a physical capture."
+    },
+    {
+      "name": "bmca-missing-window",
+      "path": "fixtures/bmca-missing-window.json",
+      "status": "InsufficientEvidence",
+      "rule": "BMCA.SNAPSHOT.EVIDENCE",
+      "measurement": null,
+      "sha256": "e6986e6df64d16e60b1677127debf720f4e7a1f9def0754d8b114077187566f6",
+      "provenance": "Constructed from independent network-order fields; not a physical capture."
+    },
+    {
+      "name": "bmca-missing-clock-domain",
+      "path": "fixtures/bmca-missing-clock-domain.json",
+      "status": "InsufficientEvidence",
+      "rule": "BMCA.SNAPSHOT.EVIDENCE",
+      "measurement": null,
+      "sha256": "a4906f7377355d45a2235a7bc2ca00aa9f27bf4ea48e8a0a92214f74fc4d4516",
+      "provenance": "Constructed from independent network-order fields; not a physical capture."
+    },
+    {
+      "name": "bmca-missing-decision-time",
+      "path": "fixtures/bmca-missing-decision-time.json",
+      "status": "InsufficientEvidence",
+      "rule": "BMCA.SNAPSHOT.EVIDENCE",
+      "measurement": null,
+      "sha256": "e86156b6d967b42c8e1229c3b773e5d05709c563bcaa5231f1f1a087d8c3f53a",
+      "provenance": "Constructed from independent network-order fields; not a physical capture."
+    },
+    {
+      "name": "bmca-missing-announce-validity-ns",
+      "path": "fixtures/bmca-missing-announce-validity-ns.json",
+      "status": "InsufficientEvidence",
+      "rule": "BMCA.SNAPSHOT.EVIDENCE",
+      "measurement": null,
+      "sha256": "df241ca7c7850516fb13948f14096952493b8aecc13fbb1941103f6319ba7c62",
+      "provenance": "Constructed from independent network-order fields; not a physical capture."
+    },
+    {
+      "name": "bmca-missing-validity-source",
+      "path": "fixtures/bmca-missing-validity-source.json",
+      "status": "InsufficientEvidence",
+      "rule": "BMCA.SNAPSHOT.EVIDENCE",
+      "measurement": null,
+      "sha256": "cd28838ac8b978fe75b1f69f77a9a9222a3d62193d532c0bdd685c3b89ad9954",
+      "provenance": "Constructed from independent network-order fields; not a physical capture."
+    },
+    {
+      "name": "bmca-unconfirmed-validity-confirmed",
+      "path": "fixtures/bmca-unconfirmed-validity-confirmed.json",
+      "status": "InsufficientEvidence",
+      "rule": "BMCA.SNAPSHOT.EVIDENCE",
+      "measurement": null,
+      "sha256": "5ecfac6ed1fa77ad0d4026f919f52b23e987f649378e78a650bf494bea42269a",
+      "provenance": "Constructed from independent network-order fields; not a physical capture."
+    },
+    {
+      "name": "bmca-unconfirmed-capture-window-confirmed",
+      "path": "fixtures/bmca-unconfirmed-capture-window-confirmed.json",
+      "status": "InsufficientEvidence",
+      "rule": "BMCA.SNAPSHOT.EVIDENCE",
+      "measurement": null,
+      "sha256": "2c255b136c25efc51d6f1ff590f9af45dbdf06700fa476eac8c41214c18e004b",
+      "provenance": "Constructed from independent network-order fields; not a physical capture."
+    },
+    {
+      "name": "bmca-future-announce",
+      "path": "fixtures/bmca-future-announce.json",
+      "status": "InsufficientEvidence",
+      "rule": "BMCA.SNAPSHOT.EXPIRED",
+      "measurement": null,
+      "sha256": "e73dce7e283f6307e6b8a8d450da73653ff6f3e90d5238725b6a9304580fc218",
+      "provenance": "Constructed from independent network-order fields; not a physical capture."
+    },
+    {
+      "name": "bmca-stale-announce",
+      "path": "fixtures/bmca-stale-announce.json",
+      "status": "InsufficientEvidence",
+      "rule": "BMCA.SNAPSHOT.WINDOW",
+      "measurement": null,
+      "sha256": "14a1e16232447bf03e7cbda9ae03b84ce5c809b9651b38c95389ca55a4578ac5",
+      "provenance": "Constructed from independent network-order fields; not a physical capture."
+    },
+    {
+      "name": "bmca-decision-outside-window",
+      "path": "fixtures/bmca-decision-outside-window.json",
+      "status": "InsufficientEvidence",
+      "rule": "BMCA.SNAPSHOT.WINDOW",
+      "measurement": null,
+      "sha256": "90f41ca3cfbed6da20796c1d7f2081661f9360913d66f9edea81534a211c43d8",
+      "provenance": "Constructed from independent network-order fields; not a physical capture."
+    },
+    {
+      "name": "bmca-unknown-snapshot-field",
+      "path": "fixtures/bmca-unknown-snapshot-field.json",
+      "status": "Violation",
+      "rule": "INPUT.SCHEMA",
+      "measurement": null,
+      "sha256": "0526d36592cd0f2292fe3e8a57f5f1ac471da1d35c28850f3661e5510e4cb172",
+      "provenance": "Constructed from independent network-order fields; not a physical capture."
+    },
+    {
+      "name": "bmca-null-snapshot",
+      "path": "fixtures/bmca-null-snapshot.json",
+      "status": "Violation",
+      "rule": "INPUT.SCHEMA",
+      "measurement": null,
+      "sha256": "756284a7829b5f8d1ea000f1e11a1db61486ab5e07e80d31010156d031f7168f",
+      "provenance": "Constructed from independent network-order fields; not a physical capture."
+    },
+    {
+      "name": "bmca-three-permutation-1",
+      "path": "fixtures/bmca-three-permutation-1.json",
+      "status": "Pass",
+      "rule": "BMCA.OBSERVED_DECISION",
+      "measurement": null,
+      "sha256": "52cddb6699dba99fa9fed530bb64d4baed8a1d79c8a5b23c16d595a27050278d",
+      "provenance": "Constructed from independent network-order fields; not a physical capture."
+    },
+    {
+      "name": "bmca-three-permutation-2",
+      "path": "fixtures/bmca-three-permutation-2.json",
+      "status": "Pass",
+      "rule": "BMCA.OBSERVED_DECISION",
+      "measurement": null,
+      "sha256": "89b86f221e9f977061dbc2d57a20aef20e68a00fdecc453d991b631c41081aad",
+      "provenance": "Constructed from independent network-order fields; not a physical capture."
+    },
+    {
+      "name": "bmca-three-permutation-3",
+      "path": "fixtures/bmca-three-permutation-3.json",
+      "status": "Pass",
+      "rule": "BMCA.OBSERVED_DECISION",
+      "measurement": null,
+      "sha256": "e74d3f176a84e52ebc20f1840c749d241b7b07d971c8126a3a1342c3f9cae2fa",
+      "provenance": "Constructed from independent network-order fields; not a physical capture."
+    },
+    {
+      "name": "bmca-three-permutation-4",
+      "path": "fixtures/bmca-three-permutation-4.json",
+      "status": "Pass",
+      "rule": "BMCA.OBSERVED_DECISION",
+      "measurement": null,
+      "sha256": "bad6c033f7639acb7ad3c044a6f7dd0f653e0dc5b163c133b9b3e9699f6d79c7",
+      "provenance": "Constructed from independent network-order fields; not a physical capture."
+    },
+    {
+      "name": "bmca-three-permutation-5",
+      "path": "fixtures/bmca-three-permutation-5.json",
+      "status": "Pass",
+      "rule": "BMCA.OBSERVED_DECISION",
+      "measurement": null,
+      "sha256": "d8acceb79e551b8adc239512663de439c978124d0cdf30f5f6446a9eebe7474b",
+      "provenance": "Constructed from independent network-order fields; not a physical capture."
+    },
+    {
+      "name": "bmca-three-permutation-6",
+      "path": "fixtures/bmca-three-permutation-6.json",
+      "status": "Pass",
+      "rule": "BMCA.OBSERVED_DECISION",
+      "measurement": null,
+      "sha256": "aea31284ce43be50d125e67af5ff59e81302b957853751d9c8ae35b77d9b3eb3",
+      "provenance": "Constructed from independent network-order fields; not a physical capture."
+    },
+    {
+      "name": "correction-too-big-all-ones",
+      "path": "fixtures/correction-too-big-all-ones.json",
+      "status": "Unsupported",
+      "rule": "SCOPE.CORRECTION_TOO_BIG",
+      "measurement": null,
+      "sha256": "90da4c88935bc7e9a3186bc5631fff81c9f9e20464e6201d7efa2607ab948bc7",
+      "provenance": "Constructed from independent network-order fields; not a physical capture."
+    },
+    {
+      "name": "correction-too-big-int64-max",
+      "path": "fixtures/correction-too-big-int64-max.json",
+      "status": "Unsupported",
+      "rule": "SCOPE.CORRECTION_TOO_BIG",
+      "measurement": null,
+      "sha256": "2a05783895dd632a78acfbd6841a753c8fd6e7f83c3d08369e00eeff0917747a",
+      "provenance": "Constructed from independent network-order fields; not a physical capture."
+    },
+    {
+      "name": "two-step-flag-nonsync-8",
+      "path": "fixtures/two-step-flag-nonsync-8.json",
+      "status": "Violation",
+      "rule": "WIRE.TWO_STEP_FLAG",
+      "measurement": null,
+      "sha256": "0a5763df2eb281b390970c1646fbe1d4e5323b19f41d712901cefc33d94a6451",
+      "provenance": "Constructed from independent network-order fields; not a physical capture."
+    },
+    {
+      "name": "two-step-flag-nonsync-1",
+      "path": "fixtures/two-step-flag-nonsync-1.json",
+      "status": "Violation",
+      "rule": "WIRE.TWO_STEP_FLAG",
+      "measurement": null,
+      "sha256": "87524e72c19bb6f0236b9d5efe3bd4749662059385041875e98de83aa29dbd76",
+      "provenance": "Constructed from independent network-order fields; not a physical capture."
+    },
+    {
+      "name": "two-step-flag-nonsync-9",
+      "path": "fixtures/two-step-flag-nonsync-9.json",
+      "status": "Violation",
+      "rule": "WIRE.TWO_STEP_FLAG",
+      "measurement": null,
+      "sha256": "46db402de33844e00c2a7bdfdf14df4454e73a529c48579ac3673220b002acdd",
+      "provenance": "Constructed from independent network-order fields; not a physical capture."
+    },
+    {
+      "name": "two-step-flag-nonsync-11",
+      "path": "fixtures/two-step-flag-nonsync-11.json",
+      "status": "Violation",
+      "rule": "WIRE.TWO_STEP_FLAG",
+      "measurement": null,
+      "sha256": "1a7b745cc339edcdfc182bd7eb6a8d2872b38a3134d0779c6a98aab4f017538b",
+      "provenance": "Constructed from independent network-order fields; not a physical capture."
+    },
+    {
+      "name": "blank-event-clock-domain",
+      "path": "fixtures/blank-event-clock-domain.json",
+      "status": "InsufficientEvidence",
+      "rule": "MEASUREMENT.EVIDENCE",
+      "measurement": null,
+      "sha256": "8e8a1087410cb234b379bbad29e6c25070068b48dcc6781f18ed1722a42a1767",
+      "provenance": "Constructed from independent network-order fields; not a physical capture."
+    },
+    {
+      "name": "blank-bmca-validity-source",
+      "path": "fixtures/blank-bmca-validity-source.json",
+      "status": "InsufficientEvidence",
+      "rule": "BMCA.SNAPSHOT.EVIDENCE",
+      "measurement": null,
+      "sha256": "33cce6993e18757c7fc360b604bb53e42b5b80c0ba9871513707aa1d2f4e0db4",
+      "provenance": "Constructed from independent network-order fields; not a physical capture."
+    },
+    {
+      "name": "bmca-unused-invalid-assumption",
+      "path": "fixtures/bmca-unused-invalid-assumption.json",
+      "status": "Violation",
+      "rule": "INPUT.SCHEMA",
+      "measurement": null,
+      "sha256": "188f47061dff8e6373b344cde950ac025f117b57d5b0a8cce4776aebf883afb4",
+      "provenance": "Constructed from independent network-order fields; not a physical capture."
+    },
+    {
+      "name": "duplicate-exchange-claims",
+      "path": "fixtures/duplicate-exchange-claims.json",
+      "status": "InsufficientEvidence",
+      "rule": "CLAIM.AMBIGUOUS",
+      "measurement": null,
+      "sha256": "2bdbc7892140c77188acc4a529bfff3b22a7b6102e1c523564f6c343dca8b37c",
+      "provenance": "Constructed from independent network-order fields; not a physical capture."
+    },
+    {
+      "name": "conflicting-exchange-claims",
+      "path": "fixtures/conflicting-exchange-claims.json",
+      "status": "InsufficientEvidence",
+      "rule": "CLAIM.AMBIGUOUS",
+      "measurement": null,
+      "sha256": "7dd4c407990c4b7520f30e6d66669e1a288a239f4c82992dcc527da3d8d31326",
+      "provenance": "Constructed from independent network-order fields; not a physical capture."
+    },
+    {
+      "name": "schema-invalid",
+      "path": "fixtures/schema-invalid.json",
+      "status": "Violation",
+      "rule": "INPUT.SCHEMA",
+      "measurement": null,
+      "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+      "provenance": "Minimal input boundary case."
+    },
+    {
+      "name": "wire-only",
+      "path": "fixtures/wire-only.json",
+      "status": "InsufficientEvidence",
+      "rule": "SCOPE.NO_SEMANTIC_CHECK",
+      "measurement": null,
+      "sha256": "c4b158114d68d536758ed17f7f06dcfe047be793090bee02dcf25388f8aab2f1",
+      "provenance": "Minimal input boundary case."
+    }
+  ]
+}

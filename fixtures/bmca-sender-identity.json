@@ -1,0 +1,87 @@
+{
+  "schema": "ptp-audit/v1",
+  "profile": "default-e2e-two-step-2008",
+  "frames": [
+    {
+      "id": 1,
+      "epoch": 0,
+      "payload_hex": "0b0200400000000000000000000000000000000000112233445566770001000705000000000000640000000000250080f82243218000112233445566770000a0",
+      "window": "capture-0",
+      "capture_time": {
+        "seconds": "100",
+        "nanos": 0
+      },
+      "capture_clock_domain": "slave-monotonic-0"
+    },
+    {
+      "id": 2,
+      "epoch": 0,
+      "payload_hex": "0b0200400000000000000000000000000000000000112233445566780001000705000000000000640000000000250080f82243218000112233445566770000a0",
+      "window": "capture-0",
+      "capture_time": {
+        "seconds": "100",
+        "nanos": 0
+      },
+      "capture_clock_domain": "slave-monotonic-0"
+    }
+  ],
+  "observation": {
+    "windows": [
+      {
+        "id": "capture-0",
+        "epoch": 0,
+        "clock_domain": "slave-monotonic-0",
+        "start": {
+          "seconds": "99",
+          "nanos": 0
+        },
+        "end": {
+          "seconds": "101",
+          "nanos": 999999999
+        },
+        "complete": true
+      }
+    ],
+    "policy": {
+      "source": "fixture-analysis-policy",
+      "sync_follow_up_ns": 1000000000,
+      "delay_response_ns": 1000000000
+    }
+  },
+  "bmca": {
+    "candidates": [
+      {
+        "id": "A",
+        "frame": 1,
+        "receiver": {
+          "clock": "8899aabbccddeeff",
+          "port": 1
+        }
+      },
+      {
+        "id": "B",
+        "frame": 2,
+        "receiver": {
+          "clock": "8899aabbccddeeff",
+          "port": 1
+        }
+      }
+    ],
+    "selected": "A",
+    "candidates_complete": true,
+    "eligibility_confirmed": true,
+    "snapshot": {
+      "epoch": 0,
+      "window": "capture-0",
+      "clock_domain": "slave-monotonic-0",
+      "decision_time": {
+        "seconds": "100",
+        "nanos": 10000
+      },
+      "announce_validity_ns": 1000000000,
+      "validity_source": "fixture-declared-observation-window",
+      "validity_confirmed": true,
+      "capture_window_confirmed": true
+    }
+  }
+}
