@@ -1,0 +1,26 @@
+#!/bin/sh
+# Keep repairs local to this invocation. Never modify the system SDK or compiler.
+set -eu
+project_root=$(CDPATH= cd -- "$(dirname -- "$0")/.." && pwd)
+moon_command=${PTP_AUDIT_MOON:-"$HOME/.moon/bin/moon"}
+if [ ! -x "$moon_command" ]; then moon_command=moon; fi
+export PATH="$HOME/.moon/bin:$PATH"
+export MOONFMT_OVERRIDE=${MOONFMT_OVERRIDE:-"$HOME/.moon/bin/moonfmt"}
+if [ "$(uname -s)" = Darwin ]; then
+  selected_sdk=${SDKROOT:-$(xcrun --show-sdk-path)}
+  unset SDKROOT
+  # Some CLT installations ship a newer SDK than their linker supports.
+  # Use an installed SDK only after compiling and executing a real native probe.
+  probe_dir=$(mktemp -d "${TMPDIR:-/tmp}/ptp-sdk-probe.XXXXXX")
+  printf 'int main(void){return 0;}\n' > "$probe_dir/probe.c"
+  for candidate in "$selected_sdk" /Library/Developer/CommandLineTools/SDKs/MacOSX26.5.sdk /Library/Developer/CommandLineTools/SDKs/MacOSX15.4.sdk; do
+    if [ -d "$candidate" ] && cc -isysroot "$candidate" "$probe_dir/probe.c" -o "$probe_dir/probe" > "$probe_dir/compiler.log" 2>&1 && "$probe_dir/probe"; then
+      export SDKROOT="$candidate"
+      break
+    fi
+  done
+  rm -rf "$probe_dir"
+  if [ -z "${SDKROOT:-}" ]; then printf '%s\n' 'No compatible installed macOS SDK found.' >&2; exit 2; fi
+fi
+cd "$project_root"
+exec "$moon_command" "$@"
