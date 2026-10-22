@@ -29,10 +29,29 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v5
 
+      - name: Set up Node.js for the JS backend
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+
       - name: Set up MoonBit
         run: |
           curl -fsSL https://cli.moonbitlang.com/install/unix.sh | bash -s -- '0.10.15+943464bfa'
           echo "$HOME/.moon/bin" >> $GITHUB_PATH
+
+      - name: Check out the tested official Core revision
+        uses: actions/checkout@v4
+        with:
+          repository: moonbitlang/core
+          ref: eb321a18f7a33d37114546682a8d1cd6658afab8
+          path: _build/toolchain-core
+
+      - name: Bundle the matching standard library
+        run: |
+          rm -rf "$HOME/.moon/lib/core"
+          mkdir -p "$HOME/.moon/lib/core"
+          git -C _build/toolchain-core archive HEAD | tar -x -C "$HOME/.moon/lib/core"
+          "$HOME/.moon/bin/moon" -C "$HOME/.moon/lib/core" bundle --warn-list -a --all
 
       - name: Verify MoonBit installation
         run: |
