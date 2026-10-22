@@ -1,0 +1,2362 @@
+{
+  "result": "pass",
+  "supplemental_scanner_sha256": "95c086d93448ea290a9d01913471a9fc6a527f46fcd56e3df6897461c439eb33",
+  "tested_members": 68,
+  "classifications": {
+    "strict-utf8-text": 61,
+    "utf8_with_controls_byte_view": 7
+  },
+  "keyword_hit_files": 0,
+  "mixed_log_hit_files": 0,
+  "source_nul_members_tested": 20,
+  "source_nul_probe_hit_files": 0,
+  "records": [
+    {
+      "name": "jtenner/telnet",
+      "version": "0.1.3",
+      "path": "tools/fuzz-corpus/seeds/plain.bin",
+      "bytes": 5,
+      "sha256": "2cf24dba5fb0a30e26e83b2ac5b9e29e1b161e5c1fa7425e73043362938b9824",
+      "original_inventory_kind": "binary",
+      "strict_utf8": true,
+      "classification": "strict-utf8-text",
+      "non_text_control_count": 0,
+      "decode_error": null,
+      "max_complete_line_characters": 5,
+      "max_materialized_line_string_bytes": 54,
+      "hits": []
+    },
+    {
+      "name": "Ag108/MoonReduce",
+      "version": "0.2.0",
+      "path": "artifacts/acceptance/final/failures/linux-mounted-verify.log",
+      "bytes": 1768,
+      "sha256": "0389bd4083153be4eaf4ce00a406461a1793306368e895ace4f0f77f334d3403",
+      "original_inventory_kind": "binary",
+      "strict_utf8": true,
+      "classification": "utf8_with_controls_byte_view",
+      "non_text_control_count": 51,
+      "decode_error": null,
+      "max_complete_line_characters": 170,
+      "max_materialized_line_string_bytes": 264,
+      "hits": [],
+      "mixed_log_byte_view": {
+        "basis": "Individually inspected WSL log with UTF-16LE-shaped prefix, existing UTF-8 replacement bytes, and ASCII tool output.",
+        "method": "Latin-1 is used only as a reversible one-codepoint-per-byte view, not the original text encoding; ASCII protocol spellings remain searchable.",
+        "original_encoding_claim": null,
+        "utf16_decoding_attempted": false,
+        "byte_roundtrip_verified": true,
+        "boundary": "Cannot restore damaged/non-ASCII text or search Chinese spellings encoded in the mixed prefix.",
+        "hits": []
+      }
+    },
+    {
+      "name": "Ag108/MoonReduce",
+      "version": "0.2.0",
+      "path": "artifacts/acceptance/final/platforms/linux-verify.log",
+      "bytes": 4760,
+      "sha256": "0abe69adbd31bb72d3c3a036cdefef18a3313ab221ab28bf1f2b2706387dc74b",
+      "original_inventory_kind": "binary",
+      "strict_utf8": true,
+      "classification": "utf8_with_controls_byte_view",
+      "non_text_control_count": 51,
+      "decode_error": null,
+      "max_complete_line_characters": 139,
+      "max_materialized_line_string_bytes": 264,
+      "hits": [],
+      "mixed_log_byte_view": {
+        "basis": "Individually inspected WSL log with UTF-16LE-shaped prefix, existing UTF-8 replacement bytes, and ASCII tool output.",
+        "method": "Latin-1 is used only as a reversible one-codepoint-per-byte view, not the original text encoding; ASCII protocol spellings remain searchable.",
+        "original_encoding_claim": null,
+        "utf16_decoding_attempted": false,
+        "byte_roundtrip_verified": true,
+        "boundary": "Cannot restore damaged/non-ASCII text or search Chinese spellings encoded in the mixed prefix.",
+        "hits": []
+      }
+    },
+    {
+      "name": "bobzhang/html_parser",
+      "version": "0.2.0",
+      "path": "tests/fixtures/justhtml/justhtml-tests/empty_stack_edge_cases.dat",
+      "bytes": 1197,
+      "sha256": "ca421e79a47dfa25401d7e7a5041a5089457c1d31eddbd3714ecd5ff91738e9b",
+      "original_inventory_kind": "binary",
+      "strict_utf8": true,
+      "classification": "strict-utf8-text",
+      "non_text_control_count": 0,
+      "decode_error": null,
+      "max_complete_line_characters": 62,
+      "max_materialized_line_string_bytes": 111,
+      "hits": []
+    },
+    {
+      "name": "bobzhang/html_parser",
+      "version": "0.2.0",
+      "path": "tests/fixtures/justhtml/justhtml-tests/xml_coercion.dat",
+      "bytes": 650,
+      "sha256": "c88887f5d4e7782be09ad27c09531ddd40ddae3b2d203a2f645504bfe3265c27",
+      "original_inventory_kind": "binary",
+      "strict_utf8": true,
+      "classification": "utf8_with_controls_byte_view",
+      "non_text_control_count": 1,
+      "decode_error": null,
+      "max_complete_line_characters": 41,
+      "max_materialized_line_string_bytes": 90,
+      "hits": []
+    },
+    {
+      "name": "bobzhang/html_parser",
+      "version": "0.2.0",
+      "path": "tests/fixtures/justhtml/justhtml-tests/treebuilder_coverage.dat",
+      "bytes": 3858,
+      "sha256": "3e68d02f2d2ddf1c5c8dd905681e613ffafb08f07ec8267bceb964863e34a421",
+      "original_inventory_kind": "binary",
+      "strict_utf8": true,
+      "classification": "strict-utf8-text",
+      "non_text_control_count": 0,
+      "decode_error": null,
+      "max_complete_line_characters": 100,
+      "max_materialized_line_string_bytes": 149,
+      "hits": []
+    },
+    {
+      "name": "bobzhang/html_parser",
+      "version": "0.2.0",
+      "path": "tests/fixtures/justhtml/justhtml-tests/iframe_srcdoc.dat",
+      "bytes": 169,
+      "sha256": "27f1ec4c45f653230df3432c1c75124c72b095efc977d2f74bc54ff840bafa64",
+      "original_inventory_kind": "binary",
+      "strict_utf8": true,
+      "classification": "strict-utf8-text",
+      "non_text_control_count": 0,
+      "decode_error": null,
+      "max_complete_line_characters": 32,
+      "max_materialized_line_string_bytes": 81,
+      "hits": []
+    },
+    {
+      "name": "bobzhang/html_parser",
+      "version": "0.2.0",
+      "path": "tests/fixtures/justhtml/justhtml-tests/branch_coverage.dat",
+      "bytes": 7561,
+      "sha256": "747006af474730392736d9494aa7b21c147cf53ad45c253002bd5fc17175e127",
+      "original_inventory_kind": "binary",
+      "strict_utf8": true,
+      "classification": "strict-utf8-text",
+      "non_text_control_count": 0,
+      "decode_error": null,
+      "max_complete_line_characters": 107,
+      "max_materialized_line_string_bytes": 156,
+      "hits": []
+    },
+    {
+      "name": "bobzhang/html_parser",
+      "version": "0.2.0",
+      "path": "tests/fixtures/html5lib-tests/tree-construction/tests20.dat",
+      "bytes": 13524,
+      "sha256": "07f7661690c4cd7cc0bbb0f1b9c1e1d65135e07c4dde8bbf106692f687e7d33d",
+      "original_inventory_kind": "binary",
+      "strict_utf8": true,
+      "classification": "strict-utf8-text",
+      "non_text_control_count": 0,
+      "decode_error": null,
+      "max_complete_line_characters": 60,
+      "max_materialized_line_string_bytes": 109,
+      "hits": []
+    },
+    {
+      "name": "bobzhang/html_parser",
+      "version": "0.2.0",
+      "path": "tests/fixtures/html5lib-tests/tree-construction/entities01.dat",
+      "bytes": 17640,
+      "sha256": "b73605caac5aed5656184ab8db3f08edff5457ac3186cb04afa28384bca955e3",
+      "original_inventory_kind": "binary",
+      "strict_utf8": true,
+      "classification": "utf8_with_controls_byte_view",
+      "non_text_control_count": 5,
+      "decode_error": null,
+      "max_complete_line_characters": 958,
+      "max_materialized_line_string_bytes": 1007,
+      "hits": []
+    },
+    {
+      "name": "bobzhang/html_parser",
+      "version": "0.2.0",
+      "path": "tests/fixtures/html5lib-tests/tree-construction/webkit02.dat",
+      "bytes": 14921,
+      "sha256": "03b215350d352faf110df2cc6eac23a44a7f70945b4ea962f0b17bed103459f7",
+      "original_inventory_kind": "binary",
+      "strict_utf8": true,
+      "classification": "strict-utf8-text",
+      "non_text_control_count": 0,
+      "decode_error": null,
+      "max_complete_line_characters": 141,
+      "max_materialized_line_string_bytes": 190,
+      "hits": []
+    },
+    {
+      "name": "bobzhang/html_parser",
+      "version": "0.2.0",
+      "path": "tests/fixtures/html5lib-tests/tree-construction/tests1.dat",
+      "bytes": 39802,
+      "sha256": "8438d7948b366c77821cff1fc71826a8090759a78ac8a691a5c82a51fc7e5d57",
+      "original_inventory_kind": "binary",
+      "strict_utf8": true,
+      "classification": "strict-utf8-text",
+      "non_text_control_count": 0,
+      "decode_error": null,
+      "max_complete_line_characters": 1044,
+      "max_materialized_line_string_bytes": 1093,
+      "hits": []
+    },
+    {
+      "name": "bobzhang/html_parser",
+      "version": "0.2.0",
+      "path": "tests/fixtures/html5lib-tests/tree-construction/tests21.dat",
+      "bytes": 5092,
+      "sha256": "b1a67420c79a5131002fefc987084ffb6b6094a3a74b272c6f545a47df06452c",
+      "original_inventory_kind": "binary",
+      "strict_utf8": true,
+      "classification": "strict-utf8-text",
+      "non_text_control_count": 0,
+      "decode_error": null,
+      "max_complete_line_characters": 41,
+      "max_materialized_line_string_bytes": 90,
+      "hits": []
+    },
+    {
+      "name": "bobzhang/html_parser",
+      "version": "0.2.0",
+      "path": "tests/fixtures/html5lib-tests/tree-construction/menuitem-element.dat",
+      "bytes": 4015,
+      "sha256": "08e5e25f38bbc181c840ce5c5203b2566dc03129aeaf105ca2311645d40aae4d",
+      "original_inventory_kind": "binary",
+      "strict_utf8": true,
+      "classification": "strict-utf8-text",
+      "non_text_control_count": 0,
+      "decode_error": null,
+      "max_complete_line_characters": 100,
+      "max_materialized_line_string_bytes": 230,
+      "hits": []
+    },
+    {
+      "name": "bobzhang/html_parser",
+      "version": "0.2.0",
+      "path": "tests/fixtures/html5lib-tests/tree-construction/tests23.dat",
+      "bytes": 3478,
+      "sha256": "2e4752ff4ef898e4a0cf9a450e481440095163d45075a662846a062552afe148",
+      "original_inventory_kind": "binary",
+      "strict_utf8": true,
+      "classification": "strict-utf8-text",
+      "non_text_control_count": 0,
+      "decode_error": null,
+      "max_complete_line_characters": 117,
+      "max_materialized_line_string_bytes": 166,
+      "hits": []
+    },
+    {
+      "name": "bobzhang/html_parser",
+      "version": "0.2.0",
+      "path": "tests/fixtures/html5lib-tests/tree-construction/tests3.dat",
+      "bytes": 4601,
+      "sha256": "c4b4d8e0ea3d978c49d1e6a985d427164858b71ec980153c4526ed0c398f43b9",
+      "original_inventory_kind": "binary",
+      "strict_utf8": true,
+      "classification": "strict-utf8-text",
+      "non_text_control_count": 0,
+      "decode_error": null,
+      "max_complete_line_characters": 79,
+      "max_materialized_line_string_bytes": 128,
+      "hits": []
+    },
+    {
+      "name": "bobzhang/html_parser",
+      "version": "0.2.0",
+      "path": "tests/fixtures/html5lib-tests/tree-construction/html5test-com.dat",
+      "bytes": 4790,
+      "sha256": "71d2ecbd0947599e82c876ce0300ecfc3a8cafd9d1736b33913f6a6152993bde",
+      "original_inventory_kind": "binary",
+      "strict_utf8": true,
+      "classification": "strict-utf8-text",
+      "non_text_control_count": 0,
+      "decode_error": null,
+      "max_complete_line_characters": 65,
+      "max_materialized_line_string_bytes": 114,
+      "hits": []
+    },
+    {
+      "name": "bobzhang/html_parser",
+      "version": "0.2.0",
+      "path": "tests/fixtures/html5lib-tests/tree-construction/entities02.dat",
+      "bytes": 4952,
+      "sha256": "f4e0cd461204b0184709be040c00811b776fbde1a6d002bb1c75d02056d9e54a",
+      "original_inventory_kind": "binary",
+      "strict_utf8": true,
+      "classification": "strict-utf8-text",
+      "non_text_control_count": 0,
+      "decode_error": null,
+      "max_complete_line_characters": 50,
+      "max_materialized_line_string_bytes": 120,
+      "hits": []
+    },
+    {
+      "name": "bobzhang/html_parser",
+      "version": "0.2.0",
+      "path": "tests/fixtures/html5lib-tests/tree-construction/ruby.dat",
+      "bytes": 4471,
+      "sha256": "5ae76ac4570d40e6648066798dd3ff729231bec98d3e010fdd67e0257f23a742",
+      "original_inventory_kind": "binary",
+      "strict_utf8": true,
+      "classification": "strict-utf8-text",
+      "non_text_control_count": 0,
+      "decode_error": null,
+      "max_complete_line_characters": 54,
+      "max_materialized_line_string_bytes": 103,
+      "hits": []
+    },
+    {
+      "name": "bobzhang/html_parser",
+      "version": "0.2.0",
+      "path": "tests/fixtures/html5lib-tests/tree-construction/webkit01.dat",
+      "bytes": 14034,
+      "sha256": "063ca232535a792fa238ae769eeb0ddcc9bd2ee961d3da327ca134612d35d93c",
+      "original_inventory_kind": "binary",
+      "strict_utf8": true,
+      "classification": "strict-utf8-text",
+      "non_text_control_count": 0,
+      "decode_error": null,
+      "max_complete_line_characters": 148,
+      "max_materialized_line_string_bytes": 197,
+      "hits": []
+    },
+    {
+      "name": "bobzhang/html_parser",
+      "version": "0.2.0",
+      "path": "tests/fixtures/html5lib-tests/tree-construction/tests2.dat",
+      "bytes": 13193,
+      "sha256": "9cf76b5f4890065c04fc82ae828379a55b85cbe76f584fb1ef23dcef0a77b86b",
+      "original_inventory_kind": "binary",
+      "strict_utf8": true,
+      "classification": "strict-utf8-text",
+      "non_text_control_count": 0,
+      "decode_error": null,
+      "max_complete_line_characters": 110,
+      "max_materialized_line_string_bytes": 159,
+      "hits": []
+    },
+    {
+      "name": "bobzhang/html_parser",
+      "version": "0.2.0",
+      "path": "tests/fixtures/html5lib-tests/tree-construction/tests22.dat",
+      "bytes": 4243,
+      "sha256": "78488328181d0f82f34b1a5e9e456ff7c713b3ff86dab6ace1530f6f07d5370d",
+      "original_inventory_kind": "binary",
+      "strict_utf8": true,
+      "classification": "strict-utf8-text",
+      "non_text_control_count": 0,
+      "decode_error": null,
+      "max_complete_line_characters": 112,
+      "max_materialized_line_string_bytes": 161,
+      "hits": []
+    },
+    {
+      "name": "bobzhang/html_parser",
+      "version": "0.2.0",
+      "path": "tests/fixtures/html5lib-tests/tree-construction/tests26.dat",
+      "bytes": 8865,
+      "sha256": "d55d24dfca2444fba759d59346cbab21f7e70340dbb14e2c7af8da3d44abd4ab",
+      "original_inventory_kind": "binary",
+      "strict_utf8": true,
+      "classification": "strict-utf8-text",
+      "non_text_control_count": 0,
+      "decode_error": null,
+      "max_complete_line_characters": 119,
+      "max_materialized_line_string_bytes": 180,
+      "hits": []
+    },
+    {
+      "name": "bobzhang/html_parser",
+      "version": "0.2.0",
+      "path": "tests/fixtures/html5lib-tests/tree-construction/tests6.dat",
+      "bytes": 11065,
+      "sha256": "be16c74d2a9862283262968439c95b9bfce6182ea61055a3c886c28d14f3e01a",
+      "original_inventory_kind": "binary",
+      "strict_utf8": true,
+      "classification": "strict-utf8-text",
+      "non_text_control_count": 0,
+      "decode_error": null,
+      "max_complete_line_characters": 87,
+      "max_materialized_line_string_bytes": 136,
+      "hits": []
+    },
+    {
+      "name": "bobzhang/html_parser",
+      "version": "0.2.0",
+      "path": "tests/fixtures/html5lib-tests/tree-construction/blocks.dat",
+      "bytes": 9688,
+      "sha256": "e3b7da1b57a4ec6991443dfc7ab3270f41d0f5959092a49be3e0edca0dae2104",
+      "original_inventory_kind": "binary",
+      "strict_utf8": true,
+      "classification": "strict-utf8-text",
+      "non_text_control_count": 0,
+      "decode_error": null,
+      "max_complete_line_characters": 49,
+      "max_materialized_line_string_bytes": 98,
+      "hits": []
+    },
+    {
+      "name": "bobzhang/html_parser",
+      "version": "0.2.0",
+      "path": "tests/fixtures/html5lib-tests/tree-construction/tests7.dat",
+      "bytes": 7339,
+      "sha256": "aeb9569589c809b1a563c0b163173e8cf980a6a4028cb7c210f19c181b56999a",
+      "original_inventory_kind": "binary",
+      "strict_utf8": true,
+      "classification": "strict-utf8-text",
+      "non_text_control_count": 0,
+      "decode_error": null,
+      "max_complete_line_characters": 92,
+      "max_materialized_line_string_bytes": 141,
+      "hits": []
+    },
+    {
+      "name": "bobzhang/html_parser",
+      "version": "0.2.0",
+      "path": "tests/fixtures/html5lib-tests/tree-construction/tests25.dat",
+      "bytes": 3586,
+      "sha256": "f2e08fda6d15a08faf9ff0001ec38560d942069cee6b4e264aeedbbacde7da8d",
+      "original_inventory_kind": "binary",
+      "strict_utf8": true,
+      "classification": "strict-utf8-text",
+      "non_text_control_count": 0,
+      "decode_error": null,
+      "max_complete_line_characters": 75,
+      "max_materialized_line_string_bytes": 224,
+      "hits": []
+    },
+    {
+      "name": "bobzhang/html_parser",
+      "version": "0.2.0",
+      "path": "tests/fixtures/html5lib-tests/tree-construction/tests19.dat",
+      "bytes": 22988,
+      "sha256": "a9316b1eb4d2821a18e2c840394c6218bfcdb598857b92631490d9c3c1840ce4",
+      "original_inventory_kind": "binary",
+      "strict_utf8": true,
+      "classification": "strict-utf8-text",
+      "non_text_control_count": 0,
+      "decode_error": null,
+      "max_complete_line_characters": 561,
+      "max_materialized_line_string_bytes": 610,
+      "hits": []
+    },
+    {
+      "name": "bobzhang/html_parser",
+      "version": "0.2.0",
+      "path": "tests/fixtures/html5lib-tests/tree-construction/tests5.dat",
+      "bytes": 3160,
+      "sha256": "bf80b927082290541781844906abdcb72f091488f7a11e8b7d9ac00076dd4fce",
+      "original_inventory_kind": "binary",
+      "strict_utf8": true,
+      "classification": "strict-utf8-text",
+      "non_text_control_count": 0,
+      "decode_error": null,
+      "max_complete_line_characters": 59,
+      "max_materialized_line_string_bytes": 108,
+      "hits": []
+    },
+    {
+      "name": "bobzhang/html_parser",
+      "version": "0.2.0",
+      "path": "tests/fixtures/html5lib-tests/tree-construction/tests4.dat",
+      "bytes": 1041,
+      "sha256": "e6003a52e1cbffc361eca7c739cdd4459074ac8c59766d1eb171b9c9eb42f517",
+      "original_inventory_kind": "binary",
+      "strict_utf8": true,
+      "classification": "strict-utf8-text",
+      "non_text_control_count": 0,
+      "decode_error": null,
+      "max_complete_line_characters": 53,
+      "max_materialized_line_string_bytes": 102,
+      "hits": []
+    },
+    {
+      "name": "bobzhang/html_parser",
+      "version": "0.2.0",
+      "path": "tests/fixtures/html5lib-tests/tree-construction/tests18.dat",
+      "bytes": 12119,
+      "sha256": "5d0019ae43bb4e0b0da9f2e1d57ac0618a607bd8a1324b163ec7a23a1dc120f3",
+      "original_inventory_kind": "binary",
+      "strict_utf8": true,
+      "classification": "strict-utf8-text",
+      "non_text_control_count": 0,
+      "decode_error": null,
+      "max_complete_line_characters": 102,
+      "max_materialized_line_string_bytes": 230,
+      "hits": []
+    },
+    {
+      "name": "bobzhang/html_parser",
+      "version": "0.2.0",
+      "path": "tests/fixtures/html5lib-tests/tree-construction/tests24.dat",
+      "bytes": 929,
+      "sha256": "fdd5c21f60f42235ded224a03e7182d289088328f460525adaf3c14e772a24ac",
+      "original_inventory_kind": "binary",
+      "strict_utf8": true,
+      "classification": "strict-utf8-text",
+      "non_text_control_count": 0,
+      "decode_error": null,
+      "max_complete_line_characters": 31,
+      "max_materialized_line_string_bytes": 116,
+      "hits": []
+    },
+    {
+      "name": "bobzhang/html_parser",
+      "version": "0.2.0",
+      "path": "tests/fixtures/html5lib-tests/tree-construction/tests_innerHTML_1.dat",
+      "bytes": 11205,
+      "sha256": "acb9f835119e302d33204f437d54637a84ae26608ccb7bc961c6f7f44202a44c",
+      "original_inventory_kind": "binary",
+      "strict_utf8": true,
+      "classification": "strict-utf8-text",
+      "non_text_control_count": 0,
+      "decode_error": null,
+      "max_complete_line_characters": 72,
+      "max_materialized_line_string_bytes": 121,
+      "hits": []
+    },
+    {
+      "name": "bobzhang/html_parser",
+      "version": "0.2.0",
+      "path": "tests/fixtures/html5lib-tests/tree-construction/scripted/webkit01.dat",
+      "bytes": 603,
+      "sha256": "9d84f68ffd6e8b7b3924c9211280a70a888576b49074654cc9708236834afc58",
+      "original_inventory_kind": "binary",
+      "strict_utf8": true,
+      "classification": "strict-utf8-text",
+      "non_text_control_count": 0,
+      "decode_error": null,
+      "max_complete_line_characters": 118,
+      "max_materialized_line_string_bytes": 167,
+      "hits": []
+    },
+    {
+      "name": "bobzhang/html_parser",
+      "version": "0.2.0",
+      "path": "tests/fixtures/html5lib-tests/tree-construction/scripted/ark.dat",
+      "bytes": 631,
+      "sha256": "93365261fd9ea7dd9242613b57c23dba94e66bfd837a5d928f725bed81012dd0",
+      "original_inventory_kind": "binary",
+      "strict_utf8": true,
+      "classification": "strict-utf8-text",
+      "non_text_control_count": 0,
+      "decode_error": null,
+      "max_complete_line_characters": 143,
+      "max_materialized_line_string_bytes": 192,
+      "hits": []
+    },
+    {
+      "name": "bobzhang/html_parser",
+      "version": "0.2.0",
+      "path": "tests/fixtures/html5lib-tests/tree-construction/scripted/adoption01.dat",
+      "bytes": 296,
+      "sha256": "1203be63238a6effc9cc47e3c9b1fa9a0c7e0126a2f78916514afed2d46f42d8",
+      "original_inventory_kind": "binary",
+      "strict_utf8": true,
+      "classification": "strict-utf8-text",
+      "non_text_control_count": 0,
+      "decode_error": null,
+      "max_complete_line_characters": 79,
+      "max_materialized_line_string_bytes": 128,
+      "hits": []
+    },
+    {
+      "name": "bobzhang/html_parser",
+      "version": "0.2.0",
+      "path": "tests/fixtures/html5lib-tests/tree-construction/plain-text-unsafe.dat",
+      "bytes": 9486,
+      "sha256": "1aef5e36b7ea04bb1d70684b33529a183938b7604283c562c698d6dad4e3878d",
+      "original_inventory_kind": "binary",
+      "strict_utf8": true,
+      "classification": "utf8_with_controls_byte_view",
+      "non_text_control_count": 35,
+      "decode_error": null,
+      "max_complete_line_characters": 52,
+      "max_materialized_line_string_bytes": 128,
+      "hits": []
+    },
+    {
+      "name": "bobzhang/html_parser",
+      "version": "0.2.0",
+      "path": "tests/fixtures/html5lib-tests/tree-construction/noscript01.dat",
+      "bytes": 4619,
+      "sha256": "e82449304a6371c14ed490384b6d814b7b1eeb1022dbc5caa2045fc8400655d7",
+      "original_inventory_kind": "binary",
+      "strict_utf8": true,
+      "classification": "strict-utf8-text",
+      "non_text_control_count": 0,
+      "decode_error": null,
+      "max_complete_line_characters": 80,
+      "max_materialized_line_string_bytes": 129,
+      "hits": []
+    },
+    {
+      "name": "bobzhang/html_parser",
+      "version": "0.2.0",
+      "path": "tests/fixtures/html5lib-tests/tree-construction/domjs-unsafe.dat",
+      "bytes": 10356,
+      "sha256": "eef4fb719e027ffaadfb854787d172893850fc561c29efe72d90c5bfa3c8b7ac",
+      "original_inventory_kind": "binary",
+      "strict_utf8": true,
+      "classification": "utf8_with_controls_byte_view",
+      "non_text_control_count": 8,
+      "decode_error": null,
+      "max_complete_line_characters": 58,
+      "max_materialized_line_string_bytes": 142,
+      "hits": []
+    },
+    {
+      "name": "bobzhang/html_parser",
+      "version": "0.2.0",
+      "path": "tests/fixtures/html5lib-tests/tree-construction/quirks01.dat",
+      "bytes": 1170,
+      "sha256": "b6717cc15d4ed573ccf6755bc9d52073e675b4d09f23bde07961e27592b9717c",
+      "original_inventory_kind": "binary",
+      "strict_utf8": true,
+      "classification": "strict-utf8-text",
+      "non_text_control_count": 0,
+      "decode_error": null,
+      "max_complete_line_characters": 108,
+      "max_materialized_line_string_bytes": 157,
+      "hits": []
+    },
+    {
+      "name": "bobzhang/html_parser",
+      "version": "0.2.0",
+      "path": "tests/fixtures/html5lib-tests/tree-construction/pending-spec-changes-plain-text-unsafe.dat",
+      "bytes": 927,
+      "sha256": "f45151f8dc7a4fe1a4b36710cf33606ff43cc98a42f1d2f085a77680683b0c99",
+      "original_inventory_kind": "binary",
+      "strict_utf8": true,
+      "classification": "utf8_with_controls_byte_view",
+      "non_text_control_count": 3,
+      "decode_error": null,
+      "max_complete_line_characters": 43,
+      "max_materialized_line_string_bytes": 92,
+      "hits": []
+    },
+    {
+      "name": "bobzhang/html_parser",
+      "version": "0.2.0",
+      "path": "tests/fixtures/html5lib-tests/tree-construction/scriptdata01.dat",
+      "bytes": 6624,
+      "sha256": "e32ea3adc3d68c90e62ea50b3a41bf80369d1491958532bf00787b3509667322",
+      "original_inventory_kind": "binary",
+      "strict_utf8": true,
+      "classification": "strict-utf8-text",
+      "non_text_control_count": 0,
+      "decode_error": null,
+      "max_complete_line_characters": 68,
+      "max_materialized_line_string_bytes": 117,
+      "hits": []
+    },
+    {
+      "name": "bobzhang/html_parser",
+      "version": "0.2.0",
+      "path": "tests/fixtures/html5lib-tests/tree-construction/adoption02.dat",
+      "bytes": 672,
+      "sha256": "6ca94baf47ef9b6756657f40b15a12ac758802faa5003a7659652b8664e1e7d8",
+      "original_inventory_kind": "binary",
+      "strict_utf8": true,
+      "classification": "strict-utf8-text",
+      "non_text_control_count": 0,
+      "decode_error": null,
+      "max_complete_line_characters": 44,
+      "max_materialized_line_string_bytes": 93,
+      "hits": []
+    },
+    {
+      "name": "bobzhang/html_parser",
+      "version": "0.2.0",
+      "path": "tests/fixtures/html5lib-tests/tree-construction/adoption01.dat",
+      "bytes": 6084,
+      "sha256": "b2aba05bd1d832f73a0c6103b3c8b151b283bab7c56887274d81f3a062c4963e",
+      "original_inventory_kind": "binary",
+      "strict_utf8": true,
+      "classification": "strict-utf8-text",
+      "non_text_control_count": 0,
+      "decode_error": null,
+      "max_complete_line_characters": 65,
+      "max_materialized_line_string_bytes": 114,
+      "hits": []
+    },
+    {
+      "name": "bobzhang/html_parser",
+      "version": "0.2.0",
+      "path": "tests/fixtures/html5lib-tests/tree-construction/tables01.dat",
+      "bytes": 7041,
+      "sha256": "bfd4a53246e3acc527c8bb214cc743082e19260e72365001aad3f1d8f4bd08dc",
+      "original_inventory_kind": "binary",
+      "strict_utf8": true,
+      "classification": "strict-utf8-text",
+      "non_text_control_count": 0,
+      "decode_error": null,
+      "max_complete_line_characters": 110,
+      "max_materialized_line_string_bytes": 159,
+      "hits": []
+    },
+    {
+      "name": "bobzhang/html_parser",
+      "version": "0.2.0",
+      "path": "tests/fixtures/html5lib-tests/tree-construction/math.dat",
+      "bytes": 1862,
+      "sha256": "3c2ecc07272c175676ecfafa0cf6e18e74c3293075703702a4b7929fcb0d07bd",
+      "original_inventory_kind": "binary",
+      "strict_utf8": true,
+      "classification": "strict-utf8-text",
+      "non_text_control_count": 0,
+      "decode_error": null,
+      "max_complete_line_characters": 42,
+      "max_materialized_line_string_bytes": 91,
+      "hits": []
+    },
+    {
+      "name": "bobzhang/html_parser",
+      "version": "0.2.0",
+      "path": "tests/fixtures/html5lib-tests/tree-construction/tests15.dat",
+      "bytes": 3649,
+      "sha256": "ef784ece74cbd760da3a6947aaf4478810246b73c753f25a04be4d11dd806b2d",
+      "original_inventory_kind": "binary",
+      "strict_utf8": true,
+      "classification": "strict-utf8-text",
+      "non_text_control_count": 0,
+      "decode_error": null,
+      "max_complete_line_characters": 99,
+      "max_materialized_line_string_bytes": 148,
+      "hits": []
+    },
+    {
+      "name": "bobzhang/html_parser",
+      "version": "0.2.0",
+      "path": "tests/fixtures/html5lib-tests/tree-construction/tests9.dat",
+      "bytes": 10391,
+      "sha256": "857820f088506a6d20ea6acefbf19c0a6c4de87a39b24988878066397516b36f",
+      "original_inventory_kind": "binary",
+      "strict_utf8": true,
+      "classification": "strict-utf8-text",
+      "non_text_control_count": 0,
+      "decode_error": null,
+      "max_complete_line_characters": 115,
+      "max_materialized_line_string_bytes": 164,
+      "hits": []
+    },
+    {
+      "name": "bobzhang/html_parser",
+      "version": "0.2.0",
+      "path": "tests/fixtures/html5lib-tests/tree-construction/main-element.dat",
+      "bytes": 727,
+      "sha256": "d56e382994e1a5228ddb2ea49a5ff51ab68487f9a8f79ad34bcad05d40dc1e8f",
+      "original_inventory_kind": "binary",
+      "strict_utf8": true,
+      "classification": "strict-utf8-text",
+      "non_text_control_count": 0,
+      "decode_error": null,
+      "max_complete_line_characters": 65,
+      "max_materialized_line_string_bytes": 114,
+      "hits": []
+    },
+    {
+      "name": "bobzhang/html_parser",
+      "version": "0.2.0",
+      "path": "tests/fixtures/html5lib-tests/tree-construction/svg.dat",
+      "bytes": 1606,
+      "sha256": "4c819b8dbdfbd98cfbce9a535a304b0a16597eb29ccc04077131a62810f309cd",
+      "original_inventory_kind": "binary",
+      "strict_utf8": true,
+      "classification": "strict-utf8-text",
+      "non_text_control_count": 0,
+      "decode_error": null,
+      "max_complete_line_characters": 30,
+      "max_materialized_line_string_bytes": 79,
+      "hits": []
+    },
+    {
+      "name": "bobzhang/html_parser",
+      "version": "0.2.0",
+      "path": "tests/fixtures/html5lib-tests/tree-construction/void-in-phrasing.dat",
+      "bytes": 1890,
+      "sha256": "c8855173aca8ecbd218abc26db34a631393ce0285fffebffdaf69b8bdd6224e9",
+      "original_inventory_kind": "binary",
+      "strict_utf8": true,
+      "classification": "strict-utf8-text",
+      "non_text_control_count": 0,
+      "decode_error": null,
+      "max_complete_line_characters": 46,
+      "max_materialized_line_string_bytes": 95,
+      "hits": []
+    },
+    {
+      "name": "bobzhang/html_parser",
+      "version": "0.2.0",
+      "path": "tests/fixtures/html5lib-tests/tree-construction/isindex.dat",
+      "bytes": 774,
+      "sha256": "d152de773e276a07a1cfc91e93f01f3ce52c447c110192f2828dab51be2721b6",
+      "original_inventory_kind": "binary",
+      "strict_utf8": true,
+      "classification": "strict-utf8-text",
+      "non_text_control_count": 0,
+      "decode_error": null,
+      "max_complete_line_characters": 48,
+      "max_materialized_line_string_bytes": 97,
+      "hits": []
+    },
+    {
+      "name": "bobzhang/html_parser",
+      "version": "0.2.0",
+      "path": "tests/fixtures/html5lib-tests/tree-construction/namespace-sensitivity.dat",
+      "bytes": 518,
+      "sha256": "318fbc9926eddf5863524f1503c711ddaea93b55bcbd1eaab71b7e354ddfeb09",
+      "original_inventory_kind": "binary",
+      "strict_utf8": true,
+      "classification": "strict-utf8-text",
+      "non_text_control_count": 0,
+      "decode_error": null,
+      "max_complete_line_characters": 59,
+      "max_materialized_line_string_bytes": 108,
+      "hits": []
+    },
+    {
+      "name": "bobzhang/html_parser",
+      "version": "0.2.0",
+      "path": "tests/fixtures/html5lib-tests/tree-construction/tests8.dat",
+      "bytes": 2664,
+      "sha256": "f3c8b1baece162e7e8c394540cdf9057266bb738bb0ad539a9d9b2f9d365f162",
+      "original_inventory_kind": "binary",
+      "strict_utf8": true,
+      "classification": "strict-utf8-text",
+      "non_text_control_count": 0,
+      "decode_error": null,
+      "max_complete_line_characters": 44,
+      "max_materialized_line_string_bytes": 93,
+      "hits": []
+    },
+    {
+      "name": "bobzhang/html_parser",
+      "version": "0.2.0",
+      "path": "tests/fixtures/html5lib-tests/tree-construction/tests14.dat",
+      "bytes": 1067,
+      "sha256": "d151b2426f38de40a5d4ae726e2a56dbc7742a9b1c95299d60c1e2e0fdad1f98",
+      "original_inventory_kind": "binary",
+      "strict_utf8": true,
+      "classification": "strict-utf8-text",
+      "non_text_control_count": 0,
+      "decode_error": null,
+      "max_complete_line_characters": 59,
+      "max_materialized_line_string_bytes": 108,
+      "hits": []
+    },
+    {
+      "name": "bobzhang/html_parser",
+      "version": "0.2.0",
+      "path": "tests/fixtures/html5lib-tests/tree-construction/tests16.dat",
+      "bytes": 46454,
+      "sha256": "3350be682713afc1f6dad37059f2551709497a3643c38c26e1fe36fd07d23745",
+      "original_inventory_kind": "binary",
+      "strict_utf8": true,
+      "classification": "strict-utf8-text",
+      "non_text_control_count": 0,
+      "decode_error": null,
+      "max_complete_line_characters": 106,
+      "max_materialized_line_string_bytes": 155,
+      "hits": []
+    },
+    {
+      "name": "bobzhang/html_parser",
+      "version": "0.2.0",
+      "path": "tests/fixtures/html5lib-tests/tree-construction/inbody01.dat",
+      "bytes": 836,
+      "sha256": "cb722f2853ec9613b71ea68e8bb26f474cc450b64612930591ab2656406222fe",
+      "original_inventory_kind": "binary",
+      "strict_utf8": true,
+      "classification": "strict-utf8-text",
+      "non_text_control_count": 0,
+      "decode_error": null,
+      "max_complete_line_characters": 41,
+      "max_materialized_line_string_bytes": 90,
+      "hits": []
+    },
+    {
+      "name": "bobzhang/html_parser",
+      "version": "0.2.0",
+      "path": "tests/fixtures/html5lib-tests/tree-construction/doctype01.dat",
+      "bytes": 9076,
+      "sha256": "f3a286c09d729eeed9aa63e0aec13ab12336af04590c169543e6d1e1ef4723b2",
+      "original_inventory_kind": "binary",
+      "strict_utf8": true,
+      "classification": "strict-utf8-text",
+      "non_text_control_count": 0,
+      "decode_error": null,
+      "max_complete_line_characters": 116,
+      "max_materialized_line_string_bytes": 165,
+      "hits": []
+    },
+    {
+      "name": "bobzhang/html_parser",
+      "version": "0.2.0",
+      "path": "tests/fixtures/html5lib-tests/tree-construction/tricky01.dat",
+      "bytes": 6690,
+      "sha256": "3fb6d24c5e371860d096ef07f5fff38be3ceaa85f1239bee35cce548b596198a",
+      "original_inventory_kind": "binary",
+      "strict_utf8": true,
+      "classification": "strict-utf8-text",
+      "non_text_control_count": 0,
+      "decode_error": null,
+      "max_complete_line_characters": 107,
+      "max_materialized_line_string_bytes": 156,
+      "hits": []
+    },
+    {
+      "name": "bobzhang/html_parser",
+      "version": "0.2.0",
+      "path": "tests/fixtures/html5lib-tests/tree-construction/comments01.dat",
+      "bytes": 3502,
+      "sha256": "79a7a42412b6dc48fa0c779dd8ba48d4d50033e7e9e417619288eec1e59d8db2",
+      "original_inventory_kind": "binary",
+      "strict_utf8": true,
+      "classification": "strict-utf8-text",
+      "non_text_control_count": 0,
+      "decode_error": null,
+      "max_complete_line_characters": 56,
+      "max_materialized_line_string_bytes": 105,
+      "hits": []
+    },
+    {
+      "name": "bobzhang/html_parser",
+      "version": "0.2.0",
+      "path": "tests/fixtures/html5lib-tests/tree-construction/tests17.dat",
+      "bytes": 2819,
+      "sha256": "0567680775f58a5b2ad24e234f41d53f68fb2fc3ef7809bebaec0920e2f13c89",
+      "original_inventory_kind": "binary",
+      "strict_utf8": true,
+      "classification": "strict-utf8-text",
+      "non_text_control_count": 0,
+      "decode_error": null,
+      "max_complete_line_characters": 61,
+      "max_materialized_line_string_bytes": 110,
+      "hits": []
+    },
+    {
+      "name": "bobzhang/html_parser",
+      "version": "0.2.0",
+      "path": "tests/fixtures/html5lib-tests/tree-construction/pending-spec-changes.dat",
+      "bytes": 851,
+      "sha256": "a6b7c4ecccabe70de2f24184245e4a73a8d12ed44ee658c3d5d25cce04c9d27f",
+      "original_inventory_kind": "binary",
+      "strict_utf8": true,
+      "classification": "strict-utf8-text",
+      "non_text_control_count": 0,
+      "decode_error": null,
+      "max_complete_line_characters": 50,
+      "max_materialized_line_string_bytes": 99,
+      "hits": []
+    },
+    {
+      "name": "bobzhang/html_parser",
+      "version": "0.2.0",
+      "path": "tests/fixtures/html5lib-tests/tree-construction/tests12.dat",
+      "bytes": 1612,
+      "sha256": "e6c506cea74979a0d6ca47f6b175c7b6177d6e57db708920a89694e31dfd8a42",
+      "original_inventory_kind": "binary",
+      "strict_utf8": true,
+      "classification": "strict-utf8-text",
+      "non_text_control_count": 0,
+      "decode_error": null,
+      "max_complete_line_characters": 225,
+      "max_materialized_line_string_bytes": 274,
+      "hits": []
+    },
+    {
+      "name": "bobzhang/html_parser",
+      "version": "0.2.0",
+      "path": "tests/fixtures/html5lib-tests/tree-construction/tests10.dat",
+      "bytes": 16458,
+      "sha256": "2d2624a819c323661e396d864ac23440053127b5ea7adb44a5904f5ceee5fa64",
+      "original_inventory_kind": "binary",
+      "strict_utf8": true,
+      "classification": "strict-utf8-text",
+      "non_text_control_count": 0,
+      "decode_error": null,
+      "max_complete_line_characters": 153,
+      "max_materialized_line_string_bytes": 202,
+      "hits": []
+    },
+    {
+      "name": "bobzhang/html_parser",
+      "version": "0.2.0",
+      "path": "tests/fixtures/html5lib-tests/tree-construction/foreign-fragment.dat",
+      "bytes": 9082,
+      "sha256": "73e1785753c66420c067e5b29f89b17e7ebe1079687a512040ef19c6d42ac2c2",
+      "original_inventory_kind": "binary",
+      "strict_utf8": true,
+      "classification": "strict-utf8-text",
+      "non_text_control_count": 0,
+      "decode_error": null,
+      "max_complete_line_characters": 111,
+      "max_materialized_line_string_bytes": 296,
+      "hits": []
+    },
+    {
+      "name": "bobzhang/html_parser",
+      "version": "0.2.0",
+      "path": "tests/fixtures/html5lib-tests/tree-construction/template.dat",
+      "bytes": 25142,
+      "sha256": "74bc8308e673589d81b63eb71411a6f8ecea6fd6af649b5802c22615b7102a03",
+      "original_inventory_kind": "binary",
+      "strict_utf8": true,
+      "classification": "strict-utf8-text",
+      "non_text_control_count": 0,
+      "decode_error": null,
+      "max_complete_line_characters": 96,
+      "max_materialized_line_string_bytes": 145,
+      "hits": []
+    },
+    {
+      "name": "bobzhang/html_parser",
+      "version": "0.2.0",
+      "path": "tests/fixtures/html5lib-tests/tree-construction/tests11.dat",
+      "bytes": 17679,
+      "sha256": "276190e2a7b97e8fcf3bd863a4b4b5346b555a8336c00143cb1d0e8956b94a07",
+      "original_inventory_kind": "binary",
+      "strict_utf8": true,
+      "classification": "strict-utf8-text",
+      "non_text_control_count": 0,
+      "decode_error": null,
+      "max_complete_line_characters": 963,
+      "max_materialized_line_string_bytes": 1012,
+      "hits": []
+    },
+    {
+      "name": "bobzhang/html_parser",
+      "version": "0.2.0",
+      "path": "tests/fixtures/html5lib-tests/tree-construction/search-element.dat",
+      "bytes": 741,
+      "sha256": "30be0e9e8cbeea825e0323a7a3a518ab88f44fcada9b4f82b0cc7bbeb9334b76",
+      "original_inventory_kind": "binary",
+      "strict_utf8": true,
+      "classification": "strict-utf8-text",
+      "non_text_control_count": 0,
+      "decode_error": null,
+      "max_complete_line_characters": 65,
+      "max_materialized_line_string_bytes": 114,
+      "hits": []
+    }
+  ],
+  "source_nul_records": [
+    {
+      "name": "R00TK17/hex_editor",
+      "version": "0.1.3",
+      "path": "hex_struct.mbt",
+      "bytes": 71477,
+      "sha256": "8218a11e5270f4d2f5867983083e9228941e2c717f7c29fdf6d9137618c60b9d",
+      "original_inventory_kind": "text",
+      "encoding": "utf-8-sig",
+      "nul_bytes": 2,
+      "strict_utf8_hits": [],
+      "nul_stripped_ascii_byte_probe": {
+        "method": "Remove only NUL bytes from a Latin-1 reversible byte view, then search ASCII protocol spellings; this is an exploratory byte probe, not a claim about text encoding or equivalent program behavior.",
+        "offset_basis": "original_match_byte_offset is zero-based in the original archive member",
+        "hits": []
+      },
+      "manual_review": {
+        "category": "strict-utf8-source-with-literal-or-comment-nul",
+        "explanation": "Readable UTF-8 source. Inspected NUL byte contexts are source character/byte/string literals or comments describing NUL; not a BOM-less UTF-16 source file.",
+        "nul_contexts": [
+          {
+            "nul_byte_offset": 44524,
+            "context_start": 44460,
+            "context_hex": "203d3e20224d5033220a202020202020226163332022203d3e202241432d33220a2020202020202250434d2022203d3e202250434d220a202020202020226d73000022203d3e20224d532d524c45220a2020202020205f203d3e206663635f68616e646c65720a202020207d0a0a202020206669656c64732e70757368280a20",
+            "context_utf8_escape_view": " => \"MP3\"\\n      \"ac3 \" => \"AC-3\"\\n      \"PCM \" => \"PCM\"\\n      \"ms\\x00\\x00\" => \"MS-RLE\"\\n      _ => fcc_handler\\n    }\\n\\n    fields.push(\\n "
+          },
+          {
+            "nul_byte_offset": 44525,
+            "context_start": 44461,
+            "context_hex": "3d3e20224d5033220a202020202020226163332022203d3e202241432d33220a2020202020202250434d2022203d3e202250434d220a202020202020226d73000022203d3e20224d532d524c45220a2020202020205f203d3e206663635f68616e646c65720a202020207d0a0a202020206669656c64732e70757368280a2020",
+            "context_utf8_escape_view": "=> \"MP3\"\\n      \"ac3 \" => \"AC-3\"\\n      \"PCM \" => \"PCM\"\\n      \"ms\\x00\\x00\" => \"MS-RLE\"\\n      _ => fcc_handler\\n    }\\n\\n    fields.push(\\n  "
+          }
+        ]
+      }
+    },
+    {
+      "name": "LL124-Arch/stencil",
+      "version": "0.1.5",
+      "path": "src/security_wbtest.mbt",
+      "bytes": 3811,
+      "sha256": "6869f3075233c2c6742a833c6a9f5809f5f8fc8283d8d35d1eb25b93b5a2071d",
+      "original_inventory_kind": "text",
+      "encoding": "utf-8-sig",
+      "nul_bytes": 1,
+      "strict_utf8_hits": [],
+      "nul_stripped_ascii_byte_probe": {
+        "method": "Remove only NUL bytes from a Latin-1 reversible byte view, then search ASCII protocol spellings; this is an exploratory byte probe, not a claim about text encoding or equivalent program behavior.",
+        "offset_basis": "original_match_byte_offset is zero-based in the original archive member",
+        "hits": []
+      },
+      "manual_review": {
+        "category": "strict-utf8-source-with-literal-or-comment-nul",
+        "explanation": "Readable UTF-8 source. Inspected NUL byte contexts are source character/byte/string literals or comments describing NUL; not a BOM-less UTF-16 source file.",
+        "nul_contexts": [
+          {
+            "nul_byte_offset": 3616,
+            "context_start": 3552,
+            "context_hex": "747279207b0a2020202069676e6f72652872656e6465725f776974685f6f7074696f6e735f616e645f7061727469616c7328227b7b3e73656375726974797d7d00222c207b7d2c207b7d2c206f7074696f6e7329290a202020206661696c28226578706563746564206d697373696e67207061727469616c22290a20207d2063",
+            "context_utf8_escape_view": "try {\\n    ignore(render_with_options_and_partials(\"{{>security}}\\x00\", {}, {}, options))\\n    fail(\"expected missing partial\")\\n  } c"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Ljh684/MoonParse",
+      "version": "0.1.4",
+      "path": "binary_test.mbt",
+      "bytes": 2989,
+      "sha256": "d731cc2f3fb8429454eed4abc799a973f3b829755045fcef69dc83f8e34aa64e",
+      "original_inventory_kind": "text",
+      "encoding": "utf-8-sig",
+      "nul_bytes": 19,
+      "strict_utf8_hits": [],
+      "nul_stripped_ascii_byte_probe": {
+        "method": "Remove only NUL bytes from a Latin-1 reversible byte view, then search ASCII protocol spellings; this is an exploratory byte probe, not a claim about text encoding or equivalent program behavior.",
+        "offset_basis": "original_match_byte_offset is zero-based in the original archive member",
+        "hits": []
+      },
+      "manual_review": {
+        "category": "strict-utf8-source-with-literal-or-comment-nul",
+        "explanation": "Readable UTF-8 source. Inspected NUL byte contexts are source character/byte/string literals or comments describing NUL; not a BOM-less UTF-16 source file.",
+        "nul_contexts": [
+          {
+            "nul_byte_offset": 863,
+            "context_start": 799,
+            "context_hex": "36345f6c65207265616473206c6974746c652d656e6469616e22207b0a20206c657420696e707574203d205061727365496e7075743a3a6e6577282267452301000000002229202f2f2030783031323334353637204c450a20206d61746368207536345f6c6528696e70757429207b0a20202020536f6d6528285f2c20762929",
+            "context_utf8_escape_view": "64_le reads little-endian\" {\\n  let input = ParseInput::new(\"gE#\\x01\\x00\\x00\\x00\\x00\") // 0x01234567 LE\\n  match u64_le(input) {\\n    Some((_, v))"
+          },
+          {
+            "nul_byte_offset": 864,
+            "context_start": 800,
+            "context_hex": "345f6c65207265616473206c6974746c652d656e6469616e22207b0a20206c657420696e707574203d205061727365496e7075743a3a6e6577282267452301000000002229202f2f2030783031323334353637204c450a20206d61746368207536345f6c6528696e70757429207b0a20202020536f6d6528285f2c2076292920",
+            "context_utf8_escape_view": "4_le reads little-endian\" {\\n  let input = ParseInput::new(\"gE#\\x01\\x00\\x00\\x00\\x00\") // 0x01234567 LE\\n  match u64_le(input) {\\n    Some((_, v)) "
+          },
+          {
+            "nul_byte_offset": 865,
+            "context_start": 801,
+            "context_hex": "5f6c65207265616473206c6974746c652d656e6469616e22207b0a20206c657420696e707574203d205061727365496e7075743a3a6e6577282267452301000000002229202f2f2030783031323334353637204c450a20206d61746368207536345f6c6528696e70757429207b0a20202020536f6d6528285f2c20762929203d",
+            "context_utf8_escape_view": "_le reads little-endian\" {\\n  let input = ParseInput::new(\"gE#\\x01\\x00\\x00\\x00\\x00\") // 0x01234567 LE\\n  match u64_le(input) {\\n    Some((_, v)) ="
+          },
+          {
+            "nul_byte_offset": 866,
+            "context_start": 802,
+            "context_hex": "6c65207265616473206c6974746c652d656e6469616e22207b0a20206c657420696e707574203d205061727365496e7075743a3a6e6577282267452301000000002229202f2f2030783031323334353637204c450a20206d61746368207536345f6c6528696e70757429207b0a20202020536f6d6528285f2c20762929203d3e",
+            "context_utf8_escape_view": "le reads little-endian\" {\\n  let input = ParseInput::new(\"gE#\\x01\\x00\\x00\\x00\\x00\") // 0x01234567 LE\\n  match u64_le(input) {\\n    Some((_, v)) =>"
+          },
+          {
+            "nul_byte_offset": 1438,
+            "context_start": 1374,
+            "context_hex": "0a0a2f2f2f7c0a7465737420226c65623132385f73207a65726f22207b0a20206d61746368206c65623132385f73285061727365496e7075743a3a6e6577282200222929207b0a20202020536f6d6528285f2c20762929203d3e206173736572745f657128762c2030290a202020204e6f6e65203d3e206173736572745f6571",
+            "context_utf8_escape_view": "\\n\\n///|\\ntest \"leb128_s zero\" {\\n  match leb128_s(ParseInput::new(\"\\x00\")) {\\n    Some((_, v)) => assert_eq(v, 0)\\n    None => assert_eq"
+          },
+          {
+            "nul_byte_offset": 1580,
+            "context_start": 1516,
+            "context_hex": "2f2f2f7c0a7465737420226633325f6c65206465636f64657320312e3022207b0a20206c657420696e707574203d205061727365496e7075743a3a6e657728220000c2803f2229202f2f20312e30663332204c450a20206d61746368206633325f6c6528696e70757429207b0a20202020536f6d6528285f2c20762929203d3e",
+            "context_utf8_escape_view": "///|\\ntest \"f32_le decodes 1.0\" {\\n  let input = ParseInput::new(\"\\x00\\x00\\x80?\") // 1.0f32 LE\\n  match f32_le(input) {\\n    Some((_, v)) =>"
+          },
+          {
+            "nul_byte_offset": 1581,
+            "context_start": 1517,
+            "context_hex": "2f2f7c0a7465737420226633325f6c65206465636f64657320312e3022207b0a20206c657420696e707574203d205061727365496e7075743a3a6e657728220000c2803f2229202f2f20312e30663332204c450a20206d61746368206633325f6c6528696e70757429207b0a20202020536f6d6528285f2c20762929203d3e20",
+            "context_utf8_escape_view": "//|\\ntest \"f32_le decodes 1.0\" {\\n  let input = ParseInput::new(\"\\x00\\x00\\x80?\") // 1.0f32 LE\\n  match f32_le(input) {\\n    Some((_, v)) => "
+          },
+          {
+            "nul_byte_offset": 1763,
+            "context_start": 1699,
+            "context_hex": "2f2f7c0a7465737420226633325f6c65206465636f646573202d312e3022207b0a20206c657420696e707574203d205061727365496e7075743a3a6e657728220000c280c2bf2229202f2f202d312e30663332204c450a20206d61746368206633325f6c6528696e70757429207b0a20202020536f6d6528285f2c2076292920",
+            "context_utf8_escape_view": "//|\\ntest \"f32_le decodes -1.0\" {\\n  let input = ParseInput::new(\"\\x00\\x00\\x80\\xbf\") // -1.0f32 LE\\n  match f32_le(input) {\\n    Some((_, v)) "
+          },
+          {
+            "nul_byte_offset": 1764,
+            "context_start": 1700,
+            "context_hex": "2f7c0a7465737420226633325f6c65206465636f646573202d312e3022207b0a20206c657420696e707574203d205061727365496e7075743a3a6e657728220000c280c2bf2229202f2f202d312e30663332204c450a20206d61746368206633325f6c6528696e70757429207b0a20202020536f6d6528285f2c20762929203d",
+            "context_utf8_escape_view": "/|\\ntest \"f32_le decodes -1.0\" {\\n  let input = ParseInput::new(\"\\x00\\x00\\x80\\xbf\") // -1.0f32 LE\\n  match f32_le(input) {\\n    Some((_, v)) ="
+          },
+          {
+            "nul_byte_offset": 1948,
+            "context_start": 1884,
+            "context_hex": "2f2f2f7c0a7465737420226636345f6c65206465636f64657320312e3022207b0a20206c657420696e707574203d205061727365496e7075743a3a6e65772822000000000000c3b03f2229202f2f20312e30663634204c450a20206d61746368206636345f6c6528696e70757429207b0a20202020536f6d6528285f2c207629",
+            "context_utf8_escape_view": "///|\\ntest \"f64_le decodes 1.0\" {\\n  let input = ParseInput::new(\"\\x00\\x00\\x00\\x00\\x00\\x00\\xf0?\") // 1.0f64 LE\\n  match f64_le(input) {\\n    Some((_, v)"
+          },
+          {
+            "nul_byte_offset": 1949,
+            "context_start": 1885,
+            "context_hex": "2f2f7c0a7465737420226636345f6c65206465636f64657320312e3022207b0a20206c657420696e707574203d205061727365496e7075743a3a6e65772822000000000000c3b03f2229202f2f20312e30663634204c450a20206d61746368206636345f6c6528696e70757429207b0a20202020536f6d6528285f2c20762929",
+            "context_utf8_escape_view": "//|\\ntest \"f64_le decodes 1.0\" {\\n  let input = ParseInput::new(\"\\x00\\x00\\x00\\x00\\x00\\x00\\xf0?\") // 1.0f64 LE\\n  match f64_le(input) {\\n    Some((_, v))"
+          },
+          {
+            "nul_byte_offset": 1950,
+            "context_start": 1886,
+            "context_hex": "2f7c0a7465737420226636345f6c65206465636f64657320312e3022207b0a20206c657420696e707574203d205061727365496e7075743a3a6e65772822000000000000c3b03f2229202f2f20312e30663634204c450a20206d61746368206636345f6c6528696e70757429207b0a20202020536f6d6528285f2c2076292920",
+            "context_utf8_escape_view": "/|\\ntest \"f64_le decodes 1.0\" {\\n  let input = ParseInput::new(\"\\x00\\x00\\x00\\x00\\x00\\x00\\xf0?\") // 1.0f64 LE\\n  match f64_le(input) {\\n    Some((_, v)) "
+          },
+          {
+            "nul_byte_offset": 1951,
+            "context_start": 1887,
+            "context_hex": "7c0a7465737420226636345f6c65206465636f64657320312e3022207b0a20206c657420696e707574203d205061727365496e7075743a3a6e65772822000000000000c3b03f2229202f2f20312e30663634204c450a20206d61746368206636345f6c6528696e70757429207b0a20202020536f6d6528285f2c20762929203d",
+            "context_utf8_escape_view": "|\\ntest \"f64_le decodes 1.0\" {\\n  let input = ParseInput::new(\"\\x00\\x00\\x00\\x00\\x00\\x00\\xf0?\") // 1.0f64 LE\\n  match f64_le(input) {\\n    Some((_, v)) ="
+          },
+          {
+            "nul_byte_offset": 1952,
+            "context_start": 1888,
+            "context_hex": "0a7465737420226636345f6c65206465636f64657320312e3022207b0a20206c657420696e707574203d205061727365496e7075743a3a6e65772822000000000000c3b03f2229202f2f20312e30663634204c450a20206d61746368206636345f6c6528696e70757429207b0a20202020536f6d6528285f2c20762929203d3e",
+            "context_utf8_escape_view": "\\ntest \"f64_le decodes 1.0\" {\\n  let input = ParseInput::new(\"\\x00\\x00\\x00\\x00\\x00\\x00\\xf0?\") // 1.0f64 LE\\n  match f64_le(input) {\\n    Some((_, v)) =>"
+          },
+          {
+            "nul_byte_offset": 1953,
+            "context_start": 1889,
+            "context_hex": "7465737420226636345f6c65206465636f64657320312e3022207b0a20206c657420696e707574203d205061727365496e7075743a3a6e65772822000000000000c3b03f2229202f2f20312e30663634204c450a20206d61746368206636345f6c6528696e70757429207b0a20202020536f6d6528285f2c20762929203d3e20",
+            "context_utf8_escape_view": "test \"f64_le decodes 1.0\" {\\n  let input = ParseInput::new(\"\\x00\\x00\\x00\\x00\\x00\\x00\\xf0?\") // 1.0f64 LE\\n  match f64_le(input) {\\n    Some((_, v)) => "
+          },
+          {
+            "nul_byte_offset": 2160,
+            "context_start": 2096,
+            "context_hex": "7265616473206c656e6774682d707265666978656420737472696e6722207b0a20206c657420696e707574203d205061727365496e7075743a3a6e657728220300000041424322290a20206d6174636820636f756e7465645f737472696e6728696e70757429207b0a20202020536f6d6528285f2c20732929203d3e20617373",
+            "context_utf8_escape_view": "reads length-prefixed string\" {\\n  let input = ParseInput::new(\"\\x03\\x00\\x00\\x00ABC\")\\n  match counted_string(input) {\\n    Some((_, s)) => ass"
+          },
+          {
+            "nul_byte_offset": 2161,
+            "context_start": 2097,
+            "context_hex": "65616473206c656e6774682d707265666978656420737472696e6722207b0a20206c657420696e707574203d205061727365496e7075743a3a6e657728220300000041424322290a20206d6174636820636f756e7465645f737472696e6728696e70757429207b0a20202020536f6d6528285f2c20732929203d3e2061737365",
+            "context_utf8_escape_view": "eads length-prefixed string\" {\\n  let input = ParseInput::new(\"\\x03\\x00\\x00\\x00ABC\")\\n  match counted_string(input) {\\n    Some((_, s)) => asse"
+          },
+          {
+            "nul_byte_offset": 2162,
+            "context_start": 2098,
+            "context_hex": "616473206c656e6774682d707265666978656420737472696e6722207b0a20206c657420696e707574203d205061727365496e7075743a3a6e657728220300000041424322290a20206d6174636820636f756e7465645f737472696e6728696e70757429207b0a20202020536f6d6528285f2c20732929203d3e206173736572",
+            "context_utf8_escape_view": "ads length-prefixed string\" {\\n  let input = ParseInput::new(\"\\x03\\x00\\x00\\x00ABC\")\\n  match counted_string(input) {\\n    Some((_, s)) => asser"
+          },
+          {
+            "nul_byte_offset": 2364,
+            "context_start": 2300,
+            "context_hex": "73206e756c6c2d7465726d696e6174656420737472696e6722207b0a20206c657420696e707574203d205061727365496e7075743a3a6e6577282268656c6c6f00776f726c6422290a20206d6174636820635f737472696e6728696e70757429207b0a20202020536f6d652828726573742c20732929203d3e207b0a20202020",
+            "context_utf8_escape_view": "s null-terminated string\" {\\n  let input = ParseInput::new(\"hello\\x00world\")\\n  match c_string(input) {\\n    Some((rest, s)) => {\\n    "
+          }
+        ]
+      }
+    },
+    {
+      "name": "Ljh684/MoonParse",
+      "version": "0.1.4",
+      "path": "MoonParse_wbtest.mbt",
+      "bytes": 33657,
+      "sha256": "cde1c04de0ad042a5956250089bc90710ca00ea6ccae84eb0b047b76a6c02d3c",
+      "original_inventory_kind": "text",
+      "encoding": "utf-8-sig",
+      "nul_bytes": 3,
+      "strict_utf8_hits": [],
+      "nul_stripped_ascii_byte_probe": {
+        "method": "Remove only NUL bytes from a Latin-1 reversible byte view, then search ASCII protocol spellings; this is an exploratory byte probe, not a claim about text encoding or equivalent program behavior.",
+        "offset_basis": "original_match_byte_offset is zero-based in the original archive member",
+        "hits": []
+      },
+      "manual_review": {
+        "category": "strict-utf8-source-with-literal-or-comment-nul",
+        "explanation": "Readable UTF-8 source. Inspected NUL byte contexts are source character/byte/string literals or comments describing NUL; not a BOM-less UTF-16 source file.",
+        "nul_contexts": [
+          {
+            "nul_byte_offset": 21414,
+            "context_start": 21350,
+            "context_hex": "6573742022636f756e74656420737472696e6722207b0a20206d6174636820636f756e7465645f737472696e67285061727365496e7075743a3a6e657728220500000068656c6c6f222929207b0a20202020536f6d65285f29203d3e206173736572745f657128747275652c2074727565290a202020204e6f6e65203d3e2061",
+            "context_utf8_escape_view": "est \"counted string\" {\\n  match counted_string(ParseInput::new(\"\\x05\\x00\\x00\\x00hello\")) {\\n    Some(_) => assert_eq(true, true)\\n    None => a"
+          },
+          {
+            "nul_byte_offset": 21415,
+            "context_start": 21351,
+            "context_hex": "73742022636f756e74656420737472696e6722207b0a20206d6174636820636f756e7465645f737472696e67285061727365496e7075743a3a6e657728220500000068656c6c6f222929207b0a20202020536f6d65285f29203d3e206173736572745f657128747275652c2074727565290a202020204e6f6e65203d3e206173",
+            "context_utf8_escape_view": "st \"counted string\" {\\n  match counted_string(ParseInput::new(\"\\x05\\x00\\x00\\x00hello\")) {\\n    Some(_) => assert_eq(true, true)\\n    None => as"
+          },
+          {
+            "nul_byte_offset": 21416,
+            "context_start": 21352,
+            "context_hex": "742022636f756e74656420737472696e6722207b0a20206d6174636820636f756e7465645f737472696e67285061727365496e7075743a3a6e657728220500000068656c6c6f222929207b0a20202020536f6d65285f29203d3e206173736572745f657128747275652c2074727565290a202020204e6f6e65203d3e20617373",
+            "context_utf8_escape_view": "t \"counted string\" {\\n  match counted_string(ParseInput::new(\"\\x05\\x00\\x00\\x00hello\")) {\\n    Some(_) => assert_eq(true, true)\\n    None => ass"
+          }
+        ]
+      }
+    },
+    {
+      "name": "gmlewis/step",
+      "version": "0.1.22",
+      "path": "cli/cli.mbt",
+      "bytes": 17767,
+      "sha256": "cc88116f5b6c8abd06539703c13c3aac63b7dacad72b071ec40af54e706f030e",
+      "original_inventory_kind": "text",
+      "encoding": "utf-8-sig",
+      "nul_bytes": 1,
+      "strict_utf8_hits": [],
+      "nul_stripped_ascii_byte_probe": {
+        "method": "Remove only NUL bytes from a Latin-1 reversible byte view, then search ASCII protocol spellings; this is an exploratory byte probe, not a claim about text encoding or equivalent program behavior.",
+        "offset_basis": "original_match_byte_offset is zero-based in the original archive member",
+        "hits": []
+      },
+      "manual_review": {
+        "category": "strict-utf8-source-with-literal-or-comment-nul",
+        "explanation": "Readable UTF-8 source. Inspected NUL byte contexts are source character/byte/string literals or comments describing NUL; not a BOM-less UTF-16 source file.",
+        "nul_contexts": [
+          {
+            "nul_byte_offset": 652,
+            "context_start": 588,
+            "context_hex": "6f207772697465206d616e75616c20636865636b732e0a7075622073747275637420417267207b0a2020707269762073686f7274203a2043686172202f2f20270027203d206e6f2073686f7274206f7074696f6e0a2020707269762068656c70203a20537472696e670a202070726976206b696e64203a204172674b696e640a",
+            "context_utf8_escape_view": "o write manual checks.\\npub struct Arg {\\n  priv short : Char // '\\x00' = no short option\\n  priv help : String\\n  priv kind : ArgKind\\n"
+          }
+        ]
+      }
+    },
+    {
+      "name": "naoto24kawa/moonqr",
+      "version": "0.2.1",
+      "path": "src/decode/data.mbt",
+      "bytes": 15176,
+      "sha256": "9eab1ec0465d9b8c2708499991d67d4060222b257eeee029a43d323adf6a3e93",
+      "original_inventory_kind": "text",
+      "encoding": "utf-8-sig",
+      "nul_bytes": 1,
+      "strict_utf8_hits": [],
+      "nul_stripped_ascii_byte_probe": {
+        "method": "Remove only NUL bytes from a Latin-1 reversible byte view, then search ASCII protocol spellings; this is an exploratory byte probe, not a claim about text encoding or equivalent program behavior.",
+        "offset_basis": "original_match_byte_offset is zero-based in the original archive member",
+        "hits": []
+      },
+      "manual_review": {
+        "category": "strict-utf8-source-with-literal-or-comment-nul",
+        "explanation": "Readable UTF-8 source. Inspected NUL byte contexts are source character/byte/string literals or comments describing NUL; not a BOM-less UTF-16 source file.",
+        "nul_contexts": [
+          {
+            "nul_byte_offset": 10758,
+            "context_start": 10694,
+            "context_hex": "20e381aee381a8e3818d0a2f2f2f7c2060537472696e672e66726f6d43686172436f646528756e646566696e6564296020e381af204e554ce69687e5ad972022002220e38292e8bf94e38199efbc89e38292e5bfa0e5ae9fe381abe98fa1e698a0e38197e380810a2f2f2f7c20552b3030303020e3829231e69687e5ad97e381",
+            "context_utf8_escape_view": " \\u306e\\u3068\\u304d\\n///| `String.fromCharCode(undefined)` \\u306f NUL\\u6587\\u5b57 \"\\x00\" \\u3092\\u8fd4\\u3059\\uff09\\u3092\\u5fe0\\u5b9f\\u306b\\u93e1\\u6620\\u3057\\u3001\\n///| U+0000 \\u30921\\u6587\\u5b57\\\\xe3\\\\x81"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GuoXBQ-Q/moon-boofuzz",
+      "version": "0.1.3",
+      "path": "session_variables_test.mbt",
+      "bytes": 3634,
+      "sha256": "3542d984a57e21ed06aaf1a3ac4c985b40403050a691c9d4e9cdd7d1b9711ae5",
+      "original_inventory_kind": "text",
+      "encoding": "utf-8-sig",
+      "nul_bytes": 3,
+      "strict_utf8_hits": [],
+      "nul_stripped_ascii_byte_probe": {
+        "method": "Remove only NUL bytes from a Latin-1 reversible byte view, then search ASCII protocol spellings; this is an exploratory byte probe, not a claim about text encoding or equivalent program behavior.",
+        "offset_basis": "original_match_byte_offset is zero-based in the original archive member",
+        "hits": []
+      },
+      "manual_review": {
+        "category": "strict-utf8-source-with-literal-or-comment-nul",
+        "explanation": "Readable UTF-8 source. Inspected NUL byte contexts are source character/byte/string literals or comments describing NUL; not a BOM-less UTF-16 source file.",
+        "nul_contexts": [
+          {
+            "nul_byte_offset": 3402,
+            "context_start": 3338,
+            "context_hex": "2074776963652e0a20206c657420776974685f76617273203d20726571756573742e636173657328766172733d536f6d65284d6170285b28226e222c2062220200000022295d2929290a20206173736572745f657128776974685f766172732e6e65787428292e6d61702863617365203d3e20636173652e7061796c6f616429",
+            "context_utf8_escape_view": " twice.\\n  let with_vars = request.cases(vars=Some(Map([(\"n\", b\"\\x02\\x00\\x00\\x00\")])))\\n  assert_eq(with_vars.next().map(case => case.payload)"
+          },
+          {
+            "nul_byte_offset": 3403,
+            "context_start": 3339,
+            "context_hex": "74776963652e0a20206c657420776974685f76617273203d20726571756573742e636173657328766172733d536f6d65284d6170285b28226e222c2062220200000022295d2929290a20206173736572745f657128776974685f766172732e6e65787428292e6d61702863617365203d3e20636173652e7061796c6f6164292c",
+            "context_utf8_escape_view": "twice.\\n  let with_vars = request.cases(vars=Some(Map([(\"n\", b\"\\x02\\x00\\x00\\x00\")])))\\n  assert_eq(with_vars.next().map(case => case.payload),"
+          },
+          {
+            "nul_byte_offset": 3404,
+            "context_start": 3340,
+            "context_hex": "776963652e0a20206c657420776974685f76617273203d20726571756573742e636173657328766172733d536f6d65284d6170285b28226e222c2062220200000022295d2929290a20206173736572745f657128776974685f766172732e6e65787428292e6d61702863617365203d3e20636173652e7061796c6f6164292c20",
+            "context_utf8_escape_view": "wice.\\n  let with_vars = request.cases(vars=Some(Map([(\"n\", b\"\\x02\\x00\\x00\\x00\")])))\\n  assert_eq(with_vars.next().map(case => case.payload), "
+          }
+        ]
+      }
+    },
+    {
+      "name": "mizchi/bit",
+      "version": "0.48.0",
+      "path": "fuzz_tests/repo_objects_fuzz_test.mbt",
+      "bytes": 5736,
+      "sha256": "e1e602ba6510a2a5eafe4a52d79b0c8d66b77c2dd2ee561f1d41dfb33b938ac5",
+      "original_inventory_kind": "text",
+      "encoding": "utf-8-sig",
+      "nul_bytes": 1,
+      "strict_utf8_hits": [],
+      "nul_stripped_ascii_byte_probe": {
+        "method": "Remove only NUL bytes from a Latin-1 reversible byte view, then search ASCII protocol spellings; this is an exploratory byte probe, not a claim about text encoding or equivalent program behavior.",
+        "offset_basis": "original_match_byte_offset is zero-based in the original archive member",
+        "hits": []
+      },
+      "manual_review": {
+        "category": "strict-utf8-source-with-literal-or-comment-nul",
+        "explanation": "Readable UTF-8 source. Inspected NUL byte contexts are source character/byte/string literals or comments describing NUL; not a BOM-less UTF-16 source file.",
+        "nul_contexts": [
+          {
+            "nul_byte_offset": 3589,
+            "context_start": 3525,
+            "context_hex": "655f737472696e67286275696c645f72616e646f6d5f746578745f6c696e6528726e672c20313229290a2020202020206275662e77726974655f6368617228270027290a2020202020202f2f20456974686572203230202873686131292c2033322028736861323536292c206f722061207472756e6361746564206c656e6774",
+            "context_utf8_escape_view": "e_string(build_random_text_line(rng, 12))\\n      buf.write_char('\\x00')\\n      // Either 20 (sha1), 32 (sha256), or a truncated lengt"
+          }
+        ]
+      }
+    },
+    {
+      "name": "moonbitstack/moonhttp",
+      "version": "0.12.1",
+      "path": "examples/05-ws-frame/main.mbt",
+      "bytes": 2945,
+      "sha256": "32957874d76883bc86b9501aad06b48fc987a4c51e6cd760a5e51740ebf8e33d",
+      "original_inventory_kind": "text",
+      "encoding": "utf-8-sig",
+      "nul_bytes": 1,
+      "strict_utf8_hits": [],
+      "nul_stripped_ascii_byte_probe": {
+        "method": "Remove only NUL bytes from a Latin-1 reversible byte view, then search ASCII protocol spellings; this is an exploratory byte probe, not a claim about text encoding or equivalent program behavior.",
+        "offset_basis": "original_match_byte_offset is zero-based in the original archive member",
+        "hits": []
+      },
+      "manual_review": {
+        "category": "strict-utf8-source-with-literal-or-comment-nul",
+        "explanation": "Readable UTF-8 source. Inspected NUL byte contexts are source character/byte/string literals or comments describing NUL; not a BOM-less UTF-16 source file.",
+        "nul_contexts": [
+          {
+            "nul_byte_offset": 1073,
+            "context_start": 1009,
+            "context_hex": "65742062696e617279203a204077732e4672616d65203d207b2066696e3a20747275652c206f70636f64653a2042696e6172792c207061796c6f61643a206222000102c3bec3bf222c207d0a20206c6574206d61736b6564203d2062696e6172792e656e636f6465286d61736b3d622237c3ba213d22290a20207072696e746c",
+            "context_utf8_escape_view": "et binary : @ws.Frame = { fin: true, opcode: Binary, payload: b\"\\x00\\x01\\x02\\xfe\\xff\", }\\n  let masked = binary.encode(mask=b\"7\\xfa!=\")\\n  printl"
+          }
+        ]
+      }
+    },
+    {
+      "name": "chensuiyi/subproc",
+      "version": "0.3.0",
+      "path": "src/platform.mbt",
+      "bytes": 3286,
+      "sha256": "5ddead9372de502de420e30c785118e752414ce9cc1926cd32ed45a94c39d79c",
+      "original_inventory_kind": "text",
+      "encoding": "utf-8-sig",
+      "nul_bytes": 1,
+      "strict_utf8_hits": [],
+      "nul_stripped_ascii_byte_probe": {
+        "method": "Remove only NUL bytes from a Latin-1 reversible byte view, then search ASCII protocol spellings; this is an exploratory byte probe, not a claim about text encoding or equivalent program behavior.",
+        "offset_basis": "original_match_byte_offset is zero-based in the original archive member",
+        "hits": []
+      },
+      "manual_review": {
+        "category": "strict-utf8-source-with-literal-or-comment-nul",
+        "explanation": "Readable UTF-8 source. Inspected NUL byte contexts are source character/byte/string literals or comments describing NUL; not a BOM-less UTF-16 source file.",
+        "nul_contexts": [
+          {
+            "nul_byte_offset": 1539,
+            "context_start": 1475,
+            "context_hex": "28496e742c20496e742c20496e742c20496e742c20496e742c20496e74293f207b0a20206c657420627566203d2042797465733a3a6d616b652832342c2062270027290a20206c6574207263203d20635f6c6f63616c5f70617274732865706f63685f6d732e7265696e746572707265745f61735f696e74363428292c206275",
+            "context_utf8_escape_view": "(Int, Int, Int, Int, Int, Int)? {\\n  let buf = Bytes::make(24, b'\\x00')\\n  let rc = c_local_parts(epoch_ms.reinterpret_as_int64(), bu"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Yu-zh/fast",
+      "version": "0.1.0",
+      "path": "json/format_test.mbt",
+      "bytes": 4953,
+      "sha256": "527d0caa2281b39791e89cb653fc4f1ea145d2e628a353c3835cee9037300c38",
+      "original_inventory_kind": "text",
+      "encoding": "utf-8-sig",
+      "nul_bytes": 1,
+      "strict_utf8_hits": [],
+      "nul_stripped_ascii_byte_probe": {
+        "method": "Remove only NUL bytes from a Latin-1 reversible byte view, then search ASCII protocol spellings; this is an exploratory byte probe, not a claim about text encoding or equivalent program behavior.",
+        "offset_basis": "original_match_byte_offset is zero-based in the original archive member",
+        "hits": []
+      },
+      "manual_review": {
+        "category": "strict-utf8-source-with-literal-or-comment-nul",
+        "explanation": "Readable UTF-8 source. Inspected NUL byte contexts are source character/byte/string literals or comments describing NUL; not a BOM-less UTF-16 source file.",
+        "nul_contexts": [
+          {
+            "nul_byte_offset": 4187,
+            "context_start": 4123,
+            "context_hex": "7272286f665f7374722862226c696e65315c5c6e6c696e65325c5c747461622229292c0a2020290a20202f2f2061204e554c2062797465206265636f6d657320000a20206c6574206e756c203a20466978656441727261795b427974655d203d205b622761272c20307830302c20622762272c20307831665d0a202040746573",
+            "context_utf8_escape_view": "rr(of_str(b\"line1\\\\\\\\nline2\\\\\\\\ttab\")),\\n  )\\n  // a NUL byte becomes \\x00\\n  let nul : FixedArray[Byte] = [b'a', 0x00, b'b', 0x1f]\\n  @tes"
+          }
+        ]
+      }
+    },
+    {
+      "name": "vicoproplus/moon-humanize",
+      "version": "0.1.2",
+      "path": "src/humanize/i18n_data.mbt",
+      "bytes": 108087,
+      "sha256": "d2ce1ab595bb51a3eb2515d41ebc31afc32cc76b555b2e6a5b8f2b8179e00acf",
+      "original_inventory_kind": "text",
+      "encoding": "utf-8-sig",
+      "nul_bytes": 700,
+      "strict_utf8_hits": [],
+      "nul_stripped_ascii_byte_probe": {
+        "method": "Remove only NUL bytes from a Latin-1 reversible byte view, then search ASCII protocol spellings; this is an exploratory byte probe, not a claim about text encoding or equivalent program behavior.",
+        "offset_basis": "original_match_byte_offset is zero-based in the original archive member",
+        "hits": []
+      },
+      "manual_review": {
+        "category": "pending",
+        "explanation": "New NUL-containing member in final 3123-module scope; requires byte-context review.",
+        "nul_contexts": [
+          {
+            "nul_byte_offset": 27791,
+            "context_start": 27727,
+            "context_hex": "0d0a6c6574206374785f4172203a204d61705b537472696e672c20537472696e675d203d204d61703a3a66726f6d5f6172726179285b28223020286d616c6529007468222c202220d8b5d981d8b122292c2028223120286d616c6529007374222c202220d8a3d988d98422292c2028223220286d616c6529006e64222c202220",
+            "context_utf8_escape_view": "\\r\\nlet ctx_Ar : Map[String, String] = Map::from_array([(\"0 (male)\\x00th\", \" \\u0635\\u0641\\u0631\"), (\"1 (male)\\x00st\", \" \\u0623\\u0648\\u0644\"), (\"2 (male)\\x00nd\", \" "
+          },
+          {
+            "nul_byte_offset": 27819,
+            "context_start": 27755,
+            "context_hex": "7472696e675d203d204d61703a3a66726f6d5f6172726179285b28223020286d616c6529007468222c202220d8b5d981d8b122292c2028223120286d616c6529007374222c202220d8a3d988d98422292c2028223220286d616c6529006e64222c202220d8abd8a7d986d98a22292c2028223320286d616c6529007264222c20",
+            "context_utf8_escape_view": "tring] = Map::from_array([(\"0 (male)\\x00th\", \" \\u0635\\u0641\\u0631\"), (\"1 (male)\\x00st\", \" \\u0623\\u0648\\u0644\"), (\"2 (male)\\x00nd\", \" \\u062b\\u0627\\u0646\\u064a\"), (\"3 (male)\\x00rd\", "
+          },
+          {
+            "nul_byte_offset": 27847,
+            "context_start": 27783,
+            "context_hex": "3020286d616c6529007468222c202220d8b5d981d8b122292c2028223120286d616c6529007374222c202220d8a3d988d98422292c2028223220286d616c6529006e64222c202220d8abd8a7d986d98a22292c2028223320286d616c6529007264222c202220d8abd8a7d984d8ab22292c2028223420286d616c652900746822",
+            "context_utf8_escape_view": "0 (male)\\x00th\", \" \\u0635\\u0641\\u0631\"), (\"1 (male)\\x00st\", \" \\u0623\\u0648\\u0644\"), (\"2 (male)\\x00nd\", \" \\u062b\\u0627\\u0646\\u064a\"), (\"3 (male)\\x00rd\", \" \\u062b\\u0627\\u0644\\u062b\"), (\"4 (male)\\x00th\""
+          },
+          {
+            "nul_byte_offset": 27877,
+            "context_start": 27813,
+            "context_hex": "286d616c6529007374222c202220d8a3d988d98422292c2028223220286d616c6529006e64222c202220d8abd8a7d986d98a22292c2028223320286d616c6529007264222c202220d8abd8a7d984d8ab22292c2028223420286d616c6529007468222c202220d8b1d8a7d8a8d8b922292c2028223520286d616c652900746822",
+            "context_utf8_escape_view": "(male)\\x00st\", \" \\u0623\\u0648\\u0644\"), (\"2 (male)\\x00nd\", \" \\u062b\\u0627\\u0646\\u064a\"), (\"3 (male)\\x00rd\", \" \\u062b\\u0627\\u0644\\u062b\"), (\"4 (male)\\x00th\", \" \\u0631\\u0627\\u0628\\u0639\"), (\"5 (male)\\x00th\""
+          },
+          {
+            "nul_byte_offset": 27907,
+            "context_start": 27843,
+            "context_hex": "616c6529006e64222c202220d8abd8a7d986d98a22292c2028223320286d616c6529007264222c202220d8abd8a7d984d8ab22292c2028223420286d616c6529007468222c202220d8b1d8a7d8a8d8b922292c2028223520286d616c6529007468222c202220d8aed8a7d985d8b322292c2028223620286d616c652900746822",
+            "context_utf8_escape_view": "ale)\\x00nd\", \" \\u062b\\u0627\\u0646\\u064a\"), (\"3 (male)\\x00rd\", \" \\u062b\\u0627\\u0644\\u062b\"), (\"4 (male)\\x00th\", \" \\u0631\\u0627\\u0628\\u0639\"), (\"5 (male)\\x00th\", \" \\u062e\\u0627\\u0645\\u0633\"), (\"6 (male)\\x00th\""
+          },
+          {
+            "nul_byte_offset": 27937,
+            "context_start": 27873,
+            "context_hex": "616c6529007264222c202220d8abd8a7d984d8ab22292c2028223420286d616c6529007468222c202220d8b1d8a7d8a8d8b922292c2028223520286d616c6529007468222c202220d8aed8a7d985d8b322292c2028223620286d616c6529007468222c202220d8b3d8a7d8afd8b322292c2028223720286d616c652900746822",
+            "context_utf8_escape_view": "ale)\\x00rd\", \" \\u062b\\u0627\\u0644\\u062b\"), (\"4 (male)\\x00th\", \" \\u0631\\u0627\\u0628\\u0639\"), (\"5 (male)\\x00th\", \" \\u062e\\u0627\\u0645\\u0633\"), (\"6 (male)\\x00th\", \" \\u0633\\u0627\\u062f\\u0633\"), (\"7 (male)\\x00th\""
+          },
+          {
+            "nul_byte_offset": 27967,
+            "context_start": 27903,
+            "context_hex": "616c6529007468222c202220d8b1d8a7d8a8d8b922292c2028223520286d616c6529007468222c202220d8aed8a7d985d8b322292c2028223620286d616c6529007468222c202220d8b3d8a7d8afd8b322292c2028223720286d616c6529007468222c202220d8b3d8a7d8a8d8b922292c2028223820286d616c652900746822",
+            "context_utf8_escape_view": "ale)\\x00th\", \" \\u0631\\u0627\\u0628\\u0639\"), (\"5 (male)\\x00th\", \" \\u062e\\u0627\\u0645\\u0633\"), (\"6 (male)\\x00th\", \" \\u0633\\u0627\\u062f\\u0633\"), (\"7 (male)\\x00th\", \" \\u0633\\u0627\\u0628\\u0639\"), (\"8 (male)\\x00th\""
+          },
+          {
+            "nul_byte_offset": 27997,
+            "context_start": 27933,
+            "context_hex": "616c6529007468222c202220d8aed8a7d985d8b322292c2028223620286d616c6529007468222c202220d8b3d8a7d8afd8b322292c2028223720286d616c6529007468222c202220d8b3d8a7d8a8d8b922292c2028223820286d616c6529007468222c202220d8abd8a7d985d98622292c2028223920286d616c652900746822",
+            "context_utf8_escape_view": "ale)\\x00th\", \" \\u062e\\u0627\\u0645\\u0633\"), (\"6 (male)\\x00th\", \" \\u0633\\u0627\\u062f\\u0633\"), (\"7 (male)\\x00th\", \" \\u0633\\u0627\\u0628\\u0639\"), (\"8 (male)\\x00th\", \" \\u062b\\u0627\\u0645\\u0646\"), (\"9 (male)\\x00th\""
+          },
+          {
+            "nul_byte_offset": 28027,
+            "context_start": 27963,
+            "context_hex": "616c6529007468222c202220d8b3d8a7d8afd8b322292c2028223720286d616c6529007468222c202220d8b3d8a7d8a8d8b922292c2028223820286d616c6529007468222c202220d8abd8a7d985d98622292c2028223920286d616c6529007468222c202220d8aad8a7d8b3d8b922292c20282230202866656d616c65290074",
+            "context_utf8_escape_view": "ale)\\x00th\", \" \\u0633\\u0627\\u062f\\u0633\"), (\"7 (male)\\x00th\", \" \\u0633\\u0627\\u0628\\u0639\"), (\"8 (male)\\x00th\", \" \\u062b\\u0627\\u0645\\u0646\"), (\"9 (male)\\x00th\", \" \\u062a\\u0627\\u0633\\u0639\"), (\"0 (female)\\x00t"
+          },
+          {
+            "nul_byte_offset": 28057,
+            "context_start": 27993,
+            "context_hex": "616c6529007468222c202220d8b3d8a7d8a8d8b922292c2028223820286d616c6529007468222c202220d8abd8a7d985d98622292c2028223920286d616c6529007468222c202220d8aad8a7d8b3d8b922292c20282230202866656d616c6529007468222c202220d8b5d981d8b122292c20282231202866656d616c65290073",
+            "context_utf8_escape_view": "ale)\\x00th\", \" \\u0633\\u0627\\u0628\\u0639\"), (\"8 (male)\\x00th\", \" \\u062b\\u0627\\u0645\\u0646\"), (\"9 (male)\\x00th\", \" \\u062a\\u0627\\u0633\\u0639\"), (\"0 (female)\\x00th\", \" \\u0635\\u0641\\u0631\"), (\"1 (female)\\x00s"
+          },
+          {
+            "nul_byte_offset": 28089,
+            "context_start": 28025,
+            "context_hex": "6529007468222c202220d8abd8a7d985d98622292c2028223920286d616c6529007468222c202220d8aad8a7d8b3d8b922292c20282230202866656d616c6529007468222c202220d8b5d981d8b122292c20282231202866656d616c6529007374222c202220d8a3d988d984d98922292c20282232202866656d616c6529006e",
+            "context_utf8_escape_view": "e)\\x00th\", \" \\u062b\\u0627\\u0645\\u0646\"), (\"9 (male)\\x00th\", \" \\u062a\\u0627\\u0633\\u0639\"), (\"0 (female)\\x00th\", \" \\u0635\\u0641\\u0631\"), (\"1 (female)\\x00st\", \" \\u0623\\u0648\\u0644\\u0649\"), (\"2 (female)\\x00n"
+          },
+          {
+            "nul_byte_offset": 28119,
+            "context_start": 28055,
+            "context_hex": "6529007468222c202220d8aad8a7d8b3d8b922292c20282230202866656d616c6529007468222c202220d8b5d981d8b122292c20282231202866656d616c6529007374222c202220d8a3d988d984d98922292c20282232202866656d616c6529006e64222c202220d8abd8a7d986d98ad8a922292c20282233202866656d616c",
+            "context_utf8_escape_view": "e)\\x00th\", \" \\u062a\\u0627\\u0633\\u0639\"), (\"0 (female)\\x00th\", \" \\u0635\\u0641\\u0631\"), (\"1 (female)\\x00st\", \" \\u0623\\u0648\\u0644\\u0649\"), (\"2 (female)\\x00nd\", \" \\u062b\\u0627\\u0646\\u064a\\u0629\"), (\"3 (femal"
+          },
+          {
+            "nul_byte_offset": 28151,
+            "context_start": 28087,
+            "context_hex": "6529007468222c202220d8b5d981d8b122292c20282231202866656d616c6529007374222c202220d8a3d988d984d98922292c20282232202866656d616c6529006e64222c202220d8abd8a7d986d98ad8a922292c20282233202866656d616c6529007264222c202220d8abd8a7d984d8abd8a922292c20282234202866656d",
+            "context_utf8_escape_view": "e)\\x00th\", \" \\u0635\\u0641\\u0631\"), (\"1 (female)\\x00st\", \" \\u0623\\u0648\\u0644\\u0649\"), (\"2 (female)\\x00nd\", \" \\u062b\\u0627\\u0646\\u064a\\u0629\"), (\"3 (female)\\x00rd\", \" \\u062b\\u0627\\u0644\\u062b\\u0629\"), (\"4 (fem"
+          },
+          {
+            "nul_byte_offset": 28185,
+            "context_start": 28121,
+            "context_hex": "74222c202220d8a3d988d984d98922292c20282232202866656d616c6529006e64222c202220d8abd8a7d986d98ad8a922292c20282233202866656d616c6529007264222c202220d8abd8a7d984d8abd8a922292c20282234202866656d616c6529007468222c202220d8b1d8a7d8a8d8b9d8a922292c20282235202866656d",
+            "context_utf8_escape_view": "t\", \" \\u0623\\u0648\\u0644\\u0649\"), (\"2 (female)\\x00nd\", \" \\u062b\\u0627\\u0646\\u064a\\u0629\"), (\"3 (female)\\x00rd\", \" \\u062b\\u0627\\u0644\\u062b\\u0629\"), (\"4 (female)\\x00th\", \" \\u0631\\u0627\\u0628\\u0639\\u0629\"), (\"5 (fem"
+          },
+          {
+            "nul_byte_offset": 28219,
+            "context_start": 28155,
+            "context_hex": "2c202220d8abd8a7d986d98ad8a922292c20282233202866656d616c6529007264222c202220d8abd8a7d984d8abd8a922292c20282234202866656d616c6529007468222c202220d8b1d8a7d8a8d8b9d8a922292c20282235202866656d616c6529007468222c202220d8aed8a7d985d8b3d8a922292c20282236202866656d",
+            "context_utf8_escape_view": ", \" \\u062b\\u0627\\u0646\\u064a\\u0629\"), (\"3 (female)\\x00rd\", \" \\u062b\\u0627\\u0644\\u062b\\u0629\"), (\"4 (female)\\x00th\", \" \\u0631\\u0627\\u0628\\u0639\\u0629\"), (\"5 (female)\\x00th\", \" \\u062e\\u0627\\u0645\\u0633\\u0629\"), (\"6 (fem"
+          },
+          {
+            "nul_byte_offset": 28253,
+            "context_start": 28189,
+            "context_hex": "2c202220d8abd8a7d984d8abd8a922292c20282234202866656d616c6529007468222c202220d8b1d8a7d8a8d8b9d8a922292c20282235202866656d616c6529007468222c202220d8aed8a7d985d8b3d8a922292c20282236202866656d616c6529007468222c202220d8b3d8a7d8afd8b3d8a922292c20282237202866656d",
+            "context_utf8_escape_view": ", \" \\u062b\\u0627\\u0644\\u062b\\u0629\"), (\"4 (female)\\x00th\", \" \\u0631\\u0627\\u0628\\u0639\\u0629\"), (\"5 (female)\\x00th\", \" \\u062e\\u0627\\u0645\\u0633\\u0629\"), (\"6 (female)\\x00th\", \" \\u0633\\u0627\\u062f\\u0633\\u0629\"), (\"7 (fem"
+          },
+          {
+            "nul_byte_offset": 28287,
+            "context_start": 28223,
+            "context_hex": "2c202220d8b1d8a7d8a8d8b9d8a922292c20282235202866656d616c6529007468222c202220d8aed8a7d985d8b3d8a922292c20282236202866656d616c6529007468222c202220d8b3d8a7d8afd8b3d8a922292c20282237202866656d616c6529007468222c202220d8b3d8a7d8a8d8b9d8a922292c20282238202866656d",
+            "context_utf8_escape_view": ", \" \\u0631\\u0627\\u0628\\u0639\\u0629\"), (\"5 (female)\\x00th\", \" \\u062e\\u0627\\u0645\\u0633\\u0629\"), (\"6 (female)\\x00th\", \" \\u0633\\u0627\\u062f\\u0633\\u0629\"), (\"7 (female)\\x00th\", \" \\u0633\\u0627\\u0628\\u0639\\u0629\"), (\"8 (fem"
+          },
+          {
+            "nul_byte_offset": 28321,
+            "context_start": 28257,
+            "context_hex": "2c202220d8aed8a7d985d8b3d8a922292c20282236202866656d616c6529007468222c202220d8b3d8a7d8afd8b3d8a922292c20282237202866656d616c6529007468222c202220d8b3d8a7d8a8d8b9d8a922292c20282238202866656d616c6529007468222c202220d8abd8a7d985d986d8a922292c20282239202866656d",
+            "context_utf8_escape_view": ", \" \\u062e\\u0627\\u0645\\u0633\\u0629\"), (\"6 (female)\\x00th\", \" \\u0633\\u0627\\u062f\\u0633\\u0629\"), (\"7 (female)\\x00th\", \" \\u0633\\u0627\\u0628\\u0639\\u0629\"), (\"8 (female)\\x00th\", \" \\u062b\\u0627\\u0645\\u0646\\u0629\"), (\"9 (fem"
+          },
+          {
+            "nul_byte_offset": 28355,
+            "context_start": 28291,
+            "context_hex": "2c202220d8b3d8a7d8afd8b3d8a922292c20282237202866656d616c6529007468222c202220d8b3d8a7d8a8d8b9d8a922292c20282238202866656d616c6529007468222c202220d8abd8a7d985d986d8a922292c20282239202866656d616c6529007468222c202220d8aad8a7d8b3d8b9d8a922295d290d0a6c6574206374",
+            "context_utf8_escape_view": ", \" \\u0633\\u0627\\u062f\\u0633\\u0629\"), (\"7 (female)\\x00th\", \" \\u0633\\u0627\\u0628\\u0639\\u0629\"), (\"8 (female)\\x00th\", \" \\u062b\\u0627\\u0645\\u0646\\u0629\"), (\"9 (female)\\x00th\", \" \\u062a\\u0627\\u0633\\u0639\\u0629\")])\\r\\nlet ct"
+          },
+          {
+            "nul_byte_offset": 28389,
+            "context_start": 28325,
+            "context_hex": "2c202220d8b3d8a7d8a8d8b9d8a922292c20282238202866656d616c6529007468222c202220d8abd8a7d985d986d8a922292c20282239202866656d616c6529007468222c202220d8aad8a7d8b3d8b9d8a922295d290d0a6c6574206374785f426e4244203a204d61705b537472696e672c20537472696e675d203d204d6170",
+            "context_utf8_escape_view": ", \" \\u0633\\u0627\\u0628\\u0639\\u0629\"), (\"8 (female)\\x00th\", \" \\u062b\\u0627\\u0645\\u0646\\u0629\"), (\"9 (female)\\x00th\", \" \\u062a\\u0627\\u0633\\u0639\\u0629\")])\\r\\nlet ctx_BnBD : Map[String, String] = Map"
+          },
+          {
+            "nul_byte_offset": 28477,
+            "context_start": 28413,
+            "context_hex": "6c6574206374785f426e4244203a204d61705b537472696e672c20537472696e675d203d204d61703a3a66726f6d5f6172726179285b28223020286d616c6529007468222c2022e0a6a4e0a6ae22292c2028223120286d616c6529007374222c2022e0a6a4e0a6ae22292c2028223220286d616c6529006e64222c2022e0a6a4",
+            "context_utf8_escape_view": "let ctx_BnBD : Map[String, String] = Map::from_array([(\"0 (male)\\x00th\", \"\\u09a4\\u09ae\"), (\"1 (male)\\x00st\", \"\\u09a4\\u09ae\"), (\"2 (male)\\x00nd\", \"\\u09a4"
+          },
+          {
+            "nul_byte_offset": 28504,
+            "context_start": 28440,
+            "context_hex": "537472696e675d203d204d61703a3a66726f6d5f6172726179285b28223020286d616c6529007468222c2022e0a6a4e0a6ae22292c2028223120286d616c6529007374222c2022e0a6a4e0a6ae22292c2028223220286d616c6529006e64222c2022e0a6a4e0a6ae22292c2028223320286d616c6529007264222c2022e0a6a4",
+            "context_utf8_escape_view": "String] = Map::from_array([(\"0 (male)\\x00th\", \"\\u09a4\\u09ae\"), (\"1 (male)\\x00st\", \"\\u09a4\\u09ae\"), (\"2 (male)\\x00nd\", \"\\u09a4\\u09ae\"), (\"3 (male)\\x00rd\", \"\\u09a4"
+          },
+          {
+            "nul_byte_offset": 28531,
+            "context_start": 28467,
+            "context_hex": "28223020286d616c6529007468222c2022e0a6a4e0a6ae22292c2028223120286d616c6529007374222c2022e0a6a4e0a6ae22292c2028223220286d616c6529006e64222c2022e0a6a4e0a6ae22292c2028223320286d616c6529007264222c2022e0a6a4e0a6ae22292c2028223420286d616c6529007468222c2022e0a6a4",
+            "context_utf8_escape_view": "(\"0 (male)\\x00th\", \"\\u09a4\\u09ae\"), (\"1 (male)\\x00st\", \"\\u09a4\\u09ae\"), (\"2 (male)\\x00nd\", \"\\u09a4\\u09ae\"), (\"3 (male)\\x00rd\", \"\\u09a4\\u09ae\"), (\"4 (male)\\x00th\", \"\\u09a4"
+          },
+          {
+            "nul_byte_offset": 28558,
+            "context_start": 28494,
+            "context_hex": "28223120286d616c6529007374222c2022e0a6a4e0a6ae22292c2028223220286d616c6529006e64222c2022e0a6a4e0a6ae22292c2028223320286d616c6529007264222c2022e0a6a4e0a6ae22292c2028223420286d616c6529007468222c2022e0a6a4e0a6ae22292c2028223520286d616c6529007468222c2022e0a6a4",
+            "context_utf8_escape_view": "(\"1 (male)\\x00st\", \"\\u09a4\\u09ae\"), (\"2 (male)\\x00nd\", \"\\u09a4\\u09ae\"), (\"3 (male)\\x00rd\", \"\\u09a4\\u09ae\"), (\"4 (male)\\x00th\", \"\\u09a4\\u09ae\"), (\"5 (male)\\x00th\", \"\\u09a4"
+          },
+          {
+            "nul_byte_offset": 28585,
+            "context_start": 28521,
+            "context_hex": "28223220286d616c6529006e64222c2022e0a6a4e0a6ae22292c2028223320286d616c6529007264222c2022e0a6a4e0a6ae22292c2028223420286d616c6529007468222c2022e0a6a4e0a6ae22292c2028223520286d616c6529007468222c2022e0a6a4e0a6ae22292c2028223620286d616c6529007468222c2022e0a6a4",
+            "context_utf8_escape_view": "(\"2 (male)\\x00nd\", \"\\u09a4\\u09ae\"), (\"3 (male)\\x00rd\", \"\\u09a4\\u09ae\"), (\"4 (male)\\x00th\", \"\\u09a4\\u09ae\"), (\"5 (male)\\x00th\", \"\\u09a4\\u09ae\"), (\"6 (male)\\x00th\", \"\\u09a4"
+          },
+          {
+            "nul_byte_offset": 28612,
+            "context_start": 28548,
+            "context_hex": "28223320286d616c6529007264222c2022e0a6a4e0a6ae22292c2028223420286d616c6529007468222c2022e0a6a4e0a6ae22292c2028223520286d616c6529007468222c2022e0a6a4e0a6ae22292c2028223620286d616c6529007468222c2022e0a6a4e0a6ae22292c2028223720286d616c6529007468222c2022e0a6a4",
+            "context_utf8_escape_view": "(\"3 (male)\\x00rd\", \"\\u09a4\\u09ae\"), (\"4 (male)\\x00th\", \"\\u09a4\\u09ae\"), (\"5 (male)\\x00th\", \"\\u09a4\\u09ae\"), (\"6 (male)\\x00th\", \"\\u09a4\\u09ae\"), (\"7 (male)\\x00th\", \"\\u09a4"
+          },
+          {
+            "nul_byte_offset": 28639,
+            "context_start": 28575,
+            "context_hex": "28223420286d616c6529007468222c2022e0a6a4e0a6ae22292c2028223520286d616c6529007468222c2022e0a6a4e0a6ae22292c2028223620286d616c6529007468222c2022e0a6a4e0a6ae22292c2028223720286d616c6529007468222c2022e0a6a4e0a6ae22292c2028223820286d616c6529007468222c2022e0a6a4",
+            "context_utf8_escape_view": "(\"4 (male)\\x00th\", \"\\u09a4\\u09ae\"), (\"5 (male)\\x00th\", \"\\u09a4\\u09ae\"), (\"6 (male)\\x00th\", \"\\u09a4\\u09ae\"), (\"7 (male)\\x00th\", \"\\u09a4\\u09ae\"), (\"8 (male)\\x00th\", \"\\u09a4"
+          },
+          {
+            "nul_byte_offset": 28666,
+            "context_start": 28602,
+            "context_hex": "28223520286d616c6529007468222c2022e0a6a4e0a6ae22292c2028223620286d616c6529007468222c2022e0a6a4e0a6ae22292c2028223720286d616c6529007468222c2022e0a6a4e0a6ae22292c2028223820286d616c6529007468222c2022e0a6a4e0a6ae22292c2028223920286d616c6529007468222c2022e0a6a4",
+            "context_utf8_escape_view": "(\"5 (male)\\x00th\", \"\\u09a4\\u09ae\"), (\"6 (male)\\x00th\", \"\\u09a4\\u09ae\"), (\"7 (male)\\x00th\", \"\\u09a4\\u09ae\"), (\"8 (male)\\x00th\", \"\\u09a4\\u09ae\"), (\"9 (male)\\x00th\", \"\\u09a4"
+          },
+          {
+            "nul_byte_offset": 28693,
+            "context_start": 28629,
+            "context_hex": "28223620286d616c6529007468222c2022e0a6a4e0a6ae22292c2028223720286d616c6529007468222c2022e0a6a4e0a6ae22292c2028223820286d616c6529007468222c2022e0a6a4e0a6ae22292c2028223920286d616c6529007468222c2022e0a6a4e0a6ae22292c20282230202866656d616c6529007468222c2022e0",
+            "context_utf8_escape_view": "(\"6 (male)\\x00th\", \"\\u09a4\\u09ae\"), (\"7 (male)\\x00th\", \"\\u09a4\\u09ae\"), (\"8 (male)\\x00th\", \"\\u09a4\\u09ae\"), (\"9 (male)\\x00th\", \"\\u09a4\\u09ae\"), (\"0 (female)\\x00th\", \"\\\\xe0"
+          },
+          {
+            "nul_byte_offset": 28720,
+            "context_start": 28656,
+            "context_hex": "28223720286d616c6529007468222c2022e0a6a4e0a6ae22292c2028223820286d616c6529007468222c2022e0a6a4e0a6ae22292c2028223920286d616c6529007468222c2022e0a6a4e0a6ae22292c20282230202866656d616c6529007468222c2022e0a6a4e0a6ae22292c20282231202866656d616c6529007374222c20",
+            "context_utf8_escape_view": "(\"7 (male)\\x00th\", \"\\u09a4\\u09ae\"), (\"8 (male)\\x00th\", \"\\u09a4\\u09ae\"), (\"9 (male)\\x00th\", \"\\u09a4\\u09ae\"), (\"0 (female)\\x00th\", \"\\u09a4\\u09ae\"), (\"1 (female)\\x00st\", "
+          },
+          {
+            "nul_byte_offset": 28749,
+            "context_start": 28685,
+            "context_hex": "3820286d616c6529007468222c2022e0a6a4e0a6ae22292c2028223920286d616c6529007468222c2022e0a6a4e0a6ae22292c20282230202866656d616c6529007468222c2022e0a6a4e0a6ae22292c20282231202866656d616c6529007374222c2022e0a6a4e0a6ae22292c20282232202866656d616c6529006e64222c20",
+            "context_utf8_escape_view": "8 (male)\\x00th\", \"\\u09a4\\u09ae\"), (\"9 (male)\\x00th\", \"\\u09a4\\u09ae\"), (\"0 (female)\\x00th\", \"\\u09a4\\u09ae\"), (\"1 (female)\\x00st\", \"\\u09a4\\u09ae\"), (\"2 (female)\\x00nd\", "
+          },
+          {
+            "nul_byte_offset": 28778,
+            "context_start": 28714,
+            "context_hex": "286d616c6529007468222c2022e0a6a4e0a6ae22292c20282230202866656d616c6529007468222c2022e0a6a4e0a6ae22292c20282231202866656d616c6529007374222c2022e0a6a4e0a6ae22292c20282232202866656d616c6529006e64222c2022e0a6a4e0a6ae22292c20282233202866656d616c6529007264222c20",
+            "context_utf8_escape_view": "(male)\\x00th\", \"\\u09a4\\u09ae\"), (\"0 (female)\\x00th\", \"\\u09a4\\u09ae\"), (\"1 (female)\\x00st\", \"\\u09a4\\u09ae\"), (\"2 (female)\\x00nd\", \"\\u09a4\\u09ae\"), (\"3 (female)\\x00rd\", "
+          }
+        ]
+      }
+    },
+    {
+      "name": "cstoooo/terminfo",
+      "version": "0.1.0",
+      "path": "binary.mbt",
+      "bytes": 16762,
+      "sha256": "77b743b2b27cbf374afb0c7e97fbb9af2f65c3dac00ccd838d453eb655b0acaf",
+      "original_inventory_kind": "text",
+      "encoding": "utf-8-sig",
+      "nul_bytes": 1,
+      "strict_utf8_hits": [],
+      "nul_stripped_ascii_byte_probe": {
+        "method": "Remove only NUL bytes from a Latin-1 reversible byte view, then search ASCII protocol spellings; this is an exploratory byte probe, not a claim about text encoding or equivalent program behavior.",
+        "offset_basis": "original_match_byte_offset is zero-based in the original archive member",
+        "hits": []
+      },
+      "manual_review": {
+        "category": "strict-utf8-source-with-literal-or-comment-nul",
+        "explanation": "Readable UTF-8 source. Inspected NUL byte contexts are source character/byte/string literals or comments describing NUL; not a BOM-less UTF-16 source file.",
+        "nul_contexts": [
+          {
+            "nul_byte_offset": 9714,
+            "context_start": 9650,
+            "context_hex": "6d6520696e20656e7472792e6e616d6573207b0a202020206966206e616d652e636f6e7461696e7328227c2229207c7c206e616d652e636f6e7461696e732822002229207b0a20202020202072616973652050617273654572726f723a3a426164436f756e7428227465726d696e616c206e616d6520636f6e7461696e732060",
+            "context_utf8_escape_view": "me in entry.names {\\n    if name.contains(\"|\") || name.contains(\"\\x00\") {\\n      raise ParseError::BadCount(\"terminal name contains `"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CCllff-jpg/moondicom",
+      "version": "0.1.2",
+      "path": "dataset.mbt",
+      "bytes": 3598,
+      "sha256": "03c9aec309baeb00f7614f499d0fe8487b77b7e9f1a03b4117a5a8c1d89a1b42",
+      "original_inventory_kind": "text",
+      "encoding": "utf-8-sig",
+      "nul_bytes": 1,
+      "strict_utf8_hits": [],
+      "nul_stripped_ascii_byte_probe": {
+        "method": "Remove only NUL bytes from a Latin-1 reversible byte view, then search ASCII protocol spellings; this is an exploratory byte probe, not a claim about text encoding or equivalent program behavior.",
+        "offset_basis": "original_match_byte_offset is zero-based in the original archive member",
+        "hits": []
+      },
+      "manual_review": {
+        "category": "strict-utf8-source-with-literal-or-comment-nul",
+        "explanation": "Readable UTF-8 source. Inspected NUL byte contexts are source character/byte/string literals or comments describing NUL; not a BOM-less UTF-16 source file.",
+        "nul_contexts": [
+          {
+            "nul_byte_offset": 2443,
+            "context_start": 2379,
+            "context_hex": "537472696e67207b0a20206c65742074657874203d2062797465735f746f5f6173636969286279746573290a2020746578742e7472696d2863686172733d22200022292e746f5f6f776e656428290a7d0a0a2f2f2f7c0a666e206465636f64655f76616c7565287672203a2056616c7565526570726573656e746174696f6e2c",
+            "context_utf8_escape_view": "String {\\n  let text = bytes_to_ascii(bytes)\\n  text.trim(chars=\" \\x00\").to_owned()\\n}\\n\\n///|\\nfn decode_value(vr : ValueRepresentation,"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SupremeHuaji/MoonGeo",
+      "version": "0.1.0",
+      "path": "README.md",
+      "bytes": 8617,
+      "sha256": "f6b8404348df67212aca0b173ede3c1f15d51d22cf986c2a8cb6ca3b75e97827",
+      "original_inventory_kind": "text",
+      "encoding": "utf-8-sig",
+      "nul_bytes": 11,
+      "strict_utf8_hits": [],
+      "nul_stripped_ascii_byte_probe": {
+        "method": "Remove only NUL bytes from a Latin-1 reversible byte view, then search ASCII protocol spellings; this is an exploratory byte probe, not a claim about text encoding or equivalent program behavior.",
+        "offset_basis": "original_match_byte_offset is zero-based in the original archive member",
+        "hits": []
+      },
+      "manual_review": {
+        "category": "utf8-main-text-with-utf16le-shaped-duplicated-title-tail",
+        "explanation": "Main README is readable strict UTF-8. A short appended duplicate project heading has alternating ASCII/NUL bytes and mixed line terminators; it is not a whole-file BOM-less UTF-16 document.",
+        "nul_contexts": [
+          {
+            "nul_byte_offset": 8592,
+            "context_start": 8528,
+            "context_hex": "63616c20656e67696e656572696e672063616c63756c6174696f6e73207768696c65206265696e67206f7074696d697a656420666f72204d6f6f6e4269742e230020004d006f006f006e00470065006f000d0a000d0a000d0a",
+            "context_utf8_escape_view": "cal engineering calculations while being optimized for MoonBit.#\\x00 \\x00M\\x00o\\x00o\\x00n\\x00G\\x00e\\x00o\\x00\\r\\n\\x00\\r\\n\\x00\\r\\n"
+          },
+          {
+            "nul_byte_offset": 8594,
+            "context_start": 8530,
+            "context_hex": "6c20656e67696e656572696e672063616c63756c6174696f6e73207768696c65206265696e67206f7074696d697a656420666f72204d6f6f6e4269742e230020004d006f006f006e00470065006f000d0a000d0a000d0a",
+            "context_utf8_escape_view": "l engineering calculations while being optimized for MoonBit.#\\x00 \\x00M\\x00o\\x00o\\x00n\\x00G\\x00e\\x00o\\x00\\r\\n\\x00\\r\\n\\x00\\r\\n"
+          },
+          {
+            "nul_byte_offset": 8596,
+            "context_start": 8532,
+            "context_hex": "656e67696e656572696e672063616c63756c6174696f6e73207768696c65206265696e67206f7074696d697a656420666f72204d6f6f6e4269742e230020004d006f006f006e00470065006f000d0a000d0a000d0a",
+            "context_utf8_escape_view": "engineering calculations while being optimized for MoonBit.#\\x00 \\x00M\\x00o\\x00o\\x00n\\x00G\\x00e\\x00o\\x00\\r\\n\\x00\\r\\n\\x00\\r\\n"
+          },
+          {
+            "nul_byte_offset": 8598,
+            "context_start": 8534,
+            "context_hex": "67696e656572696e672063616c63756c6174696f6e73207768696c65206265696e67206f7074696d697a656420666f72204d6f6f6e4269742e230020004d006f006f006e00470065006f000d0a000d0a000d0a",
+            "context_utf8_escape_view": "gineering calculations while being optimized for MoonBit.#\\x00 \\x00M\\x00o\\x00o\\x00n\\x00G\\x00e\\x00o\\x00\\r\\n\\x00\\r\\n\\x00\\r\\n"
+          },
+          {
+            "nul_byte_offset": 8600,
+            "context_start": 8536,
+            "context_hex": "6e656572696e672063616c63756c6174696f6e73207768696c65206265696e67206f7074696d697a656420666f72204d6f6f6e4269742e230020004d006f006f006e00470065006f000d0a000d0a000d0a",
+            "context_utf8_escape_view": "neering calculations while being optimized for MoonBit.#\\x00 \\x00M\\x00o\\x00o\\x00n\\x00G\\x00e\\x00o\\x00\\r\\n\\x00\\r\\n\\x00\\r\\n"
+          },
+          {
+            "nul_byte_offset": 8602,
+            "context_start": 8538,
+            "context_hex": "6572696e672063616c63756c6174696f6e73207768696c65206265696e67206f7074696d697a656420666f72204d6f6f6e4269742e230020004d006f006f006e00470065006f000d0a000d0a000d0a",
+            "context_utf8_escape_view": "ering calculations while being optimized for MoonBit.#\\x00 \\x00M\\x00o\\x00o\\x00n\\x00G\\x00e\\x00o\\x00\\r\\n\\x00\\r\\n\\x00\\r\\n"
+          },
+          {
+            "nul_byte_offset": 8604,
+            "context_start": 8540,
+            "context_hex": "696e672063616c63756c6174696f6e73207768696c65206265696e67206f7074696d697a656420666f72204d6f6f6e4269742e230020004d006f006f006e00470065006f000d0a000d0a000d0a",
+            "context_utf8_escape_view": "ing calculations while being optimized for MoonBit.#\\x00 \\x00M\\x00o\\x00o\\x00n\\x00G\\x00e\\x00o\\x00\\r\\n\\x00\\r\\n\\x00\\r\\n"
+          },
+          {
+            "nul_byte_offset": 8606,
+            "context_start": 8542,
+            "context_hex": "672063616c63756c6174696f6e73207768696c65206265696e67206f7074696d697a656420666f72204d6f6f6e4269742e230020004d006f006f006e00470065006f000d0a000d0a000d0a",
+            "context_utf8_escape_view": "g calculations while being optimized for MoonBit.#\\x00 \\x00M\\x00o\\x00o\\x00n\\x00G\\x00e\\x00o\\x00\\r\\n\\x00\\r\\n\\x00\\r\\n"
+          },
+          {
+            "nul_byte_offset": 8608,
+            "context_start": 8544,
+            "context_hex": "63616c63756c6174696f6e73207768696c65206265696e67206f7074696d697a656420666f72204d6f6f6e4269742e230020004d006f006f006e00470065006f000d0a000d0a000d0a",
+            "context_utf8_escape_view": "calculations while being optimized for MoonBit.#\\x00 \\x00M\\x00o\\x00o\\x00n\\x00G\\x00e\\x00o\\x00\\r\\n\\x00\\r\\n\\x00\\r\\n"
+          },
+          {
+            "nul_byte_offset": 8611,
+            "context_start": 8547,
+            "context_hex": "63756c6174696f6e73207768696c65206265696e67206f7074696d697a656420666f72204d6f6f6e4269742e230020004d006f006f006e00470065006f000d0a000d0a000d0a",
+            "context_utf8_escape_view": "culations while being optimized for MoonBit.#\\x00 \\x00M\\x00o\\x00o\\x00n\\x00G\\x00e\\x00o\\x00\\r\\n\\x00\\r\\n\\x00\\r\\n"
+          },
+          {
+            "nul_byte_offset": 8614,
+            "context_start": 8550,
+            "context_hex": "6174696f6e73207768696c65206265696e67206f7074696d697a656420666f72204d6f6f6e4269742e230020004d006f006f006e00470065006f000d0a000d0a000d0a",
+            "context_utf8_escape_view": "ations while being optimized for MoonBit.#\\x00 \\x00M\\x00o\\x00o\\x00n\\x00G\\x00e\\x00o\\x00\\r\\n\\x00\\r\\n\\x00\\r\\n"
+          }
+        ],
+        "tail_start_byte": 8591,
+        "tail_hex": "230020004d006f006f006e00470065006f000d0a000d0a000d0a",
+        "ascii_nul_pair_prefix": "# MoonGeo",
+        "protocol_spelling_in_inspected_tail": false
+      },
+      "identified_mixed_readme_tail": {
+        "raw_byte_offset": 8591,
+        "raw_tail_hex": "230020004d006f006f006e00470065006f000d0a000d0a000d0a",
+        "nul_stripped_ascii": "# MoonGeo\r\n\r\n\r\n",
+        "basis": "Individually inspected short duplicated ASCII/NUL project heading, including mixed line terminators; no whole-file UTF-16 claim.",
+        "hits": []
+      }
+    },
+    {
+      "name": "SupremeHuaji/MoonMech",
+      "version": "0.1.0",
+      "path": "README.md",
+      "bytes": 9330,
+      "sha256": "de80d9c17ed1efb3381dcabb8fa653c07685ecfc47db7e59d3f2ff17cc0629a0",
+      "original_inventory_kind": "text",
+      "encoding": "utf-8-sig",
+      "nul_bytes": 12,
+      "strict_utf8_hits": [],
+      "nul_stripped_ascii_byte_probe": {
+        "method": "Remove only NUL bytes from a Latin-1 reversible byte view, then search ASCII protocol spellings; this is an exploratory byte probe, not a claim about text encoding or equivalent program behavior.",
+        "offset_basis": "original_match_byte_offset is zero-based in the original archive member",
+        "hits": []
+      },
+      "manual_review": {
+        "category": "utf8-main-text-with-utf16le-shaped-duplicated-title-tail",
+        "explanation": "Main README is readable strict UTF-8. A short appended duplicate project heading has alternating ASCII/NUL bytes and mixed line terminators; it is not a whole-file BOM-less UTF-16 document.",
+        "nul_contexts": [
+          {
+            "nul_byte_offset": 9305,
+            "context_start": 9241,
+            "context_hex": "63616c20656e67696e656572696e672063616c63756c6174696f6e73207768696c65206265696e67206f7074696d697a656420666f72204d6f6f6e4269742e230020004d006f006f006e004d006500630068000d0a000d0a00",
+            "context_utf8_escape_view": "cal engineering calculations while being optimized for MoonBit.#\\x00 \\x00M\\x00o\\x00o\\x00n\\x00M\\x00e\\x00c\\x00h\\x00\\r\\n\\x00\\r\\n\\x00"
+          },
+          {
+            "nul_byte_offset": 9307,
+            "context_start": 9243,
+            "context_hex": "6c20656e67696e656572696e672063616c63756c6174696f6e73207768696c65206265696e67206f7074696d697a656420666f72204d6f6f6e4269742e230020004d006f006f006e004d006500630068000d0a000d0a00",
+            "context_utf8_escape_view": "l engineering calculations while being optimized for MoonBit.#\\x00 \\x00M\\x00o\\x00o\\x00n\\x00M\\x00e\\x00c\\x00h\\x00\\r\\n\\x00\\r\\n\\x00"
+          },
+          {
+            "nul_byte_offset": 9309,
+            "context_start": 9245,
+            "context_hex": "656e67696e656572696e672063616c63756c6174696f6e73207768696c65206265696e67206f7074696d697a656420666f72204d6f6f6e4269742e230020004d006f006f006e004d006500630068000d0a000d0a00",
+            "context_utf8_escape_view": "engineering calculations while being optimized for MoonBit.#\\x00 \\x00M\\x00o\\x00o\\x00n\\x00M\\x00e\\x00c\\x00h\\x00\\r\\n\\x00\\r\\n\\x00"
+          },
+          {
+            "nul_byte_offset": 9311,
+            "context_start": 9247,
+            "context_hex": "67696e656572696e672063616c63756c6174696f6e73207768696c65206265696e67206f7074696d697a656420666f72204d6f6f6e4269742e230020004d006f006f006e004d006500630068000d0a000d0a00",
+            "context_utf8_escape_view": "gineering calculations while being optimized for MoonBit.#\\x00 \\x00M\\x00o\\x00o\\x00n\\x00M\\x00e\\x00c\\x00h\\x00\\r\\n\\x00\\r\\n\\x00"
+          },
+          {
+            "nul_byte_offset": 9313,
+            "context_start": 9249,
+            "context_hex": "6e656572696e672063616c63756c6174696f6e73207768696c65206265696e67206f7074696d697a656420666f72204d6f6f6e4269742e230020004d006f006f006e004d006500630068000d0a000d0a00",
+            "context_utf8_escape_view": "neering calculations while being optimized for MoonBit.#\\x00 \\x00M\\x00o\\x00o\\x00n\\x00M\\x00e\\x00c\\x00h\\x00\\r\\n\\x00\\r\\n\\x00"
+          },
+          {
+            "nul_byte_offset": 9315,
+            "context_start": 9251,
+            "context_hex": "6572696e672063616c63756c6174696f6e73207768696c65206265696e67206f7074696d697a656420666f72204d6f6f6e4269742e230020004d006f006f006e004d006500630068000d0a000d0a00",
+            "context_utf8_escape_view": "ering calculations while being optimized for MoonBit.#\\x00 \\x00M\\x00o\\x00o\\x00n\\x00M\\x00e\\x00c\\x00h\\x00\\r\\n\\x00\\r\\n\\x00"
+          },
+          {
+            "nul_byte_offset": 9317,
+            "context_start": 9253,
+            "context_hex": "696e672063616c63756c6174696f6e73207768696c65206265696e67206f7074696d697a656420666f72204d6f6f6e4269742e230020004d006f006f006e004d006500630068000d0a000d0a00",
+            "context_utf8_escape_view": "ing calculations while being optimized for MoonBit.#\\x00 \\x00M\\x00o\\x00o\\x00n\\x00M\\x00e\\x00c\\x00h\\x00\\r\\n\\x00\\r\\n\\x00"
+          },
+          {
+            "nul_byte_offset": 9319,
+            "context_start": 9255,
+            "context_hex": "672063616c63756c6174696f6e73207768696c65206265696e67206f7074696d697a656420666f72204d6f6f6e4269742e230020004d006f006f006e004d006500630068000d0a000d0a00",
+            "context_utf8_escape_view": "g calculations while being optimized for MoonBit.#\\x00 \\x00M\\x00o\\x00o\\x00n\\x00M\\x00e\\x00c\\x00h\\x00\\r\\n\\x00\\r\\n\\x00"
+          },
+          {
+            "nul_byte_offset": 9321,
+            "context_start": 9257,
+            "context_hex": "63616c63756c6174696f6e73207768696c65206265696e67206f7074696d697a656420666f72204d6f6f6e4269742e230020004d006f006f006e004d006500630068000d0a000d0a00",
+            "context_utf8_escape_view": "calculations while being optimized for MoonBit.#\\x00 \\x00M\\x00o\\x00o\\x00n\\x00M\\x00e\\x00c\\x00h\\x00\\r\\n\\x00\\r\\n\\x00"
+          },
+          {
+            "nul_byte_offset": 9323,
+            "context_start": 9259,
+            "context_hex": "6c63756c6174696f6e73207768696c65206265696e67206f7074696d697a656420666f72204d6f6f6e4269742e230020004d006f006f006e004d006500630068000d0a000d0a00",
+            "context_utf8_escape_view": "lculations while being optimized for MoonBit.#\\x00 \\x00M\\x00o\\x00o\\x00n\\x00M\\x00e\\x00c\\x00h\\x00\\r\\n\\x00\\r\\n\\x00"
+          },
+          {
+            "nul_byte_offset": 9326,
+            "context_start": 9262,
+            "context_hex": "6c6174696f6e73207768696c65206265696e67206f7074696d697a656420666f72204d6f6f6e4269742e230020004d006f006f006e004d006500630068000d0a000d0a00",
+            "context_utf8_escape_view": "lations while being optimized for MoonBit.#\\x00 \\x00M\\x00o\\x00o\\x00n\\x00M\\x00e\\x00c\\x00h\\x00\\r\\n\\x00\\r\\n\\x00"
+          },
+          {
+            "nul_byte_offset": 9329,
+            "context_start": 9265,
+            "context_hex": "696f6e73207768696c65206265696e67206f7074696d697a656420666f72204d6f6f6e4269742e230020004d006f006f006e004d006500630068000d0a000d0a00",
+            "context_utf8_escape_view": "ions while being optimized for MoonBit.#\\x00 \\x00M\\x00o\\x00o\\x00n\\x00M\\x00e\\x00c\\x00h\\x00\\r\\n\\x00\\r\\n\\x00"
+          }
+        ],
+        "tail_start_byte": 9304,
+        "tail_hex": "230020004d006f006f006e004d006500630068000d0a000d0a00",
+        "ascii_nul_pair_prefix": "# MoonMech",
+        "protocol_spelling_in_inspected_tail": false
+      },
+      "identified_mixed_readme_tail": {
+        "raw_byte_offset": 9304,
+        "raw_tail_hex": "230020004d006f006f006e004d006500630068000d0a000d0a00",
+        "nul_stripped_ascii": "# MoonMech\r\n\r\n",
+        "basis": "Individually inspected short duplicated ASCII/NUL project heading, including mixed line terminators; no whole-file UTF-16 claim.",
+        "hits": []
+      }
+    },
+    {
+      "name": "SupremeHuaji/MoonFluid",
+      "version": "0.1.0",
+      "path": "README.md",
+      "bytes": 12789,
+      "sha256": "5552e75bd936e0bc168e011306dd22415985c3e36de9f29c712f78312a400707",
+      "original_inventory_kind": "text",
+      "encoding": "utf-8-sig",
+      "nul_bytes": 13,
+      "strict_utf8_hits": [],
+      "nul_stripped_ascii_byte_probe": {
+        "method": "Remove only NUL bytes from a Latin-1 reversible byte view, then search ASCII protocol spellings; this is an exploratory byte probe, not a claim about text encoding or equivalent program behavior.",
+        "offset_basis": "original_match_byte_offset is zero-based in the original archive member",
+        "hits": []
+      },
+      "manual_review": {
+        "category": "utf8-main-text-with-utf16le-shaped-duplicated-title-tail",
+        "explanation": "Main README is readable strict UTF-8. A short appended duplicate project heading has alternating ASCII/NUL bytes and mixed line terminators; it is not a whole-file BOM-less UTF-16 document.",
+        "nul_contexts": [
+          {
+            "nul_byte_offset": 12764,
+            "context_start": 12700,
+            "context_hex": "20636f766572616765206f6620666c756964206d656368616e696373207768696c65206265696e67206f7074696d697a656420666f72204d6f6f6e4269742e230020004d006f006f006e0046006c007500690064000d000a00",
+            "context_utf8_escape_view": " coverage of fluid mechanics while being optimized for MoonBit.#\\x00 \\x00M\\x00o\\x00o\\x00n\\x00F\\x00l\\x00u\\x00i\\x00d\\x00\\r\\x00\\n\\x00"
+          },
+          {
+            "nul_byte_offset": 12766,
+            "context_start": 12702,
+            "context_hex": "6f766572616765206f6620666c756964206d656368616e696373207768696c65206265696e67206f7074696d697a656420666f72204d6f6f6e4269742e230020004d006f006f006e0046006c007500690064000d000a00",
+            "context_utf8_escape_view": "overage of fluid mechanics while being optimized for MoonBit.#\\x00 \\x00M\\x00o\\x00o\\x00n\\x00F\\x00l\\x00u\\x00i\\x00d\\x00\\r\\x00\\n\\x00"
+          },
+          {
+            "nul_byte_offset": 12768,
+            "context_start": 12704,
+            "context_hex": "6572616765206f6620666c756964206d656368616e696373207768696c65206265696e67206f7074696d697a656420666f72204d6f6f6e4269742e230020004d006f006f006e0046006c007500690064000d000a00",
+            "context_utf8_escape_view": "erage of fluid mechanics while being optimized for MoonBit.#\\x00 \\x00M\\x00o\\x00o\\x00n\\x00F\\x00l\\x00u\\x00i\\x00d\\x00\\r\\x00\\n\\x00"
+          },
+          {
+            "nul_byte_offset": 12770,
+            "context_start": 12706,
+            "context_hex": "616765206f6620666c756964206d656368616e696373207768696c65206265696e67206f7074696d697a656420666f72204d6f6f6e4269742e230020004d006f006f006e0046006c007500690064000d000a00",
+            "context_utf8_escape_view": "age of fluid mechanics while being optimized for MoonBit.#\\x00 \\x00M\\x00o\\x00o\\x00n\\x00F\\x00l\\x00u\\x00i\\x00d\\x00\\r\\x00\\n\\x00"
+          },
+          {
+            "nul_byte_offset": 12772,
+            "context_start": 12708,
+            "context_hex": "65206f6620666c756964206d656368616e696373207768696c65206265696e67206f7074696d697a656420666f72204d6f6f6e4269742e230020004d006f006f006e0046006c007500690064000d000a00",
+            "context_utf8_escape_view": "e of fluid mechanics while being optimized for MoonBit.#\\x00 \\x00M\\x00o\\x00o\\x00n\\x00F\\x00l\\x00u\\x00i\\x00d\\x00\\r\\x00\\n\\x00"
+          },
+          {
+            "nul_byte_offset": 12774,
+            "context_start": 12710,
+            "context_hex": "6f6620666c756964206d656368616e696373207768696c65206265696e67206f7074696d697a656420666f72204d6f6f6e4269742e230020004d006f006f006e0046006c007500690064000d000a00",
+            "context_utf8_escape_view": "of fluid mechanics while being optimized for MoonBit.#\\x00 \\x00M\\x00o\\x00o\\x00n\\x00F\\x00l\\x00u\\x00i\\x00d\\x00\\r\\x00\\n\\x00"
+          },
+          {
+            "nul_byte_offset": 12776,
+            "context_start": 12712,
+            "context_hex": "20666c756964206d656368616e696373207768696c65206265696e67206f7074696d697a656420666f72204d6f6f6e4269742e230020004d006f006f006e0046006c007500690064000d000a00",
+            "context_utf8_escape_view": " fluid mechanics while being optimized for MoonBit.#\\x00 \\x00M\\x00o\\x00o\\x00n\\x00F\\x00l\\x00u\\x00i\\x00d\\x00\\r\\x00\\n\\x00"
+          },
+          {
+            "nul_byte_offset": 12778,
+            "context_start": 12714,
+            "context_hex": "6c756964206d656368616e696373207768696c65206265696e67206f7074696d697a656420666f72204d6f6f6e4269742e230020004d006f006f006e0046006c007500690064000d000a00",
+            "context_utf8_escape_view": "luid mechanics while being optimized for MoonBit.#\\x00 \\x00M\\x00o\\x00o\\x00n\\x00F\\x00l\\x00u\\x00i\\x00d\\x00\\r\\x00\\n\\x00"
+          },
+          {
+            "nul_byte_offset": 12780,
+            "context_start": 12716,
+            "context_hex": "6964206d656368616e696373207768696c65206265696e67206f7074696d697a656420666f72204d6f6f6e4269742e230020004d006f006f006e0046006c007500690064000d000a00",
+            "context_utf8_escape_view": "id mechanics while being optimized for MoonBit.#\\x00 \\x00M\\x00o\\x00o\\x00n\\x00F\\x00l\\x00u\\x00i\\x00d\\x00\\r\\x00\\n\\x00"
+          },
+          {
+            "nul_byte_offset": 12782,
+            "context_start": 12718,
+            "context_hex": "206d656368616e696373207768696c65206265696e67206f7074696d697a656420666f72204d6f6f6e4269742e230020004d006f006f006e0046006c007500690064000d000a00",
+            "context_utf8_escape_view": " mechanics while being optimized for MoonBit.#\\x00 \\x00M\\x00o\\x00o\\x00n\\x00F\\x00l\\x00u\\x00i\\x00d\\x00\\r\\x00\\n\\x00"
+          },
+          {
+            "nul_byte_offset": 12784,
+            "context_start": 12720,
+            "context_hex": "656368616e696373207768696c65206265696e67206f7074696d697a656420666f72204d6f6f6e4269742e230020004d006f006f006e0046006c007500690064000d000a00",
+            "context_utf8_escape_view": "echanics while being optimized for MoonBit.#\\x00 \\x00M\\x00o\\x00o\\x00n\\x00F\\x00l\\x00u\\x00i\\x00d\\x00\\r\\x00\\n\\x00"
+          },
+          {
+            "nul_byte_offset": 12786,
+            "context_start": 12722,
+            "context_hex": "68616e696373207768696c65206265696e67206f7074696d697a656420666f72204d6f6f6e4269742e230020004d006f006f006e0046006c007500690064000d000a00",
+            "context_utf8_escape_view": "hanics while being optimized for MoonBit.#\\x00 \\x00M\\x00o\\x00o\\x00n\\x00F\\x00l\\x00u\\x00i\\x00d\\x00\\r\\x00\\n\\x00"
+          },
+          {
+            "nul_byte_offset": 12788,
+            "context_start": 12724,
+            "context_hex": "6e696373207768696c65206265696e67206f7074696d697a656420666f72204d6f6f6e4269742e230020004d006f006f006e0046006c007500690064000d000a00",
+            "context_utf8_escape_view": "nics while being optimized for MoonBit.#\\x00 \\x00M\\x00o\\x00o\\x00n\\x00F\\x00l\\x00u\\x00i\\x00d\\x00\\r\\x00\\n\\x00"
+          }
+        ],
+        "tail_start_byte": 12763,
+        "tail_hex": "230020004d006f006f006e0046006c007500690064000d000a00",
+        "ascii_nul_pair_prefix": "# MoonFluid",
+        "protocol_spelling_in_inspected_tail": false
+      },
+      "identified_mixed_readme_tail": {
+        "raw_byte_offset": 12763,
+        "raw_tail_hex": "230020004d006f006f006e0046006c007500690064000d000a00",
+        "nul_stripped_ascii": "# MoonFluid\r\n",
+        "basis": "Individually inspected short duplicated ASCII/NUL project heading, including mixed line terminators; no whole-file UTF-16 claim.",
+        "hits": []
+      }
+    },
+    {
+      "name": "yjdszjoe/moon-humanize",
+      "version": "0.1.0",
+      "path": "src/humanize/i18n_data.mbt",
+      "bytes": 105605,
+      "sha256": "48aa250ed3751aace525c8ecd93bc155faf7ad2af930d44f39198e600b3d5d09",
+      "original_inventory_kind": "text",
+      "encoding": "utf-8-sig",
+      "nul_bytes": 700,
+      "strict_utf8_hits": [],
+      "nul_stripped_ascii_byte_probe": {
+        "method": "Remove only NUL bytes from a Latin-1 reversible byte view, then search ASCII protocol spellings; this is an exploratory byte probe, not a claim about text encoding or equivalent program behavior.",
+        "offset_basis": "original_match_byte_offset is zero-based in the original archive member",
+        "hits": []
+      },
+      "manual_review": {
+        "category": "pending",
+        "explanation": "New NUL-containing member in final 3123-module scope; requires byte-context review.",
+        "nul_contexts": [
+          {
+            "nul_byte_offset": 26523,
+            "context_start": 26459,
+            "context_hex": "0d0a6c6574206374785f4172203a204d61705b537472696e672c20537472696e675d203d204d61703a3a66726f6d5f6172726179285b28223020286d616c6529007468222c202220d8b5d981d8b122292c2028223120286d616c6529007374222c202220d8a3d988d98422292c2028223220286d616c6529006e64222c202220",
+            "context_utf8_escape_view": "\\r\\nlet ctx_Ar : Map[String, String] = Map::from_array([(\"0 (male)\\x00th\", \" \\u0635\\u0641\\u0631\"), (\"1 (male)\\x00st\", \" \\u0623\\u0648\\u0644\"), (\"2 (male)\\x00nd\", \" "
+          },
+          {
+            "nul_byte_offset": 26551,
+            "context_start": 26487,
+            "context_hex": "7472696e675d203d204d61703a3a66726f6d5f6172726179285b28223020286d616c6529007468222c202220d8b5d981d8b122292c2028223120286d616c6529007374222c202220d8a3d988d98422292c2028223220286d616c6529006e64222c202220d8abd8a7d986d98a22292c2028223320286d616c6529007264222c20",
+            "context_utf8_escape_view": "tring] = Map::from_array([(\"0 (male)\\x00th\", \" \\u0635\\u0641\\u0631\"), (\"1 (male)\\x00st\", \" \\u0623\\u0648\\u0644\"), (\"2 (male)\\x00nd\", \" \\u062b\\u0627\\u0646\\u064a\"), (\"3 (male)\\x00rd\", "
+          },
+          {
+            "nul_byte_offset": 26579,
+            "context_start": 26515,
+            "context_hex": "3020286d616c6529007468222c202220d8b5d981d8b122292c2028223120286d616c6529007374222c202220d8a3d988d98422292c2028223220286d616c6529006e64222c202220d8abd8a7d986d98a22292c2028223320286d616c6529007264222c202220d8abd8a7d984d8ab22292c2028223420286d616c652900746822",
+            "context_utf8_escape_view": "0 (male)\\x00th\", \" \\u0635\\u0641\\u0631\"), (\"1 (male)\\x00st\", \" \\u0623\\u0648\\u0644\"), (\"2 (male)\\x00nd\", \" \\u062b\\u0627\\u0646\\u064a\"), (\"3 (male)\\x00rd\", \" \\u062b\\u0627\\u0644\\u062b\"), (\"4 (male)\\x00th\""
+          },
+          {
+            "nul_byte_offset": 26609,
+            "context_start": 26545,
+            "context_hex": "286d616c6529007374222c202220d8a3d988d98422292c2028223220286d616c6529006e64222c202220d8abd8a7d986d98a22292c2028223320286d616c6529007264222c202220d8abd8a7d984d8ab22292c2028223420286d616c6529007468222c202220d8b1d8a7d8a8d8b922292c2028223520286d616c652900746822",
+            "context_utf8_escape_view": "(male)\\x00st\", \" \\u0623\\u0648\\u0644\"), (\"2 (male)\\x00nd\", \" \\u062b\\u0627\\u0646\\u064a\"), (\"3 (male)\\x00rd\", \" \\u062b\\u0627\\u0644\\u062b\"), (\"4 (male)\\x00th\", \" \\u0631\\u0627\\u0628\\u0639\"), (\"5 (male)\\x00th\""
+          },
+          {
+            "nul_byte_offset": 26639,
+            "context_start": 26575,
+            "context_hex": "616c6529006e64222c202220d8abd8a7d986d98a22292c2028223320286d616c6529007264222c202220d8abd8a7d984d8ab22292c2028223420286d616c6529007468222c202220d8b1d8a7d8a8d8b922292c2028223520286d616c6529007468222c202220d8aed8a7d985d8b322292c2028223620286d616c652900746822",
+            "context_utf8_escape_view": "ale)\\x00nd\", \" \\u062b\\u0627\\u0646\\u064a\"), (\"3 (male)\\x00rd\", \" \\u062b\\u0627\\u0644\\u062b\"), (\"4 (male)\\x00th\", \" \\u0631\\u0627\\u0628\\u0639\"), (\"5 (male)\\x00th\", \" \\u062e\\u0627\\u0645\\u0633\"), (\"6 (male)\\x00th\""
+          },
+          {
+            "nul_byte_offset": 26669,
+            "context_start": 26605,
+            "context_hex": "616c6529007264222c202220d8abd8a7d984d8ab22292c2028223420286d616c6529007468222c202220d8b1d8a7d8a8d8b922292c2028223520286d616c6529007468222c202220d8aed8a7d985d8b322292c2028223620286d616c6529007468222c202220d8b3d8a7d8afd8b322292c2028223720286d616c652900746822",
+            "context_utf8_escape_view": "ale)\\x00rd\", \" \\u062b\\u0627\\u0644\\u062b\"), (\"4 (male)\\x00th\", \" \\u0631\\u0627\\u0628\\u0639\"), (\"5 (male)\\x00th\", \" \\u062e\\u0627\\u0645\\u0633\"), (\"6 (male)\\x00th\", \" \\u0633\\u0627\\u062f\\u0633\"), (\"7 (male)\\x00th\""
+          },
+          {
+            "nul_byte_offset": 26699,
+            "context_start": 26635,
+            "context_hex": "616c6529007468222c202220d8b1d8a7d8a8d8b922292c2028223520286d616c6529007468222c202220d8aed8a7d985d8b322292c2028223620286d616c6529007468222c202220d8b3d8a7d8afd8b322292c2028223720286d616c6529007468222c202220d8b3d8a7d8a8d8b922292c2028223820286d616c652900746822",
+            "context_utf8_escape_view": "ale)\\x00th\", \" \\u0631\\u0627\\u0628\\u0639\"), (\"5 (male)\\x00th\", \" \\u062e\\u0627\\u0645\\u0633\"), (\"6 (male)\\x00th\", \" \\u0633\\u0627\\u062f\\u0633\"), (\"7 (male)\\x00th\", \" \\u0633\\u0627\\u0628\\u0639\"), (\"8 (male)\\x00th\""
+          },
+          {
+            "nul_byte_offset": 26729,
+            "context_start": 26665,
+            "context_hex": "616c6529007468222c202220d8aed8a7d985d8b322292c2028223620286d616c6529007468222c202220d8b3d8a7d8afd8b322292c2028223720286d616c6529007468222c202220d8b3d8a7d8a8d8b922292c2028223820286d616c6529007468222c202220d8abd8a7d985d98622292c2028223920286d616c652900746822",
+            "context_utf8_escape_view": "ale)\\x00th\", \" \\u062e\\u0627\\u0645\\u0633\"), (\"6 (male)\\x00th\", \" \\u0633\\u0627\\u062f\\u0633\"), (\"7 (male)\\x00th\", \" \\u0633\\u0627\\u0628\\u0639\"), (\"8 (male)\\x00th\", \" \\u062b\\u0627\\u0645\\u0646\"), (\"9 (male)\\x00th\""
+          },
+          {
+            "nul_byte_offset": 26759,
+            "context_start": 26695,
+            "context_hex": "616c6529007468222c202220d8b3d8a7d8afd8b322292c2028223720286d616c6529007468222c202220d8b3d8a7d8a8d8b922292c2028223820286d616c6529007468222c202220d8abd8a7d985d98622292c2028223920286d616c6529007468222c202220d8aad8a7d8b3d8b922292c20282230202866656d616c65290074",
+            "context_utf8_escape_view": "ale)\\x00th\", \" \\u0633\\u0627\\u062f\\u0633\"), (\"7 (male)\\x00th\", \" \\u0633\\u0627\\u0628\\u0639\"), (\"8 (male)\\x00th\", \" \\u062b\\u0627\\u0645\\u0646\"), (\"9 (male)\\x00th\", \" \\u062a\\u0627\\u0633\\u0639\"), (\"0 (female)\\x00t"
+          },
+          {
+            "nul_byte_offset": 26789,
+            "context_start": 26725,
+            "context_hex": "616c6529007468222c202220d8b3d8a7d8a8d8b922292c2028223820286d616c6529007468222c202220d8abd8a7d985d98622292c2028223920286d616c6529007468222c202220d8aad8a7d8b3d8b922292c20282230202866656d616c6529007468222c202220d8b5d981d8b122292c20282231202866656d616c65290073",
+            "context_utf8_escape_view": "ale)\\x00th\", \" \\u0633\\u0627\\u0628\\u0639\"), (\"8 (male)\\x00th\", \" \\u062b\\u0627\\u0645\\u0646\"), (\"9 (male)\\x00th\", \" \\u062a\\u0627\\u0633\\u0639\"), (\"0 (female)\\x00th\", \" \\u0635\\u0641\\u0631\"), (\"1 (female)\\x00s"
+          },
+          {
+            "nul_byte_offset": 26821,
+            "context_start": 26757,
+            "context_hex": "6529007468222c202220d8abd8a7d985d98622292c2028223920286d616c6529007468222c202220d8aad8a7d8b3d8b922292c20282230202866656d616c6529007468222c202220d8b5d981d8b122292c20282231202866656d616c6529007374222c202220d8a3d988d984d98922292c20282232202866656d616c6529006e",
+            "context_utf8_escape_view": "e)\\x00th\", \" \\u062b\\u0627\\u0645\\u0646\"), (\"9 (male)\\x00th\", \" \\u062a\\u0627\\u0633\\u0639\"), (\"0 (female)\\x00th\", \" \\u0635\\u0641\\u0631\"), (\"1 (female)\\x00st\", \" \\u0623\\u0648\\u0644\\u0649\"), (\"2 (female)\\x00n"
+          },
+          {
+            "nul_byte_offset": 26851,
+            "context_start": 26787,
+            "context_hex": "6529007468222c202220d8aad8a7d8b3d8b922292c20282230202866656d616c6529007468222c202220d8b5d981d8b122292c20282231202866656d616c6529007374222c202220d8a3d988d984d98922292c20282232202866656d616c6529006e64222c202220d8abd8a7d986d98ad8a922292c20282233202866656d616c",
+            "context_utf8_escape_view": "e)\\x00th\", \" \\u062a\\u0627\\u0633\\u0639\"), (\"0 (female)\\x00th\", \" \\u0635\\u0641\\u0631\"), (\"1 (female)\\x00st\", \" \\u0623\\u0648\\u0644\\u0649\"), (\"2 (female)\\x00nd\", \" \\u062b\\u0627\\u0646\\u064a\\u0629\"), (\"3 (femal"
+          },
+          {
+            "nul_byte_offset": 26883,
+            "context_start": 26819,
+            "context_hex": "6529007468222c202220d8b5d981d8b122292c20282231202866656d616c6529007374222c202220d8a3d988d984d98922292c20282232202866656d616c6529006e64222c202220d8abd8a7d986d98ad8a922292c20282233202866656d616c6529007264222c202220d8abd8a7d984d8abd8a922292c20282234202866656d",
+            "context_utf8_escape_view": "e)\\x00th\", \" \\u0635\\u0641\\u0631\"), (\"1 (female)\\x00st\", \" \\u0623\\u0648\\u0644\\u0649\"), (\"2 (female)\\x00nd\", \" \\u062b\\u0627\\u0646\\u064a\\u0629\"), (\"3 (female)\\x00rd\", \" \\u062b\\u0627\\u0644\\u062b\\u0629\"), (\"4 (fem"
+          },
+          {
+            "nul_byte_offset": 26917,
+            "context_start": 26853,
+            "context_hex": "74222c202220d8a3d988d984d98922292c20282232202866656d616c6529006e64222c202220d8abd8a7d986d98ad8a922292c20282233202866656d616c6529007264222c202220d8abd8a7d984d8abd8a922292c20282234202866656d616c6529007468222c202220d8b1d8a7d8a8d8b9d8a922292c20282235202866656d",
+            "context_utf8_escape_view": "t\", \" \\u0623\\u0648\\u0644\\u0649\"), (\"2 (female)\\x00nd\", \" \\u062b\\u0627\\u0646\\u064a\\u0629\"), (\"3 (female)\\x00rd\", \" \\u062b\\u0627\\u0644\\u062b\\u0629\"), (\"4 (female)\\x00th\", \" \\u0631\\u0627\\u0628\\u0639\\u0629\"), (\"5 (fem"
+          },
+          {
+            "nul_byte_offset": 26951,
+            "context_start": 26887,
+            "context_hex": "2c202220d8abd8a7d986d98ad8a922292c20282233202866656d616c6529007264222c202220d8abd8a7d984d8abd8a922292c20282234202866656d616c6529007468222c202220d8b1d8a7d8a8d8b9d8a922292c20282235202866656d616c6529007468222c202220d8aed8a7d985d8b3d8a922292c20282236202866656d",
+            "context_utf8_escape_view": ", \" \\u062b\\u0627\\u0646\\u064a\\u0629\"), (\"3 (female)\\x00rd\", \" \\u062b\\u0627\\u0644\\u062b\\u0629\"), (\"4 (female)\\x00th\", \" \\u0631\\u0627\\u0628\\u0639\\u0629\"), (\"5 (female)\\x00th\", \" \\u062e\\u0627\\u0645\\u0633\\u0629\"), (\"6 (fem"
+          },
+          {
+            "nul_byte_offset": 26985,
+            "context_start": 26921,
+            "context_hex": "2c202220d8abd8a7d984d8abd8a922292c20282234202866656d616c6529007468222c202220d8b1d8a7d8a8d8b9d8a922292c20282235202866656d616c6529007468222c202220d8aed8a7d985d8b3d8a922292c20282236202866656d616c6529007468222c202220d8b3d8a7d8afd8b3d8a922292c20282237202866656d",
+            "context_utf8_escape_view": ", \" \\u062b\\u0627\\u0644\\u062b\\u0629\"), (\"4 (female)\\x00th\", \" \\u0631\\u0627\\u0628\\u0639\\u0629\"), (\"5 (female)\\x00th\", \" \\u062e\\u0627\\u0645\\u0633\\u0629\"), (\"6 (female)\\x00th\", \" \\u0633\\u0627\\u062f\\u0633\\u0629\"), (\"7 (fem"
+          },
+          {
+            "nul_byte_offset": 27019,
+            "context_start": 26955,
+            "context_hex": "2c202220d8b1d8a7d8a8d8b9d8a922292c20282235202866656d616c6529007468222c202220d8aed8a7d985d8b3d8a922292c20282236202866656d616c6529007468222c202220d8b3d8a7d8afd8b3d8a922292c20282237202866656d616c6529007468222c202220d8b3d8a7d8a8d8b9d8a922292c20282238202866656d",
+            "context_utf8_escape_view": ", \" \\u0631\\u0627\\u0628\\u0639\\u0629\"), (\"5 (female)\\x00th\", \" \\u062e\\u0627\\u0645\\u0633\\u0629\"), (\"6 (female)\\x00th\", \" \\u0633\\u0627\\u062f\\u0633\\u0629\"), (\"7 (female)\\x00th\", \" \\u0633\\u0627\\u0628\\u0639\\u0629\"), (\"8 (fem"
+          },
+          {
+            "nul_byte_offset": 27053,
+            "context_start": 26989,
+            "context_hex": "2c202220d8aed8a7d985d8b3d8a922292c20282236202866656d616c6529007468222c202220d8b3d8a7d8afd8b3d8a922292c20282237202866656d616c6529007468222c202220d8b3d8a7d8a8d8b9d8a922292c20282238202866656d616c6529007468222c202220d8abd8a7d985d986d8a922292c20282239202866656d",
+            "context_utf8_escape_view": ", \" \\u062e\\u0627\\u0645\\u0633\\u0629\"), (\"6 (female)\\x00th\", \" \\u0633\\u0627\\u062f\\u0633\\u0629\"), (\"7 (female)\\x00th\", \" \\u0633\\u0627\\u0628\\u0639\\u0629\"), (\"8 (female)\\x00th\", \" \\u062b\\u0627\\u0645\\u0646\\u0629\"), (\"9 (fem"
+          },
+          {
+            "nul_byte_offset": 27087,
+            "context_start": 27023,
+            "context_hex": "2c202220d8b3d8a7d8afd8b3d8a922292c20282237202866656d616c6529007468222c202220d8b3d8a7d8a8d8b9d8a922292c20282238202866656d616c6529007468222c202220d8abd8a7d985d986d8a922292c20282239202866656d616c6529007468222c202220d8aad8a7d8b3d8b9d8a922295d290d0a6c6574206374",
+            "context_utf8_escape_view": ", \" \\u0633\\u0627\\u062f\\u0633\\u0629\"), (\"7 (female)\\x00th\", \" \\u0633\\u0627\\u0628\\u0639\\u0629\"), (\"8 (female)\\x00th\", \" \\u062b\\u0627\\u0645\\u0646\\u0629\"), (\"9 (female)\\x00th\", \" \\u062a\\u0627\\u0633\\u0639\\u0629\")])\\r\\nlet ct"
+          },
+          {
+            "nul_byte_offset": 27121,
+            "context_start": 27057,
+            "context_hex": "2c202220d8b3d8a7d8a8d8b9d8a922292c20282238202866656d616c6529007468222c202220d8abd8a7d985d986d8a922292c20282239202866656d616c6529007468222c202220d8aad8a7d8b3d8b9d8a922295d290d0a6c6574206374785f426e4244203a204d61705b537472696e672c20537472696e675d203d204d6170",
+            "context_utf8_escape_view": ", \" \\u0633\\u0627\\u0628\\u0639\\u0629\"), (\"8 (female)\\x00th\", \" \\u062b\\u0627\\u0645\\u0646\\u0629\"), (\"9 (female)\\x00th\", \" \\u062a\\u0627\\u0633\\u0639\\u0629\")])\\r\\nlet ctx_BnBD : Map[String, String] = Map"
+          },
+          {
+            "nul_byte_offset": 27209,
+            "context_start": 27145,
+            "context_hex": "6c6574206374785f426e4244203a204d61705b537472696e672c20537472696e675d203d204d61703a3a66726f6d5f6172726179285b28223020286d616c6529007468222c2022e0a6a4e0a6ae22292c2028223120286d616c6529007374222c2022e0a6a4e0a6ae22292c2028223220286d616c6529006e64222c2022e0a6a4",
+            "context_utf8_escape_view": "let ctx_BnBD : Map[String, String] = Map::from_array([(\"0 (male)\\x00th\", \"\\u09a4\\u09ae\"), (\"1 (male)\\x00st\", \"\\u09a4\\u09ae\"), (\"2 (male)\\x00nd\", \"\\u09a4"
+          },
+          {
+            "nul_byte_offset": 27236,
+            "context_start": 27172,
+            "context_hex": "537472696e675d203d204d61703a3a66726f6d5f6172726179285b28223020286d616c6529007468222c2022e0a6a4e0a6ae22292c2028223120286d616c6529007374222c2022e0a6a4e0a6ae22292c2028223220286d616c6529006e64222c2022e0a6a4e0a6ae22292c2028223320286d616c6529007264222c2022e0a6a4",
+            "context_utf8_escape_view": "String] = Map::from_array([(\"0 (male)\\x00th\", \"\\u09a4\\u09ae\"), (\"1 (male)\\x00st\", \"\\u09a4\\u09ae\"), (\"2 (male)\\x00nd\", \"\\u09a4\\u09ae\"), (\"3 (male)\\x00rd\", \"\\u09a4"
+          },
+          {
+            "nul_byte_offset": 27263,
+            "context_start": 27199,
+            "context_hex": "28223020286d616c6529007468222c2022e0a6a4e0a6ae22292c2028223120286d616c6529007374222c2022e0a6a4e0a6ae22292c2028223220286d616c6529006e64222c2022e0a6a4e0a6ae22292c2028223320286d616c6529007264222c2022e0a6a4e0a6ae22292c2028223420286d616c6529007468222c2022e0a6a4",
+            "context_utf8_escape_view": "(\"0 (male)\\x00th\", \"\\u09a4\\u09ae\"), (\"1 (male)\\x00st\", \"\\u09a4\\u09ae\"), (\"2 (male)\\x00nd\", \"\\u09a4\\u09ae\"), (\"3 (male)\\x00rd\", \"\\u09a4\\u09ae\"), (\"4 (male)\\x00th\", \"\\u09a4"
+          },
+          {
+            "nul_byte_offset": 27290,
+            "context_start": 27226,
+            "context_hex": "28223120286d616c6529007374222c2022e0a6a4e0a6ae22292c2028223220286d616c6529006e64222c2022e0a6a4e0a6ae22292c2028223320286d616c6529007264222c2022e0a6a4e0a6ae22292c2028223420286d616c6529007468222c2022e0a6a4e0a6ae22292c2028223520286d616c6529007468222c2022e0a6a4",
+            "context_utf8_escape_view": "(\"1 (male)\\x00st\", \"\\u09a4\\u09ae\"), (\"2 (male)\\x00nd\", \"\\u09a4\\u09ae\"), (\"3 (male)\\x00rd\", \"\\u09a4\\u09ae\"), (\"4 (male)\\x00th\", \"\\u09a4\\u09ae\"), (\"5 (male)\\x00th\", \"\\u09a4"
+          },
+          {
+            "nul_byte_offset": 27317,
+            "context_start": 27253,
+            "context_hex": "28223220286d616c6529006e64222c2022e0a6a4e0a6ae22292c2028223320286d616c6529007264222c2022e0a6a4e0a6ae22292c2028223420286d616c6529007468222c2022e0a6a4e0a6ae22292c2028223520286d616c6529007468222c2022e0a6a4e0a6ae22292c2028223620286d616c6529007468222c2022e0a6a4",
+            "context_utf8_escape_view": "(\"2 (male)\\x00nd\", \"\\u09a4\\u09ae\"), (\"3 (male)\\x00rd\", \"\\u09a4\\u09ae\"), (\"4 (male)\\x00th\", \"\\u09a4\\u09ae\"), (\"5 (male)\\x00th\", \"\\u09a4\\u09ae\"), (\"6 (male)\\x00th\", \"\\u09a4"
+          },
+          {
+            "nul_byte_offset": 27344,
+            "context_start": 27280,
+            "context_hex": "28223320286d616c6529007264222c2022e0a6a4e0a6ae22292c2028223420286d616c6529007468222c2022e0a6a4e0a6ae22292c2028223520286d616c6529007468222c2022e0a6a4e0a6ae22292c2028223620286d616c6529007468222c2022e0a6a4e0a6ae22292c2028223720286d616c6529007468222c2022e0a6a4",
+            "context_utf8_escape_view": "(\"3 (male)\\x00rd\", \"\\u09a4\\u09ae\"), (\"4 (male)\\x00th\", \"\\u09a4\\u09ae\"), (\"5 (male)\\x00th\", \"\\u09a4\\u09ae\"), (\"6 (male)\\x00th\", \"\\u09a4\\u09ae\"), (\"7 (male)\\x00th\", \"\\u09a4"
+          },
+          {
+            "nul_byte_offset": 27371,
+            "context_start": 27307,
+            "context_hex": "28223420286d616c6529007468222c2022e0a6a4e0a6ae22292c2028223520286d616c6529007468222c2022e0a6a4e0a6ae22292c2028223620286d616c6529007468222c2022e0a6a4e0a6ae22292c2028223720286d616c6529007468222c2022e0a6a4e0a6ae22292c2028223820286d616c6529007468222c2022e0a6a4",
+            "context_utf8_escape_view": "(\"4 (male)\\x00th\", \"\\u09a4\\u09ae\"), (\"5 (male)\\x00th\", \"\\u09a4\\u09ae\"), (\"6 (male)\\x00th\", \"\\u09a4\\u09ae\"), (\"7 (male)\\x00th\", \"\\u09a4\\u09ae\"), (\"8 (male)\\x00th\", \"\\u09a4"
+          },
+          {
+            "nul_byte_offset": 27398,
+            "context_start": 27334,
+            "context_hex": "28223520286d616c6529007468222c2022e0a6a4e0a6ae22292c2028223620286d616c6529007468222c2022e0a6a4e0a6ae22292c2028223720286d616c6529007468222c2022e0a6a4e0a6ae22292c2028223820286d616c6529007468222c2022e0a6a4e0a6ae22292c2028223920286d616c6529007468222c2022e0a6a4",
+            "context_utf8_escape_view": "(\"5 (male)\\x00th\", \"\\u09a4\\u09ae\"), (\"6 (male)\\x00th\", \"\\u09a4\\u09ae\"), (\"7 (male)\\x00th\", \"\\u09a4\\u09ae\"), (\"8 (male)\\x00th\", \"\\u09a4\\u09ae\"), (\"9 (male)\\x00th\", \"\\u09a4"
+          },
+          {
+            "nul_byte_offset": 27425,
+            "context_start": 27361,
+            "context_hex": "28223620286d616c6529007468222c2022e0a6a4e0a6ae22292c2028223720286d616c6529007468222c2022e0a6a4e0a6ae22292c2028223820286d616c6529007468222c2022e0a6a4e0a6ae22292c2028223920286d616c6529007468222c2022e0a6a4e0a6ae22292c20282230202866656d616c6529007468222c2022e0",
+            "context_utf8_escape_view": "(\"6 (male)\\x00th\", \"\\u09a4\\u09ae\"), (\"7 (male)\\x00th\", \"\\u09a4\\u09ae\"), (\"8 (male)\\x00th\", \"\\u09a4\\u09ae\"), (\"9 (male)\\x00th\", \"\\u09a4\\u09ae\"), (\"0 (female)\\x00th\", \"\\\\xe0"
+          },
+          {
+            "nul_byte_offset": 27452,
+            "context_start": 27388,
+            "context_hex": "28223720286d616c6529007468222c2022e0a6a4e0a6ae22292c2028223820286d616c6529007468222c2022e0a6a4e0a6ae22292c2028223920286d616c6529007468222c2022e0a6a4e0a6ae22292c20282230202866656d616c6529007468222c2022e0a6a4e0a6ae22292c20282231202866656d616c6529007374222c20",
+            "context_utf8_escape_view": "(\"7 (male)\\x00th\", \"\\u09a4\\u09ae\"), (\"8 (male)\\x00th\", \"\\u09a4\\u09ae\"), (\"9 (male)\\x00th\", \"\\u09a4\\u09ae\"), (\"0 (female)\\x00th\", \"\\u09a4\\u09ae\"), (\"1 (female)\\x00st\", "
+          },
+          {
+            "nul_byte_offset": 27481,
+            "context_start": 27417,
+            "context_hex": "3820286d616c6529007468222c2022e0a6a4e0a6ae22292c2028223920286d616c6529007468222c2022e0a6a4e0a6ae22292c20282230202866656d616c6529007468222c2022e0a6a4e0a6ae22292c20282231202866656d616c6529007374222c2022e0a6a4e0a6ae22292c20282232202866656d616c6529006e64222c20",
+            "context_utf8_escape_view": "8 (male)\\x00th\", \"\\u09a4\\u09ae\"), (\"9 (male)\\x00th\", \"\\u09a4\\u09ae\"), (\"0 (female)\\x00th\", \"\\u09a4\\u09ae\"), (\"1 (female)\\x00st\", \"\\u09a4\\u09ae\"), (\"2 (female)\\x00nd\", "
+          },
+          {
+            "nul_byte_offset": 27510,
+            "context_start": 27446,
+            "context_hex": "286d616c6529007468222c2022e0a6a4e0a6ae22292c20282230202866656d616c6529007468222c2022e0a6a4e0a6ae22292c20282231202866656d616c6529007374222c2022e0a6a4e0a6ae22292c20282232202866656d616c6529006e64222c2022e0a6a4e0a6ae22292c20282233202866656d616c6529007264222c20",
+            "context_utf8_escape_view": "(male)\\x00th\", \"\\u09a4\\u09ae\"), (\"0 (female)\\x00th\", \"\\u09a4\\u09ae\"), (\"1 (female)\\x00st\", \"\\u09a4\\u09ae\"), (\"2 (female)\\x00nd\", \"\\u09a4\\u09ae\"), (\"3 (female)\\x00rd\", "
+          }
+        ]
+      }
+    },
+    {
+      "name": "Lfan-ke/mooncat",
+      "version": "0.8.1",
+      "path": "quic_initial_packet_wbtest.mbt",
+      "bytes": 4765,
+      "sha256": "0627ec1ff1721cf8d1738e128c052028c67fc56924e3d78aba4edebf5ebad113",
+      "original_inventory_kind": "text",
+      "encoding": "utf-8-sig",
+      "nul_bytes": 2,
+      "strict_utf8_hits": [],
+      "nul_stripped_ascii_byte_probe": {
+        "method": "Remove only NUL bytes from a Latin-1 reversible byte view, then search ASCII protocol spellings; this is an exploratory byte probe, not a claim about text encoding or equivalent program behavior.",
+        "offset_basis": "original_match_byte_offset is zero-based in the original archive member",
+        "hits": []
+      },
+      "manual_review": {
+        "category": "strict-utf8-source-with-literal-or-comment-nul",
+        "explanation": "Readable UTF-8 source. Inspected NUL byte contexts are source character/byte/string literals or comments describing NUL; not a BOM-less UTF-16 source file.",
+        "nul_contexts": [
+          {
+            "nul_byte_offset": 3795,
+            "context_start": 3731,
+            "context_hex": "5b3a5d290a20207768696c65207061796c6f61642e6c656e6774682829203c2031313632207b0a202020207061796c6f61642e77726974655f627974652862270027290a20207d0a20206c6574207061636b6574203d20717569635f70726f746563745f696e697469616c280a2020202031552c0a20202020646369642c0a20",
+            "context_utf8_escape_view": "[:])\\n  while payload.length() < 1162 {\\n    payload.write_byte(b'\\x00')\\n  }\\n  let packet = quic_protect_initial(\\n    1U,\\n    dcid,\\n "
+          },
+          {
+            "nul_byte_offset": 4392,
+            "context_start": 4328,
+            "context_hex": "5b3a5d290a20207768696c65207061796c6f61642e6c656e6774682829203c2031313632207b0a202020207061796c6f61642e77726974655f627974652862270027290a20207d0a20202f2f20706e206669656c6420737461727473206174206f666673657420313820696e207468697320686561646572202873656520412e",
+            "context_utf8_escape_view": "[:])\\n  while payload.length() < 1162 {\\n    payload.write_byte(b'\\x00')\\n  }\\n  // pn field starts at offset 18 in this header (see A."
+          }
+        ]
+      }
+    },
+    {
+      "name": "moonbitstack/moonbase",
+      "version": "0.4.0",
+      "path": "moonbase.mbt",
+      "bytes": 7953,
+      "sha256": "3cf15880ab099e7d120f0f2120ecc03bfb446962098b9c5a94e2640d8724a746",
+      "original_inventory_kind": "text",
+      "encoding": "utf-8-sig",
+      "nul_bytes": 1,
+      "strict_utf8_hits": [],
+      "nul_stripped_ascii_byte_probe": {
+        "method": "Remove only NUL bytes from a Latin-1 reversible byte view, then search ASCII protocol spellings; this is an exploratory byte probe, not a claim about text encoding or equivalent program behavior.",
+        "offset_basis": "original_match_byte_offset is zero-based in the original archive member",
+        "hits": []
+      },
+      "manual_review": {
+        "category": "strict-utf8-source-with-literal-or-comment-nul",
+        "explanation": "Readable UTF-8 source. Inspected NUL byte contexts are source character/byte/string literals or comments describing NUL; not a BOM-less UTF-16 source file.",
+        "nul_contexts": [
+          {
+            "nul_byte_offset": 7604,
+            "context_start": 7540,
+            "context_hex": "74203a20537472696e6729202d3e204279746573207b0a20206c6574206f7574203d2041727261793a3a6d616b6528746578742e6c656e67746828292c2062270027290a2020666f72206920696e20302e2e3c746578742e6c656e6774682829207b0a202020206f75745b695d203d2028746578745b695d2e746f5f696e7428",
+            "context_utf8_escape_view": "t : String) -> Bytes {\\n  let out = Array::make(text.length(), b'\\x00')\\n  for i in 0..<text.length() {\\n    out[i] = (text[i].to_int("
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,1294 @@
+{
+  "scanner_version": 4,
+  "scanner_sha256": "ebd6aaa6ba6aa3e501c836d1e066932b6a687e9f996924236e2ae8775edc9a39",
+  "name": "yamajik/wasi-bindings",
+  "version": "0.2.1",
+  "yanked": false,
+  "repository": "",
+  "url": "https://download.mooncakes.io/user/yamajik/wasi-bindings/0.2.1.zip",
+  "checked_at": "2026-10-19T16:04:44.448682+00:00",
+  "cache_file": "/Users/hanzhen09/.local/share/ptp-audit-tools/mooncakes-source-cache/b8be6b22be0089cd9bf8e36cd9611128763693c362bb231a969bf28f3897c4f5.zip",
+  "evidence_file": "/Users/hanzhen09/.local/share/ptp-audit-tools/mooncakes-source-cache/b8be6b22be0089cd9bf8e36cd9611128763693c362bb231a969bf28f3897c4f5.zip",
+  "archive_bytes": 95999,
+  "sha256": "d36e4296908dec909a61565e39d85325bd413f96bf5be03981488848577673ab",
+  "source": "verified_local_cache",
+  "files": [
+    {
+      "path": "moon.mod.json",
+      "bytes": 189,
+      "sha256": "b446ae898ee1b41e6c49f2dd34c287679ca96869f0082d85e3b56b9afc25d8a3",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "Makefile",
+      "bytes": 271,
+      "sha256": "c2fa0c214b74ea6f2e5bff9e5c7f64378413887e9ad0f02828066e1ad9448bbb",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "wit/world.wit",
+      "bytes": 133,
+      "sha256": "4e8d6aaebf7ce9622a4704b934950fc0d6822b6b93eb21936d06e50c73df5184",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "wit/deps.toml",
+      "bytes": 71,
+      "sha256": "3c5512c2ff728f7631f161cd0ea2b16dace89e96fea68a565806df9c112a9843",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "wit/deps.lock",
+      "bytes": 1714,
+      "sha256": "78edc2edcff7f09ce7b95f31a980bbddab2b84b58e5bdb385ffac0a7933bc5aa",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "README.md",
+      "bytes": 23,
+      "sha256": "de8e18907b6e52225ff0c73cdc4aae8bd9f519d180482f5fea9fa3988ee90e40",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/moon.mod.json",
+      "bytes": 36,
+      "sha256": "1cd5a81a6c384487ea5ad1956a9fa9759836565a9026c0f27503116f580125e8",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/interface/wasi/sockets/instanceNetwork/ffi.mbt",
+      "bytes": 153,
+      "sha256": "9cd89724bdeb3a0e070fb0edb4774295bf62455e0bc6a41329759f3f776aeaf3",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/interface/wasi/sockets/instanceNetwork/moon.pkg.json",
+      "bytes": 163,
+      "sha256": "6902dfb43c12a6daf4bc99ce96535e8a42b41626a6dacd26d9c7f6b0749fb21d",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/interface/wasi/sockets/instanceNetwork/README.md",
+      "bytes": 70,
+      "sha256": "56e239a794139454b8cc0a0bc3ad0e9e1b3a94ade458314a4e7ae98abc45a4e1",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/interface/wasi/sockets/instanceNetwork/top.mbt",
+      "bytes": 235,
+      "sha256": "296706e81aad773be90028d7540d0328f5830fd91f52819275c7c9f14f230aed",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/interface/wasi/sockets/udp/ffi.mbt",
+      "bytes": 3305,
+      "sha256": "73694d0eeed2119219b6abe90a60c43450cbeee2b3544d7583e08ae947224f67",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/interface/wasi/sockets/udp/moon.pkg.json",
+      "bytes": 242,
+      "sha256": "6c9f674a137bf24df157c34c279b2543c103d0ac0cc73a1ebacc2cc94317ed84",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/interface/wasi/sockets/udp/top.mbt",
+      "bytes": 31982,
+      "sha256": "6f8125de4d3452164218f183e2e96fdeeacdbaf0b45248b6b3c21c80d60402e1",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/interface/wasi/sockets/udpCreateSocket/ffi.mbt",
+      "bytes": 166,
+      "sha256": "57527ec063897f36b98ca1806434f71f0a1cd8249f35a4cf656b617373352e22",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/interface/wasi/sockets/udpCreateSocket/moon.pkg.json",
+      "bytes": 245,
+      "sha256": "d8aa12a72bd734af41c3a90a8af2277838d07bc8fe1e4fef248ead4240974f59",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/interface/wasi/sockets/udpCreateSocket/top.mbt",
+      "bytes": 1727,
+      "sha256": "081e28a3914837baf2fb503ef3a11f789aa6a840c5d8811b660b0215fda0f9a2",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/interface/wasi/sockets/network/ffi.mbt",
+      "bytes": 162,
+      "sha256": "575feea71e891b58c6547b9593f36c200b41e2bb9b10c52ccf683156241e0bbf",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/interface/wasi/sockets/network/moon.pkg.json",
+      "bytes": 3,
+      "sha256": "257c1be96ae69f4b01c2c69bdb6d78605f59175819fb007d0bf245bf48444c4a",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/interface/wasi/sockets/network/top.mbt",
+      "bytes": 3438,
+      "sha256": "c8f186ad18522be1214b3479ee7fa3052f41715e07b6d07a263980e8cc929604",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/interface/wasi/sockets/ipNameLookup/ffi.mbt",
+      "bytes": 660,
+      "sha256": "92cb80557fa94677759537e32df992e3320aa405645ad8aed81dd8c00ff59dc7",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/interface/wasi/sockets/ipNameLookup/moon.pkg.json",
+      "bytes": 242,
+      "sha256": "6c9f674a137bf24df157c34c279b2543c103d0ac0cc73a1ebacc2cc94317ed84",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/interface/wasi/sockets/ipNameLookup/top.mbt",
+      "bytes": 5474,
+      "sha256": "dc6feea392eb0e2ce059780a85613700b84cc42e00d8dbd22544ea8d0bfd83d3",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/interface/wasi/sockets/tcp/ffi.mbt",
+      "bytes": 4352,
+      "sha256": "97b0f3936aa954dfaa53c1bc209f821de1c8e8614d4d0c2c8e34b3317f8f8c30",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/interface/wasi/sockets/tcp/moon.pkg.json",
+      "bytes": 327,
+      "sha256": "fd0dce39d47b617a3bdd126266a3fa5a8a5e4763b72207c066c219bc73b43d44",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/interface/wasi/sockets/tcp/top.mbt",
+      "bytes": 36091,
+      "sha256": "02e077af2d6f146e33e425cd4dca1c8dd38814494b16f2c32d8fcc128ed039aa",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/interface/wasi/sockets/tcpCreateSocket/ffi.mbt",
+      "bytes": 166,
+      "sha256": "2e5c0585d9ceb8a18a0020d05bbf6ecd86cb985d9360df10e25278fbeeae6a41",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/interface/wasi/sockets/tcpCreateSocket/moon.pkg.json",
+      "bytes": 245,
+      "sha256": "ff8ddd75cbb2adc5ed6103c28b48f49b2b86101083a030a3d48e00c7cc535fe1",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/interface/wasi/sockets/tcpCreateSocket/top.mbt",
+      "bytes": 1737,
+      "sha256": "7d232bebdcb4ea054c105eb7e7d78df2b1656cbc4509dc2f15d2e2ef2f71f383",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/interface/wasi/clocks/monotonicClock/ffi.mbt",
+      "bytes": 448,
+      "sha256": "61639d0b81c5d3948bd0daf6490c663d49c7baf74701628329be27a15b4ee1bc",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/interface/wasi/clocks/monotonicClock/moon.pkg.json",
+      "bytes": 152,
+      "sha256": "dc6f91646ebf6cd995b1a7f8abadde42e1a513f8e063181feafd22b85db7fe2e",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/interface/wasi/clocks/monotonicClock/README.md",
+      "bytes": 346,
+      "sha256": "b5f02baa7c79036932c37373cf7c6674c96b62ea67616d070617f1513bafc7e0",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/interface/wasi/clocks/monotonicClock/top.mbt",
+      "bytes": 1157,
+      "sha256": "e4702cc2f9a9e65a9b4539424cad3bed583ebf5588b3d232611199aff8e516f6",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/interface/wasi/clocks/wallClock/ffi.mbt",
+      "bytes": 208,
+      "sha256": "e271b6d929676fd0a83ac69551d897c2c9101ad92da559df20e2ff29c631a2fc",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/interface/wasi/clocks/wallClock/moon.pkg.json",
+      "bytes": 73,
+      "sha256": "2c830f07d6fc345b3809a8f818c4c3fc8f5bf84160e2e113e95c234e77147b1d",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/interface/wasi/clocks/wallClock/README.md",
+      "bytes": 565,
+      "sha256": "c93756e3ce7d74f74c3a5ea04f73501273455a690fa88b1eca8d20f4d4c74bb1",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/interface/wasi/clocks/wallClock/top.mbt",
+      "bytes": 1509,
+      "sha256": "238d853c41f30710c987447871f9abbf3111c2d385faf5dd0efa431a7773ad34",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/interface/wasi/io/streams/ffi.mbt",
+      "bytes": 2423,
+      "sha256": "897e395c5adb14acdf17fbdc9d6c2921c2c1e0612ce3716989a067c497a04054",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/interface/wasi/io/streams/moon.pkg.json",
+      "bytes": 233,
+      "sha256": "ab1f75b3742f893113e861f9e8aaf608ddcb1875c1163c98bf80a518626b30d4",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/interface/wasi/io/streams/README.md",
+      "bytes": 219,
+      "sha256": "94f1ef94fdeda961c221b20719684eeb944524b0e8c314d17907dc1a70f98ea6",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/interface/wasi/io/streams/top.mbt",
+      "bytes": 19148,
+      "sha256": "a2fec0ee61e5e0986c2853107b3a6e3c34f2c460fa7523aaa2abde6c594c9fca",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/interface/wasi/io/error/ffi.mbt",
+      "bytes": 272,
+      "sha256": "0b45da840ea751e6e2123f666585caaab9e8d244d4041dec1bf5f72b4bc0a934",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/interface/wasi/io/error/moon.pkg.json",
+      "bytes": 73,
+      "sha256": "2c830f07d6fc345b3809a8f818c4c3fc8f5bf84160e2e113e95c234e77147b1d",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/interface/wasi/io/error/top.mbt",
+      "bytes": 1761,
+      "sha256": "845703cb114a5a686147e7c8feead1267ca0371beb0dbee7b2df0bdf84159291",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/interface/wasi/io/poll/ffi.mbt",
+      "bytes": 441,
+      "sha256": "23adcddce94603ed7e32af8c92c29aa47e021d1d44c91f2d28391fd191d4d47e",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/interface/wasi/io/poll/moon.pkg.json",
+      "bytes": 73,
+      "sha256": "2c830f07d6fc345b3809a8f818c4c3fc8f5bf84160e2e113e95c234e77147b1d",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/interface/wasi/io/poll/README.md",
+      "bytes": 81,
+      "sha256": "84304abd1bbae0e8416b86dbd91887f151733ea27c0e2d2ad967e6f7cabb520c",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/interface/wasi/io/poll/top.mbt",
+      "bytes": 2303,
+      "sha256": "aae49fc49e6442cb412cd6963aa5b5700a66c56ce41844f75c45082768b8c675",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/interface/wasi/filesystem/types/ffi.mbt",
+      "bytes": 4921,
+      "sha256": "ec26db3521cf3d9fb6142e7a08d6d4716030f9150720c4f40d343f794c098f08",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/interface/wasi/filesystem/types/moon.pkg.json",
+      "bytes": 332,
+      "sha256": "11c0c514797c8ecfa0f550490ca08245f0245a751b3c474f6a2354ab83db66ca",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/interface/wasi/filesystem/types/README.md",
+      "bytes": 1223,
+      "sha256": "b62b374e13ce1f1509fa91873576cd19d5b58672043243dc4a0a532599ae1840",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/interface/wasi/filesystem/types/top.mbt",
+      "bytes": 38303,
+      "sha256": "6f55282b320562c6bd52edfa0658a9f2627b99a55b53242296b2c554dbfaf6fd",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/interface/wasi/filesystem/preopens/ffi.mbt",
+      "bytes": 147,
+      "sha256": "f79495eafde8ef0f35264b75aa34a800e3f28df2c6febb7a758fa981065418a6",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/interface/wasi/filesystem/preopens/moon.pkg.json",
+      "bytes": 162,
+      "sha256": "b60ac152be9caddd269eb059af9dd3277a4c4c7da2976f59e1a2db3b5939f37a",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/interface/wasi/filesystem/preopens/top.mbt",
+      "bytes": 693,
+      "sha256": "9a6d014d04555214f9a723b6c9fb2cf7aa998ce00aa3541ca199be87db404e9b",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/interface/wasi/cli/terminalStdout/ffi.mbt",
+      "bytes": 154,
+      "sha256": "2f545b342aaae465ad169495e575038968e51634486d94820caabed8f6a666c0",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/interface/wasi/cli/terminalStdout/moon.pkg.json",
+      "bytes": 173,
+      "sha256": "0f694a11d7eb3e34c7b2cee4668aaf4fe7a8d0485505b09726b8a69a6a3f4608",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/interface/wasi/cli/terminalStdout/README.md",
+      "bytes": 89,
+      "sha256": "0fe05a8cc58d920ace0539740bc11a48760303c19bcc4aefdadad39223851896",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/interface/wasi/cli/terminalStdout/top.mbt",
+      "bytes": 635,
+      "sha256": "41e0c20c66bf86acf39d1c1221bfd2d9fc516cca57241485939b46ef9ded7d7c",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/interface/wasi/cli/stdout/ffi.mbt",
+      "bytes": 127,
+      "sha256": "9efb7d859b476ade30c8a11b39c33ea20feb61fea2a715e3ad9d3e84607dad30",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/interface/wasi/cli/stdout/moon.pkg.json",
+      "bytes": 158,
+      "sha256": "eecc4b6087572a7bfb9fde54d801290de0a3f45f7ad7c7bb76089b53058e3b16",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/interface/wasi/cli/stdout/top.mbt",
+      "bytes": 202,
+      "sha256": "550a1888fec3f479c0b20ca0a2d9a89ff49ce5e874107256290926f80d5b762b",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/interface/wasi/cli/stderr/ffi.mbt",
+      "bytes": 127,
+      "sha256": "e2b4c0a2aee395fae154133a47aa367f8e201ec7d9275ca961e06bb918682d11",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/interface/wasi/cli/stderr/moon.pkg.json",
+      "bytes": 158,
+      "sha256": "eecc4b6087572a7bfb9fde54d801290de0a3f45f7ad7c7bb76089b53058e3b16",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/interface/wasi/cli/stderr/top.mbt",
+      "bytes": 202,
+      "sha256": "952320ebce553b027418da14e649a055c6229edfd3018c7dc19986786f14251a",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/interface/wasi/cli/terminalOutput/ffi.mbt",
+      "bytes": 181,
+      "sha256": "bf7321fab723fe62b877cb62b9a5928040af0eddc7e2a97f9cdbcb5bea5d8a26",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/interface/wasi/cli/terminalOutput/moon.pkg.json",
+      "bytes": 3,
+      "sha256": "257c1be96ae69f4b01c2c69bdb6d78605f59175819fb007d0bf245bf48444c4a",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/interface/wasi/cli/terminalOutput/README.md",
+      "bytes": 172,
+      "sha256": "932692e9710ee5ad27d837b5d69419535863d0f574e223e3f14589611001cc1c",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/interface/wasi/cli/terminalOutput/top.mbt",
+      "bytes": 318,
+      "sha256": "a406adfdc4fd6872a4ec8c86b246e393e00caf94d555f183c3a1e37d448736c8",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/interface/wasi/cli/terminalStderr/ffi.mbt",
+      "bytes": 154,
+      "sha256": "4d83f2ee5e8e2d6913a5281f2b46e86441485163dba494feed89efc6fd0085d5",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/interface/wasi/cli/terminalStderr/moon.pkg.json",
+      "bytes": 173,
+      "sha256": "0f694a11d7eb3e34c7b2cee4668aaf4fe7a8d0485505b09726b8a69a6a3f4608",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/interface/wasi/cli/terminalStderr/README.md",
+      "bytes": 89,
+      "sha256": "e014934c95a324777cabba0bced041e96e69ca1f429904b0f5aff0b6028418fe",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/interface/wasi/cli/terminalStderr/top.mbt",
+      "bytes": 635,
+      "sha256": "77ad2f8aac31f58e9acd87066a0e06ed70983ca6ef6b06904186943a3b006ad5",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/interface/wasi/cli/terminalInput/ffi.mbt",
+      "bytes": 178,
+      "sha256": "ff91b3c3a64a690436bf55d0fe4656e9a62f85d248f08d94a4f81b3a416babb7",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/interface/wasi/cli/terminalInput/moon.pkg.json",
+      "bytes": 3,
+      "sha256": "257c1be96ae69f4b01c2c69bdb6d78605f59175819fb007d0bf245bf48444c4a",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/interface/wasi/cli/terminalInput/README.md",
+      "bytes": 201,
+      "sha256": "3a2aa4f9d5497f1ea9049a8b3854697fdc2774162d87d1a5d2f1b5cf22adf4a1",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/interface/wasi/cli/terminalInput/top.mbt",
+      "bytes": 312,
+      "sha256": "89d2e1f2475b1c2688662a9399792f2d2c2de1d6c16060815a2c0cad622d4979",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/interface/wasi/cli/stdin/ffi.mbt",
+      "bytes": 124,
+      "sha256": "569a505f6c793e70cc93c537b961333cd8a4ee61b9e8bb92bee623c48d411fbe",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/interface/wasi/cli/stdin/moon.pkg.json",
+      "bytes": 158,
+      "sha256": "eecc4b6087572a7bfb9fde54d801290de0a3f45f7ad7c7bb76089b53058e3b16",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/interface/wasi/cli/stdin/top.mbt",
+      "bytes": 197,
+      "sha256": "54b2756bd7160e7f01c618ec8cb39b19e6d3110ab68698c518e0768c266f91e6",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/interface/wasi/cli/terminalStdin/ffi.mbt",
+      "bytes": 151,
+      "sha256": "656a5c3e6061080b6f4d25d81b43e0340902cdc0ab2f2dc9f7043540a551a8b2",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/interface/wasi/cli/terminalStdin/moon.pkg.json",
+      "bytes": 171,
+      "sha256": "b54f07d90036d57f0c08bc3c416ae6233d3a07637f9aa0966e1a1a07cbd5c208",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/interface/wasi/cli/terminalStdin/README.md",
+      "bytes": 87,
+      "sha256": "095d518578401d060a02b979129a60d3eeb58226e41903c6ac745a001d4d6504",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/interface/wasi/cli/terminalStdin/top.mbt",
+      "bytes": 624,
+      "sha256": "2d48033f1623f45353657b146e77c4648d1cbe1bd3fa9d4dc75e80e5a579bfcf",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/interface/wasi/cli/environment/ffi.mbt",
+      "bytes": 317,
+      "sha256": "b2adf1d065a6a8deae264cba825f3f7ddf3818c08c785cb3beff93e061af510f",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/interface/wasi/cli/environment/moon.pkg.json",
+      "bytes": 73,
+      "sha256": "2c830f07d6fc345b3809a8f818c4c3fc8f5bf84160e2e113e95c234e77147b1d",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/interface/wasi/cli/environment/top.mbt",
+      "bytes": 2058,
+      "sha256": "beb5b7ab52f9b786395d71ae025f9138c1d2d77285d0486de7a0ead96d66cdb7",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/interface/wasi/cli/exit/ffi.mbt",
+      "bytes": 115,
+      "sha256": "476c2c1372e6452829e31340770dd0ed984fe59fb45d1b1a5ea26e32ffa5390a",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/interface/wasi/cli/exit/moon.pkg.json",
+      "bytes": 73,
+      "sha256": "2c830f07d6fc345b3809a8f818c4c3fc8f5bf84160e2e113e95c234e77147b1d",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/interface/wasi/cli/exit/top.mbt",
+      "bytes": 268,
+      "sha256": "ea485852191a536da28357598c71a0cdfcfb2b848e225276c37d3ab09230dc06",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/interface/wasi/http/types/ffi.mbt",
+      "bytes": 8394,
+      "sha256": "7c25d0196b03f5dd466708f6486f75e061c9ea12e729ca4717e852f9d57acd42",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/interface/wasi/http/types/moon.pkg.json",
+      "bytes": 318,
+      "sha256": "c039438e37d1cd1aa9b08774a72e64bd40f404a6cee53556635cd466e380db94",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/interface/wasi/http/types/README.md",
+      "bytes": 173,
+      "sha256": "cb07dd0605df4c9d81b280a5a3f5d44d0444edbe8246ff5e9a3936ee8869ee10",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/interface/wasi/http/types/top.mbt",
+      "bytes": 100191,
+      "sha256": "07d79a7c284a051ebfff2532839ddeae26242889f4ed04f81e6ce0ff05a719b0",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/interface/wasi/http/outgoingHandler/ffi.mbt",
+      "bytes": 162,
+      "sha256": "db4f7718cddb2a9486036f03ef169ba7de2db94407fdcbc243b7c711f0515974",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/interface/wasi/http/outgoingHandler/moon.pkg.json",
+      "bytes": 156,
+      "sha256": "1197c6e9830f4968dbdf46632c0115d1108ad9c807e7b5ea4cc1470be0770eb7",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/interface/wasi/http/outgoingHandler/README.md",
+      "bytes": 129,
+      "sha256": "f254a3cac35a726e77231bd671f886366e6602d67013392b3b1edd9cdab5c0a7",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/interface/wasi/http/outgoingHandler/top.mbt",
+      "bytes": 11069,
+      "sha256": "b9b90e78dc3f0ac3b974615d9230fcde1d7fd1379bc415c72562f4dae06e1fd1",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/interface/wasi/random/insecure/ffi.mbt",
+      "bytes": 281,
+      "sha256": "8a0accdf3708a90fd59f250ef79d0abcd1ca27ba33e20c7b63d7f0f0b4ee04e8",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/interface/wasi/random/insecure/moon.pkg.json",
+      "bytes": 73,
+      "sha256": "2c830f07d6fc345b3809a8f818c4c3fc8f5bf84160e2e113e95c234e77147b1d",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/interface/wasi/random/insecure/README.md",
+      "bytes": 141,
+      "sha256": "b497ec1ecda934404c5c7b4f352c085ffda31b68ca86af3d0b6d07019d5d66d6",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/interface/wasi/random/insecure/top.mbt",
+      "bytes": 1012,
+      "sha256": "1bd8b70f0eb65951ea8690912ec45f9c2f77820a491d204990645fb0c8a1b869",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/interface/wasi/random/insecureSeed/ffi.mbt",
+      "bytes": 144,
+      "sha256": "ad8860924d8ac46e280a8d8c9260bee7df09dccec7e6985f6f10cb3c2891cd45",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/interface/wasi/random/insecureSeed/moon.pkg.json",
+      "bytes": 73,
+      "sha256": "2c830f07d6fc345b3809a8f818c4c3fc8f5bf84160e2e113e95c234e77147b1d",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/interface/wasi/random/insecureSeed/README.md",
+      "bytes": 147,
+      "sha256": "49d2fce4de42f0fcd9752f83f355d0852883b20dc9bfbfcc1de2d9e21ff9fd09",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/interface/wasi/random/insecureSeed/top.mbt",
+      "bytes": 1101,
+      "sha256": "fd9a33a988c3447e3041f02bf9ccc2235e02af3da09847baf45b978c1cf723b3",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/interface/wasi/random/random/ffi.mbt",
+      "bytes": 243,
+      "sha256": "a8eaf32ab6c58b54ae3b10b77e66c08a64b4e9b11c6af11f2d23808f769d1468",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/interface/wasi/random/random/moon.pkg.json",
+      "bytes": 73,
+      "sha256": "2c830f07d6fc345b3809a8f818c4c3fc8f5bf84160e2e113e95c234e77147b1d",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/interface/wasi/random/random/README.md",
+      "bytes": 116,
+      "sha256": "8e2df8f6d2d038c7a6783d65fbd7bd566e1cded53ebe787c40b075113fbba2f6",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/interface/wasi/random/random/top.mbt",
+      "bytes": 1293,
+      "sha256": "cb67efdcc8e6e2a5db383da106a73f92c219fdd0e12792b49fd3d35b9009e9dc",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/world/wasiBindings/moon.pkg.json",
+      "bytes": 3,
+      "sha256": "257c1be96ae69f4b01c2c69bdb6d78605f59175819fb007d0bf245bf48444c4a",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/world/wasiBindings/ffi_import.mbt",
+      "bytes": 51,
+      "sha256": "dc793a0c3464549ae1d456edbadf5d9e1aeea93b670984759528a379d5747744",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/world/wasiBindings/import.mbt",
+      "bytes": 51,
+      "sha256": "dc793a0c3464549ae1d456edbadf5d9e1aeea93b670984759528a379d5747744",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/world/wasiBindings/top.mbt",
+      "bytes": 51,
+      "sha256": "dc793a0c3464549ae1d456edbadf5d9e1aeea93b670984759528a379d5747744",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/gen/interface/wasi/http/incomingHandler/moon.pkg.json",
+      "bytes": 97,
+      "sha256": "6c01a3d4d71db55315d611527c0d0113ce009de48bc4bc6a54a1ddc0a8097a6c",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/gen/interface/wasi/http/incomingHandler/README.md",
+      "bytes": 131,
+      "sha256": "dfa7816dd6db63811783041422a2162e82bb7dd7ee9711beb6a3eec3a30be5b2",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/gen/interface/wasi/http/incomingHandler/stub.mbt",
+      "bytes": 731,
+      "sha256": "8610747e0fb4eb3fbcb2703e7a35d58b548b54cad63d813187febe11e040840f",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/gen/interface/wasi/http/incomingHandler/top.mbt",
+      "bytes": 51,
+      "sha256": "dc793a0c3464549ae1d456edbadf5d9e1aeea93b670984759528a379d5747744",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/gen/ffi.mbt",
+      "bytes": 439,
+      "sha256": "8460715d1ebff8c29950689722034d4f5615f4e4962ccc8ee63d0bdee052bdc0",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/gen/moon.pkg.json",
+      "bytes": 545,
+      "sha256": "bce5025cc42a8a802da09fba0eca7af501ca50ebc45448260e4f435cabcfee77",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/gen/world_wasi_bindings_export.mbt",
+      "bytes": 51,
+      "sha256": "dc793a0c3464549ae1d456edbadf5d9e1aeea93b670984759528a379d5747744",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/gen/world/wasiBindings/moon.pkg.json",
+      "bytes": 3,
+      "sha256": "257c1be96ae69f4b01c2c69bdb6d78605f59175819fb007d0bf245bf48444c4a",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/gen/world/wasiBindings/stub.mbt",
+      "bytes": 38,
+      "sha256": "a2ad12ada27c5c90c9ce35a5a53ed71e394f721983057eaacf9d2712f46bd15f",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/gen/gen_interface_wasi_http_incoming_handler_export.mbt",
+      "bytes": 253,
+      "sha256": "a27c0ba5f4ee9486d192445d67ca439e8b7fef4bc1dceacb4fbb21a0e129cdc7",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/ffi/moon.pkg.json",
+      "bytes": 2,
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/ffi/top.mbt",
+      "bytes": 6322,
+      "sha256": "0eb9331ead0fd69795d33f0100f441835b28539cdb7d8b530424801f5eb89e0a",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    }
+  ],
+  "hits": [],
+  "text_files": 127,
+  "text_bytes": 325214,
+  "binary_files": 0,
+  "expanded_bytes": 325214,
+  "limitations": [],
+  "status": "ok"
+}

@@ -1,0 +1,2864 @@
+{
+  "scanner_version": 4,
+  "scanner_sha256": "ebd6aaa6ba6aa3e501c836d1e066932b6a687e9f996924236e2ae8775edc9a39",
+  "name": "colmugx/sqlite-vec",
+  "version": "0.2.4",
+  "yanked": false,
+  "repository": "https://github.com/colmugx/sqlite-vec.mbt",
+  "url": "https://download.mooncakes.io/user/colmugx/sqlite-vec/0.2.4.zip",
+  "checked_at": "2026-10-19T15:54:02.040731+00:00",
+  "cache_file": "/Users/hanzhen09/.local/share/ptp-audit-tools/mooncakes-source-cache/6521e4900244a32a6d3af19eabff7de44d07a3d785b2cb69b34c0109f59f89bf.zip",
+  "evidence_file": "/Users/hanzhen09/.local/share/ptp-audit-tools/mooncakes-source-cache/6521e4900244a32a6d3af19eabff7de44d07a3d785b2cb69b34c0109f59f89bf.zip",
+  "archive_bytes": 3555360,
+  "sha256": "9a704b2368ae6984cf26d0a3e95abca258540632fbdff7f55ec5300fccb1d1ab",
+  "source": "verified_local_cache",
+  "files": [
+    {
+      "path": "moon.pkg",
+      "bytes": 129,
+      "sha256": "b2746812c50e859429f4eccd7e491e2e6e94a89dda53a988e3aeb7c07b6d5d01",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "basic_test.mbt",
+      "bytes": 1398,
+      "sha256": "46f72aaadd1c45a163526b61e4e4eb5ee351daaef11e1f1ff8c75ea9f9bdd602",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "moon.mod.json",
+      "bytes": 369,
+      "sha256": "42c9ca8dbaee5767e308d8e7bd83e3431e126c55613f0d2d8c1fa1f00966cf3b",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vec_test.mbt",
+      "bytes": 302,
+      "sha256": "7962810869ed90c26082c915a5b42beeedc75cbd4fdd111e66110aa4b38fabc1",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "native/sqlite-vec-ivf-kmeans.c",
+      "bytes": 5890,
+      "sha256": "50cd3ecc0fd0b5b75900821e2b9d1a4d1157da589c39bd1faa8749e047d8fc14",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "native/moon.pkg",
+      "bytes": 183,
+      "sha256": "1f491b5f1278a0c1fc313579b26b98ea0365961f3e0836155236612983e1ca25",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "native/sqlite_version",
+      "bytes": 6,
+      "sha256": "d236a8300df174aa88ad4cc49a484e72bd5871acdcbfa1a485757e82f2efaf6c",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "native/sqlite-vec-ivf.c",
+      "bytes": 57936,
+      "sha256": "0506a3c493990eb80466ae8c0fdcf1e3fa4b63955713c053e7350b7451ec7c39",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "native/sqlite-vec.h",
+      "bytes": 788,
+      "sha256": "a0823612b0ba3573b767705fc282785fed5488000724f70f24126ff3c5cb643b",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "native/sqlite3.c",
+      "bytes": 9489774,
+      "sha256": "9ac97192c93a6d9671d2ea667ba14e3c8fe3719a171afc5827c9d86d0278fc14",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "native/ffi.mbt",
+      "bytes": 3467,
+      "sha256": "d002d69eb66a731b40337c9ece760bc20fa9363daf605a5816ccff8aa6eb1c23",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "native/sqlite-vec-rescore.c",
+      "bytes": 23230,
+      "sha256": "06f26bb3c51ea4c51fbae2011a47c06440f2c1d43820a6eb65732476abc3450c",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "native/sqlite-vec-core.c",
+      "bytes": 433,
+      "sha256": "2dde81391e24db2e8a707d271d425bfc3287de56ca8b5fc0efb0cbc23cb36cb0",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "native/pkg.generated.mbti",
+      "bytes": 1544,
+      "sha256": "251ed57584fdd27984b77d16e202248666dcc1f57b3e1c1dd8faa61209287b40",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "native/stub.c",
+      "bytes": 7906,
+      "sha256": "dfe45d7407b49d2bcdddcf9088020870433a972de371a05281bb74d22e213252",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "native/sqlite3.h",
+      "bytes": 690047,
+      "sha256": "16d6e2f265fb13ece42329da39a865d4c540045b444d16b4bf9f7e1a7e39408f",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "native/sqlite3ext.h",
+      "bytes": 39175,
+      "sha256": "ac9645e5c9ff0cf176efdd6e75cb5e98f46295d38e02db5c4d208826a39ab4be",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "native/sqlite-vec.c",
+      "bytes": 345154,
+      "sha256": "5e82bdb99720d1b14492a518b39f661cc0d69e9d1edd39d13db4148cc25cefd7",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "native/sqlite-vec-diskann.c",
+      "bytes": 64430,
+      "sha256": "eba84318f6a0c43ecacc9769bf967af345791760e1eebb8ad3b200ea0a7afbc7",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "example/moon.pkg",
+      "bytes": 95,
+      "sha256": "974d976066c79f041674caec26653db3fb6315ac7a7446eab22c54280e46a08c",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "example/main.mbt",
+      "bytes": 2358,
+      "sha256": "37fc57b3e06613f1ac97d0b64c96337b5a17fe96db9358e6a4341b502df58452",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "example/pkg.generated.mbti",
+      "bytes": 156,
+      "sha256": "fab65579d22b414bc42dbac0bed3143dc0ba2f73945b8b06a80c7da2cd24b822",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "pkg.generated.mbti",
+      "bytes": 3414,
+      "sha256": "2f9a3283ff68ba67fc5b56f85074367a899805aa6bb97540b790dfb2c526f833",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "dev.md",
+      "bytes": 57,
+      "sha256": "6b7f6aae1f1dcd55f596082e0b22f257d0f901b7219c84bd3bb78f4372c96e08",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "connection.mbt",
+      "bytes": 1932,
+      "sha256": "90beb14bac5bd92394509f50828b77491db76a95d701949da3294a711ddf80b5",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "README.md",
+      "bytes": 7759,
+      "sha256": "589abd8315e5b4fbbff08c68a4dbfb846c844bba61b4cfe0f65d877728700c7c",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "README.mbt.md",
+      "bytes": 7759,
+      "sha256": "589abd8315e5b4fbbff08c68a4dbfb846c844bba61b4cfe0f65d877728700c7c",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "bind.mbt",
+      "bytes": 1266,
+      "sha256": "10411afdb73a47e1ffff35ed1097692a02a0ddaa79d89e9fa1018d6a9ff54660",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "stmt.mbt",
+      "bytes": 1482,
+      "sha256": "b60a3f1cb632ed15713d42904d00b7557ab97c072a4e68e78f1c6d36d3637e80",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vec.mbt",
+      "bytes": 1293,
+      "sha256": "f188353baf707b3333d1d36ab0a65bef65c9477d7fc3ed83d3f70dd84438b135",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "rescode.mbt",
+      "bytes": 1213,
+      "sha256": "efc87ace4cefa92b73ae14e2b02caffbbc0baacd1e6e743187c8bd4cf97e9a28",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "column.mbt",
+      "bytes": 607,
+      "sha256": "b674694727d059c6ac5b2a6382d9e5099a914c2d7069db9bf9cd98ca5fd88cd4",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "datatype.mbt",
+      "bytes": 117,
+      "sha256": "91871918589716d3663430cf5f6d6b320a60a335406bf7c8801f6aaab73c1b89",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "AGENTS.md",
+      "bytes": 2068,
+      "sha256": "855063de29d173c56d76a3293f20046ec114713278cc17fc0bbc16a4d12f5ef1",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "error.mbt",
+      "bytes": 331,
+      "sha256": "f4a9bff742a0b5e75342226c9fdd448318a522ef01ee189408c75766c4a6577d",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/sqlite-vec-ivf-kmeans.c",
+      "bytes": 5890,
+      "sha256": "50cd3ecc0fd0b5b75900821e2b9d1a4d1157da589c39bd1faa8749e047d8fc14",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/test.sql",
+      "bytes": 16758,
+      "sha256": "5c1e63b3d563a564b541308139b83e63501bab8012e31b4256df6586d7ff722d",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/LICENSE-APACHE",
+      "bytes": 10931,
+      "sha256": "a38070a94d4afd9cd710e3ce67bd1de78097cfe1784c1f0109ac95d3c196bfdc",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/sqlite-vec-ivf.c",
+      "bytes": 57936,
+      "sha256": "0506a3c493990eb80466ae8c0fdcf1e3fa4b63955713c053e7350b7451ec7c39",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/ARCHITECTURE.md",
+      "bytes": 4018,
+      "sha256": "a4a99ca3f0fa053f9c9284047b7d1277019670b49ad2b12320c7182c19e7fe5c",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/sqlite-vec-rescore.c",
+      "bytes": 23230,
+      "sha256": "06f26bb3c51ea4c51fbae2011a47c06440f2c1d43820a6eb65732476abc3450c",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/Makefile",
+      "bytes": 9898,
+      "sha256": "f383e81b3ab0f19d467712174e3973b3c32b849297b58d40f7f39aab89e9a859",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/tests/leak-fixtures/each.sql",
+      "bytes": 220,
+      "sha256": "3d9a9709eea971cc85fe046aa22a979fecfd7ae7a66b06931b37582612286ba8",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/tests/leak-fixtures/knn.sql",
+      "bytes": 802,
+      "sha256": "301529f4f9fddb6caad826d6c3f73076812e620c532594b05970a37eb91e6fb9",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/tests/leak-fixtures/vec0-create.sql",
+      "bytes": 93,
+      "sha256": "267dcbb664dafa81aa7d2ded20259f761f05436d383299b79efd38b0aa2a5b4a",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/tests/test-ivf-quantization.py",
+      "bytes": 8882,
+      "sha256": "605d75207ebd1c45fc5f0e0d5936cbe7bcfb112294f8b959b5038cb77abf823e",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/tests/test-unit.c",
+      "bytes": 68045,
+      "sha256": "1e2203cf7d3137221a7ff2d1b79d5405580eea2ce4c22ba916dbeb9c689e96be",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/tests/Cargo.toml",
+      "bytes": 159,
+      "sha256": "6c276f246a17d1fc6ee8f52a430dc6c42551ea85ad345a625e4abc6f59166a62",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/tests/conftest.py",
+      "bytes": 967,
+      "sha256": "59b2de8ca33eeeb0debb658fcb39b4fa8954d6b86a3b48d27699de0f3c3f8f2e",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/tests/uv.lock",
+      "bytes": 12722,
+      "sha256": "1cf02caa69b028e06091cee5569ba63b80b009efea4e34e3b2e72b8617fd5b5e",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/tests/test-rescore.py",
+      "bytes": 23646,
+      "sha256": "14c331b483e035f5f5b1a4c04e40206580999f2f8e7ae7a814e0dd26abd1a0bf",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/tests/test-rescore-mutations.py",
+      "bytes": 18617,
+      "sha256": "ff37c635e8a05eae75247ee6b28ea4653c1de40d0feb5d728fad5ebf8e08c15e",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/tests/test-loadable.py",
+      "bytes": 76092,
+      "sha256": "7e4f8d2c72ed328ae1468b93f17db6f4cc818ab117b6f4e7a474617f8d6343e1",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/tests/test-partition-keys.py",
+      "bytes": 2512,
+      "sha256": "7b0fde7d757e502936f18940f1cacb06523ec823fdc0e31937002a249235ada2",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/tests/pyproject.toml",
+      "bytes": 182,
+      "sha256": "d9cafe8fa88a0b2a4d78951cf0481da1623f1083d2b3cf558906de7bdd75bff1",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/tests/test-knn-distance-constraints.py",
+      "bytes": 1623,
+      "sha256": "7fb1502c7881d4788aef5b0429c56ca4d9040a1be0b11e6e6beb4c1c8aa3be94",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/tests/Cargo.lock",
+      "bytes": 362,
+      "sha256": "2b02360e5026ab0352954e2408162f23413d7b7d2922841c0820c6f80ab9ee19",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/tests/build.rs",
+      "bytes": 368,
+      "sha256": "e8b80028334418c4ba93d1f9ce824f1eda341da4fb3d28e12e8d2fbefd98ee8e",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/tests/test-wasm.mjs",
+      "bytes": 265,
+      "sha256": "30945fa1ee34a398e42337ccf5844105d1496c9a8be9125ac50b23afcc785ef2",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/tests/sqlite-vec-internal.h",
+      "bytes": 7739,
+      "sha256": "2e71d4e6d94ed1ac64de009538e0fdae602a29f29623a9eb4ad3e37b983176be",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/tests/afbd/Makefile",
+      "bytes": 421,
+      "sha256": "e8cd107550e2d003dd7914f1abada95f4a0522b56ed60dae1ca9b61413c4963d",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/tests/afbd/README.md",
+      "bytes": 441,
+      "sha256": "6f5e49a6743ff3d14de30de669569abb5074b20377a9ed51246b37185e9bbd2b",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/tests/afbd/test-afbd.py",
+      "bytes": 8375,
+      "sha256": "5571119fb3e570c5bca09cf91b2ee44f6e20108b6cdbaf91c35cd47df9256a63",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/tests/unittest.rs",
+      "bytes": 5462,
+      "sha256": "663db0450b5f8a4ad4911222c956a5abb7a40c5ac159d9bad033b430a544b945",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/tests/test-metadata.py",
+      "bytes": 21682,
+      "sha256": "48ff84d418568220c06690d4f6b7e7cee849e20fc438449e228b099a8be909b0",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/tests/generate_legacy_db.py",
+      "bytes": 2452,
+      "sha256": "1f3060bec42ef1626ebf010735401ae896a0c001a0dd056be21666128726fcec",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/tests/test-ivf-mutations.py",
+      "bytes": 19463,
+      "sha256": "32bfaf5d02f18abe979f0115a0bbb7a234d90f0813f3a780383252f8f39d2285",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/tests/skip.test-correctness.py",
+      "bytes": 1157,
+      "sha256": "126ec9163828af22068c4e098cea2af74a51904f2575ff23ef2d19b0eb39ea99",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/tests/test-rename.py",
+      "bytes": 5032,
+      "sha256": "097483399ef9b0618082fd6f5b2e7acc252d4b2f552f9fa0b0f3c0667efbe898",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/tests/utils.py",
+      "bytes": 462,
+      "sha256": "a7f619c4757c26bdb8a4ea550217d881758c071ec5e8432bb52503c769e55122",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/tests/test-auxiliary.py",
+      "bytes": 10985,
+      "sha256": "85d7816047522d99a3f90ebd2dd04a47d80866c6b385ea91d8a9e3164ee3b36d",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/tests/test-legacy-compat.py",
+      "bytes": 4675,
+      "sha256": "9bd6b6ab07febd7416e1a9c460231b693799988f3cc96b38fbf949ef3654b121",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/tests/test-ivf.py",
+      "bytes": 13394,
+      "sha256": "5522ea7aa8dd8aadff121f8147cef88c5a0f95cd5fbd8f3ae647e10611736cd8",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/tests/correctness/build.py",
+      "bytes": 374,
+      "sha256": "8254fc117ad9ad714bd436003154eaa9c7c3ce8cf3f882985faaf2963b5afb3c",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/tests/correctness/test-correctness.py",
+      "bytes": 3367,
+      "sha256": "e0aa4d73b29c83ee8502b85934a20d96cb253f611d084564132b22e4154c5b28",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/tests/fuzz/ivf-rescore.c",
+      "bytes": 5777,
+      "sha256": "faa5484adcee36c32c7290a393496d9a91e1c10f1a9ff42378da168f4cb7f296",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/tests/fuzz/json.c",
+      "bytes": 769,
+      "sha256": "d622589aec9b76d35e2b3e16bd61dba5fa08c704909867a86cbc1f34ed0811e8",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/tests/fuzz/scalar-functions.dict",
+      "bytes": 163,
+      "sha256": "3043f064cba2cfb1e4df5635e6d863522654ea6eaa4172551d92a319e722ccc7",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/tests/fuzz/ivf-operations.c",
+      "bytes": 3479,
+      "sha256": "84fac5f5109cd5589348c5694496d7f9a8a5a91c5f99f1c17674752abfac5838",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/tests/fuzz/rescore-interleave.c",
+      "bytes": 5154,
+      "sha256": "1464727b468edad013b66218177cde58abe400f28eaa640e2b6b2e3ecb972d97",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/tests/fuzz/diskann-buffer-flush.c",
+      "bytes": 5809,
+      "sha256": "34bca254849c87ffbb48380d87a596d216e767de956bc36c7fd6916e070d64bf",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/tests/fuzz/diskann-delete-stress.c",
+      "bytes": 6073,
+      "sha256": "bd02f172bb3e0d26e523e4aaaa58b0d589adfd1ab98e0c791ba9644afb14ff75",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/tests/fuzz/ivf-quantize.c",
+      "bytes": 4109,
+      "sha256": "8a836db7c92ec2ffdb3f47e27a2fcd36994c0f3efa2d1216a37fb4da2412f610",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/tests/fuzz/vec-mismatch.c",
+      "bytes": 6348,
+      "sha256": "f3e1f200c23dec7d626f5ade7310826a0db6a5b4e9dc61660184f29b97b2fff1",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/tests/fuzz/exec.c",
+      "bytes": 626,
+      "sha256": "5ac921daf700f07a72ab6984f117a91492d4bb096596006835deaa8410d76f99",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/tests/fuzz/shadow-corrupt.c",
+      "bytes": 3591,
+      "sha256": "266573d83fdc357b85a436d69e5d1b82b4a41b26611d24696fb009534f29cc7c",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/tests/fuzz/diskann-prune-direct.c",
+      "bytes": 4313,
+      "sha256": "50b7035847a157b1de8f79fcfedda8b0ef1a36a993ad2edb7c3b7d48236ecf3e",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/tests/fuzz/diskann-operations.c",
+      "bytes": 2942,
+      "sha256": "1b2da39522498561d3168b378b1e1456c70ab018506d8d73127114a81a890754",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/tests/fuzz/ivf-create.dict",
+      "bytes": 111,
+      "sha256": "fa40a74340a0d588bac9c9e47395843acbb66a2a62d7b51161ba91f911af75ee",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/tests/fuzz/rescore-operations.c",
+      "bytes": 2837,
+      "sha256": "9289a5124e83084689866f6954e6922a3616aa0e0a88c23c28167c82e9ebdd53",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/tests/fuzz/exec.dict",
+      "bytes": 326,
+      "sha256": "db7edb8d7a499198dda926ac7c1b4c1cab1d949d46b74b114d893da9fed7fcbc",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/tests/fuzz/Makefile",
+      "bytes": 7232,
+      "sha256": "8323f90d8925682cb85da5ab7a7a1d93ab520e541f67d28f9f2d4a9c7e1af906",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/tests/fuzz/ivf-create.c",
+      "bytes": 903,
+      "sha256": "6a66bcd6d6581be9604fe1cd2f573be31795912fe361cca5fefc9ab1ef614e57",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/tests/fuzz/ivf-cell-overflow.c",
+      "bytes": 6118,
+      "sha256": "f91858d0b4408f1e05a0ae27f11ae7924776e142476d2efe54887c25e0c89e97",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/tests/fuzz/diskann-graph-corrupt.c",
+      "bytes": 4014,
+      "sha256": "8491186009b912c8a0728b99852a85e8a4667e97f1b31d8e6a7128a2772da152",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/tests/fuzz/numpy.dict",
+      "bytes": 79,
+      "sha256": "52d344aa6da8e1e20975f471cf25ac0ef195ce05171ae1b10174bffef421ef53",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/tests/fuzz/rescore-create.c",
+      "bytes": 921,
+      "sha256": "3dc1589dba0fff65f8e422ba9836b9217b1cbdee5b82599f9a256c73a727d408",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/tests/fuzz/diskann.dict",
+      "bytes": 138,
+      "sha256": "cdf06d1137d5b0a449f151b830d6eded5a9195670c37f6b755110e1853fc2295",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/tests/fuzz/TODO.md",
+      "bytes": 1884,
+      "sha256": "9c3ca38c323acf44bae375ca10a22421f6b9a09c309b1ba355593e2771cd076e",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/tests/fuzz/ivf-knn-deep.c",
+      "bytes": 6259,
+      "sha256": "95b01f1cb50f1758af0f7b6725496fb5f9304808a9f20a738dcb762922cb0a2f",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/tests/fuzz/vec-each.c",
+      "bytes": 760,
+      "sha256": "812e22fbdd168c444bd47ab3e8a56087b4521585cd2beb315fbf78932fda16e1",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/tests/fuzz/README.md",
+      "bytes": 370,
+      "sha256": "4cdfe170f73a5277e56f7c6510cb61b26485c030ce22a5831772c56141ae125c",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/tests/fuzz/rescore-shadow-corrupt.c",
+      "bytes": 7095,
+      "sha256": "f1a607f1ee2fa278a8ca7bf7bb6894261f48cf42b9cbef52e13fe2f8c11ab598",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/tests/fuzz/rescore-quantize.c",
+      "bytes": 1565,
+      "sha256": "13ba2667c5f6c7142fae97a4b3faac46826d72cebbc1b75f8d664b0e43f73a51",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/tests/fuzz/vec0-delete-completeness.c",
+      "bytes": 3113,
+      "sha256": "da0f75a6316c663996291a88f92f19162f929eaf65ccedbb8dbd5ac9a7f5dd65",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/tests/fuzz/diskann-blob-truncate.c",
+      "bytes": 8138,
+      "sha256": "e9b54c10fb989075a19b0f073e91291504ea5662e39db86d5e043fde2a698cbd",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/tests/fuzz/diskann-int8-quant.c",
+      "bytes": 5618,
+      "sha256": "05bf4bb1d296985a1fd5dc3c623e2677517ca2c0a11ce7b03528ba7efd610724",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/tests/fuzz/diskann-create.c",
+      "bytes": 1102,
+      "sha256": "56989ae15b9b7ffa439bdc5e722b7c8b864bb93bb106ab52957438a646141ed4",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/tests/fuzz/vec0-create.c",
+      "bytes": 875,
+      "sha256": "3c6c0be608da1cae538d181fc1cac9a058964968610869e188e6d51cbfaee2e4",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/tests/fuzz/rescore-create.dict",
+      "bytes": 127,
+      "sha256": "0898b86becf7061fcac300d02e520149dbf0960eabd5a2e93e877188d433f74b",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/tests/fuzz/ivf-shadow-corrupt.c",
+      "bytes": 6635,
+      "sha256": "6b5d6982ea18d94f468fae2837e74cd4d5da1aef52beb3070b173983ef567f7f",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/tests/fuzz/vec0-create.dict",
+      "bytes": 220,
+      "sha256": "4230cbb758aa76b4f44a85736998feb562eb31c918e781bb116e248430044761",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/tests/fuzz/vec0-operations.c",
+      "bytes": 2731,
+      "sha256": "c885f7102b053058919aae32d8281328dcacabe09de15df00f9d38f974ef6f9e",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/tests/fuzz/vec0-create-full.c",
+      "bytes": 1286,
+      "sha256": "9b37817b6ad82fa845d8721217f5f6fbf4a1ce1dd89428bd56b875c662b7d1e0",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/tests/fuzz/diskann-command-inject.c",
+      "bytes": 5381,
+      "sha256": "6a0b040a3d4a4500816f94409dd28900fe513520666910b9c403fa6eea13201d",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/tests/fuzz/ivf-kmeans.c",
+      "bytes": 5635,
+      "sha256": "256c4d11258f1fafbcb3f511cb9d8b8f54ff48494949b199bf11c2c799daab93",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/tests/fuzz/scalar-functions.c",
+      "bytes": 2851,
+      "sha256": "e5a348aacab41206b08ee96aada5c2bec8db0ce4ff2ad2d9741a2723e6bef60e",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/tests/fuzz/rescore-knn-deep.c",
+      "bytes": 5631,
+      "sha256": "afa2781cbfbc88a52687636d5bc1a3f20dc591ec083ea6d6d7113e1fe17a5080",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/tests/fuzz/diskann-deep-search.c",
+      "bytes": 6486,
+      "sha256": "295095e27d40dd39090634fe73a0fd3dfe7917cb8c6b147f8373fc7139503654",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/tests/fuzz/metadata-columns.c",
+      "bytes": 3625,
+      "sha256": "67af26cd6b4ed0bd8de8471ad058f966838443c994ac7a905907085ce8222e24",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/tests/fuzz/rescore-quantize-edge.c",
+      "bytes": 5999,
+      "sha256": "133b097fc885f643966183a2a38f8bbc53db7bd7b38f0128c656016702cb6a6e",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/tests/minimum/Makefile",
+      "bytes": 1032,
+      "sha256": "70a0797553a2480429bb195c8a1b9631aae32761e319fd1793df486d006de8aa",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/tests/minimum/demo.c",
+      "bytes": 756,
+      "sha256": "26719df7c04910dcbdef5d0d2ab576794c7cbc676076d354c02a091c23f36379",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/tests/fuzz.py",
+      "bytes": 1059,
+      "sha256": "2e148ec5328d67a5ba5d6f6139ab6cdd46c6eb27658b867ce9c6108080bac1f5",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/tests/test-general.py",
+      "bytes": 1421,
+      "sha256": "8fba3943445356ff3ba6adee2911938fedb375137ea548c90f1d957193ff7941",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/tests/test-insert-delete.py",
+      "bytes": 21715,
+      "sha256": "85cbec1739f67ed2f7525a9873c67c9518d72cf95d00b248b86f510d54bcb566",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/tests/helpers.py",
+      "bytes": 1206,
+      "sha256": "d7bc24e7c48f79567233acc71d0480e1d1ffb04182c5e4275ae7fc712fadb671",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/tests/test-diskann.py",
+      "bytes": 46545,
+      "sha256": "d6672c804186e45b4f92c51884064815d5d7e56f58a0ac5197e6dd71d54aea99",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/tests/__snapshots__/test-metadata.ambr",
+      "bytes": 115814,
+      "sha256": "e98915d7fa8feef74579ac000ab50d7aabea7d077a389743405d24f71ca58bb7",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/tests/__snapshots__/test-insert-delete.ambr",
+      "bytes": 1078,
+      "sha256": "55fd410753e759ea382c7a65ea9da8d1a0a4e0a8af3eef23498a2f9321332cce",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/tests/__snapshots__/test-partition-keys.ambr",
+      "bytes": 7316,
+      "sha256": "3c0fb376fcf83da28518400610e4a24504256bfd428f0cec256a921e2277b9d7",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/tests/__snapshots__/test-auxiliary.ambr",
+      "bytes": 130607,
+      "sha256": "ff9089f14e0d642e5b3f121a804a9eb24aa6b8e4eec101523dc8f6fb8b69ebeb",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/tests/__snapshots__/test-general.ambr",
+      "bytes": 5022,
+      "sha256": "ee869f55d425e4c42714fb02360ea4ff4a9abfe0b6a4508c0dd6bb241e25e20b",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/tests/__snapshots__/test-knn-distance-constraints.ambr",
+      "bytes": 5740,
+      "sha256": "98708bfc4fa8bbcb324ca195116cec0f42d4d241c81985681c0a4e5707cc6aab",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/sqlite-dist.toml",
+      "bytes": 508,
+      "sha256": "69ebf4379c908efced4dbf1b4201998358f16d98b4ac7fe4be551fded66626b6",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/TODO.md",
+      "bytes": 2878,
+      "sha256": "6dcb018f93af61038f27fd7e838528bcb8d031a57e14ea3389d112ab7aa0fc7f",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/TODO",
+      "bytes": 616,
+      "sha256": "1584e810767930b3a25d4b0889a0739d14a5a36869b6b7acc80ff60d5f4b5d71",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/README.md",
+      "bytes": 9390,
+      "sha256": "9116ef6e0b78eb0caf5c6bb6419ccf4f8c6523967eef2045928c33dc66053d64",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/sqlite-vec.h.tmpl",
+      "bytes": 831,
+      "sha256": "259d7a7f7f4b2ada97def925c4d249856a62f073514dbe4aef838ecb284a2a25",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/VERSION",
+      "bytes": 14,
+      "sha256": "45e57a17d5ed5b4c6c1e17a4b57eb06e09c09cbc80c8b5073e12b44aa9a8ff5c",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/examples/python-recipes/openai-sample.py",
+      "bytes": 2498,
+      "sha256": "fa99917b0e140888dda13cb07bda189fdfad31191d20890498c0d03143bb3f03",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/examples/simple-go-cgo/go.mod",
+      "bytes": 183,
+      "sha256": "6aa109ce172b19b5770dc4e73ee71de19260d1c503f2833b86ee39d6e3a78f68",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/examples/simple-go-cgo/Makefile",
+      "bytes": 44,
+      "sha256": "2820a2dec329955a3658d5df8f7b6f3c003e069439f1dcf41912cebc5dcf9399",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/examples/simple-go-cgo/go.sum",
+      "bytes": 657,
+      "sha256": "21af6e05a6cfd4de16749121ba60d35df7cb98c40d9f0cf519e1c91dfa3aa1b1",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/examples/simple-go-cgo/demo.go",
+      "bytes": 1635,
+      "sha256": "022a8ef9c273ae59026a88de829844dc97521e2e06959b829399b64fca5d205a",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/examples/sqlite3-cli/core_init.c",
+      "bytes": 160,
+      "sha256": "0d6a10625a7b6cf9b1afd0bace0b459a4f4ca6f53de35a848be49f09d1eea857",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/examples/sqlite3-cli/README.md",
+      "bytes": 438,
+      "sha256": "17c853357996d700e7d58f162dda1ba8ef4dbd328c3fd765d54bdaac14c2ea2e",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/examples/simple-node2/package.json",
+      "bytes": 168,
+      "sha256": "256479371a2b6502827d71f79cc21d3c85f66a95d3feb33678fab1abac77b9b1",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/examples/simple-node2/tmp.mjs",
+      "bytes": 367,
+      "sha256": "f169bfea6d822c6347c0e926d328120c3485ff11f9c1d464f7f662aab334bcd5",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/examples/simple-node2/demo.mjs",
+      "bytes": 1465,
+      "sha256": "ed3a0ff1816c592b7d99499373a673c3d31b3125a270fb53d3b96e2808e079fa",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/examples/simple-node/package.json",
+      "bytes": 302,
+      "sha256": "70abfcd59ff92ffdf5cdc8ac6c8e2323da8df263b9882c514057ff5319e2bfe7",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/examples/simple-node/demo.mjs",
+      "bytes": 1115,
+      "sha256": "cb0ae37b7e7f6ad198e9c47c108b990bef282bc081ed322974b7df72d3f9451f",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/examples/wasm/README.md",
+      "bytes": 581,
+      "sha256": "34c0316c6d010da946c90221809eb0baea1cdc8cad5606abee03c45d2f4b37d4",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/examples/wasm/wasm.c",
+      "bytes": 167,
+      "sha256": "67f5fe9fe559c8d8267db9c509373a9f3ab6b130d38af5228ab5a1cf7d424b12",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/examples/nbc-headlines/3_search.ipynb",
+      "bytes": 87625,
+      "sha256": "d83d442ca5550be57916095c4781dcb20f4cf49baef6b0edefea7f463711a4d2",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/examples/nbc-headlines/Makefile",
+      "bytes": 177,
+      "sha256": "59e69eee2d47a89bd5f389f5c64541be0c7f331202c9cf5ef6ba388d973ccece",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/examples/nbc-headlines/1_scrape.ipynb",
+      "bytes": 6969,
+      "sha256": "4b73687ce8c6f5c90d30531bcb9dcef5fe5d0eee083d04ea6008948ff0494d93",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/examples/nbc-headlines/README.md",
+      "bytes": 48,
+      "sha256": "890875503e21b32b30397dfef71bbbcd51bc5de8e14cd57a2dde5db7830cdf24",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/examples/nbc-headlines/2_build.ipynb",
+      "bytes": 33882,
+      "sha256": "747275a6a3e03360551c1a16779852d3ff453df91e4d0679fa44a3bb0c9f157c",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/examples/simple-ruby/demo.rb",
+      "bytes": 907,
+      "sha256": "e0df8b97dfea35702044f6e1305177edf3ece4c345181ec976e68342fbfacbfc",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/examples/simple-ruby/Gemfile",
+      "bytes": 99,
+      "sha256": "55e7f8bf631d7dea67b3777d3931cb7a3540c4b8ef2cdb130129281f4271b258",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/examples/simple-bun/demo.ts",
+      "bytes": 1195,
+      "sha256": "226e784aadb33d0fc9ef3df80f544a5115823e70385e65d1d8c646241d369325",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/examples/simple-bun/package.json",
+      "bytes": 123,
+      "sha256": "a3851b70f47f7b10fd8ab22171af865f3160331b07c202935ec58c8fc38099d0",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/examples/simple-deno/demo.ts",
+      "bytes": 1239,
+      "sha256": "f2a1d01f082854ed52712dce83ff05013b844d7230a822e0bf472b05ca31c7db",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/examples/simple-python/requirements.txt",
+      "bytes": 11,
+      "sha256": "cfbfb743e2e72db75f6628eb29da2eda510184f07c9fe982771a97d1fe2afd48",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/examples/simple-python/demo.py",
+      "bytes": 1214,
+      "sha256": "e052dd94d337785bc2e5d4522c33d9f9274142697c039d7c1b287d8d570a9622",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/examples/simple-go-ncruces/go.mod",
+      "bytes": 323,
+      "sha256": "2a5c4692c29840ae9b118807a2b0b31a4e8b4ec34ceb4aec9d209c8b18af0098",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/examples/simple-go-ncruces/Makefile",
+      "bytes": 66,
+      "sha256": "e1ee57a7d6d5f131d435a0514e484a9e3bbcb597cf0bd285b524aa8f4ba85d40",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/examples/simple-go-ncruces/go.sum",
+      "bytes": 1116,
+      "sha256": "6a599a6787fbf6dce3d355cf65f2357048e667c9a5ddbcf7e36eddad9663bbb7",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/examples/simple-go-ncruces/demo.go",
+      "bytes": 1764,
+      "sha256": "0404effdddbbd250d7a853d622f92d6722b05f94ef7058b0747f7b45623337b3",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/examples/simple-c/Makefile",
+      "bytes": 131,
+      "sha256": "e88f63e3c612dbb7b38e7c28adc1af99af2188f0176a77d5bc3c9cb158173a4f",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/examples/simple-c/demo.c",
+      "bytes": 2386,
+      "sha256": "24243bcff7342b51bed01e64c03d221c0e36f06343c63d84b3eb8d7ffc5e62c6",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/examples/simple-wasm/index.html",
+      "bytes": 1569,
+      "sha256": "e780e275728e794b2bb07d1651e3bafdc12ef080969b9f06d38a05cac4e99695",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/examples/simple-sqlite/demo.sql",
+      "bytes": 529,
+      "sha256": "22ac9aa01b114702e25a719e049cb7fd1d5b52ee67041a0654777ffd34d38fbd",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/examples/simple-rust/Cargo.toml",
+      "bytes": 213,
+      "sha256": "1448ecdab84d35d8cf64a0487a87e9fa0be206444f2f80489d545980c619d4b5",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/examples/simple-rust/demo.rs",
+      "bytes": 1690,
+      "sha256": "2ed4d493be70a4e76928f8a2cddfb2a31abfb3fcfb7928e652510b4a5e3c6232",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/benchmarks/micro/Cargo.toml",
+      "bytes": 286,
+      "sha256": "9eecd0073617a509f4f51e32610549bdef0f57f39825d813f96ba7f405143818",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/benchmarks/micro/Cargo.lock",
+      "bytes": 21213,
+      "sha256": "1ed81181cbe4e5e7c786ae3cbcd37022beea22604fe3f5bb818386b516bd1a66",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/benchmarks/micro/build.rs",
+      "bytes": 104,
+      "sha256": "075f5697c6b9b6ee25ebcf0163e50f078f474a26eab0fd9269134b643ed168e1",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/benchmarks/micro/benches/my_benchmark.rs",
+      "bytes": 3311,
+      "sha256": "aefa93a7e98738e494d4e49dbee56ec96fff7219906995186198f861076f4886",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/benchmarks/micro/src/lib.rs",
+      "bytes": 252,
+      "sha256": "eb6f5c317a28fe157c89f167dea1e1efbde00363f67adc06c5ef6cc7328db0d3",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/benchmarks/self-params/build.py",
+      "bytes": 1931,
+      "sha256": "c7e97041343d782b9972f79c39b424d8702682b28b7ad2844ea4548bef02b505",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/benchmarks/self-params/test.py",
+      "bytes": 719,
+      "sha256": "be8f285a52529905bfcc6c9bdbfc419a0f3bc3f00f069ba86a6864244fc3bc0c",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/benchmarks/self-params/knn.py",
+      "bytes": 2160,
+      "sha256": "1425040ec499a5a7f7087bff1990ba0e0b0c85f781d4aad8258070d2deff4c8f",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/benchmarks/exhaustive-memory/requirements.txt",
+      "bytes": 2298,
+      "sha256": "b78165b6729efbd77e90e3009e0a039655a908f9f353026daf1c71fc0d61148d",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/benchmarks/exhaustive-memory/Makefile",
+      "bytes": 329,
+      "sha256": "1fad19884bcc43f4b401f5b1ae26bc4595bc47d7da78164fdc7c8ee77294f324",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/benchmarks/exhaustive-memory/sift.suite",
+      "bytes": 371,
+      "sha256": "87d36f91d5135f3efed14260d2b6582dfbd4bdb00f579c8d5e873b5f4d6f6fea",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/benchmarks/exhaustive-memory/bench.py",
+      "bytes": 16835,
+      "sha256": "bb540f123f472ebcf2b9974d7f2d268eb3b2da3c4c8a0110f2ee50d64d762982",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/benchmarks/exhaustive-memory/README.md",
+      "bytes": 2186,
+      "sha256": "da1f42f85d494f70f729ab8201031602cd048eed9cf77f5de95dabc0822e9de8",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/benchmarks/exhaustive-memory/gist.suite",
+      "bytes": 211,
+      "sha256": "8bbed61fa115170c2ffd0d192893d85241989f477701fb34f97b57afded43753",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/benchmarks/README.md",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/benchmarks/profiling/build-from-npy.sql",
+      "bytes": 191,
+      "sha256": "ad9a02c453f916a47e1fa32d1cdadd7305878230dbb89d62a022f3c546b9f474",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/benchmarks/profiling/query-k.sql",
+      "bytes": 735,
+      "sha256": "c3da437bfe8bb09be43d48ae8d42e0d550ef3205adea8563bb17bc31ca6eb98c",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/scripts/progress.ts",
+      "bytes": 1007,
+      "sha256": "bb81eb596f457f460a8d6caab2d8d316c4bb3ca046e97fa52068d924b1714690",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/scripts/publish-release.sh",
+      "bytes": 618,
+      "sha256": "06750c82179dc781e222ba0ab3fe0ce22859a69d9cbb1739eb60b993bab70ade",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/scripts/amalgamate.py",
+      "bytes": 3348,
+      "sha256": "15ac356e763d64690044a0373b99fc7757a25ebef27c0212f00d05da0d099351",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/scripts/vendor.sh",
+      "bytes": 252,
+      "sha256": "b6b8168d419f158fb296550964c8e6fb7af5ad8af8858bfb4fbcd9e7c7054941",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/reference.yaml",
+      "bytes": 12244,
+      "sha256": "57716734c71b354e50b40ee7ef5baba771f501aee5d99903e496f5ad6f3c62c7",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/site/versioning.md",
+      "bytes": 1158,
+      "sha256": "9a80075172c49851d37a1916101042ac5b575c077a08441c40e9ab541b0cf96c",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/site/build-ref.mjs",
+      "bytes": 4537,
+      "sha256": "27ee4c6212e12ee5815dec6dcdf925cfdb7ff49f9fc14e4eeba459e260761489",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/site/compiling.md",
+      "bytes": 2647,
+      "sha256": "0fa72eb07f02b92ecc8b6347cda5d9b9597dc82c086c748e2e652f2374f52bd4",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/site/features/knn.md",
+      "bytes": 5581,
+      "sha256": "a14fcc68d767cb15be6da22f3743d10d9d53550b0d98335b052195561c84d00d",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/site/features/vec0.md",
+      "bytes": 8764,
+      "sha256": "9004189b62afc16e353cf5643ede950a0a7dd604ae9429b8974773e9f8e48123",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/site/using/android-ios.md",
+      "bytes": 996,
+      "sha256": "c0efa43863d6c5477cf2adc58b3c14d489b4d4920d9f7d2c5d8351909513178e",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/site/using/go.md",
+      "bytes": 3435,
+      "sha256": "87a66b6786aae54402efe916c91170a7f1fe97273f8da3261f26509edd2dbd97",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/site/using/python.md",
+      "bytes": 4544,
+      "sha256": "6d21d8759fcbe8ba6bf642ab8cf971141c31c4c481c44629d831dacfe9d5c27e",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/site/using/wasm.md",
+      "bytes": 1354,
+      "sha256": "a7add89fd243011997675667cbba2e251219cffc0bd3238f4da2188f8eaa5408",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/site/using/c.md",
+      "bytes": 300,
+      "sha256": "b1e99d123017c4e9eb58f868acc1f57abc6ff9512d7d7aad3aaa032d97c095ad",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/site/using/rust.md",
+      "bytes": 2391,
+      "sha256": "0c28d5ff8af0ef719c96711f7d2f6c2a9a8d24e78b0db6e5115c4ca8daa02b45",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/site/using/datasette.md",
+      "bytes": 613,
+      "sha256": "bc715b4582837efdc85088035aeb4a5e05e55337c174ad97d05f7ec106fcaa4a",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/site/using/sqlite-utils.md",
+      "bytes": 414,
+      "sha256": "8b0f364904ae4afed869397aca22f916dba4a1c33ec96c7509a2113ed5a983ae",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/site/using/ruby.md",
+      "bytes": 1057,
+      "sha256": "5f02b89c8f7686177aaf2e8b1a788b13935da3602518b73eceaf300b91322941",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/site/using/rqlite.md",
+      "bytes": 1669,
+      "sha256": "c31e8e19e8dbf35f2b1e8cbf2f3d2aaa8f606321018a201181e38c9725a550ca",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/site/using/js.md",
+      "bytes": 4887,
+      "sha256": "0e3645f4d7169bfe42d1e9c6813081f0b10b81ba24ec3ac577c2411a4250f8c5",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/site/project.data.ts",
+      "bytes": 353,
+      "sha256": "1fdada5ab056d746791cc6a744cced0b2c6530aa1c8353b9907271684ec476bc",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/site/public/logo.dark.svg",
+      "bytes": 1391,
+      "sha256": "567840d4833541ea359c4f78ab2805a131632b90bd4241cfd3f9e8ac24ad2a42",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/site/public/logo.light.svg",
+      "bytes": 1391,
+      "sha256": "eb896509ed0dd2e278f8f455b59f737440ae92aba8adb62ff672454c1d099ee0",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/site/public/mozilla.svg",
+      "bytes": 1951,
+      "sha256": "8953c362d12a1ef9a147b46ec5d07b73be5a38e1c1333a0355bab8f82826f006",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/site/public/turso.svg",
+      "bytes": 3910,
+      "sha256": "957c08d2253038a25c705d3d2a2770353b2b9953a5c9d777d89ac946f7ae42cd",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/site/public/shinkai.dark.svg",
+      "bytes": 5133,
+      "sha256": "8eb77ff97582c4363df92fbf40b4d2f73f5e0e3b69ad7f2954dffee3b44db218",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/site/public/sqlitecloud.svg",
+      "bytes": 12539,
+      "sha256": "a26bda99ee74ada6f4d75ada7a56a5f36f5f0a6cec8b48079a1879d004659283",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/site/public/fonts/ZillaSlab-SemiBold.woff2",
+      "bytes": 69712,
+      "sha256": "461f6929866b0657a4d7a3256818ae6e38ccdead1a56a997f1ca57619d872a02",
+      "kind": "binary",
+      "encoding": null,
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/site/public/fonts/ZillaSlab-SemiBold.woff",
+      "bytes": 106796,
+      "sha256": "c5eba0992ce8c055d1a8315823022484b758e91d6649c1af7f364f9cd836f6a9",
+      "kind": "binary",
+      "encoding": null,
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/site/public/fonts/ZillaSlab-SemiBold.otf",
+      "bytes": 111580,
+      "sha256": "b3a8dc117a4c1511c231623b6e60bc4ed789be5395d9d49683fa5fb11641c057",
+      "kind": "binary",
+      "encoding": null,
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/site/public/fonts/ZillaSlab-SemiBold.ttf",
+      "bytes": 270088,
+      "sha256": "aafcb295b88d520357db1ecf9a1c3167055e87e9ddf5f63e560cbd139ec2805e",
+      "kind": "binary",
+      "encoding": null,
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/site/public/flyio.svg",
+      "bytes": 10070,
+      "sha256": "1bc9b6f1495b83194101a0336fc2a572e2e8f50890010d59becf38fea2260c89",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/site/public/shinkai.svg",
+      "bytes": 5128,
+      "sha256": "4d3c6d58b9e48269ac6346fbeb449ad35e7620a5ca93f5f081475f4348566488",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/site/getting-started/introduction.md",
+      "bytes": 124,
+      "sha256": "a316f980b40f500386990a1633a326b8e0ceb35db3a00ef59f85752df4750254",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/site/getting-started/installation.md",
+      "bytes": 1693,
+      "sha256": "eb8e0571010bbfc2735794114dc1c7e95d1966841923284252b88af40d7c09b0",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/site/package-lock.json",
+      "bytes": 77877,
+      "sha256": "ab50c03a360f8b544bf7de81f37cc4e8222e5d31a8fb578f95d0df06e862c5a0",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/site/package.json",
+      "bytes": 389,
+      "sha256": "26272035fa2b78ece4bcbc6b94a7a5201b4027235902592c382f3db7d67b1aad",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/site/index.md",
+      "bytes": 1184,
+      "sha256": "f4cbba5621db6a2d40e7405f4e4a3130e908650da4388363bf8bc4387d83c704",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/site/guides/rag.md",
+      "bytes": 64,
+      "sha256": "560875fd068776dd0f655228361f06437571ab4d7b413791fc33a39a24a264de",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/site/guides/matryoshka.md",
+      "bytes": 2173,
+      "sha256": "4d8ca87b733971bbd72dc627ada08470d00fde1c4d6aed7e768744ceea075031",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/site/guides/classifiers.md",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/site/guides/semantic-search.md",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/site/guides/performance.md",
+      "bytes": 64,
+      "sha256": "c70174c7001294f69e3db74cea2c345e7950d80467e4dab133775ad8af232572",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/site/guides/arithmetic.md",
+      "bytes": 64,
+      "sha256": "35c35d4282393c89cd931dac64a5587be860f860d79cf0a22c9eb0f66da5a611",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/site/guides/hybrid-search.md",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/site/guides/scalar-quant.md",
+      "bytes": 1104,
+      "sha256": "d2918aeacda7c46bb1466f04159d42aebee7278b14705f63984e2b9fda6d3476",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/site/guides/binary-quant.md",
+      "bytes": 3680,
+      "sha256": "0a702cdf4ea8a8bb48d0f90ef3d2c92a4d4ebb8377aa8ee401c7e4a5c2c2727e",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/site/sqlite.tmlanguage.json",
+      "bytes": 29786,
+      "sha256": "e978d071d38007c783cdff0a8fc1039e934ef5cb64110481aaf4bfd6097580a8",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/site/api-reference.md",
+      "bytes": 14895,
+      "sha256": "bd6066b02864c3d8f93cbf9e02a86703e0997e78bbe964e98da4d9e4d413161f",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/sqlite-vec.c",
+      "bytes": 345154,
+      "sha256": "5e82bdb99720d1b14492a518b39f661cc0d69e9d1edd39d13db4148cc25cefd7",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/bindings/go/ncruces/go-sqlite3.patch",
+      "bytes": 1025,
+      "sha256": "0bbf3b706de0e6654b02b4c4b4711f3ffe049f1e8d0fec2381cc9632e0c41787",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/bindings/python/extra_init.py",
+      "bytes": 419,
+      "sha256": "bfc4f8b9c9ae1ec60d8628027634e9e19e0b138fdbe09870f35bd8ece1c1da05",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/bindings/rust/Cargo.toml.tmpl",
+      "bytes": 454,
+      "sha256": "fcad36fb1e3986ba39545ff2943ef3d5b829646a66a0eadc007a38d523f6242e",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/bindings/rust/Makefile",
+      "bytes": 400,
+      "sha256": "da892ec044768d5d9b30239a53153cee0525f033b8908a32d4498902058a164f",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/bindings/rust/Cargo.lock",
+      "bytes": 5033,
+      "sha256": "07211ef54b8aa4025b58dc5bc37399df4d102f61a5145ac2c4dc440ff3f17ac3",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/bindings/rust/build.rs",
+      "bytes": 108,
+      "sha256": "1e61a9d1650b077df6daf9c991120560e2c30955e3d81532143ba763156cb8e0",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/bindings/rust/src/lib.rs",
+      "bytes": 589,
+      "sha256": "f8ea6d5505c8bf34e36cb40c707320867425d98e5d09dda2fe3571237a00e341",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/sqlite-vec-diskann.c",
+      "bytes": 64430,
+      "sha256": "eba84318f6a0c43ecacc9769bf967af345791760e1eebb8ad3b200ea0a7afbc7",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/SECURITY.md",
+      "bytes": 179,
+      "sha256": "b231099eddcd53072e5b5fad791a2a423c798788b1097abf16396f302436c31c",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/LICENSE-MIT",
+      "bytes": 1068,
+      "sha256": "6ce72bbe12d975bd5286e5ab0a064c069693300c47bccbc57bec18485f1621ea",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/benchmarks-ann/schema.sql",
+      "bytes": 1923,
+      "sha256": "9b63f981e465fbc94f3970b73c91ad52e0e4365bb1af71cf56bbecd34f3fedf9",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/benchmarks-ann/Makefile",
+      "bytes": 2954,
+      "sha256": "90b482f6f2ea9c1416a31f1d64f337a00b3cf328e14522ec5362a9eb362cfe9b",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/benchmarks-ann/profile.py",
+      "bytes": 15000,
+      "sha256": "7cd479696c70e8aecc1f8deb72f4edeb403a4bf4d1486c40bc08b79aecf275ac",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/benchmarks-ann/datasets/nyt-768/queries.txt",
+      "bytes": 3348,
+      "sha256": "bee85a32068063cd969bdf45a4f4b6dbc0a659038f3ac42f93e0c803916e2ee4",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/benchmarks-ann/datasets/nyt-768/Makefile",
+      "bytes": 672,
+      "sha256": "0e144ec4c2d34a7235ef3d5376f29d23c693b390a9d75f11225f37067bed517d",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/benchmarks-ann/datasets/nyt-768/distill-model.py",
+      "bytes": 327,
+      "sha256": "84ed2bf2c703a854685831a0534ed129369b004b82d55b92cac3943a5b51bb09",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/benchmarks-ann/datasets/nyt-768/build-contents.py",
+      "bytes": 1732,
+      "sha256": "8fdcc8c2a0ee00b1220072b3b4fcf23136e6dd8131f0a2014a53ae983ad6d284",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/benchmarks-ann/datasets/nyt/queries.txt",
+      "bytes": 3348,
+      "sha256": "bee85a32068063cd969bdf45a4f4b6dbc0a659038f3ac42f93e0c803916e2ee4",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/benchmarks-ann/datasets/nyt/Makefile",
+      "bytes": 658,
+      "sha256": "cbcc668ae31898196b94217d141cdd27e44fb0554e2d1fca7a8dce4a5f40c351",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/benchmarks-ann/datasets/nyt/build-base.py",
+      "bytes": 5654,
+      "sha256": "4cd69e1a36d6547f0ffe08630c9737015ebec45eea1b478a4e00f5079466ce89",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/benchmarks-ann/datasets/nyt/build-contents.py",
+      "bytes": 1296,
+      "sha256": "36f15b84d2c609888555a87a779deca41575e60da5c9cf0ccebc541afc1119e6",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/benchmarks-ann/datasets/cohere10m/Makefile",
+      "bytes": 629,
+      "sha256": "4b03a6aae372e46d42f8bdb11d3fd494e2b72adcd8974e6dd2ef4541de1ce70d",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/benchmarks-ann/datasets/cohere10m/build_base_db.py",
+      "bytes": 4493,
+      "sha256": "653d94ef309ab65cdbc42757e4a6f3b56c8159fcf115aa35d2c989c030b9eb7c",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/benchmarks-ann/datasets/cohere1m/Makefile",
+      "bytes": 494,
+      "sha256": "8493630dca917daf42acdc33241a24a3b013b2663e080f82a8a8684088e1ecaa",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/benchmarks-ann/datasets/cohere1m/build_base_db.py",
+      "bytes": 3930,
+      "sha256": "e9dac95c73b87e57bd305c1aea3f40aca43ae112a9ef0e8f05c0cfb8f92ce8c3",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/benchmarks-ann/datasets/nyt-384/queries.txt",
+      "bytes": 3348,
+      "sha256": "bee85a32068063cd969bdf45a4f4b6dbc0a659038f3ac42f93e0c803916e2ee4",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/benchmarks-ann/datasets/nyt-384/Makefile",
+      "bytes": 538,
+      "sha256": "20048d0f7d237b13e9342ad2385f79d765a0e2fbbefb959e8adf86dfe629e998",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/benchmarks-ann/datasets/nyt-1024/queries.txt",
+      "bytes": 3348,
+      "sha256": "bee85a32068063cd969bdf45a4f4b6dbc0a659038f3ac42f93e0c803916e2ee4",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/benchmarks-ann/datasets/nyt-1024/Makefile",
+      "bytes": 550,
+      "sha256": "e14de2b67e00972b8aff11cd35593503e0f75c7b97750f49e89e2a879becabe2",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/benchmarks-ann/datasets/nyt-1024/build-base.py",
+      "bytes": 5356,
+      "sha256": "8eef416f6114dd133af085495706a236ccc7b28139092e67e6cedc8b03eabe1f",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/benchmarks-ann/ground_truth.py",
+      "bytes": 5618,
+      "sha256": "d22a1bd32a41973c20a3004b6db1972ff52448ffd04cf9f2d76f60009ed71223",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/benchmarks-ann/bench-delete/Makefile",
+      "bytes": 1347,
+      "sha256": "74b18c58d60af9b3d809cf3784d72299656cc62809f64c594c76529f01683df5",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/benchmarks-ann/bench-delete/test_smoke.py",
+      "bytes": 4052,
+      "sha256": "892b1f34a1a34120d4680cf41442eea85f846ef9d0fcf905349c8aa2e9f4651b",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/benchmarks-ann/bench-delete/README.md",
+      "bytes": 2021,
+      "sha256": "103b568ba4be7184bd5c3667a97e219043a333b0a01491fb9dbb52adb65cb25f",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/benchmarks-ann/bench-delete/bench_delete.py",
+      "bytes": 21664,
+      "sha256": "f76295c83bc7a56b86cd894f700d8e688ffad7b9c452e44e4d60100f1e5b4c30",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/benchmarks-ann/bench.py",
+      "bytes": 48339,
+      "sha256": "444fb46b0b9d41c2780e3cc619eb6bdf8469c73058795c004dfe2d29d7859a73",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/benchmarks-ann/faiss_kmeans.py",
+      "bytes": 3679,
+      "sha256": "29f1e297f86c1035d7c7336a1428266bf6a63bb101b746d26910cb3471a8e84a",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/benchmarks-ann/README.md",
+      "bytes": 3393,
+      "sha256": "236d4ae37b711f4cb665b68b2029afd19f2e14978d8bd86813c383e8a00e9add",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vendor/sqlite-vec/benchmarks-ann/results_schema.sql",
+      "bytes": 3264,
+      "sha256": "f4e201fc6bea71d1ba3a6a3dd45b3178dfa2ba17bf44bf8e31020fc876eb8675",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    }
+  ],
+  "hits": [],
+  "text_files": 280,
+  "text_bytes": 12748692,
+  "binary_files": 4,
+  "expanded_bytes": 13306868,
+  "limitations": [],
+  "status": "ok"
+}

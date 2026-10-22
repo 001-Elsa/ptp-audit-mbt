@@ -1,0 +1,39 @@
+{
+  "result": "pass",
+  "checks": [
+    {
+      "case": "valid text and binary members",
+      "result": "pass"
+    },
+    {
+      "case": "not final",
+      "result": "correctly rejected"
+    },
+    {
+      "case": "error status",
+      "result": "correctly rejected"
+    },
+    {
+      "case": "stale result binding",
+      "result": "correctly rejected"
+    },
+    {
+      "case": "wrong scanner identity",
+      "result": "correctly rejected"
+    },
+    {
+      "case": "wrong derived hit inventory",
+      "result": "correctly rejected"
+    },
+    {
+      "case": "changed override with stale per-file encoding record",
+      "result": "correctly rejected"
+    },
+    {
+      "case": "wrong member SHA despite rebound result",
+      "result": "correctly rejected"
+    }
+  ],
+  "verifier_sha256": "f637336ddec826b39b035510df332d51ab3ceb67a300524888f09a2389855791",
+  "self_test_sha256": "43d1577b9aa3bdd9e5bca6de7154dea63123f32271fb5d37fac8397bd1b1261c"
+}

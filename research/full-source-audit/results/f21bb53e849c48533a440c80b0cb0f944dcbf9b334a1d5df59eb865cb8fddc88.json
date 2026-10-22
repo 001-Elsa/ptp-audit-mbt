@@ -1,0 +1,4225 @@
+{
+  "scanner_version": 4,
+  "scanner_sha256": "ebd6aaa6ba6aa3e501c836d1e066932b6a687e9f996924236e2ae8775edc9a39",
+  "name": "mizchi/pkf",
+  "version": "0.16.0",
+  "yanked": false,
+  "repository": "https://github.com/mizchi/pkfire",
+  "url": "https://download.mooncakes.io/user/mizchi/pkf/0.16.0.zip",
+  "checked_at": "2026-10-19T15:58:14.055958+00:00",
+  "cache_file": "/Users/hanzhen09/.local/share/ptp-audit-tools/mooncakes-source-cache/f21bb53e849c48533a440c80b0cb0f944dcbf9b334a1d5df59eb865cb8fddc88.zip",
+  "evidence_file": "/Users/hanzhen09/.local/share/ptp-audit-tools/mooncakes-source-cache/f21bb53e849c48533a440c80b0cb0f944dcbf9b334a1d5df59eb865cb8fddc88.zip",
+  "archive_bytes": 522041,
+  "sha256": "7fb56a0dc117139130d885d4841a93aa1de6b3acd5c1f4b25452d41f2d68643b",
+  "source": "verified_local_cache",
+  "files": [
+    {
+      "path": "moon.mod",
+      "bytes": 455,
+      "sha256": "e9e2e80e5a89fa2fe3812bfd40fb537259672b89a794c7a8e7f73a6bdd65cc82",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "flake.lock",
+      "bytes": 3214,
+      "sha256": "2d29fbda3a9c87dec2283740056e4bf13abe5bf5288a11b2f856dc2cc8a974fc",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "nix/pkf-release.json",
+      "bytes": 474,
+      "sha256": "ab2c29d44531962db39bed58ff15057d91a6f90a38721f85c9a2e754fa3bab86",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1063,
+      "sha256": "e77a3e51cafecf536869c51de2aae0f05f46e770045325e9a78a46abc6209e7d",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "test/glob-fixture/main.pkl",
+      "bytes": 43,
+      "sha256": "fb431f59f1c13c58a9b3dcbfb6ca1850d839f0b5a6822c6730c4f7a16de50c75",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "test/glob-fixture/sub/a.pkl",
+      "bytes": 7,
+      "sha256": "36d82a02bd2ff4e355fc064b94bcd036e9fded8aef33b46b16c612879919b957",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "test/glob-fixture/sub/b.pkl",
+      "bytes": 7,
+      "sha256": "f5dac2b75090d588e6e02dc837531deacc0d0a1501f31bdbaf33dc4a5d93f7fa",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "CHANGELOG.md",
+      "bytes": 77195,
+      "sha256": "33c7437aacbb8852fcd21a9ccf570c590231f403543f75b28488ff18bd84b5bb",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "install.sh",
+      "bytes": 4875,
+      "sha256": "aab612371c20b78a1ac783e44bd15474c65815637e0eef5f1ded989c26fe975a",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "pkl/PklProject",
+      "bytes": 806,
+      "sha256": "05c8c2d00dfce1ce9384770f72d55b012786507598145c07975b2b42745817f4",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "pkl/Taskfile.test.pkl-expected.pcf",
+      "bytes": 850,
+      "sha256": "dc0e480e8ac1fbd86cae90fdbd6b7761c5e86c011ce0c984e20919db9cc3f8aa",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "pkl/Taskfile.pkl",
+      "bytes": 26980,
+      "sha256": "07a2cd780291c867087a9267b4e96a8b17358111d5b7af2f9326702f4377004f",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "pkl/Taskfile.test.pkl",
+      "bytes": 10298,
+      "sha256": "af7e9dce42561aa6dfcc6dcc395534df2eaf81e30a4fefdbee622d99651d93f0",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "Taskfile.pkl",
+      "bytes": 11853,
+      "sha256": "e2e4c1508384a1f8df3732c928d930830c9e10cce385b4356ec225cba4552d31",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "docs/auto-inputs.md",
+      "bytes": 6291,
+      "sha256": "08e46a38d35043784821e65479ed5d4e09f2cdfbe9f1a8ca9d43d87e580a561c",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "docs/introduce-pkfire-ja.md",
+      "bytes": 10989,
+      "sha256": "60c764caa1432a27be43437753011ffdf6a270df450a55d8a06adfdcbeb4d100",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "docs/superpowers/plans/2026-06-23-phase3-self-contained-pkl.md",
+      "bytes": 15545,
+      "sha256": "775169bcd714a7f9fdcaee2248b5ea23123a9ba61e474a8b663df8f297360f88",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "docs/superpowers/plans/2026-06-23-phase2c-diagnostics.md",
+      "bytes": 12227,
+      "sha256": "ded2493ed79c33931b94e62a9ec3347e81fdd7e7ceba727d67452bffad4d9822",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "docs/superpowers/plans/2026-06-22-phase0-conformance-harness.md",
+      "bytes": 37653,
+      "sha256": "b7c0f9c86dca38a92cca32921dfb3a9561072e7b0028a2c8a9a51aa6527f446c",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "docs/superpowers/plans/2026-06-23-phase2d-mutation.md",
+      "bytes": 11796,
+      "sha256": "1682b86c62c6d680b0780880b1da9587c538c86fc647a9a9d0e1329a09fc1157",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "docs/superpowers/plans/2026-06-22-phase1-runtime-foundation.md",
+      "bytes": 18698,
+      "sha256": "f1000d0cd56db076b4d4bcfe2324283d11681aea9934b1fce531c5ea3f25b652",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "docs/superpowers/plans/2026-06-23-phase2a-json-introspection.md",
+      "bytes": 12047,
+      "sha256": "a7ff569f92443898ec47e6da33da181666a710457dbc753e45c8b4fee72f7c1a",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "docs/superpowers/plans/2026-06-23-phase2b-describe-info.md",
+      "bytes": 12641,
+      "sha256": "96c5e7b7d2064c21e54ca15800b5beec3477c6cc757d81474f235feefab04ce5",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "docs/superpowers/specs/2026-06-24-phase5-cutover-retire-go-design.md",
+      "bytes": 7790,
+      "sha256": "9f9fe0853986b300772d51b327a83b87ff164de540cb834355cbe079767739f8",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "docs/superpowers/specs/2026-06-23-phase4-cross-build-distribution-design.md",
+      "bytes": 6965,
+      "sha256": "42d554e9599d0adc37724daf5eddaddde19b906ba73eedcb2e332af2abaddd8e",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "docs/superpowers/specs/2026-06-22-moonbit-pkf-main-switch-design.md",
+      "bytes": 10927,
+      "sha256": "9c709782bb65df67d0d499894fea1c7c968ed19b61a1f33c4fda0cec97b3911c",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "docs/superpowers/specs/2026-06-23-phase3-self-contained-pkl-design.md",
+      "bytes": 7059,
+      "sha256": "0ceb993801689cbf682fa082a78e8da1affb324930d292e8f220cba4ef9c67ff",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "TODO.md",
+      "bytes": 5796,
+      "sha256": "88b232c2af6a969faff9b854eb65c4455599edaa1c7d467b78160ad8ff825067",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "moon.work",
+      "bytes": 38,
+      "sha256": "9f0ae6dc7bd12039aadc48eb87b4cd5e4c890e8594977c005d85fea4080a4e3c",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "README.md",
+      "bytes": 53109,
+      "sha256": "4a2e40a0c1af253a856a778d03d7e203c2e78d7d83446b2702674344ea70fb5e",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "flake.nix",
+      "bytes": 4728,
+      "sha256": "c9c6c0195b313cd3f2af44bcbb8617ca1d9d4d9adf86f0c662ad9299724226db",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "bytes": 3237,
+      "sha256": "cb42ced73e1b6581e4d71baed4e0833f1eccdb177ecdd82f623562106ea73ff9",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "examples/keep-going/Taskfile.pkl",
+      "bytes": 761,
+      "sha256": "f56947ca06e35b7822c92808c264268f26af0fe7017f31268fb480971f39a857",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "examples/monorepo/Taskfile.pkl",
+      "bytes": 2475,
+      "sha256": "965314ed8cc78b2fa8f0e5d7751c123db57058bba23d47c268e74019060630d8",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "examples/monorepo/README.md",
+      "bytes": 1326,
+      "sha256": "bdbe1db4961ed72977245e3f87405fb68823dd86b8bcd49dcfcc702530081a03",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "examples/monorepo/package.json",
+      "bytes": 167,
+      "sha256": "aef36cbc9b155ae6eba539b966983872f886e3f43b0da577f2d9a1408514753b",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "examples/monorepo/packages/greet/package.json",
+      "bytes": 164,
+      "sha256": "c9505d79385b87085f8d52d8dca89354fad550d3d127cad3651a1f15138b1dd8",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "examples/monorepo/packages/greet/src/index.js",
+      "bytes": 178,
+      "sha256": "40f75abdc50a0809e7b527a3cd4f552660617d6fb6d85775654405757f2f3017",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "examples/monorepo/packages/greet/src/index.test.js",
+      "bytes": 302,
+      "sha256": "18cf5d7c9256d1180988fdfc3fb57c61991c3b84bad39a79b918ce9e3d9e1fc4",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "examples/monorepo/packages/cli/package.json",
+      "bytes": 197,
+      "sha256": "2ae87593ffe8c6072358775e9b38250ce94c353c0d9509a4799472a89b4b0ebf",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "examples/monorepo/packages/cli/src/cli.test.js",
+      "bytes": 479,
+      "sha256": "2927e42e84edb459c32a3a5d6cce653e61bf652dca55cc4f1b3708c0ea4dd1cf",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "examples/monorepo/packages/cli/src/cli.js",
+      "bytes": 128,
+      "sha256": "e5bad04d22e0a05fc5582aaf5ecc6a8351090e59da8fc12f02548fad1c35a315",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "examples/monorepo/pnpm-workspace.yaml",
+      "bytes": 27,
+      "sha256": "0fb360452b0231d114d0b0ad6cc76bb48fe528382f55827cf93739bf64ec79e1",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "examples/migrate-src/Taskfile.pkl",
+      "bytes": 383,
+      "sha256": "b15dcdc373ba0acd4309a59bda78a96c2129f3dd9b65631d6737d2cd00be70c1",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "examples/lint-dead/Taskfile.pkl",
+      "bytes": 230,
+      "sha256": "414bb8ed61c953c82da09faec5cc83fd51070be4e9d4b1021999a205f7f65bb0",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "examples/eval-cache/Taskfile.pkl",
+      "bytes": 650,
+      "sha256": "3c64bf645e439ca9d3690e66a7362474e21aa628ad1cd93330b1c1f25aa02291",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "examples/eval-cache/parts/names.pkl",
+      "bytes": 266,
+      "sha256": "a3ec3f218a15eeb6865c577955f08c1b316c099cc52c7261fb47d3fde9e0b8e4",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "examples/split-import/tasks/build.pkl",
+      "bytes": 478,
+      "sha256": "a6cf95346e0e617a0d6547ef7856617f64b4b7bae89a65943eb282a2ec3ad841",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "examples/split-import/tasks/test.pkl",
+      "bytes": 413,
+      "sha256": "40de60daa86fbb37f57514b7e3ede0c6dfb9e28b400af1458b5ed156c9868e33",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "examples/split-import/Taskfile.pkl",
+      "bytes": 471,
+      "sha256": "70c46d79b016074dc480a750bce48b7d55e3a636108452628cc2f98cf35c420f",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "examples/split-import/shared/toolchain.pkl",
+      "bytes": 124,
+      "sha256": "740028bfc8e6551be3a6e7be9a272812d1b2d42433c70f710a97b6e93e2e1b32",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "examples/split-import/shared/sources.pkl",
+      "bytes": 195,
+      "sha256": "57059f8267fa2851c93540d213fef42310831ac80b18765719c1315d5975f8be",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "examples/split-import/README.md",
+      "bytes": 410,
+      "sha256": "1a2bfe5310369f48d76eabfaf8d18aedcaa569175eaf699a9404072b9f280695",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "examples/split-import/package.json",
+      "bytes": 87,
+      "sha256": "95a519cbc9bce60a320e64abae7e35a21d944b0e7d7e4ac547a1641fd5cac4c2",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "examples/split-import/Taskfile.test.pkl",
+      "bytes": 1163,
+      "sha256": "3a227bdecbe652627d66498cc5e51816b07bfdf060e647fb823d5a6deac0ab5b",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "examples/split-import/src/index.js",
+      "bytes": 59,
+      "sha256": "b4f7e2f3d232034806fad23218d2130083ac977da5442403d6fbde2c08d8f4c9",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "examples/split-import/src/index.test.js",
+      "bytes": 184,
+      "sha256": "273ae1bf05c5a5fc54d939fc17796ca516ec32f544a6c470fbf23d0c6c374d84",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "examples/cat-io/Taskfile.pkl",
+      "bytes": 227,
+      "sha256": "6a410ec0a28941195e73dc96215a8af021afc3bc55f4f88a10f47402929c0e50",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "examples/migrate-2part/Taskfile.pkl",
+      "bytes": 162,
+      "sha256": "a26f61483f6eeeab9f5bbcf81007b47f1b2c4c32034221980acf840a5ddf5a1b",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "examples/providers/crates/cli/src.txt",
+      "bytes": 7,
+      "sha256": "b8bb034f9b63bd0254fbc7c157cae746c75853f4643d6cea844dc48ddb57f522",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "examples/providers/Taskfile.pkl",
+      "bytes": 1259,
+      "sha256": "0237ad1ca4a241186b80c7e9cf400998a2fd4d671f331de6c99181b308e84a1e",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "examples/providers/apps/web/page.txt",
+      "bytes": 5,
+      "sha256": "362a07bbb5c74b982bed644b9f7e298837d7a3a232c964d039bb7e49ebea825f",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "examples/rust/Cargo.toml",
+      "bytes": 135,
+      "sha256": "bf7af0c6a59a764e389f9d3366e72d0738d563131d03788c16fbb442f3a8ea13",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "examples/rust/Taskfile.pkl",
+      "bytes": 1570,
+      "sha256": "099a4cf5b1b5ca634107b5abd91b0f3d0006207a176d9711e5aac7cc874ec924",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "examples/rust/README.md",
+      "bytes": 1008,
+      "sha256": "89cab949c70916d27d512514aaf3e9f2c9f82ba33c973f331be227c65051cc6c",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "examples/rust/src/main.rs",
+      "bytes": 519,
+      "sha256": "fab71498356e74b3577553136ed3a180e6fe623d5013c4c0b2bd7c37ebaa2993",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "examples/trace-inputs/Taskfile.pkl",
+      "bytes": 732,
+      "sha256": "0fa7c95cea1e29b1b7530a121d87bc0d785426bc220f310c0d81085f9776857e",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "examples/trace-inputs/README.md",
+      "bytes": 509,
+      "sha256": "01522ebaba692f8ff1dae6720925d337790f2a0b04e1ddfd192a8011643c244e",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "examples/trace-inputs/conf/settings.ini",
+      "bytes": 12,
+      "sha256": "c926650c05cf29d3a37843be2a4ad9fa32bc20e4c30d78977648a4cd92d30522",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "examples/trace-inputs/src/a.txt",
+      "bytes": 12,
+      "sha256": "df6b77a2cf64003fefc3285f37dfcd67bb45b1ff686f79b1c32be4864ffd02ab",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "examples/timeout/Taskfile.pkl",
+      "bytes": 1398,
+      "sha256": "cdffd0ddafbd4acb8f42720434c518500c010fad17b9fa5171e3fb4f1c7678f1",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "examples/timeout/src/a.txt",
+      "bytes": 7,
+      "sha256": "b8bb034f9b63bd0254fbc7c157cae746c75853f4643d6cea844dc48ddb57f522",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "examples/lint-string-safe/Taskfile.pkl",
+      "bytes": 681,
+      "sha256": "744d6e111c8200ad8ec14bf6722eb4962abd15b091e7b42cd6ec97d4583da847",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "examples/cross/bin/aarch64-linux-gnu-gcc",
+      "bytes": 44,
+      "sha256": "917525804e4751ccd8bbe42458dd6cdaf903822f3e54b3ac51e0214b1db891ff",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "examples/cross/bin/cc",
+      "bytes": 31,
+      "sha256": "159c16abb47b4930f96b0e7a1a262426eb11daf0eee67dc3733488f7ef85b8a6",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "examples/cross/Taskfile.pkl",
+      "bytes": 1050,
+      "sha256": "725faa0e5cbdea4c739e2272e3a8a0a44eb7dfc9d29b0110ef1abf18b8d2f3cc",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "examples/cross/src/a.txt",
+      "bytes": 7,
+      "sha256": "b8bb034f9b63bd0254fbc7c157cae746c75853f4643d6cea844dc48ddb57f522",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "examples/basic/Taskfile.pkl",
+      "bytes": 619,
+      "sha256": "1f0e744a2663c7e6141d6797ef387b5a8eaac576b50f5eca67d99729c0282098",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "examples/reserved-output/Taskfile.pkl",
+      "bytes": 639,
+      "sha256": "824b06f596afe61711ed41e99e10eae9895de1192d6b66a670a7812b0ce043ed",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "examples/reserved-output/seed.txt",
+      "bytes": 5,
+      "sha256": "4a6689419b00b11700c9b6246bcfa8936c8f5e1e824db3a7e57030e2d1c1a684",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "examples/glob-import/tasks/alpha.pkl",
+      "bytes": 264,
+      "sha256": "254747b2f549dbed26fed5e28cf43dc6f90af7a2ebdc17bac4ed333cd79d3426",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "examples/glob-import/tasks/beta.pkl",
+      "bytes": 261,
+      "sha256": "cb5246a16a7c861e1473434fe690e519940f9514fb00d49f6464b46dd0dce9dc",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "examples/glob-import/Taskfile.pkl",
+      "bytes": 523,
+      "sha256": "e49e3e882e941651237613fdae484acd6f3c083f47848709e0847920864132ed",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "examples/remote-cache-worker/pnpm-lock.yaml",
+      "bytes": 36117,
+      "sha256": "408163d6eb4074232f4bd383ccb02014e15e71a9a06136742bf882fa89854dac",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "examples/remote-cache-worker/smoke.sh",
+      "bytes": 2214,
+      "sha256": "85c624e8b7847559a5bee5a94f9f81441aaba8bc0436f774742e58d153c4fb1d",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "examples/remote-cache-worker/README.md",
+      "bytes": 2112,
+      "sha256": "b7d2ba7c874f1a4939ca826df69de18e72bf31b88114a9ff1c919286a7f4110e",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "examples/remote-cache-worker/package.json",
+      "bytes": 329,
+      "sha256": "ddddf07f5ccffd67b22de42f1ab1230470df50ad43aa79bf8ee6511edb2ae78a",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "examples/remote-cache-worker/tsconfig.json",
+      "bytes": 361,
+      "sha256": "2ca3ce8b95626800056f80722b3b52a816ac96605c7e01107031fda52052c847",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "examples/remote-cache-worker/wrangler.toml",
+      "bytes": 689,
+      "sha256": "4b886507f93b76f3653120bd008342520f280e9aac083697543d866c29cca99c",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "examples/remote-cache-worker/src/index.ts",
+      "bytes": 3175,
+      "sha256": "10bcb886d7c77b880f000445b667370c928ea5e041b18c5738dc4bb761669a8e",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "examples/lint-rules/Taskfile.pkl",
+      "bytes": 971,
+      "sha256": "d4f7bbf79686caa16f6ee01eb317657a692d3abf382dbbd2d86e42a8585a1524",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "examples/describe-rich/Taskfile.pkl",
+      "bytes": 613,
+      "sha256": "864b2f4b7cef5da238c167bc41579f759b681696c6b36e8792353b7b8a90c4ef",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "examples/steps/Taskfile.pkl",
+      "bytes": 1178,
+      "sha256": "5b433a4c091c4081f8d27e6420b3e5d955d4e53fcb0e76df32c73d97fd812744",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "examples/steps/schema/a.txt",
+      "bytes": 10,
+      "sha256": "13080eb78b0ba9ed9f4ad38969f26cb9ecac0988ee7bf3b2a2d7b4131bc17348",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "examples/steps/src/main.txt",
+      "bytes": 7,
+      "sha256": "2cc5f543e435eba6dd22925be8382c80c6a20a7824a484a4340897d05f04ab44",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "examples/sandbox/Taskfile.pkl",
+      "bytes": 965,
+      "sha256": "3c3be4956dbe3b0d0e06e40af49bd24d497f2f8962b4dbd927c08cfcba97c849",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "examples/sandbox/undeclared/extra.txt",
+      "bytes": 2,
+      "sha256": "c0cde77fa8fef97d476c10aad3d2d54fcc2f336140d073651c2dcccf1e379fd6",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "examples/sandbox/src/a.txt",
+      "bytes": 2,
+      "sha256": "06f961b802bc46ee168555f066d28f4f0e9afdf3f88174c1ee6f9de004fc30a0",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "examples/hooks-tf/Taskfile.pkl",
+      "bytes": 357,
+      "sha256": "aa755fee3d4292689ce9307147a66096a71162fbf16e2f7ced633c92498540e8",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "examples/diagnostics/Taskfile.pkl",
+      "bytes": 2047,
+      "sha256": "df4310f199c68cec0bd19564806433266d2865ba5e138f9de13a1cc07ca90349",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "examples/diagnostics/README.md",
+      "bytes": 623,
+      "sha256": "5bae0f1342f5f7e557cc00a5d98a42d755c8e4a807c4316f52bbd4cf78ceef35",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "examples/artifact-order/Taskfile.pkl",
+      "bytes": 685,
+      "sha256": "958175ae4b2b7607e5dd753bfba9228f244ee0183a4098e58c8038fbbe1012ec",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "examples/artifact-order/seed.txt",
+      "bytes": 5,
+      "sha256": "4a6689419b00b11700c9b6246bcfa8936c8f5e1e824db3a7e57030e2d1c1a684",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "examples/lint-watch-cycle/Taskfile.pkl",
+      "bytes": 293,
+      "sha256": "8a9e8bdd6c5dbd5df4d4f1ae98a34ba0c18359e9fe2401817ea2875975c91bf1",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "examples/clean-glob/Taskfile.pkl",
+      "bytes": 396,
+      "sha256": "d54ca27279748ae512646ae9f8dc91bb09f4ce3832a25a48ed16620fa1d09e0f",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "examples/node/Taskfile.pkl",
+      "bytes": 1275,
+      "sha256": "494ef2c161af65b9dcb32a5ec1042b6a6c40bc4e34ce7be31caf1fd5c0179b78",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "examples/node/README.md",
+      "bytes": 903,
+      "sha256": "37e0f7443f58f3fbc2af6801ec2b78f3bbeefe2508dad7a13c1ef11ff42f8821",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "examples/node/package.json",
+      "bytes": 198,
+      "sha256": "31ec28e9217a49f504414f4ecc2a6dab547b47e2c9d7b53dfeade426b9f2d1f2",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "examples/node/src/greet.js",
+      "bytes": 178,
+      "sha256": "40f75abdc50a0809e7b527a3cd4f552660617d6fb6d85775654405757f2f3017",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "examples/node/src/greet.test.js",
+      "bytes": 302,
+      "sha256": "9fc564bc838324094081c59e543fd0761c72cc6697d1d1bfbb29f5f90e7ecbed",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "examples/with-pkspec/Taskfile.pkl",
+      "bytes": 3902,
+      "sha256": "58456a7589c056b7d907fec557c6ff89c2f6314757fc1d0400028c55ffb0659b",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "examples/with-pkspec/README.md",
+      "bytes": 1431,
+      "sha256": "8d9e70e59a7f08f4ea821eb867c110037eddfa58cff6f51c16bb53240338a244",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "examples/graph-kinds/Taskfile.pkl",
+      "bytes": 481,
+      "sha256": "4244733e3a62b18e5aa4dac8f25096554d97122b17015efd775a65e063cd3f1b",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "examples/unformatted/Taskfile.pkl",
+      "bytes": 174,
+      "sha256": "c4414f40933f346477b9381d61ec139208d419af75c4f21234f5d400186b5bbd",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "examples/toolchains/bin/faketool",
+      "bytes": 40,
+      "sha256": "2def67b2979082d4e7165d91e4f0cecafc762895b19171769b4fbe4d756d3954",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "examples/toolchains/Taskfile.pkl",
+      "bytes": 858,
+      "sha256": "1b9a6e1abef6669554b2f0b326729a43c73db3416df831ff2ba443a34971189d",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "examples/toolchains/src/a.txt",
+      "bytes": 7,
+      "sha256": "b8bb034f9b63bd0254fbc7c157cae746c75853f4643d6cea844dc48ddb57f522",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "examples/dogfood/Taskfile.pkl",
+      "bytes": 5153,
+      "sha256": "4d147b8e2dbb03aa28b147f966c6e6eef654ac30695409632e7f6eff7fb4daf2",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "examples/cache-hit/Taskfile.pkl",
+      "bytes": 1096,
+      "sha256": "6a7418f07d7050dd3d5dad8f92018c19fa95d8066be4f641fc1aa5f5003bb38d",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "examples/cache-hit/seed.txt",
+      "bytes": 5,
+      "sha256": "4a6689419b00b11700c9b6246bcfa8936c8f5e1e824db3a7e57030e2d1c1a684",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "Formula/pkf.rb",
+      "bytes": 553,
+      "sha256": "b2222ee51c488777a02fa958a0e4d9c1858ce6b2ead155508dad08b9a524739d",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "scripts/bump-version.sh",
+      "bytes": 2448,
+      "sha256": "215e64b7113d5455e3ac8c45a50385068bf1d501529be214eceac086fa7d2aff",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "scripts/release-notes.sh",
+      "bytes": 780,
+      "sha256": "7ea289b2c1d59bef3e4340703456c35740a007184c30c3a1a564620a663bcb2f",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "scripts/sync-release-metadata.sh",
+      "bytes": 2218,
+      "sha256": "367b2eb1aedb98b60c412428151da4f3e312b56c51ca2488a21405b7528bc4a1",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "scripts/build-native.sh",
+      "bytes": 559,
+      "sha256": "f67a9fcb10ddaa9e35eec555478d40815d37f19866ff08e19e08c7275b96ca10",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "scripts/release-notes_test.sh",
+      "bytes": 2039,
+      "sha256": "930dc0416bb336184075cbfe63587ada06c19d0230525805956dfaa822e447e7",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "scripts/check-version-consistency.sh",
+      "bytes": 2141,
+      "sha256": "b86d5a7677e99b89790534c9d92f02f3db2de90fbd724a082d89b3284d2f6445",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "scripts/homebrew_test.sh",
+      "bytes": 2517,
+      "sha256": "d49b26a1ceeaec00927422e285fccc7722807206cda23fc65e3a1ba92cc71a85",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "skills/pkfire/references/cli.md",
+      "bytes": 5746,
+      "sha256": "1166ef7b5e9faf1bdb8f55502835c678f0896d65ae2a0edd276eb6a1511f6024",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "skills/pkfire/references/schema.md",
+      "bytes": 6323,
+      "sha256": "c6741c21c58d23a60b64c97f24d5ef49a6791a29e5a7dfd09090eafd45804582",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "skills/pkfire/references/runtime.md",
+      "bytes": 18733,
+      "sha256": "ceaae29463651c5ef489516e3c2910c2390aef00fda0736db60e2642701d3f9b",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "skills/pkfire/SKILL.md",
+      "bytes": 10008,
+      "sha256": "c5695ad2317addc9bb48dd44a8d38ea10025f2c61112b324c6b43ecf3a5f24fe",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "skills/pkfire/assets/recipes/10-args-passthrough.pkl",
+      "bytes": 1466,
+      "sha256": "5fc89214f87796ba9c785023e652405db258b45646358961f00cc2a12d65a3dd",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "skills/pkfire/assets/recipes/15-diagnostics-and-lint.pkl",
+      "bytes": 2211,
+      "sha256": "abb6bb98f665a8169f35ba2db433349cca2461b059d66ad53585abe285fc05c3",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "skills/pkfire/assets/recipes/19-spec-task-link.pkl",
+      "bytes": 5659,
+      "sha256": "38d69c83a7eb13ebdb266ed2fb28d2f114b66b471afa47aaff15a7c041a1851f",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "skills/pkfire/assets/recipes/05-remote-cache.pkl",
+      "bytes": 1751,
+      "sha256": "0f46be3b701786420f5f9186d5270a2bc9f69f63bf01b1a6bd011600f2b8d38a",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "skills/pkfire/assets/recipes/18-pkspec-check-pre-push.pkl",
+      "bytes": 3479,
+      "sha256": "697a7d6937e9bb4602a0434c6378f6b743965e9ec318f4b5868ead6ca12bcf0f",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "skills/pkfire/assets/recipes/01-build-and-test.pkl",
+      "bytes": 916,
+      "sha256": "88320e95e66637970e17d90c761b7ddba5ddd4d669221d34ad135d920a2c2932",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "skills/pkfire/assets/recipes/12-task-library.pkl",
+      "bytes": 5204,
+      "sha256": "0c4dade2ab3610c94795a22c65de653ba7226b29f45dbaabcf78cddea2bbe0cf",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "skills/pkfire/assets/recipes/17-pkspec-checks.pkl",
+      "bytes": 5405,
+      "sha256": "6e0bb02639a3cd0fdd87d1ad47f7d6476e22fc33327bfc968c44a11bea9608e9",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "skills/pkfire/assets/recipes/06-split-and-import.pkl",
+      "bytes": 2672,
+      "sha256": "b7b6c1799baa79dd0613ee4ece305de1630f8996f76a2d1ff38d976c25f52482",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "skills/pkfire/assets/recipes/04-dev-watch.pkl",
+      "bytes": 1532,
+      "sha256": "48d07c97db7986cb8785a7e8e512fd202c8e5e7c809e2ee5a4fa7e190de8fc93",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "skills/pkfire/assets/recipes/02-multi-platform-matrix.pkl",
+      "bytes": 1768,
+      "sha256": "ed631c38d78ff91e085e9655cfbda1b51e2cfd7a021c7b1fa5b1862af70c1ed5",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "skills/pkfire/assets/recipes/11-named-params.pkl",
+      "bytes": 3049,
+      "sha256": "de1b100e887fda4806ed9c846158d0b4dc5e6ac8fc44f5fef67e59046a2b66e1",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "skills/pkfire/assets/recipes/07-hierarchical-amends.pkl",
+      "bytes": 2744,
+      "sha256": "7dc1b5d1287ea75cf2e207375d0b19b4288acfa56f13aae7fdfe979997b779a9",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "skills/pkfire/assets/recipes/08-services.pkl",
+      "bytes": 3901,
+      "sha256": "63772a3d4a1ab180224fa5f875dcb5eb47a43a72fca8b1ce1e61df894bd43251",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "skills/pkfire/assets/recipes/09-test-against-services.pkl",
+      "bytes": 5154,
+      "sha256": "64fe7bc5b777dd71448a09c828551c4a977815c97186297f99c5cb46b112aec0",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "skills/pkfire/assets/recipes/16-release-version-bump.pkl",
+      "bytes": 6284,
+      "sha256": "3f89ddb8c3d6e58870f7c8beec82a3a58f6972a7f6a571dfcd15357babbb97f4",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "skills/pkfire/assets/recipes/03-monorepo.pkl",
+      "bytes": 2108,
+      "sha256": "72a0f6da9ce1601890099dc367320200534614d59b28b4406c3639bfce944620",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "skills/pkfire/assets/recipes/13-git-hooks.pkl",
+      "bytes": 3928,
+      "sha256": "89f337eef4bf4bf70149c8fcbaa45b1077d38933690701808fc9bde33bd3a538",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "skills/pkfire/assets/recipes/14-secretlint-pre-push.pkl",
+      "bytes": 5222,
+      "sha256": "cb2ab1cf89d84ad198aec863efdffd8386f43a2efeb4f295288b804444f2a6b6",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "action.yml",
+      "bytes": 6210,
+      "sha256": "246199df9c2f0c8b784d49422afd990bdc4aaf7713c843e3c696f16938e56ee9",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/cmd/pkf/artifact_wbtest.mbt",
+      "bytes": 12550,
+      "sha256": "8d9900d94b2ad3925017e08822c31bece33fd91037b1de88f7d61e71ae08f990",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/cmd/pkf/moon.pkg",
+      "bytes": 1688,
+      "sha256": "bb2a9f2e942e7be72866190b614b1fce141f97debe06e582796838cf18b2ee49",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/cmd/pkf/fspy.mbt",
+      "bytes": 10430,
+      "sha256": "caadce8c794ecbc6c12c8a235ecf12a0027cb36da2b138999b3d487113ed091c",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/cmd/pkf/eprint_native.c",
+      "bytes": 1549,
+      "sha256": "58df745a20055434b841bc750460440d5e0bfd1ef161952f1cd841cb330cd0f5",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/cmd/pkf/evalcache.mbt",
+      "bytes": 9183,
+      "sha256": "2bd06505066b7172a248e3e460abb8d7a68d33e11e48b9142c64d113f42f9fe5",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/cmd/pkf/schedule_wbtest.mbt",
+      "bytes": 8452,
+      "sha256": "0abdaa506d2eab79bf2fe1201308d7ad406cea457c53fcdebc7e14ce1c583933",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/cmd/pkf/providers_wbtest.mbt",
+      "bytes": 7633,
+      "sha256": "6ac88469483ee522df861b3c675191220cce07bfb577bb403e43219743f3d067",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/cmd/pkf/evalcache_wbtest.mbt",
+      "bytes": 5746,
+      "sha256": "7dfa99307c966a7ac12d4f7d3c4da958505a2436448179126719481710494288",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/cmd/pkf/replay_wbtest.mbt",
+      "bytes": 3574,
+      "sha256": "df9ff17c1a9e4fa5809712c623c02f6d4fb3dbe41228dc9539337e0a1328bfd9",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/cmd/pkf/tar.mbt",
+      "bytes": 13263,
+      "sha256": "cb86821068ddadfacdc33675c14c37a9b8baed500e660c35b03a29ac4c209e70",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/cmd/pkf/sandbox_wbtest.mbt",
+      "bytes": 3594,
+      "sha256": "f03b624819b67154e47f7c0f945e645774f3816d2b8ec27065890f2643da1a9d",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/cmd/pkf/main.mbt",
+      "bytes": 238537,
+      "sha256": "35ed3784563ccfc220cc2f46b94b4c9bcfd39242123608ffd14ed3cd610a5fbd",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/cmd/pkf/globwalk.mbt",
+      "bytes": 5053,
+      "sha256": "150071634089118e344e42b82257e25d860936c2dcff8eb7990a5b75640a0f3b",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/cmd/pkf/action.mbt",
+      "bytes": 14841,
+      "sha256": "a0849b1743edf7d5da0175cb3c52946aa7f05fb47665439833bb24879dbe8e50",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/cmd/pkf/pkg.generated.mbti",
+      "bytes": 418,
+      "sha256": "6ccd005f47422ef50edd70c1f24711e51f53c69db9981fb49f4dee91b44105ca",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/cmd/pkf/timeout.mbt",
+      "bytes": 7097,
+      "sha256": "5f934196cb3eb4aad5b25249924773d1b5a5c807f4f14618d96fafced3366223",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/cmd/pkf/steps.mbt",
+      "bytes": 8269,
+      "sha256": "ea6ef47b31492c7db25fd7b47c84340c3e490762ecfc2bec1217afee2d765138",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/cmd/pkf/toolchain.mbt",
+      "bytes": 10131,
+      "sha256": "969741ed4b2e41b14623294efc423d5d56d309e5675c9c9722b974b934fb2147",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/cmd/pkf/fspy_source.mbt",
+      "bytes": 11604,
+      "sha256": "8ef597fc22f5bb5f0777e4d61f90f7be8eb13f890b1594f0ac389cccc9642603",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/cmd/pkf/replay.mbt",
+      "bytes": 8824,
+      "sha256": "bafbc332820a125e2dc806c3a7006dbc5a0aec8b3165ebced4b16fe385afa85d",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/cmd/pkf/cache_wbtest.mbt",
+      "bytes": 12553,
+      "sha256": "6fae693eb330ad6d4cb82230f551c546d6829bf74fc788eb4fd53e4708e4a364",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/cmd/pkf/platform_native.c",
+      "bytes": 4055,
+      "sha256": "54b887d10eec404cdd0af0da485ea667aa52e834bc84d0da3c94e1a33b7ac3f7",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/cmd/pkf/providers.mbt",
+      "bytes": 8705,
+      "sha256": "89349efcf34090a6799b5d7a6e9c858044b9526a0dd383a6547fbd47bdc35518",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/cmd/pkf/watch_cycle.mbt",
+      "bytes": 27315,
+      "sha256": "20f581298260c4c9864dc763ea696335ba8ef93a695432228323907ae5691a2d",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/cmd/pkf/graph_render_wbtest.mbt",
+      "bytes": 5479,
+      "sha256": "57867bc393881add238db7a58b80e49465a1c972f3cd78abba933a5784d91259",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/cmd/pkf/toolchain_wbtest.mbt",
+      "bytes": 7331,
+      "sha256": "ce88ec61abd047caaf3e67ea36c64f3470bbf9b95edbf88b723ef7809450e864",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/cmd/pkf/steps_wbtest.mbt",
+      "bytes": 8561,
+      "sha256": "1bdee36356c6bcba16e8e03001753d7b467aeb357ce0ba8b9300efe86a29c4cd",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/cmd/pkf/schedule.mbt",
+      "bytes": 16611,
+      "sha256": "3f8234561cde7ffc0965bae146693dfcc05cdc9ca360947e65f44666e9286019",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/cmd/pkf/signal_native.c",
+      "bytes": 2031,
+      "sha256": "57d1df02ecb3762de0da3d8bfb4db6211710a692033b21ef3a03700d2816bffb",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/cmd/pkf/stat_native.c",
+      "bytes": 3734,
+      "sha256": "3d6e2d6d91d418cd2bd7a7b515bfe248b95695dcfc43ad9f7fb66b2002ad6dd6",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/cmd/pkf/watch_cycle_wbtest.mbt",
+      "bytes": 15287,
+      "sha256": "5dfe570e4c78fe1a40709b4f3aa5ac88471bc8d25ebb014769eb4a8fd2ff05c6",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/cmd/pkf/artifact.mbt",
+      "bytes": 19100,
+      "sha256": "12cd22b61906c274ca412b3fa9fd661df0cc3904e5785b32bb60d16a901f7227",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/cmd/pkf/graph_render.mbt",
+      "bytes": 8784,
+      "sha256": "5c86d13f4b3e0b1d72bac17588faa75a48a545fec2491157aaeaba84e850d821",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/cmd/pkf/sandbox.mbt",
+      "bytes": 9245,
+      "sha256": "3682e519591bf16f8ea79fa9974144f15a770085471a042bdc8764e818cca751",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/cmd/pkf/globwalk_wbtest.mbt",
+      "bytes": 4750,
+      "sha256": "1820ee9ba749843352ce4190c4e4e07a94d2555ab09004f81f92d8468632ee9a",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/loader/moon.pkg",
+      "bytes": 1016,
+      "sha256": "e3b4c28c7bc905e96bca2fe6b10022989a0304a1fd8dbd3e9de84ee4657154cd",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/loader/glob.mbt",
+      "bytes": 9020,
+      "sha256": "ebe8c5ec8929b0dc04bc736f7f5edd87434073eb899af6f5da668633f5826358",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/loader/loader_wbtest.mbt",
+      "bytes": 2996,
+      "sha256": "95c6379fd008a8fcc1cc25e059e243406cb5fc26bc4912cb2fbbb7b578fdf21e",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/loader/zip.mbt",
+      "bytes": 6125,
+      "sha256": "97588971e7d37d6df1903f452a49633c733495328da59ed5c740140ca3610c3e",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/loader/download.mbt",
+      "bytes": 6806,
+      "sha256": "5c27903416537d0f17ea87ee4d0ab1a6b52c2d19ed5d1e9b7f089f7ee81d1915",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/loader/pkg.generated.mbti",
+      "bytes": 417,
+      "sha256": "b5bad053c89b638c04617510f4d99e0d43ceac6aab397bc9d947b049f25c0a05",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/loader/glob_wbtest.mbt",
+      "bytes": 4437,
+      "sha256": "85c98ef62e64b20702679b09dc5673a540ef7578a19d41d2d6ff4ae82703dabd",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/loader/loader.mbt",
+      "bytes": 14649,
+      "sha256": "e15781d00950162bd45bc5ed1e0b2ce72d9af85271b031287e1e4b62fae8b798",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/loader/fetch_wbtest.mbt",
+      "bytes": 1765,
+      "sha256": "0f73cf83f829f2ef5674b911d6d13913ffa94f2dd130a8e95037d9b1d89ab724",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/loader/zip_wbtest.mbt",
+      "bytes": 5417,
+      "sha256": "232ab783fa7b70e52c8ed10344b322ff75d9cebe574d7e8a3b5d4d7d60f2da7f",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/loader/fetch.mbt",
+      "bytes": 5300,
+      "sha256": "50e2b7013336232b6b768ea6f27eabc299c5e540e4bc0f273a8ba14d2ede4dc0",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/loader/download_wbtest.mbt",
+      "bytes": 4926,
+      "sha256": "db5e5176b6bee43a12e35a6df6d72fc40e66ab296d97ffa252c02e2461cd5e0c",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/moon.mod",
+      "bytes": 212,
+      "sha256": "eb639b701b37e65073829c8a0452f75c8cbf125d3187f181704ecb750a9ea8d7",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/Conformance.pkl",
+      "bytes": 1964,
+      "sha256": "d2ec8025f877b6728ff88b0dfe8f22ea5c4f6fbd06982998f8a5040b93ded259",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/format-rewrites/stdout",
+      "bytes": 110,
+      "sha256": "700611dfc15741351c092ef690dc213440c1e26eae2f312d344b3a29e09c4f03",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/format-rewrites/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/format-rewrites/fsdelta",
+      "bytes": 16,
+      "sha256": "8567cd224986f8149ad20c1c6a29d8b6724a7c164c03e19cb541fdda13814c25",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/format-rewrites/exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/graph-json-basic/stdout",
+      "bytes": 1384,
+      "sha256": "88adb83ff22dd985ea8e6aa4ca43defdd5e24301ed4a97e606cf6e1dcef018aa",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/graph-json-basic/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/graph-json-basic/exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/explain-structural/stdout",
+      "bytes": 702,
+      "sha256": "4515c12e1dc3c842c510f16333e82b93322fccf5b0ba20565111052f34a7f2e3",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/explain-structural/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/explain-structural/exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/lint-dead/stdout",
+      "bytes": 432,
+      "sha256": "859e60fd42754aa1d1ac78770e40ad87f867642c926a6e86c677419dcd8ed44e",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/lint-dead/stderr",
+      "bytes": 24,
+      "sha256": "7ea7285b38be0f8178afd304930bfd97ef4e85c26fc727927596b4b6b7d5a80a",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/lint-dead/exit",
+      "bytes": 2,
+      "sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/completion-bash/stdout",
+      "bytes": 4031,
+      "sha256": "fe54c0692f8a3d90ac997a081643c12c1bee724e6b91d9c0c14a3e82c03dcc80",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/completion-bash/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/completion-bash/exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/run-hook-task-with-git-args/stdout",
+      "bytes": 33,
+      "sha256": "016beb4c43d1a6040236118c475929c2be3973f44bab5aeb4954bc21de567507",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/run-hook-task-with-git-args/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/run-hook-task-with-git-args/exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/info-json-rich/stdout",
+      "bytes": 1609,
+      "sha256": "d60172cb7f9c8c1feb0919b2a878d2bf8436d2beee0606f7b5eaf5394f1f73a5",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/info-json-rich/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/info-json-rich/exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/list-json-rich/stdout",
+      "bytes": 1281,
+      "sha256": "d91adfee7d4f71d201a0f0e880439389259f324c81e5b85ae66d50b360e35d8a",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/list-json-rich/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/list-json-rich/exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/init-writes/stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/init-writes/stderr",
+      "bytes": 114,
+      "sha256": "16071c1a35d1dede88aa3d225332d501632fa2b3b3461162d0a2389a6c1d5a04",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/init-writes/fsdelta",
+      "bytes": 16,
+      "sha256": "8567cd224986f8149ad20c1c6a29d8b6724a7c164c03e19cb541fdda13814c25",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/init-writes/exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/migrate-dry-run/stdout",
+      "bytes": 308,
+      "sha256": "cc0fe3c746d6f84211341fecda9c9bebbd71035c5986599b19e99fb722563cf8",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/migrate-dry-run/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/migrate-dry-run/exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/keep-going-skips-dependents/stdout",
+      "bytes": 198,
+      "sha256": "1f5d6fd12a9441d6f0ad7cf0f40833c17181e8636a876a59c89035093460bc92",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/keep-going-skips-dependents/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/keep-going-skips-dependents/exit",
+      "bytes": 2,
+      "sha256": "1121cfccd5913f0a63fec40a6ffd44ea64f9dc135c66634ba001d10bcf4302a2",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/describe-arg-after-json/stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/describe-arg-after-json/stderr",
+      "bytes": 60,
+      "sha256": "a561abf401ec19d44c8adc5b4cac76e5eb1cd02029ad4941e34d48258af7cea9",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/describe-arg-after-json/exit",
+      "bytes": 2,
+      "sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/cache-hit-of-a-silent-task-says-nothing-about-logs/stdout",
+      "bytes": 99,
+      "sha256": "9562ef27bd191c72f850b5ed57ca81cc02046e6450d1fd045e6ac772e2c1e1cd",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/cache-hit-of-a-silent-task-says-nothing-about-logs/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/cache-hit-of-a-silent-task-says-nothing-about-logs/exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/graph-dot/stdout",
+      "bytes": 187,
+      "sha256": "6f60b1620d08e7e800c3f611cf0c298b3ec9907a129af70771fdaafed42b7344",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/graph-dot/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/graph-dot/exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/graph-mermaid/stdout",
+      "bytes": 90,
+      "sha256": "cc7ccec365bfa485a3ebbede5744c258240e6f37bb156d91f12871d6b5d10f44",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/graph-mermaid/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/graph-mermaid/exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/list-from-subdir/stdout",
+      "bytes": 34,
+      "sha256": "b9d341d598512bafebee9e5a19840543c8f8387cdbc5590d3860972cff89a2f8",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/list-from-subdir/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/list-from-subdir/exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/eval-cache-sees-an-edited-taskfile/stdout",
+      "bytes": 76,
+      "sha256": "34ce688453644196c84a37b0be7ab4ab386585d143036d412be13d4ae202fc9b",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/eval-cache-sees-an-edited-taskfile/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/eval-cache-sees-an-edited-taskfile/exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/graph-unknown-format/stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/graph-unknown-format/stderr",
+      "bytes": 75,
+      "sha256": "c2129eda98070367c39347372b4a2acfaf6bd426e510df743527862bf48d5772",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/graph-unknown-format/exit",
+      "bytes": 2,
+      "sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/trace-check-undeclared/stdout",
+      "bytes": 219,
+      "sha256": "6542d8b9f2442526bd741e6d6e41e0082400b36441647abe8a6bd080259c6857",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/trace-check-undeclared/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/trace-check-undeclared/exit",
+      "bytes": 2,
+      "sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/pkl-cache-warm-structural/stdout",
+      "bytes": 179,
+      "sha256": "2222c83fa1426c92ec0d69e46f17dec9c58cabe44be3dd1d9688eb9e2cbd04fd",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/pkl-cache-warm-structural/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/pkl-cache-warm-structural/exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/graph-json-kinds/stdout",
+      "bytes": 1378,
+      "sha256": "8d517dc4901a93549c61476e4a33d2f644206d6c0d49e3fd77ad4f15205a6ad7",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/graph-json-kinds/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/graph-json-kinds/exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/list-file-flag/stdout",
+      "bytes": 34,
+      "sha256": "b9d341d598512bafebee9e5a19840543c8f8387cdbc5590d3860972cff89a2f8",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/list-file-flag/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/list-file-flag/exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/describe-unknown/stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/describe-unknown/stderr",
+      "bytes": 49,
+      "sha256": "95b085649c52d0ea86f90191eadb79d7ff6f9fed18dd48ca8bae667e46c8148b",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/describe-unknown/exit",
+      "bytes": 2,
+      "sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/lint-string-safe/stdout",
+      "bytes": 21,
+      "sha256": "8aa973100a15bf817985395637131e838cf84e427be4792583def923f020f5fa",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/lint-string-safe/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/lint-string-safe/exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/cache-hit-replays-logs/stdout",
+      "bytes": 129,
+      "sha256": "1537319538939559f5d7d4d635ecd915e4a6dfb79e79b692ab4fb43980f5a3fa",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/cache-hit-replays-logs/stderr",
+      "bytes": 10,
+      "sha256": "2da39a2a5fa4a6feac6cd47245ef5a32ff325bea6b6f2ce49fb38599035575ea",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/cache-hit-replays-logs/exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/reserved-output-prefix-is-refused/stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/reserved-output-prefix-is-refused/stderr",
+      "bytes": 113,
+      "sha256": "6e049294a6be598e26cfa1d059ae12336f6079b63672d48dcc00a291a570ef40",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/reserved-output-prefix-is-refused/exit",
+      "bytes": 2,
+      "sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/init-positional-error/stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/init-positional-error/stderr",
+      "bytes": 48,
+      "sha256": "489aafa7734732a9b6e910a7f9ea66e3a9d412b09e03ee8eefdea38db5204075",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/init-positional-error/exit",
+      "bytes": 2,
+      "sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/list-json-basic/stdout",
+      "bytes": 1246,
+      "sha256": "7ded3bef9edb4e988d44ac8d83c4692990b2a92c0c55f98df8e7a35ae2b7da00",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/list-json-basic/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/list-json-basic/exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/no-taskfile-error/stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/no-taskfile-error/stderr",
+      "bytes": 293,
+      "sha256": "dc69c285995dcd0c163a799521595060776bf07b3843b8ed6736feaf92138872",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/no-taskfile-error/exit",
+      "bytes": 2,
+      "sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/migrate-rewrites/stdout",
+      "bytes": 138,
+      "sha256": "c3f3a69c7a3b0e2c2aae2e39e943dd099e9bfb6a229ccbb344f3da4ad0c2a8a3",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/migrate-rewrites/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/migrate-rewrites/fsdelta",
+      "bytes": 16,
+      "sha256": "8567cd224986f8149ad20c1c6a29d8b6724a7c164c03e19cb541fdda13814c25",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/migrate-rewrites/exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/sandbox-undeclared-write/fsdeleted",
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/sandbox-undeclared-write/stdout",
+      "bytes": 44,
+      "sha256": "665295cf40fd960ea88bed7ebd9f0d81424e925452f48a05e537d6f7b38d1d59",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/sandbox-undeclared-write/stderr",
+      "bytes": 137,
+      "sha256": "253978a345e4e649f0449e8fb78442294ef57ea04c8ae5987d76e8769f8a03af",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/sandbox-undeclared-write/fsdelta",
+      "bytes": 18,
+      "sha256": "6d72baf5453d367d385f9e9217714a57cf96bffd8b58258da062c0ecea43e677",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/sandbox-undeclared-write/exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/run-output-from-subdir/stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/run-output-from-subdir/stderr",
+      "bytes": 125,
+      "sha256": "7110b91b2129a80672b191afc3069692c63bc154bea0614bacabf254182af661",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/run-output-from-subdir/fsdelta",
+      "bytes": 11,
+      "sha256": "e74031771482e29b42bd09f33b64e3e0484e44a79981b411a052e81795e60453",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/run-output-from-subdir/exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/cache-hit-skips-command/fsdeleted",
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/cache-hit-skips-command/stdout",
+      "bytes": 99,
+      "sha256": "bb451bb150ca54f4e1835ad32da6edfac56be5cf3dfbaa5019bb4bfa098a01d2",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/cache-hit-skips-command/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/cache-hit-skips-command/fsdelta",
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/cache-hit-skips-command/exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/clean-removes-outputs/fsdeleted",
+      "bytes": 11,
+      "sha256": "e74031771482e29b42bd09f33b64e3e0484e44a79981b411a052e81795e60453",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/clean-removes-outputs/stdout",
+      "bytes": 128,
+      "sha256": "6d38819fe92016841bb877c23d9e4f1cbd4d19dc33c32df1c4ac3f5bbcfde445",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/clean-removes-outputs/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/clean-removes-outputs/exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/no-args/stdout",
+      "bytes": 4109,
+      "sha256": "86ea279a0f436c2ff360cb46ebde48964f7e6777ae2f73976f7431639dde1ecf",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/no-args/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/no-args/exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/migrate-noref-error/stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/migrate-noref-error/stderr",
+      "bytes": 199,
+      "sha256": "b5db99e2defd0377c40fa1b51a859a9e04ec8cf7cccb59a2afcb1f80805893f3",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/migrate-noref-error/exit",
+      "bytes": 2,
+      "sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/completion-fish/stdout",
+      "bytes": 8447,
+      "sha256": "2a881cd4057be15ea87f854e871232c301590c4473060fe734dc0439d9997a70",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/completion-fish/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/completion-fish/exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/lint-rules/stdout",
+      "bytes": 2934,
+      "sha256": "e328ce7cebb8e1bebd45fefc47e24c046c9f1d54a2f7f9db6ba4f7eca213702a",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/lint-rules/stderr",
+      "bytes": 25,
+      "sha256": "0395bc6477d467ae8a5a1c3d877c7b5ea64149ec28678c84c0b213f8eb9446c7",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/lint-rules/exit",
+      "bytes": 2,
+      "sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/doctor-structural/stdout",
+      "bytes": 977,
+      "sha256": "35262d6fe8da8bf399cf0963c2ea68a6df79b3b1b9475f4300c3a288c0651cc0",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/doctor-structural/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/doctor-structural/exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/completion-zsh/stdout",
+      "bytes": 7428,
+      "sha256": "c99144c3cd5a7367bfe991e0482af612618c085df44f4821d56df416cc26aac2",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/completion-zsh/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/completion-zsh/exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/describe-json-deps/stdout",
+      "bytes": 112,
+      "sha256": "f60843f9ce1912056034c779f7fc9562feb90927afeb4347f216e9b6ab22b807",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/describe-json-deps/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/describe-json-deps/exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/describe-json-rich/stdout",
+      "bytes": 453,
+      "sha256": "77f2fa78ca71964365391aff191c70c4b03676b545f100aa691bf089ce27bfaa",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/describe-json-rich/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/describe-json-rich/exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/version/stdout",
+      "bytes": 7,
+      "sha256": "8a932413d42f95082f8323447652379a4885e328329efca3a67ec9c793c09940",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/version/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/version/exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/hooks-install/stdout",
+      "bytes": 296,
+      "sha256": "b2e59414fd2bd229c8c7e5b1c2be5f60d8799869c1ed893b04ac8d96b8346b02",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/hooks-install/stderr",
+      "bytes": 162,
+      "sha256": "a890f4b9edb575326c2e362712d0dccdcbf82c1b470689b534e414af92322f6e",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/hooks-install/fsdelta",
+      "bytes": 47,
+      "sha256": "4ef4edc0963b88d4dd01678c18a78afda4a60ffec46d744461500ab00e27d628",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/hooks-install/exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/artifact-order/stdout",
+      "bytes": 87,
+      "sha256": "73e7d70b5ca875a9ca6a088f875a2f408c815980799b7cbe352526d4945ed31d",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/artifact-order/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/artifact-order/exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/lint-watch-cycle/stdout",
+      "bytes": 922,
+      "sha256": "89a45eb06adf726edd61e71ef074fde033093e377989f361a34faa33ed2c9dcb",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/lint-watch-cycle/stderr",
+      "bytes": 25,
+      "sha256": "32ab5212e0cf403f5ed95aaf4698dffda6295f2fac44f9d1237b0e2e98d2bc5e",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/lint-watch-cycle/exit",
+      "bytes": 2,
+      "sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/lint-clean/stdout",
+      "bytes": 21,
+      "sha256": "8aa973100a15bf817985395637131e838cf84e427be4792583def923f020f5fa",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/lint-clean/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/lint-clean/exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/clean-glob/fsdeleted",
+      "bytes": 23,
+      "sha256": "34cbb84e56193a068f71134ff3a5a5d4814413257d271eb5d4068432a994eb02",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/clean-glob/stdout",
+      "bytes": 236,
+      "sha256": "9c54912458f9b621a58b613cd84490b9e7c824f7aaae45924d65f3f7d9be3b8e",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/clean-glob/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/clean-glob/exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/format-check-fail/stdout",
+      "bytes": 112,
+      "sha256": "5296160ad414fcae208cd3fea87107221fb3baad1d4cc8d6f271764f41195336",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/format-check-fail/stderr",
+      "bytes": 26,
+      "sha256": "312643e97c3ae3015a03f82749fd3d403cff056c839d324561a441426bfc21f0",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/format-check-fail/exit",
+      "bytes": 2,
+      "sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/glob-import-list-json/stdout",
+      "bytes": 695,
+      "sha256": "c0aab32facd4744b1ceb88784d56a768207c1083d45e2e764712854ee6a8e329",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/glob-import-list-json/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/glob-import-list-json/exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/eval-cache-sees-an-edited-import/stdout",
+      "bytes": 16,
+      "sha256": "a5886320ffe64dbdcb86bbe307ad386c383233a8c60d301a8447f5119c8419d7",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/eval-cache-sees-an-edited-import/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/eval-cache-sees-an-edited-import/exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/cache-stats-structural/stdout",
+      "bytes": 136,
+      "sha256": "592a03962df28eb5fea2d1149995135579d85a92110139df4c8e3c7044b067cd",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/cache-stats-structural/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/cache-stats-structural/exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/graph-json-kinds-all/stdout",
+      "bytes": 1781,
+      "sha256": "9b9b641da7dc8aaabec65b48c75e08d476fa4ec21193fd6f0d26fb5f3cc11be2",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/graph-json-kinds-all/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/graph-json-kinds-all/exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/parallel-order/stdout",
+      "bytes": 87,
+      "sha256": "094e314c1dc8ce8b5a3fb5c7c109fa777ca900e8487097864bb055f85ecfff2b",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/parallel-order/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/parallel-order/exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/info-json-basic/stdout",
+      "bytes": 1575,
+      "sha256": "3dd9ca2084dc59ba54cf4a9c7e8c18d5611db032899c93b075279b7279230df8",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/info-json-basic/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/info-json-basic/exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/sandbox-undeclared-read/fsdeleted",
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/sandbox-undeclared-read/stdout",
+      "bytes": 88,
+      "sha256": "d1b9fdd12773e6537bc41a1ca09c9a49936f99ef29258412a7c3014da8f38f10",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/sandbox-undeclared-read/stderr",
+      "bytes": 53,
+      "sha256": "3506e741674ad068f74197ca62d79dc4f12b5eb886ae6790b567c63b15330578",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/sandbox-undeclared-read/fsdelta",
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/sandbox-undeclared-read/exit",
+      "bytes": 2,
+      "sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/unknown-subcommand/stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/unknown-subcommand/stderr",
+      "bytes": 4138,
+      "sha256": "aa82920d4341b9e8b776c70a69e4f5341450dc1d02daefdb91a50ae254dcf2ec",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/unknown-subcommand/exit",
+      "bytes": 2,
+      "sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/help/stdout",
+      "bytes": 4109,
+      "sha256": "86ea279a0f436c2ff360cb46ebde48964f7e6777ae2f73976f7431639dde1ecf",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/help/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/help/exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/clean-dry-run/fsdeleted",
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/clean-dry-run/stdout",
+      "bytes": 62,
+      "sha256": "fccc94ac97a123b64b575603b1474f8f2fa6ff6fe9ac4c36eafa28bfd4038014",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/clean-dry-run/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/golden/clean-dry-run/exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/README.md",
+      "bytes": 1203,
+      "sha256": "b5bce05cf8afb3aa43096896dec83418e7dabdc337d8ece389093fc85fa93da0",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/scenarios.pkl",
+      "bytes": 18309,
+      "sha256": "d607d8f0a4aff9354ce2f3aa1286a0a1a8ecd3f97a7ceb891d92a3399ff9088d",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/fixtures/package-amends/cache-seed/acme/widgets/fixture@1.0.0/fixture@1.0.0.json",
+      "bytes": 120,
+      "sha256": "e7223d138c1c66ea02c9d3c2ef47ded0d7225ed8809ffa95ad443d18ec94e39d",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/fixtures/package-amends/cache-seed/acme/widgets/fixture@1.0.0/package/Taskfile.pkl",
+      "bytes": 14964,
+      "sha256": "5487049a00c96c4c15fab4898af38d5522b42d1a97bdc5fac0e0dc09275ee6fb",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/fixtures/package-amends/expected-list.json",
+      "bytes": 262,
+      "sha256": "d1702939c2caa18d0cd7a0e03df5335fbc7c828ef12592ba9ea1955194997381",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/fixtures/package-amends/consumer/Taskfile.pkl",
+      "bytes": 511,
+      "sha256": "6d67213114776d100559e751677beb9474338ab5620431c67f7fc39bb4425d33",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/src/moon.pkg",
+      "bytes": 540,
+      "sha256": "4406937713e05fb85bc8e2573b68ba9b543b63b4d73ce669a3816553317267d6",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/src/golden.mbt",
+      "bytes": 3047,
+      "sha256": "df766bc68eaee346333140c1408464f1a5450dd4fb31606e352fd19b57d0fc6a",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/src/scenario.mbt",
+      "bytes": 4005,
+      "sha256": "46b4a0c0817c26910a078a60cf58b189119032f625f99c8f31819f98ac397ad2",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/src/main.mbt",
+      "bytes": 3549,
+      "sha256": "bd8333d11e2fe487b69cc7da90809c68e6aaeae7c1fdd55a244e35e23c55f5a5",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/src/pkg.generated.mbti",
+      "bytes": 1521,
+      "sha256": "9fcf2436307a1699e47f944d55925fd72500a43f83d48d305a1ec3d863a529c1",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/src/runner.mbt",
+      "bytes": 6290,
+      "sha256": "af4d10632f07cd007e4dbb89f2798f95bea63695ea7ac08789b29de70945117e",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/src/differ.mbt",
+      "bytes": 11294,
+      "sha256": "7ac39ab9ab02bc3bf86e0c933ecd26c889bc848de4c9a8cf177e935bc70121ec",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "conformance/src/differ_wbtest.mbt",
+      "bytes": 6565,
+      "sha256": "c1fe2cdf9d9cb6bc2779d84f2f9d8e938083d9037104c2892d7499763f389768",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    }
+  ],
+  "hits": [
+    {
+      "path": "docs/auto-inputs.md",
+      "line": 75,
+      "kinds": [
+        "protocol_capture_audit"
+      ],
+      "text": "pkf trace --check build    # audit those reads against the declared inputs",
+      "excerpt_start_column": 1,
+      "match_column": 5
+    },
+    {
+      "path": "docs/auto-inputs.md",
+      "line": 116,
+      "kinds": [
+        "protocol_capture_audit"
+      ],
+      "text": "So `trace` is an auditing tool: it tells you what your `inputs` should",
+      "excerpt_start_column": 1,
+      "match_column": 5
+    },
+    {
+      "path": "docs/superpowers/plans/2026-06-23-phase2d-mutation.md",
+      "line": 90,
+      "kinds": [
+        "protocol_capture_audit"
+      ],
+      "text": "(`--skip-verify` avoids needing the 0.11.0 package available; `migrate-dry-run` makes no fs change.) Capture goldens; build + verify both PASS + diff the rewritten file vs Go. Commit.",
+      "excerpt_start_column": 1,
+      "match_column": 102
+    },
+    {
+      "path": "docs/superpowers/plans/2026-06-23-phase2b-describe-info.md",
+      "line": 167,
+      "kinds": [
+        "ptp_messages"
+      ],
+      "text": "oonBit lacks the defaults' shell/shellFlags, hardcoding the schema defaults matches basic; for a Taskfile overriding defaults it would diverge — note this as a follow-up if MoonBit doesn't parse top-level defaults). Plain form: a readable summary.",
+      "excerpt_start_column": 602,
+      "match_column": 762
+    },
+    {
+      "path": "docs/superpowers/plans/2026-06-23-phase2b-describe-info.md",
+      "line": 181,
+      "kinds": [
+        "ptp_messages"
+      ],
+      "text": "custom shell) aren't parsed, info diverges for a Taskfile that overrides defaults (examples/basic uses the schema defaults, so the scenario passes). Flag for a follow-up if the oracle golden reveals a gap.",
+      "excerpt_start_column": 130,
+      "match_column": 290
+    },
+    {
+      "path": "docs/superpowers/specs/2026-06-22-moonbit-pkf-main-switch-design.md",
+      "line": 130,
+      "kinds": [
+        "protocol_capture_audit"
+      ],
+      "text": "  that builds both binaries, then runs oracle-capture (or verifies committed",
+      "excerpt_start_column": 1,
+      "match_column": 47
+    },
+    {
+      "path": "TODO.md",
+      "line": 3,
+      "kinds": [
+        "ptp_messages"
+      ],
+      "text": "Phase 1–10 + the follow-up items (`pkf watch`, `pkf up`, stat-FFI mode,",
+      "excerpt_start_column": 1,
+      "match_column": 18
+    },
+    {
+      "path": "README.md",
+      "line": 1271,
+      "kinds": [
+        "ptp_messages"
+      ],
+      "text": "#    in a follow-up commit.",
+      "excerpt_start_column": 1,
+      "match_column": 11
+    },
+    {
+      "path": "flake.nix",
+      "line": 24,
+      "kinds": [
+        "ptp_messages"
+      ],
+      "text": "      # regenerates from the freshly built checksums and opens a follow-up PR",
+      "excerpt_start_column": 1,
+      "match_column": 66
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "line": 66,
+      "kinds": [
+        "ptp_messages"
+      ],
+      "text": "only resolves once the release exists. Bump them in a follow-up commit",
+      "excerpt_start_column": 1,
+      "match_column": 55
+    },
+    {
+      "path": "scripts/bump-version.sh",
+      "line": 37,
+      "kinds": [
+        "ptp_messages"
+      ],
+      "text": "# release ships, bump examples in a follow-up commit (see the",
+      "excerpt_start_column": 1,
+      "match_column": 37
+    },
+    {
+      "path": "skills/pkfire/assets/recipes/16-release-version-bump.pkl",
+      "line": 147,
+      "kinds": [
+        "ptp_messages"
+      ],
+      "text": "// Chaining bump + tag (the lower-priority follow-up from #13)",
+      "excerpt_start_column": 1,
+      "match_column": 44
+    },
+    {
+      "path": "src/cmd/pkf/main.mbt",
+      "line": 1849,
+      "kinds": [
+        "ptp_messages"
+      ],
+      "text": "// One GET / PUT per file. Archive support deferred to a follow-up",
+      "excerpt_start_column": 1,
+      "match_column": 58
+    },
+    {
+      "path": "src/cmd/pkf/main.mbt",
+      "line": 5648,
+      "kinds": [
+        "ptp_messages"
+      ],
+      "text": "      // A message may carry a follow-up line (a remediation hint).",
+      "excerpt_start_column": 1,
+      "match_column": 32
+    }
+  ],
+  "text_files": 406,
+  "text_bytes": 1320591,
+  "binary_files": 0,
+  "expanded_bytes": 1320591,
+  "limitations": [],
+  "status": "ok"
+}

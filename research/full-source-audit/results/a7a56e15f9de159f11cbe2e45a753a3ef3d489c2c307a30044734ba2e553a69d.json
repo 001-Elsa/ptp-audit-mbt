@@ -1,0 +1,954 @@
+{
+  "scanner_version": 4,
+  "scanner_sha256": "ebd6aaa6ba6aa3e501c836d1e066932b6a687e9f996924236e2ae8775edc9a39",
+  "name": "Lfan-ke/basex",
+  "version": "0.2.0",
+  "yanked": true,
+  "repository": "https://github.com/Lfan-ke/basex-moonbit",
+  "url": "https://download.mooncakes.io/user/Lfan-ke/basex/0.2.0.zip",
+  "checked_at": "2026-10-19T15:49:47.643335+00:00",
+  "cache_file": "/Users/hanzhen09/.local/share/ptp-audit-tools/mooncakes-source-cache/a7a56e15f9de159f11cbe2e45a753a3ef3d489c2c307a30044734ba2e553a69d.zip",
+  "evidence_file": "/Users/hanzhen09/.local/share/ptp-audit-tools/mooncakes-source-cache/a7a56e15f9de159f11cbe2e45a753a3ef3d489c2c307a30044734ba2e553a69d.zip",
+  "archive_bytes": 90748,
+  "sha256": "e18be64163de0b35147152cbc8784d0e73dfcb4ed3c3b9a4285aa91073cf56b8",
+  "source": "verified_local_cache",
+  "files": [
+    {
+      "path": ".git/COMMIT_EDITMSG",
+      "bytes": 148,
+      "sha256": "bcf5699b57851c92e440372d72ad008db8e43b554293ad40f290b401758872dd",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": ".git/config",
+      "bytes": 307,
+      "sha256": "f5a49d4e55ca5575196d8e420be3b1b76850da49f28847b8139680667ef30c79",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": ".git/description",
+      "bytes": 73,
+      "sha256": "85ab6c163d43a17ea9cf7788308bca1466f1b0a8d1cc92e26e9bf63da4062aee",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": ".git/HEAD",
+      "bytes": 23,
+      "sha256": "f6f2b945f6c411b02ba3da9c7ace88dcf71b6af65ba2e0d89aa82900042b5a10",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": ".git/hooks/applypatch-msg.sample",
+      "bytes": 478,
+      "sha256": "0223497a0b8b033aa58a3a521b8629869386cf7ab0e2f101963d328aa62193f7",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": ".git/hooks/commit-msg.sample",
+      "bytes": 896,
+      "sha256": "1f74d5e9292979b573ebd59741d46cb93ff391acdd083d340b94370753d92437",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": ".git/hooks/fsmonitor-watchman.sample",
+      "bytes": 4726,
+      "sha256": "e0549964e93897b519bd8e333c037e51fff0f88ba13e086a331592bf801fa1d0",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": ".git/hooks/post-update.sample",
+      "bytes": 189,
+      "sha256": "81765af2daef323061dcbc5e61fc16481cb74b3bac9ad8a174b186523586f6c5",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": ".git/hooks/pre-applypatch.sample",
+      "bytes": 424,
+      "sha256": "e15c5b469ea3e0a695bea6f2c82bcf8e62821074939ddd85b77e0007ff165475",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": ".git/hooks/pre-commit.sample",
+      "bytes": 1649,
+      "sha256": "57185b7b9f05239d7ab52db045f5b89eb31348d7b2177eab214f5eb872e1971b",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": ".git/hooks/pre-merge-commit.sample",
+      "bytes": 416,
+      "sha256": "d3825a70337940ebbd0a5c072984e13245920cdf8898bd225c8d27a6dfc9cb53",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": ".git/hooks/pre-push.sample",
+      "bytes": 1374,
+      "sha256": "ecce9c7e04d3f5dd9d8ada81753dd1d549a9634b26770042b58dda00217d086a",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": ".git/hooks/pre-rebase.sample",
+      "bytes": 4898,
+      "sha256": "4febce867790052338076f4e66cc47efb14879d18097d1d61c8261859eaaa7b3",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": ".git/hooks/pre-receive.sample",
+      "bytes": 544,
+      "sha256": "a4c3d2b9c7bb3fd8d1441c31bd4ee71a595d66b44fcf49ddb310252320169989",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": ".git/hooks/prepare-commit-msg.sample",
+      "bytes": 1492,
+      "sha256": "e9ddcaa4189fddd25ed97fc8c789eca7b6ca16390b2392ae3276f0c8e1aa4619",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": ".git/hooks/push-to-checkout.sample",
+      "bytes": 2783,
+      "sha256": "a53d0741798b287c6dd7afa64aee473f305e65d3f49463bb9d7408ec3b12bf5f",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": ".git/hooks/sendemail-validate.sample",
+      "bytes": 2308,
+      "sha256": "44ebfc923dc5466bc009602f0ecf067b9c65459abfe8868ddc49b78e6ced7a92",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": ".git/hooks/update.sample",
+      "bytes": 3650,
+      "sha256": "8d5f2fa83e103cf08b57eaa67521df9194f45cbdbcb37da52ad586097a14d106",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": ".git/index",
+      "bytes": 2489,
+      "sha256": "88fc0ba685914a711bd3494927ecd5a4d1d58e58197f34fea37de3fae1a73d5e",
+      "kind": "binary",
+      "encoding": null,
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": ".git/info/exclude",
+      "bytes": 240,
+      "sha256": "6671fe83b7a07c8932ee89164d1f2793b2318058eb8b98dc5c06ee0a5a3b0ec1",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": ".git/logs/HEAD",
+      "bytes": 460,
+      "sha256": "322872af3d905d8d542394c4f00e3cd1091d93aadc9aeff4bcf6f21382a181ab",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": ".git/logs/refs/heads/master",
+      "bytes": 460,
+      "sha256": "322872af3d905d8d542394c4f00e3cd1091d93aadc9aeff4bcf6f21382a181ab",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": ".git/logs/refs/remotes/origin/master",
+      "bytes": 308,
+      "sha256": "0071fa2f29f06f27bf6d7ce847a2e202d894716654cff5e14cec0e6f14cef37f",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": ".git/objects/02/a4608d09481d137434e008573c266d851025b5",
+      "bytes": 173,
+      "sha256": "33b9f9086ba43b44313fad9875802eb4108a8ea85f657518d67c5ae809d22981",
+      "kind": "binary",
+      "encoding": null,
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": ".git/objects/02/f5a1ebd9a9089c6528268b334508043c90daad",
+      "bytes": 1224,
+      "sha256": "5092b4bbb43d83c2a7e80ec6b755e90951be1201cf3fb57b541f09dd4ffa0049",
+      "kind": "binary",
+      "encoding": null,
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": ".git/objects/05/70f203b72c9a975ce37c719e101ebe6926b885",
+      "bytes": 240,
+      "sha256": "11d28a02a60a9ffb56ee684947c63a6eb3e47e96a8fa23fcbe37d75126aa2ebc",
+      "kind": "binary",
+      "encoding": null,
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": ".git/objects/09/849dd5da1e58e327fa7ff9d4ced326058ee485",
+      "bytes": 567,
+      "sha256": "542291d61c73bb7135a8af79fe01f6932af164a6d4598bd98a7b1401dfa603d2",
+      "kind": "binary",
+      "encoding": null,
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": ".git/objects/1d/2174cb8ed013f3199a0abde2c19a06d428de8a",
+      "bytes": 914,
+      "sha256": "5a587d98bf495af01b9d52d2813b72db54cf52c81e57644d422c3a4f2d08b327",
+      "kind": "binary",
+      "encoding": null,
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": ".git/objects/21/eb5906f350b634cf9f998c60f3be3d4f3e09df",
+      "bytes": 860,
+      "sha256": "aa15c01651e3b3f282a6b372d5f011200f78bd6044ce5a64d2e031abb060f081",
+      "kind": "binary",
+      "encoding": null,
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": ".git/objects/22/cee0a0d6cd05c41eff46bc920dacbeae0f6a97",
+      "bytes": 586,
+      "sha256": "8780b0983ce2dc139700912f7263a35e40824201b92dce54cc1c2c90abea87d8",
+      "kind": "binary",
+      "encoding": null,
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": ".git/objects/24/ed1e2f1ff047fefb9533529b8a68787e665fa1",
+      "bytes": 729,
+      "sha256": "cf186bb646397e84487c790a22ff92695cabd81b05f794390583ae8ba95ca888",
+      "kind": "binary",
+      "encoding": null,
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": ".git/objects/35/4e519e47d5cf086b9bd0824fa9d5d024b5749a",
+      "bytes": 1106,
+      "sha256": "2adeb5f59fae12324705406fd2091f13d729abb10d2a845d38e7c0eb28737d7e",
+      "kind": "binary",
+      "encoding": null,
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": ".git/objects/41/629e786dcc07d1b4be77032e17770539352bf5",
+      "bytes": 56,
+      "sha256": "eb60fd18595c1be946f13fe763625013e9b782910c3f2ce095fc5b2e99e4a240",
+      "kind": "binary",
+      "encoding": null,
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": ".git/objects/44/19afaef895a98ce025ce0ef80e2b04bff9abca",
+      "bytes": 1382,
+      "sha256": "5a6d0472752837737ba53c89c031f122c5cb1f4deb9c55b446b41363c288a654",
+      "kind": "binary",
+      "encoding": null,
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": ".git/objects/4d/2a240adb2c8d151ea628c04c6d389bff1d7d49",
+      "bytes": 118,
+      "sha256": "5664c481ea685b9c8e14f14885dc1c6fa3ada305f16e316aece5d0d409b15867",
+      "kind": "binary",
+      "encoding": null,
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": ".git/objects/6b/c177f1d820319a4ce827d9f60dd7b008df70d1",
+      "bytes": 715,
+      "sha256": "6a27c09e895f1b2c5d601a9240fc250886d6dd12a3c2ee53dce4158d8461bbb1",
+      "kind": "binary",
+      "encoding": null,
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": ".git/objects/6f/0b42c6897076e8444567f6a244e588adeb1831",
+      "bytes": 3997,
+      "sha256": "d4a2abfa2a912cdb642b184551b83c4da39d25d9a55edc00c765fffd963ce8e6",
+      "kind": "binary",
+      "encoding": null,
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": ".git/objects/6f/8730ab289d8b95935723ee78e591fc09f08eac",
+      "bytes": 115,
+      "sha256": "32ab2e459c41817ebb2adb1d8fc99bd12a601b7c67dcee6cca95b320a20ed89a",
+      "kind": "binary",
+      "encoding": null,
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": ".git/objects/70/cbc086cd97a2bc3629d4d0c3955ba83fa58d05",
+      "bytes": 300,
+      "sha256": "0a8fe3ede259af74dfb55513c2e4f9789fadcefc220f18ff9a10f26337a31e7e",
+      "kind": "binary",
+      "encoding": null,
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": ".git/objects/7b/ad0730b22693edae8adf007070f4e285c7950f",
+      "bytes": 105,
+      "sha256": "d1c245aaa5a7b20ac874d3fa874552fd973c11e8163637796a600af8817eefae",
+      "kind": "binary",
+      "encoding": null,
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": ".git/objects/7e/4340af50a4e9897b086a655ff39d71e976eb09",
+      "bytes": 591,
+      "sha256": "6d7d17fd40d4533d0791c05c960aeb85e3b955ad859125df12f6a054719f6684",
+      "kind": "binary",
+      "encoding": null,
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": ".git/objects/7f/fecc37e6f02d8eafed00a82e679086c0b44ce1",
+      "bytes": 461,
+      "sha256": "975eb3f477f6265371da6c2e95c178d7b53b54b3650a060669db0236d1b50a07",
+      "kind": "binary",
+      "encoding": null,
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": ".git/objects/80/18714c224f0182e9924b482ecef8d2839a5523",
+      "bytes": 2289,
+      "sha256": "069b47c4a5872c348e1729baa94e845800f896eb1cda768fedc9335c6a97a9f6",
+      "kind": "binary",
+      "encoding": null,
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": ".git/objects/8c/5bf00d29f47810dfa5b3fa6e4d108e1ded6425",
+      "bytes": 479,
+      "sha256": "73d8e0837c840425984f9b04053f8fe91355698f9376bd587fd2e9c47e443106",
+      "kind": "binary",
+      "encoding": null,
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": ".git/objects/8c/85329c6f528161a9eebe207e3f7b8fe7966453",
+      "bytes": 919,
+      "sha256": "46655abf692b2e523333c6f724ed1415ea23ae13405859c2908e9ec410ef9605",
+      "kind": "binary",
+      "encoding": null,
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": ".git/objects/8e/6239afbe910f4118e48cad8536bb90c29e77db",
+      "bytes": 930,
+      "sha256": "c0a64326ae2a478ec97668491297a1a0e2eef95dc448ae54c117c9b918f1d160",
+      "kind": "binary",
+      "encoding": null,
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": ".git/objects/93/20eae05ebc5725f44fe43cd5d303d4ecc4919d",
+      "bytes": 118,
+      "sha256": "9234ca88d315e8edf91e42e0d11522da409b731766de34e36018f53377dc0113",
+      "kind": "binary",
+      "encoding": null,
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": ".git/objects/93/54bc85595b390cbf6e657a52a9881f07339e61",
+      "bytes": 119,
+      "sha256": "21b4dd9010c2043b119634d07978f7deadbf3a8bf39c10a288d644358d88d82f",
+      "kind": "binary",
+      "encoding": null,
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": ".git/objects/9f/f5fe873b0a0892a5a1db25512fa8a67aa12348",
+      "bytes": 83,
+      "sha256": "0bd213f3944f94ee7200c9dc31d5e7bbc786d327466503a4bf6ce2d4fb7c0726",
+      "kind": "binary",
+      "encoding": null,
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": ".git/objects/ac/c4fd11ad2505fbaac0c94a3cd58ed864815399",
+      "bytes": 118,
+      "sha256": "a4e8bf8d81c85a426afcf1c1ea0d5ad9c0d5a5d4bbe27220fc3c9dc77d27b8a9",
+      "kind": "binary",
+      "encoding": null,
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": ".git/objects/b8/8e60ed2fa07d9ab4919fe33677a61949835acb",
+      "bytes": 153,
+      "sha256": "b006dbd36296a926cb14fea051b7c3738444d704dad261594f8cc1c9c668998a",
+      "kind": "binary",
+      "encoding": null,
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": ".git/objects/c8/2d3629a6f931c64fa8f5d9486d0bf6d6bd01f1",
+      "bytes": 142,
+      "sha256": "b84bab85da2e64b331edddb4f91fe994f1516ec92b653fc838df11558b31583f",
+      "kind": "binary",
+      "encoding": null,
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": ".git/objects/ca/8d67ff3886946ad2faa99e8d55a63549d2136a",
+      "bytes": 42,
+      "sha256": "d3cb9122d7c02bf3f628746ef0ef5e1b1d5725e673689a180fe6ebd461d1295d",
+      "kind": "binary",
+      "encoding": null,
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": ".git/objects/d0/4cd65680283a27a2e1c89a2be8d64a0d96d82b",
+      "bytes": 118,
+      "sha256": "efab09e426d0ccab2a195deb7141498c4a637e6a5f18b96cd74779e463cb8b70",
+      "kind": "binary",
+      "encoding": null,
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": ".git/objects/d6/45695673349e3947e8e5ae42332d0ac3164cd7",
+      "bytes": 4447,
+      "sha256": "6cad7f9445796e52cfa45ae7fd935574b0c4d919e50384a74210e95115bece77",
+      "kind": "binary",
+      "encoding": null,
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": ".git/objects/dd/146483338672bda2f9a7753f0daa7ec376c7e2",
+      "bytes": 276,
+      "sha256": "811bfef91fda5c85e634de2b61cafc0ba4aa68296f827f48a1213effb94cc800",
+      "kind": "binary",
+      "encoding": null,
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": ".git/objects/df/9d4faec682f0ade921f1eccbc727b969c56512",
+      "bytes": 2726,
+      "sha256": "7ca5f3db090613eebc05afc8ad0b5b55bf6354cbd8035566484746703bb46c0b",
+      "kind": "binary",
+      "encoding": null,
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": ".git/objects/e0/360ff3ad94cdbf0ac07693bd9c55a6ee337fb6",
+      "bytes": 111,
+      "sha256": "8360795096a8f9997693c927bf1d3561cf5516d85e8950a81508714fa38c0c6b",
+      "kind": "binary",
+      "encoding": null,
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": ".git/objects/e3/0954e4c2a624d5da774ec733fc2af235513481",
+      "bytes": 1618,
+      "sha256": "b4f731b27109260f8adeb5ae829d2e82aba1d5825b80f2e638345ed579b64034",
+      "kind": "binary",
+      "encoding": null,
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": ".git/objects/e6/98f253da01e5519dcc17a637143d7c1fed4324",
+      "bytes": 55,
+      "sha256": "a00549dfa56d454924d5aa0bea765acf24493aad1443ea5e198369feef7c6aeb",
+      "kind": "binary",
+      "encoding": null,
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": ".git/objects/f3/8899a1fdaea63783809b18d1367359a5e7fa50",
+      "bytes": 964,
+      "sha256": "aad20489618102231c9ff97f03263fc61fee7eeb6b78674f16d291e7e3a6e6c9",
+      "kind": "binary",
+      "encoding": null,
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": ".git/objects/f3/fea4caea19128b0a064878c6c81779412e21ed",
+      "bytes": 590,
+      "sha256": "f4733b854c182f4fb162e18dcdcf0151b0adf10743b211e9a7b3eed8a3ef1559",
+      "kind": "binary",
+      "encoding": null,
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": ".git/objects/f9/e71fa16d6498854d84d72908f825583775e45e",
+      "bytes": 919,
+      "sha256": "e0132920e32fce917a71164cdfc5b2582876e0954d9bebafb05dae29154f2261",
+      "kind": "binary",
+      "encoding": null,
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": ".git/objects/fa/edfa7ea9f538eb38276b1c9a6e05ed62363534",
+      "bytes": 119,
+      "sha256": "eb9eb6247e1dbbd974fe311a97e8475144b2dad393347738dc8ab4e42fd20ea2",
+      "kind": "binary",
+      "encoding": null,
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": ".git/refs/heads/master",
+      "bytes": 41,
+      "sha256": "80a78c829786bf5722805c14df69fb975d27c0e1ee43d6ffc68d52d70d4f8262",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": ".git/refs/remotes/origin/master",
+      "bytes": 41,
+      "sha256": "80a78c829786bf5722805c14df69fb975d27c0e1ee43d6ffc68d52d70d4f8262",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 26,
+      "sha256": "60534a67cdabeefdbc6baa4fe8487e9bec078f4f95f36d0196aaf305c3bc6ae8",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "base16/base16.mbt",
+      "bytes": 1964,
+      "sha256": "d5f69bd3270cba477b1e486c38516b12a3d388362103b10e586d64fcf4b96131",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "base16/base16_test.mbt",
+      "bytes": 1574,
+      "sha256": "cdebaab95e3132a40fd98260a78b114016616ca68ea74a4651a57f5a622f6951",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "base16/moon.pkg",
+      "bytes": 164,
+      "sha256": "9ca0143d1655be217d40cb5ec267ffa06f7b598bbd1d384f55a64bd4180a442d",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "base32/base32.mbt",
+      "bytes": 3036,
+      "sha256": "e9973b937c311faa3d0b7df2b635eb1aebfc2682759cadf809b605df3adc6a5c",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "base32/base32_test.mbt",
+      "bytes": 1418,
+      "sha256": "3bd813bfefeb0544fbcf1080939e5bfdccced1c418deacb8ecf035e85ea50ac1",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "base32/moon.pkg",
+      "bytes": 140,
+      "sha256": "27405e2ffb2575fff623525a4648f97b1b7308a483eab24bc3444c6f983e2ce1",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "base36/base36.mbt",
+      "bytes": 1882,
+      "sha256": "c5372c797a6289fc7ada235dab6a2849b5d4a4c8d8e0d7e4c96f58c8aec087dd",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "base36/base36_test.mbt",
+      "bytes": 1196,
+      "sha256": "cc4f5e2f96379a300542bf720b8a7a5e763b51fe86c494adaf6cc218352089c3",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "base36/moon.pkg",
+      "bytes": 108,
+      "sha256": "f49ee7428d2afaddf15efd14010164186fadabdbdc7cc58949d1c8df8fc14805",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "base58/base58.mbt",
+      "bytes": 761,
+      "sha256": "0fd014706488504ac457c12717ec79cc0647142b31da9baf6d9366ba3677b262",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "base58/base58_test.mbt",
+      "bytes": 1710,
+      "sha256": "f90e7d45b05f0909f807ce59d731e479d50d1817d323932d26d678da8e1d01cc",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "base58/moon.pkg",
+      "bytes": 98,
+      "sha256": "a25f832c9ae70e1df571aa05ed573c115869ea0a0e877ea3ee22c2b3297c54a6",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "base62/base62.mbt",
+      "bytes": 1881,
+      "sha256": "87c6a34904fe1d1f0981cc5f62e4ed2778eb1d9081f4902aef483af6a0ad8971",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "base62/base62_test.mbt",
+      "bytes": 1297,
+      "sha256": "1052a54a596179fffdd03c25de9483d4d79ed9ff40683c2dedb45827582f990f",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "base62/moon.pkg",
+      "bytes": 102,
+      "sha256": "1b4cabb714a3aa1128f00d81850fa9f3b028ad92ed610cacd9c50e921ac6b636",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "base64/base64.mbt",
+      "bytes": 3849,
+      "sha256": "db1dbafea58acc8b4e3d55f3417f5322577e4872422599641e1dded2f249b5c3",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "base64/base64_test.mbt",
+      "bytes": 1735,
+      "sha256": "aa74d718bd611b2886adbaf2514b2379c47d397aeb24674b6f722cbda605b6d3",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "base64/moon.pkg",
+      "bytes": 182,
+      "sha256": "4484acb66d6d016cdfb17fcea2c779932aea8c14432e0a43cb1ecc3578fbd2b8",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "basex.mbt",
+      "bytes": 4106,
+      "sha256": "d3cddde0687d9bccad5931285394fedbb9857b2c214119a3f65c1e48762c0891",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "basex_test.mbt",
+      "bytes": 1338,
+      "sha256": "0bf3b4cae1f154b8ddfe4c2959d5f96e4320092adb83900a0e84008f1358da58",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "docs/index.html",
+      "bytes": 13699,
+      "sha256": "68afc2247fae5c1671a4d90e2c2e1ed2f8d9b7b3b73e0ecee25f212d35cf5646",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "moon.mod",
+      "bytes": 412,
+      "sha256": "bd0375d5eabb26ddccd155063cb376b96b94e045cb61ced08996d08b9779dec0",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "moon.pkg",
+      "bytes": 79,
+      "sha256": "0878e01fa091d111f66d04639c5e10510b1823689f4b8caa5c5dc0a9446b6abf",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "README.md",
+      "bytes": 5145,
+      "sha256": "edd9c4718d14167567681f15faaca981d4a25e7814e31df524ac1d630049b2df",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "scripts/gen_docs.py",
+      "bytes": 5914,
+      "sha256": "515ed9762de54dbc8be8f1df4339140ae9c8dbc2d1d53a067d0fda090d3e6a8f",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    }
+  ],
+  "hits": [],
+  "text_files": 51,
+  "text_bytes": 93102,
+  "binary_files": 42,
+  "expanded_bytes": 127165,
+  "limitations": [],
+  "status": "ok"
+}

@@ -1,0 +1,2304 @@
+{
+  "scanner_version": 4,
+  "scanner_sha256": "ebd6aaa6ba6aa3e501c836d1e066932b6a687e9f996924236e2ae8775edc9a39",
+  "name": "Milky2018/wasmoon_jit",
+  "version": "0.17.0",
+  "yanked": false,
+  "repository": "https://github.com/Milky2018/wasmoon.git",
+  "url": "https://download.mooncakes.io/user/Milky2018/wasmoon_jit/0.17.0.zip",
+  "checked_at": "2026-10-19T15:50:40.389127+00:00",
+  "cache_file": "/Users/hanzhen09/.local/share/ptp-audit-tools/mooncakes-source-cache/2c95329eb0b539762a2c1449579f37337402220914b00f630ce6d4425f2a1437.zip",
+  "evidence_file": "/Users/hanzhen09/.local/share/ptp-audit-tools/mooncakes-source-cache/2c95329eb0b539762a2c1449579f37337402220914b00f630ce6d4425f2a1437.zip",
+  "archive_bytes": 378233,
+  "sha256": "2d075b903c9d4cb768643d785588426d0ac90a8c339a17b368c1e7c916ecaba7",
+  "source": "verified_local_cache",
+  "files": [
+    {
+      "path": "native_exception_test.mbt",
+      "bytes": 2700,
+      "sha256": "6e064cd053520a2086b428dd60c7882803ac5947b50cfd1b36a0e43db59438e5",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "native_callable.mbt",
+      "bytes": 2285,
+      "sha256": "6880e617af040ce51dcfef2e617e86e45733232fbaafcbbfaa1480700e00b6dd",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "moon.pkg",
+      "bytes": 1022,
+      "sha256": "0b6ddec15fa9ac1f6db1802c0e143406c0efb91be1c2e4fd31e267c5e382e2ca",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "artifact_producer.mbt",
+      "bytes": 9750,
+      "sha256": "b8480cbe8576b8948483cf6e18d70328dc57a39f2a7d8b5022784cfaa07a094a",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "moon.mod",
+      "bytes": 609,
+      "sha256": "5d25d3b2c50392a2bd8675c38f64776d5b6eeabbd45164350153539139a4eebc",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "native_runtime.mbt",
+      "bytes": 4270,
+      "sha256": "12899ee9986741d3f9a3daf7ffff597163cb4b291c7494a7e85fed36b25c42d9",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "jit_code_object.mbt",
+      "bytes": 4523,
+      "sha256": "77e8ffd0e7c69ca42076670ae149aa2ef5a5fc96746a0b678f4c34479080e886",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "trait_extensions.mbt",
+      "bytes": 2121,
+      "sha256": "7518db773f943dfb4e332edde94b3863e74d69628298bae1e401db2df634b1dd",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "wasmoon_jit_test.mbt",
+      "bytes": 66831,
+      "sha256": "fdca81de0854674cb3082ec221581233924e8b12b50dee2db0032155d416c82b",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "context/layout/moon.pkg",
+      "bytes": 42,
+      "sha256": "655dcb5578915d0fb6eb81df39dbe9aff626b791f86a6c13765b1e394bae77f1",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "context/layout/pkg.generated.mbti",
+      "bytes": 778,
+      "sha256": "10d9a44d013da781c6e7f4b44647b02fa31acfc4c4d3127349804ee637a45701",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "context/layout/layout_test.mbt",
+      "bytes": 1382,
+      "sha256": "6004d4e423d796a3989198c6a8d7f5fa5e0968962eaf9f2c90c9be52c891d625",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "context/layout/layout.mbt",
+      "bytes": 3564,
+      "sha256": "d71c0c4cf2db2b40919b25041bcafb2162c63ef81caf6391b5bc2817669a793f",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "artifact_loader.mbt",
+      "bytes": 3141,
+      "sha256": "78674d07a0d0ba547c13b126478c2c084d41a47cad033ead17f385ba39652825",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "invocation_control.mbt",
+      "bytes": 2013,
+      "sha256": "7d1200e2ec702eed261c1bc3654825efeac3deaea4f499a5ba65d1d64853663c",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "native/execution/moon.pkg",
+      "bytes": 77,
+      "sha256": "eae619ef09c45532b87d24d5dd3d8a633ed2ee0ee50e87e78cda1cd185640b27",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "native/execution/arenas.mbt",
+      "bytes": 82,
+      "sha256": "eb1032ccf3950351446fdd83004c340d876ffe041caf4dbaf95f4f64b4ecae43",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "native/execution/trait_extensions.mbt",
+      "bytes": 459,
+      "sha256": "0eaa26ac7321c273192aed74360312217d84bd061b7ca6e3d746e49c59963acc",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "native/execution/pkg.generated.mbti",
+      "bytes": 2857,
+      "sha256": "2f84cb429135c66c33b5a996c6680279a54629756777fe4bfe6823042fbce01d",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "native/execution/state_test.mbt",
+      "bytes": 2993,
+      "sha256": "6e91c8e135b11cc26acb9879483553fd88e18ffc18cf477f4041a220c332dbfe",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "native/execution/state.mbt",
+      "bytes": 8794,
+      "sha256": "8dd1005077804862d6225622ed8ce245013e3d5455d09eaf5cf38d1aa8d75b29",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "native/callable/moon.pkg",
+      "bytes": 46,
+      "sha256": "b84e7652595de601478b696b3eb4e35cb0d79ebac5249eb4d2849fcf46662348",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "native/callable/registry.mbt",
+      "bytes": 3247,
+      "sha256": "c24a3d300fdf9d1484d28aa71dd7c0ff4c1969d76e63a2c0d62ecfcb75e8459f",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "native/callable/pkg.generated.mbti",
+      "bytes": 667,
+      "sha256": "6a3183185372a380ce38fd8580eb7da1f0352068130712ed4940ef03758f535b",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "native/callable/registry.h",
+      "bytes": 415,
+      "sha256": "b0fb5f322d2b42802ddb921d880a1ae05ac626eb061cd4cbeefbec5d6a131252",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "native/callable/view.mbt",
+      "bytes": 485,
+      "sha256": "52f0b01fd9b6aef9d5cc54bf9da72ed19139ed31606ef9a7a9791fc63cabd98f",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "native/callable/registry.c",
+      "bytes": 1092,
+      "sha256": "b00a4c073abadbff9a41506e161fce6dc2c6f4513c7839c488aaab389900f039",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "target_metrics.mbt",
+      "bytes": 6222,
+      "sha256": "92b216ee1949da139e55ec774eb8a8e35de50b15cf487dd5d37d427636ffbcb9",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "native_fiber_protocol.mbt",
+      "bytes": 4913,
+      "sha256": "ac2b421e8b4abae92236cf55c422526e525d185286f099d8cee10d600ef7e240",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "artifact_producer_wbtest.mbt",
+      "bytes": 7455,
+      "sha256": "d48dc59aeb8ca81af1893801f0b589a277d4023817f3d37981b601b357e91477",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "entry_trampoline.mbt",
+      "bytes": 5257,
+      "sha256": "54bebf34846a5094c6aa03a42bdcc363e05ba4b5f8317252b387beaa7e05c5f7",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "compiled_function.mbt",
+      "bytes": 3043,
+      "sha256": "a514e3e0aed2fe07dfc3bbba06f86a3fabf7fd4d8d20a3b2759ebae5c67b8103",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "native_fiber_protocol_wbtest.mbt",
+      "bytes": 1807,
+      "sha256": "70a591d7dcd8e7695059bf11492ffdbe4889ce2614002cacf62e97671daea896",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "context_layout_wbtest.mbt",
+      "bytes": 1225,
+      "sha256": "20334046702cce5c779637a573e32a16c5ade097f141cbb01c96e0582e741a02",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "native_hostcall.mbt",
+      "bytes": 1137,
+      "sha256": "318bfd19a03c7d88b210291134d8f030e76ec47ff71ced838a8493b1c66fc025",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "ref_encoding.mbt",
+      "bytes": 2278,
+      "sha256": "e8010b7e73536348f7b8b9a9a727b44dbbbf26a6f6458e1cf83988d2626eb800",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "pkg.generated.mbti",
+      "bytes": 32302,
+      "sha256": "2161cc7e2d7c4db5343286fc9990ca3924ab653f20cd1062501490041216b8b4",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "native_atomic_wait.mbt",
+      "bytes": 2184,
+      "sha256": "f95492ea2870cb4bc92f8aa73bb6e25deba0cd088b8c222073dad7717876761b",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "x64_target.mbt",
+      "bytes": 466,
+      "sha256": "6bb85f15f7c462ec9c8e9897114fefddc26764265e39088b21e93ead05abd23a",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "native_atomic_wait_test.mbt",
+      "bytes": 1403,
+      "sha256": "3ba71a1e48e78cba578fc6bfe8a9af20827d1e69467df28632887b6017a89a40",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "gc_wbtest.mbt",
+      "bytes": 16715,
+      "sha256": "1ad8bd9f3fb2d46fe818e814c9fe24039fdd655cb4fa837b0780b18c7322a4ef",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "native_ffi.mbt",
+      "bytes": 37099,
+      "sha256": "565aa416fa8214b78ed3ee1b001887ac1158098756068fd9590401cdf85eba90",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "native_continuation_test.mbt",
+      "bytes": 22437,
+      "sha256": "dc37d559a0976fc6f3eb08c34622a6f7c774e14975b616006779c8db25bf25af",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "debug_metadata.mbt",
+      "bytes": 4209,
+      "sha256": "196d678c348d7eb67570d2cadc1c74dcc981c6ac4934f49620853f776659d50e",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "hostcall_import_trampoline.mbt",
+      "bytes": 33514,
+      "sha256": "d7678003477f5f411709ccc4aef11348e50da04666485befc36a4675300edc4e",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "native_atomic.mbt",
+      "bytes": 1045,
+      "sha256": "224d73dc6f7f345626c02075328ff55634bfede8ef8993504753902642f3cf2d",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "aarch64_target.mbt",
+      "bytes": 494,
+      "sha256": "5825f60791dfd367566d646776604680ba9c3a4a5bd257abcce9ab7f6d504293",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "dwarf.mbt",
+      "bytes": 5916,
+      "sha256": "6615fb2a6dcccc0bd1aaed0edf57594985df85aeb366a102f889c79d4dbbfc9c",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "native_execution_state.mbt",
+      "bytes": 215,
+      "sha256": "d93e7009446c78158517aceaf8974726e0a123a3b59cd95890de60918a500f11",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "native_context.mbt",
+      "bytes": 651,
+      "sha256": "7019cf0064d53d7e4e8aad8efbc7dbf36941024a7e0bbfadc980b8c1ce915d54",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "README.mbt.md",
+      "bytes": 8353,
+      "sha256": "627d4f325c60bf2a508cb43b9e75a0ba38a10a72180d2ec451a271f7b81cc91a",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "import_trampolines.mbt",
+      "bytes": 1438,
+      "sha256": "b53fc8f389ca88dc2ac10e355cbc00bd9c4b0e2e094547dd67dc25b0d2c28018",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "c_heap.mbt",
+      "bytes": 18390,
+      "sha256": "ad4692bf4fc406363d4e7623fa2dda4fbfe0d0781153c2837fb7c10de011ece3",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "profiler_wbtest.mbt",
+      "bytes": 3906,
+      "sha256": "2bcea210806bb299e004ae953370900c4c43b81883b60f4d7968cb589ef760cd",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "runtime_symbols.mbt",
+      "bytes": 5433,
+      "sha256": "46e5324e3ef1361872e75b13281fbe690f33b9747da0a2380d2669af39023eeb",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "profiler.mbt",
+      "bytes": 6397,
+      "sha256": "234f33383ce69ce8ea7a7437a0b7919755f43dc05e09d045099209f27575afa9",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "native_context_execution.mbt",
+      "bytes": 9494,
+      "sha256": "1743889b43bf8d1c917c4a90ed84ca3fc635b5c20204c7e1204759e9472a5663",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "native_wasm_lower.mbt",
+      "bytes": 12903,
+      "sha256": "5763bdc63fb87a04bc59ba992a99f5c2e8fa165437e70f491684083d5723d6b2",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "artifact_installer.mbt",
+      "bytes": 179,
+      "sha256": "def54971e8455015612225e135efb8d1601ebb9dc928ee2330458af21b05dac3",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "jit_ffi/gc_ops.c",
+      "bytes": 34247,
+      "sha256": "6da0fa874c30f4e785f9917c8e8d1647f39776c6e75ba028a270b41ba692a841",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "jit_ffi/moon.pkg",
+      "bytes": 1048,
+      "sha256": "8d89f9faf17b968b94fd8756e2c122c94954ae412b8736fa2400f89b0cb522b4",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "jit_ffi/windows_context_x86_64.asm",
+      "bytes": 2007,
+      "sha256": "8e414c0c40b5d9b0afc22ac68cb8761ba725e3f5df79e898eb339a78e7631970",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "jit_ffi/stack_switch_aarch64.S",
+      "bytes": 1409,
+      "sha256": "d8a6bc63fa66b2c34af61841e4be05d95298e6b03a9cfc8652432d279e16d812",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "jit_ffi/jit.c",
+      "bytes": 72092,
+      "sha256": "2ac4e33e64cdfbeed8b607c29fd44738373695abbda454e09f9fd154cc68291e",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "jit_ffi/trampoline_call_x86_64.S",
+      "bytes": 2738,
+      "sha256": "b6c020aa595647c9721d98b192f16856e6cacf8b1b3de5958b76f22f6fa9617a",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "jit_ffi/quota.h",
+      "bytes": 1120,
+      "sha256": "b7add9803fcc37e5b98f1de4c7d9311e76288b964371b11b5ae7cd17f53e7255",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "jit_ffi/atomic_wait.c",
+      "bytes": 7487,
+      "sha256": "43ecb8e719048a4726f451c7a48402f8c1f331aaec28e35a540ba22b5714465b",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "jit_ffi/jit_context.c",
+      "bytes": 35792,
+      "sha256": "d91cec5492c1f1e883b146d75b823a0263454c96d44be1c426b51370f986e5da",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "jit_ffi/platform.mbt",
+      "bytes": 109,
+      "sha256": "a1ae5c48a936f89bea6db70b8dfd37db85996ca126f1e9d2f195b01cfba36587",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "jit_ffi/trap_codes.h",
+      "bytes": 2153,
+      "sha256": "845e342cb4a33629b6a3538483f1b9fdbdf72e6b391a48b230088a6b9874d4a2",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "jit_ffi/segment_ops.c",
+      "bytes": 34590,
+      "sha256": "12ca1efbfe990bbd5c2465cf47ce50aa9ab012910e06decf883a7eed7b53c2d9",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "jit_ffi/native_alloc.c",
+      "bytes": 851,
+      "sha256": "3704bb8f8a43e11eb5f7998a938b04cdb792888bcb890b44e863af38f26d0c64",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "jit_ffi/fiber_protocol.h",
+      "bytes": 933,
+      "sha256": "6b680f3b893c761e52ca62980b4ccec1e96821e26eeef3f454856a5dcf0ba307",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "jit_ffi/cleanup.mbt",
+      "bytes": 657,
+      "sha256": "955fe3e25684244fa8db503c7d61b527542564b99f09e4c7ed12f86914ec2d94",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "jit_ffi/trampoline_call_x86_64.asm",
+      "bytes": 1348,
+      "sha256": "6f4a054b2de9e837081cf9e41ecb4eefa7e28f5e2628b8fcb5531bd0c47547ec",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "jit_ffi/ffi_callbacks.h",
+      "bytes": 563,
+      "sha256": "276c02f264e445f0a81b762133e66a7174558ab20c47818c418c820b9f755fa2",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "jit_ffi/gc_heap.mbt",
+      "bytes": 2971,
+      "sha256": "ca65a5c49050fdda8348fb00a6dd86d63513d88615d349e646f1cb655ae7299a",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "jit_ffi/exception.c",
+      "bytes": 34174,
+      "sha256": "1396518cf051b38c1205e2e16f1946db8078d62168b74468c1cdd8556c5bd9c9",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "jit_ffi/stack_switch_x86_64.S",
+      "bytes": 1030,
+      "sha256": "39af93b5d4fac2724cd82f02eeeb74963027d0ef0226f63d27952f23d7a2062e",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "jit_ffi/gc_heap.c",
+      "bytes": 55496,
+      "sha256": "3c4a0199d0831ba0838da2d67e8b292d76d1a3c5495304297ef6c3ca7f2d91cc",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "jit_ffi/pkg.generated.mbti",
+      "bytes": 5928,
+      "sha256": "ead0ceb1fb8bcb5130ca58e1a24c16e177ea89fa07934a80607f8ff4f1d90ce2",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "jit_ffi/dwarf.h",
+      "bytes": 1602,
+      "sha256": "7c1292f26223248792f71afaa13244597d6cd00b738183b3f262a09a832ebfd7",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "jit_ffi/atomic.c",
+      "bytes": 3296,
+      "sha256": "d64241115abfe15ce6d7575dfb170b2f40912960ad3d1272e8daa0fb060df62c",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "jit_ffi/gc_allocator.c",
+      "bytes": 2734,
+      "sha256": "1ad99a1bc123415a4c7545a3815ec8e500de4a8abc41dcd5739067c542cb0e22",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "jit_ffi/fiber.c",
+      "bytes": 21770,
+      "sha256": "24a5465fae869ab5601b2e808a1330b90e54dcb9b8d8e7bb7c555f08b12a6fd9",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "jit_ffi/exec_mem.c",
+      "bytes": 7544,
+      "sha256": "0351f801423824645438fc14ae6a4230442618d12a9202ff094d1a280e1e984d",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "jit_ffi/stack_switch_x86_64.asm",
+      "bytes": 71,
+      "sha256": "44d2a9558974107abad1a96487a038310037329d046b7bdf277b5f97b80d8471",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "jit_ffi/guest_continuation.c",
+      "bytes": 28074,
+      "sha256": "50d6bafc77e750584e3d22a10ae0d94f15e70c65b7ff72b22f625dfc4c3ba25f",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "jit_ffi/exceptions_wbtest.mbt",
+      "bytes": 2662,
+      "sha256": "a47b4bd5629749859fecafdb4c434cb5efc43452bab117224e49e8480b183622",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "jit_ffi/testing/trap_test_support.c",
+      "bytes": 3225,
+      "sha256": "97d9ab3f20fb8238aac781815d4370b57d0bfdf1566bc61220e0af1922cca786",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "jit_ffi/testing/fiber_register_probe_x86_64.asm",
+      "bytes": 409,
+      "sha256": "99aac3c3f1671bc6c2dbc977f6412175e78387f7495232850aca4c5644422872",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "jit_ffi/testing/fiber_register_probe_x86_64.S",
+      "bytes": 788,
+      "sha256": "8877d7d4d7d6789b46ac69e2ecb1cfb0f4b9204118901419e292f35a3fdb3a7d",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "jit_ffi/testing/failure_test_support.c",
+      "bytes": 3085,
+      "sha256": "bdc1eee4711f3d9ff51d33a96d071c5b0d08028f2d43d100858fe98ece51b736",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "jit_ffi/testing/fiber_test_support.c",
+      "bytes": 12848,
+      "sha256": "f1376c5a04f7fc557cb15dd00d47dd1ce1cc5088715d9243177dae26350d222e",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "jit_ffi/testing/fiber_register_probe_aarch64.asm",
+      "bytes": 71,
+      "sha256": "44d2a9558974107abad1a96487a038310037329d046b7bdf277b5f97b80d8471",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "jit_ffi/testing/context_test_support.c",
+      "bytes": 22947,
+      "sha256": "a22115ca4b3dc9333fdb816a42c8faba8c8938dee103e7a05863227c29dc3faa",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "jit_ffi/testing/atomic_test_support.c",
+      "bytes": 8301,
+      "sha256": "0e82ff298f14f5fc8d98215af7b8eadd06b25b7ce8519388ca01483ae30efc9d",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "jit_ffi/testing/test_guest_bridges.asm",
+      "bytes": 3500,
+      "sha256": "6d3d5f941d62fc6430d8b39cce28ec5d16a9e7aae19439ead0aae56d814dfe04",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "jit_ffi/testing/fiber_register_probe_aarch64.S",
+      "bytes": 994,
+      "sha256": "1658e2cef2266c4731358471971a1ac4d0e1366b1d8355d8a45ea9eee779a795",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "jit_ffi/testing/test_guest_bridges.S",
+      "bytes": 167,
+      "sha256": "3333793691a03c6dc5ad640ba27fc851b487562502b309e76f27a67c60017325",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "jit_ffi/testing/test_guest_bridges.h",
+      "bytes": 670,
+      "sha256": "aee6e04dc4d7428261281db5ce6c82def91ddfd0065191475c0262e3543cfa7f",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "jit_ffi/jit_context.h",
+      "bytes": 5255,
+      "sha256": "85098da28c81339f1b974ed51b6446a7078d7352e43c348aaa2f1aab08fbe4b5",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "jit_ffi/trap.c",
+      "bytes": 36890,
+      "sha256": "7f8e89d79097c145fa39230c502081caaa4236281442c435965cd9af4206f347",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "jit_ffi/table.mbt",
+      "bytes": 975,
+      "sha256": "43783052b6f5542a1258f19228ea2ce5e02357d47219799168b00a34104553b8",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "jit_ffi/continuations.mbt",
+      "bytes": 12226,
+      "sha256": "4914b258aa5a631d721a0c24ec8d100d171d9c1b086a9825fcece13b567d99f6",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "jit_ffi/quota.c",
+      "bytes": 3163,
+      "sha256": "c72f03f64d36c5aa6e584e7244120c00d0e8a7257c832656b260af4fe665cb1e",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "jit_ffi/context_fields.h",
+      "bytes": 2846,
+      "sha256": "ed899979e5bc830534cc14fdb6867622591707f7cde213f1d5b04e3dc7abec6b",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "jit_ffi/cleanup.c",
+      "bytes": 1135,
+      "sha256": "33ebc7c1e79a1b80e016a9a27179033b911a05749cb30702888bf6c0fa682030",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "jit_ffi/memory.mbt",
+      "bytes": 2308,
+      "sha256": "797b041e4045bfcae7ecd648e1be2a0ecb77711b72226ce066ae35fe326a540e",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "jit_ffi/segments.mbt",
+      "bytes": 1132,
+      "sha256": "d1a8620b981108028886a3b3e91b58e21708981031bdf40e9cc563e1472ca84f",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "jit_ffi/msvc_guest_bridges.asm",
+      "bytes": 27947,
+      "sha256": "aecc84635e22a0a52f132d37463f3c450d929c227299d4906497a480e5c90b54",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "jit_ffi/exceptions.mbt",
+      "bytes": 14781,
+      "sha256": "d06f08d961b8ba3b27867281e9e83cf540f2373683276bd92f9f69126d4a9820",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "jit_ffi/host_exit.c",
+      "bytes": 977,
+      "sha256": "eca11dafd07b3c4b914592f585ab34ed04794b8feb4b154ee74ccde02e5989de",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "jit_ffi/native_alloc.h",
+      "bytes": 579,
+      "sha256": "02aee3d8f37ce46c3bd42057ffe0aa2ab787cabb9d25c443b25b28f0f09583ab",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "jit_ffi/msvc_guest_bridges.S",
+      "bytes": 167,
+      "sha256": "3333793691a03c6dc5ad640ba27fc851b487562502b309e76f27a67c60017325",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "jit_ffi/windows_context_x86_64.S",
+      "bytes": 1660,
+      "sha256": "bb42b052a9e21534d12441b64f721b7b120f18de6d398413f72ac2b1c7a689f9",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "jit_ffi/msvc_guest_bridges.h",
+      "bytes": 4056,
+      "sha256": "2ea4be4bd7b0bf487e10b74646f1d68d79d63aa068fa8407f754ed1447237b89",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "jit_ffi/dwarf.c",
+      "bytes": 37274,
+      "sha256": "4fd71c69e8d638f53f5d3da8e278c4944f473d4d2c330f101057e5f1ecf66826",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "jit_ffi/gc_heap.h",
+      "bytes": 15564,
+      "sha256": "a8358b153a82931ce54af33327303583f0a95765f5076d369c363c93e0f18e3e",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "jit_ffi/gc_type_cache.c",
+      "bytes": 14990,
+      "sha256": "8dc01f0b1326760f16dfaf24dd5ca5f500f3164c551c3df8d1729087ac567488",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "jit_ffi/memory_ops.c",
+      "bytes": 19282,
+      "sha256": "e88007aca73ab02fd4f0eccc03e41f29ae16a5ddecee63c3229b0caba83d46db",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "jit_ffi/quota.mbt",
+      "bytes": 1794,
+      "sha256": "e62f0e3e9a092eaee9d8e294e63b6234074537ee76ab1027e10e3e9b476e3a85",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "jit_ffi/stack_switch_aarch64.asm",
+      "bytes": 71,
+      "sha256": "44d2a9558974107abad1a96487a038310037329d046b7bdf277b5f97b80d8471",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "jit_ffi/context.mbt",
+      "bytes": 2794,
+      "sha256": "0c821cd6a11d870de7546967df6d7908ca100430e73f3af325405fdf835b1aa6",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "jit_ffi/jit_internal.h",
+      "bytes": 21450,
+      "sha256": "83434671342defdafa7dcddb3ef042d4990cdadc6e94879622390eadc7ffc556",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "jit_ffi/gc_collection.mbt",
+      "bytes": 4291,
+      "sha256": "ca42198eb55d2fccf746e175b6eb289855f1bbef0ad701824c285ed3b449aa03",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "jit_ffi/gc_metadata.mbt",
+      "bytes": 3966,
+      "sha256": "d628e33b05b1d35a08545d7ae4774f32c6b98b736fb6a18d49a362a1d3962523",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "jit_ffi/gc_allocator.h",
+      "bytes": 1179,
+      "sha256": "a50b90d632cb5a7c389d53a99ed273cbdb07622a57e3fcd88b7a494d91d581d1",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "jit_ffi/windows_context.h",
+      "bytes": 990,
+      "sha256": "3d688ef7fb6d41285990d4870231fc37fe35d3ea8cd711e149a8e1465d4082af",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "jit_ffi/jit_ffi.h",
+      "bytes": 7017,
+      "sha256": "07f500771a1897e7a22ad6dca62736c5763b2ff6bd2e0dd0b03481858ab4938f",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "native_fiber_test.mbt",
+      "bytes": 2653,
+      "sha256": "ef76f20646dcc9c8cd33979a58122635b0fbf10e4b702bf9e576e2ccff3e0e03",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "hostcall_trampoline_layout.mbt",
+      "bytes": 1912,
+      "sha256": "02acd03636547fd3aab2ac4d53d0a3c5838f2b65518cd86034360cf6bff16383",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "host_io/moon.pkg",
+      "bytes": 128,
+      "sha256": "bf8331c6fcf2a25c58c7bf0048f7ab23d077b564fe27ab47cfdcdc959e2f8779",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "host_io/windows_fs.c",
+      "bytes": 35907,
+      "sha256": "ae26346b48fc127e674b1727aeff020f2afc4c7b4ce8fe3f415a4275507eb416",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "host_io/platform.mbt",
+      "bytes": 1148,
+      "sha256": "c78c76617c5c836f0734095bf09b582e5b60d8cfc597fb31122b3b88d29d1696",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "host_io/path_inline.h",
+      "bytes": 1401,
+      "sha256": "437da4e5771d84cfc9d4153369092f73298268c777546cd8ec892859ba99d79e",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "host_io/windows_io.c",
+      "bytes": 31980,
+      "sha256": "006648b1c16a4fb8c6f83a24cbab2c1f2aa1d8ff3c8f14d9ee2e7f36ad760c75",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "host_io/windows_input.c",
+      "bytes": 7460,
+      "sha256": "6d3fd596c4c5c27463e49fbd795da72aa5aa1674394fe0ada212e9cd42f04726",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "host_io/pkg.generated.mbti",
+      "bytes": 273,
+      "sha256": "02e1ec6e042d6eb4e5b56bdd74b0154e181a4bf6537bf13060686caf7f039d83",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "host_io/windows_fs.h",
+      "bytes": 1698,
+      "sha256": "2df3789d626d743210ebcb2f179db0a714cc2ab25e6b449feea5a5c4e197bf87",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "host_io/wasi/moon.pkg",
+      "bytes": 351,
+      "sha256": "862ea698c0c6f978e6a2db3b75300de4653a3acb0b93b31bd03cb0c12ddedaf1",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "host_io/wasi/resolver_native.c",
+      "bytes": 11143,
+      "sha256": "d04a31eb11cdaa2788c3304d42c24d307adf71eb8384ce1effea1adce5c571dd",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "host_io/wasi/platform.mbt",
+      "bytes": 110,
+      "sha256": "922d36221ccad47d73515508b43cdac22a5f210ad15f9048a17fedb95366970f",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "host_io/wasi/ffi_native.mbt",
+      "bytes": 21103,
+      "sha256": "b6ed34e39e93b9765776053983a476329f4d2a6437740e730616aa6cd3593363",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "host_io/wasi/socket_semantics.mbt",
+      "bytes": 1140,
+      "sha256": "e8baf09243a38969eea807a98e811ebf1c44cc08808d28a453e8916b837671e9",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "host_io/wasi/file_semantics_native.c",
+      "bytes": 3331,
+      "sha256": "2885b8cbf8a81ba07114f588ab1d1473ed536906da5453721475e26d6ef955ce",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "host_io/wasi/resolver_test.mbt",
+      "bytes": 1544,
+      "sha256": "1943901aaa26ed64a622c8f2df99575a901333fd3fbb28fb71309bf0ae199de0",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "host_io/wasi/pkg.generated.mbti",
+      "bytes": 4852,
+      "sha256": "5a3c9dc29a115aa1273de9910648749819704b70e56e7df220f471d091199281",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "host_io/wasi/ffi_native.c",
+      "bytes": 37490,
+      "sha256": "a426ed4042ebaff6fd7577456f5c6ab057e08b13a613ceabb26765e4003a4448",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "host_io/wasi/directory_native.c",
+      "bytes": 4084,
+      "sha256": "dfdf8eb3ec78a1e7e11b453c28edbb020d4cc1796b57bd87de717ced1a274872",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "host_io/wasi/README.md",
+      "bytes": 3634,
+      "sha256": "d0baa54148d842fc64cbe2709995056ac9606786cd87f9cebae94c6fde75f4f4",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "host_io/wasi/process.mbt",
+      "bytes": 265,
+      "sha256": "26f3d164cda3f9b686d831770a622725f8d71fcd392115d3ef91107ccb68b7c7",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "host_io/wasi/native_filetype.h",
+      "bytes": 947,
+      "sha256": "6e6df13f6fd256815d03ff42fb6944a66f39fb715e8fbe8fbe2aa44422cbf12b",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "host_io/wasi/socket_native.c",
+      "bytes": 19877,
+      "sha256": "a23affdf0e1288a12e24b038cd042d7dac4ed960b8a524b3c252a8eb60412e02",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "host_io/wasi/file_semantics.mbt",
+      "bytes": 122,
+      "sha256": "dec283d8a835363066c5d3f058d9f87b2bc1fafb7424f110c847a6d69fa4cbd8",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "host_io/wasi/socket_semantics_native.c",
+      "bytes": 2623,
+      "sha256": "282b063e7dfaa0aeccae2a02d5003d1349a7841ebb1cecf60061a9ec9cd90488",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "host_io/wasi/poll_native.c",
+      "bytes": 3645,
+      "sha256": "7f36807bfa008713cd71c68b23903873a058992ca62bcd0792d39895b3aed747",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "host_io/wasi/process_native.c",
+      "bytes": 3027,
+      "sha256": "eb30f460eda48a99ff9af772db12042164536df1cd003b8f35be6858b1434061",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "host_io/wasi/bounds_test.mbt",
+      "bytes": 1940,
+      "sha256": "7c38db50ceb620014b0fcc27866e90e79cfd970c2bd3d7236f5122bfcfe0c04e",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "host_io/windows_input.h",
+      "bytes": 889,
+      "sha256": "94cc315bd6cc8c711ef2bfe603de2018d50e01bdb140158b522b62532c319996",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "host_io/windows_io.h",
+      "bytes": 1747,
+      "sha256": "53630e0deb61ceb8cc94d394445292e4abfadf8af689787df7c60de156d40418",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "host_io/reactor/moon.pkg",
+      "bytes": 196,
+      "sha256": "27fa057b8ac7fbae60aa3a9b7d684749b4b13d6b19ee1869750c170163d8d0f0",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "host_io/reactor/reactor_wbtest.mbt",
+      "bytes": 6109,
+      "sha256": "5c3d78563d52f87b65010575a7abfdcb2390e7a4aee3eb0f4c18ae5a1aa2a317",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "host_io/reactor/trait_extensions.mbt",
+      "bytes": 241,
+      "sha256": "abb19199fbb395b308baceec5295a87d9b99cb380932c69ed0a9c18e24e27602",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "host_io/reactor/pkg.generated.mbti",
+      "bytes": 1771,
+      "sha256": "343eae69052ed08e09ada46f9f030c48f4863d00d61f6a19aebf4d72f8afd4d8",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "host_io/reactor/reactor_windows.c",
+      "bytes": 6631,
+      "sha256": "461da52c1583b4ae90ca222b9d6d82586c6bae8bec9f2b864dfbdfcc8d5726a4",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "host_io/reactor/reactor.mbt",
+      "bytes": 8314,
+      "sha256": "00f144cd664ee458459009a65289afb280c288d72f586a901e97fc72a350823e",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "host_io/reactor/external_loop.c",
+      "bytes": 804,
+      "sha256": "299c8d04cb0de26856ea75e76f873e4a3135455e9b22a5feb4cf7ef377833f4c",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "host_io/reactor/reactor.c",
+      "bytes": 12863,
+      "sha256": "02433852fad3e97dabf0b9ce37b6535e9060d206a54ebd90c50ea455f5cb9099",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "artifact/moon.pkg",
+      "bytes": 180,
+      "sha256": "8b2bcaf7c9e69a2124a14afd157a3facb235b4102665dab1557dc2cc60340b17",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "artifact/codec_test.mbt",
+      "bytes": 10532,
+      "sha256": "0a0270f6d9c1642e7cc771ae2bafbe6feee86e98cc5896c84d8cc84fc756d919",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "artifact/types_test.mbt",
+      "bytes": 5032,
+      "sha256": "0bf527bb137df4bc466ce34947c114e16e5f1ec943c5833fd73de4772ecc5eb5",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "artifact/trait_extensions.mbt",
+      "bytes": 2037,
+      "sha256": "344c9becbf3c3cc7a8f481254d5ec0d18c28a3f9d6e3f4a896fb2b908ce94c6a",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "artifact/pkg.generated.mbti",
+      "bytes": 6711,
+      "sha256": "5d46c27daa3041efdb5815bb6951c46f4c9aabd40ae40d35a7eb59911436130e",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "artifact/codec.mbt",
+      "bytes": 34023,
+      "sha256": "a24004b5ac5357bf398bb26e303b610ee034abfd995e9b333155f29d545db53f",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "artifact/README.mbt.md",
+      "bytes": 1024,
+      "sha256": "b90e305e471438633b54d9f540a182643d6f84c162c3e62aae1cbf1a377a0cdc",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "artifact/loader/moon.pkg",
+      "bytes": 277,
+      "sha256": "ba913291f56f02d11d7e680d6df8b37e59ee26622341931fe85443ac7c50581f",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "artifact/loader/loader_wbtest.mbt",
+      "bytes": 8630,
+      "sha256": "3de38820c9ae7ee025c0a39045b5b75ba6cb97e45a5b3f26bb20e2f3f60e32f5",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "artifact/loader/trait_extensions.mbt",
+      "bytes": 373,
+      "sha256": "ec58402add6067241ae3799fccf18de4ec25cd02165a29ebfc872297cc16d398",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "artifact/loader/pkg.generated.mbti",
+      "bytes": 2975,
+      "sha256": "9b2230b909053d364035904a49aef613c334d7fe207137805128bffb1a1316c0",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "artifact/loader/loader.mbt",
+      "bytes": 9044,
+      "sha256": "3f3fdd2c49bd2eb788f7ec0079e4e1c062fc5f132b0d03511a26bbfbf71361ac",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "artifact/test_support/moon.pkg",
+      "bytes": 165,
+      "sha256": "78f0b850aaad6787caac26c94c1c8e62c19ac8deb79bb4316be5fed5c735e555",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "artifact/test_support/pkg.generated.mbti",
+      "bytes": 392,
+      "sha256": "a8cc83cddff868f0eae9532ddb6f32eb86dcd4ed4a080dba870f90c0e375b3c3",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "artifact/test_support/fixtures.mbt",
+      "bytes": 2701,
+      "sha256": "1bf6e8b7e113b059ae2a082de48a76c7ecd1f098d9b63972082839e257c047ca",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "artifact/types.mbt",
+      "bytes": 4483,
+      "sha256": "2ccd56a815c50f04195b7707512976919f6052cdbe9f0f1fffa8755851e8b225",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "artifact/installer/moon.pkg",
+      "bytes": 353,
+      "sha256": "ac3a0a6938a33befe8c048e3e7c53d93fe977bb53825fe31e7fd1b76cd9e2dad",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "artifact/installer/trait_extensions.mbt",
+      "bytes": 115,
+      "sha256": "6c1309c2a95c4433ce1f67c27e9fddaa51dfa41addacd099a7af9ac036041a52",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "artifact/installer/install.mbt",
+      "bytes": 14567,
+      "sha256": "ec919b251de49e4123f554bf0b4bd60b6fbe8d10addc310a0ff8f5f2a25c8baa",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "artifact/installer/pkg.generated.mbti",
+      "bytes": 2680,
+      "sha256": "a668f2c667971d9d57fb7fd9af634db4291247c1f0cff1bc8b9bf7bd5a67bbc8",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "artifact/installer/memory.mbt",
+      "bytes": 1679,
+      "sha256": "64deb44e0d03e42de98d45bf19e958f4c1bd662b236dc71992275f95dcb1bda7",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "artifact/installer/install_wbtest.mbt",
+      "bytes": 9236,
+      "sha256": "f671126c57da2019504bd744704147dffc9e8b78f49f3a8461e533f23ff13fb5",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "artifact/installer/trait_extensions_wbtest.mbt",
+      "bytes": 393,
+      "sha256": "f0039b67ef7164b5072d7f21746946b898a0f243feae637e9bc0140f79b554d5",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "artifact/installer/aliases.mbt",
+      "bytes": 41,
+      "sha256": "e28f5b7dcd7e01d0c9d83f3427c374293c66e437794abbddc44adf09f5b73ad1",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "hostcall_import_trampoline_wbtest.mbt",
+      "bytes": 1082,
+      "sha256": "2d0412adeb0875bd7771b94b3fd0076279cea93483705813150e251f0c623898",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "artifact_producer_test.mbt",
+      "bytes": 5093,
+      "sha256": "4b2bfc5a2052e264b2383053b0a40730bfc65d463c3c202de87f0eee8c2faaad",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "native_test_support/moon.pkg",
+      "bytes": 89,
+      "sha256": "b822b40b20d694cd7e9c4e5c305e5beee30e36561689eb2cf706c325b9a6d272",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "native_test_support/fiber_test_support.mbt",
+      "bytes": 3916,
+      "sha256": "5f500e630ae8c4f04afedbbb60b051eda9bdd98640dc4f4a86f7c317c68968fd",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "native_test_support/gc_test_support.mbt",
+      "bytes": 220,
+      "sha256": "4e5570e1e31cb25e79345616e4dce7c9b90c197015cb868000a1a79b5ffa4ccd",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "native_test_support/pkg.generated.mbti",
+      "bytes": 3499,
+      "sha256": "a72b67d4f6d61b02eefd98afff1c9b02bb88a9eb0444946097957c4340113f40",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "native_test_support/trap.mbt",
+      "bytes": 349,
+      "sha256": "d72624ef212b64eba491dee1fe4d9bff0a979f88123ae553ce93341081d2c396",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "native_test_support/atomic_test_support.mbt",
+      "bytes": 1014,
+      "sha256": "f6c9106fd249c3a4a332ee3734b2899c3e7d94dc172a7219f238d61a7537d820",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "native_test_support/context_test_support.mbt",
+      "bytes": 4786,
+      "sha256": "c25934a9b260297cf4d685d207fcc659fba3ad9f346a64d5b1d0750450bd2f06",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "native_test_support/fs/moon.pkg",
+      "bytes": 94,
+      "sha256": "da9ffce19673d01ae332364310f426f149f0c5f99aaca0a7763562f911a4ca11",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "native_test_support/fs/platform.mbt",
+      "bytes": 584,
+      "sha256": "ad1283399b9c26d23787a354c00d13545d87aeb0771b17db43e4cfbc1b1b42c1",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "native_test_support/fs/pkg.generated.mbti",
+      "bytes": 233,
+      "sha256": "1c500ccad46bf69adbe6cd2f951a2806da8d1380ea2c8dafed361331639f842b",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "native_test_support/fs/platform.c",
+      "bytes": 1258,
+      "sha256": "77f7bd4b7b01eb1a3da14285e47bedba91b0892dfe6143a7a7d4308150d2a21a",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "native_slot_bounds_wbtest.mbt",
+      "bytes": 2525,
+      "sha256": "3811eae617d3c1132faeb0fff08de531260741e39986ec44c7b47af99191eaf8",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "gc_helpers.mbt",
+      "bytes": 13348,
+      "sha256": "7d3fd11a63ce799b15c98dc451e0a97bba566ced5b0d97634a097093d6c45cb1",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "native_context_wasi.mbt",
+      "bytes": 2361,
+      "sha256": "91f34f87d9ce0a5e6a9266c2c586fd779350a4d4959a57edd9580f8ec563f2e2",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "regalloc_validation.mbt",
+      "bytes": 1056,
+      "sha256": "f4457ec87e23415942b08653fe1c13d5a63e158837bcfc6e457903cef51f71d0",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "import_trampolines_wbtest.mbt",
+      "bytes": 2364,
+      "sha256": "b347455c320e03117070a9c6a8208026cae2fc2cf7149c64b9c29165d95fb6de",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "native_exception.mbt",
+      "bytes": 166,
+      "sha256": "82fbf6f5ce3394aaba79e7e5c512b08f238acc91dcd6df4b1308052fdd710dd2",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "perf/moon.pkg",
+      "bytes": 258,
+      "sha256": "16008617b61f9eaba97f2185a14fb8d0a330d63a3977de069980b82e87205fc2",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "perf/trait_extensions.mbt",
+      "bytes": 349,
+      "sha256": "de065d533d216705ad38e13957538f948b0e3cc0bb7668161669820655a00966",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "perf/clock_js.mbt",
+      "bytes": 284,
+      "sha256": "b9d8b79af91f47083dcdb9e0cc504d230987c771f5a228905b54b9eee3a538a4",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "perf/clock_wasm.mbt",
+      "bytes": 230,
+      "sha256": "429279e4dd7c70a3a0189fdb87c809774fadf9064c97d915274a62af602c5c7e",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "perf/pkg.generated.mbti",
+      "bytes": 3379,
+      "sha256": "65c3f35e39cbf640a770a31dec785aab004884768259d46e74819e48e59b3191",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "perf/clock_native.c",
+      "bytes": 691,
+      "sha256": "5decd076f0afd5a4c651761ba2fff6cd9ee899b05c78ba8c4983f4d4960a0f3b",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "perf/clock_native.mbt",
+      "bytes": 426,
+      "sha256": "3a84f40ad58484b025cbd0ce8a0653008ab21c1a36ff35e49096d49244c4a8dc",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "perf/metrics_test.mbt",
+      "bytes": 3960,
+      "sha256": "7aafa6d3d1333a3c0ab9b2c109908f60f5e991aba62b9e9d877ecd109ee22373",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "perf/metrics.mbt",
+      "bytes": 12324,
+      "sha256": "afe9691b0a6c32e01abd089641404dd17659edbfb6b2e2edc5941cef0034ac2a",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "vmcontext_abi.mbt",
+      "bytes": 4041,
+      "sha256": "b0e7a9c64864ae163d65961108a4fa83eb5aed288830c17fc5c01197ae71468e",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "native_handles_test.mbt",
+      "bytes": 46188,
+      "sha256": "9c70292190df0a3e5d36bc8e09e3218aa7e436f6cc620b731dbf044734a88a0e",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "native_glue.mbt",
+      "bytes": 4666,
+      "sha256": "8980562ab057ccb77ee09ed624aba49e161e47a86a2eccb4de461bed3712f130",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "callback_ownership_test.mbt",
+      "bytes": 1110,
+      "sha256": "70af0a60d84794b48b214c46c40033c6124a21e155c492f9c9d9aab7c5491759",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "native_guest_continuation.mbt",
+      "bytes": 1223,
+      "sha256": "5f538097cac6d0cd3de9e8a746f892efbe65ee92b3e01b1cdd891113c2b24169",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "native_fiber.mbt",
+      "bytes": 5220,
+      "sha256": "3eabd8002a97dc5bf58fa7f5a5d4a52e1c684b6e44d76c2a0e4a4e69e182271f",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "native_context_memory.mbt",
+      "bytes": 12771,
+      "sha256": "65f82f2f8515904ab2fc2f3fa62a5b2102f302eaa754bcd5fab69124b608f547",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    }
+  ],
+  "hits": [],
+  "text_files": 228,
+  "text_bytes": 1559138,
+  "binary_files": 0,
+  "expanded_bytes": 1559138,
+  "limitations": [],
+  "status": "ok"
+}

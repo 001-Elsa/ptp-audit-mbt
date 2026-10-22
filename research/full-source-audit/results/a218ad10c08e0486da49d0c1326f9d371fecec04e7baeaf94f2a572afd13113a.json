@@ -1,0 +1,4824 @@
+{
+  "scanner_version": 4,
+  "scanner_sha256": "ebd6aaa6ba6aa3e501c836d1e066932b6a687e9f996924236e2ae8775edc9a39",
+  "name": "zhanshishan/jsonmend",
+  "version": "0.7.0",
+  "yanked": false,
+  "repository": "https://github.com/wenhuang2333/Moonbit-haker",
+  "url": "https://download.mooncakes.io/user/zhanshishan/jsonmend/0.7.0.zip",
+  "checked_at": "2026-10-19T16:04:54.176881+00:00",
+  "cache_file": "/Users/hanzhen09/.local/share/ptp-audit-tools/mooncakes-source-cache/a218ad10c08e0486da49d0c1326f9d371fecec04e7baeaf94f2a572afd13113a.zip",
+  "evidence_file": "/Users/hanzhen09/.local/share/ptp-audit-tools/mooncakes-source-cache/a218ad10c08e0486da49d0c1326f9d371fecec04e7baeaf94f2a572afd13113a.zip",
+  "archive_bytes": 639630,
+  "sha256": "3186bba8cd74d6ce95f0bb51cbc8321d031d7856400fae64dd33a61918c76dcb",
+  "source": "verified_local_cache",
+  "files": [
+    {
+      "path": "README.zh.md",
+      "bytes": 40277,
+      "sha256": "669451dc46f2142b72c07738c1c5188cb340f0172fbdae3ae72de26b1c664e7f",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "moon.pkg",
+      "bytes": 118,
+      "sha256": "8fb950e557c5b7a5459ea6be2f638f874fa477ab58dd7308bce04f2151d0eb54",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "moon.mod",
+      "bytes": 435,
+      "sha256": "2efe88554773c448d2d61238c27f65981a1e36bb3c5e27a228b3d2cb71b2c211",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "cmd/jsonmend/moon.pkg",
+      "bytes": 221,
+      "sha256": "36fd5dc65fc161dec7751be98e5a9c517a25d749523ee8d341bfa43e7ceab072",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "cmd/jsonmend/llm_cmd.mbt",
+      "bytes": 10327,
+      "sha256": "f229cf192ed9b605e51aea167c141c0b61c84fe5e24c40247db1e947f5d85933",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "cmd/jsonmend/io.mbt",
+      "bytes": 2097,
+      "sha256": "cfc43c70b885b695e555312716fa7ab5ecaf8d84ae43a8f4477e4b279bfe0777",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "cmd/jsonmend/main.mbt",
+      "bytes": 10463,
+      "sha256": "05b925bf6d7e5b7498c6ebbadc7a11b11a03baad87e5415d74ed255cfabf163d",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "cmd/jsonmend/batch.mbt",
+      "bytes": 4107,
+      "sha256": "d3186cd9106ed36f7a500a387021e368619fe12afe3b9c891620b2ae8c2b2af2",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "cmd/jsonmend/explain.mbt",
+      "bytes": 4659,
+      "sha256": "e23683ff94f07d92d7e9daeea8e0c4a5b64a6b071ef8fe96524157a32728d819",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "cmd/jsonmend/args.mbt",
+      "bytes": 13458,
+      "sha256": "031f1bcd228147c0d2d9940031e53655bfeb350175edf744cb510c1d06221ffa",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "bench/moon.pkg",
+      "bytes": 98,
+      "sha256": "90f6ba14b2938f06e5b1f79693306146bb972073a27e47002126ea051fa99e99",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "bench/main.mbt",
+      "bytes": 20796,
+      "sha256": "904efb5a7f715f775567a08b4850173b23391081037d75fa6898e19911764cb8",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "bench/probe/moon.pkg",
+      "bytes": 103,
+      "sha256": "6c6e9ff2da7cbfcc122178ddddb798ae6e4d11813e5b98b7b731789c1fc0203c",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "bench/probe/main.mbt",
+      "bytes": 677,
+      "sha256": "80ad3e4a327fffe416b106620c3207205d4222ab8c8834a05bf0e2e3a1070953",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "readiness.mbt",
+      "bytes": 8918,
+      "sha256": "91fd9a450f30a45a479faea5ded79325b3dc5f0a1c6c57271515b8261afb31fd",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "prop_wbtest.mbt",
+      "bytes": 27160,
+      "sha256": "0d035c85831fefc2f4bee8a6f6ebea85596ee904c8b522239d41970e1012e609",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "error_api_wbtest.mbt",
+      "bytes": 4561,
+      "sha256": "93ccaf47caaad241e21d9f40aa9f7ba666c32445af4f0ef22f107db12d9311d7",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "llm/moon.pkg",
+      "bytes": 70,
+      "sha256": "0bd3f78deee05ec4e85caceb8a0cc9199ae4cdcf2b6e00182b3a70eea10c21a5",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "llm/sse.mbt",
+      "bytes": 3203,
+      "sha256": "0203c96d66312c638ac943c486735a237b6b15ec01a291792def355e253a0bd0",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "llm/openai.mbt",
+      "bytes": 3660,
+      "sha256": "42a4fe462a83351612ef4d9e0c4f5cd9c25c4aede50d4aa27a22358c4a4ac541",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "llm/text.mbt",
+      "bytes": 6609,
+      "sha256": "f5520cdf763ee004c31476abf11cb0fefad6132d5cd5e95c03b5b7f788ee164f",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "llm/llm.mbt",
+      "bytes": 10312,
+      "sha256": "e6812646844a8c8e03d0cf25eb305d087752d071c2c37df3ac7652769d01ad06",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "llm/anthropic.mbt",
+      "bytes": 3913,
+      "sha256": "dc1ff9b7847f5f31485d56a3479ea4fb2dded6b5d25a38d83c53fc39429a685c",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "llm/documented_wbtest.mbt",
+      "bytes": 11746,
+      "sha256": "61847f40f6f1a68ef9793828a978aa992336fd21b5903dc143ba0d491dd939ea",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "llm/fixtures_wbtest.mbt",
+      "bytes": 10654,
+      "sha256": "bb74c5acc52cb60fb8612c00bd5b938e5d09f8ef7053e3bd7b1307c17fa459b2",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "llm/fixtures/loopback_escape_split.expect.json",
+      "bytes": 462,
+      "sha256": "c4483eba39a1472c8e500f3c76892438672073d7366a73ca440639b3843bf9a7",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "llm/fixtures/loopback_tool_call.jsonl",
+      "bytes": 1074,
+      "sha256": "4d0806ce2763548ddb4c8bcbc3e7de0fffdb10e95667fcb73734f16ef9a9c3bc",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "llm/fixtures/live_relay_tool_call.jsonl",
+      "bytes": 3439,
+      "sha256": "d4fc014d6256455c45e424ce12ae128834c3ac7ca24f3c46e4dfd521742609c0",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "llm/fixtures/live_relay_parallel.sse",
+      "bytes": 3722,
+      "sha256": "fbe167ab2477efa5a6589307d17ec2f1c5c3cafcc9ad272a173e33b3498ed765",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "llm/fixtures/anthropic_mixed.jsonl",
+      "bytes": 741,
+      "sha256": "0cbd1aa4176d54625d16fa3a40bf37a1ac510f3149daf953ab748581aa3b6de0",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "llm/fixtures/anthropic_escape_split.jsonl",
+      "bytes": 488,
+      "sha256": "253afe2317c95fc038aeda80672e08b5bec0f693f92d7b9407bdd3f241d1b2fe",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "llm/fixtures/anthropic_single.jsonl",
+      "bytes": 590,
+      "sha256": "fd2ed7e66228a0c79e7ee59d27108c85366dd9713bdc4f79ffdc4c5679ddd279",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "llm/fixtures/live_relay_truncated.adapter.jsonl",
+      "bytes": 168,
+      "sha256": "3b9b5cbe208dcc201b608341f30bde00eebd20026b6f20ba153dba7f6d2468be",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "llm/fixtures/openai_parallel.jsonl",
+      "bytes": 869,
+      "sha256": "520e45f95bf07dadbb331575996cbf540bb308c9f6e804d4257edca0b9bca6a7",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "llm/fixtures/anthropic_truncated.jsonl",
+      "bytes": 339,
+      "sha256": "b1b6d51c0a3831aee3e719a7aff42e4b7af5e8a0a4329eecf90150010fd4dadd",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "llm/fixtures/live_relay_parallel.adapter.jsonl",
+      "bytes": 336,
+      "sha256": "1cdd29006a3a1a16226b75ecbf51f9c9e339edd355bf392b06b373a32ac44585",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "llm/fixtures/openai_single.jsonl",
+      "bytes": 838,
+      "sha256": "8d0f5d85cee6430a0231d6b843f31ddeba5ba2d7b579ea52eecd18c6c0050de4",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "llm/fixtures/openai_name_only.jsonl",
+      "bytes": 290,
+      "sha256": "4d4e2991eec78464746e24017d66e9019a715aa7bf930721ab6607b18f8ace0e",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "llm/fixtures/live_relay_truncated.sse",
+      "bytes": 3982,
+      "sha256": "76c5b409b7a752daf2ec8fdda11f21ec0ef4e55fc50c963c0a930e25bf4b9cd3",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "llm/fixtures/loopback_truncated.adapter.jsonl",
+      "bytes": 169,
+      "sha256": "9744a1eeac4414876dd2f2d577761af9f21292e4356c8b265a12b67ebabeb908",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "llm/fixtures/loopback_truncated.jsonl",
+      "bytes": 782,
+      "sha256": "198f16bd8e42b78e4e57f9d77b5edc34bd6a6f525a8dc6215d3415482d359a39",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "llm/fixtures/loopback_truncated.sse",
+      "bytes": 1078,
+      "sha256": "60f1bde1e48865cb56f8da975531d2a0ac8ef88572d2313f678551695af796af",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "llm/fixtures/loopback_escape_split.adapter.jsonl",
+      "bytes": 160,
+      "sha256": "eed7240045b1f43ddec30bf82aa4ab9b8dade09ec62f2f66449f2aea46910e89",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "llm/fixtures/loopback_parallel.sse",
+      "bytes": 1872,
+      "sha256": "066916fd06adbdce1048d0fc88ca1d8c015233ee2d248f9997dccfb00de09093",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "llm/fixtures/live_relay_truncated.jsonl",
+      "bytes": 3003,
+      "sha256": "59974019e305c4b41c22caadea0dced956ea2b41039fd8b3f811e7165b00acf4",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "llm/fixtures/live_relay_truncated.provenance.json",
+      "bytes": 669,
+      "sha256": "789ca551ab2aa5d0fcb9d1f1e8cdc4aca3badff137f0487de9b4f3d970aa80e9",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "llm/fixtures/openai_truncated.jsonl",
+      "bytes": 484,
+      "sha256": "8de04c2cf1222512bdb1246800971e322ea3208d409f76928dae98cf31e9fefd",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "llm/fixtures/loopback_parallel.jsonl",
+      "bytes": 1335,
+      "sha256": "3f5982eb8848642f1ec42b2762e1afc96d7483ae8031138c363b264200e5df1f",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "llm/fixtures/live_relay_parallel.jsonl",
+      "bytes": 2792,
+      "sha256": "197ede9ce239135c792ae8e95933f78b513ce7187d0aa8e6371bcf5a690cf642",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "llm/fixtures/loopback_truncated.expect.json",
+      "bytes": 471,
+      "sha256": "8a88e382b3efd454d4899d78db61f8ac77595e855bc6747c5bd1c973fa484ff2",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "llm/fixtures/loopback_escape_split.jsonl",
+      "bytes": 1054,
+      "sha256": "ffa7ad339baea00efc7ca9267d2b2c64c63dd2aa8932f2fc96bb41692195a0a2",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "llm/fixtures/loopback_tool_call.adapter.jsonl",
+      "bytes": 178,
+      "sha256": "ffc1bee223cd59dad1382e3d31f813dcf4fa72d092c23203ae127a6f6ec6949a",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "llm/fixtures/anthropic_parallel.jsonl",
+      "bytes": 1404,
+      "sha256": "55298f5f00fea10ad3305b18c8e06fdbb51c3f65d2de14387a5ab4840a833cfa",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "llm/fixtures/live_relay_parallel.provenance.json",
+      "bytes": 466,
+      "sha256": "58d1a26d8da8199df2bfc5ee6c84a95226e4355034480d7002b03221591467c7",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "llm/fixtures/live_relay_tool_call.sse",
+      "bytes": 4574,
+      "sha256": "fff9c5a6a7ce0d501d4c2a91d25da3d5b080ee0227d52e0cb52a4f53b1068f28",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "llm/fixtures/loopback_parallel.adapter.jsonl",
+      "bytes": 312,
+      "sha256": "b7b8347d819d4098e5408e71c12fdde574fbb4321dc114f09cb1a23328d7dd4b",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "llm/fixtures/live_relay_tool_call.adapter.jsonl",
+      "bytes": 190,
+      "sha256": "6332bde59ac03a0d2e3c695afb530723ffb7a27cedc9c0a592a6a30a4a500dff",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "llm/fixtures/loopback_tool_call.expect.json",
+      "bytes": 487,
+      "sha256": "efa49b2525dac881b49c2bbda3dbd48b42ead6f2db98855c3083daaf37849b1e",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "llm/fixtures/loopback_tool_call.sse",
+      "bytes": 1511,
+      "sha256": "35cc088b1a99237ab7707ed5852546b8cd12cd657d5cdb11989dba8db2d48aba",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "llm/fixtures/loopback_parallel.expect.json",
+      "bytes": 724,
+      "sha256": "f830b0a36f3d1d2b7a3e60cc1d636048edfdf3591ba6650d8fc48254f2e6a5c6",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "llm/fixtures/loopback_escape_split.sse",
+      "bytes": 1475,
+      "sha256": "15f41dcb46127c8c2e76f6c86475b8a3c747231a02c40957546882529f2daab7",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "llm/fixtures/live_relay_tool_call.provenance.json",
+      "bytes": 467,
+      "sha256": "8c4f9c921a4d61cf5ad63d0560dee19f726df268f059a6056cd7a2ee21450811",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "llm/llm_wbtest.mbt",
+      "bytes": 10049,
+      "sha256": "9706863bb8537b4c2f1e2dee36ca4c9a55c917d2c94321ab8af94847df0cdb93",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "llm/json_util.mbt",
+      "bytes": 1449,
+      "sha256": "83397e5ba37e26ca36e621810f22b908d94c9a7b636c4cd395f03580b49db4e8",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 11357,
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "CHANGELOG.md",
+      "bytes": 42338,
+      "sha256": "fb1156b9875e85ba4cdd1b7396369fe1ff2894fe44e5614940a5b78318f31867",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "exactness_wbtest.mbt",
+      "bytes": 8466,
+      "sha256": "87ac9750b38b95997586ce4650ca33f7999f511df03a6044557ebab018b70ae2",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "policy.mbt",
+      "bytes": 7654,
+      "sha256": "b7463210476244fa52727f87cb3390d6ccea0f4015adb9c60eb588efa21aa49c",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "ambiguity_wbtest.mbt",
+      "bytes": 4964,
+      "sha256": "9d1b0a7b46bb65ce4321b725c26175157b7f22af2abcf4d3fb8c571e44b6211c",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/readiness_figure.py",
+      "bytes": 7858,
+      "sha256": "26bf657d5cced59a8ea595022603dc56cc5bc333afd4ae6fa7bc105e12547da6",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/bench.sh",
+      "bytes": 1783,
+      "sha256": "eb099ed8cb55a275c7df42b3a5c4b62c041973877af3dda0f7fca0f0692a9b82",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/probe_provider_creds.py",
+      "bytes": 14299,
+      "sha256": "63361185b85f74470bc281a993122107ed39a638f43a5eebe3ae8238cbd9e431",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/examples.sh",
+      "bytes": 994,
+      "sha256": "1ef6cf6a65bedd405ab121e6897e2fdd0405f5f6ede1a7ec2391a0295c60fbf4",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/diff/run_diff.py",
+      "bytes": 24585,
+      "sha256": "b8b484f5cfec06a4c5a10687e6ae42b3b739995f80a476f7774bf6fcd7ff18b1",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/diff/oracle_node.js",
+      "bytes": 717,
+      "sha256": "0425a17d9dd479defc25bc4744e3be580731b912c71b3cbce51ad473ec2a7496",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/gen_llm_fixtures.py",
+      "bytes": 11324,
+      "sha256": "fca50b74cfb054093881d2e74f54bca0c446bca3e06a8a6e990825132ee38ed2",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/record_stream.py",
+      "bytes": 34453,
+      "sha256": "33366501d05cd5ee5946a33bef89c176b72c03a92559dbf1438c52e23f11b18f",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/run_llm_loopback.py",
+      "bytes": 12947,
+      "sha256": "6d7bc52d35c4bdea6f1802d04ce9262f46dc1676d456919338d9f64eebe82e84",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/oracle_node.mjs",
+      "bytes": 1173,
+      "sha256": "257225ce28a9b74b31040494a22bc86f94a830d4f804169977cc998a46e84d45",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/check_amb_guard.py",
+      "bytes": 2295,
+      "sha256": "391c7a09edb80c05777d67289b2f6c5977594e8d97e46ca55a7abfb025daad49",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/run_eval.py",
+      "bytes": 14577,
+      "sha256": "1af555c8535a02700905621bfe57c9e8019ae4a600b87da0eb071ec319e4c9b1",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/run_independent.py",
+      "bytes": 49519,
+      "sha256": "2daf5f3cb25418aca573a779295496c195f36fe935e76220f2831109aae99d1a",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/run_ambiguity.py",
+      "bytes": 15952,
+      "sha256": "fd5550bbb156c1a7fab4ed6274b20c7ad5e630590ef4373e20dc8b451e17b70e",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/run_eval_paths.py",
+      "bytes": 16168,
+      "sha256": "e3b3025e62fcdfaed1414974475a8a0669fb15fad5b37eee181f378b540cda1d",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/corpus.jsonl",
+      "bytes": 371593,
+      "sha256": "59512297f8f10e14202a4c3d19f00ee685f91f3f2b30ff07a953164f48d7202e",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/oracle_node_bytes.mjs",
+      "bytes": 5177,
+      "sha256": "6d0d8b7d97deed1bc332822602abb665e0ef7dc7336c42bacd7efc95eb89688e",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/LICENSE",
+      "bytes": 1071,
+      "sha256": "8bd0e0578be788c617ea01d18b2a8146e3746ae50bddadc65a5f9d3aad08ad49",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/PROVENANCE.md",
+      "bytes": 4664,
+      "sha256": "96b62c1d34ec4e3e556f6925f15929aebaac1115b5c9f4681ad6e033b109f972",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/README.md",
+      "bytes": 1542,
+      "sha256": "23adefb693519a1967c8a69bb490450ad6a3f62803f90fe44b4a0c261f993527",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/y_array_empty-string.json",
+      "bytes": 4,
+      "sha256": "055539df4a0b804c58caf46c0cd2941af10d64c1395ddd8e50b5f55d945841e6",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_number_minus_sign_with_trailing_garbage.json",
+      "bytes": 6,
+      "sha256": "15490c42527202c27b4d9a81f23e9936a5db44d8d908fdb684ba3d64bb10456a",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_object_with_single_string.json",
+      "bytes": 22,
+      "sha256": "e170f309232eca3dab5420479b36cdbf92877ddd8ca6dc7af0a9e5c00c30486f",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_string_unescaped_ctrl_char.json",
+      "bytes": 7,
+      "sha256": "c85db33857913bc4c4d4f044c72cd06d50ffb5644b2e5093ef8b46ebfe340ed0",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/i_number_too_big_pos_int.json",
+      "bytes": 23,
+      "sha256": "e7172a9602cb82291195c39a042201a2d0765d41138e05bed1ff800b6f83ecba",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/y_string_null_escape.json",
+      "bytes": 10,
+      "sha256": "e8d092a2abe0afaefae429a5cf3715c71efa25daf1ecb041d8926e5a75e1c12c",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/i_string_overlong_sequence_6_bytes.json",
+      "bytes": 10,
+      "sha256": "ddb01e68ad635d951563550ed51179f064f534cd0d5f26cf8ca26a69a8299bb1",
+      "kind": "binary",
+      "encoding": null,
+      "encoding_basis": "Complete raw bytes manually inspected (<100 bytes): JSONTestSuite deliberate invalid UTF-8/overlong/surrogate/truncated-byte rejection fixture, not a valid text source/document; raw bytes fully hashed.",
+      "classification": "binary-fixture",
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/y_array_null.json",
+      "bytes": 6,
+      "sha256": "1d8fc6ceb1f94c6326d6d5483d258fcb2e179e9869325b245d105c2219bf69fd",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_object_missing_value.json",
+      "bytes": 5,
+      "sha256": "ffb38b22ee3e0ca90325ebce953a9846990f292faf44c50498771602e31cb61f",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/i_string_incomplete_surrogates_escape_valid.json",
+      "bytes": 18,
+      "sha256": "a1ee85c5d6cec2cc0cea8b91ec6d6c253f2bb7d2bd48a2ce5e9f0db49d9d0b32",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_structure_open_object_close_array.json",
+      "bytes": 2,
+      "sha256": "2125223e9996e4c2e393de959aa95e788cfd809a2a85eea6a7bc89aab856a352",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/i_number_real_pos_overflow.json",
+      "bytes": 15,
+      "sha256": "da343ec51bb98bd52b77889b8195feb916ef86cb7813c168ac6255442412a307",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/i_string_lone_utf8_continuation_byte.json",
+      "bytes": 5,
+      "sha256": "59de3a862e298c811bf5c494f43104af9c72e0d1c8ee2c2d4ceed7232e9ebe10",
+      "kind": "binary",
+      "encoding": null,
+      "encoding_basis": "Complete raw bytes manually inspected (<100 bytes): JSONTestSuite deliberate invalid UTF-8/overlong/surrogate/truncated-byte rejection fixture, not a valid text source/document; raw bytes fully hashed.",
+      "classification": "binary-fixture",
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_number_-2..json",
+      "bytes": 5,
+      "sha256": "bc47f88e8caae073ad2bd956036332513a25ef55da8eb7637347677c2a230297",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_structure_unclosed_array.json",
+      "bytes": 2,
+      "sha256": "4138c6ae42992f3ca53610b0c858e0f5a5a8d7e3424a81feb73b89f0f1877ba9",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_string_escape_x.json",
+      "bytes": 8,
+      "sha256": "e51a0dfa4018434feaf3918d5e94d3a6139a4a80af3b0880d5387c54740d9606",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/i_string_UTF-16LE_with_BOM.json",
+      "bytes": 12,
+      "sha256": "6a9c15ecc8fc3da72b0ba5e3539e07f2aad3c704b496fe3496579dc723ce49c5",
+      "kind": "text",
+      "encoding": "utf-16",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_number_invalid-utf-8-in-bigger-int.json",
+      "bytes": 6,
+      "sha256": "c5efd0312f655f7d8a15938fed77cea804726f6ce9539cd73340616e151e1338",
+      "kind": "binary",
+      "encoding": null,
+      "encoding_basis": "Complete raw bytes manually inspected (<100 bytes): JSONTestSuite deliberate invalid UTF-8/overlong/surrogate/truncated-byte rejection fixture, not a valid text source/document; raw bytes fully hashed.",
+      "classification": "binary-fixture",
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_number_invalid-utf-8-in-exponent.json",
+      "bytes": 6,
+      "sha256": "58cc9aadeb3f0619fda566c1d439e02d94722663ac388822ac3155f5dd3a397e",
+      "kind": "binary",
+      "encoding": null,
+      "encoding_basis": "Complete raw bytes manually inspected (<100 bytes): JSONTestSuite deliberate invalid UTF-8/overlong/surrogate/truncated-byte rejection fixture, not a valid text source/document; raw bytes fully hashed.",
+      "classification": "binary-fixture",
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/y_string_1_2_3_bytes_UTF-8_sequences.json",
+      "bytes": 22,
+      "sha256": "b9f5b15f84663a920e537ad55693aa2c6aab6b8e499c6187f54116b8a78800d5",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_single_space.json",
+      "bytes": 1,
+      "sha256": "36a9e7f1c95b82ffb99743e0c5c4ce95d83c9a430aac59f84ef3cbfab6145068",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/y_number_real_exponent.json",
+      "bytes": 8,
+      "sha256": "15b33591966758437b80030f60c7941bd3a5d42f496d46b9d78ddad1c1e953e1",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/i_number_real_neg_overflow.json",
+      "bytes": 16,
+      "sha256": "02dbc9e54463fa3b2a0eb7eaf990fdfbb577850414e44089c3e55712271a23a9",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/y_object.json",
+      "bytes": 26,
+      "sha256": "2d2df3a9238ce3d7ee68794dafbca7439308cc9abc685806ab8d80e3f7e6c5a2",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/i_string_iso_latin_1.json",
+      "bytes": 5,
+      "sha256": "63cb55c1bfc4cc630ed56d854519e04e34a1a85f7ca338a90ff4a0bf900250c8",
+      "kind": "text",
+      "encoding": "iso-8859-1",
+      "encoding_basis": "JSONTestSuite fixture filename explicitly specifies encoding; complete strict decode and JSON parse succeed. Exact raw bytes manually inspected.",
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_object_unquoted_key.json",
+      "bytes": 8,
+      "sha256": "95a0dfeb03ca3a926bfc03945419d9c193e572c913956d116a608a057c2114d6",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_array_a_invalid_utf8.json",
+      "bytes": 4,
+      "sha256": "00308ed1d30dd0c6248a36107049cfe7a4a795c774e252d6eeec4d64ccee4aad",
+      "kind": "binary",
+      "encoding": null,
+      "encoding_basis": "Complete raw bytes manually inspected (<100 bytes): JSONTestSuite deliberate invalid UTF-8/overlong/surrogate/truncated-byte rejection fixture, not a valid text source/document; raw bytes fully hashed.",
+      "classification": "binary-fixture",
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/y_number_minus_zero.json",
+      "bytes": 4,
+      "sha256": "406944522156bbc83abcf53df7e601ca959db44ca6cf2cbc1459f410dd9e79b6",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_object_several_trailing_commas.json",
+      "bytes": 13,
+      "sha256": "8c75d56d4bafe295ecc9a72150b1af76a1f77f66a8fc8300d2a72cefd78fe694",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/y_number_double_close_to_zero.json",
+      "bytes": 84,
+      "sha256": "6ba90e73f1328c9cb5528bb93cf09e02626d4cd923c98c9582affd1c832531a3",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_structure_single_eacute.json",
+      "bytes": 1,
+      "sha256": "de2e331d891ae267a7009cb45b4e8830f170e0c937288ea2731a1941c7a53b0d",
+      "kind": "binary",
+      "encoding": null,
+      "encoding_basis": "Complete raw bytes manually inspected (<100 bytes): JSONTestSuite deliberate invalid UTF-8/overlong/surrogate/truncated-byte rejection fixture, not a valid text source/document; raw bytes fully hashed.",
+      "classification": "binary-fixture",
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_structure_open_object_comma.json",
+      "bytes": 2,
+      "sha256": "c78d70af1856bb70da7d0edac1926c86b4cea9edcbf849300d1ccbc174648a69",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/y_string_allowed_escapes.json",
+      "bytes": 20,
+      "sha256": "8eb4cce67d4f8e6d61a3e719f6910d3b770cf7493a95f85c33c503b57506263e",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_array_just_minus.json",
+      "bytes": 3,
+      "sha256": "912e1c65eed5e5d54ec020900c7d7e12e16fe270abd6c150a41dc63011dd7c19",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/y_array_empty.json",
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_structure_open_object_open_array.json",
+      "bytes": 2,
+      "sha256": "a4a00261fb75f8b66efbc725ac8c58ab39f613f7aae38ea4fec5497aa09ccb6c",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_string_invalid_unicode_escape.json",
+      "bytes": 10,
+      "sha256": "2b6de004085a3dae0ea9b31230c1d9ce7bc92722914eee188d45eeda803c398a",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_number_9.e+.json",
+      "bytes": 6,
+      "sha256": "8e33de781a327a6563cbd4d808cabfdb6e3ad2b2ea916de34f8ad2f11e0d0801",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_string_incomplete_escape.json",
+      "bytes": 5,
+      "sha256": "df3709e1b19bc2562a9bc0301265c237ca5a5b35bd9bc5c3a7f45c57092e0537",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/y_structure_string_empty.json",
+      "bytes": 2,
+      "sha256": "12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/y_object_empty.json",
+      "bytes": 2,
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/y_string_pi.json",
+      "bytes": 6,
+      "sha256": "60373866a7dbaf4c8e7dc2b6428d8ac337331bd758ecdbeb27d6cd0eb3e9f8b4",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_structure_unclosed_array_unfinished_false.json",
+      "bytes": 12,
+      "sha256": "eed9cbf6e6793bd31aaf13a66d2d21b8af7ee6574be5ce70b991249d651c515f",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/y_string_escaped_noncharacter.json",
+      "bytes": 10,
+      "sha256": "7ad0639c7fdd0e13069de162757a5e76dd7c2e6fe46336bd5b60a44a55f394cc",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_number_with_leading_zero.json",
+      "bytes": 5,
+      "sha256": "4a1c13ce39b2c6e7abf27cf143bda082ee63576912b69142ce49d15a41214f82",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/y_number_int_with_exp.json",
+      "bytes": 6,
+      "sha256": "6d014f6467daa9753d57f0d75067fe62c9f3b0116455a3222c26e58432541b0d",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_number_1.0e+.json",
+      "bytes": 7,
+      "sha256": "0937993255ba3ce388b6109abbb081d3740075dd4efcab01b4b2c11c8c84fd19",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_number_-NaN.json",
+      "bytes": 6,
+      "sha256": "f7df6eb96bdb9858395509fd4536c544eda9fabcbb49b74941da50eca7228c6c",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_string_unescaped_tab.json",
+      "bytes": 5,
+      "sha256": "f69aad8a6518ca6367a55724dfdc6eace3e202b9035e1f85eab97e3c1495fd2e",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_structure_ascii-unicode-identifier.json",
+      "bytes": 3,
+      "sha256": "c9e0bfc2ef7439ecd1084b7496f1b96ec27e1c8a80c7811eb7f91d4fa64da666",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_string_incomplete_surrogate.json",
+      "bytes": 14,
+      "sha256": "612c2551c87839eed8286a94010f37d2bf6d20b65d9bdb9c42b7c61f50ecc362",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_array_items_separated_by_semicolon.json",
+      "bytes": 5,
+      "sha256": "7c7a17b09611e95a3fb14a3dc32a61cbf09ac9a0fa86116347dfbbbbd56b9fb4",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/i_string_invalid_surrogate.json",
+      "bytes": 13,
+      "sha256": "741eff3218368e2fc13a93ce6993548a83719ed3c05a78db3de6ef8ab7eab64e",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_number_infinity.json",
+      "bytes": 10,
+      "sha256": "10058b8cd98a02ff73d5cd3092bb44f05b0d11148d0a81fde35c2a90673f1254",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_structure_comma_instead_of_closing_brace.json",
+      "bytes": 11,
+      "sha256": "d2b042da0c0664285a8485eec9097afc54e376f1a675818386699c5f2a65433d",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/y_object_duplicated_key_and_value.json",
+      "bytes": 17,
+      "sha256": "d89b7a808458bca34b53d4731a66402ad3731942e4a5da221a1ac9be564e4235",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_string_with_trailing_garbage.json",
+      "bytes": 3,
+      "sha256": "3861f42f224ea26ea00ff20a8a4fba07e3fb26be247c112cf51f4d9840805616",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_number_0.1.2.json",
+      "bytes": 7,
+      "sha256": "46d28bfddb89134f2219c3f18734c5e625cff94d92ff3e2caf9e5904545c8099",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/y_string_last_surrogates_1_and_2.json",
+      "bytes": 16,
+      "sha256": "03483610a167d485199cd64bb562340752c1865a11c543bc8fc786496fa93940",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/y_string_accepted_surrogate_pair.json",
+      "bytes": 16,
+      "sha256": "112c1de300c75efe3328e044b785388e1adaa1a4d11d05b04c4f8c20758ddba2",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/i_string_1st_valid_surrogate_2nd_invalid.json",
+      "bytes": 16,
+      "sha256": "eb291cafd21f78d8c6de009c084361c3b4ff3043c44a4d2e122d8d5bd5955901",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/y_structure_lonely_false.json",
+      "bytes": 5,
+      "sha256": "fcbcf165908dd18a9e49f7ff27810176db8e9f63b4352213741664245224f8aa",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_structure_uescaped_LF_before_string.json",
+      "bytes": 10,
+      "sha256": "0d3066fc4d2e4da78f549fd8cbc4e9d26abf100c209f116f58e1fc278f0b274f",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/y_number_real_capital_e_pos_exp.json",
+      "bytes": 6,
+      "sha256": "1d4777abe10ed63b34ad7185bfe551f875d0121b20d1fb83703ac94fd5a8ccea",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_number_Inf.json",
+      "bytes": 5,
+      "sha256": "68979a7a850577548cffccc18abe34fab7d70d4e733b10ae228e030a142052e5",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_array_incomplete.json",
+      "bytes": 4,
+      "sha256": "301f5421cd3a61da99963d2f6fbabb29f0d9f00cdd9b3886f512240d148a335f",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/i_object_key_lone_2nd_surrogate.json",
+      "bytes": 12,
+      "sha256": "3c8f12d1d98603cc19dc6428e2ca50fd5055405a9ee84eff134edc07e66e155b",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/i_string_utf16BE_no_BOM.json",
+      "bytes": 10,
+      "sha256": "1304842222b6f8a5220f1b4a49031b80ed62f131b3f014f14e32ebdfe7ce2a20",
+      "kind": "text",
+      "encoding": "utf-16-be",
+      "encoding_basis": "JSONTestSuite fixture filename explicitly specifies encoding; complete strict decode and JSON parse succeed. Exact raw bytes manually inspected.",
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/y_string_unicode.json",
+      "bytes": 10,
+      "sha256": "3db3f981f8e96028e601cae9bd8098852df6cc1b751b9c4ed56a2f2df85b7d98",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_string_accentuated_char_no_quotes.json",
+      "bytes": 4,
+      "sha256": "616190c9bddd53ca645f47f5ecba9f8f47bf5932a9da7e7d468894efdf7adaac",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/y_structure_true_in_array.json",
+      "bytes": 6,
+      "sha256": "1c28f2eb0958c3d15db1f0f0e7f2b8998ca2b8f67ab426a1fbb3d561fe76fad9",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_number_.2e-3.json",
+      "bytes": 7,
+      "sha256": "d2c89dd9ae3a6a5c01b64bb6f82055a35a0d79a084668f579177e1ef6242ba37",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_structure_open_array_comma.json",
+      "bytes": 2,
+      "sha256": "4ee7b10cd97f554c82c2c22fb1a1c7fdf83e864ffe121b698755f97eeaa209c0",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/y_string_unicode_U+1FFFE_nonchar.json",
+      "bytes": 16,
+      "sha256": "1522be6352030d1fea7484adcccd731408f3f000fe893b567c4cc6fc79378ad6",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/y_string_backslash_and_u_escaped_zero.json",
+      "bytes": 11,
+      "sha256": "b53b019aabe34fa44bb6b82c3094665572dbec4f673c56ccf539480ad769d931",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/y_string_three-byte-utf-8.json",
+      "bytes": 10,
+      "sha256": "eb3da7d2b738cd455a444490897d290a8a89cf3830a0443bd32a319854882926",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/y_string_backslash_doublequotes.json",
+      "bytes": 6,
+      "sha256": "f3e471a47b03bdaf13bbd20b97f5490974eedb5a8b45763c8164f9d6255339dd",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_array_missing_value.json",
+      "bytes": 9,
+      "sha256": "35f020c1aa4f03b8c486781fd8fa9a5ba1b2e4a6d7a847279afbcb578f4d5b05",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_object_trailing_comma.json",
+      "bytes": 9,
+      "sha256": "60e04bc71fcc4c57abeef95a9604a96aa60f833881a2f028d27bd4f03e176603",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_object_two_commas_in_a_row.json",
+      "bytes": 18,
+      "sha256": "c83f029d66739b785a7e958d39c088edbe81f23741949471ddaba8759a222173",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_structure_no_data.json",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_structure_single_star.json",
+      "bytes": 1,
+      "sha256": "684888c0ebb17f374298b65ee2807526c066094c701bcc7ebbe1c1095f494fc1",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/y_string_uescaped_newline.json",
+      "bytes": 17,
+      "sha256": "92ae7255e83019f15495d0fef854a369c4061d6623183fa8ea2f61744b2dec49",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_number_invalid-negative-real.json",
+      "bytes": 13,
+      "sha256": "5ba01dae4b0ab597e21ee7a321a2793a5a4bf0acd5d535e0e6ed261c3f584d4a",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_structure_lone-invalid-utf-8.json",
+      "bytes": 1,
+      "sha256": "ab61ba11a38b007ff98baa3ab20e2a584e15269fd428db3c857e2a2d568b5725",
+      "kind": "binary",
+      "encoding": null,
+      "encoding_basis": "Complete raw bytes manually inspected (<100 bytes): JSONTestSuite deliberate invalid UTF-8/overlong/surrogate/truncated-byte rejection fixture, not a valid text source/document; raw bytes fully hashed.",
+      "classification": "binary-fixture",
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_array_incomplete_invalid_value.json",
+      "bytes": 2,
+      "sha256": "36696d34fce38b101fed5298e3166ea22a9954bd6d237930c2bd96b03c041a62",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_number_0e.json",
+      "bytes": 4,
+      "sha256": "cd279aa777afca083b346dbc2b62a1847c24f1556b619b7564842457f8949c93",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_number_invalid-utf-8-in-int.json",
+      "bytes": 5,
+      "sha256": "72258704dd857e84f0aa55e7124204d0dcf78247472d314310de0b023cb9b8f2",
+      "kind": "binary",
+      "encoding": null,
+      "encoding_basis": "Complete raw bytes manually inspected (<100 bytes): JSONTestSuite deliberate invalid UTF-8/overlong/surrogate/truncated-byte rejection fixture, not a valid text source/document; raw bytes fully hashed.",
+      "classification": "binary-fixture",
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_string_invalid_utf8_after_escape.json",
+      "bytes": 6,
+      "sha256": "37d5eedb25cec736cf89a65e86d7c410ce5125e8685a87fb2a276dbccab5ff45",
+      "kind": "binary",
+      "encoding": null,
+      "encoding_basis": "Complete raw bytes manually inspected (<100 bytes): JSONTestSuite deliberate invalid UTF-8/overlong/surrogate/truncated-byte rejection fixture, not a valid text source/document; raw bytes fully hashed.",
+      "classification": "binary-fixture",
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_array_number_and_comma.json",
+      "bytes": 4,
+      "sha256": "886ad6246ed150b2930495926ba07d579307bc7fecaf4b391650dca8bae7bc66",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_structure_unclosed_object.json",
+      "bytes": 12,
+      "sha256": "6ee07337d690f359cd72160b7345984cc14d987e24d588a8433f257d2336ce49",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_number_starting_with_dot.json",
+      "bytes": 6,
+      "sha256": "1adfbdedbcc45bdbf49580206bb6b5c641dd9da079b42e454ee3ad1e0f9bd29b",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/y_number_after_space.json",
+      "bytes": 4,
+      "sha256": "019bdda64007c87aa50511bb7129d869efcdd1f62b4e8ac2a81bd93a8b03b49e",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_structure_whitespace_formfeed.json",
+      "bytes": 3,
+      "sha256": "3102771b514935404e59053582c064b415c54e08f92d229ea1d539364698b952",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_number_2.e3.json",
+      "bytes": 6,
+      "sha256": "f1c8e1ff48fe7daafbad0cc9f3e3ca21960e06292f7553e1d25f845abc8f26d9",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/y_number_negative_one.json",
+      "bytes": 4,
+      "sha256": "d124b23c696a85177dac41a7a28c853546e55caa5b4798fb917f2c3dc1b331ce",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_object_key_with_single_quotes.json",
+      "bytes": 14,
+      "sha256": "4f6a3fd2411e714bb8304c98421d18c467848acb00c84044858f1e6b5a3883bb",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_number_U+FF11_fullwidth_digit_one.json",
+      "bytes": 5,
+      "sha256": "418b3fc29c6688ee9fe090022ad1cd422ac738d8b5ce13a9272cf7451a340c6c",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/y_structure_lonely_int.json",
+      "bytes": 2,
+      "sha256": "73475cb40a568e8da8a045ced110137e159f890ac4da883b6b17dc651b3a8049",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_structure_unclosed_array_partial_null.json",
+      "bytes": 12,
+      "sha256": "8a244a1a3fc93637d90f1ec6e3df8bb39fdf0658bc1c55f68cf1c3e38d971e05",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/i_number_huge_exp.json",
+      "bytes": 137,
+      "sha256": "ed12f6d094097176142c8f51a29d62cf952d5ab2644cdec71f31a1c0480e69ca",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_structure_object_with_trailing_garbage.json",
+      "bytes": 15,
+      "sha256": "ae13f955e8b401cc5c6ab62569f4239f38676019e023097e3e811f6ef41f9a60",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/i_string_UTF8_surrogate_U+D800.json",
+      "bytes": 7,
+      "sha256": "335ffac769e5b3cec6047f6f464a0d24267493f49d3bc75f0a6411ad9448f003",
+      "kind": "binary",
+      "encoding": null,
+      "encoding_basis": "Complete raw bytes manually inspected (<100 bytes): JSONTestSuite deliberate invalid UTF-8/overlong/surrogate/truncated-byte rejection fixture, not a valid text source/document; raw bytes fully hashed.",
+      "classification": "binary-fixture",
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/y_structure_lonely_negative_real.json",
+      "bytes": 4,
+      "sha256": "ffe616e28103a848cc8a18531f5ba096e153b50c6d597297ad5cb69e39496f6a",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_object_non_string_key.json",
+      "bytes": 5,
+      "sha256": "d4b6fd942bc1cfe841de90cfc320a51960abfe1c6312d85a080e814e93cb9bcc",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_number_1.0e-.json",
+      "bytes": 7,
+      "sha256": "64b715b632ad55a49b6221cb15f6827d7e4630a83baed3713939f31170e63afb",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_number_++.json",
+      "bytes": 8,
+      "sha256": "ec5e5041e992f94073df8faeeb6b9c97b3ee53b7384234beaa7595b424e346b6",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/y_string_unicode_escaped_double_quote.json",
+      "bytes": 10,
+      "sha256": "0cd3133261a2fa55220280b49f19b46f59bbc5f0298f00c1bb3470125b58ff8d",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_object_garbage_at_end.json",
+      "bytes": 13,
+      "sha256": "57651f368485ef89a98adbe252b860b2fe7d23dc58b1927b01d01f8ecd5a83e9",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/y_number_real_capital_e.json",
+      "bytes": 6,
+      "sha256": "487520c1738b59febf4b14cddd8e962ea3cc9cec00995d505e0eef258d8f2413",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/y_string_double_escape_a.json",
+      "bytes": 7,
+      "sha256": "ea5f706e0e55ac56444147f4e7b2252c1501a8362ca150d2735e47f4be4746c2",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_number_-01.json",
+      "bytes": 5,
+      "sha256": "e3216a79fdad284c5d70f8218c81b85562c05b3427d7e7932b151b68a9311519",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/y_number_real_fraction_exponent.json",
+      "bytes": 12,
+      "sha256": "440ffa21e6f0d58c090d99f2459a150ad0907bd6aa090f7c8811dc84a18ffefa",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_array_number_and_several_commas.json",
+      "bytes": 5,
+      "sha256": "6d66636bc1399db9f6ab65d0ecc702fb1d12588d37ab3c79670698507b972d12",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/y_string_comments.json",
+      "bytes": 17,
+      "sha256": "82b15308414d192008b8f6f1463a5438dba9b64ba529e0171dce571a4d7a9450",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_structure_UTF8_BOM_no_data.json",
+      "bytes": 3,
+      "sha256": "f1945cd6c19e56b3c1c78943ef5ec18116907a4ca1efc40a57d48ab1db7adfc5",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_string_single_doublequote.json",
+      "bytes": 1,
+      "sha256": "8a331fdde7032f33a71e1b2e257d80166e348e00fcb17914f48bdb57a1c63007",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/i_number_too_big_neg_int.json",
+      "bytes": 33,
+      "sha256": "dc7e49f1ab202d58242953cbc96224118922f38e712307034bb32c1eecd0ad65",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/y_structure_lonely_null.json",
+      "bytes": 4,
+      "sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/y_string_space.json",
+      "bytes": 3,
+      "sha256": "52109349dabf69106e04ec2f493fb8b6ade94ea100227cccce6559ab8b96553f",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_object_lone_continuation_byte_in_key_and_trailing_comma.json",
+      "bytes": 10,
+      "sha256": "e5fd5846504c7770130c3cf2245b9d0efa5c34175921de3446d53c6827dcdc0d",
+      "kind": "binary",
+      "encoding": null,
+      "encoding_basis": "Complete raw bytes manually inspected (<100 bytes): JSONTestSuite deliberate invalid UTF-8/overlong/surrogate/truncated-byte rejection fixture, not a valid text source/document; raw bytes fully hashed.",
+      "classification": "binary-fixture",
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/y_string_uEscape.json",
+      "bytes": 28,
+      "sha256": "a69c93369dd5e8e3f07db70b9110f59998fab55c1d8eac6a37ecebed3d1f8516",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/y_array_with_1_and_newline.json",
+      "bytes": 4,
+      "sha256": "f86600a2874fa2ef13591457f10987e1e511915b75c042e6aefc004ec21db598",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_structure_end_array.json",
+      "bytes": 1,
+      "sha256": "cfae0d4248f7142f7b17f826cd7a519280e312577690e957830d23dcf35a3fff",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_string_unicode_CapitalU.json",
+      "bytes": 8,
+      "sha256": "2871101babb06b63ad8cf90cc9c4b49d52f79d7165db60af743cf42391fae7d2",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_array_extra_comma.json",
+      "bytes": 5,
+      "sha256": "20f9fd883ff8af1cf1a64b7bb00f233d64a590cfd08efda89fc96a170bcbe17c",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_number_with_alpha_char.json",
+      "bytes": 25,
+      "sha256": "22ad3f63db73e6639efe2589a7de456acb71c14bfe44152c5df462ba5694f931",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_string_backslash_00.json",
+      "bytes": 6,
+      "sha256": "245950d0f3fde1ac886cd7c16b5e7a0dd612dfcd5ba4fdad33b731f8e3d65a72",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/i_string_1st_surrogate_but_2nd_missing.json",
+      "bytes": 10,
+      "sha256": "614fddf8cc37b552fd23b6fed4bd1e5b78ddfa86b8e3870f089c8f6e90ccf8f1",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_structure_whitespace_U+2060_word_joiner.json",
+      "bytes": 5,
+      "sha256": "aacc3ed19ba1f9596daefc68914fe3253c00703648e8ee606f03823feaed1da6",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_structure_capitalized_True.json",
+      "bytes": 6,
+      "sha256": "b78c88a26a2b512a2964fc4160ddb4d32e2aed8b01219ab5e3666b633572b336",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_array_star_inside.json",
+      "bytes": 3,
+      "sha256": "76d344d401adb58391bfdd4c76177896be0bf313dbc2b07bd001be34b3227aae",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_object_trailing_comment_slash_open.json",
+      "bytes": 11,
+      "sha256": "aac61f9c0640ae1f18ec9a0f889e7a2aef163e87f8542bb9cc49ec081ade7b58",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_array_1_true_without_comma.json",
+      "bytes": 8,
+      "sha256": "66510f3118b7ede39314518bc5a1bc71eb2b4d36a8a01cb0e76829be6768409b",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/y_number_0e+1.json",
+      "bytes": 6,
+      "sha256": "a3973172dd9aa927c372e96a60f9ff968326d872d2ea6a9f7c406742c10a72d9",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/y_object_with_newlines.json",
+      "bytes": 12,
+      "sha256": "27e0a21606c52d12b7eacb1ec1cb18dfeb847077ad5dfa229af81ce9694065aa",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_number_with_alpha.json",
+      "bytes": 8,
+      "sha256": "d9eb35a268ba5fc48b1c82549782aa7d3e8abd5aa9fcef7c7a2b254ff5349995",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_structure_open_array_apostrophe.json",
+      "bytes": 2,
+      "sha256": "64821ae0d442bae7ca2d701c40319368af5806f40d93dce67db8eaa982a6c012",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_structure_object_unclosed_no_value.json",
+      "bytes": 4,
+      "sha256": "c6157167c74dace056a67dee056bee30ec1dbe40227b410d1948578317ef87fd",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_number_0_capital_E.json",
+      "bytes": 4,
+      "sha256": "a6fab5fbe2ef3fe441d68c14301fc85048286e68c6bba7a93f643d788b6cf081",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/y_number_real_capital_e_neg_exp.json",
+      "bytes": 6,
+      "sha256": "7028e961ff024ebc25747ce356fee6a0eb24f0c108d8eb02af0c0d233f05aeb5",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_incomplete_true.json",
+      "bytes": 5,
+      "sha256": "5f5470d03cb2af3cce0cf3cc063ba8ae676258cb9d4ba0dcfc82a978ab5f40ba",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_array_double_extra_comma.json",
+      "bytes": 7,
+      "sha256": "2161a4ca5aa1599950752bf9aa8a42358035362098dc702e9bde01dc05f3a674",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/y_structure_lonely_string.json",
+      "bytes": 5,
+      "sha256": "cf48780abab649b585d02731f300e2859eea427b0b61de647b87d3c3c8b91ead",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_number_+Inf.json",
+      "bytes": 6,
+      "sha256": "5d61f171f20d3267ab360f545a50e55f462ca45ff5d067fd51678f71c4cfa7ab",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_number_hex_2_digits.json",
+      "bytes": 6,
+      "sha256": "ce2e3b8b3e0a6cf29602463d4e70910d3b3fcb38874800d491efe163d8ff9592",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_structure_close_unopened_array.json",
+      "bytes": 2,
+      "sha256": "892491211326600b77f0464218fe38f041857e6b8cb5253558f03fe6f81ce40b",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_object_comma_instead_of_colon.json",
+      "bytes": 11,
+      "sha256": "768e2ec23b20790f9f16a5665e6749ee45fd0ffd642a55047ad12db2cf86f3f0",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_structure_open_object_string_with_apostrophes.json",
+      "bytes": 4,
+      "sha256": "19ac7ea02ed8313abb6995c7f83c52d323826a9d925ce172e46fd37919360639",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/y_number_negative_int.json",
+      "bytes": 6,
+      "sha256": "764efe9bcaa0a7d3d2d622d7f446cb930a26fff9da4a8331f287af40dac2f577",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/i_string_inverted_surrogates_U+1D11E.json",
+      "bytes": 16,
+      "sha256": "17dc4691fa7a327ac3411391f7d3b5db983715391f8dfee1c008ffb453959fff",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_structure_object_with_comment.json",
+      "bytes": 20,
+      "sha256": "7ed28a9d4e3ca53e831b6ddf4bc8db6f30ac41bd9a95763662b281d41edb57b1",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_string_incomplete_surrogate_escape_invalid.json",
+      "bytes": 18,
+      "sha256": "006c749ff0f0e82a966ca6060a880cd9eda45ffa8e561840954a3b0735fda3b0",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/i_string_utf16LE_no_BOM.json",
+      "bytes": 10,
+      "sha256": "561d378d28aba1257f2d32b7c67c668e5bf549424ac0ff218f1d8f76c223b3d1",
+      "kind": "text",
+      "encoding": "utf-16-le",
+      "encoding_basis": "JSONTestSuite fixture filename explicitly specifies encoding; complete strict decode and JSON parse succeed. Exact raw bytes manually inspected.",
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/i_string_overlong_sequence_6_bytes_null.json",
+      "bytes": 10,
+      "sha256": "8a6e9429a50beda59e50476ad58c0b18297522149b12deeabaa1acb201e94857",
+      "kind": "binary",
+      "encoding": null,
+      "encoding_basis": "Complete raw bytes manually inspected (<100 bytes): JSONTestSuite deliberate invalid UTF-8/overlong/surrogate/truncated-byte rejection fixture, not a valid text source/document; raw bytes fully hashed.",
+      "classification": "binary-fixture",
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_object_trailing_comment_open.json",
+      "bytes": 14,
+      "sha256": "d5f7ea39565fdb12239b0dba1e09c42ef511891069b6d3129c90b5fcf228258e",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/y_array_ending_with_newline.json",
+      "bytes": 5,
+      "sha256": "0eb5b8d6f81bc677da8a08567cc4fa9a06a57e9ec8da85ed73a7f62727996002",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_array_colon_instead_of_comma.json",
+      "bytes": 7,
+      "sha256": "b4bceb6e7fefaf43b73f472b8c260c5aad24610faea9a1abe6b9a3035065deb4",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_object_trailing_comment_slash_open_incomplete.json",
+      "bytes": 10,
+      "sha256": "9d6150b0a69063d628a89714df57662ec1d581c06f2110347e22d4b3125b55d7",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/y_number_simple_real.json",
+      "bytes": 12,
+      "sha256": "da71a3f6f94e299177d77eb6435ba108f05a6e6e2669a13294c9dc7eb29e3020",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_number_2.e+3.json",
+      "bytes": 7,
+      "sha256": "ddfb52b4d5c947c90b7b62e4a654c35f6c3a4b726ef606da6b6fdb1aeb0ed33d",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_array_unclosed_with_object_inside.json",
+      "bytes": 3,
+      "sha256": "903dda41bec7150e805f158ac061587fcf72b9d01d15b86222966814dda496f0",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_structure_array_trailing_garbage.json",
+      "bytes": 4,
+      "sha256": "4a0aa4da859bc84269fc36c50a5968cf4109b9b07099c0cb49f331f50c5c848b",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/i_string_truncated-utf-8.json",
+      "bytes": 6,
+      "sha256": "65fd4cdbf6c28fe2d4e18f81ea37e154a90198fae4fe923eb41533dbd301cb02",
+      "kind": "binary",
+      "encoding": null,
+      "encoding_basis": "Complete raw bytes manually inspected (<100 bytes): JSONTestSuite deliberate invalid UTF-8/overlong/surrogate/truncated-byte rejection fixture, not a valid text source/document; raw bytes fully hashed.",
+      "classification": "binary-fixture",
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/y_string_unicode_U+200B_ZERO_WIDTH_SPACE.json",
+      "bytes": 10,
+      "sha256": "1deed1d5984a8e96e6901eb3cbbe3516611459ff622136ec47181e33e604a598",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_structure_double_array.json",
+      "bytes": 4,
+      "sha256": "821bf06b4dcb406ea508a4a992eadc22f29850cd208ba24aea7c29148de8ccf1",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/y_string_u+2028_line_sep.json",
+      "bytes": 7,
+      "sha256": "7cf97fa4811058a28bcd46d0a8a829c52b3577451e88bd32a2ba711905112273",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_number_neg_int_starting_with_zero.json",
+      "bytes": 6,
+      "sha256": "5254e6d33c5cbce10330d6bd034b251a828cc629455c74ce1eab8e9efdabd0ca",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_array_newlines_unclosed.json",
+      "bytes": 11,
+      "sha256": "fc05212efa24a13427744d2ee2d716119ea6bddf4ea03bfb750b56476d3c773d",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/y_structure_lonely_true.json",
+      "bytes": 4,
+      "sha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_object_missing_colon.json",
+      "bytes": 7,
+      "sha256": "f1a260a986fa42f6c6c33dc3f130bfd3af488acd84ce8573095f30d23eed1861",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/y_string_two-byte-utf-8.json",
+      "bytes": 10,
+      "sha256": "92a4c4eff0bf782553cc5f0309c56fc8e1cd749d98756df3b47400e016558550",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/y_string_unicodeEscapedBackslash.json",
+      "bytes": 10,
+      "sha256": "f791a3c18024a7dec0d9dc92d7cf9ac8f2100409e1c5f196d510fa543195c787",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/i_string_overlong_sequence_2_bytes.json",
+      "bytes": 6,
+      "sha256": "e17aa42df055ec15b4c3118c8e739fe18a52a047c5a2dc36b5ad1df9bb51aeaf",
+      "kind": "binary",
+      "encoding": null,
+      "encoding_basis": "Complete raw bytes manually inspected (<100 bytes): JSONTestSuite deliberate invalid UTF-8/overlong/surrogate/truncated-byte rejection fixture, not a valid text source/document; raw bytes fully hashed.",
+      "classification": "binary-fixture",
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_object_missing_semicolon.json",
+      "bytes": 9,
+      "sha256": "0cc9076470bce7c6b805638c32510a7a4cff2a6679a4813c08d85589ff4895bc",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/y_object_simple.json",
+      "bytes": 8,
+      "sha256": "50e8660084976a10f0b3b9b3a6352d5881cbd219b5587a26224971a60ff2cc55",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/y_string_unicode_U+2064_invisible_plus.json",
+      "bytes": 10,
+      "sha256": "7312cf1ea2ada2cebd1a374504dc14232e877ac58fff149ec61dca0d7bda4775",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_number_minus_space_1.json",
+      "bytes": 5,
+      "sha256": "13edd4c8183bc3e9e2b92acd350282e5f8c14e16ea9d01d4d2a6f941bb67c8c8",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/y_string_escaped_control_character.json",
+      "bytes": 10,
+      "sha256": "1a9f37085203c6d712945c5fb87ad5e08fa38515e51ee4a637c7558bb1b82725",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/y_string_simple_ascii.json",
+      "bytes": 8,
+      "sha256": "a7ad412f8443140eae23fb4129c10c147bb81a17c76111803be58b7eeb1bbeb7",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/y_string_unicode_U+10FFFE_nonchar.json",
+      "bytes": 16,
+      "sha256": "95affe1744a2fb5a585d0a4a8b28b3238f36473ac55e21b43ead5e9824389eb3",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_structure_open_object.json",
+      "bytes": 1,
+      "sha256": "021fb596db81e6d02bf3d2586ee3981fe519f275c0ac9ca76bbcf2ebb4097d96",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/y_string_utf8.json",
+      "bytes": 11,
+      "sha256": "adec79032c3509dce21c9b0b96445a0fe398533d6647d12abc639eef16e621ab",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_string_escaped_ctrl_char_tab.json",
+      "bytes": 6,
+      "sha256": "50b34150204026c1a7f138035f9f375efe28b90bd594241d80d34bdff5ffdbdd",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/i_number_double_huge_neg_exp.json",
+      "bytes": 14,
+      "sha256": "2c1359e904471d2eee87aa1a47657a371a25053d2a257be5470119ce5ba509e3",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_number_invalid+-.json",
+      "bytes": 7,
+      "sha256": "25981c42fdd25646ab17d57bfaa65e4b2d7b791fdf13840e75c5a9e8f66dec70",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_structure_100000_opening_arrays.json",
+      "bytes": 100000,
+      "sha256": "13f86ea1e7edd116d18d4ba6c6fa114cd3c927516182d24259623874955d21d1",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_string_leading_uescaped_thinspace.json",
+      "bytes": 13,
+      "sha256": "086051c6d14b7dcf7ba3a0a2823fbb9d96ac8e215a7248640bf55ebce77e66c2",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_number_0.3e.json",
+      "bytes": 6,
+      "sha256": "0791dee428d1d6a1fbc6eb26c2cc745f4eee2c89e8c20a6bc5d58f6ea7a859e5",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_structure_lone-open-bracket.json",
+      "bytes": 1,
+      "sha256": "245843abef9e72e7efac30138a994bf6301e7e1d7d7042a33d42e863d2638811",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/y_string_unescaped_char_delete.json",
+      "bytes": 5,
+      "sha256": "2366f354a28f19c40b4994ae5a341137807c954180c52cbc9d56a75722dcdeed",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_structure_object_followed_by_closing_object.json",
+      "bytes": 3,
+      "sha256": "8a299b12f74132eef36aa0ee1005e6ee4c0610572acf986becf7f0905db3d88f",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_number_0e+.json",
+      "bytes": 5,
+      "sha256": "3f54bdbbd4e3ad547fa457b5810df7c96f2d2c3bc6985e11202ffd1d42116889",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_structure_unicode-identifier.json",
+      "bytes": 2,
+      "sha256": "e83979df9d36090142f23051f8e8d7ad48e5c20dff5c9e7b92ca3454f67469f9",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_number_1eE2.json",
+      "bytes": 6,
+      "sha256": "02b51b6940228135be8c48f0472f220a341a9b7bce8150395a58afb7e41fac18",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/y_object_extreme_numbers.json",
+      "bytes": 35,
+      "sha256": "79711ae7b3f95981a7aece4db3435a10a68493d4ea66fd623464d3f681809405",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_number_+1.json",
+      "bytes": 4,
+      "sha256": "d83017afc0b63eef28670ae0c39391f0fabe91f299126160029a13713fca361e",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/y_object_long_strings.json",
+      "bytes": 108,
+      "sha256": "b7afdd9d8feae8fc6a4532b01bddea0691994e8ed7e4a93303157c83413d156d",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_incomplete_null.json",
+      "bytes": 5,
+      "sha256": "267620ed5987a977c03473eee18b9aa69a4183b3024417f93466983b7c772491",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/y_number_negative_zero.json",
+      "bytes": 4,
+      "sha256": "406944522156bbc83abcf53df7e601ca959db44ca6cf2cbc1459f410dd9e79b6",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_multidigit_number_then_00.json",
+      "bytes": 4,
+      "sha256": "a787b6772e3e4df1b2a04d5eee56f8570ab38825eed1b6a9bda288429b7f29a1",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_string_1_surrogate_then_escape_u.json",
+      "bytes": 12,
+      "sha256": "3a5b06d8fc9190c4f382a094bc372f39539ccd34ef3c917db4c5e10284c2e3d0",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/y_array_with_leading_space.json",
+      "bytes": 4,
+      "sha256": "8654748fb6342dee236173461a2e0527953b974d408af58079e352e26806e8f2",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_array_double_comma.json",
+      "bytes": 6,
+      "sha256": "1b4a2022b0702d87a15a49f031e9795ab6824cb3945c106bcfa5ad55c2e945cc",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/y_structure_trailing_newline.json",
+      "bytes": 6,
+      "sha256": "92260ea0cbd70738c0bccba89c8dbf5881ec50d1a09891ea531aa254a783c9cd",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_array_invalid_utf8.json",
+      "bytes": 3,
+      "sha256": "379af949f1f0fe32439c2c960df7adf60d3a858b8c640c858fb780fb79bf5c94",
+      "kind": "binary",
+      "encoding": null,
+      "encoding_basis": "Complete raw bytes manually inspected (<100 bytes): JSONTestSuite deliberate invalid UTF-8/overlong/surrogate/truncated-byte rejection fixture, not a valid text source/document; raw bytes fully hashed.",
+      "classification": "binary-fixture",
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_object_repeated_null_null.json",
+      "bytes": 21,
+      "sha256": "c53c4ac8f547a851fc490678bc88233a84aff27d695731c5acad8a83cfbc21af",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_object_bad_value.json",
+      "bytes": 12,
+      "sha256": "532ef8019fc26b0680b94c203bb2cf1dd1b91529cda3afc1933ac1398da16c08",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/i_number_pos_double_huge_exp.json",
+      "bytes": 11,
+      "sha256": "873f021ffd6efe214578e87c45c470aa1e6fba5507eae9f17f4ad3544c1278ff",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/y_string_surrogates_U+1D11E_MUSICAL_SYMBOL_G_CLEF.json",
+      "bytes": 16,
+      "sha256": "fe59c5b3de3b68f7c7fb803299e2bcf5b280a45c2fca2ab2cb2391d8024e3dea",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_number_2.e-3.json",
+      "bytes": 7,
+      "sha256": "ceb6bf65dbdcb4c6dc85156d0646d095784445db6c84f594353e249491caf02c",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/y_object_string_unicode.json",
+      "bytes": 110,
+      "sha256": "edec7a6f5af644b0b729f4c822d60dc74575dfa11157fc6e6a855150d286aad8",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_string_no_quotes_with_bad_escape.json",
+      "bytes": 4,
+      "sha256": "814a698775017816f2280a649b3f4e824359c4100225294eb5857e244a248d02",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_number_neg_with_garbage_at_end.json",
+      "bytes": 5,
+      "sha256": "00c6d0363ca61949d57d59b9b24da62d9a3a8438242b88f6af12c3587eddceb3",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_string_1_surrogate_then_escape_u1.json",
+      "bytes": 13,
+      "sha256": "cea1473bbc52ce15c8c439f8e82e1419cfc22088d6396a1a405b1d1fa0d4cd7e",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_array_spaces_vertical_tab_formfeed.json",
+      "bytes": 8,
+      "sha256": "563d321a80cb3919dbcba1ac4bb6e8595e00186b1c3b3db46a64a0e64ddb7075",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_structure_open_array_object.json",
+      "bytes": 250001,
+      "sha256": "48b232fcd18ce2f714a16651ea9f27c04498dcd31ea1329a288c7aa981e1b531",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_structure_open_object_open_string.json",
+      "bytes": 3,
+      "sha256": "55505b6f8c3dc34a3b804086a88d4beae35b69af0dbc471d8cd780d37569a50b",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_object_non_string_key_but_huge_number_instead.json",
+      "bytes": 13,
+      "sha256": "5f76df23491379110e3d23e8278d6797c5ae5dc912e03bf901b1fd20a896679e",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/i_number_real_underflow.json",
+      "bytes": 15,
+      "sha256": "a2d94b618d77571edc861b072524837131b3b637bc03722190fe5a1d9d9ff8a4",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_object_single_quote.json",
+      "bytes": 7,
+      "sha256": "67425dd8fb9386942496d20c8bdc9f3b113517a6185bf38da4c8b87de8f49708",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_number_0.3e+.json",
+      "bytes": 7,
+      "sha256": "d56c36978bba5b6f062b28f35f7e237af4f0fe016edb2943e666da6e58efedf1",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_number_real_garbage_after_e.json",
+      "bytes": 5,
+      "sha256": "1716a62d93d51e03ff006ea05d30db8ec4d96e30eef967fa442d777aaee8d296",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_string_escaped_backslash_bad.json",
+      "bytes": 7,
+      "sha256": "7e38d58c88a6f593c1dccc11accd719032a0ac34e8169fc81cd70dfbcba9d7ba",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/y_number_0e1.json",
+      "bytes": 5,
+      "sha256": "fd42abd2eda2e279fd612a669f1c21b3665789ab980dcff3d4c286dbe94375ce",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/y_number_real_pos_exponent.json",
+      "bytes": 6,
+      "sha256": "021e295090984a454b83295322b0b7e58d1460036fd48c010864ed8adda8e48c",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/y_string_double_escape_n.json",
+      "bytes": 7,
+      "sha256": "aa9c977fcd275f87135c1874663c150c9f91a6abf98789dbc98df19f77e59ca2",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/y_array_arraysWithSpaces.json",
+      "bytes": 7,
+      "sha256": "03514ff57dd2364cc63b23ff011cc97cdc0aee89e31f39b538c45efa4a1f093b",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/y_array_heterogeneous.json",
+      "bytes": 18,
+      "sha256": "14c644de0d447c3a875fcb1a257cc09a5db3ef047377733066ffc1bee4a17803",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/y_string_with_del_character.json",
+      "bytes": 7,
+      "sha256": "db99989c39740edd8dda79380e881f7d0837fb88481dafa65dd5cfaee0038fdf",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_object_with_trailing_garbage.json",
+      "bytes": 10,
+      "sha256": "5156aca03363828ef438eff823e8a6a624d9a19bab07823a0983448320abfe7b",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/y_array_with_several_null.json",
+      "bytes": 20,
+      "sha256": "7aebf7c131c4ed7fdb458678a7c61bd6b7d0a13683c753be68822d8ad962a9b9",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/y_number_simple_int.json",
+      "bytes": 5,
+      "sha256": "201add142419aaa1ff8bf4b25772b7af870d06753a642c57a49640cd9835f6d4",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_number_expression.json",
+      "bytes": 5,
+      "sha256": "bb9856e4c612b9ed993f6520936bcc560cbf3bf112000f28c62ed3a787db983d",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_structure_open_array_string.json",
+      "bytes": 4,
+      "sha256": "d87fbfd036243752ee25747924c7b51869985a0f8203867dada08113f7be4406",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_object_missing_key.json",
+      "bytes": 6,
+      "sha256": "9a25a7e80b3b9ffdcc2c19edcff1ae5c68e8ce83a38b7acf922627c709a91919",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_string_1_surrogate_then_escape_u1x.json",
+      "bytes": 14,
+      "sha256": "71a495c9b4a08e9037f6be675aab32e21189f3bbb7cd61adfe720f4c32fd726e",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_structure_trailing_#.json",
+      "bytes": 12,
+      "sha256": "ce6bcb6a186a600809549525a2aebae9873e6daf4b5eb08c2b88aaa3c9afe449",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_structure_array_with_extra_array_close.json",
+      "bytes": 4,
+      "sha256": "f9bfc9cf84e12516f67e02e9b412520c6ffd0a016730e1da2b5ae32417f8affb",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/y_object_empty_key.json",
+      "bytes": 6,
+      "sha256": "6d741b146801696dd35e34575e778730f06b2ec4bb5ccee13166f36c0761a55a",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/y_string_nonCharacterInUTF-8_U+FFFF.json",
+      "bytes": 7,
+      "sha256": "f71019c976f92080edc1802b707f306ce74360ba5b21481c3ce5f39631ab5f74",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/i_number_very_big_negative_int.json",
+      "bytes": 51,
+      "sha256": "735b3dcc58336f383e4668439dfbde6147b25f8f5a2548873e7979813e55d48b",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/i_string_invalid_lonely_surrogate.json",
+      "bytes": 10,
+      "sha256": "69119aac5ce42bc93c1667db0454297ffaa342c431efa2dfdf48af101c035106",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/y_object_escaped_null_in_key.json",
+      "bytes": 20,
+      "sha256": "1c3c00c78ceca5a6cce2f0aefe316b5352117011f6f9a471a18eb4f3c1930739",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_structure_angle_bracket_..json",
+      "bytes": 3,
+      "sha256": "5545c186e2e58097f78948f4318b1da4a944853d7aa5d431db0a7cc14328ea23",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/y_string_accepted_surrogate_pairs.json",
+      "bytes": 28,
+      "sha256": "9df10c47273a7e385c87007e8629b34a30288eb24752c9e1c519256b46d6e287",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/i_structure_500_nested_arrays.json",
+      "bytes": 1000,
+      "sha256": "a6c6b45361ff77e7372a015a1f0289e9c09d1fe1ed59cf9773d599c55acf57cf",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/y_number_real_neg_exp.json",
+      "bytes": 6,
+      "sha256": "2a43df431a4412183f3b0e796a4fdc5488469428e91527cdaf40434e3d64c8ec",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/y_structure_whitespace_array.json",
+      "bytes": 4,
+      "sha256": "7e58d2487a2aaa36b6c1f57dbe1b513f1637fce9b58bb771797daa980dcdb3eb",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/y_string_in_array_with_leading_space.json",
+      "bytes": 8,
+      "sha256": "c8a83a0f75ceabc50fb63ac3cd3a9ef8531e6730d0997558728b84fac149edb3",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/y_string_nonCharacterInUTF-8_U+10FFFF.json",
+      "bytes": 8,
+      "sha256": "ae205bae31537db2df3b058d4847c3e8c184b0e5a5e93dcc11de6202a7bc1c3f",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_object_bracket_key.json",
+      "bytes": 9,
+      "sha256": "67196b37d18b572e82aa5a121b52c38104d2c62cb35499ed6666823780cb94c3",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/i_number_neg_int_huge_exp.json",
+      "bytes": 10,
+      "sha256": "92123944cf252563cc9d402ad83df085a20f9899144b3b59661f898fcffd1e2b",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_number_NaN.json",
+      "bytes": 5,
+      "sha256": "638577393ecb248f472c18a1a95104181a3188551615d763873393eaf4eff186",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_string_single_string_no_double_quotes.json",
+      "bytes": 3,
+      "sha256": "ba7816bf8f01cfea414140de5dae2223b00361a396177a9cb410ff61f20015ad",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_number_neg_real_without_int_part.json",
+      "bytes": 7,
+      "sha256": "883151c5ef152620edcf2ae229ace6e170b29f01fbb21dc8b0d8faeb863135d8",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_string_unescaped_newline.json",
+      "bytes": 12,
+      "sha256": "b53a55c51fa3b643f1e760d7a2a98869e9bff4e59edff443a632864c37c29e25",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/y_array_with_trailing_space.json",
+      "bytes": 4,
+      "sha256": "a3e1815164add55525596cf8da31156ded48c3af1a7fd1a1acb23912206fc957",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/i_string_not_in_unicode_range.json",
+      "bytes": 8,
+      "sha256": "1e4a55bc32c7de4b1af008ed206899f4debd32ce7676e11b017633aba8a548f8",
+      "kind": "binary",
+      "encoding": null,
+      "encoding_basis": "Complete raw bytes manually inspected (<100 bytes): JSONTestSuite deliberate invalid UTF-8/overlong/surrogate/truncated-byte rejection fixture, not a valid text source/document; raw bytes fully hashed.",
+      "classification": "binary-fixture",
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_string_single_quote.json",
+      "bytes": 16,
+      "sha256": "0389d0d5920ee2996811974bdcbfe05c9ca0ed79af909704b8485bc86f6eaf25",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_number_1_000.json",
+      "bytes": 9,
+      "sha256": "6713fc40db65bdbedf52f0ebe3a3121435ab186dcb11b408cb5a3ce9ed000f38",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/y_object_duplicated_key.json",
+      "bytes": 17,
+      "sha256": "94766ff02436ccd9bceddab5ed15bd3df3d5d6cee3ca0a34c9ad1fd1a9bed523",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_string_incomplete_escaped_character.json",
+      "bytes": 9,
+      "sha256": "f3b21db18eed4ce123ecd20c64798ce33a9f409adba22ff49cec573856405fe7",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_object_no-colon.json",
+      "bytes": 4,
+      "sha256": "de9ce9008704dd0aa575b07196e92a96935fdcef06f97988cf5e2eb7a9b26b62",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/y_string_one-byte-utf-8.json",
+      "bytes": 10,
+      "sha256": "440a346596ed50e35bd72fb0bba49b20c67bccf8899ae5ef1d73890f40e9593e",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/y_string_unicode_2.json",
+      "bytes": 13,
+      "sha256": "a44e2ecefdcc43bfea052cc63fd8e02348e1bf50640b7f50919db3d02c3bd05a",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_object_trailing_comment.json",
+      "bytes": 13,
+      "sha256": "e06904040a47c238c2690b5e61167fad1c371d220190722d09494aef3371a7b7",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/y_string_unicode_U+FDD0_nonchar.json",
+      "bytes": 10,
+      "sha256": "093f3d1b0f5c40df1427a3bbb8e1999df3e923f475b0a9655c1a7eafbf69ebe3",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_incomplete_false.json",
+      "bytes": 6,
+      "sha256": "7d00bafe4b8765a9c80f8c1db638ad802d0214599d3caa0ea977f26ea01fb4e5",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_structure_null-byte-outside-string.json",
+      "bytes": 3,
+      "sha256": "b092606b4e272c079151f7627c83db66b93c3624d0b051e6d0712925ed8b5c79",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/i_structure_UTF-8_BOM_empty_object.json",
+      "bytes": 5,
+      "sha256": "aa25e978046d680ef8740d837e6de5bc1e2a2dc6089dbda1012544b538d53f65",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/y_string_nbsp_uescaped.json",
+      "bytes": 17,
+      "sha256": "770046219042aa550c693bd6a2b776dee6d317705a67495b6cbc8426e3db1655",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_number_.-1.json",
+      "bytes": 5,
+      "sha256": "3c7791891957c90087cea4ec2483fdf1518d1a5717210b9853c08332cedd2735",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_structure_number_with_trailing_garbage.json",
+      "bytes": 2,
+      "sha256": "4c1731d722cf5ff61708486fbe2593cb779d91d6536e504300da66bdb4754507",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_number_real_without_fractional_part.json",
+      "bytes": 4,
+      "sha256": "6c66925b31c0576edefa5753ae952ff6758a4b94784473e421baef61aafaea48",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/i_string_invalid_utf-8.json",
+      "bytes": 5,
+      "sha256": "d7e1fd6f762f8c56a677954609ede1f15b518a9dd565a719f7841ed6b3e3836a",
+      "kind": "binary",
+      "encoding": null,
+      "encoding_basis": "Complete raw bytes manually inspected (<100 bytes): JSONTestSuite deliberate invalid UTF-8/overlong/surrogate/truncated-byte rejection fixture, not a valid text source/document; raw bytes fully hashed.",
+      "classification": "binary-fixture",
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/i_string_incomplete_surrogate_pair.json",
+      "bytes": 11,
+      "sha256": "823b370458fa84f32efaf461472abba66a29d1873ba77b81cb9b5213f6df79e6",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_string_invalid_backslash_esc.json",
+      "bytes": 6,
+      "sha256": "670eca29fffa63a17bb2e87e1157d473bb3b1a2a3e97aab641f53da93d8bde27",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_number_minus_infinity.json",
+      "bytes": 11,
+      "sha256": "4735d351ed0e14ba484a0d7a09335c3b8741258817529f5b4539111bbbaeb829",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_array_unclosed.json",
+      "bytes": 3,
+      "sha256": "73d88c9f94b28ad9f5e9e7f656976215d66e62ed0e84242205da3468f335b081",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/i_string_incomplete_surrogate_and_escape_valid.json",
+      "bytes": 12,
+      "sha256": "a6b1fba2b092852036b6ade42b4f59a7ad0754bc93f92c25b359db90dfb956ce",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/y_array_false.json",
+      "bytes": 7,
+      "sha256": "456e2e3fa05ee1e2f4e529558008ce162bbd388a9dd4a923c79543a4a1dba618",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_number_real_with_invalid_utf8_after_e.json",
+      "bytes": 5,
+      "sha256": "3d1903201ee720f58f1b0c7120edc2d1da03751239f62711f47b091b9bd83fd6",
+      "kind": "binary",
+      "encoding": null,
+      "encoding_basis": "Complete raw bytes manually inspected (<100 bytes): JSONTestSuite deliberate invalid UTF-8/overlong/surrogate/truncated-byte rejection fixture, not a valid text source/document; raw bytes fully hashed.",
+      "classification": "binary-fixture",
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/y_string_unicode_U+FFFE_nonchar.json",
+      "bytes": 10,
+      "sha256": "7e7d42cac051b1e55f093262ecb8cda1cc080cb9cde6a2cbe163b7a5db9fbfa9",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_structure_open_open.json",
+      "bytes": 16,
+      "sha256": "59926679fdeb977ce6a3a45683a7aaf2b1d30d4f4f68435df075bbf195843c00",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_number_1.0e.json",
+      "bytes": 6,
+      "sha256": "1b45efc13b6f4321c799e46e9304b31449719274bcd5d4e9e959c2d828c54eba",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_array_unclosed_trailing_comma.json",
+      "bytes": 3,
+      "sha256": "b2d3da6f524e2498194717d153a5621e2618d7643c1b23dbbcb2ebe52fa7933e",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_array_comma_and_number.json",
+      "bytes": 4,
+      "sha256": "2b3646f1ef5cf8b30a71b9e140e89b77da7eb4354ddc1f346f57ffc66ad68cd0",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_string_1_surrogate_then_escape.json",
+      "bytes": 11,
+      "sha256": "50f7d7a72fdb1665341f04244341704b2b8b4d8d3b8ccfaf0ce5e12c7de69aa7",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_structure_unclosed_array_unfinished_true.json",
+      "bytes": 12,
+      "sha256": "6732ae91c3a7dd2d74828f2683d8a7b084e2f4d003fef7c42fd0e01b81e1dd39",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_string_escaped_emoji.json",
+      "bytes": 9,
+      "sha256": "8ad7e4922258492dc7d254e91385d6cb5b6b7d9c82ebb8488228fb8d294850d5",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_array_comma_after_close.json",
+      "bytes": 5,
+      "sha256": "31f674b45f5eaff8419175ab479b1e8d5946d3fae55106a86f116d77f58672be",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/y_string_reservedCharacterInUTF-8_U+1BFFF.json",
+      "bytes": 8,
+      "sha256": "4cd40b9e988de371b814d7ef6fffc56acfa5b8ef1ccfa373ed618d3313e8bdc4",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_structure_U+2060_word_joined.json",
+      "bytes": 5,
+      "sha256": "aacc3ed19ba1f9596daefc68914fe3253c00703648e8ee606f03823feaed1da6",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_number_0.e1.json",
+      "bytes": 6,
+      "sha256": "379c8b8c643d0ce35b907d0d1dcd4780f586badae64c42d78cd05048b1879707",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_array_unclosed_with_new_lines.json",
+      "bytes": 8,
+      "sha256": "75b121d21dda317ab9e7c72844ff11ea4e05a48f118c90c4fd1e42e139f9d542",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_structure_angle_bracket_null.json",
+      "bytes": 8,
+      "sha256": "7227cd2265406dc197d250c3f0e5293cee7912acad093392367d8679b221f41d",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_object_emoji.json",
+      "bytes": 10,
+      "sha256": "3ad1b7680b6f1f5186a1af1f4a6822ea090ceebb4d616bf9330204387ed3c934",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_object_unterminated-value.json",
+      "bytes": 7,
+      "sha256": "34937db038e20201fca9f1e1fc232953eea57d986143d621d3c5a707b3e10ed9",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_structure_array_with_unclosed_string.json",
+      "bytes": 6,
+      "sha256": "7d5c01400b39d5ebebb81a2a51ec727d9fbf722bbf5caff62cb695c4fb288e29",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/y_string_u+2029_par_sep.json",
+      "bytes": 7,
+      "sha256": "bd532d486bbb87075166aa0ac00c967ba019ed58e603ed644f0b1c099ba262f5",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_object_double_colon.json",
+      "bytes": 10,
+      "sha256": "ea905a2f98e015dd8ddd6b28737d977b6ca0e114b04ed368f79bbdd42d84b516",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/y_object_basic.json",
+      "bytes": 13,
+      "sha256": "aeab10e350ec1756ea24bc72181b19979e86c9585ced7b89e8a657e75d239c22",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/i_string_lone_second_surrogate.json",
+      "bytes": 10,
+      "sha256": "24b9bc232f8cf6dff1869f7ef72790c7c5aac9c7529dd9c36427bb012bc20f37",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_structure_open_array_open_string.json",
+      "bytes": 3,
+      "sha256": "18d428401e338337407d8d88da1c82749a360cc94a0e8a94f33eedf730d2d4bb",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_array_extra_close.json",
+      "bytes": 6,
+      "sha256": "b9ffad41832eeef97b229c9de4f664d7ad3bd3094ebdf5342729564427b1688f",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/i_string_UTF-8_invalid_sequence.json",
+      "bytes": 10,
+      "sha256": "93d762e06089733df04d765462ac2da5e60ab1d691e5a57708b27ed4e3342968",
+      "kind": "binary",
+      "encoding": null,
+      "encoding_basis": "Complete raw bytes manually inspected (<100 bytes): JSONTestSuite deliberate invalid UTF-8/overlong/surrogate/truncated-byte rejection fixture, not a valid text source/document; raw bytes fully hashed.",
+      "classification": "binary-fixture",
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_array_inner_array_no_comma.json",
+      "bytes": 6,
+      "sha256": "e34a9903249cf3508b7f8ff91b510b0b1058d1a3aeec4005356b8021a130f2ca",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_string_start_escape_unclosed.json",
+      "bytes": 3,
+      "sha256": "71efe1dd33978d346960b810a8dd22b9bbca77490b3c35d16ae329f457aea737",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_string_invalid-utf-8-in-escape.json",
+      "bytes": 7,
+      "sha256": "1c1ef70149258ff7ee082817269431c45e34f75a2268c3dff56f35d3a4859f1e",
+      "kind": "binary",
+      "encoding": null,
+      "encoding_basis": "Complete raw bytes manually inspected (<100 bytes): JSONTestSuite deliberate invalid UTF-8/overlong/surrogate/truncated-byte rejection fixture, not a valid text source/document; raw bytes fully hashed.",
+      "classification": "binary-fixture",
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_structure_open_array_open_object.json",
+      "bytes": 2,
+      "sha256": "8b351adb56355ffc40a4986ab30267eecae89710c63d09cba764a35adfda3ef5",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_number_hex_1_digit.json",
+      "bytes": 5,
+      "sha256": "37d7fe7b45e87c632936ce095616eacc75fa292fffa1581dbc0682bfb9e102a2",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_structure_incomplete_UTF8_BOM.json",
+      "bytes": 4,
+      "sha256": "3f801979daa8eb44ebbc793bafe85ec1dd22ca8c976d9069fb0b0195c1cad8f9",
+      "kind": "binary",
+      "encoding": null,
+      "encoding_basis": "Complete raw bytes manually inspected (<100 bytes): JSONTestSuite deliberate invalid UTF-8/overlong/surrogate/truncated-byte rejection fixture, not a valid text source/document; raw bytes fully hashed.",
+      "classification": "binary-fixture",
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/y_string_in_array.json",
+      "bytes": 7,
+      "sha256": "88d0d49f2caf8f249e81a3c4a12657678594af2ca9867b193993b02bb4cf6814",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_number_-1.0..json",
+      "bytes": 7,
+      "sha256": "baab147e06a9082026c6292240e4c8802c05a70de0da085bc6d3e07765243757",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_number_0_capital_E+.json",
+      "bytes": 5,
+      "sha256": "cd14bf1fa8803ada52504f5a88bb1b3bf703234bdcc3977610c50410582f5f49",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/y_number.json",
+      "bytes": 8,
+      "sha256": "0bacf2e644afc0036da409821adf0493bec25543aa358bedc3fd1f0a31af829c",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/third_party/jsontestsuite/test_parsing/n_array_just_comma.json",
+      "bytes": 3,
+      "sha256": "739bac5a700cb6ab872c1a898eeadc6f6d8839f4224a8db0525253efcf2384bd",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/refcompare.py",
+      "bytes": 13745,
+      "sha256": "39bfec3c6f1aecb77b613845908a6422856cd727c89d4d8e88a2e83a6b92424b",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/run_readiness.py",
+      "bytes": 15367,
+      "sha256": "87aa83e9e99b02d6dd82a8a5b5d396c97a877efd6bf13934d83b6e74e6120812",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/eval/corpus.py",
+      "bytes": 16052,
+      "sha256": "21e96938a72f62850d98661b6f3a199fdc1cec6d5695bf65c9f5fbea788eb059",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/coverage_exemptions.txt",
+      "bytes": 3623,
+      "sha256": "8c70968c14fb7606ca17c7c1746eb4f86591621a7951f707db986bb891f05d57",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/cli_smoke.sh",
+      "bytes": 20149,
+      "sha256": "893554e21c7942fd27e078ccb2156e92ff2768d851dcbfbb1e18d6fa29676303",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/memory_baseline.py",
+      "bytes": 18725,
+      "sha256": "b8700b514781e81767f03bf1218cb613fc492e155cc3b875516f1e480a25680d",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/demo_smoke.mjs",
+      "bytes": 4260,
+      "sha256": "7947a8f111419846acccd6c472dcb5cdad9eaf3185641979505e2c8cdd9e1443",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "tests/coverage.sh",
+      "bytes": 13153,
+      "sha256": "123d530bbc7f9ccf8a386b2b024cc271a2bee38f0b2c0d5dbcfb4d3109211e4d",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "engine.mbt",
+      "bytes": 14831,
+      "sha256": "46577a7cc3c6a186e50b401b5d0f274d0f5109d4a8ff170bb58608f13051c874",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "docs/LLM_EVENTS.md",
+      "bytes": 12155,
+      "sha256": "c0af9096340828889c47cb476da7c79815bf224036aa43fa02a43bb6bbb651e2",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "docs/PROVIDER_PROBE.md",
+      "bytes": 6294,
+      "sha256": "f38e3d1abb60f1befeacd73c5bc4a06a8e38a0594df566aa6ddcdbefa112ad71",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "docs/DIVERGENCES.md",
+      "bytes": 40218,
+      "sha256": "d08a4ba98a52d7ff62850ebafb86fd7b61d99ec60248650760b7e1e5d625cd73",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "docs/EVAL_AMBIGUITY.md",
+      "bytes": 4111,
+      "sha256": "293a26dce646062b9fe63f3f2ae8a092e08c55bfa1532227d4f78d957d4ca4d0",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "docs/READINESS.md",
+      "bytes": 5805,
+      "sha256": "6454349571f9d89213092c6f88a10df35a7f07f7de43bcb6bf2b4a30bbd1f02e",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "docs/GITHUB.md",
+      "bytes": 17130,
+      "sha256": "96544def9f89584eb3ec501e2049e677c0700ebc0244f2f79685b07590488e5d",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "docs/EVAL.md",
+      "bytes": 4385,
+      "sha256": "ebb2948e134acd885f6ee68c1741c409b871387b05dcc266a690013d2c80c250",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "docs/ERRORS.md",
+      "bytes": 19697,
+      "sha256": "4c2c1ee108ff9503eb43353fdbe0a7b2bf1935bbd6bdba6d3d47c51a8ae71093",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "docs/EVAL_INDEPENDENT.md",
+      "bytes": 15439,
+      "sha256": "b9f626a559a96a74d5e927feac290d98b98849f67f06e59e50db85151ffb912e",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "docs/ONEPAGE.md",
+      "bytes": 11241,
+      "sha256": "b79e2b07e6fcc359a2f37fb8e5340e78fddceb84c77c67e030bf956e7286e500",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "docs/TRACEABILITY.md",
+      "bytes": 21576,
+      "sha256": "956cd8fc386a3d2a501788a14b475dd67fdc71b78089f8551bd7bce7055fb406",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "docs/BENCHMARK.md",
+      "bytes": 30579,
+      "sha256": "2223b01baa20e996b746362b30698284d6887307c482f8dd911e01495d17d7ab",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "docs/REPRODUCE.md",
+      "bytes": 15902,
+      "sha256": "2f8590d9bf90cbfd50967b0244ded90aa760d816a00e67b0e2eddd7efe808845",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "docs/MEMORY.md",
+      "bytes": 4613,
+      "sha256": "35542bb11d857968c88d47700657e38d253a10f46ceb36e1a16b62e97aee6a01",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "docs/EVAL_REGISTRATION.md",
+      "bytes": 17321,
+      "sha256": "848538910dd60b6c58918096f0dbfc7ea237bea03c7b2235da552e83400a4105",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "docs/RELEASE_READINESS.md",
+      "bytes": 12258,
+      "sha256": "8b46712950cf10d08ceeeeecd292cd7e7ac086a0ce7e19fe1cd40585835f49ec",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "docs/SPEC.md",
+      "bytes": 15960,
+      "sha256": "e98aa7bf4e5007fc059235ee854cb1de526b80115c698a33b08d5b6d97cc8fee",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "docs/RULES.md",
+      "bytes": 38198,
+      "sha256": "1e0488cc5ca4cb85291ac4da837381f92a89b263ecfc95479c9ee7e75d21ddb5",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "docs/EVAL_PATHS.md",
+      "bytes": 2343,
+      "sha256": "9703bec400959c7bd2d5e9847e30128705b44f41326ffe19e44be13b907a44f0",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "docs/EVAL_REFERENCE.md",
+      "bytes": 3755,
+      "sha256": "5b243696e4055e231f001423db8a8b9360cca7c70addee51a0cffed8b59f7214",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "docs/AI_USAGE.md",
+      "bytes": 6362,
+      "sha256": "1a13fa8d9661bc40d974ff5056474ba932cc61c8bb647ce88f951c5f80d6e8b9",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "decision.mbt",
+      "bytes": 4183,
+      "sha256": "aeb1ef320eb929363a2718247af631637ad410c7f41b7cb44d76521b42554507",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "schema_wbtest.mbt",
+      "bytes": 53085,
+      "sha256": "d38a1fcd7e7ccce95c5924fee675e68cb9235304e36c9faa2d8ee176460654a7",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "stream_readiness.mbt",
+      "bytes": 35671,
+      "sha256": "12dd9f564e3449a88f7a54ef8fbdf28df3adae60375cd17805be39ff004c1e5d",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "text.mbt",
+      "bytes": 6647,
+      "sha256": "c81e959bfac1fd2acbc4e833f6a6c0b0efb6054cfdeed034f6428e2d1ed8d0d4",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "NOTICE",
+      "bytes": 1110,
+      "sha256": "f3bc46598dbdb511e53487219c9162390435c47a95ceeec0a01030ecde25aacb",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "README.md",
+      "bytes": 39300,
+      "sha256": "799b07384ab952db9cbcb361bc913e3b72bc2d5ad1eaa61cd8da1928f6007264",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "engine_flow.mbt",
+      "bytes": 40632,
+      "sha256": "575a7d3a15b44fff3b32f2903e7705b3af20d0ebfebe5bd692c29b4736eaf679",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "golden_wbtest.mbt",
+      "bytes": 14204,
+      "sha256": "17a66bbe1d41b35c511caff3790a4853213ee907114e0abf21aef364de0a73d7",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "plan.mbt",
+      "bytes": 30783,
+      "sha256": "84719e33da57bf313fc081c78a9349283ea9abf51324c641fedb2a6684fcfc3a",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "bytes": 4085,
+      "sha256": "e110aa964501113144800e53b4527954cdb9355d65df2db7f6fb9c6f7da27f6b",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "examples/agent_gate/moon.pkg",
+      "bytes": 102,
+      "sha256": "51b73f06070e444f4fdc8c90916aa2f4418c96b85ffecd3b9e2fa66e786ef5e9",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "examples/agent_gate/main.mbt",
+      "bytes": 3447,
+      "sha256": "4e4144bf32f2eb2c1e1a1d3c2dc46cde52847c919a28eb5e51855e8a50b0fa3c",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "examples/web/moon.pkg",
+      "bytes": 98,
+      "sha256": "ce1705c4a868b191928675b68ff660e9438743ef95ecab2bc2df21d3b5038422",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "examples/web/main.mbt",
+      "bytes": 9724,
+      "sha256": "0887657f6a3b310d7776515a37a3689747dd135c61b8a88ac4b652e0982db188",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "examples/cases/06-prose.expected",
+      "bytes": 7,
+      "sha256": "015abd7f5cc57a2dd94b7590f04ad8084273905ee33ec5cebeae62276a97f862",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "examples/cases/05-multi-root.json",
+      "bytes": 27,
+      "sha256": "339ef6a49de5b8f011e6d4603e97e2b3421465601f4d6e717f9eb0df4a1a7d1b",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "examples/cases/01-quotes-and-comma.expected",
+      "bytes": 53,
+      "sha256": "2e7f31ab47ea18c30d133f7ee0cb447a03983c240852689b8a8a86f44b33fa23",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "examples/cases/02-truncated.expected",
+      "bytes": 17,
+      "sha256": "df54656ce9ea4120b43cf27666a8844bb94a5a70540c2560c2b0750e437c2028",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "examples/cases/03-fence-and-comment.expected",
+      "bytes": 17,
+      "sha256": "8baa73198470c7bb4c3ce142a8fd651affc0310d878bb9bd159e37a573fb4874",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "examples/cases/05-multi-root.expected",
+      "bytes": 11,
+      "sha256": "774f958deec5b02dd6d95db6d282d75d329e49d0c997f40fae3b51eae9b8614e",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "examples/cases/04-literals-and-nan.json",
+      "bytes": 44,
+      "sha256": "8f75a97be551ba6e4ee5fed2e1c8c3fdee500a826a00e464d494bcca235f7ac2",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "examples/cases/01-quotes-and-comma.json",
+      "bytes": 61,
+      "sha256": "fb26f4d0cfb743f8c3742a57a9e33f45453475399f638955276837c3c1c189d3",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "examples/cases/02-truncated.json",
+      "bytes": 14,
+      "sha256": "24edc91527d0c99935cb020ff3e805004dcdf71e0e2a489e0ebd6d65abaa6fe6",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "examples/cases/04-literals-and-nan.expected",
+      "bytes": 36,
+      "sha256": "aa4b4db309d75d163a8a57a55e4b2572a9f06bbe1327e71ec23d8892731a866f",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "examples/cases/03-fence-and-comment.json",
+      "bytes": 58,
+      "sha256": "234d8d61e1f7b82b23dd4b349e7400c00cd2049d4e5658eda79e9c100a1b4f66",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "examples/cases/06-prose.json",
+      "bytes": 41,
+      "sha256": "346c72af0eae59fdcaa7ce404cdead7d3432a1b035ec168817839dc200b64e23",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "examples/agent_loop/moon.pkg",
+      "bytes": 102,
+      "sha256": "51b73f06070e444f4fdc8c90916aa2f4418c96b85ffecd3b9e2fa66e786ef5e9",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "examples/agent_loop/main.mbt",
+      "bytes": 4804,
+      "sha256": "acb8de718ca4f05f8e37f70fc452e088a134422a4d06acd2eb78a7839c188354",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "readiness_wbtest.mbt",
+      "bytes": 5420,
+      "sha256": "5f3d48be14ba56406a8902190f4f026cd04c0d1ca53bd52f0d49e66dff9a9469",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "hint_wbtest.mbt",
+      "bytes": 3520,
+      "sha256": "d59665e9df4dce3d74de981e09d3f023f668bec83f45e08b7ea3ea962a9d2a39",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "schema.mbt",
+      "bytes": 52737,
+      "sha256": "fb9e4ee55e0c07a3dc93deed64b10391698458f7f2c975a09bb13023d72f79aa",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "api.mbt",
+      "bytes": 12283,
+      "sha256": "83ecc7e8e35e84633cf27a992b2f9d48098504c2388ecb26ede9f226b3fdb063",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "options.mbt",
+      "bytes": 11446,
+      "sha256": "ea1d0ad9e88402f8dbe480510be335d154ebb76458680109c3ca9e75739615c8",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "plan_wbtest.mbt",
+      "bytes": 15396,
+      "sha256": "b09fc01371bb56511a4264c8daa1cbaef0feba4c09d46995df7efbbae168b510",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "stream_wbtest.mbt",
+      "bytes": 13720,
+      "sha256": "8674e20c06417e8ef3cbdf0e003c37c359ee80171c8f78538e75155c1a9664c3",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "hint.mbt",
+      "bytes": 5372,
+      "sha256": "83ea140770a797a9832ed0c7fdb776225e716ebfabd14d0279d195f8c05c6d75",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "error.mbt",
+      "bytes": 16218,
+      "sha256": "a7bf4a342b4ff952a5c7de5c3ce650656cbf22c3493652f76ea2222af1dbd842",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "policy_wbtest.mbt",
+      "bytes": 5795,
+      "sha256": "401f1fecff37779e5ff208396ac9e33a9431297a1f122a903ba6107f5d82a0b5",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "stream_readiness_wbtest.mbt",
+      "bytes": 44842,
+      "sha256": "177639911a4ac121c1cb0105e8bcc7746ebb74398d65bb6ad017990892518d52",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "delta_wbtest.mbt",
+      "bytes": 11520,
+      "sha256": "2324da3f21e7af0399815af7d1c484b675c3ca2df3de9f9446c49829a01109a8",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "SECURITY.md",
+      "bytes": 2588,
+      "sha256": "f1d62ba1f4a0fb710ddb364ae224d9ef92ad549bdf5b0c5a83cef00f898e7fe2",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "options_wbtest.mbt",
+      "bytes": 6751,
+      "sha256": "ee07ab063e7192058f80b6d1adc3a5383fef993ba97da70046ac80bd02d71e6e",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "delta.mbt",
+      "bytes": 6592,
+      "sha256": "efc55db5806143be93c0ab7f6bcf0ee5ca9bd238328f868365b6da21c51deac5",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    }
+  ],
+  "hits": [],
+  "text_files": 459,
+  "text_bytes": 2162314,
+  "binary_files": 21,
+  "expanded_bytes": 2162439,
+  "limitations": [],
+  "status": "ok"
+}

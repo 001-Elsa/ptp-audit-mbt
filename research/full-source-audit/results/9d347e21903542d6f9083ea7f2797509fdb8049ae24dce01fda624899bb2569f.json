@@ -1,0 +1,2435 @@
+{
+  "scanner_version": 4,
+  "scanner_sha256": "ebd6aaa6ba6aa3e501c836d1e066932b6a687e9f996924236e2ae8775edc9a39",
+  "name": "Milky2018/wgpu_mbt",
+  "version": "0.16.2",
+  "yanked": false,
+  "repository": "https://github.com/moonbit-community/wgpu-mbt.git",
+  "url": "https://download.mooncakes.io/user/Milky2018/wgpu_mbt/0.16.2.zip",
+  "checked_at": "2026-10-19T15:50:40.557046+00:00",
+  "cache_file": "/Users/hanzhen09/.local/share/ptp-audit-tools/mooncakes-source-cache/9d347e21903542d6f9083ea7f2797509fdb8049ae24dce01fda624899bb2569f.zip",
+  "evidence_file": "/Users/hanzhen09/.local/share/ptp-audit-tools/mooncakes-source-cache/9d347e21903542d6f9083ea7f2797509fdb8049ae24dce01fda624899bb2569f.zip",
+  "archive_bytes": 506155,
+  "sha256": "d56eaa179758e23c63e29e14c54c487b6307012dc284bb27f34588fc2dd2d369",
+  "source": "verified_local_cache",
+  "files": [
+    {
+      "path": "moon.mod",
+      "bytes": 429,
+      "sha256": "39581b0ef616cf986c9de57ca8d47983ecd04d27a614fa29a4d76b20bc7b544a",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "build.js",
+      "bytes": 9480,
+      "sha256": "326ba06b62c117198856a9937aa9b4bedd921c000a39c172447c19b3ee1acb61",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "docs/native_test_skip_inventory.md",
+      "bytes": 5136,
+      "sha256": "5e4bf15e12def3064d7671767b426696342ba057461ce2675fafe3cfc39cc738",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "docs/ffi.md",
+      "bytes": 1070,
+      "sha256": "880127c78e0b7f356a00d34c222b2c878b4a388b04d37c106cb774ee2f9e7d2b",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "docs/generated_handle_behavior_matrix.md",
+      "bytes": 11709,
+      "sha256": "cb16794913a8035e6ce573c676e58585c70e1db5b608aec2ec4a1a169d813dcd",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "docs/webgpu_capi_coverage.md",
+      "bytes": 649,
+      "sha256": "08d5f6c7eb8883ad72faf5bace3e52f605f7109e7b5e83797ad8c79f84adbae6",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "docs/public_api_behavior_audit.md",
+      "bytes": 13163,
+      "sha256": "728d275aee5ab63fd17eaa7f738ca0e4796b4a878999949d1e1548e03c3666c1",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "docs/lifecycle_validation.md",
+      "bytes": 1892,
+      "sha256": "574e05a7d2143020651daab1205133074402841cdf55e4803590cb4d04adcf3c",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "docs/platform_support_status.md",
+      "bytes": 4727,
+      "sha256": "daa1492db563cc1dd6240eaf9668d0ef8e8b975181de80bc3655b35dcd9f6b80",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "README.md",
+      "bytes": 17077,
+      "sha256": "1565a8c28adbf9cee198a51fa95e85da7c509d4338794c7d2aead8444e6f8f26",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "README.mbt.md",
+      "bytes": 17077,
+      "sha256": "1565a8c28adbf9cee198a51fa95e85da7c509d4338794c7d2aead8444e6f8f26",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "scripts/run_native_asan_tests.sh",
+      "bytes": 3129,
+      "sha256": "b99507675f5d522fe43d60cb9784085de12160a4a9616c5a05b15eadaa0b204f",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "scripts/wgpu_native_release.js",
+      "bytes": 7562,
+      "sha256": "84b4895b426dbaae4fe45a2b73a3bee8b38717fd06e56026654536d8f4a3f1c5",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "scripts/gen_webgpu_capi_spec.py",
+      "bytes": 27215,
+      "sha256": "7be94582bd9cdd0dfac28cea262e1ba3d598c85c6e8b38b7f12d6d9b0751fb81",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "scripts/gen_wgpu_dyn.py",
+      "bytes": 5347,
+      "sha256": "598ca9fabe4b2875eb3ac620c8a7c790b68b00bd4f1f992d563e5d0434766471",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "scripts/audit_wgpu_capi_symbols.py",
+      "bytes": 3057,
+      "sha256": "6fd9df883fc8f4f83c6b26742c66906afced58667c06b2fb4857857c4a043b72",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "scripts/audit_native_test_suite.py",
+      "bytes": 4181,
+      "sha256": "e550363048ccfa4979a1ca1acb20001a15ff2fa3181942a6474216bb35de38c4",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "scripts/gen_wgpu_wrappers.py",
+      "bytes": 26808,
+      "sha256": "56d8eb433b8e10f37bca35af53aa1916cbe06a0c648042b10d40b7e38d04deb1",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "AGENTS.md",
+      "bytes": 3221,
+      "sha256": "c2ea228c5d293e06973a29b2ca78cb69a6b2bc3ce3e72300502b2e1780a65e8a",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/moon.pkg",
+      "bytes": 959,
+      "sha256": "0acf6bf94ac80bfe092314598e06aa772f96c77987341a9439a9344a5f6bbfe8",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/cmd/bench/moon.pkg",
+      "bytes": 123,
+      "sha256": "30385baae531c54d6f269575ab16cd29410c4c02cff48025256f109fef6dbec8",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/cmd/bench/main.mbt",
+      "bytes": 2656,
+      "sha256": "f9ac92f5589f1275c5a3dd5a06c67e3ef514b8bc8dc6dc5204d9043fdaee561e",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/cmd/bench/pkg.generated.mbti",
+      "bytes": 157,
+      "sha256": "daaaedf960e1d6485820070c4f722a65a1fa0b7e647d03465c6aad86a3278d7d",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/cmd/probe_pipeline_async/moon.pkg",
+      "bytes": 193,
+      "sha256": "f2f64937e9d6ae3883c8efe899eccd35b69a39499893aafb3337939526939ab9",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/cmd/probe_pipeline_async/main.mbt",
+      "bytes": 3352,
+      "sha256": "4721fdcd4177375b1a567c23d51352292dc302aa8cd964e2034bc7baed77e849",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/cmd/probe_pipeline_async/pkg.generated.mbti",
+      "bytes": 913,
+      "sha256": "974c09e387e36f38f472f49eb9d32f32877e3f918e6dd1959d1bc7723e544a6d",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/cmd/probe_compilation_info/moon.pkg",
+      "bytes": 193,
+      "sha256": "f2f64937e9d6ae3883c8efe899eccd35b69a39499893aafb3337939526939ab9",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/cmd/probe_compilation_info/main.mbt",
+      "bytes": 1842,
+      "sha256": "9a64f15360a29a4aa77bb55bdb9883e695127fb290b74b20a837a9a5aa73acec",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/cmd/probe_compilation_info/pkg.generated.mbti",
+      "bytes": 330,
+      "sha256": "a100ba0eff248787459cec454fe42d2306570ef5c2f3423fe01d860dfee8702b",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/cmd/main/moon.pkg",
+      "bytes": 157,
+      "sha256": "88ca22c440519a2aabae1d1c4c14dd2e8b8076ee8cfadc45dde9fe2d821b68fd",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/cmd/main/main.mbt",
+      "bytes": 3581,
+      "sha256": "4fc6d9eb37991362ae8abef6e59bd6ed4c5b95c91cb6ba6545d3ae8b56cef202",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/cmd/main/pkg.generated.mbti",
+      "bytes": 156,
+      "sha256": "035dffbd1c8c0cd9c8b8dfd99ded21f95e69e8fda27d688b0dc75cb5fbdbf081",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/wgpu_rust_features.mbt",
+      "bytes": 6285,
+      "sha256": "76dc9dde2ca57e9f3246555f9b58f4b80fe0508a3d3f123d2109d8bc3473b69c",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/wgpu_instance.mbt",
+      "bytes": 20746,
+      "sha256": "a86fa609ab2a79b1e7199786b7890be4cc00ce65201e97c2e93f8a942a4799de",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/wgpu_surface_frame_wbtest.mbt",
+      "bytes": 1390,
+      "sha256": "c9817ae046d8739a2e891fd979d56fe7f50ebef132ca726a239b2e71438a1a0e",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/wgpu_windowing_wbtest.mbt",
+      "bytes": 6980,
+      "sha256": "d0af3131c0839680d8052d83e2fa0ecf798490f0301ff52fc358f705b771a732",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/wgpu_spec_core.mbt",
+      "bytes": 3475,
+      "sha256": "6dbf561a89d4c416f4250624c6c8444357036a7e62e80375aec1d3b9861040e1",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/wgpu_wait_any_error_wbtest.mbt",
+      "bytes": 1045,
+      "sha256": "9718a00c0f4384d6808710070f965afdf73faeebdca2ab8a91b067c1967b9ae4",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/wgpu_queue.mbt",
+      "bytes": 10171,
+      "sha256": "06e1274f843fc052f6a19ac187a1466dcf3d8de5136877f58d7e7f299db9e08d",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/wgpu_windowing.mbt",
+      "bytes": 5019,
+      "sha256": "848b61d16d9406ff153c43680e01657c71166ac1d71d567e35f3b11288d14441",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/wgpu_spec.mbt",
+      "bytes": 941,
+      "sha256": "47cd1f4f95fcb487d6395d190b55f930f5a8704c19eb5cca59cbaa7954dd7fc5",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/wgpu_surface_error_wbtest.mbt",
+      "bytes": 1509,
+      "sha256": "c170d1659cb87d62f2dfc048e9b694ebb46acacc15b75576d7cdd80ca6693a81",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/pkg.generated.mbti",
+      "bytes": 125772,
+      "sha256": "61cd5a95815742bd0ed9a45041d798c823b365f67eb930015f4d1bb119c0e7e5",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tests/wgpu_multi_draw_indirect_test.mbt",
+      "bytes": 3328,
+      "sha256": "1ba1bcaf1d3a7a6b54bc225bb87f1760882f298407352506752c9fe5beac7dee",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tests/moon.pkg",
+      "bytes": 6220,
+      "sha256": "f5c2ca72bd5ff029e583d377c75394f128c2becee130eefe544769e2f47d8f4a",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tests/wgpu_rust_features_test.mbt",
+      "bytes": 9125,
+      "sha256": "19c53156cce294d3fe84302ed5f7bfa3f339dca106acd32457220ef17bbf8e54",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tests/wgpu_smoke_test.mbt",
+      "bytes": 1452,
+      "sha256": "101f8e89440f22d23f4c08dead2ff8eac11bccb04fc6dbdbe58dded5bc62719d",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tests/wgpu_queue_write_buffer_test.mbt",
+      "bytes": 3127,
+      "sha256": "0a4f4df997a32cf0afa82df8022944b75c6d79e7bdcbd65f7d8b9dadaf6a1827",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tests/wgpu_shader_module_spirv_test.mbt",
+      "bytes": 4605,
+      "sha256": "d50df5243d3b2b19f458adbbdabef77348871beaa9abcb35bf30cbf339a75e17",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tests/wgpu_lifecycle_helper_test.mbt",
+      "bytes": 7503,
+      "sha256": "3a7239922353bf7bf700b504b9033d6a4fe0aa84aff9ae6c9b9cddd43baf432d",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tests/wgpu_bind_group_binding_array_test.mbt",
+      "bytes": 9593,
+      "sha256": "e73f26266f3646094091538c8b0d51b244437c3903e3f9b358f6d6829e62f508",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tests/wgpu_empty_bind_group_layout_test.mbt",
+      "bytes": 1730,
+      "sha256": "0dc36f7999a20d88256ee6e59a4b4cb7dee7be7ab5b470febd7128302eb7b973",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tests/wgpu_error_scope_test.mbt",
+      "bytes": 1638,
+      "sha256": "3659e3c508d9023cd49936c9fe96e9f966ed7a01ac22b2b79e47daf4b91d6081",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tests/wgpu_device_lost_test.mbt",
+      "bytes": 1087,
+      "sha256": "cc8274525104653c9ccb8f718e442dfe0259af0393b3ad04783f33f0f352a7bf",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tests/wgpu_spec_queue_submit_multi_test.mbt",
+      "bytes": 1374,
+      "sha256": "bbbf2ec48a8fc1894b602feb4ed388ca3f2386d10de3214c31017ee853241b8a",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tests/wgpu_spec_buffer_init_test.mbt",
+      "bytes": 1211,
+      "sha256": "d26005feb19f4aff21b8d906bea5d3b5a065e3809081c0f396d9a6aa9ea85a4b",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tests/wgpu_surface_mode_types_test.mbt",
+      "bytes": 1507,
+      "sha256": "946c3396abe8089badd0fec18839da7738561dc0c09f1e973bed88b3b5170fa5",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tests/wgpu_native_feature_gap_test.mbt",
+      "bytes": 2189,
+      "sha256": "cc4c451550ea26ee727c3835ba0145af59fa6522e1a5056a7eacbf237292ada2",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tests/wgpu_destroy_test.mbt",
+      "bytes": 1051,
+      "sha256": "c876d08ed81e1325a791c79484af2b369fdedf3d30aef9f297208ee92a844663",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tests/wgpu_spec_buffer_map_test.mbt",
+      "bytes": 1844,
+      "sha256": "cfd58a18b25817e6185886bf4ffdf5fa386c33854df4c82d7fd53a0b5c5823d8",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tests/wgpu_pipeline_statistics_query_test.mbt",
+      "bytes": 5278,
+      "sha256": "d79e3f8ebabffa9d7ea8eb06aa0b16c6992d6ce1e974c56a83cea4b86c10248a",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tests/wgpu_supported_features_items_test.mbt",
+      "bytes": 1602,
+      "sha256": "f62001a0beb5780d795914a3c900045b19b5227ac2a6a602a9fb07fbb0dd8331",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tests/wgpu_render_blend_test.mbt",
+      "bytes": 24885,
+      "sha256": "8891dad872178cac01addeb5294cc918220beb5e7a9863c22b58fd55b9f25c3b",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tests/wgpu_async_future_api_test.mbt",
+      "bytes": 2388,
+      "sha256": "3bb2850f8c6cbe194ac71a9636e171639a923c16bc350d86003373a631e756b7",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tests/wgpu_pipeline_layout_many_test.mbt",
+      "bytes": 1589,
+      "sha256": "edfd2d008c82e3acf71d8bd305b31a21b6da21c7a16692244fefc5c913951079",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tests/wgpu_render_draw_indirect_test.mbt",
+      "bytes": 2734,
+      "sha256": "6365e0f1a52c0366eb2f09bbc3be25a98402a01aa62cd4d879c4b47c90e0447c",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tests/wgpu_read_only_binding_type_test.mbt",
+      "bytes": 1914,
+      "sha256": "e396b177dba21cc8ceb16680b4e8321f46d252603292ddd000178f01fff10e19",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tests/wgpu_texture_view_formats_test.mbt",
+      "bytes": 4237,
+      "sha256": "e09112a46ba9f92deb9cc25b00b4ee75dc739699941d9d7d665cd9e532a7ed3e",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tests/wgpu_test_helpers.mbt",
+      "bytes": 3763,
+      "sha256": "9487965291db969ed8eab0ab044a5f6089ee3babaf35b341ffd36e75c3034725",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tests/wgpu_surface_platform_gating_test.mbt",
+      "bytes": 5013,
+      "sha256": "a66c0db50d0c02d89a9cffb9555ac08786f5f0fcb3b2045d512656e892e3481d",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tests/wgpu_compute_readback_test.mbt",
+      "bytes": 2543,
+      "sha256": "8e68447ead0276e0b9fe8c280c12560f9e8dbda7cfcd94c380958ce503d30e5a",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tests/wgpu_texture_write_bytes_per_pixel_test.mbt",
+      "bytes": 2300,
+      "sha256": "9af0ed834d28576c0b7d8eafbb54af40d7e3a082e2915ecc415956bfcb13615c",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tests/wgpu_render_depth_test.mbt",
+      "bytes": 17534,
+      "sha256": "d3d3e055983814965015c2bac5dd3eb7e5e06f7904b7ad2f07c3a71b5b140a66",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tests/wgpu_texture_getters_test.mbt",
+      "bytes": 1478,
+      "sha256": "aefda9893de1f63cd73a254f5d4c1d4b684980030587edebbc0ed16d3782ba4f",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tests/wgpu_render_occlusion_query_test.mbt",
+      "bytes": 3145,
+      "sha256": "9be6b411c67ecbeca938684e74a9687c37aba84bdb1f7387e8ec3b286e767baa",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tests/wgpu_supported_features_test.mbt",
+      "bytes": 1445,
+      "sha256": "3891a34fd7aa479d26671f5a206fe9c1788472296ea89549921cb0b4a2ad77cc",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tests/wgpu_generated_handle_gaps_test.mbt",
+      "bytes": 7918,
+      "sha256": "516bb158eb0ec5139ad7249d8322090d34aee0be47446ed362009def3445a094",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tests/wgpu_spec_texture_usage_test.mbt",
+      "bytes": 1087,
+      "sha256": "7cedde3e3f09eb610ca0cb8b3c0dcc293574ecfd2b038984587191d89b3d50ac",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tests/wgpu_spec_queue_write_texture_test.mbt",
+      "bytes": 3163,
+      "sha256": "eb5d294b8dfa073e90d1b268673e9fd2f863504dfac2919fc2671e8c6e40b245",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tests/wgpu_bind_group_dynamic_offsets_test.mbt",
+      "bytes": 6583,
+      "sha256": "38318bae3fd87f0b236530432e5841ffb505ffc7935644933c36a31ea151dac1",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tests/wgpu_timestamp_query_inside_passes_test.mbt",
+      "bytes": 3793,
+      "sha256": "37021b4220bcca728709472d592b1961288722b6d89ef5726adcd6a700f0827b",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tests/wgpu_texture_array_mip_view_test.mbt",
+      "bytes": 5117,
+      "sha256": "921a820df85be67f1afbdec8d3aee7401266e984d646cd14192cfc2350a16147",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tests/wgpu_sampler_comprehensive_test.mbt",
+      "bytes": 9883,
+      "sha256": "28aa40977cd307e16df5031fde4ec202bcc3ea06e5406ba711f4575c28cacd4e",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tests/wgpu_buffer_usage_test.mbt",
+      "bytes": 1045,
+      "sha256": "02acbdbd0da69efa48b071086027cadeb542c9a5783d8b2f283a3cc4f39b4566",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tests/wgpu_render_pipeline_entries_test.mbt",
+      "bytes": 6991,
+      "sha256": "e82660aabe939fb48f6794fd956e5d779d29c905e2981feaa52f520706677ebb",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tests/wgpu_log_callback_test.mbt",
+      "bytes": 1188,
+      "sha256": "3c1f4434fbf7e0a87417a0caf5a258bfc8ec9f2656abb8cae517038d6a5d8390",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tests/wgpu_device_limits_test.mbt",
+      "bytes": 3406,
+      "sha256": "34f95a97f02861781de84f913786434134eedbc5ecb568ba37597ad7b1ba8c66",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tests/wgpu_native_api_completeness_test.mbt",
+      "bytes": 7050,
+      "sha256": "f3ec09496ec5aab7f637488d60b199d22317051a231fe83a79abf64659b385ce",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tests/wgpu_compute_dispatch_indirect_test.mbt",
+      "bytes": 2766,
+      "sha256": "3e74ada22040ef3d039b0cd3bd34f7af6b6753c7582a0467074ce0c4b1914ddd",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tests/wgpu_device_poll_test.mbt",
+      "bytes": 2486,
+      "sha256": "72191163322584254988b58d71d8b861821af59c4b06f5395a6ee3423619f256",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tests/wgpu_clear_buffer_test.mbt",
+      "bytes": 1900,
+      "sha256": "b524375c52a51d1623f5757fb2ed5ddaf95f267105c13883ad677bf913984bbb",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tests/wgpu_render_mrt2_test.mbt",
+      "bytes": 6001,
+      "sha256": "b1cc0eb440e2ddd7fb9374c3079c9761646bcbd5811bb455f64f444af0aee4a3",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tests/pkg.generated.mbti",
+      "bytes": 763,
+      "sha256": "01598a6af1c999b171a6a9da6bc61be59a40856d914a7805ea7e49bf7ad2985c",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tests/wgpu_instance_capabilities_test.mbt",
+      "bytes": 841,
+      "sha256": "6c1960c0f85c70b1f4334d8fc00378f1a00688e199c93b435f839e8d3101d18f",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tests/wgpu_render_viewport_scissor_test.mbt",
+      "bytes": 2986,
+      "sha256": "f8b81fc9f7ecf00dbac19275a8d6c3ebb419d5ea78fd961f8c3cbb49c0f8359d",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tests/wgpu_spec_instance_process_events_test.mbt",
+      "bytes": 752,
+      "sha256": "3d8b3670ae1ae9f29aedc46f27458cc26de4e25fd37bed79763fb83fc8452e4f",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tests/wgpu_report_leak_check_test.mbt",
+      "bytes": 18648,
+      "sha256": "4bd676c98dfcbe6e61452b9cbd7c1c806150416996f676083e8df198793fd8f4",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tests/wgpu_generate_report_test.mbt",
+      "bytes": 1110,
+      "sha256": "20f7b1eb903431f350ed60c5f6c12ea20e7f26f9bd44faa626f1cd8fd117d1af",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tests/wgpu_capi_symbols_test.mbt",
+      "bytes": 11957,
+      "sha256": "32478e5551ca684a6cfeb8757a15bab46b77016b16fbc2b8727bd871b530cc04",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tests/wgpu_compute_pipeline_entries_test.mbt",
+      "bytes": 3157,
+      "sha256": "83e4e16f1a0a4ad9ec5a80f7538db6924ca05504a7e21973c4f403feabfae1ed",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tests/wgpu_queue_write_texture_ptr_test.mbt",
+      "bytes": 2334,
+      "sha256": "e2163e77895adf6c38acef17b10cebde9430a69451ddbe0f02d6f816749099bb",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tests/wgpu_render_texture_sampling_test.mbt",
+      "bytes": 3443,
+      "sha256": "6a93498dc3bd78dc13576b1b26ec424e2bd03496698bcac14707ea67a4e3439d",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tests/wgpu_render_index_buffer_u32_test.mbt",
+      "bytes": 3064,
+      "sha256": "1c5a2e86abee9d37d12762074d65e7d9d17ec7301ceb4b33f2e455add4abf738",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tests/wgpu_device_descriptor_builder_test.mbt",
+      "bytes": 1333,
+      "sha256": "ebae2714d2626a63b2dda4b6077406bcb3dfbae44240b8540f2d71d2f87c0ad8",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tests/wgpu_label_helpers_test.mbt",
+      "bytes": 3783,
+      "sha256": "25bbe2e0c6b4fa13c80ac2b2ebc9a872ffcdb42027a667ab4f5f2210a6782ed9",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tests/wgpu_render_texture_sampling_split_groups_test.mbt",
+      "bytes": 3788,
+      "sha256": "c80925653b81c87d867ba7d025a06fefd469aa9e13e97eb3ade20eab8c493b13",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tests/wgpu_spec_sampler_linear_test.mbt",
+      "bytes": 936,
+      "sha256": "92522fe11553d82500a66decd5e9c709672247659940d03db1189c2585f071dd",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tests/wgpu_adapter_info_test.mbt",
+      "bytes": 3186,
+      "sha256": "cc93be2fda6bf4e72202683c096d8c636634a9c23ddde65f7bc883f716cb69b4",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tests/wgpu_spec_copy_texture_to_texture_test.mbt",
+      "bytes": 2042,
+      "sha256": "4a6571b4121b450921468943f40aef27e25179c46000bbe0ce918686dacaf2f2",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tests/wgpu_render_vertex_buffer_test.mbt",
+      "bytes": 5421,
+      "sha256": "df0b4faaaee364f17e56b7e5f041cec653d623b471dd26f715240fb98f79e7e5",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tests/wgpu_render_mrt2_depth_test.mbt",
+      "bytes": 8614,
+      "sha256": "012ca7905385929c28dedb85dd048c717f6a0a56cecbcbac9041426b39f5c8cb",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tests/wgpu_storage_texture_test.mbt",
+      "bytes": 2552,
+      "sha256": "15d13a719896855789c9c482952418df58d019410b6438f3f1386bef4acd611e",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tests/wgpu_pipeline_async_sync_test.mbt",
+      "bytes": 3184,
+      "sha256": "4a48ec1d2005ddc7a0f2badee87d83a70412fcf3d1d8a289d6d0f6b266194037",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tests/wgpu_copy_buffer_to_texture_test.mbt",
+      "bytes": 1907,
+      "sha256": "050fd08ce6d8409467b9d7275797b4df128255a81c6a4c6dad1bf3d30c38a216",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tests/wgpu_native_feature_wrappers_test.mbt",
+      "bytes": 6013,
+      "sha256": "37d06b25c2ab804ade6135e501924fbf16cecbe454f8927fe855750799c32b7b",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tests/wgpu_request_adapter_options_test.mbt",
+      "bytes": 1790,
+      "sha256": "5edd9d58feeeb1fb9c5ce9c9dc8a9c1dcda706064befbbd84ea5b6734bccad08",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tests/wgpu_sync_helpers_test.mbt",
+      "bytes": 989,
+      "sha256": "ccb1896315e71461625d7cc31b6b508d2583e5755e573cfe96ec75f8bf5bc751",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tests/wgpu_coverage_uncovered_test.mbt",
+      "bytes": 8092,
+      "sha256": "57467b8c55fa71943e13236c145193216a1a6ebced3c23927931b07be33efd4e",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tests/wgpu_render_uniform_test.mbt",
+      "bytes": 4049,
+      "sha256": "07a73e2078edc0ff323a2a460d41543ac8c32d1fd52b1f8f520326514bc7d822",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tests/wgpu_sampler_address_modes_test.mbt",
+      "bytes": 6478,
+      "sha256": "2142c323495dce188dd21bae01511d61d0b00c2e569cfdffc0c3b216714c0f3a",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tests/wgpu_adapter_limits_test.mbt",
+      "bytes": 3370,
+      "sha256": "6d6cb9713d8aa12486a6905b19a5c9779c1923d119f4462fa8308732d57c3159",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tests/wgpu_builder_lifetime_test.mbt",
+      "bytes": 4232,
+      "sha256": "b94bec28e64c17722e29b2dd3103582905cdf9224a0ccdeb6ec33aaf2dce8588",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tests/wgpu_generated_handle_render_gaps_test.mbt",
+      "bytes": 11517,
+      "sha256": "fb89932091c0fc606cf56a441ee18800ae6384c8f548006fa95592acb43a54d4",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tests/wgpu_native_diagnostic_test.mbt",
+      "bytes": 1798,
+      "sha256": "df2fe71c9d5876f3ce7f7c840e618c3a419b9082c7f47414a5fc7c59ad1718a8",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tests/wgpu_pass_ptr_test.mbt",
+      "bytes": 1664,
+      "sha256": "1a631f3ee86640c1e7e8975e34a9c95cfc4b8ef4517cc47bc1882f5da01f521e",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tests/wgpu_builder_free_test.mbt",
+      "bytes": 951,
+      "sha256": "fb96f69925993643d67f8f3b9739defb90f73f89637e9604f4423f3234f64946",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tests/wgpu_spec_stringview_color_test.mbt",
+      "bytes": 1803,
+      "sha256": "1c7297c31f25e0ab8dc1fbfd9f28e6a3d8aae0ce60adcd5151bbf89f189dfe17",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tests/wgpu_render_sparse_msaa_prepass_test.mbt",
+      "bytes": 3144,
+      "sha256": "ec97f2967102a51fe8b8663cf43ff6c9378583dc7cf75b0706d9e0b40a911c82",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tests/wgpu_required_limits_builder_test.mbt",
+      "bytes": 3456,
+      "sha256": "0ec88d45f71dd47a4841238fe9ec56c4caf5100cb10ab15b3b23bf2f54dd6dca",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tests/wgpu_queue_work_done_test.mbt",
+      "bytes": 6611,
+      "sha256": "67292d17a2a1b0edd9285e60f923546253b9dba6d2a7f1b37366b739fac498ec",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tests/wgpu_device_callbacks_test.mbt",
+      "bytes": 1152,
+      "sha256": "bafd5e03fbae1b328fe07c1faf6310cde810e69b41931e087116e479fae7aa2b",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tests/wgpu_timestamp_query_test.mbt",
+      "bytes": 2166,
+      "sha256": "aee1672612ba47eca57d8f5ad8d01213d45966aecaf9621d059a83ff181a9f3e",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tests/wgpu_adapter_info_strings_test.mbt",
+      "bytes": 1599,
+      "sha256": "a00934925e68abf85d797c9e73a2e18e3c919a56647c01c6ed8ff433a399a2eb",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tests/wgpu_instance_extras_dxc_path_test.mbt",
+      "bytes": 1132,
+      "sha256": "e13d30b4a28b6935f10f060dae802e6cd2b29cdbf58bbb80062400fdbe6de625",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tests/wgpu_ptr_constructors_test.mbt",
+      "bytes": 3726,
+      "sha256": "902bb11839f17fa015bb7b73d83ef1aeff59b385dcfa221fa4c30a52b03ccae4",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tests/wgpu_immediates_test.mbt",
+      "bytes": 7832,
+      "sha256": "6bad72fbfeda4eedaa572d970c5d2cccc32e97d0fdd9285b64582b5c784f363e",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tests/wgpu_log_version_test.mbt",
+      "bytes": 815,
+      "sha256": "99bdee1861d0bb51d297e660a83382373f9399f518ffedaebf742248ecfb13bb",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tests/wgpu_render_offscreen_test.mbt",
+      "bytes": 2674,
+      "sha256": "d5256a531a5574fa8664f208c93352ee3c402534a2f518c0e36ad3efba809c01",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tests/wgpu_render_loadop_test.mbt",
+      "bytes": 4007,
+      "sha256": "01177f179ad2c52bae366e37a1185b77080512800ccc6e39c32c428edfb69610",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tests/wgpu_smoke_matrix_test.mbt",
+      "bytes": 4515,
+      "sha256": "66a30df998d87eebb31a06540a8bf36d21aa6335ec9fe903ee5b550753cb3e46",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tests/wgpu_render_index_buffer_test.mbt",
+      "bytes": 3084,
+      "sha256": "c972edb0678c85752f8ef282f7fb2bb1afbffecf1e1ecc865e7e2ea790f29607",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tests/wgpu_render_msaa_resolve_test.mbt",
+      "bytes": 5636,
+      "sha256": "0dbdfd143b8e12ae6fbc720c8aa95909e283e44e3964568517721e95d7728d50",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tests/wgpu_render_bundle_test.mbt",
+      "bytes": 3489,
+      "sha256": "d867c362b8f06ef7fa6de4e96b2fd661ef0ac8a03ec2dcd54a640356a00c609c",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tests/wgpu_compute_test.mbt",
+      "bytes": 1401,
+      "sha256": "44133dee6216b869b20933fcfe12fddee15b806535ab739f378a1b1f2ab67bd0",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tests/wgpu_bind_group_builder_storage_buffer_test.mbt",
+      "bytes": 5237,
+      "sha256": "a65183c2654f5024c9b8fd4c0eb6c1bd38f6d1565826a27c1aa97bb308245522",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tests/wgpu_buffer_comprehensive_test.mbt",
+      "bytes": 11171,
+      "sha256": "8353eb6b4fd5a9208b231fdd16c5e067aa006e548892bfc17e94ff9c8ae16714",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tests/wgpu_shader_module_glsl_test.mbt",
+      "bytes": 1773,
+      "sha256": "fd57c753ee796ac4053cd4c9042992f2552a3d5364ba5f6fed389048a0ef4525",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tests/wgpu_perf_bench_test.mbt",
+      "bytes": 7119,
+      "sha256": "181e14a7fb7b3aa896d0922e6c8c85cf41298d953694bdf9d6397fbfea19e069",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tests/wgpu_instance_wait_any_test.mbt",
+      "bytes": 1870,
+      "sha256": "d4d1a9c0e7d58579e93deffbdddba6d15876bfa607946907512f0a82b8023154",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tests/wgpu_enumerate_adapters_test.mbt",
+      "bytes": 1021,
+      "sha256": "4c105e05e57a8525124c587c5e01413d93f8e343aa8eb4fc8b91d3ccc59c7559",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tests/wgpu_wgsl_language_features_test.mbt",
+      "bytes": 886,
+      "sha256": "f71289e920b58843aa762a42c607b7ed8c0c786200b28adfdb4c482b7939d2d4",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tests/wgpu_texture_comprehensive_test.mbt",
+      "bytes": 12907,
+      "sha256": "5ecf8e7f9953058f40993b08a25a22c8ab0e5803880e623f9cf7ce7d0d5980ec",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tests/wgpu_copy_ptr_test.mbt",
+      "bytes": 2610,
+      "sha256": "e50844c020ee814a730800bc8234a8d05686e0206b01f2a46e86e22790da2fb2",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tests/wgpu_managed_lifecycle_test.mbt",
+      "bytes": 6810,
+      "sha256": "f0fe62f0d7a18580d62d8c3ca41767ebc5efbf509b31f7f9dffa2a0343aef85d",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/wgpu_texture.mbt",
+      "bytes": 4147,
+      "sha256": "3b48388f851ceeaed423efab850814f1eb4745c45a8d51364333cfb699d3e4da",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tests_linux/moon.pkg",
+      "bytes": 430,
+      "sha256": "0f72152a8f25bd24a168a8aa54869c46976ace15a10d2b0b03fb4d901d504389",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tests_linux/wgpu_optional_symbol_or_raise_test.mbt",
+      "bytes": 8121,
+      "sha256": "aa06b67e53d4e14f6a01d4af7749eab415effcf571d8ca6baf02a627528d8de8",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tests_linux/platform_guard_test.mbt",
+      "bytes": 687,
+      "sha256": "ab7ade5496dfba18e67535f15c418962eef660382ac521a926d124eefeab6b4d",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tests_linux/pkg.generated.mbti",
+      "bytes": 159,
+      "sha256": "2fb675ba3667c439eba78f8536b21673d87261e347342dc755307621b89ac36c",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tests_linux/wgpu_buffer_sync_or_raise_test.mbt",
+      "bytes": 1525,
+      "sha256": "94f9aa9c220936211bf90b4b32cde1d15262c04faaa94b692cb9981da18c1697",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tests_linux/wgpu_linux_headless_smoke_test.mbt",
+      "bytes": 1790,
+      "sha256": "ebc382adb52e775531563ff667927be01d1d8fb274588af9a174398cc8ee7d1e",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tests_linux/wgpu_linux_surface_contract_test.mbt",
+      "bytes": 3175,
+      "sha256": "46774410f9ae4e6478c3b598d8521d86a22f586ecaf5133897974fe0374850cf",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/wgpu_managed.mbt",
+      "bytes": 7416,
+      "sha256": "ec9b4a10df8c42ba6dfc89d5ae9935228c135262859468b3e640d303521f1c4a",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/wgpu_adapter.mbt",
+      "bytes": 34663,
+      "sha256": "359c19e2244b5d5e43057290dc5a025883084acb283e06990dd001b5e6b241ec",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/consts.mbt",
+      "bytes": 44847,
+      "sha256": "6c10d2d48294180d271dd371fc32fc63a182435dcacbf316348f1cf7ffe5f96d",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/wgpu_queue_work_done_error_wbtest.mbt",
+      "bytes": 1094,
+      "sha256": "a0d28fc2a43f02bdae04440ecb9ed87213882b83bde89d007f1c75b8e2e69d73",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/wgpu_auto_release.mbt",
+      "bytes": 6155,
+      "sha256": "fa381b56e8d379c2a15c9d2286b157b117b31a72704bfa6da6a3c4dfe80a19ff",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/wgpu_queue_work_done_wait_error_wbtest.mbt",
+      "bytes": 1180,
+      "sha256": "b1b1a4c1ec20ab7bab71c1ebd59bfbcdb7c0d84730186b88745869afeba3367c",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/wgpu_lifecycle.mbt",
+      "bytes": 4088,
+      "sha256": "82891232ce3d7eab3a64d4a4762732a45fb4a782d4676898bb4f7e609b632170",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/wgpu_types.mbt",
+      "bytes": 22784,
+      "sha256": "4ad52e0f6e1d3a6fd2b53a9e6ffe118be8cf3453816bb2e16c6414a93af75523",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tests_windows/moon.pkg",
+      "bytes": 292,
+      "sha256": "409c988a4c90e9372996458d306399b2b1b896aa9de53066757369566eb75856",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tests_windows/platform_guard_test.mbt",
+      "bytes": 691,
+      "sha256": "5aec4ffa12986f1fbf5ad94d47d46c782b5efea467830a84d2a470a4f8ea0bab",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tests_windows/pkg.generated.mbti",
+      "bytes": 161,
+      "sha256": "33bfbbebce42f3f7d83b5bf73de03fb3cbbf44a8a027b1eb219e65d16f566f2c",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tests_windows/wgpu_windows_surface_contract_test.mbt",
+      "bytes": 2702,
+      "sha256": "d5cd3942cfa5f6c9e875c7cc10f49e09fe8c371407280295c9a11a80540b4533",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tests_windows/wgpu_windows_headless_smoke_test.mbt",
+      "bytes": 1682,
+      "sha256": "467191b825ce3b8f3f85dd523e2b543fe2c991e0257b0118e596b6c4fc5d9389",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/wgpu.mbt",
+      "bytes": 1016,
+      "sha256": "29801516e88b00319a377500c684c67667bbc4b3053f29d26221bb4922616f4b",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/wgpu_pipeline.mbt",
+      "bytes": 3642,
+      "sha256": "273d427e06bc7d43522005d9d3d78307c845c2b632cb677c67f8f698b6b17f62",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/wgpu_surface_platform_ctor_wbtest.mbt",
+      "bytes": 2341,
+      "sha256": "499de0e681d7cf05ab3e14c0b33640f2dba6f8ec43fc9e5a0cd3c3e15137e6e0",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/wgpu_surface.mbt",
+      "bytes": 17309,
+      "sha256": "d7d45e2fd6b17d5f695009628d8edc1b401d28f820b067e4e4dc75aa6f27c4a0",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/wgpu_spec_handles.mbt",
+      "bytes": 22159,
+      "sha256": "6671457b820e2a0d4713788d8e3e80c460bea9be76bb69cf3f966b30c42ea71a",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/wgpu_runtime.mbt",
+      "bytes": 6001,
+      "sha256": "67cb28287f94052bd076509d415a41a1652fabb96677dedc12428cbd8e64d6ac",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/wgpu_surface_configure_present_error_wbtest.mbt",
+      "bytes": 3683,
+      "sha256": "b97184d7648498306e923a1d718a590ed3159be1749045df89bdbafc88b8c90b",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/wgpu_bind_groups.mbt",
+      "bytes": 7745,
+      "sha256": "8bec2909cca8d24c46022747932b143ad5fc0d96bcb1c317424c5fbdae48a294",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/wgpu_render_pass_desc_builder.mbt",
+      "bytes": 5866,
+      "sha256": "dc4b0f5a84ecf4442d9f819f8240ed0fdfa7a58d611a4b77e7b550dea84214be",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tests_macos/wgpu_surface_capabilities_arrays_test.mbt",
+      "bytes": 1983,
+      "sha256": "2819b9e29611fd5836b1ba14e07dbe156b8954278cb6b1b83e39373118fcded3",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tests_macos/wgpu_surface_descriptor_metal_test.mbt",
+      "bytes": 3223,
+      "sha256": "f889ae1beb3feb0b7328f9a882bbb5fdd47997663d63870153d974789f48effa",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tests_macos/moon.pkg",
+      "bytes": 989,
+      "sha256": "856940fd988a30c927e5da3677bf2b68a50ab6a08d78ed51c3ee5e0183663956",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tests_macos/wgpu_surface_configuration_struct_test.mbt",
+      "bytes": 1764,
+      "sha256": "3b2e857eb71520e71d6e6cb57536249a3c651763329aa6da43dae6044d9da4cb",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tests_macos/wgpu_surface_macos_ns_view_test.mbt",
+      "bytes": 7435,
+      "sha256": "0dddbe968b613e7e73426717989f16f9ce33600a4138660db2cd1ef0f7c92b2b",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tests_macos/wgpu_surface_capabilities_items_test.mbt",
+      "bytes": 1695,
+      "sha256": "02a53537dc0a63a814df8c01700f8cca4334fae4f0606af285aab6ec46c810cc",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tests_macos/wgpu_surface_configure_best_effort_test.mbt",
+      "bytes": 1432,
+      "sha256": "9a06b39dddb5a22457f31c93d3b349b7872ad81e13edcb20d865f3ec703c62b1",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tests_macos/pkg.generated.mbti",
+      "bytes": 159,
+      "sha256": "7e115bd49fb705c42c30717c7d22314f440f7fea42484a87c621dfe3b4689317",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tests_macos/wgpu_surface_texture_bind_group_api_test.mbt",
+      "bytes": 2551,
+      "sha256": "77ca4643e4aa60deb1a70e8996ecf03ebcc8690e75a64e52abba92b1cd7f4acb",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tests_macos/wgpu_surface_capabilities_test.mbt",
+      "bytes": 1156,
+      "sha256": "e8c483001b4d48c4c70bbede38ce124e9e9b454baa901407bdaf122ee598aab3",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tests_macos/wgpu_surface_configure_custom_test.mbt",
+      "bytes": 1767,
+      "sha256": "f78d1bbeb2e7c170025887d912f2febb34dd84ced8f9ad5677f6e9dde1ff8a27",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tests_macos/wgpu_surface_configure_view_formats_test.mbt",
+      "bytes": 1637,
+      "sha256": "db9585feb6c2be975f2e02baaf1f4715a8c31549837b0e3bf6d7450b3a42d2d4",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tests_macos/wgpu_surface_present_test.mbt",
+      "bytes": 4099,
+      "sha256": "9bce541816737b1f4bcf5efdfdaba02bb67cc002dd5bb9e9ba8fc0c803f91e64",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tests_macos/wgpu_request_adapter_options_surface_test.mbt",
+      "bytes": 2362,
+      "sha256": "23bb3e64c95736c3d6a8be66cb250e5bef728bed4752967450f4a199c67c6ce7",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/wgpu_device.mbt",
+      "bytes": 37783,
+      "sha256": "db509e24c011e683f2fd88201f7b1bae66265e3ca005a5d2d72e1997c0c25cd5",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/c/moon.pkg",
+      "bytes": 711,
+      "sha256": "6437d289ba7f64936f61450b025d1de522029638f6dce3371c0e349266c00955",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/c/wgpu_stub.h",
+      "bytes": 1235,
+      "sha256": "44caccb4e18986a2ec9072a790f8c8d11e013b5d83b4b0b6db8660f980a25fee",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/c/raw_debug_async.mbt",
+      "bytes": 9896,
+      "sha256": "184eaa02bf22aae168081ad25604fe50d3006ccd0bd20e5c8cbb61f034ddd519",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/c/wgpu_stub_extras.c",
+      "bytes": 88578,
+      "sha256": "21b984ad8c735ca8f81ba09fd1c342463257df338942ea895c37c661dd09c1a5",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/c/webgpu_capi.mbt",
+      "bytes": 44733,
+      "sha256": "7b375eb7562e6e854af3fea1064f42b77fa5252857efbd1841a0d39a632f4599",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/c/wgpu_dynload.c",
+      "bytes": 41611,
+      "sha256": "70c4ba8201a5ff287fab8f3ab132d0aca83b023f03e02408e94fa0103c20fe3a",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/c/raw.mbt",
+      "bytes": 956,
+      "sha256": "aa96ce0aabd1e7e264ca61f05934498d0be2c70d099cfa4d216ca74a6ba41157",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/c/raw_builders.mbt",
+      "bytes": 14410,
+      "sha256": "169b423b495f9ad4257ec33ecae5966ebf0cbc7867a9079e685af0aee414f846",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/c/wgpu_optional_sym.c",
+      "bytes": 980,
+      "sha256": "8e4f57c27f49b2f584ce6f1610e68b2370eb228db9c09da127001e6880ed6e59",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/c/pkg.generated.mbti",
+      "bytes": 88473,
+      "sha256": "a905500eadb78eef982bc72b6ca71cd01e8c321a7ff615074c5f0134419d7d74",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/c/raw_surface.mbt",
+      "bytes": 8860,
+      "sha256": "9f03f3f99129940a6e3e3f8c498984c4bdf34c30f5c8f2918e12405c4ee9bd1f",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/c/wgpu_stub_core.c",
+      "bytes": 2617,
+      "sha256": "2c3be918b38959083215cdc0df85ecdf1038a4e4a7247c4052c4cd2e6d0f922e",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/c/raw_core.mbt",
+      "bytes": 5213,
+      "sha256": "c55a40ac4dd0715e2d8c701c3da39fc81dd5f47a55c7b76c1b250f90ff5fb727",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/c/desc_builders.mbt",
+      "bytes": 39115,
+      "sha256": "9a2a292f69748678178bddb09b369ea74a211b7342824d68792494852213b2f7",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/c/handle_aliases.mbt",
+      "bytes": 2019,
+      "sha256": "1a03d4fe9ae7bb388601cc48c0e17ed94359e74b3699091f82bf228e5abeead3",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/c/raw_adapter_device.mbt",
+      "bytes": 29813,
+      "sha256": "74c2b75f9e578022944bc2714837d4cdae48e988f61e965090fa96ca9dc73eb3",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/c/wgpu_stub_descs_instance.c",
+      "bytes": 21248,
+      "sha256": "86483726620baff9b83243acac1d700092e622a4bef36a85135045fecb3ecc67",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/c/raw_instance.mbt",
+      "bytes": 6894,
+      "sha256": "bffc4e4757c0299eaddfed96893a5ba5e6a043dce807379d5cef7ab49ea5bea2",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/c/raw_helpers.mbt",
+      "bytes": 56637,
+      "sha256": "1d2eab7540bfb113187739855ac1ec4fdd71eff020abfa7e444c319626090d55",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/c/webgpu_capi_spec.mbt",
+      "bytes": 39534,
+      "sha256": "cea8e04ad3ba284dacc0501bc08f9536b4f22a71b07416c740465d37f53a7356",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/c/wgpu_dynload.h",
+      "bytes": 2884,
+      "sha256": "e5f2a9d9fb8797cd8e6194ee87184624d22dccdb9ca54d3710831be885a91f53",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/c/wgpu_optional_sym.h",
+      "bytes": 754,
+      "sha256": "831471baad38bfcaa6b65cdbe4346d7e463cdd8ca5703fa1de82e58f1393a6b9",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/c/wgpu_native_shim.h",
+      "bytes": 55894,
+      "sha256": "08427617d105829ea7e5dd772f14bc921ee0eaaa5614aeb463a4010730022f9f",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/c/wgpu_dyn.c",
+      "bytes": 126035,
+      "sha256": "2176e31c98349ba3ca3ad1d7cd650bb12e609d5cff3b05cd13934c0a76701f01",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/c/wgpu_stub_helpers_sync.c",
+      "bytes": 77362,
+      "sha256": "293cb34a9084ccea312172822e282f3315db45825737c3f9e833e2f73cf6eb0a",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/c/webgpu.h",
+      "bytes": 259569,
+      "sha256": "a483031c3fed05ea5dd1c74082a71676c46c5b2b820ccca10da515c033efc997",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/c/wgpu_stub_descs_pipelines.c",
+      "bytes": 166738,
+      "sha256": "bf76cb93b42e78405385acf86456024f675366b6d229513289768d646ec0368a",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/c/wgpu_stub_map.c",
+      "bytes": 11149,
+      "sha256": "fd0c111f7bb5db132051bc68c784ac6283f5d85dd31a6f61ab5745802f2226dd",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/c/wgpu_stub_surface.c",
+      "bytes": 45048,
+      "sha256": "9afe97b78fab1802506a2e11e0868eaa02cd03f078f0b68e011423174dcf0c3c",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/wgpu_spec_extras.mbt",
+      "bytes": 98458,
+      "sha256": "5ce7c437d31620f50752934c0fb898643f74a8aa97fa1662facf103cd4c3c5ce",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/wgpu_compute_pipeline_desc_error_wbtest.mbt",
+      "bytes": 1086,
+      "sha256": "587f338a302b8cbe3fb24af2b6ae0a1f3e8ff8e345541fd2b4026d6e9ab8af58",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/wgpu_handles.mbt",
+      "bytes": 30510,
+      "sha256": "a455fab43058b80ada758f8e155ba67fb775632f009adf18ab935bda4a3351e7",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/wgpu_runtime_support_wbtest.mbt",
+      "bytes": 961,
+      "sha256": "06b39be4f13c973f639c2e99def34e93249317b258098579bf91c900920097f9",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/wgpu_shader.mbt",
+      "bytes": 5562,
+      "sha256": "f2d9894794f553af0f621ce69b172f7c11c12109b1e68e3cd835cfc7aae2fcac",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/wgpu_buffer.mbt",
+      "bytes": 7480,
+      "sha256": "1e4b30a2568edbac514c1236c0277b32976285b0335b6acc50b676c89e6c2c96",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/wgpu_passes.mbt",
+      "bytes": 32192,
+      "sha256": "f1a3a1ea7642686e5b3533dd27295085ddedcaf167906b20aa5dbc095f951319",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/wgpu_pipeline_desc_builder.mbt",
+      "bytes": 17088,
+      "sha256": "02def933c32dbb67a150f4e0c5785c49fa4f8a6cc4d42134b497dbc863ae8ef9",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    }
+  ],
+  "hits": [
+    {
+      "path": "docs/generated_handle_behavior_matrix.md",
+      "line": 165,
+      "kinds": [
+        "ptp_messages"
+      ],
+      "text": "## Follow-up Candidates",
+      "excerpt_start_column": 1,
+      "match_column": 4
+    },
+    {
+      "path": "docs/public_api_behavior_audit.md",
+      "line": 39,
+      "kinds": [
+        "ptp_messages"
+      ],
+      "text": "| Capability family | Representative public APIs | Evidence | Status | Follow-up |",
+      "excerpt_start_column": 1,
+      "match_column": 72
+    },
+    {
+      "path": "docs/public_api_behavior_audit.md",
+      "line": 54,
+      "kinds": [
+        "ptp_messages"
+      ],
+      "text": "None at the current audit granularity. Remaining follow-up is quality- and",
+      "excerpt_start_column": 1,
+      "match_column": 50
+    },
+    {
+      "path": "AGENTS.md",
+      "line": 62,
+      "kinds": [
+        "ptp_messages"
+      ],
+      "text": "1. **File issues for remaining work** - Create issues for anything that needs follow-up",
+      "excerpt_start_column": 1,
+      "match_column": 79
+    }
+  ],
+  "text_files": 237,
+  "text_bytes": 2559320,
+  "binary_files": 0,
+  "expanded_bytes": 2559320,
+  "limitations": [],
+  "status": "ok"
+}

@@ -1,0 +1,534 @@
+{
+  "scanner_version": 4,
+  "scanner_sha256": "ebd6aaa6ba6aa3e501c836d1e066932b6a687e9f996924236e2ae8775edc9a39",
+  "name": "moonbitlang/mbt_lexer",
+  "version": "0.1.13",
+  "yanked": false,
+  "repository": "https://github.com/moonbitlang/mbt_lexer",
+  "url": "https://download.mooncakes.io/user/moonbitlang/mbt_lexer/0.1.13.zip",
+  "checked_at": "2026-10-19T15:59:33.934841+00:00",
+  "cache_file": "/Users/hanzhen09/.local/share/ptp-audit-tools/mooncakes-source-cache/056127627ebd252e6bab0838b7b92dac6253f728988fcfb6cdae0aaf7bd52965.zip",
+  "evidence_file": "/Users/hanzhen09/.local/share/ptp-audit-tools/mooncakes-source-cache/056127627ebd252e6bab0838b7b92dac6253f728988fcfb6cdae0aaf7bd52965.zip",
+  "archive_bytes": 68213,
+  "sha256": "4310bea4ba3eec4903320129fd5a84422b4473f63581326abf73ec97ab3f2a31",
+  "source": "verified_local_cache",
+  "files": [
+    {
+      "path": "moon.mod.json",
+      "bytes": 386,
+      "sha256": "f74d6dcc40f721be33ca30d3c9164bc3091b1b3e79b5004cb551059b1ea4d1a1",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "justfile",
+      "bytes": 140,
+      "sha256": "3f14732f54850a87ec4cffd87f51339d0862e442a10c404de9704860b0aaa386",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "README.md",
+      "bytes": 11,
+      "sha256": "0aa7c7eb7b4090ada68c0df73a175dfe9382bcf1188312c3972f3efe8283117c",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "rm_deps.mjs",
+      "bytes": 540,
+      "sha256": "b32866795c53895787d088a8c08672b75bd73b74e9c0f2584a04d936082f79bd",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "core_test.sh",
+      "bytes": 278,
+      "sha256": "a3dfc3236e6a5dd624c5ffcbf0f8b2598806e4363317d1ff3e220c67ee047c49",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/lex/mbtlexer_wbtest.mbt",
+      "bytes": 3467,
+      "sha256": "e81c14b720bbd1f893c437d636a477222199d58bb9bc55acdca6c296db55a9ff",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/lex/lexbuf.mbt",
+      "bytes": 1086,
+      "sha256": "7aeb09ba51f5d3dd37d1e987fc4df287f7a3926e4791a142224257bbfc8d8683",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/lex/moon.pkg.json",
+      "bytes": 495,
+      "sha256": "ea2c54414160891ba09bc01d95c2a0eb4d6acb30721d2f34602b33b129f4f419",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/lex/lex.mbt",
+      "bytes": 863,
+      "sha256": "10a531ca7c9ab8db9a1c8534c3388f98f8544a98bcb70665443743d48837e8e6",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/lex/env.mbt",
+      "bytes": 5583,
+      "sha256": "155982fb286ea6005ee7af2e4a84767ecddcd3ba2ccedbaca811d6f2b2f3ddbf",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/lex/mbttokens.mbt",
+      "bytes": 7722,
+      "sha256": "c009acb8048a32945922ff2a5f46ccd5c83977b4aa2c4c93726b9a0d24d3bf42",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/lex/asi.mbt",
+      "bytes": 6924,
+      "sha256": "dc591e55ada8da52be8211ad0fce3983ceff9967d5a73a94cf946c7078f27254",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/lex/mbttokens.mbt.map.json",
+      "bytes": 20,
+      "sha256": "fa6bf37cf706f29b60d51d5c5281674c6402286148f4f469bb648a01b1be7cab",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/lex/literal.mbt",
+      "bytes": 409,
+      "sha256": "2a7acb5afdba660d5ad14d201ee01179d1d0d0733ed2a58eae5ef5c55271fca0",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/lex/unicode.mbt",
+      "bytes": 2262,
+      "sha256": "a7410ac4312c7baece45b63a29f7817841afe4b35724b807da9617864e4693c0",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/lex/triple.mbt",
+      "bytes": 1485,
+      "sha256": "d7b072aa009e23c756a9cf703970a592669cddd1763fc1578821f9df04d2f9de",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/lex/lex.mbti",
+      "bytes": 3612,
+      "sha256": "1d26b2a56bf7000d858bd348db0180d8b271c29be503345dc35648cc05acd799",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/lex/mbtlexer.mbtx",
+      "bytes": 22976,
+      "sha256": "cc5f56e101cc411e04dd1841c1df46c527d66b948948390cd83dfee93fb2a27f",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/lex/keyword.mbt",
+      "bytes": 1258,
+      "sha256": "b5b64c196a5ef4f96d558ce263053d2afeac2dcfc232e80cabd8372517b5b1b4",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/lex/mbtlexer.mbt",
+      "bytes": 543503,
+      "sha256": "53280ece85f65dffde2444cc09013aec2e37920072d8807d3cf007993d9f0bc2",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/lex/loc.mbt",
+      "bytes": 247,
+      "sha256": "6fcb8ce2597119334c55e6115e778197f1fe895b0ca0b2bedcaf7059fc82812f",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/lex/semicolon.mbt",
+      "bytes": 92,
+      "sha256": "f791453140a8c1935ed6535f174a6fc3529fd7092b2c70968b7ff93e6ded5a70",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/lex/char.mbt",
+      "bytes": 970,
+      "sha256": "12ae1af11026771b1d6b5f7f8035ac9a6f1f4fb305a6ba0fe38cdb2dfb2cbb98",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/lex/sources/pattern_guard",
+      "bytes": 729,
+      "sha256": "c31958af8b8fa6c9e6ed77e87fb99e3aa7dfef6396476073d5a8c8cbe73d3eba",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/lex/sources/string_literal",
+      "bytes": 259,
+      "sha256": "2a01548d8b018e455b9f268f3eecc32a601d4b60b6ac3defa82b095cdb54a93d",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/lex/sources/string_escapes",
+      "bytes": 217,
+      "sha256": "34cc6a7b70f61edf9a28b7d7f63327bc1f9419337647ef7fc5ae2948a4f71ac3",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/lex/sources/utf16_escape",
+      "bytes": 172,
+      "sha256": "10aec3c91b56d4261f9bc00916887afe71cb9798ef30ed88a5e3c3af3be6e6a2",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/lex/sources/double_to_string",
+      "bytes": 5111,
+      "sha256": "8bee867304ffbf8c846d417414e68cb82f0dafb59fb3099646b82ee7bc2c156d",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/lex/sources/001",
+      "bytes": 380,
+      "sha256": "6c1131f696bbb3177310c7577cc37c0f41807452bffe882782d8504289f17564",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/lex/sources/range_pattern",
+      "bytes": 1213,
+      "sha256": "4d9976a1a261f9aa64acd500472965d00418752af915d63a4773d63d2cca8c3a",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/lex/sources/unicode_test",
+      "bytes": 945,
+      "sha256": "8257e7c577acee912af9cd55655644f81b0e881026a656dc3d15ab3bc97bc409",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/lex/sources/super_traits",
+      "bytes": 526,
+      "sha256": "928c076b1b156c6d94e58aa90b4f0ebb6f19c2209c454fa510806e5f5eac4461",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/lex/sources/trait_labeled",
+      "bytes": 397,
+      "sha256": "3e41dc86fb84f45d3a903b46881c1728fd5188433c42ce2066ce37faf85f1709",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/lex/mbtlexer_test.mbt",
+      "bytes": 1145,
+      "sha256": "def5baa0952c442f47e9bf5d454ecf95544cced95f63bdcc5d277839bc4c72cc",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/lex/comment.mbt",
+      "bytes": 241,
+      "sha256": "d522825873addf1c3a1cdc427e184dc0a1d433f256ad3c02ca4bc9cd2ca9b58c",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/lex/__snapshot__/range_pattern.tokens",
+      "bytes": 10230,
+      "sha256": "8e7396a2eaec856ae7f42d091fa27c480ce69e8e3fd4f941270c06ff1ead224a",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/lex/__snapshot__/utf16_escape.tokens",
+      "bytes": 1256,
+      "sha256": "abc4a2471b247c49bdaeea0db0f6a44c54135954d085335ec2a8981f8b8553e7",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/lex/__snapshot__/unicode_test.tokens",
+      "bytes": 6821,
+      "sha256": "2a86a34790641b45aff06cf5308614eaaa201ef702ab94a06adec3efc4a7d6d3",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/lex/__snapshot__/string_literal.tokens",
+      "bytes": 1719,
+      "sha256": "84c374d0be7a51d61372742e644cd25aed9d2d96c6b6755652baf98295b5cea3",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/lex/__snapshot__/string_escapes.tokens",
+      "bytes": 1791,
+      "sha256": "006f8d70c0c9c7cd33b2b5ec8e1f8187111c785d3115fb256e583f2d0df07fd9",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/lex/__snapshot__/trait_labeled.tokens",
+      "bytes": 5292,
+      "sha256": "b295f206c487b32b434ef5bf17d3339f2a180d7fbef9e493459df3f52585c1b3",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/lex/__snapshot__/pattern_guard.tokens",
+      "bytes": 7682,
+      "sha256": "f8938eb647133be5c5be770335f42c2a1f5dbc0527d2ada710a920e119060cff",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/lex/__snapshot__/001.tokens",
+      "bytes": 3439,
+      "sha256": "42ee4c2ad51ea393946bd0f04cbb994d5d726cc2aaa1e454ba437b31eeaf89f1",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/lex/__snapshot__/double_to_string.tokens",
+      "bytes": 34775,
+      "sha256": "4080d122e71b748a32b3f7e70149fcd58ea891ecea36bf047f18bbeca59788e0",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/lex/__snapshot__/super_traits.tokens",
+      "bytes": 4209,
+      "sha256": "8a6a5d766531850ae07193a8097255f3458a96d2edb73e56bc39d5431fe99ffd",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/lex/error.mbt",
+      "bytes": 353,
+      "sha256": "5941b643cc8dcd7565e9a05dc16cf8b7fe685746b69a5b010e271cb5974cefea",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/cli_test/moon.pkg.json",
+      "bytes": 138,
+      "sha256": "c1f7b773ee6ab1f59ca16444ae84ddef5f892b83a73323305c584e13d6df7b1e",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/cli_test/main.mbt",
+      "bytes": 484,
+      "sha256": "6d250322950f44291cd304d639ef52480b05aecc0a877d293d07d0e859f5cd4f",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/cli_test/results.md",
+      "bytes": 22349,
+      "sha256": "1301fd7effc1fada9acf5f713befccd4dcf8577b01ebccf39993e575c1543cc8",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/cli_test/cli_test.mbti",
+      "bytes": 98,
+      "sha256": "a52c9aea4ac628270ad0cfe97c9d34dd0a4ad61ea156009365e9bc8ddf7d8708",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    }
+  ],
+  "hits": [],
+  "text_files": 51,
+  "text_bytes": 727658,
+  "binary_files": 0,
+  "expanded_bytes": 727658,
+  "limitations": [],
+  "status": "ok"
+}

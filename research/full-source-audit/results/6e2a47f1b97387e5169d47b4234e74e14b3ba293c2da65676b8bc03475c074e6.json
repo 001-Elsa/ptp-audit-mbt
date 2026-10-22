@@ -1,0 +1,2475 @@
+{
+  "scanner_version": 4,
+  "scanner_sha256": "ebd6aaa6ba6aa3e501c836d1e066932b6a687e9f996924236e2ae8775edc9a39",
+  "name": "Luna-Flow/mare_mark",
+  "version": "0.4.0",
+  "yanked": false,
+  "repository": "https://github.com/Luna-Flow/mare_mark",
+  "url": "https://download.mooncakes.io/user/Luna-Flow/mare_mark/0.4.0.zip",
+  "checked_at": "2026-10-19T15:50:01.408448+00:00",
+  "cache_file": "/Users/hanzhen09/.local/share/ptp-audit-tools/mooncakes-source-cache/6e2a47f1b97387e5169d47b4234e74e14b3ba293c2da65676b8bc03475c074e6.zip",
+  "evidence_file": "/Users/hanzhen09/.local/share/ptp-audit-tools/mooncakes-source-cache/6e2a47f1b97387e5169d47b4234e74e14b3ba293c2da65676b8bc03475c074e6.zip",
+  "archive_bytes": 995464,
+  "sha256": "21c05665923ddfde9741a72ca98c1f59fab49600c08856addf76c95e874b2393",
+  "source": "verified_local_cache",
+  "files": [
+    {
+      "path": "CHANGELOG.md",
+      "bytes": 17400,
+      "sha256": "68650dd42eb3d986fff870de405c6bbb6809cde8655442d70f270c10ff22b511",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "AGENTS.md",
+      "bytes": 2063,
+      "sha256": "9a7ed81732239977bda0b29b0d78ba113c7718deb8a9402b7246815246d79be7",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "testdata/replay/sample.jsonl",
+      "bytes": 238,
+      "sha256": "0a3b844908d7dcc9a6ec02c2ba204b7d648e1e0fc6015d031ba5194257c14515",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "testdata/report/compare.jsonl",
+      "bytes": 24559,
+      "sha256": "864ad9e59b40dfa378ab4b2b92ef76bc7291edaecd8a21fe74ed08679194b240",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "testdata/report/sample.jsonl",
+      "bytes": 545,
+      "sha256": "65fa207865750d5b05a05aa86f6b48e63b9e4edd66bc92f04285bde16055e2a9",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "moon.mod",
+      "bytes": 433,
+      "sha256": "bd3a10016519ba9f493e23f82c1cbde1a0d70e785efff8761fdefcc741d12aca",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/fixture/fixture_wbtest.mbt",
+      "bytes": 1352,
+      "sha256": "c31f3aafe7c3b3656bfe9143f69c74244688f8270f99ffb425d972f09149ac22",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/fixture/pkg.generated.mbti",
+      "bytes": 1464,
+      "sha256": "cafd54d1ba6202914c44e1b652614ae595c0064edb00fa55f39f34e474a1358a",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/fixture/fixture.mbt",
+      "bytes": 2318,
+      "sha256": "8df96106ef9146ed6d09e765f75235c2de44f53c997d2b84dc9ff68d523db768",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/fixture/moon.pkg",
+      "bytes": 42,
+      "sha256": "2099b5587372cd9d61b1eec201032aba3b98a9208ecf12e08eb74158b23df61d",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tune/pkg.generated.mbti",
+      "bytes": 2447,
+      "sha256": "d76844b942aac291f820ba0dbeece50efa82c63281364ae4faeda922c75f4324",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tune/tune.mbt",
+      "bytes": 8793,
+      "sha256": "c11798046085f8575d0252f804d3cd5a81db099627ebadb8053ad95449d2c206",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tune/moon.pkg",
+      "bytes": 122,
+      "sha256": "8d11691e241453a3fedeb6f094af22a0e36b816f48a040541ad12af84d39f253",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tune/tune_test.mbt",
+      "bytes": 3643,
+      "sha256": "773aa6acd0afe579da22ea04f27b1d6000ebe11ed0ae229031a1013de5f2511b",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tune_gemm/gemm_test.mbt",
+      "bytes": 5549,
+      "sha256": "6f8a5c13caa5824be573d940d8a73b6b00c59baab42a5548fb0a7c11d0b8c471",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tune_gemm/pkg.generated.mbti",
+      "bytes": 3712,
+      "sha256": "a7a47aa177b27e823a139d734f6486d9d805952af74e8b7c2e6566da7a7e6485",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tune_gemm/versioning.mbt",
+      "bytes": 611,
+      "sha256": "9a7d9b43475afcde467d0b6399562dbb663fd6a8f6138b009a1d66005b493b98",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tune_gemm/moon.pkg",
+      "bytes": 119,
+      "sha256": "660063e8b915fab0f0ae8dabd717ffb1b714df63c679d636b8a66892ffbdff9a",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/tune_gemm/gemm.mbt",
+      "bytes": 19286,
+      "sha256": "052314b3e43e891523d815442c850ded0dd37aee2310996e16b498b29009848f",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/event/pkg.generated.mbti",
+      "bytes": 1412,
+      "sha256": "8d6d8dc14b4a2b3e5bc49c0fe6fe1df86571781b50332ba978242f7c94fd84bd",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/event/protocol.mbt",
+      "bytes": 9202,
+      "sha256": "1eae99a6ad780628d8ee8c20cf5f061630fa0ab0e847b99806af59da9ead5607",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/event/moon.pkg",
+      "bytes": 152,
+      "sha256": "2354d8cb718e84c187246bc43438f99ad4653bd33d32323415f9be1174372439",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/event/event.mbt",
+      "bytes": 13085,
+      "sha256": "a08cfd2caee04d0bd83c6f4774c5a32f35441aac6b5a98f484179f018978ee91",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/event/event_wbtest.mbt",
+      "bytes": 8881,
+      "sha256": "d84099ed40a74daa36fcd16ab237c2bcaf8a6ac000125310c62d89158a5cfa3d",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/event/protocol_wbtest.mbt",
+      "bytes": 9162,
+      "sha256": "2a0708b8461516d11cec02b8b8df5485a18ba6f36c2999e5f83d9b9212af60ab",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/runner/runner.mbt",
+      "bytes": 47748,
+      "sha256": "363f3b5d0f8b62cea4170f1cf4734f0d2be58861b78ef6884f5028f11fb47b5d",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/runner/pkg.generated.mbti",
+      "bytes": 7294,
+      "sha256": "ceac7bb43dd7cb36b429cd3f3706f8ec039e4ec369a635d3f5c4106ea0e1bfe6",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/runner/worker_native.mbt",
+      "bytes": 904,
+      "sha256": "8a44a305b321a4c3c4f5e8780349fff67f8d61e7c792cd34c5fa5f76edf06514",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/runner/README.mbt.md",
+      "bytes": 721,
+      "sha256": "8a70780c84a27056fa1a0a5a0d67600ae80fee4ca31d735e12e70f41471f2cf0",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/runner/runner_wbtest.mbt",
+      "bytes": 26970,
+      "sha256": "2b359cf52c289394e3b0681154c0873bd9de9de8cba68794ba565b22e0d3e3ff",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/runner/observation_scale_wbtest.mbt",
+      "bytes": 3716,
+      "sha256": "ecc908cb0131898bf1e3fd12b70155ec97202022d28c7a914b262515ebca26da",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/runner/worker_unimplemented.mbt",
+      "bytes": 245,
+      "sha256": "0b237137f698529d4f7978d386567ad09d1c7233c7e9536b1de781b28abc377c",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/runner/moon.pkg",
+      "bytes": 592,
+      "sha256": "7686b3a6b18d2918b939831d534c3928fc2a6dfce7e9b658da024edc53ffedd8",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/runner/bench_spec.mbt",
+      "bytes": 13637,
+      "sha256": "485b595d47c6ee3682d0a7a35c979ee259ca89eee691834e8e88c690d984250b",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/runner/protocol_wbtest.mbt",
+      "bytes": 44177,
+      "sha256": "1e950205f74becce01ffea6d025d94913f99aae70dfee8ed0643d4df95e5036e",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/stats/stats.mbt",
+      "bytes": 8282,
+      "sha256": "d125638fe4d403569c0d3e7b7d6a57903b5e81e40402dbb7109c5a135f6b5d75",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/stats/pkg.generated.mbti",
+      "bytes": 1517,
+      "sha256": "ef721b54aca92125f65ad4d1dbac97e162d910d77d4de22415ada5bd9000e23f",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/stats/stats_test.mbt",
+      "bytes": 6751,
+      "sha256": "0df832a775bf9d373548f84a1448c1a6cbd6413fe8de03bd5da2291d78401113",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/stats/README.mbt.md",
+      "bytes": 324,
+      "sha256": "67e413555ca43a0d1ace70cb74114d40f05d3643a295ae6071474e2b90f61474",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/stats/moon.pkg",
+      "bytes": 121,
+      "sha256": "ce7c2673f3b1333432b970b22aa94d7f80b9e925fbd2ac0d6521455a492407f7",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/ir_sink/pkg.generated.mbti",
+      "bytes": 436,
+      "sha256": "d965568403a49b38f018b62d946fb7407044d3dbd9304dec962956530ab5faf8",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/ir_sink/ir_sink.mbt",
+      "bytes": 454,
+      "sha256": "7168045d20a25a3a9084efeb52f1a0e2cc50ecb52a22e058476bc29d87571faa",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/ir_sink/moon.pkg",
+      "bytes": 42,
+      "sha256": "aa188b86f64569a255ff4fe5b70fea0bae27363b11d48ddaf67c5247111dcaa8",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/ir_model/pkg.generated.mbti",
+      "bytes": 3871,
+      "sha256": "b71d36cbb71e9810ace2b275bdb950fa08e3c608cf677b803cdfc64edffa2fd6",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/ir_model/moon.pkg",
+      "bytes": 42,
+      "sha256": "2099b5587372cd9d61b1eec201032aba3b98a9208ecf12e08eb74158b23df61d",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/ir_model/ir_model.mbt",
+      "bytes": 8461,
+      "sha256": "a58c69fa6e7c1d03b3d57b709bd34b429ba71797175f64b53b6363636de0e99f",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/model/identity_wbtest.mbt",
+      "bytes": 7987,
+      "sha256": "43d212ba23e310ada0646c13328a46ab498792b796cc0ee6d1bc4b32de80a636",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/model/pkg.generated.mbti",
+      "bytes": 10897,
+      "sha256": "3fdf8bddf8da00822bc43a1e1070d817ce6c8e9cba7f1071ec90633cc9d26986",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/model/versioning.mbt",
+      "bytes": 2094,
+      "sha256": "f4cc2b3d28a48767588448fd62bab42534128d22793cc9afb1ec9d17554b401a",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/model/model.mbt",
+      "bytes": 23908,
+      "sha256": "f6908bdee99fe2fcee88c1fbfafbe2854db4268b280f56b5556751d262082781",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/model/moon.pkg",
+      "bytes": 11,
+      "sha256": "607f4ea3b5530b645a8286bc6d42575be31cf537f672e1847c84672e65d0daa9",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/model/versioning_wbtest.mbt",
+      "bytes": 3175,
+      "sha256": "9f65f492f9b6ab3b8cdae097c198b9344cfca3e194c1c82a461ec58936dbd26f",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/cli/cli_wbtest.mbt",
+      "bytes": 8027,
+      "sha256": "792f59e6c75163d5cc5ebad6faec7a5d3b965de34075cee02e87a36f2fe7cbe8",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/cli/pkg.generated.mbti",
+      "bytes": 925,
+      "sha256": "2d1df7ffab52c4cac991fe3ba640f0e29f7ad411335382fa387f0e16dce86004",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/cli/main.mbt",
+      "bytes": 7596,
+      "sha256": "62c6b9193814d8a47a44afb5276016b1da8bd78475b8ebfadd373e19bc948e0a",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/cli/moon.pkg",
+      "bytes": 691,
+      "sha256": "3c705a668d0e367b3a58ae199c496222f51f88fb866b00b4d21b0d278fd55352",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/cli/replay_native.mbt",
+      "bytes": 724,
+      "sha256": "91bdaf8a9babbf00baf990d7be2c4209269fce81ebd79058a554110759bb3de3",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/cli/cli.mbt",
+      "bytes": 7264,
+      "sha256": "263b9dfcd8f12ae391324941e7110637ece3bf33d7c4b221fda34a6718fb4de3",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/cli/main_unimplemented.mbt",
+      "bytes": 1181,
+      "sha256": "2c4e6c0b52a9f7f072547ed431f98893f3f40a6aea9759e0da31025b5c8d1c5a",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/experiment/experiment.mbt",
+      "bytes": 7457,
+      "sha256": "0a8c36c245fd04d449314be4834f743f19c07a93d0caf100a881a9dda220dc7f",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/experiment/experiment_test.mbt",
+      "bytes": 4097,
+      "sha256": "404c1261746381199aca8c4793c0a03c0a21a15b7d42ca333f1da912c4ddc275",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/experiment/pkg.generated.mbti",
+      "bytes": 2689,
+      "sha256": "f86d716e4b93039f97a54ea040ec98be7dd3b94263dc26676de85218b646275b",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/experiment/moon.pkg",
+      "bytes": 92,
+      "sha256": "0539993591a4eda96d532dcbd31e26be8759b356c4ef4e3ad987ef2cfeea5a3e",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/report/report.mbt",
+      "bytes": 64380,
+      "sha256": "7a86d00d486135a5923a6fad4cbe60525e6de8061ab40b944c9f00b4124ee328",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/report/pkg.generated.mbti",
+      "bytes": 517,
+      "sha256": "9df582c2f2c29381b22392776898953f81bd5ed622ef7d574fd4ce197570ee4d",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/report/report_wbtest.mbt",
+      "bytes": 27423,
+      "sha256": "b15d896e1912abf76a248572ad3ca85ab8aa2d55b35516c8b9dfc056051ae325",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/report/README.mbt.md",
+      "bytes": 200,
+      "sha256": "b21f067af34a7b8b3c79e4c770cf7a13ab75473da53867d01679e591e613dc2d",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/report/comparison_wbtest.mbt",
+      "bytes": 20645,
+      "sha256": "e6e8807a47523cab4fd3d0a3b9b38ac8e5e954b5ca9b4d808d028317456fd4b6",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/report/moon.pkg",
+      "bytes": 407,
+      "sha256": "2393242ea126eb167bdf99003126e255ed194dc57e05f9cc16edb2a317148b76",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/report/public_api_test.mbt",
+      "bytes": 1988,
+      "sha256": "275231fa36a2209d906afc5cb63a25b735270bf5927a3ac6054739a60a75a73a",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/env_detect/target.mbt",
+      "bytes": 744,
+      "sha256": "014df1658189f1d69d2311e4912d39d9a1b61efc5c28adec91a1145bcc3ad47a",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/env_detect/probe_none.mbt",
+      "bytes": 456,
+      "sha256": "de805d3b815a9084ad0472e21467fa2ed8218892a60ed318eeeceac359324f93",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/env_detect/pkg.generated.mbti",
+      "bytes": 947,
+      "sha256": "7a2806a109190c90381040e553436db186e7fa30fcb6d479329bfd7c13f7477e",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/env_detect/README.mbt.md",
+      "bytes": 1786,
+      "sha256": "de7d89826087dba8ec85028c4a86e2fedaa6b305ffe4a2b2d3be3f3accd8235a",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/env_detect/probe_js.mbt",
+      "bytes": 2246,
+      "sha256": "8e2561ed3bade7bbaebf40b089600e48b227dc24349fd9fa555b0d8170bfb121",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/env_detect/env_detect.mbt",
+      "bytes": 11057,
+      "sha256": "4f43cb8d76ef8e5eb5c8ba4fe700027492787bbe7e86055b8a8763ea56956c7a",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/env_detect/env_detect_test.mbt",
+      "bytes": 6144,
+      "sha256": "d20a93da3e5934d60c9d1b1e7b9f329379be1dd24faef500f69a61e21bed3a1f",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/env_detect/moon.pkg",
+      "bytes": 492,
+      "sha256": "f12bb300d1013640a3261cc71dc542da5fbaa6d46782477fe41bfde9b510cc49",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/env_detect/probe_native_wbtest.mbt",
+      "bytes": 714,
+      "sha256": "5ae997e247732dee5ca9b3ae217368fd8b3a3231eb1b74e745c37b16e0ad033f",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/env_detect/probe_native.mbt",
+      "bytes": 1798,
+      "sha256": "76be348dd6c863f879d2ecd884e01a4b1a7ba02823069d77c5ca13f9c5b7820e",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/env_detect/env_detect_wbtest.mbt",
+      "bytes": 2605,
+      "sha256": "efe59a5f8ce53adb6d87a59172b41193919b6360da6c9a83fa64ebf411466232",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/generator/pkg.generated.mbti",
+      "bytes": 777,
+      "sha256": "9af50a6ef1c345eb0e0fdcfc20dc5c08c9848304903001650dd063be6e30089d",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/generator/generator.mbt",
+      "bytes": 1596,
+      "sha256": "89a60ff57a7ed7eb77175036c3d3733796720b85d9a5cdb65fbcd37f4be9b170",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/generator/generator_wbtest.mbt",
+      "bytes": 1001,
+      "sha256": "7802adc62460ead5ad11f624b48968db92cf4b544d417de3109c5f20e4e1bd0f",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "src/generator/moon.pkg",
+      "bytes": 104,
+      "sha256": "64d01935860db40383e370c683d248f91ad19ca58ab09d0bc9aff20a1a4c61a6",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "doc/conf.json",
+      "bytes": 196,
+      "sha256": "c5203b45294b52ac2d7b97153dbd5340715a956c4b4aef7a41cd3b2b408e4b9b",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "doc/attachments/design_stats_bootstrap.typ",
+      "bytes": 7481,
+      "sha256": "7307ce3657145bc8f6ea2d25b53a91c5f20775145d924cd1da57daafe6c9b2bc",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "doc/locale/ja_JP/LC_MESSAGES/manual.po",
+      "bytes": 877472,
+      "sha256": "21ef558da05998671e1dac68b2defa8ce13139c86fecd7a679611cfd262820ab",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "doc/locale/zh_CN/LC_MESSAGES/manual.po",
+      "bytes": 777282,
+      "sha256": "b720452554d194cd09e3e87e2243dde3469a44bfd19f9b013f020ad5520a6425",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "doc/locale/manual.pot",
+      "bytes": 411560,
+      "sha256": "9c351a851486904187c7a971d1f5372b5b2ba6b37093fa4fc51141a140256ba4",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "doc/manual/verification.md",
+      "bytes": 6173,
+      "sha256": "c5c1799b73c696e3daeb2961bab85486ad955bdca0890479e1bd4524fd5728e9",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "doc/manual/design/generator.md",
+      "bytes": 6863,
+      "sha256": "49b39de61c4934b0952751568c6b1de5f33a072fa3521084828c4251f9dacbbd",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "doc/manual/design/fixture.md",
+      "bytes": 5008,
+      "sha256": "4f22d15a5afc11c3e619fbfddc45031438ace046b89bce58d7454f078de6f16e",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "doc/manual/design/experiment.md",
+      "bytes": 8358,
+      "sha256": "33893dcf61ee7dc6e08fb1b9e8cb1a9650576309b0ecc51b4a0bf2d16022c18b",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "doc/manual/design/ir_model.md",
+      "bytes": 4911,
+      "sha256": "3e13aa94f4c7b6fc94182f1dfec3d62d93eadbc994fc4dae58dfae8a546749f5",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "doc/manual/design/report.md",
+      "bytes": 19847,
+      "sha256": "473ca997e12221c29e48a4b14d875cfb3351eab2a49bbf259631651c76dd82d0",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "doc/manual/design/model.md",
+      "bytes": 11495,
+      "sha256": "bda0e78b37c5f52c8e11598bf8c869a3b16d9d17d66313098674eed5afeebf29",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "doc/manual/design/tune.md",
+      "bytes": 8546,
+      "sha256": "34e63d72b8e1e2318c301f71fd3d0df13d60f33c69c8141939a532d5a384fd5e",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "doc/manual/design/ir_sink.md",
+      "bytes": 1352,
+      "sha256": "b42b15a01f74e13df8dab560b0a12e978398cc8b89f373f91023c136fae1c951",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "doc/manual/design/env_detect.md",
+      "bytes": 14760,
+      "sha256": "bdf8060122beb0bdd6cd9b4b2eb7db81968881fd713199ce0bb03ab4218c2f83",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "doc/manual/design/stats.md",
+      "bytes": 25316,
+      "sha256": "d754218cbb39cb55ff0375f77cc819302b02283a9b0faddd9c3744fb1e82afd8",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "doc/manual/design/event.md",
+      "bytes": 6524,
+      "sha256": "742e9bb96e14375375e107b07ebeb988dc257539a4b56ae4612859c763471e71",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "doc/manual/design/runner.md",
+      "bytes": 25943,
+      "sha256": "c50947b4bfc926b5d6121929ba3563569c35ce281d7abbf82827ed976bba2808",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "doc/manual/design/tune_gemm.md",
+      "bytes": 7797,
+      "sha256": "048dc112a3f0d0c1823debd0b2e929959c9763d4a5d5697523540f9d4f48c30c",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "doc/manual/design/cli.md",
+      "bytes": 4662,
+      "sha256": "fb284bf431f93f9e592887766c9cf8a9f929936143ae86d529626fb399632118",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "doc/manual/tutorial/generator.md",
+      "bytes": 4558,
+      "sha256": "4b7ce1ca7999f3e2086c706de67e5818e8c6e65e4c398d4706c16798607ec5fe",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "doc/manual/tutorial/fixture.md",
+      "bytes": 5394,
+      "sha256": "c22a83be632f8a5788dbea954f440fcf2854f194c4955afc342b32bf30e71552",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "doc/manual/tutorial/experiment.md",
+      "bytes": 6054,
+      "sha256": "f63532918420e67e519c677dd4c3848a3980a9941de32518760ce37a05c292a5",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "doc/manual/tutorial/ir_model.md",
+      "bytes": 4718,
+      "sha256": "6215aea81acb41870fcf427463977d39b81b83f6026526653325f88d36dee6fb",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "doc/manual/tutorial/report.md",
+      "bytes": 9957,
+      "sha256": "14b3640f9853fe4e1e06108c82cd02d6b4a0af9796ef5e47f2299611a2612b8c",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "doc/manual/tutorial/model.md",
+      "bytes": 7212,
+      "sha256": "a7fed44b6599223feb26140d8d39792e6ecc4990da459c1c1eb6044aa4d9ae7e",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "doc/manual/tutorial/tune.md",
+      "bytes": 5100,
+      "sha256": "86907fa2ad6d07592a299ebd25d383df9bde3943bf91c1b3ac427794c6c9527f",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "doc/manual/tutorial/ir_sink.md",
+      "bytes": 1757,
+      "sha256": "407d99ef2b5a2471f01faf89b9a04def442f86f99b1c6a63d76c9e9b6543d502",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "doc/manual/tutorial/env_detect.md",
+      "bytes": 8533,
+      "sha256": "5a0592304c48519e7e2cc8e5e5f84eb1b7804d106de23fc9491680c132e59be5",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "doc/manual/tutorial/stats.md",
+      "bytes": 11290,
+      "sha256": "e900a188089ee6a0e8fd5dbb42840eed794def54dd6849f1c35dff9de8e881d7",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "doc/manual/tutorial/event.md",
+      "bytes": 5857,
+      "sha256": "a4867fee458a6378503a1eaca3c5acdbe784f4016a4ab5a99db9fb727cac3f8e",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "doc/manual/tutorial/runner.md",
+      "bytes": 20730,
+      "sha256": "3698acda62b4a017721fdad174bfd332ef6880e6eaccd65ac4148111e79849c6",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "doc/manual/tutorial/tune_gemm.md",
+      "bytes": 7160,
+      "sha256": "49025b9e4bee892a705992df85ed64f21874aae94d9de07c91cee099896b693c",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "doc/manual/tutorial/cli.md",
+      "bytes": 6820,
+      "sha256": "8c96778787a566c03435d6dcef8c24fee0db19936b436e555e2afc3fc4205ab6",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "doc/manual/index.md",
+      "bytes": 8303,
+      "sha256": "602dfe101f10c185b908a539d47290fa60e609c3077355701242423ddd177ff2",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "doc/manual/conventions.md",
+      "bytes": 1521,
+      "sha256": "c34e696609a1b90f8f1508b1fb48f471e2e1b4186aedf586705a5838b84a34cc",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "doc/manual/api/generator.md",
+      "bytes": 4270,
+      "sha256": "c79161170f916bbead8a6ae2b9c1a7145ce4d1eda0bc0ac24d1679e0ae24e592",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "doc/manual/api/fixture.md",
+      "bytes": 5526,
+      "sha256": "b1681035532b6b73248b4edcce8a8d4f051ad9a47bbf7d9fcdab739732856560",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "doc/manual/api/experiment.md",
+      "bytes": 10732,
+      "sha256": "69af6d40737cc17c18f61c9ac82c24393b3644b975ede43643b2f4f0b7956d36",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "doc/manual/api/ir_model.md",
+      "bytes": 12100,
+      "sha256": "2f0214814df93ab17abc22f83b456cd0cf1a8cd0f6a6a9d98f32a6f05b96b9de",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "doc/manual/api/report.md",
+      "bytes": 18434,
+      "sha256": "cea602983d065697e10150c5d554754ee79ede063dbd57e086df22878b466460",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "doc/manual/api/model.md",
+      "bytes": 31575,
+      "sha256": "2f5e1bac6d96cf853ac8f50ed9a61fdd3cef695463311852637ff156d9e1c7c6",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "doc/manual/api/tune.md",
+      "bytes": 10862,
+      "sha256": "ea8a408e5dab7317edc1d396a9cc9eb637e75c1d3486495e1daa67c49ef0e099",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "doc/manual/api/ir_sink.md",
+      "bytes": 1471,
+      "sha256": "391865bb7da64dcd69bec04d62f27ba6f3e589d69aee2713c23e2d4fc313002a",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "doc/manual/api/env_detect.md",
+      "bytes": 9478,
+      "sha256": "48046455cd0601b651ce128d6c99af10b607aed861a1b4372a0b8f3ad4ff9feb",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "doc/manual/api/stats.md",
+      "bytes": 13717,
+      "sha256": "e3177a4a7106c4882a49422bdaadc5827e4901a54adbf2ce8248f4415208c865",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "doc/manual/api/event.md",
+      "bytes": 10890,
+      "sha256": "89496a8bfc72e9d238c3c343db63e2c0cebb6e5eae9bec40e56848a1fcc981e7",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "doc/manual/api/runner.md",
+      "bytes": 32110,
+      "sha256": "757ff024621d35f66ef6dcda2307eb565f6e7fb157cf93c9ed7c3b6518e052e3",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "doc/manual/api/tune_gemm.md",
+      "bytes": 13785,
+      "sha256": "350ec96d22a07c0e3d882b1b204b8dae593cac176669335f9ec166c29397a2f7",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "doc/manual/api/cli.md",
+      "bytes": 8086,
+      "sha256": "9e63f3dbb95a9d3eaa7c9aa392294512c48a3348b61be8668e526af7ae8b807c",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "doc/manual/architecture.md",
+      "bytes": 6454,
+      "sha256": "731a32bd2e4cf5381c219cecbf4ea6b8919034efc00dff5294af566853164220",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "doc/manual/getting_started.md",
+      "bytes": 6575,
+      "sha256": "0c8591517a38b17ea428bacc9bc66e9f6548fd9fca00951d63fcd9b29a39a82f",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    },
+    {
+      "path": "README.md",
+      "bytes": 5611,
+      "sha256": "d641827b16f1eb8d2bbddd256452bea41c9a9b6111e9a174b2e0652bc5b581e7",
+      "kind": "text",
+      "encoding": "utf-8-sig",
+      "encoding_basis": null,
+      "classification": null,
+      "decode_replacement": false
+    }
+  ],
+  "hits": [
+    {
+      "path": "src/event/protocol.mbt",
+      "line": 64,
+      "kinds": [
+        "protocol_capture_audit"
+      ],
+      "text": "    \"validation_coverage\": Json::string(protocol.validation_coverage.text()),",
+      "excerpt_start_column": 1,
+      "match_column": 41
+    },
+    {
+      "path": "src/event/protocol_wbtest.mbt",
+      "line": 119,
+      "kinds": [
+        "protocol_capture_audit"
+      ],
+      "text": "    sample_protocol(validation_coverage=EveryMeasurement),",
+      "excerpt_start_column": 1,
+      "match_column": 12
+    },
+    {
+      "path": "src/event/protocol_wbtest.mbt",
+      "line": 120,
+      "kinds": [
+        "protocol_capture_audit"
+      ],
+      "text": "    sample_protocol(validation_coverage=EveryDataset),",
+      "excerpt_start_column": 1,
+      "match_column": 12
+    },
+    {
+      "path": "src/event/protocol_wbtest.mbt",
+      "line": 191,
+      "kinds": [
+        "protocol_capture_audit"
+      ],
+      "text": "    content=\"protocol.validation_coverage: unknown value 'sometimes'\",",
+      "excerpt_start_column": 1,
+      "match_column": 14
+    },
+    {
+      "path": "src/runner/runner.mbt",
+      "line": 1156,
+      "kinds": [
+        "protocol_capture_audit"
+      ],
+      "text": "      let validate_dataset = match protocol.validation_coverage {",
+      "excerpt_start_column": 1,
+      "match_column": 36
+    },
+    {
+      "path": "src/runner/runner.mbt",
+      "line": 1362,
+      "kinds": [
+        "protocol_capture_audit"
+      ],
+      "text": "          if protocol.validation_coverage is EveryMeasurement {",
+      "excerpt_start_column": 1,
+      "match_column": 14
+    },
+    {
+      "path": "src/runner/pkg.generated.mbti",
+      "line": 20,
+      "kinds": [
+        "protocol_capture_audit"
+      ],
+      "text": "pub fn validate_protocol(@model.RunProtocol) -> Result[ValidatedProtocol, Array[ProtocolConfigError]]",
+      "excerpt_start_column": 1,
+      "match_column": 17
+    },
+    {
+      "path": "src/runner/pkg.generated.mbti",
+      "line": 48,
+      "kinds": [
+        "protocol_capture_audit"
+      ],
+      "text": "le, Input, Prepared, Expected, Output, Context, State, SinkValue] BenchSpec::compile(Self[Scale, Input, Prepared, Expected, Output, Context, State, SinkValue], protocol? : ValidatedProtocol) -> Result[ValidatedBenchPlan[Scale, Input, Prepared, Expected, Output, Context, State, SinkValue], Array[BenchConfigError]]",
+      "excerpt_start_column": 11,
+      "match_column": 171
+    },
+    {
+      "path": "src/runner/pkg.generated.mbti",
+      "line": 127,
+      "kinds": [
+        "protocol_capture_audit"
+      ],
+      "text": "pub fn ProtocolPreset::validated(Self) -> ValidatedProtocol",
+      "excerpt_start_column": 1,
+      "match_column": 8
+    },
+    {
+      "path": "src/runner/pkg.generated.mbti",
+      "line": 133,
+      "kinds": [
+        "protocol_capture_audit"
+      ],
+      "text": "  protocol : ValidatedProtocol",
+      "excerpt_start_column": 1,
+      "match_column": 3
+    },
+    {
+      "path": "src/runner/runner_wbtest.mbt",
+      "line": 427,
+      "kinds": [
+        "protocol_capture_audit"
+      ],
+      "text": "test \"protocol validation aggregates invalid boundaries\" {",
+      "excerpt_start_column": 1,
+      "match_column": 7
+    },
+    {
+      "path": "src/runner/runner_wbtest.mbt",
+      "line": 450,
+      "kinds": [
+        "protocol_capture_audit"
+      ],
+      "text": "  ignore(ProtocolPreset::QuickCheck.validated())",
+      "excerpt_start_column": 1,
+      "match_column": 10
+    },
+    {
+      "path": "src/runner/runner_wbtest.mbt",
+      "line": 451,
+      "kinds": [
+        "protocol_capture_audit"
+      ],
+      "text": "  ignore(ProtocolPreset::Development.validated())",
+      "excerpt_start_column": 1,
+      "match_column": 10
+    },
+    {
+      "path": "src/runner/runner_wbtest.mbt",
+      "line": 452,
+      "kinds": [
+        "protocol_capture_audit"
+      ],
+      "text": "  ignore(ProtocolPreset::RegressionGate.validated())",
+      "excerpt_start_column": 1,
+      "match_column": 10
+    },
+    {
+      "path": "src/runner/runner_wbtest.mbt",
+      "line": 516,
+      "kinds": [
+        "protocol_capture_audit"
+      ],
+      "text": "      ProtocolPreset::QuickCheck.validated(),",
+      "excerpt_start_column": 1,
+      "match_column": 7
+    },
+    {
+      "path": "src/runner/runner_wbtest.mbt",
+      "line": 547,
+      "kinds": [
+        "protocol_capture_audit"
+      ],
+      "text": "fn minimal_protocol() -> ValidatedProtocol {",
+      "excerpt_start_column": 1,
+      "match_column": 12
+    },
+    {
+      "path": "src/runner/runner_wbtest.mbt",
+      "line": 716,
+      "kinds": [
+        "protocol_capture_audit"
+      ],
+      "text": "test \"protocol validation rejects non-finite durations and thresholds\" {",
+      "excerpt_start_column": 1,
+      "match_column": 7
+    },
+    {
+      "path": "src/runner/runner_wbtest.mbt",
+      "line": 900,
+      "kinds": [
+        "protocol_capture_audit"
+      ],
+      "text": "    let protocol = preset.validated().protocol",
+      "excerpt_start_column": 1,
+      "match_column": 9
+    },
+    {
+      "path": "src/runner/runner_wbtest.mbt",
+      "line": 908,
+      "kinds": [
+        "protocol_capture_audit"
+      ],
+      "text": "  let gate = ProtocolPreset::RegressionGate.validated().protocol",
+      "excerpt_start_column": 1,
+      "match_column": 14
+    },
+    {
+      "path": "src/runner/runner_wbtest.mbt",
+      "line": 918,
+      "kinds": [
+        "protocol_capture_audit"
+      ],
+      "text": "  ].map(preset => @model.protocol_identity(preset.validated().protocol))",
+      "excerpt_start_column": 1,
+      "match_column": 26
+    },
+    {
+      "path": "src/runner/observation_scale_wbtest.mbt",
+      "line": 4,
+      "kinds": [
+        "protocol_capture_audit"
+      ],
+      "text": "  let protocol = validate_protocol(",
+      "excerpt_start_column": 1,
+      "match_column": 7
+    },
+    {
+      "path": "src/runner/bench_spec.mbt",
+      "line": 215,
+      "kinds": [
+        "protocol_capture_audit"
+      ],
+      "text": "pub fn ProtocolPreset::validated(self : ProtocolPreset) -> ValidatedProtocol {",
+      "excerpt_start_column": 1,
+      "match_column": 8
+    },
+    {
+      "path": "src/runner/bench_spec.mbt",
+      "line": 229,
+      "kinds": [
+        "protocol_capture_audit"
+      ],
+      "text": "  protocol : ValidatedProtocol",
+      "excerpt_start_column": 1,
+      "match_column": 3
+    },
+    {
+      "path": "src/runner/bench_spec.mbt",
+      "line": 237,
+      "kinds": [
+        "protocol_capture_audit"
+      ],
+      "text": "  protocol : ValidatedProtocol,",
+      "excerpt_start_column": 1,
+      "match_column": 3
+    },
+    {
+      "path": "src/runner/bench_spec.mbt",
+      "line": 328,
+      "kinds": [
+        "protocol_capture_audit"
+      ],
+      "text": "  protocol? : ValidatedProtocol,",
+      "excerpt_start_column": 1,
+      "match_column": 3
+    },
+    {
+      "path": "src/runner/bench_spec.mbt",
+      "line": 366,
+      "kinds": [
+        "protocol_capture_audit"
+      ],
+      "text": "    setup_errors(self.case, protocol.map(validated => validated.protocol)),",
+      "excerpt_start_column": 1,
+      "match_column": 29
+    },
+    {
+      "path": "src/runner/protocol_wbtest.mbt",
+      "line": 936,
+      "kinds": [
+        "protocol_capture_audit"
+      ],
+      "text": "  let protocol = (coverage : @model.ValidationCoverage) => {",
+      "excerpt_start_column": 1,
+      "match_column": 7
+    },
+    {
+      "path": "src/runner/protocol_wbtest.mbt",
+      "line": 948,
+      "kinds": [
+        "protocol_capture_audit"
+      ],
+      "text": "    protocol(@model.ValidationCoverage::EveryDataset),",
+      "excerpt_start_column": 1,
+      "match_column": 5
+    },
+    {
+      "path": "src/runner/protocol_wbtest.mbt",
+      "line": 953,
+      "kinds": [
+        "protocol_capture_audit"
+      ],
+      "text": "    protocol(@model.ValidationCoverage::ConfirmatoryOnly),",
+      "excerpt_start_column": 1,
+      "match_column": 5
+    },
+    {
+      "path": "src/runner/protocol_wbtest.mbt",
+      "line": 1270,
+      "kinds": [
+        "protocol_capture_audit"
+      ],
+      "text": "test \"protocol validation checks repeats per dataset\" {",
+      "excerpt_start_column": 1,
+      "match_column": 7
+    },
+    {
+      "path": "src/runner/protocol_wbtest.mbt",
+      "line": 1315,
+      "kinds": [
+        "protocol_capture_audit"
+      ],
+      "text": "        protocol_with(design, @model.ValidationCoverage::EveryDataset, 2, 2),",
+      "excerpt_start_column": 1,
+      "match_column": 9
+    },
+    {
+      "path": "src/runner/protocol_wbtest.mbt",
+      "line": 1320,
+      "kinds": [
+        "protocol_capture_audit"
+      ],
+      "text": "  let gate = ProtocolPreset::RegressionGate.validated().protocol",
+      "excerpt_start_column": 1,
+      "match_column": 14
+    },
+    {
+      "path": "src/runner/protocol_wbtest.mbt",
+      "line": 1328,
+      "kinds": [
+        "protocol_capture_audit"
+      ],
+      "text": "    datasets_per_scale(ProtocolPreset::QuickCheck.validated().protocol),",
+      "excerpt_start_column": 1,
+      "match_column": 24
+    },
+    {
+      "path": "src/model/model.mbt",
+      "line": 941,
+      "kinds": [
+        "protocol_capture_audit"
+      ],
+      "text": "    (\"validation_coverage\", protocol.validation_coverage.text()),",
+      "excerpt_start_column": 1,
+      "match_column": 29
+    },
+    {
+      "path": "doc/locale/ja_JP/LC_MESSAGES/manual.po",
+      "line": 1601,
+      "kinds": [
+        "protocol_capture_audit"
+      ],
+      "text": "ents are `run_id`, `observation_count`, `validation_count`, `calibration_count`, `complete` and `artifact_location`. The counts default to `0`; `environment`, `protocol` and `seed` to `None`. `validation_count` counts every validation event, and `measurement_validation_count` the part of them that carry a `measurement` key. The runner fills `run_id` with `run_identity` and records the protocol and the run seed, so that a JSONL record can be audited and re-analysed.\"",
+      "excerpt_start_column": 28,
+      "match_column": 188
+    },
+    {
+      "path": "doc/locale/ja_JP/LC_MESSAGES/manual.po",
+      "line": 1602,
+      "kinds": [
+        "protocol_capture_audit"
+      ],
+      "text": "msgstr \"位置引数は `run_id`、`observation_count`、`validation_count`、`calibration_count`、`complete`、`artifact_location` です。count の既定値は `0`、`environment`、`protocol`、`seed` は `None` です。`validation_count` は全検証、`measurement_validation_count` は `measurement` key を持つ検証を数えます。runner は `run_identity` で run id を作り、監査と再解析のため protocol と seed を記録します。\"",
+      "excerpt_start_column": 1,
+      "match_column": 148
+    },
+    {
+      "path": "doc/locale/ja_JP/LC_MESSAGES/manual.po",
+      "line": 1948,
+      "kinds": [
+        "protocol_capture_audit"
+      ],
+      "text": "urement loop. You describe a benchmark case, compile it into a validated plan, and `run` it with a seed, an environment snapshot, an event sink and a validated protocol. The runner validates every implementation against an oracle before timing, calibrates the batch size, measures in balanced blocks and emits raw events. The reasons for each step are in the [runner design](../design/runner.md).\"",
+      "excerpt_start_column": 50,
+      "match_column": 210
+    },
+    {
+      "path": "doc/locale/ja_JP/LC_MESSAGES/manual.po",
+      "line": 2064,
+      "kinds": [
+        "protocol_capture_audit"
+      ],
+      "text": "msgid \"`ValidatedProtocol` is a `RunProtocol` that passed `validate_protocol`.\"",
+      "excerpt_start_column": 1,
+      "match_column": 18
+    },
+    {
+      "path": "doc/locale/ja_JP/LC_MESSAGES/manual.po",
+      "line": 2065,
+      "kinds": [
+        "protocol_capture_audit"
+      ],
+      "text": "msgstr \"`ValidatedProtocol` は `validate_protocol` を通過した `RunProtocol` です。\"",
+      "excerpt_start_column": 1,
+      "match_column": 19
+    },
+    {
+      "path": "doc/locale/ja_JP/LC_MESSAGES/manual.po",
+      "line": 2072,
+      "kinds": [
+        "protocol_capture_audit"
+      ],
+      "text": "msgid \"`validate_protocol` checks a protocol and returns either a `ValidatedProtocol` or every violation found.\"",
+      "excerpt_start_column": 1,
+      "match_column": 37
+    },
+    {
+      "path": "doc/locale/ja_JP/LC_MESSAGES/manual.po",
+      "line": 2073,
+      "kinds": [
+        "protocol_capture_audit"
+      ],
+      "text": "msgstr \"`validate_protocol` はプロトコルを検査し、`ValidatedProtocol` か、見つかったすべての違反のいずれかを返します。\"",
+      "excerpt_start_column": 1,
+      "match_column": 19
+    },
+    {
+      "path": "doc/locale/ja_JP/LC_MESSAGES/manual.po",
+      "line": 4805,
+      "kinds": [
+        "protocol_capture_audit"
+      ],
+      "text": "msgid \"**One flat protocol string.** Unreadable and unvalidated.\"",
+      "excerpt_start_column": 1,
+      "match_column": 19
+    },
+    {
+      "path": "doc/locale/ja_JP/LC_MESSAGES/manual.po",
+      "line": 6780,
+      "kinds": [
+        "protocol_capture_audit"
+      ],
+      "text": "msgid \"Protocols: `model.RunProtocol` (with `ExperimentDesign`, `ValidationCoverage` and `repeats_per_dataset`), `runner.validate_protocol`, `runner.ProtocolPreset` (`QuickCheck`, `Development`, `RegressionGate`)\"",
+      "excerpt_start_column": 1,
+      "match_column": 29
+    },
+    {
+      "path": "doc/locale/ja_JP/LC_MESSAGES/manual.po",
+      "line": 6781,
+      "kinds": [
+        "protocol_capture_audit"
+      ],
+      "text": "msgstr \"プロトコル：`model.RunProtocol`（`ExperimentDesign`、`ValidationCoverage`、`repeats_per_dataset` を含む）、`runner.validate_protocol`、`runner.ProtocolPreset`（`QuickCheck`、`Development`、`RegressionGate`）。\"",
+      "excerpt_start_column": 1,
+      "match_column": 25
+    },
+    {
+      "path": "doc/locale/ja_JP/LC_MESSAGES/manual.po",
+      "line": 8222,
+      "kinds": [
+        "protocol_capture_audit"
+      ],
+      "text": "msgid \"`@runner.ProtocolPreset` or `@runner.validate_protocol`\"",
+      "excerpt_start_column": 1,
+      "match_column": 17
+    },
+    {
+      "path": "doc/locale/ja_JP/LC_MESSAGES/manual.po",
+      "line": 8223,
+      "kinds": [
+        "protocol_capture_audit"
+      ],
+      "text": "msgstr \"`@runner.ProtocolPreset` または `@runner.validate_protocol`\"",
+      "excerpt_start_column": 1,
+      "match_column": 18
+    },
+    {
+      "path": "doc/locale/ja_JP/LC_MESSAGES/manual.po",
+      "line": 9104,
+      "kinds": [
+        "protocol_capture_audit"
+      ],
+      "text": "#~ msgid \"`experiment_design`, `outlier_policy`, `validation_coverage` and `practical_delta_pct` are stored in the protocol but do not change the run. Validation runs once per dataset, before timing, whatever the coverage says.\"",
+      "excerpt_start_column": 1,
+      "match_column": 116
+    },
+    {
+      "path": "doc/locale/ja_JP/LC_MESSAGES/manual.po",
+      "line": 9486,
+      "kinds": [
+        "clock_sync"
+      ],
+      "text": "#~ msgid \"Setup, workers, clocks, synchronization\"",
+      "excerpt_start_column": 1,
+      "match_column": 27
+    },
+    {
+      "path": "doc/locale/ja_JP/LC_MESSAGES/manual.po",
+      "line": 9582,
+      "kinds": [
+        "protocol_capture_audit"
+      ],
+      "text": "ery other package. It contains version identifiers (`mmkp_1`, `mmka_1`, `mmks_1`), dataset and measurement keys, execution outcomes, environment snapshots, run protocols, observations, validation events, replay specifications, and tuning/report metadata.\"",
+      "excerpt_start_column": 58,
+      "match_column": 218
+    },
+    {
+      "path": "doc/locale/zh_CN/LC_MESSAGES/manual.po",
+      "line": 1601,
+      "kinds": [
+        "protocol_capture_audit"
+      ],
+      "text": "ents are `run_id`, `observation_count`, `validation_count`, `calibration_count`, `complete` and `artifact_location`. The counts default to `0`; `environment`, `protocol` and `seed` to `None`. `validation_count` counts every validation event, and `measurement_validation_count` the part of them that carry a `measurement` key. The runner fills `run_id` with `run_identity` and records the protocol and the run seed, so that a JSONL record can be audited and re-analysed.\"",
+      "excerpt_start_column": 28,
+      "match_column": 188
+    },
+    {
+      "path": "doc/locale/zh_CN/LC_MESSAGES/manual.po",
+      "line": 1602,
+      "kinds": [
+        "protocol_capture_audit"
+      ],
+      "text": "msgstr \"位置参数依次为 `run_id`、`observation_count`、`validation_count`、`calibration_count`、`complete` 和 `artifact_location`。计数默认为 `0`；`environment`、`protocol` 和 `seed` 默认为 `None`。`validation_count` 统计每一个验证事件，`measurement_validation_count` 统计其中携带 `measurement` 键的部分。运行器用 `run_identity` 填写 `run_id`，并记录协议和运行种子，使 JSONL 记录可以被审计和重新分析。\"",
+      "excerpt_start_column": 1,
+      "match_column": 143
+    },
+    {
+      "path": "doc/locale/zh_CN/LC_MESSAGES/manual.po",
+      "line": 1948,
+      "kinds": [
+        "protocol_capture_audit"
+      ],
+      "text": "urement loop. You describe a benchmark case, compile it into a validated plan, and `run` it with a seed, an environment snapshot, an event sink and a validated protocol. The runner validates every implementation against an oracle before timing, calibrates the batch size, measures in balanced blocks and emits raw events. The reasons for each step are in the [runner design](../design/runner.md).\"",
+      "excerpt_start_column": 50,
+      "match_column": 210
+    },
+    {
+      "path": "doc/locale/zh_CN/LC_MESSAGES/manual.po",
+      "line": 2064,
+      "kinds": [
+        "protocol_capture_audit"
+      ],
+      "text": "msgid \"`ValidatedProtocol` is a `RunProtocol` that passed `validate_protocol`.\"",
+      "excerpt_start_column": 1,
+      "match_column": 18
+    },
+    {
+      "path": "doc/locale/zh_CN/LC_MESSAGES/manual.po",
+      "line": 2065,
+      "kinds": [
+        "protocol_capture_audit"
+      ],
+      "text": "msgstr \"`ValidatedProtocol` 是通过了 `validate_protocol` 的 `RunProtocol`。\"",
+      "excerpt_start_column": 1,
+      "match_column": 19
+    },
+    {
+      "path": "doc/locale/zh_CN/LC_MESSAGES/manual.po",
+      "line": 2072,
+      "kinds": [
+        "protocol_capture_audit"
+      ],
+      "text": "msgid \"`validate_protocol` checks a protocol and returns either a `ValidatedProtocol` or every violation found.\"",
+      "excerpt_start_column": 1,
+      "match_column": 37
+    },
+    {
+      "path": "doc/locale/zh_CN/LC_MESSAGES/manual.po",
+      "line": 2073,
+      "kinds": [
+        "protocol_capture_audit"
+      ],
+      "text": "msgstr \"`validate_protocol` 检查协议，返回一个 `ValidatedProtocol` 或发现的全部违规。\"",
+      "excerpt_start_column": 1,
+      "match_column": 19
+    },
+    {
+      "path": "doc/locale/zh_CN/LC_MESSAGES/manual.po",
+      "line": 4805,
+      "kinds": [
+        "protocol_capture_audit"
+      ],
+      "text": "msgid \"**One flat protocol string.** Unreadable and unvalidated.\"",
+      "excerpt_start_column": 1,
+      "match_column": 19
+    },
+    {
+      "path": "doc/locale/zh_CN/LC_MESSAGES/manual.po",
+      "line": 6780,
+      "kinds": [
+        "protocol_capture_audit"
+      ],
+      "text": "msgid \"Protocols: `model.RunProtocol` (with `ExperimentDesign`, `ValidationCoverage` and `repeats_per_dataset`), `runner.validate_protocol`, `runner.ProtocolPreset` (`QuickCheck`, `Development`, `RegressionGate`)\"",
+      "excerpt_start_column": 1,
+      "match_column": 29
+    },
+    {
+      "path": "doc/locale/zh_CN/LC_MESSAGES/manual.po",
+      "line": 6781,
+      "kinds": [
+        "protocol_capture_audit"
+      ],
+      "text": "msgstr \"协议：`model.RunProtocol`（含 `ExperimentDesign`、`ValidationCoverage` 和 `repeats_per_dataset`）、`runner.validate_protocol`、`runner.ProtocolPreset`（`QuickCheck`、`Development`、`RegressionGate`）\"",
+      "excerpt_start_column": 1,
+      "match_column": 22
+    },
+    {
+      "path": "doc/locale/zh_CN/LC_MESSAGES/manual.po",
+      "line": 8222,
+      "kinds": [
+        "protocol_capture_audit"
+      ],
+      "text": "msgid \"`@runner.ProtocolPreset` or `@runner.validate_protocol`\"",
+      "excerpt_start_column": 1,
+      "match_column": 17
+    },
+    {
+      "path": "doc/locale/zh_CN/LC_MESSAGES/manual.po",
+      "line": 8223,
+      "kinds": [
+        "protocol_capture_audit"
+      ],
+      "text": "msgstr \"`@runner.ProtocolPreset` 或 `@runner.validate_protocol`\"",
+      "excerpt_start_column": 1,
+      "match_column": 18
+    },
+    {
+      "path": "doc/locale/zh_CN/LC_MESSAGES/manual.po",
+      "line": 9104,
+      "kinds": [
+        "protocol_capture_audit"
+      ],
+      "text": "#~ msgid \"`experiment_design`, `outlier_policy`, `validation_coverage` and `practical_delta_pct` are stored in the protocol but do not change the run. Validation runs once per dataset, before timing, whatever the coverage says.\"",
+      "excerpt_start_column": 1,
+      "match_column": 116
+    },
+    {
+      "path": "doc/locale/zh_CN/LC_MESSAGES/manual.po",
+      "line": 9492,
+      "kinds": [
+        "clock_sync"
+      ],
+      "text": "#~ msgid \"Setup, workers, clocks, synchronization\"",
+      "excerpt_start_column": 1,
+      "match_column": 27
+    },
+    {
+      "path": "doc/locale/zh_CN/LC_MESSAGES/manual.po",
+      "line": 9595,
+      "kinds": [
+        "protocol_capture_audit"
+      ],
+      "text": "ery other package. It contains version identifiers (`mmkp_1`, `mmka_1`, `mmks_1`), dataset and measurement keys, execution outcomes, environment snapshots, run protocols, observations, validation events, replay specifications, and tuning/report metadata.\"",
+      "excerpt_start_column": 58,
+      "match_column": 218
+    },
+    {
+      "path": "doc/locale/manual.pot",
+      "line": 1599,
+      "kinds": [
+        "protocol_capture_audit"
+      ],
+      "text": "ents are `run_id`, `observation_count`, `validation_count`, `calibration_count`, `complete` and `artifact_location`. The counts default to `0`; `environment`, `protocol` and `seed` to `None`. `validation_count` counts every validation event, and `measurement_validation_count` the part of them that carry a `measurement` key. The runner fills `run_id` with `run_identity` and records the protocol and the run seed, so that a JSONL record can be audited and re-analysed.\"",
+      "excerpt_start_column": 28,
+      "match_column": 188
+    },
+    {
+      "path": "doc/locale/manual.pot",
+      "line": 1946,
+      "kinds": [
+        "protocol_capture_audit"
+      ],
+      "text": "urement loop. You describe a benchmark case, compile it into a validated plan, and `run` it with a seed, an environment snapshot, an event sink and a validated protocol. The runner validates every implementation against an oracle before timing, calibrates the batch size, measures in balanced blocks and emits raw events. The reasons for each step are in the [runner design](../design/runner.md).\"",
+      "excerpt_start_column": 50,
+      "match_column": 210
+    },
+    {
+      "path": "doc/locale/manual.pot",
+      "line": 2062,
+      "kinds": [
+        "protocol_capture_audit"
+      ],
+      "text": "msgid \"`ValidatedProtocol` is a `RunProtocol` that passed `validate_protocol`.\"",
+      "excerpt_start_column": 1,
+      "match_column": 18
+    },
+    {
+      "path": "doc/locale/manual.pot",
+      "line": 2070,
+      "kinds": [
+        "protocol_capture_audit"
+      ],
+      "text": "msgid \"`validate_protocol` checks a protocol and returns either a `ValidatedProtocol` or every violation found.\"",
+      "excerpt_start_column": 1,
+      "match_column": 37
+    },
+    {
+      "path": "doc/locale/manual.pot",
+      "line": 4792,
+      "kinds": [
+        "protocol_capture_audit"
+      ],
+      "text": "msgid \"**One flat protocol string.** Unreadable and unvalidated.\"",
+      "excerpt_start_column": 1,
+      "match_column": 19
+    },
+    {
+      "path": "doc/locale/manual.pot",
+      "line": 6754,
+      "kinds": [
+        "protocol_capture_audit"
+      ],
+      "text": "msgid \"Protocols: `model.RunProtocol` (with `ExperimentDesign`, `ValidationCoverage` and `repeats_per_dataset`), `runner.validate_protocol`, `runner.ProtocolPreset` (`QuickCheck`, `Development`, `RegressionGate`)\"",
+      "excerpt_start_column": 1,
+      "match_column": 29
+    },
+    {
+      "path": "doc/locale/manual.pot",
+      "line": 8196,
+      "kinds": [
+        "protocol_capture_audit"
+      ],
+      "text": "msgid \"`@runner.ProtocolPreset` or `@runner.validate_protocol`\"",
+      "excerpt_start_column": 1,
+      "match_column": 17
+    },
+    {
+      "path": "doc/manual/design/model.md",
+      "line": 217,
+      "kinds": [
+        "protocol_capture_audit"
+      ],
+      "text": "- **One flat protocol string.** Unreadable and unvalidated.",
+      "excerpt_start_column": 1,
+      "match_column": 14
+    },
+    {
+      "path": "doc/manual/tutorial/report.md",
+      "line": 81,
+      "kinds": [
+        "protocol_capture_audit"
+      ],
+      "text": "      @runner.RunContext::new(environment, sink.as_sink(), 5UL, @runner.ProtocolPreset::QuickCheck.validated()),",
+      "excerpt_start_column": 1,
+      "match_column": 73
+    },
+    {
+      "path": "doc/manual/tutorial/model.md",
+      "line": 85,
+      "kinds": [
+        "protocol_capture_audit"
+      ],
+      "text": "    protocol.validation_coverage,",
+      "excerpt_start_column": 1,
+      "match_column": 5
+    },
+    {
+      "path": "doc/manual/tutorial/model.md",
+      "line": 105,
+      "kinds": [
+        "protocol_capture_audit"
+      ],
+      "text": "  let protocol = @runner.ProtocolPreset::QuickCheck.validated().protocol",
+      "excerpt_start_column": 1,
+      "match_column": 26
+    },
+    {
+      "path": "doc/manual/tutorial/env_detect.md",
+      "line": 54,
+      "kinds": [
+        "protocol_capture_audit"
+      ],
+      "text": "    @runner.RunContext::new(detected.snapshot, memory.as_sink(), 42UL, @runner.ProtocolPreset::QuickCheck.validated()),",
+      "excerpt_start_column": 1,
+      "match_column": 80
+    },
+    {
+      "path": "doc/manual/tutorial/stats.md",
+      "line": 192,
+      "kinds": [
+        "protocol_capture_audit"
+      ],
+      "text": "    @runner.ProtocolPreset::QuickCheck.validated(),",
+      "excerpt_start_column": 1,
+      "match_column": 13
+    },
+    {
+      "path": "doc/manual/tutorial/event.md",
+      "line": 138,
+      "kinds": [
+        "protocol_capture_audit"
+      ],
+      "text": "  let protocol = @runner.ProtocolPreset::QuickCheck.validated().protocol",
+      "excerpt_start_column": 1,
+      "match_column": 26
+    },
+    {
+      "path": "doc/manual/tutorial/runner.md",
+      "line": 18,
+      "kinds": [
+        "protocol_capture_audit"
+      ],
+      "text": "| choose how carefully to measure | `@runner.ProtocolPreset` or `@runner.validate_protocol` |",
+      "excerpt_start_column": 1,
+      "match_column": 46
+    },
+    {
+      "path": "doc/manual/tutorial/runner.md",
+      "line": 79,
+      "kinds": [
+        "protocol_capture_audit"
+      ],
+      "text": "    this_machine(), memory.as_sink(), 42UL, @runner.ProtocolPreset::QuickCheck.validated(),",
+      "excerpt_start_column": 1,
+      "match_column": 53
+    },
+    {
+      "path": "doc/manual/tutorial/runner.md",
+      "line": 116,
+      "kinds": [
+        "protocol_capture_audit"
+      ],
+      "text": "    @runner.RunContext::new(this_machine(), sink, 7UL, @runner.ProtocolPreset::QuickCheck.validated()),",
+      "excerpt_start_column": 1,
+      "match_column": 64
+    },
+    {
+      "path": "doc/manual/tutorial/runner.md",
+      "line": 182,
+      "kinds": [
+        "protocol_capture_audit"
+      ],
+      "text": "    @runner.RunContext::new(this_machine(), memory.as_sink(), 1UL, @runner.ProtocolPreset::QuickCheck.validated()),",
+      "excerpt_start_column": 1,
+      "match_column": 76
+    },
+    {
+      "path": "doc/manual/tutorial/runner.md",
+      "line": 246,
+      "kinds": [
+        "protocol_capture_audit"
+      ],
+      "text": "    @runner.RunContext::new(this_machine(), memory.as_sink(), 3UL, @runner.ProtocolPreset::QuickCheck.validated()),",
+      "excerpt_start_column": 1,
+      "match_column": 76
+    },
+    {
+      "path": "doc/manual/tutorial/runner.md",
+      "line": 297,
+      "kinds": [
+        "protocol_capture_audit"
+      ],
+      "text": "    @runner.RunContext::new(this_machine(), memory.as_sink(), 9UL, @runner.ProtocolPreset::QuickCheck.validated()),",
+      "excerpt_start_column": 1,
+      "match_column": 76
+    },
+    {
+      "path": "doc/manual/tutorial/runner.md",
+      "line": 367,
+      "kinds": [
+        "protocol_capture_audit"
+      ],
+      "text": "  let protocol = @runner.validate_protocol(",
+      "excerpt_start_column": 1,
+      "match_column": 7
+    },
+    {
+      "path": "doc/manual/tutorial/runner.md",
+      "line": 439,
+      "kinds": [
+        "protocol_capture_audit"
+      ],
+      "text": "  let preset = @runner.ProtocolPreset::Custom(validated)",
+      "excerpt_start_column": 1,
+      "match_column": 24
+    },
+    {
+      "path": "doc/manual/tutorial/tune_gemm.md",
+      "line": 122,
+      "kinds": [
+        "protocol_capture_audit"
+      ],
+      "text": "    @runner.RunContext::new(environment, memory.as_sink(), 3UL, @runner.ProtocolPreset::QuickCheck.validated()),",
+      "excerpt_start_column": 1,
+      "match_column": 73
+    },
+    {
+      "path": "doc/manual/api/model.md",
+      "line": 511,
+      "kinds": [
+        "protocol_capture_audit"
+      ],
+      "text": "  let protocol = @runner.ProtocolPreset::QuickCheck.validated().protocol",
+      "excerpt_start_column": 1,
+      "match_column": 26
+    },
+    {
+      "path": "doc/manual/api/model.md",
+      "line": 537,
+      "kinds": [
+        "protocol_capture_audit"
+      ],
+      "text": "  let development = @runner.ProtocolPreset::Development.validated().protocol",
+      "excerpt_start_column": 1,
+      "match_column": 29
+    },
+    {
+      "path": "doc/manual/api/model.md",
+      "line": 539,
+      "kinds": [
+        "protocol_capture_audit"
+      ],
+      "text": "  let quick = @runner.ProtocolPreset::QuickCheck.validated().protocol",
+      "excerpt_start_column": 1,
+      "match_column": 23
+    },
+    {
+      "path": "doc/manual/api/model.md",
+      "line": 568,
+      "kinds": [
+        "protocol_capture_audit"
+      ],
+      "text": "  let protocol = @runner.ProtocolPreset::QuickCheck.validated().protocol",
+      "excerpt_start_column": 1,
+      "match_column": 26
+    },
+    {
+      "path": "doc/manual/api/model.md",
+      "line": 591,
+      "kinds": [
+        "protocol_capture_audit"
+      ],
+      "text": "  let protocol = @runner.ProtocolPreset::Development.validated().protocol",
+      "excerpt_start_column": 1,
+      "match_column": 26
+    },
+    {
+      "path": "doc/manual/api/event.md",
+      "line": 172,
+      "kinds": [
+        "protocol_capture_audit"
+      ],
+      "text": "  let protocol = @runner.ProtocolPreset::RegressionGate.validated().protocol",
+      "excerpt_start_column": 1,
+      "match_column": 26
+    },
+    {
+      "path": "doc/manual/api/event.md",
+      "line": 199,
+      "kinds": [
+        "protocol_capture_audit"
+      ],
+      "text": "  let protocol = @runner.ProtocolPreset::Development.validated().protocol",
+      "excerpt_start_column": 1,
+      "match_column": 26
+    },
+    {
+      "path": "doc/manual/api/runner.md",
+      "line": 130,
+      "kinds": [
+        "protocol_capture_audit"
+      ],
+      "text": "      @runner.ProtocolPreset::QuickCheck.validated(),",
+      "excerpt_start_column": 1,
+      "match_column": 15
+    },
+    {
+      "path": "doc/manual/api/runner.md",
+      "line": 155,
+      "kinds": [
+        "protocol_capture_audit"
+      ],
+      "text": "  protocol : ValidatedProtocol",
+      "excerpt_start_column": 1,
+      "match_column": 3
+    },
+    {
+      "path": "doc/manual/api/runner.md",
+      "line": 192,
+      "kinds": [
+        "protocol_capture_audit"
+      ],
+      "text": "`ValidatedProtocol` is a `RunProtocol` that passed `validate_protocol`.",
+      "excerpt_start_column": 1,
+      "match_column": 11
+    },
+    {
+      "path": "doc/manual/api/runner.md",
+      "line": 205,
+      "kinds": [
+        "protocol_capture_audit"
+      ],
+      "text": "`validate_protocol` checks a protocol and returns either a `ValidatedProtocol`",
+      "excerpt_start_column": 1,
+      "match_column": 30
+    },
+    {
+      "path": "doc/manual/api/runner.md",
+      "line": 209,
+      "kinds": [
+        "protocol_capture_audit"
+      ],
+      "text": "pub fn validate_protocol(@model.RunProtocol) -> Result[ValidatedProtocol, Array[ProtocolConfigError]]",
+      "excerpt_start_column": 1,
+      "match_column": 17
+    },
+    {
+      "path": "doc/manual/api/runner.md",
+      "line": 243,
+      "kinds": [
+        "protocol_capture_audit"
+      ],
+      "text": "test \"protocol validation reports every problem\" {",
+      "excerpt_start_column": 1,
+      "match_column": 7
+    },
+    {
+      "path": "doc/manual/api/runner.md",
+      "line": 314,
+      "kinds": [
+        "protocol_capture_audit"
+      ],
+      "text": "pub fn ProtocolPreset::validated(Self) -> ValidatedProtocol",
+      "excerpt_start_column": 1,
+      "match_column": 8
+    },
+    {
+      "path": "doc/manual/api/runner.md",
+      "line": 650,
+      "kinds": [
+        "protocol_capture_audit"
+      ],
+      "text": "le, Input, Prepared, Expected, Output, Context, State, SinkValue] BenchSpec::compile(Self[Scale, Input, Prepared, Expected, Output, Context, State, SinkValue], protocol? : ValidatedProtocol) -> Result[ValidatedBenchPlan[Scale, Input, Prepared, Expected, Output, Context, State, SinkValue], Array[BenchConfigError]]",
+      "excerpt_start_column": 11,
+      "match_column": 171
+    },
+    {
+      "path": "doc/manual/api/runner.md",
+      "line": 759,
+      "kinds": [
+        "protocol_capture_audit"
+      ],
+      "text": "  let gate = @runner.ProtocolPreset::RegressionGate.validated()",
+      "excerpt_start_column": 1,
+      "match_column": 22
+    },
+    {
+      "path": "doc/manual/architecture.md",
+      "line": 44,
+      "kinds": [
+        "protocol_capture_audit"
+      ],
+      "text": "RunProtocol ──validate_protocol──▶ ValidatedProtocol ─┐",
+      "excerpt_start_column": 1,
+      "match_column": 4
+    },
+    {
+      "path": "doc/manual/getting_started.md",
+      "line": 73,
+      "kinds": [
+        "protocol_capture_audit"
+      ],
+      "text": "      @runner.ProtocolPreset::Development.validated(),",
+      "excerpt_start_column": 1,
+      "match_column": 15
+    },
+    {
+      "path": "README.md",
+      "line": 57,
+      "kinds": [
+        "protocol_capture_audit"
+      ],
+      "text": "    @runner.RunContext::new(environment, record.as_sink(), 42UL, @runner.ProtocolPreset::QuickCheck.validated()),",
+      "excerpt_start_column": 1,
+      "match_column": 74
+    }
+  ],
+  "text_files": 139,
+  "text_bytes": 3109281,
+  "binary_files": 0,
+  "expanded_bytes": 3109281,
+  "limitations": [],
+  "status": "ok"
+}

@@ -1,0 +1,448 @@
+{
+  "schema": "mooncakes-source-encoding-overrides/v1",
+  "overrides": {
+    "1bc24ac7a9f9b15fd21ff19eff37b690ed598482eb173237b4dd99f4a253f9c3.zip": {
+      "CHANGELOG.md": {
+        "encoding": "gb18030",
+        "basis": "UTF-8 strict decode fails on A1AA dash or A1B0 quote; strict GB18030 yields legible English Markdown with intended punctuation; complete member revalidated by strict decoder."
+      },
+      "docs/competition/duplicate-check.md": {
+        "encoding": "gb18030",
+        "basis": "UTF-8 strict decode fails on A1AA dash or A1B0 quote; strict GB18030 yields legible English Markdown with intended punctuation; complete member revalidated by strict decoder."
+      },
+      "docs/references.md": {
+        "encoding": "gb18030",
+        "basis": "UTF-8 strict decode fails on A1AA dash or A1B0 quote; strict GB18030 yields legible English Markdown with intended punctuation; complete member revalidated by strict decoder."
+      }
+    },
+    "bf2ab3c7ccef255af1b72d52ac9f6122ef8674f04619e3396fbb512a983a2fe3.zip": {
+      "testdata/encoding_big5.txt": {
+        "encoding": "big5",
+        "basis": "Fixture filename explicitly names encoding; complete strict decode succeeds and produces legible Chinese text."
+      },
+      "testdata/encoding_gbk.csv": {
+        "encoding": "gbk",
+        "basis": "Fixture filename explicitly names encoding; complete strict decode succeeds and produces legible Chinese text."
+      },
+      "testdata/encoding_gbk.json": {
+        "encoding": "gbk",
+        "basis": "Fixture filename explicitly names encoding; complete strict decode succeeds and produces legible Chinese text."
+      },
+      "testdata/encoding_gbk.txt": {
+        "encoding": "gbk",
+        "basis": "Fixture filename explicitly names encoding; complete strict decode succeeds and produces legible Chinese text."
+      },
+      "testdata/encoding_gbk.xml": {
+        "encoding": "gbk",
+        "basis": "Fixture filename explicitly names encoding; complete strict decode succeeds and produces legible Chinese text."
+      }
+    },
+    "14ebf50d548fd65f295b632c7a90cfba6aa96e27444aaadc2bb676c667ee4387.zip": {
+      "fixtures/regex-w3c-Overview.html": {
+        "encoding": "iso-8859-1",
+        "basis": "HTML explicitly declares charset=iso-8859-1; complete strict decode succeeds."
+      }
+    },
+    "3c8eb2e32aae3f8e2d077871e06f210f5b8ebf6e12b1e3e96aad65d8aeaa0bb2.zip": {
+      "e2e/testdata/invalid/encoding/bad-utf8-in-multiline-literal.toml": {
+        "classification": "binary-fixture",
+        "basis": "Manually inspected complete raw bytes: intentionally malformed UTF-8 TOML parser rejection fixture (invalid sequence/codepoint/BOM), not a text source/document. Raw bytes fully hashed; no third-party code executed."
+      },
+      "e2e/testdata/invalid/encoding/bad-utf8-at-end.toml": {
+        "classification": "binary-fixture",
+        "basis": "Manually inspected complete raw bytes: intentionally malformed UTF-8 TOML parser rejection fixture (invalid sequence/codepoint/BOM), not a text source/document. Raw bytes fully hashed; no third-party code executed."
+      },
+      "e2e/testdata/invalid/encoding/bad-codepoint.toml": {
+        "classification": "binary-fixture",
+        "basis": "Manually inspected complete raw bytes: intentionally malformed UTF-8 TOML parser rejection fixture (invalid sequence/codepoint/BOM), not a text source/document. Raw bytes fully hashed; no third-party code executed."
+      },
+      "e2e/testdata/invalid/encoding/bad-utf8-in-string.toml": {
+        "classification": "binary-fixture",
+        "basis": "Manually inspected complete raw bytes: intentionally malformed UTF-8 TOML parser rejection fixture (invalid sequence/codepoint/BOM), not a text source/document. Raw bytes fully hashed; no third-party code executed."
+      },
+      "e2e/testdata/invalid/encoding/bad-utf8-in-multiline.toml": {
+        "classification": "binary-fixture",
+        "basis": "Manually inspected complete raw bytes: intentionally malformed UTF-8 TOML parser rejection fixture (invalid sequence/codepoint/BOM), not a text source/document. Raw bytes fully hashed; no third-party code executed."
+      },
+      "e2e/testdata/invalid/encoding/bad-utf8-in-array.toml": {
+        "classification": "binary-fixture",
+        "basis": "Manually inspected complete raw bytes: intentionally malformed UTF-8 TOML parser rejection fixture (invalid sequence/codepoint/BOM), not a text source/document. Raw bytes fully hashed; no third-party code executed."
+      },
+      "e2e/testdata/invalid/encoding/bad-utf8-in-comment.toml": {
+        "classification": "binary-fixture",
+        "basis": "Manually inspected complete raw bytes: intentionally malformed UTF-8 TOML parser rejection fixture (invalid sequence/codepoint/BOM), not a text source/document. Raw bytes fully hashed; no third-party code executed."
+      },
+      "e2e/testdata/invalid/encoding/bad-utf8-in-string-literal.toml": {
+        "classification": "binary-fixture",
+        "basis": "Manually inspected complete raw bytes: intentionally malformed UTF-8 TOML parser rejection fixture (invalid sequence/codepoint/BOM), not a text source/document. Raw bytes fully hashed; no third-party code executed."
+      },
+      "e2e/testdata/invalid/encoding/bom-not-at-start-01.toml": {
+        "classification": "binary-fixture",
+        "basis": "Manually inspected complete raw bytes: intentionally malformed UTF-8 TOML parser rejection fixture (invalid sequence/codepoint/BOM), not a text source/document. Raw bytes fully hashed; no third-party code executed."
+      },
+      "e2e/testdata/invalid/encoding/bom-not-at-start-02.toml": {
+        "classification": "binary-fixture",
+        "basis": "Manually inspected complete raw bytes: intentionally malformed UTF-8 TOML parser rejection fixture (invalid sequence/codepoint/BOM), not a text source/document. Raw bytes fully hashed; no third-party code executed."
+      }
+    },
+    "7eb8a1a82103909a1b87b6cf43d40f9b5fc068136efea27455d4f698078b39df.zip": {
+      "e2e/testdata/invalid/encoding/bad-utf8-in-multiline-literal.toml": {
+        "classification": "binary-fixture",
+        "basis": "Manually inspected complete raw bytes: intentionally malformed UTF-8 TOML parser rejection fixture (invalid sequence/codepoint/BOM), not a text source/document. Raw bytes fully hashed; no third-party code executed."
+      },
+      "e2e/testdata/invalid/encoding/bom-not-at-start-02.toml": {
+        "classification": "binary-fixture",
+        "basis": "Manually inspected complete raw bytes: intentionally malformed UTF-8 TOML parser rejection fixture (invalid sequence/codepoint/BOM), not a text source/document. Raw bytes fully hashed; no third-party code executed."
+      },
+      "e2e/testdata/invalid/encoding/bad-utf8-in-string.toml": {
+        "classification": "binary-fixture",
+        "basis": "Manually inspected complete raw bytes: intentionally malformed UTF-8 TOML parser rejection fixture (invalid sequence/codepoint/BOM), not a text source/document. Raw bytes fully hashed; no third-party code executed."
+      },
+      "e2e/testdata/invalid/encoding/bad-utf8-in-array.toml": {
+        "classification": "binary-fixture",
+        "basis": "Manually inspected complete raw bytes: intentionally malformed UTF-8 TOML parser rejection fixture (invalid sequence/codepoint/BOM), not a text source/document. Raw bytes fully hashed; no third-party code executed."
+      },
+      "e2e/testdata/invalid/encoding/bad-codepoint.toml": {
+        "classification": "binary-fixture",
+        "basis": "Manually inspected complete raw bytes: intentionally malformed UTF-8 TOML parser rejection fixture (invalid sequence/codepoint/BOM), not a text source/document. Raw bytes fully hashed; no third-party code executed."
+      },
+      "e2e/testdata/invalid/encoding/bad-utf8-in-comment.toml": {
+        "classification": "binary-fixture",
+        "basis": "Manually inspected complete raw bytes: intentionally malformed UTF-8 TOML parser rejection fixture (invalid sequence/codepoint/BOM), not a text source/document. Raw bytes fully hashed; no third-party code executed."
+      },
+      "e2e/testdata/invalid/encoding/bom-not-at-start-01.toml": {
+        "classification": "binary-fixture",
+        "basis": "Manually inspected complete raw bytes: intentionally malformed UTF-8 TOML parser rejection fixture (invalid sequence/codepoint/BOM), not a text source/document. Raw bytes fully hashed; no third-party code executed."
+      },
+      "e2e/testdata/invalid/encoding/bad-utf8-in-string-literal.toml": {
+        "classification": "binary-fixture",
+        "basis": "Manually inspected complete raw bytes: intentionally malformed UTF-8 TOML parser rejection fixture (invalid sequence/codepoint/BOM), not a text source/document. Raw bytes fully hashed; no third-party code executed."
+      },
+      "e2e/testdata/invalid/encoding/bad-utf8-in-multiline.toml": {
+        "classification": "binary-fixture",
+        "basis": "Manually inspected complete raw bytes: intentionally malformed UTF-8 TOML parser rejection fixture (invalid sequence/codepoint/BOM), not a text source/document. Raw bytes fully hashed; no third-party code executed."
+      },
+      "e2e/testdata/invalid/encoding/bad-utf8-at-end.toml": {
+        "classification": "binary-fixture",
+        "basis": "Manually inspected complete raw bytes: intentionally malformed UTF-8 TOML parser rejection fixture (invalid sequence/codepoint/BOM), not a text source/document. Raw bytes fully hashed; no third-party code executed."
+      }
+    },
+    "cde00b14a3003959f861a1fa0db192c4c79e97be78914903ffe6c42ccb1c2663.zip": {
+      "e2e/testdata/invalid/encoding/bad-utf8-in-comment.toml": {
+        "classification": "binary-fixture",
+        "basis": "Complete raw bytes manually inspected: intentional malformed UTF-8 TOML rejection fixture, matching independently inspected upstream test cases; raw bytes fully hashed, not a valid text source/document."
+      },
+      "e2e/testdata/invalid/encoding/bad-utf8-in-string-literal.toml": {
+        "classification": "binary-fixture",
+        "basis": "Complete raw bytes manually inspected: intentional malformed UTF-8 TOML rejection fixture, matching independently inspected upstream test cases; raw bytes fully hashed, not a valid text source/document."
+      },
+      "e2e/testdata/invalid/encoding/bad-codepoint.toml": {
+        "classification": "binary-fixture",
+        "basis": "Complete raw bytes manually inspected: intentional malformed UTF-8 TOML rejection fixture, matching independently inspected upstream test cases; raw bytes fully hashed, not a valid text source/document."
+      },
+      "e2e/testdata/invalid/encoding/bom-not-at-start-01.toml": {
+        "classification": "binary-fixture",
+        "basis": "Complete raw bytes manually inspected: intentional malformed UTF-8 TOML rejection fixture, matching independently inspected upstream test cases; raw bytes fully hashed, not a valid text source/document."
+      },
+      "e2e/testdata/invalid/encoding/bad-utf8-in-multiline-literal.toml": {
+        "classification": "binary-fixture",
+        "basis": "Complete raw bytes manually inspected: intentional malformed UTF-8 TOML rejection fixture, matching independently inspected upstream test cases; raw bytes fully hashed, not a valid text source/document."
+      },
+      "e2e/testdata/invalid/encoding/bom-not-at-start-02.toml": {
+        "classification": "binary-fixture",
+        "basis": "Complete raw bytes manually inspected: intentional malformed UTF-8 TOML rejection fixture, matching independently inspected upstream test cases; raw bytes fully hashed, not a valid text source/document."
+      },
+      "e2e/testdata/invalid/encoding/bad-utf8-in-array.toml": {
+        "classification": "binary-fixture",
+        "basis": "Complete raw bytes manually inspected: intentional malformed UTF-8 TOML rejection fixture, matching independently inspected upstream test cases; raw bytes fully hashed, not a valid text source/document."
+      },
+      "e2e/testdata/invalid/encoding/bad-utf8-in-string.toml": {
+        "classification": "binary-fixture",
+        "basis": "Complete raw bytes manually inspected: intentional malformed UTF-8 TOML rejection fixture, matching independently inspected upstream test cases; raw bytes fully hashed, not a valid text source/document."
+      },
+      "e2e/testdata/invalid/encoding/bad-utf8-in-multiline.toml": {
+        "classification": "binary-fixture",
+        "basis": "Complete raw bytes manually inspected: intentional malformed UTF-8 TOML rejection fixture, matching independently inspected upstream test cases; raw bytes fully hashed, not a valid text source/document."
+      },
+      "e2e/testdata/invalid/encoding/bad-utf8-at-end.toml": {
+        "classification": "binary-fixture",
+        "basis": "Complete raw bytes manually inspected: intentional malformed UTF-8 TOML rejection fixture, matching independently inspected upstream test cases; raw bytes fully hashed, not a valid text source/document."
+      }
+    },
+    "6632f66a8fe4260cfba51c6a06af408edb55e3cb39cdaa46af653198ec1c8bb7.zip": {
+      "toml-test-tests/invalid/encoding/bad-utf8-at-end.toml": {
+        "classification": "binary-fixture",
+        "basis": "Complete raw bytes manually inspected: intentional malformed UTF-8 TOML rejection fixture; raw bytes fully hashed, not a valid text source/document."
+      },
+      "toml-test-tests/invalid/encoding/bad-utf8-in-comment.toml": {
+        "classification": "binary-fixture",
+        "basis": "Complete raw bytes manually inspected: intentional malformed UTF-8 TOML rejection fixture; raw bytes fully hashed, not a valid text source/document."
+      },
+      "toml-test-tests/invalid/encoding/bad-utf8-in-string.toml": {
+        "classification": "binary-fixture",
+        "basis": "Complete raw bytes manually inspected: intentional malformed UTF-8 TOML rejection fixture; raw bytes fully hashed, not a valid text source/document."
+      },
+      "toml-test-tests/invalid/encoding/bom-not-at-start-1.toml": {
+        "classification": "binary-fixture",
+        "basis": "Complete raw bytes manually inspected: intentional malformed UTF-8 TOML rejection fixture; raw bytes fully hashed, not a valid text source/document."
+      },
+      "toml-test-tests/invalid/encoding/bom-not-at-start-2.toml": {
+        "classification": "binary-fixture",
+        "basis": "Complete raw bytes manually inspected: intentional malformed UTF-8 TOML rejection fixture; raw bytes fully hashed, not a valid text source/document."
+      }
+    },
+    "1a267d0ce9e891ac25a77fc8e8e6cab29e010acb4169d744aa856d918a8d1ff5.zip": {
+      "src/pcre2/testdata/testinput2": {
+        "encoding": "latin-1",
+        "classification": "mixed-byte-test-corpus",
+        "basis": "PCRE2 byte-oriented regex test input/output corpus deliberately embeds arbitrary byte patterns and whitespace controls. Latin-1 is a reversible one-byte-to-codepoint view for scanning every byte and preserving ASCII protocol tokens, not a claim that the original corpus is UTF-8 text."
+      },
+      "src/pcre2/testdata/grepinputBad8_Trail": {
+        "classification": "binary-fixture",
+        "basis": "Complete four bytes manually inspected: abc followed by dangling F0 UTF-8 prefix, intentional PCRE2 invalid-UTF-8 grep rejection fixture. Raw bytes fully hashed."
+      },
+      "src/pcre2/testdata/testoutput2": {
+        "encoding": "latin-1",
+        "classification": "mixed-byte-test-corpus",
+        "basis": "PCRE2 byte-oriented regex test input/output corpus deliberately embeds arbitrary byte patterns and whitespace controls. Latin-1 is a reversible one-byte-to-codepoint view for scanning every byte and preserving ASCII protocol tokens, not a claim that the original corpus is UTF-8 text."
+      },
+      "src/pcre2/testdata/testoutput5": {
+        "encoding": "latin-1",
+        "classification": "mixed-byte-test-corpus",
+        "basis": "PCRE2 byte-oriented regex test input/output corpus deliberately embeds arbitrary byte patterns and whitespace controls. Latin-1 is a reversible one-byte-to-codepoint view for scanning every byte and preserving ASCII protocol tokens, not a claim that the original corpus is UTF-8 text."
+      }
+    },
+    "b9eb6193479b512dbc85dcb45aa40dfb5ce30a613c3a5dac2d88d5c3990e18ec.zip": {
+      "fixtures/synthetic.ts": {
+        "classification": "binary-fixture",
+        "basis": "Verified all 184 MPEG-TS packet sync bytes at 188-byte intervals; .ts is a binary MPEG transport stream, not TypeScript. Complete raw bytes hashed."
+      }
+    },
+    "e5f337140d5e46a3261da0d18b268ae20f764b81ddabfdb11bf66d50bced1299.zip": {
+      "original/Pokemon3genRNGLibrary.Frontier/Resources/frontierTrainers.txt": {
+        "encoding": "cp932",
+        "basis": "Shift-JIS byte patterns in Japanese Pokemon resource; complete strict CP932 decode gives legible Japanese and parses successfully as JSON."
+      }
+    },
+    "277e2d5dc1eac4193be9426a20908147eaee9705eb1a87ab79820280e9194bfd.zip": {
+      "spec/references/openjpeg/thirdparty/liblcms2/src/cmstypes.c": {
+        "encoding": "cp1252",
+        "basis": "Vendored OpenJPEG/LittleCMS C/C++ and documentation contains Western accented copyright names and smart quotes (E0/E9/93/94 raw bytes); strict Windows-1252 (or reversible Latin-1 fallback) decode reads every byte and preserves ASCII source tokens."
+      },
+      "spec/references/openjpeg/thirdparty/liblcms2/src/cmscgats.c": {
+        "encoding": "cp1252",
+        "basis": "Vendored OpenJPEG/LittleCMS C/C++ and documentation contains Western accented copyright names and smart quotes (E0/E9/93/94 raw bytes); strict Windows-1252 (or reversible Latin-1 fallback) decode reads every byte and preserves ASCII source tokens."
+      },
+      "spec/references/openjpeg/thirdparty/liblcms2/src/cmsopt.c": {
+        "encoding": "cp1252",
+        "basis": "Vendored OpenJPEG/LittleCMS C/C++ and documentation contains Western accented copyright names and smart quotes (E0/E9/93/94 raw bytes); strict Windows-1252 (or reversible Latin-1 fallback) decode reads every byte and preserves ASCII source tokens."
+      },
+      "spec/references/openjpeg/thirdparty/liblcms2/src/cmsxform.c": {
+        "encoding": "cp1252",
+        "basis": "Vendored OpenJPEG/LittleCMS C/C++ and documentation contains Western accented copyright names and smart quotes (E0/E9/93/94 raw bytes); strict Windows-1252 (or reversible Latin-1 fallback) decode reads every byte and preserves ASCII source tokens."
+      },
+      "spec/references/openjpeg/thirdparty/liblcms2/src/cmsvirt.c": {
+        "encoding": "cp1252",
+        "basis": "Vendored OpenJPEG/LittleCMS C/C++ and documentation contains Western accented copyright names and smart quotes (E0/E9/93/94 raw bytes); strict Windows-1252 (or reversible Latin-1 fallback) decode reads every byte and preserves ASCII source tokens."
+      },
+      "spec/references/openjpeg/src/bin/wx/OPJViewer/source/imagmxf.cpp": {
+        "encoding": "cp1252",
+        "basis": "Vendored OpenJPEG/LittleCMS C/C++ and documentation contains Western accented copyright names and smart quotes (E0/E9/93/94 raw bytes); strict Windows-1252 (or reversible Latin-1 fallback) decode reads every byte and preserves ASCII source tokens."
+      },
+      "spec/references/openjpeg/src/bin/wx/OPJViewer/source/wxj2kparser.cpp": {
+        "encoding": "cp1252",
+        "basis": "Vendored OpenJPEG/LittleCMS C/C++ and documentation contains Western accented copyright names and smart quotes (E0/E9/93/94 raw bytes); strict Windows-1252 (or reversible Latin-1 fallback) decode reads every byte and preserves ASCII source tokens."
+      },
+      "spec/references/openjpeg/src/bin/wx/OPJViewer/source/OPJDialogs.cpp": {
+        "encoding": "cp1252",
+        "basis": "Vendored OpenJPEG/LittleCMS C/C++ and documentation contains Western accented copyright names and smart quotes (E0/E9/93/94 raw bytes); strict Windows-1252 (or reversible Latin-1 fallback) decode reads every byte and preserves ASCII source tokens."
+      },
+      "spec/references/openjpeg/src/bin/wx/OPJViewer/source/imagjpeg2000.cpp": {
+        "encoding": "cp1252",
+        "basis": "Vendored OpenJPEG/LittleCMS C/C++ and documentation contains Western accented copyright names and smart quotes (E0/E9/93/94 raw bytes); strict Windows-1252 (or reversible Latin-1 fallback) decode reads every byte and preserves ASCII source tokens."
+      },
+      "spec/references/openjpeg/src/bin/wx/OPJViewer/source/OPJAbout.cpp": {
+        "encoding": "cp1252",
+        "basis": "Vendored OpenJPEG/LittleCMS C/C++ and documentation contains Western accented copyright names and smart quotes (E0/E9/93/94 raw bytes); strict Windows-1252 (or reversible Latin-1 fallback) decode reads every byte and preserves ASCII source tokens."
+      },
+      "spec/references/openjpeg/src/bin/wx/OPJViewer/source/readmebefore.txt": {
+        "encoding": "cp1252",
+        "basis": "Vendored OpenJPEG/LittleCMS C/C++ and documentation contains Western accented copyright names and smart quotes (E0/E9/93/94 raw bytes); strict Windows-1252 (or reversible Latin-1 fallback) decode reads every byte and preserves ASCII source tokens."
+      },
+      "spec/references/openjpeg/src/bin/wx/OPJViewer/source/wxjp2parser.cpp": {
+        "encoding": "cp1252",
+        "basis": "Vendored OpenJPEG/LittleCMS C/C++ and documentation contains Western accented copyright names and smart quotes (E0/E9/93/94 raw bytes); strict Windows-1252 (or reversible Latin-1 fallback) decode reads every byte and preserves ASCII source tokens."
+      },
+      "spec/references/openjpeg/src/bin/wx/OPJViewer/source/OPJThreads.cpp": {
+        "encoding": "cp1252",
+        "basis": "Vendored OpenJPEG/LittleCMS C/C++ and documentation contains Western accented copyright names and smart quotes (E0/E9/93/94 raw bytes); strict Windows-1252 (or reversible Latin-1 fallback) decode reads every byte and preserves ASCII source tokens."
+      },
+      "spec/references/openjpeg/src/bin/wx/OPJViewer/source/license.txt": {
+        "encoding": "cp1252",
+        "basis": "Vendored OpenJPEG/LittleCMS C/C++ and documentation contains Western accented copyright names and smart quotes (E0/E9/93/94 raw bytes); strict Windows-1252 (or reversible Latin-1 fallback) decode reads every byte and preserves ASCII source tokens."
+      },
+      "spec/references/openjpeg/src/bin/wx/OPJViewer/about/about.htm": {
+        "encoding": "cp1252",
+        "basis": "Vendored OpenJPEG/LittleCMS C/C++ and documentation contains Western accented copyright names and smart quotes (E0/E9/93/94 raw bytes); strict Windows-1252 (or reversible Latin-1 fallback) decode reads every byte and preserves ASCII source tokens."
+      },
+      "reference/openjpeg/thirdparty/liblcms2/src/cmstypes.c": {
+        "encoding": "cp1252",
+        "basis": "Vendored OpenJPEG/LittleCMS C/C++ and documentation contains Western accented copyright names and smart quotes (E0/E9/93/94 raw bytes); strict Windows-1252 (or reversible Latin-1 fallback) decode reads every byte and preserves ASCII source tokens."
+      },
+      "reference/openjpeg/thirdparty/liblcms2/src/cmscgats.c": {
+        "encoding": "cp1252",
+        "basis": "Vendored OpenJPEG/LittleCMS C/C++ and documentation contains Western accented copyright names and smart quotes (E0/E9/93/94 raw bytes); strict Windows-1252 (or reversible Latin-1 fallback) decode reads every byte and preserves ASCII source tokens."
+      },
+      "reference/openjpeg/thirdparty/liblcms2/src/cmsopt.c": {
+        "encoding": "cp1252",
+        "basis": "Vendored OpenJPEG/LittleCMS C/C++ and documentation contains Western accented copyright names and smart quotes (E0/E9/93/94 raw bytes); strict Windows-1252 (or reversible Latin-1 fallback) decode reads every byte and preserves ASCII source tokens."
+      },
+      "reference/openjpeg/thirdparty/liblcms2/src/cmsxform.c": {
+        "encoding": "cp1252",
+        "basis": "Vendored OpenJPEG/LittleCMS C/C++ and documentation contains Western accented copyright names and smart quotes (E0/E9/93/94 raw bytes); strict Windows-1252 (or reversible Latin-1 fallback) decode reads every byte and preserves ASCII source tokens."
+      },
+      "reference/openjpeg/thirdparty/liblcms2/src/cmsvirt.c": {
+        "encoding": "cp1252",
+        "basis": "Vendored OpenJPEG/LittleCMS C/C++ and documentation contains Western accented copyright names and smart quotes (E0/E9/93/94 raw bytes); strict Windows-1252 (or reversible Latin-1 fallback) decode reads every byte and preserves ASCII source tokens."
+      },
+      "reference/openjpeg/src/bin/wx/OPJViewer/source/imagmxf.cpp": {
+        "encoding": "cp1252",
+        "basis": "Vendored OpenJPEG/LittleCMS C/C++ and documentation contains Western accented copyright names and smart quotes (E0/E9/93/94 raw bytes); strict Windows-1252 (or reversible Latin-1 fallback) decode reads every byte and preserves ASCII source tokens."
+      },
+      "reference/openjpeg/src/bin/wx/OPJViewer/source/wxj2kparser.cpp": {
+        "encoding": "cp1252",
+        "basis": "Vendored OpenJPEG/LittleCMS C/C++ and documentation contains Western accented copyright names and smart quotes (E0/E9/93/94 raw bytes); strict Windows-1252 (or reversible Latin-1 fallback) decode reads every byte and preserves ASCII source tokens."
+      },
+      "reference/openjpeg/src/bin/wx/OPJViewer/source/OPJDialogs.cpp": {
+        "encoding": "cp1252",
+        "basis": "Vendored OpenJPEG/LittleCMS C/C++ and documentation contains Western accented copyright names and smart quotes (E0/E9/93/94 raw bytes); strict Windows-1252 (or reversible Latin-1 fallback) decode reads every byte and preserves ASCII source tokens."
+      },
+      "reference/openjpeg/src/bin/wx/OPJViewer/source/imagjpeg2000.cpp": {
+        "encoding": "cp1252",
+        "basis": "Vendored OpenJPEG/LittleCMS C/C++ and documentation contains Western accented copyright names and smart quotes (E0/E9/93/94 raw bytes); strict Windows-1252 (or reversible Latin-1 fallback) decode reads every byte and preserves ASCII source tokens."
+      },
+      "reference/openjpeg/src/bin/wx/OPJViewer/source/OPJAbout.cpp": {
+        "encoding": "cp1252",
+        "basis": "Vendored OpenJPEG/LittleCMS C/C++ and documentation contains Western accented copyright names and smart quotes (E0/E9/93/94 raw bytes); strict Windows-1252 (or reversible Latin-1 fallback) decode reads every byte and preserves ASCII source tokens."
+      },
+      "reference/openjpeg/src/bin/wx/OPJViewer/source/readmebefore.txt": {
+        "encoding": "cp1252",
+        "basis": "Vendored OpenJPEG/LittleCMS C/C++ and documentation contains Western accented copyright names and smart quotes (E0/E9/93/94 raw bytes); strict Windows-1252 (or reversible Latin-1 fallback) decode reads every byte and preserves ASCII source tokens."
+      },
+      "reference/openjpeg/src/bin/wx/OPJViewer/source/wxjp2parser.cpp": {
+        "encoding": "cp1252",
+        "basis": "Vendored OpenJPEG/LittleCMS C/C++ and documentation contains Western accented copyright names and smart quotes (E0/E9/93/94 raw bytes); strict Windows-1252 (or reversible Latin-1 fallback) decode reads every byte and preserves ASCII source tokens."
+      },
+      "reference/openjpeg/src/bin/wx/OPJViewer/source/OPJThreads.cpp": {
+        "encoding": "cp1252",
+        "basis": "Vendored OpenJPEG/LittleCMS C/C++ and documentation contains Western accented copyright names and smart quotes (E0/E9/93/94 raw bytes); strict Windows-1252 (or reversible Latin-1 fallback) decode reads every byte and preserves ASCII source tokens."
+      },
+      "reference/openjpeg/src/bin/wx/OPJViewer/source/license.txt": {
+        "encoding": "cp1252",
+        "basis": "Vendored OpenJPEG/LittleCMS C/C++ and documentation contains Western accented copyright names and smart quotes (E0/E9/93/94 raw bytes); strict Windows-1252 (or reversible Latin-1 fallback) decode reads every byte and preserves ASCII source tokens."
+      },
+      "reference/openjpeg/src/bin/wx/OPJViewer/about/about.htm": {
+        "encoding": "cp1252",
+        "basis": "Vendored OpenJPEG/LittleCMS C/C++ and documentation contains Western accented copyright names and smart quotes (E0/E9/93/94 raw bytes); strict Windows-1252 (or reversible Latin-1 fallback) decode reads every byte and preserves ASCII source tokens."
+      }
+    },
+    "a218ad10c08e0486da49d0c1326f9d371fecec04e7baeaf94f2a572afd13113a.zip": {
+      "tests/eval/third_party/jsontestsuite/test_parsing/i_string_overlong_sequence_6_bytes.json": {
+        "classification": "binary-fixture",
+        "basis": "Complete raw bytes manually inspected (<100 bytes): JSONTestSuite deliberate invalid UTF-8/overlong/surrogate/truncated-byte rejection fixture, not a valid text source/document; raw bytes fully hashed."
+      },
+      "tests/eval/third_party/jsontestsuite/test_parsing/i_string_lone_utf8_continuation_byte.json": {
+        "classification": "binary-fixture",
+        "basis": "Complete raw bytes manually inspected (<100 bytes): JSONTestSuite deliberate invalid UTF-8/overlong/surrogate/truncated-byte rejection fixture, not a valid text source/document; raw bytes fully hashed."
+      },
+      "tests/eval/third_party/jsontestsuite/test_parsing/n_number_invalid-utf-8-in-bigger-int.json": {
+        "classification": "binary-fixture",
+        "basis": "Complete raw bytes manually inspected (<100 bytes): JSONTestSuite deliberate invalid UTF-8/overlong/surrogate/truncated-byte rejection fixture, not a valid text source/document; raw bytes fully hashed."
+      },
+      "tests/eval/third_party/jsontestsuite/test_parsing/n_number_invalid-utf-8-in-exponent.json": {
+        "classification": "binary-fixture",
+        "basis": "Complete raw bytes manually inspected (<100 bytes): JSONTestSuite deliberate invalid UTF-8/overlong/surrogate/truncated-byte rejection fixture, not a valid text source/document; raw bytes fully hashed."
+      },
+      "tests/eval/third_party/jsontestsuite/test_parsing/i_string_iso_latin_1.json": {
+        "encoding": "iso-8859-1",
+        "basis": "JSONTestSuite fixture filename explicitly specifies encoding; complete strict decode and JSON parse succeed. Exact raw bytes manually inspected."
+      },
+      "tests/eval/third_party/jsontestsuite/test_parsing/n_array_a_invalid_utf8.json": {
+        "classification": "binary-fixture",
+        "basis": "Complete raw bytes manually inspected (<100 bytes): JSONTestSuite deliberate invalid UTF-8/overlong/surrogate/truncated-byte rejection fixture, not a valid text source/document; raw bytes fully hashed."
+      },
+      "tests/eval/third_party/jsontestsuite/test_parsing/n_structure_single_eacute.json": {
+        "classification": "binary-fixture",
+        "basis": "Complete raw bytes manually inspected (<100 bytes): JSONTestSuite deliberate invalid UTF-8/overlong/surrogate/truncated-byte rejection fixture, not a valid text source/document; raw bytes fully hashed."
+      },
+      "tests/eval/third_party/jsontestsuite/test_parsing/i_string_utf16BE_no_BOM.json": {
+        "encoding": "utf-16-be",
+        "basis": "JSONTestSuite fixture filename explicitly specifies encoding; complete strict decode and JSON parse succeed. Exact raw bytes manually inspected."
+      },
+      "tests/eval/third_party/jsontestsuite/test_parsing/n_structure_lone-invalid-utf-8.json": {
+        "classification": "binary-fixture",
+        "basis": "Complete raw bytes manually inspected (<100 bytes): JSONTestSuite deliberate invalid UTF-8/overlong/surrogate/truncated-byte rejection fixture, not a valid text source/document; raw bytes fully hashed."
+      },
+      "tests/eval/third_party/jsontestsuite/test_parsing/n_number_invalid-utf-8-in-int.json": {
+        "classification": "binary-fixture",
+        "basis": "Complete raw bytes manually inspected (<100 bytes): JSONTestSuite deliberate invalid UTF-8/overlong/surrogate/truncated-byte rejection fixture, not a valid text source/document; raw bytes fully hashed."
+      },
+      "tests/eval/third_party/jsontestsuite/test_parsing/n_string_invalid_utf8_after_escape.json": {
+        "classification": "binary-fixture",
+        "basis": "Complete raw bytes manually inspected (<100 bytes): JSONTestSuite deliberate invalid UTF-8/overlong/surrogate/truncated-byte rejection fixture, not a valid text source/document; raw bytes fully hashed."
+      },
+      "tests/eval/third_party/jsontestsuite/test_parsing/i_string_UTF8_surrogate_U+D800.json": {
+        "classification": "binary-fixture",
+        "basis": "Complete raw bytes manually inspected (<100 bytes): JSONTestSuite deliberate invalid UTF-8/overlong/surrogate/truncated-byte rejection fixture, not a valid text source/document; raw bytes fully hashed."
+      },
+      "tests/eval/third_party/jsontestsuite/test_parsing/n_object_lone_continuation_byte_in_key_and_trailing_comma.json": {
+        "classification": "binary-fixture",
+        "basis": "Complete raw bytes manually inspected (<100 bytes): JSONTestSuite deliberate invalid UTF-8/overlong/surrogate/truncated-byte rejection fixture, not a valid text source/document; raw bytes fully hashed."
+      },
+      "tests/eval/third_party/jsontestsuite/test_parsing/i_string_utf16LE_no_BOM.json": {
+        "encoding": "utf-16-le",
+        "basis": "JSONTestSuite fixture filename explicitly specifies encoding; complete strict decode and JSON parse succeed. Exact raw bytes manually inspected."
+      },
+      "tests/eval/third_party/jsontestsuite/test_parsing/i_string_overlong_sequence_6_bytes_null.json": {
+        "classification": "binary-fixture",
+        "basis": "Complete raw bytes manually inspected (<100 bytes): JSONTestSuite deliberate invalid UTF-8/overlong/surrogate/truncated-byte rejection fixture, not a valid text source/document; raw bytes fully hashed."
+      },
+      "tests/eval/third_party/jsontestsuite/test_parsing/i_string_truncated-utf-8.json": {
+        "classification": "binary-fixture",
+        "basis": "Complete raw bytes manually inspected (<100 bytes): JSONTestSuite deliberate invalid UTF-8/overlong/surrogate/truncated-byte rejection fixture, not a valid text source/document; raw bytes fully hashed."
+      },
+      "tests/eval/third_party/jsontestsuite/test_parsing/i_string_overlong_sequence_2_bytes.json": {
+        "classification": "binary-fixture",
+        "basis": "Complete raw bytes manually inspected (<100 bytes): JSONTestSuite deliberate invalid UTF-8/overlong/surrogate/truncated-byte rejection fixture, not a valid text source/document; raw bytes fully hashed."
+      },
+      "tests/eval/third_party/jsontestsuite/test_parsing/n_array_invalid_utf8.json": {
+        "classification": "binary-fixture",
+        "basis": "Complete raw bytes manually inspected (<100 bytes): JSONTestSuite deliberate invalid UTF-8/overlong/surrogate/truncated-byte rejection fixture, not a valid text source/document; raw bytes fully hashed."
+      },
+      "tests/eval/third_party/jsontestsuite/test_parsing/i_string_not_in_unicode_range.json": {
+        "classification": "binary-fixture",
+        "basis": "Complete raw bytes manually inspected (<100 bytes): JSONTestSuite deliberate invalid UTF-8/overlong/surrogate/truncated-byte rejection fixture, not a valid text source/document; raw bytes fully hashed."
+      },
+      "tests/eval/third_party/jsontestsuite/test_parsing/i_string_invalid_utf-8.json": {
+        "classification": "binary-fixture",
+        "basis": "Complete raw bytes manually inspected (<100 bytes): JSONTestSuite deliberate invalid UTF-8/overlong/surrogate/truncated-byte rejection fixture, not a valid text source/document; raw bytes fully hashed."
+      },
+      "tests/eval/third_party/jsontestsuite/test_parsing/n_number_real_with_invalid_utf8_after_e.json": {
+        "classification": "binary-fixture",
+        "basis": "Complete raw bytes manually inspected (<100 bytes): JSONTestSuite deliberate invalid UTF-8/overlong/surrogate/truncated-byte rejection fixture, not a valid text source/document; raw bytes fully hashed."
+      },
+      "tests/eval/third_party/jsontestsuite/test_parsing/i_string_UTF-8_invalid_sequence.json": {
+        "classification": "binary-fixture",
+        "basis": "Complete raw bytes manually inspected (<100 bytes): JSONTestSuite deliberate invalid UTF-8/overlong/surrogate/truncated-byte rejection fixture, not a valid text source/document; raw bytes fully hashed."
+      },
+      "tests/eval/third_party/jsontestsuite/test_parsing/n_string_invalid-utf-8-in-escape.json": {
+        "classification": "binary-fixture",
+        "basis": "Complete raw bytes manually inspected (<100 bytes): JSONTestSuite deliberate invalid UTF-8/overlong/surrogate/truncated-byte rejection fixture, not a valid text source/document; raw bytes fully hashed."
+      },
+      "tests/eval/third_party/jsontestsuite/test_parsing/n_structure_incomplete_UTF8_BOM.json": {
+        "classification": "binary-fixture",
+        "basis": "Complete raw bytes manually inspected (<100 bytes): JSONTestSuite deliberate invalid UTF-8/overlong/surrogate/truncated-byte rejection fixture, not a valid text source/document; raw bytes fully hashed."
+      }
+    }
+  }
+}
