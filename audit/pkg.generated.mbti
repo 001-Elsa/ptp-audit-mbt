@@ -1,0 +1,35 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "001-Elsa/ptp-audit/audit"
+
+import {
+  "001-Elsa/ptp-audit/diagnostic",
+  "001-Elsa/ptp-audit/exchange",
+  "001-Elsa/ptp-audit/metrology",
+  "001-Elsa/ptp-audit/observation",
+}
+
+// Values
+pub fn audit(String) -> Report
+
+pub fn audit_json(String) -> String
+
+// Errors
+
+// Types and methods
+pub(all) struct Report {
+  findings : Array[@diagnostic.Finding]
+  measurements : Array[@exchange.Measurement]
+  input_fingerprint : String
+  frames : Array[@exchange.Frame]
+  context : @observation.Context
+  assumptions : Json
+  bmca_input : Json?
+  metrology : Array[@metrology.Explanation]
+}
+pub fn Report::exit_code(Self) -> Int
+pub fn Report::status(Self) -> @diagnostic.Status
+pub fn Report::to_json(Self) -> Json
+
+// Type aliases
+
+// Traits

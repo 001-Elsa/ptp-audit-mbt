@@ -1,0 +1,27 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "001-Elsa/ptp-audit/evidence"
+
+import {
+  "001-Elsa/ptp-audit/diagnostic",
+  "001-Elsa/ptp-audit/exchange",
+  "001-Elsa/ptp-audit/observation",
+}
+
+// Values
+pub fn coverage_json(Array[@diagnostic.Finding]) -> Json
+
+pub fn finding_json(@diagnostic.Finding, Array[@exchange.Frame], @observation.Context, Json, Json?) -> Json
+
+pub fn frame_json(@exchange.Frame) -> Json
+
+pub fn measurement_json(@exchange.Measurement, Array[@exchange.Frame]) -> Json
+
+pub fn rule_reference_json(String) -> Json
+
+// Errors
+
+// Types and methods
+
+// Type aliases
+
+// Traits
